@@ -1,2 +1,2 @@
-var word = "Hello";
+var word = "Hellos";
 export default word;
