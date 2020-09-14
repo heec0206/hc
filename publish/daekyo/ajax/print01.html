@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="../css/wbCommon.css" rel="stylesheet"/>
+	<link href="../css/wbUser.css" rel="stylesheet"/>
+	<link href="../css/slick.css" rel="stylesheet"/>
+	<script src="../js/jquery-1.7.2.js"></script>
+	<script src="../js/jquery-ui-1.8.2.js"></script>
+	<script src="../js/wbCommon.js"></script>
+	<script src="../js/slick.js"></script>
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="../js/html5.js"></script>
+		<script src="../js/respond.min.js"></script>
+	<![endif]-->
+	<style>
+	html,body { min-width:1264px; background:#fff; }
+	@page { size: auto; margin:0; padding:0; }
+	@media print {
+		html, body { size:a4;  width: 210mm; height: 297mm; min-width:inherit; }
+		/* * { -webkit-print-color-adjust: exact; print-color-adjust: exact; color-adjust: exact; } */
+	}
+	</style>
+</head>
+<body>
+	<div class="printSubPage">
+	</div>
+	<!-- printWrap -->
+	<div class="printWrap">
+		<!-- pl_header -->
+		<section class="pl_header">
+			<div class="pl_headerBox">
+				<img class="logo" src="../images/icon_print_logo01.png"/>
+				<img class="logo2" src="../images/icon_print_logo02.png"/>
+			</div>
+
+			<p class="print_tit"><span>레슨학습 성취도 분석</span><button class="btn_black_S print" onclick="windowPrint()"><img src="../images/icon_p_bg_gray03.png"/>인쇄</button></p>
+			<script>
+				function windowPrint(){
+					window.print();
+				}
+			</script>
+
+			<script>
+			$(function(){
+				if($(".p_comple_data").length == 1){
+					$(".p_learnBox_L").addClass("active");
+				}
+			});
+			</script>
+			<div class="pl_user">
+				<div class="pl_userL">
+					<img src="../images/icon_pl_user.png"/>
+					<p>김대교<span>3레벨</span></p>
+				</div>
+				<div class="pl_userC">
+					<p>3학년 2학기 25레슨</p>
+				</div>
+				<div class="pl_userR">
+					<img src="../images/icon_pl_user_bg.png"/>
+					<div class="pl_userR_txt">
+						<p><strong>학습일</strong>2020. 05.18</p>
+						<p><strong>담당교사</strong>이대교</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- EOD : pl_header -->
+
+		<!-- pl_content -->
+		<section class="pl_intro">
+			<p class="print_tit02">1. 작품을 보고 느낌을 나누어요 ①<img src="../images/icon_pl_title02_bg.png"/></p>
+			<div class="pl_info">
+				<div class="pl_infoL">
+					<div class="info">
+						<div class="info_L">
+
+							<div class="chart" id="proChartGrid">
+								<ul class="progress">
+									<li>
+										<div class="progressWrap">
+											<div class="progressBox">
+												<div class="data">80</div>
+												<div class="bar"><span class="txt">나의 점수</span></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<script>
+								$(function(){
+									$("#proChartGrid").chart({
+										type : 'progress', // horizontal, vertical, multiBar, progress
+										width : 21,
+										height : 21,
+										fill : ["#eb6262"],
+										stroke : ["#dedede"],
+										strokeWidth : 4,
+										animation : "false",
+									});
+								});
+								$(window).load(function(){
+									$(".circleReval").attr("class","circleReval active");
+								});
+							</script>
+
+						</div>
+						<div class="info_R">
+							<p class="txt01">전체 평균 <span>70</span>점</p>
+							<p class="txt01">상위 <span>10</span>%</p>
+							<span class="icon_p_star"><img src="../images/icon_p_star.png"/></span>
+							<span class="icon_p_star"><img src="../images/icon_p_star.png"/></span>
+							<span class="icon_p_empty"><img src="../images/icon_p_empty.png"/></span>
+							<span class="icon_p_time"><img src="../images/icon_p_time.png"/></span>
+							<span class="txt02">20분</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="pl_infoR">
+					<div class="commentBox">
+						<div class="comment_L">
+								<div class="comment_txt">
+									<img src="../images/icon_p_comment.png"/>
+									이런 내용을<br/>배웠어요!
+								</div>
+						</div>
+						<div class="comment_R">
+							<p class="txt_p_bullet"><img src="../images/icon_p_bullet.png"/>인물의 적절한 표정,몸짓,말투를 생각하며 작품을 읽고 대화 나누기</p>
+							<p class="txt_p_bullet"><img src="../images/icon_p_bullet.png"/>의견이 적절한지 판단해야 하는 까닭</p>
+							<p class="txt_p_bullet"><img src="../images/icon_p_bullet.png"/>글을 읽고 글쓴이의 의견 평가하기</p>
+							<p class="txt_p_bullet"><img src="../images/icon_p_bullet.png"/>글쓴이의 의견을 평가하는 방법 알기</p>
+							<p class="txt_p_bullet"><img src="../images/icon_p_bullet.png"/>자신의 의견이 드러나게 글쓰기</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- EOD : pl_content -->
+
+		<!-- pl_content -->
+		<section class="pl_content">
+			<div class="p_learn_label">
+				<ul>
+					<li><img src="../images/icon_p_answer01.png"/>맞힌 문제</li>
+					<li><img src="../images/icon_p_answer02.png"/>다시 풀어서 맞힌 문제</li>
+					<li><img src="../images/icon_p_answer03.png"/>틀린 문제</li>
+				</ul>
+				<img src="../images/icon_p_bg_gray01.png"/>
+			</div>
+
+			<!-- p_learn -->
+			<div class="p_learn">
+				<div class="p_learn_L">
+					<div class="p_txt_box">
+						<p class="p_tit">기본학습</p>
+						<div class="p_txt">
+							<p class="txt_gray01"><strong class="p_txt_red">8문제 맞힘</strong> /10문제</p>
+							<p class="txt_gray01"><strong class="txt_black01">학습 시간</strong> 10분 42초</p>
+						</div>
+					</div>
+
+					<p class="print_tit03">기본학습<img src="../images/icon_pl_title_bg.png"/></p>
+					<table class="table_normal pl">
+						<caption>번호,결과,이해영역으로 구성된 기본학습 상세</caption>
+						<colgroup>
+							<col width="25%">
+							<col width="25%">
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>결과</th>
+								<th>이해영역</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="ac">1</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">사실</td>
+							</tr>
+							<tr>
+								<td class="ac">2</td>
+								<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"/></td>
+								<td class="ac">비판</td>
+							</tr>
+							<tr>
+								<td class="ac">3</td>
+								<td class="ac"><img class="table_answer03" src="../images/icon_p_answer03.png"/></td>
+								<td class="ac">추리</td>
+							</tr>
+							<tr>
+								<td class="ac">4</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">감상</td>
+							</tr>
+							<tr>
+								<td class="ac">5</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">창의</td>
+							</tr>
+							<tr>
+								<td class="ac">6</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">사실</td>
+							</tr>
+							<tr>
+								<td class="ac">7</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">비판</td>
+							</tr>
+							<tr>
+								<td class="ac">8</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">추리</td>
+							</tr>
+							<tr>
+								<td class="ac">9</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">감상</td>
+							</tr>
+							<tr>
+								<td class="ac">10</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">감상</td>
+							</tr>
+							<tr>
+								<td class="ac">11</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">창의</td>
+							</tr>
+							<tr>
+								<td class="ac">12</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">사실</td>
+							</tr>
+							<tr>
+								<td class="ac">13</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">비판</td>
+							</tr>
+							<tr>
+								<td class="ac">14</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">추리</td>
+							</tr>
+							<tr>
+								<td class="ac">15</td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+								<td class="ac">감상</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- p_learn_R -->
+				<div class="p_learn_R">
+					<div class="p_txt_box type02">
+						<p class="p_tit">맞춤학습</p>
+						<div class="p_txt">
+							<p class="txt_gray01"><strong class="p_txt_red">8문제 맞힘</strong> /10문제</p>
+							<p class="txt_gray01"><strong class="txt_black01">학습 시간</strong> 10분 42초</p>
+						</div>
+					</div>
+
+					<p class="print_tit03">맞춤학습<img src="../images/icon_pl_title_bg.png"></p>
+
+					<!-- p_learnBox -->
+					<div class="p_learnBox">
+						<div class="p_learnBox_L">
+							<!-- 맞춤학습 -->
+							<table class="table_normal pl" id="table_learning">
+								<caption>번호,결과,이해영역으로 구성된 기본학습 상세</caption>
+								<colgroup>
+									<col width="25%">
+									<col width="25%">
+									<col width="*">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>번호</th>
+										<th>결과</th>
+										<th>이해영역</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr class="active">
+										<td class="ac">1</td>
+										<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+										<td class="ac">사실</td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr class="active">
+										<td class="ac">2</td>
+										<td class="ac"><img class="table_answer02" src="../images/icon_p_answer01.png"/></td>
+										<td class="ac">추리</td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+									<tr>
+										<td class="ac"></td>
+										<td class="ac"></td>
+										<td class="ac"></td>
+									</tr>
+								</tbody>
+							</table>
+							<script>
+								$(function(){
+									$("#table_learning tr.active").each(function(){
+										tag = '';
+										tag += '<div class="learning_info"><p class="p_learning_info">맞춤</p></div>';
+										$(this).find("td").eq(0).prepend(tag);
+									});
+								});
+							</script>
+							<!-- EOD : 맞춤학습 -->
+
+							<!-- 성취도 100% 
+							<div class="p_comple_data">
+								<div class="p_comple_dataBox">
+									<img src="../images/icon_p_clap.png">
+									기본학습 성취도 <strong class="p_txt_red"><span>100</span>%</strong><br/>달성하였습니다.
+								</div>
+							</div>
+							<!-- EOD : 성취도 100% -->
+						</div>
+
+						<!-- p_learnBox_R -->
+						<div class="p_learnBox_R">
+							<p class="p_learning_info02">도전</p>
+							<table class="table_normal pl mt5 type02">
+								<caption>번호,결과로 구성된 맞춤학습 도전문제 상세</caption>
+								<colgroup>
+									<col width="25%">
+									<col width="25%">
+									<col width="*">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>번호</th>
+										<th>결과</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="ac">3</td>
+										<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+										<td class="ac">적용</td>
+									</tr>
+									<tr>
+										<td class="ac">4</td>
+										<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"/></td>
+										<td class="ac">적용</td>
+									</tr>
+									<tr>
+										<td class="ac">5</td>
+										<td class="ac"><img class="table_answer03" src="../images/icon_p_answer03.png"/></td>
+										<td class="ac">적용</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="p_txt_box type03">
+								<p class="p_tit">어휘학습</p>
+								<div class="p_txt">
+									<p class="txt_gray01"><strong class="p_txt_red">3문제 맞힘</strong> /10문제</p>
+									<p class="txt_gray01"><strong class="txt_black01">학습 시간</strong> 10분 42초</p>
+								</div>
+							</div>
+							<p class="print_tit03">어휘학습<img src="../images/icon_pl_title_bg.png"></p>
+							<table class="table_normal pl">
+								<caption>번호,결과,단어로 구성된 어휘학습 상세</caption>
+								<colgroup>
+									<col width="25%">
+									<col width="25%">
+									<col width="*">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>번호</th>
+										<th>결과</th>
+										<th>단어</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="ac">1</td>
+										<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+										<td class="ac">호기심</td>
+									</tr>
+									<tr>
+										<td class="ac">2</td>
+										<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"/></td>
+										<td class="ac">예방</td>
+									</tr>
+									<tr>
+										<td class="ac">3</td>
+										<td class="ac"><img class="table_answer03" src="../images/icon_p_answer03.png"/></td>
+										<td class="ac">적합한</td>
+									</tr>
+									<tr>
+										<td class="ac">4</td>
+										<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+										<td class="ac">호기심</td>
+									</tr>
+									<tr>
+										<td class="ac">5</td>
+										<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"/></td>
+										<td class="ac">예방</td>
+									</tr>
+									<tr>
+										<td class="ac">6</td>
+										<td class="ac"><img class="table_answer03" src="../images/icon_p_answer03.png"/></td>
+										<td class="ac">적합한</td>
+									</tr>
+									<tr>
+										<td class="ac">7</td>
+										<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"/></td>
+										<td class="ac">호기심</td>
+									</tr>
+									<tr>
+										<td class="ac">8</td>
+										<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"/></td>
+										<td class="ac">예방</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- EOD : p_learnBox_R -->
+					</div>
+					<!-- EOD : p_learnBox -->
+				</div>
+				<!-- EOD : p_learn_R -->
+			</div>
+			<!-- EOD : p_learn -->
+		</section>
+		<!-- EOD : pl_content -->
+
+		<section class="pl_footer">
+			<div class="pl_footerBox">
+				<div class="pl_footerBoxL">
+					<p class="p_txt_stars">학습 분석<img src="../images/icon_p_stars.png"/></p>
+				</div>
+				<div class="pl_footerBoxR">
+					<p class="txt_default">이번 레슨은 <strong class="p_txt_blue">1. 작품을 보고 느낌을 나누어요 ①</strong> 단원을 학습하였습니다.</p>
+					<p class="txt_default">레슨 학습 결과 <strong class="p_txt_red">학습 목표를 충분히 도달하여, 맞춤 학습의 도전 문제까지 학습하였습니다.</strong></p>
+					<p class="txt_default"><strong class="p_txt_red">다음 레슨 학습도 자신감을 가지고 학습할 수 있도록 격려해 주세요.</strong></p>
+				</div>
+			</div>
+		</section>
+		<p class="pl_last_txt">※ 맞춤학습 문제는 학생의 기본학습 결과에 맞추어 출제되어 학생마다 푸는 문제가 다릅니다.</p>
+
+	</div>
+	<!-- EOD : printWrap -->
+</body>
+</html>

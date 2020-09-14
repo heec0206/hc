@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="../css/wbCommon.css" rel="stylesheet"/>
+	<link href="../css/wbUser.css" rel="stylesheet"/>
+	<link href="../css/slick.css" rel="stylesheet"/>
+	<script src="../js/jquery-1.7.2.js"></script>
+	<script src="../js/jquery-ui-1.8.2.js"></script>
+	<script src="../js/wbCommon.js"></script>
+	<script src="../js/slick.js"></script>
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="../js/html5.js"></script>
+		<script src="../js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- windowPop -->
+<section class="windowPop type02">
+	<div class="windowPopH">
+		풀이화면
+		<a class="windowPop_close" onclick="window.close(); return false;" href="javascript:void(0);" title="닫기"><img src="../images/icon_windowPop_close.png" alt=""></a>
+	</div>
+
+	<!-- windowPopBox -->
+	<div class="windowPopBox">
+		<!-- windowPopBoxIn -->
+		<div class="windowPopBoxIn">
+
+			<div class="tabBox_pop">
+				<ul>
+					<li><a href="popup_explan.html"><span>기본학습</span></a></li>
+					<li class="active"><a href="popup_explan02.html"><span>맞춤학습</span></a></li>
+					<li><a href="javscript:void(0);"><span>서술형학습</span></a></li>
+					<li><a href="javscript:void(0);"><span>어휘학습</span></a></li>
+				</ul>
+			</div>
+
+			<div class="explan_arrow">
+				<button class="explan_prev" onclick="explan_prev();" title="이전 문제"></button>
+				<button class="explan_next" onclick="explan_next();" title="다음 문제"></button>
+			</div>
+
+			<!-- explan_info -->
+			<div class="explan_info">
+				<div class="explan_infoL">
+					맞춤문제<br/>(<strong class="txt_red">5</strong>/7)
+				</div>
+				<!-- explan_infoR -->
+				<div class="explan_infoR">
+					<!-- maxScrollBox -->
+					<div class="maxScrollBox type02">
+						<ul class="explan_list">
+							<li class="active">
+								<a href="javascript:void(0);">
+									<span class="num">1</span>
+									<span class="info"><span class="icon_answer01">정답</span></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="javascript:void(0);">
+									<span class="num">2</span>
+									<span class="info"><span class="icon_answer01">정답</span></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="javascript:void(0);">
+									<span class="num">3</span>
+									<span class="info"><span class="icon_answer01">정답</span></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="javascript:void(0);">
+									<span class="num">4</span>
+									<span class="info"><span class="icon_answer02">오답</span></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="javascript:void(0);">
+									<span class="num">5</span>
+									<span class="info"><span class="icon_answer01">정답</span></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="javascript:void(0);">
+									<span class="num">6</span>
+									<span class="info"><span class="icon_answer02">오답</span></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="javascript:void(0);">
+									<span class="num">7</span>
+									<span class="info"><span class="icon_answer01">정답</span></span>
+								</a>
+							</li>
+						</ul>
+						<div class="explan_bg"></div>
+					</div>
+					<!-- EOD : maxScrollBox -->
+				</div>
+			<!-- EOD : explan_infoR -->
+		</div>
+		<!-- EOD : explan_info -->
+
+		<!-- explan_info -->
+		<div class="explan_info mt10">
+			<div class="explan_infoL">
+				도전문제<br/>(<strong class="txt_red">3</strong>/3)
+			</div>
+			<!-- explan_infoR -->
+			<div class="explan_infoR">
+				<!-- maxScrollBox -->
+				<div class="maxScrollBox type02">
+					<ul class="explan_list">
+						<li>
+							<a href="javascript:void(0);">
+								<span class="num">1</span>
+								<span class="info"><span class="icon_answer01">정답</span></span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0);">
+								<span class="num">2</span>
+								<span class="info"><span class="icon_answer01">정답</span></span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:void(0);">
+								<span class="num">3</span>
+								<span class="info"><span class="icon_answer01">정답</span></span>
+							</a>
+						</li>
+					</ul>
+					<div class="explan_bg"></div>
+				</div>
+				<!-- EOD : maxScrollBox -->
+			</div>
+		<!-- EOD : explan_infoR -->
+	</div>
+	<!-- EOD : explan_info -->
+
+		<div class="explan_detail">
+			<script>
+				$(function(){
+					explanN();
+				});
+
+				var listN = $(".explan_list").eq(0).find("li").length;
+				var explanList = [0,0,listN];
+
+				$(".explan_list a").on("click",function(){
+					explanList = [];
+					parentN = $(".explan_list").index($(this).closest("ul"));
+					thisN = $(this).closest("li").index();
+					listN = $(this).closest("ul").find("li").length;
+
+					explanList.push(parentN);
+					explanList.push(thisN);
+					explanList.push(listN);
+
+					$(".explan_list li").removeClass("active");
+					$(this).closest("li").addClass("active");
+					explanN();
+				});
+
+				function explanN(){
+					$('.ajax_loader').show();
+					$.ajax({
+						url : "../ajax/explan_detail.html",
+						dataType : "html",
+						success : function(result){
+							$(".explan_detail").html(result);
+							$('.ajax_loader').hide();
+						}
+					});
+				}
+
+				function explan_prev(){
+					idx = explanList[1];
+					if(idx == 0){
+						alert("첫번째 문제입니다.");
+					}else{
+						explanList[1]--;
+						$(".explan_list li").removeClass("active");
+						$(".explan_list").eq(explanList[0]).find("li").eq(explanList[1]).addClass("active");
+						explanN();
+					}
+				}
+
+				function explan_next(){
+					idx = explanList[1];
+					listN = explanList[2];
+
+					if(idx == (listN-1)){
+						alert("마지막 문제입니다.");
+					}else{
+						explanList[1]++;
+						$(".explan_list li").removeClass("active");
+						$(".explan_list").eq(explanList[0]).find("li").eq(explanList[1]).addClass("active");
+						explanN();
+					}
+				}
+			</script>
+		</div>
+
+		</div>
+		<!-- EOD : windowPopBoxIn -->
+	</div>
+	<!-- EOD : windowPopBox -->
+
+	<div class="windowPopBtn">
+		<button type="button" class="btn_black_L" onclick="window.close(); return false;">확인</button>
+	</div>
+</section>
+<!-- EOD : windowPop -->
+</body>
+</html>

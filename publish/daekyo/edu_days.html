@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>대교 써밋</title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- topLayoutInclude -->
+	<section class="headerInclude"></section>
+	<!-- EOD : topLayoutInclude -->
+
+	<!-- member_info -->
+	<section class="member_info">
+		<!-- member_infoBox -->
+		<div class="member_infoBox">
+			<div class="calender_date days">
+				<button class="btn_prev" title="이전" onclick=""></button>
+				
+				<p>
+					<span id="yearDate">2020.05.26 수요일</span>
+					<span id="datepickerBox">
+						<input type="button" class="ico" onclick="$('.datepicker').datepicker('show');"/>
+						<input type="text" class="datepicker"/>
+					</span>
+				</p>
+				<button class="btn_next" title="다음" onclick=""></button>
+			</div>
+			<div class="members_num">전체 회원 <strong class="txt_red">110</strong>명</div>
+
+				<script>
+
+					$(function(){
+						datepicker();
+					});
+
+					function datepicker(){
+
+						var datepicker_year = new Date();
+
+						/* datepicker 한국어 세팅 */
+						$.datepicker.setDefaults({
+							dateFormat: "yy.mm.dd",
+							prevText: '이전 달',
+							nextText: '다음 달',
+							monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+							monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+							dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+							dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+							dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+							showMonthAfterYear: true,
+							yearSuffix: '',
+							changeMonth: true,
+							changeYear: true,
+							buttonImageOnly : false,
+							yearRange: (datepicker_year.getFullYear()-10) + ':' + (datepicker_year.getFullYear()),
+							onSelect: function() {
+								getFullDate = $(this).val();
+								getDays = $(this).datepicker('getDate').getUTCDay();
+								daysN = ["월요일","화요일","수요일","목요일","금요일","토요일","일요일"]
+								$("#yearDate").text( getFullDate + " " +  daysN[getDays]);
+							}
+						});
+
+						$(".datepicker").datepicker();
+					}
+
+					/*
+					$('html').click(function(e){
+						 if(!$(e.target).hasClass("datepicker")){
+							 $(".ui-datepicker").fadeOut(400);
+						 }
+					});
+					*/
+
+				</script>
+
+		</div>
+		<!-- EOD : member_infoBox -->
+	</section>
+	<!-- EOD : member_info -->
+
+	<!-- mainContent -->
+	<section class="mainContent">
+		<!-- mainContentIn -->
+		<div class="mainContentIn">
+
+
+			<!-- layout_box -->
+			<section class="layout_box">
+				<div class="searchBox">
+					<div class="searchBoxIn">
+						<input type="search" placeholder="회원이름" />
+						<button></button>
+					</div>
+				</div>
+
+				<!-- maxScrollBox -->
+				<div class="maxScrollBox">
+					<!-- maxScrollBoxIn -->
+					<div class="maxScrollBoxIn">
+
+						<table class="table_brdN">
+							<caption>이름, 회원번호, 학년, 과목, 방문요일, 학습내역, 학습완료일, 학습시간, 점수, 학습결과서, 리셋, 리셋이력, 상세이력으로 구성된 전체회원 리스트 상세</caption>
+							<colgroup>
+								<col width="7.5%">
+								<col width="*">
+								<col width="5%">
+								<col width="5%">
+								<col width="8%">
+								<col width="9%">
+								<col width="9%">
+								<col width="8%">
+								<col width="5%">
+								<col width="8%">
+								<col width="5%">
+								<col width="7.5%">
+								<col width="10%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="sorting">이름</th>
+									<th class="sorting">회원번호</th>
+									<th class="sorting">학년</th>
+									<th class="sorting">과목</th>
+									<th class="sorting">방문요일</th>
+									<th>학습내역</th>
+									<th>학습완료일</th>
+									<th>학습시간</th>
+									<th>점수</th>
+									<th>학습결과서</th>
+									<th>리셋</th>
+									<th>리셋이력</th>
+									<th>상세이력</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="ac brdN">김대교</td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P4</td>
+									<td class="ac">DK2</td>
+									<td class="ac">월2/수</td>
+									<td class="ac">4레벨-1레슨</td>
+									<td class="ac">20-02-10</td>
+									<td class="ac">51분</td>
+									<td class="ac"><strong class="txt_red">88점</strong></td>
+									<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+									<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+									<td class="ac"><button class="btn_black_XS" onclick="">1회</button></td>
+									<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+								</tr>
+								<tr>
+									<td class="ac brdN">김대교</td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P4</td>
+									<td class="ac">DK2</td>
+									<td class="ac">월2/수</td>
+									<td class="ac">4레벨-1레슨</td>
+									<td class="ac">20-02-10</td>
+									<td class="ac">51분</td>
+									<td class="ac"><strong class="txt_red">88점</strong></td>
+									<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+									<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+									<td class="ac"><button class="btn_black_XS" onclick="">1회</button></td>
+									<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+								</tr>
+								<tr>
+									<td class="ac brdN">김대교</td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P4</td>
+									<td class="ac">DK2</td>
+									<td class="ac">월2/수</td>
+									<td class="ac">4레벨-1레슨</td>
+									<td class="ac">20-02-10</td>
+									<td class="ac">51분</td>
+									<td class="ac"><strong class="txt_red">88점</strong></td>
+									<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+									<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+									<td class="ac"><button class="btn_black_XS" onclick="">1회</button></td>
+									<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+								</tr>
+								<!--
+								<tr>
+									<td colspan="13">
+										<div class="noData">
+											<span class="ico"></span>조건에 맞는 회원이 없습니다.
+										</div>
+									</td>
+								</tr>
+								-->
+							</tbody>
+						</table>
+					</div>
+					<!-- EOD : maxScrollBoxIn -->
+				</div>
+				<!-- EOD : maxScrollBox -->
+				<div class="btn_center"><button class="btn_more" onclick="">더보기</button></div>
+
+			</section>
+			<!-- EOD : layout_box -->
+		</div>
+		<!-- EOD : mainContentIn -->
+	</section>
+	<!-- EOD : mainContent -->
+
+	<!-- footerInclude -->
+	<section class="footerInclude"></section>
+	<!-- EOD : footerInclude -->
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<div class="chartWrap">
+	<!-- line chart -->
+	<div class="chart" id="timeChartGrid">
+
+		<div class="timeChartLegend">
+			<div class="tit">학습일</div>
+			<ul class="timeChartLegend">
+				<li>5/4</li>
+				<li>5/7</li>
+				<li>5/8</li>
+				<li>5/10</li>
+				<li>5/12</li>
+				<li>5/15</li>
+			</ul>
+		</div>
+
+		<!-- chartIn -->
+		<div class="chartIn">
+			<!-- progress -->
+			<ul class="progress">
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">100</div>
+							<div class="bar"><img src="images/icon_chart_bg02.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">8레슨</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">20</div>
+							<div class="bar"><img src="images/icon_chart_bg02.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">9레슨</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">55</div>
+							<div class="bar"><img src="images/icon_chart_bg02.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">10레슨</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">0</div>
+							<div class="bar"><img src="images/icon_chart_bg02.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">11레슨</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">12</div>
+							<div class="bar"><img src="images/icon_chart_bg02.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">12레슨</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">88</div>
+							<div class="bar"><img src="images/icon_chart_bg02.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">13레슨</div>
+				</li>
+
+			</ul>
+			<!-- EOD : progress -->
+		</div>
+		<!-- EOD : chartIn -->
+	</div>
+	<!-- EOD : line chart -->
+</div>
+
+<script>
+$(function(){
+	 $("#timeChartGrid").chart({
+		type : 'vertical', // horizontal, vertical, multiBar
+		margin : 0,
+		speed :    2000, //bar animation speed
+		speedTurm : 500, // bar animation turm speed
+		height :    235, // chart height
+		barHeight : 36,  // bar height
+		drawing : 'default', // default, percent
+		markStart : 0, //기준점 시작
+		markEnd : 100, //기준점 마지막
+		markInterval : 7, //기준점 간격 갯수
+		markOption : 'customTime', //true, false, custom custom_time
+	});
+
+	$("#timeChartGrid .data").each(function(){
+		$(this).append("분");
+	});
+ });
+</script>

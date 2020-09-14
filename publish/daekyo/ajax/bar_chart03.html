@@ -1,0 +1,272 @@
+<div class="p_legend">
+  <ul>
+    <li><img src="../images/icon_p_legend01.png"/>나의 점수</li>
+    <li><img src="../images/icon_p_legend02.png"/>전체 평균</li>
+  </ul>
+</div>
+
+<!-- line chart 웹용 -->
+<div class="chart printBar" id="MultiChartGrid">
+  <!-- chartIn -->
+  <div class="chartIn">
+    <!-- progress -->
+    <ul class="progress">
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">14</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">15</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">1단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">5</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">8</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">2단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">6</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">4</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">3단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">0</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">11</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">4단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">20</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">20</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">5단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">20</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">20</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">6단원</div>
+      </li>
+
+    </ul>
+    <!-- EOD : progress -->
+  </div>
+  <!-- EOD : chartIn -->
+</div>
+<!-- EOD : line chart -->
+
+<script>
+$(function(){
+   $("#MultiChartGrid").chart({
+    type : 'vertical', // horizontal, vertical, multiBar
+    margin : 0,
+    speed :    2000, //bar animation speed
+    speedTurm : 500, // bar animation turm speed
+    height :    125, // chart height
+    drawing : "default", // default, percent
+    barHeight : 36,  // bar height
+    markStart : 0, //기준점 시작
+    markEnd : 20, //기준점 마지막
+    markInterval : 4, //기준점 간격 갯수
+    markOption : 'false', //true, false, custom customTime
+    markSpace : "small",
+    animation : "false",
+  });
+
+  $("#MultiChartGrid .data").each(function(){
+    $(this).append("점");
+  });
+});
+</script>
+
+<!-- line chart 출력용 -->
+<div class="chart printBar" id="p_MultiChartGrid">
+  <!-- chartIn -->
+  <div class="chartIn">
+    <!-- progress -->
+    <ul class="progress">
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">14</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">15</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">1단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">5</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">8</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">2단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">6</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">4</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">3단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">0</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">11</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">4단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">20</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">20</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">5단원</div>
+      </li>
+
+      <li>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">17</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+          </div>
+        </div>
+        <div class="progressWrap">
+          <div class="progressBox">
+            <div class="data">14</div>
+            <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+          </div>
+        </div>
+        <div class="gubun">6단원</div>
+      </li>
+
+    </ul>
+    <!-- EOD : progress -->
+  </div>
+  <!-- EOD : chartIn -->
+</div>
+<!-- EOD : line chart -->
+<script>
+$(function(){
+   $("#p_MultiChartGrid").chart({
+    type : 'vertical', // horizontal, vertical, multiBar
+    margin : 0,
+    speed :    2000, //bar animation speed
+    speedTurm : 500, // bar animation turm speed
+    height :    95, // chart height
+    barHeight : 36,  // bar height
+    markStart : 0, //기준점 시작
+    markEnd : 20, //기준점 마지막
+    markInterval : 4, //기준점 간격 갯수
+    markOption : 'false', //true, false, custom customTime
+    markSpace : "print",
+    animation : "false",
+  });
+
+  $("#p_MultiChartGrid .data").each(function(){
+    $(this).append("점");
+  });
+});
+</script>

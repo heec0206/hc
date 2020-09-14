@@ -1,0 +1,97 @@
+
+<div class="chartWrap">
+	<!-- line chart -->
+	<div class="chart" id="scoreChartGrid">
+		<!-- chartIn -->
+		<div class="chartIn">
+			<!-- progress -->
+			<ul class="progress">
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">71</div>
+							<div class="bar"><img src="images/icon_chart_bg01.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">듣기/말하기</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">8</div>
+							<div class="bar"><img src="images/icon_chart_bg01.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">읽기</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">32</div>
+							<div class="bar"><img src="images/icon_chart_bg01.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">문학</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">67</div>
+							<div class="bar"><img src="images/icon_chart_bg01.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">문법</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">0</div>
+							<div class="bar"><img src="images/icon_chart_bg01.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">쓰기</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data">100</div>
+							<div class="bar"><img src="images/icon_chart_bg01.png"/><span class="txt"></span></div>
+						</div>
+					</div>
+					<div class="gubun">어휘</div>
+				</li>
+
+
+			</ul>
+			<!-- EOD : progress -->
+		</div>
+		<!-- EOD : chartIn -->
+	</div>
+	<!-- EOD : line chart -->
+</div>
+
+<script>
+$(function(){
+	 $("#scoreChartGrid").chart({
+		type : 'vertical', // horizontal, vertical, multiBar
+		margin : 0,
+		speed :    2000, //bar animation speed
+		speedTurm : 500, // bar animation turm speed
+		height :    245, // chart height
+		drawing : "percent", // default, percent
+		barHeight : 36,  // bar height
+		markInterval : 7, //기준점 간격 갯수
+		markOption : 'custom', //true, false, custom customTime
+	});
+
+	$("#scoreChartGrid .data").each(function(){
+		$(this).append("%");
+	});
+ });
+</script>

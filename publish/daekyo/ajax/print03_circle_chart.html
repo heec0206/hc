@@ -1,0 +1,62 @@
+<div class="chartBox">
+	<div class="chartWrap">
+		<div class="p_legend">
+	  <ul>
+	    <li><img src="../images/icon_chart_legend03.png">정답</li>
+	    <li><img src="../images/icon_chart_legend04.png">오답</li>
+	  </ul>
+	</div>
+
+		<!-- line chart -->
+		<div class="chart" id="circleChartGrid">
+				<!-- chartIn -->
+				<div class="chartIn">
+					<!-- progress -->
+					<ul class="progress">
+						<!-- 오답 -->
+						<li>
+							<div class="progressWrap">
+								<div class="progressBox">
+									<div class="data"><span>11</span></div>
+									<div class="bar"><span class="txt">오답</span></div>
+								</div>
+							</div>
+						</li>
+						<!-- EOD : 오답 -->
+
+						<!-- 정답 -->
+						<li>
+							<div class="progressWrap">
+								<div class="progressBox">
+									<div class="data"><span>89</span></div>
+									<div class="bar"><span class="txt">정답</span></div>
+								</div>
+							</div>
+						</li>
+						<!-- EOD : 정답 -->
+					</ul>
+					<!-- EOD : progress -->
+				</div>
+				<!-- EOD : chartIn -->
+		</div>
+		<!-- EOD : line chart -->
+	</div>
+</div>
+
+<div class="ps_subInfo">
+	<div class="ps_subInfoBox">
+		이 달에 문 푼제는 총 <strong class="txt_red">OO</strong>개이며, 그중 O개를 틀렸습니다.
+		<img src="../images/icon_p_table_bg.png"/>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		$("#circleChartGrid").chart({
+			type : 'pie', // horizontal, vertical , pie
+			donut_width : 115,
+			height: '270',
+			colorset: ['#ffdd7c', '#42afea'],
+		});
+	});
+</script>

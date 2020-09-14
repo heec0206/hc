@@ -1,0 +1,116 @@
+<p class="p_learning_info04">
+    <img src="../images/icon_p_bg_gray01.png"/>
+    <strong>상위 15%</strong>
+</p>
+<div class="p_legend type02">
+  <ul>
+    <li><img src="../images/icon_p_legend01.png">나의 점수</li>
+    <li><img src="../images/icon_p_legend02.png">전체 평균</li>
+  </ul>
+</div>
+
+<!-- line chart 웹용 -->
+<div class="chart printBar" id="soloChartGrid">
+<!-- chartIn -->
+<div class="chartIn">
+  <!-- progress -->
+  <ul class="progress">
+
+    <li>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">80</div>
+          <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+        </div>
+      </div>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">76</div>
+          <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+  <!-- EOD : progress -->
+</div>
+<!-- EOD : chartIn -->
+</div>
+<!-- EOD : line chart -->
+
+
+<script>
+$(function(){
+   $("#soloChartGrid").chart({
+    type : 'vertical', // horizontal, vertical, multiBar
+    margin : 0,
+    speed :    2000, //bar animation speed
+    speedTurm : 500, // bar animation turm speed
+    height :    209, // chart height
+    drawing : "percent", // default, percent
+    barHeight : 36,  // bar height
+    markInterval : 7, //기준점 간격 갯수
+    markOption : 'false', //true, false, custom customTime
+    animation : "false",
+  });
+
+  $("#soloChartGrid .data").each(function(){
+    $(this).append("점");
+  });
+
+ });
+</script>
+
+<!-- line chart 출력용 -->
+<div class="chart printBar" id="p_soloChartGrid">
+<!-- chartIn -->
+<div class="chartIn">
+  <!-- progress -->
+  <ul class="progress">
+
+    <li>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">80</div>
+          <div class="bar"><img src="../images/icon_chart_bg_print01.png"/><span class="txt">나의 점수</span></div>
+        </div>
+      </div>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">76</div>
+          <div class="bar"><img src="../images/icon_chart_bg_print02.png"/><span class="txt">전체 평균</span></div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+  <!-- EOD : progress -->
+</div>
+<!-- EOD : chartIn -->
+</div>
+<!-- EOD : line chart -->
+
+
+<script>
+$(function(){
+   $("#p_soloChartGrid").chart({
+    type : 'vertical', // horizontal, vertical, multiBar
+    margin : 0,
+    speed :    2000, //bar animation speed
+    speedTurm : 500, // bar animation turm speed
+    height :    146, // chart height
+    drawing : "percent", // default, percent
+    barHeight : 36,  // bar height
+    markInterval : 7, //기준점 간격 갯수
+    markOption : 'false', //true, false, custom customTime
+    markSpace : "print",
+    animation : "false",
+    solo : "true",
+  });
+
+  $("#p_soloChartGrid .data").each(function(){
+    $(this).append("점");
+  });
+
+ });
+</script>

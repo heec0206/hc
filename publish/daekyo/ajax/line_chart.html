@@ -1,0 +1,161 @@
+<!-- chartWrap -->
+<div class="chartWrap">
+	<!-- line chart -->
+	<div class="chart_legend">
+		<ul>
+			<li><img alt="" src="images/icon_chart_legend01.png">나의점수</li>
+			<li><img alt="" src="images/icon_chart_legend02.png">전체평균</li>
+		</ul>
+	</div>
+
+	<div class="chart" id="lineChartGrid">
+		<!-- chartIn -->
+		<div class="chartIn">
+			<!-- progress -->
+			<ul class="progress">
+
+				<!-- 전체평균 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">89</div>
+							<div class="gubun">5레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">93</div>
+							<div class="gubun">6레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">86</div>
+							<div class="gubun">7레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">89</div>
+							<div class="gubun">8레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">88</div>
+							<div class="gubun">9레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">89</div>
+							<div class="gubun">10레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">86</div>
+							<div class="gubun">11레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">94</div>
+							<div class="gubun">12레슨</div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 전체평균 -->
+
+				<!-- 나의 점수 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">86</div>
+							<div class="gubun">5레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">92</div>
+							<div class="gubun">6레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">91</div>
+							<div class="gubun">7레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">88</div>
+							<div class="gubun">8레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">86</div>
+							<div class="gubun">9레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">89</div>
+							<div class="gubun">10레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">84</div>
+							<div class="gubun">11레슨</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">91</div>
+							<div class="gubun">12레슨</div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 나의 점수 -->
+
+			</ul>
+			<!-- EOD : progress -->
+		</div>
+		<!-- EOD : chartIn -->
+	</div>
+	<!-- EOD : line chart -->
+</div>
+<!-- EOD : chartWrap -->
+
+
+<script>
+	$("#lineChartGrid").chart({
+		type : 'line', // horizontal, vertical, line
+		height :    240, // chart height
+		circleHeight : 10,  // circle height, 짝수만
+		barWidth : 2, // line height, 짝수만
+		background : ["#666", "#2fa270"], //bar , line color
+		markStart : 0, //기준점 시작
+		markEnd : 100, //기준점 마지막
+		markInterval : 7, //기준점 간격 갯수
+		markPoint : "entryPoint",//최소값 비교
+	});
+</script>

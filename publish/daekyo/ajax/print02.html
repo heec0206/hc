@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="../css/wbCommon.css" rel="stylesheet"/>
+	<link href="../css/wbUser.css" rel="stylesheet"/>
+	<link href="../css/slick.css" rel="stylesheet"/>
+	<script src="../js/jquery-1.7.2.js"></script>
+	<script src="../js/jquery-ui-1.8.2.js"></script>
+	<script src="../js/wbCommon.js"></script>
+	<script src="../js/slick.js"></script>
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="../js/html5.js"></script>
+		<script src="../js/respond.min.js"></script>
+	<![endif]-->
+	<style>
+	html,body { min-width:inherit; background:#fff; }
+	@page { size: auto; margin:0; padding:0; }
+	@media print {
+		html, body { size:a4;  width: 210mm; height: 297mm; min-width:inherit; overflow:hidden; }
+		/* * { -webkit-print-color-adjust: exact; print-color-adjust: exact; color-adjust: exact; } */
+	}
+	</style>
+</head>
+<body>
+
+	<div class="pd_choice">
+		<ul class="inputList">
+			<li>
+				<input type="radio" id="radioGroup01_01" name="radioGroup" checked>
+				<label for="radioGroup01_01"><span></span>1학기 중간</label>
+			</li>
+			<li>
+				<input type="radio" id="radioGroup01_02" name="radioGroup">
+				<label for="radioGroup01_02"><span></span>1학기 기말</label>
+			</li>
+			<li>
+				<input type="radio" id="radioGroup01_03" name="radioGroup">
+				<label for="radioGroup01_03"><span></span>2학기 중간</label>
+			</li>
+			<li>
+				<input type="radio" id="radioGroup01_04" name="radioGroup">
+				<label for="radioGroup01_04"><span></span>2학기 기말</label>
+			</li>
+		</ul>
+		<script>
+			$(".pd_choice label").on("click",function(){
+				ajaxResult();
+			});
+
+			function ajaxResult(){
+				$('.ajax_loader').show();
+				$.ajax({
+					url : "print02_info.html",
+					dataType : "html",
+					success : function(result){
+						$(".pd_contents").html(result);
+						$('.ajax_loader').hide();
+					}
+				});
+			}
+		</script>
+	</div>
+	<div class="pd_contents">
+		<script>
+			$(function(){
+				ajaxResult();
+			});
+		</script>
+	</div>
+
+</body>
+</html>

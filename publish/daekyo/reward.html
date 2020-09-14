@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>대교 써밋</title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- topLayoutInclude -->
+	<section class="headerInclude"></section>
+	<!-- EOD : topLayoutInclude -->
+
+	<!-- member_info -->
+	<section class="member_info">
+		<!-- member_infoBox -->
+		<div class="member_infoBox"><button class="btn_info" onclick="popupS('#popup01','show','1000','auto');">보상기준안내</button></div>
+		<!-- EOD : member_infoBox -->
+	</section>
+	<!-- EOD : member_info -->
+
+	<!-- mainContent -->
+	<section class="mainContent">
+		<!-- mainContentIn -->
+		<div class="mainContentIn">
+
+			<div class="calender_date type02">
+					<p>회원 보상내역 조회</p>
+			</div>
+
+			<!-- layout_box -->
+			<section class="layout_box">
+				<div class="searchBox">
+					<div class="searchBoxIn">
+						<input type="search" placeholder="회원이름" />
+						<button title="검색"></button>
+					</div>
+				</div>
+
+				<!-- maxScrollBox -->
+				<div class="maxScrollBox">
+					<!-- maxScrollBoxIn -->
+					<div class="maxScrollBoxIn">
+
+						<table class="table_brdN">
+							<caption>이름,회원번호,학년,최근학습,최근학습일,총 내공점수로 구성된 회원 보상내역 상세</caption>
+							<colgroup>
+								<col width="15%">
+								<col width="15%">
+								<col width="*">
+								<col width="15%">
+								<col width="15%">
+								<col width="15%">
+								<col width="15%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="sorting">이름</th>
+									<th>회원번호</th>
+									<th class="sorting">학년</th>
+									<th>최근 학습</th>
+									<th>최근 학습일</th>
+									<th class="sorting">총 내공 점수</th>
+									<th>총 획득 별</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="ac brdN"><a class="reward_link" href="reward_detail.html">김대교</a></td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P4</td>
+									<td class="ac">4레벨-1레슨</td>
+									<td class="ac">2020.04.28</td>
+									<td class="ac"><strong class="txt_red">1,924점</strong></td>
+									<td class="ac">200개</td>
+								</tr>
+								<tr>
+									<td class="ac brdN"><a class="reward_link" href="reward_detail.html">이대교</a></td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P2</td>
+									<td class="ac">4레벨-2레슨</td>
+									<td class="ac">2020.04.28</td>
+									<td class="ac"><strong class="txt_red">1,924점</strong></td>
+									<td class="ac">200개</td>
+								</tr>
+								<tr>
+									<td class="ac brdN"><a class="reward_link" href="reward_detail.html">박대교</a></td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P1</td>
+									<td class="ac">3레벨-1레슨</td>
+									<td class="ac">2020.03.28</td>
+									<td class="ac"><strong class="txt_red">1,011점</strong></td>
+									<td class="ac">120개</td>
+								</tr>
+								<tr>
+									<td class="ac brdN"><a class="reward_link" href="reward_detail.html">홍대교</a></td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P8</td>
+									<td class="ac">1레벨-1레슨</td>
+									<td class="ac">2020.01.28</td>
+									<td class="ac"><strong class="txt_red">215점</strong></td>
+									<td class="ac">4개</td>
+								</tr>
+								<tr>
+									<td class="ac brdN"><a class="reward_link" href="reward_detail.html">김대교</a></td>
+									<td class="ac">1000000879</td>
+									<td class="ac">P4</td>
+									<td class="ac">4레벨-1레슨</td>
+									<td class="ac">2020.04.28</td>
+									<td class="ac"><strong class="txt_red">1,924점</strong></td>
+									<td class="ac">15개</td>
+								</tr>
+
+								<!--
+								<tr>
+									<td colspan="7">
+										<div class="noData">
+											<span class="ico"></span>조건에 맞는 회원이 없습니다.
+										</div>
+									</td>
+								</tr>
+								-->
+							</tbody>
+						</table>
+					</div>
+					<!-- EOD : maxScrollBoxIn -->
+				</div>
+				<!-- EOD : maxScrollBox -->
+				<div class="btn_center"><button class="btn_more" onclick="">더보기</button></div>
+
+			</section>
+			<!-- EOD : layout_box -->
+
+			<!-- popup_layer -->
+			<section class="popup_wrap type02" id="popup01">
+				<!-- popup_Box -->
+				<div class="popup_Box">
+					<!-- popup_BoxIn -->
+					<div class="popup_BoxIn">
+						<div class="popupH">보상기준 안내<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup01','close');"><img src="images/icon_windowPop_close.png" alt="닫기"></a></div>
+						<!-- popupCBox -->
+						<div class="popupCBox">
+							<!-- popupCBoxIn -->
+							<div class="popupCBoxIn">
+
+								<table class="table_normal mt20">
+									<caption>분류,항목,내역,획득내공,내공유형,비고로 구성된 보상기준 안내 상세</caption>
+									<colgroup>
+										<col width="15%">
+										<col width="12%">
+										<col width="*">
+										<col width="12%">
+										<col width="12%">
+										<col width="25%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th class="brdN">분류</th>
+											<th>항목</th>
+											<th>내역</th>
+											<th>획득내공</th>
+											<th>내공유형</th>
+											<th>비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="ac brdN">학습습관 보상</td>
+											<td class="ac">레슨학습</td>
+											<td class="ac">출석 후,앱 로그인</td>
+											<td class="ac">1</td>
+											<td class="ac">학습내공</td>
+											<td class="ac">(1일 1회한정)</td>
+										</tr>
+
+										<tr>
+											<td class="ac brdN" rowspan="9">학습결과 보상</td>
+											<td class="ac" rowspan="6">레슨학습</td>
+											<td class="ac">출석 후, 기본학습/맞춤학습 진행</td>
+											<td class="ac">1<br/>(문항수)</td>
+											<td class="ac">학습내공</td>
+											<td class="ac">(레슨당 1회)</td>
+										</tr>
+										<tr>
+											<td class="ac brd">도전문제 풀이</td>
+											<td class="ac">10</td>
+											<td class="ac">도전내공</td>
+											<td class="ac">기회 제공시</td>
+										</tr>
+										<tr>
+											<td class="ac brd">점수 81~100점</td>
+											<td class="ac">100</td>
+											<td class="ac">도전내공</td>
+											<td class="ac">별 3개</td>
+										</tr>
+										<tr>
+											<td class="ac brd">점수 51~80점</td>
+											<td class="ac">80</td>
+											<td class="ac">학습내공</td>
+											<td class="ac">별 2개</td>
+										</tr>
+										<tr>
+											<td class="ac brd">점수 26~50점</td>
+											<td class="ac">50</td>
+											<td class="ac">학습내공</td>
+											<td class="ac">별 1개</td>
+										</tr>
+										<tr>
+											<td class="ac brd">점수 25~0점</td>
+											<td class="ac">30</td>
+											<td class="ac">학습내공</td>
+											<td class="ac"></td>
+										</tr>
+
+										<tr>
+											<td class="ac brd" rowspan="3">선택학습<br/>(단원평가/성취도평가)</td>
+											<td class="ac">점수 81~100점</td>
+											<td class="ac">30</td>
+											<td class="ac">학습내공</td>
+											<td class="ac"></td>
+										</tr>
+										<tr>
+											<td class="ac brd">점수 51~80점</td>
+											<td class="ac">20</td>
+											<td class="ac">학습내공</td>
+											<td class="ac"></td>
+										</tr>
+										<tr>
+											<td class="ac brd">점수 26~50점</td>
+											<td class="ac">10</td>
+											<td class="ac">학습내공</td>
+											<td class="ac"></td>
+										</tr>
+
+										<tr>
+											<td class="ac" rowspan="4">추가학습 보상</td>
+											<td class="ac">선택학습</td>
+											<td class="ac">선택학습 완료(1일 1회 한정)<br/>(단원요점/서술형평가/성취도평가/단원평가/우리말배움터)</td>
+											<td class="ac">10</td>
+											<td class="ac">학습내공</td>
+											<td class="ac">(1일 1회 한정)<br/>도전 정신에 대한 보상 배지(열정적인 학습자)</td>
+										</tr>
+										<tr>
+											<td class="ac brd" rowspan="3">레슨학습</td>
+											<td class="ac">연속 3회 상위 점수 달성<br/>(점수 81~100점)</td>
+											<td class="ac">10</td>
+											<td class="ac">학습내공</td>
+											<td class="ac">좋아진 성적에 대한 보상 배지<br/>(우수한 학습자)</td>
+										</tr>
+										<tr>
+											<td class="ac brd">미루지 않고 연속으로 학습 진행(5회)</td>
+											<td class="ac">10</td>
+											<td class="ac">학습내공</td>
+											<td class="ac">성실한 학습에 대한 보상 배지<br/>(성실한 학습자)</td>
+										</tr>
+										<tr>
+											<td class="ac brd">출석 예정일에 출석하여 레슨학습 완료</td>
+											<td class="ac">10</td>
+											<td class="ac">학습내공</td>
+											<td class="ac"></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<!-- EOD : popupCBoxIn -->
+						</div>
+						<!-- EOD : popupCBox -->
+						<div class="popupF">
+							<button type="button" class="btn_black_L" onclick="popupS('#popup01','close');">닫기</button>
+						</div>
+					</div>
+					<!-- EOD : popup_BoxIn -->
+				</div>
+				<!-- EOD : popup_Box -->
+				<div class="popup_bg" onclick="popupS('#popup01','close');"></div>
+			</section>
+			<!-- EOD : popup_layer -->
+
+
+		</div>
+		<!-- EOD : mainContentIn -->
+	</section>
+	<!-- EOD : mainContent -->
+
+	<!-- footerInclude -->
+	<section class="footerInclude"></section>
+	<!-- EOD : footerInclude -->
+</body>
+</html>

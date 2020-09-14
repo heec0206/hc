@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>대교 써밋</title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- topLayoutInclude -->
+	<section class="headerInclude"></section>
+	<!-- EOD : topLayoutInclude -->
+
+	<!-- member_info -->
+	<section class="member_info">
+		<!-- member_infoBox -->
+		<div class="member_infoBox">
+			<ul>
+				<li class="active"><a href="javascript:void(0);">써밋 국어</a></li>
+				<li><a href="javascript:void(0);">써밋 한자</a></li>
+				<li><a href="javascript:void(0);">써밋 영어</a></li>
+			</ul>
+			<div class="members_num">전체 회원 <strong class="txt_red">110</strong>명</div>
+		</div>
+		<!-- EOD : member_infoBox -->
+	</section>
+	<!-- EOD : member_info -->
+
+	<!-- mainContent -->
+	<section class="mainContent">
+		<!-- mainContentIn -->
+		<div class="mainContentIn">
+			<!-- visit_board -->
+			<section class="visit_board">
+				<div class="calender_date">
+						<button class="btn_prev" title="이전" onclick=""></button>
+						<p>
+							<span id="yearDate">2020.05.26 수요일</span>
+							<span id="datepickerBox">
+								<input type="button" class="ico" onclick="$('.datepicker').datepicker('show');"/>
+								<input type="text" class="datepicker"/>
+							</span>
+						</p>
+						<button class="btn_next" title="다음" onclick=""></button>
+						<!-- <input type="button" value="달력" onclick="$('#date3').datepicker('show');" /> -->
+				</div>
+				<script>
+
+					$(function(){
+						datepicker();
+					});
+
+					function datepicker(){
+
+						var datepicker_year = new Date();
+
+						/* datepicker 한국어 세팅 */
+						$.datepicker.setDefaults({
+							dateFormat: "yy-mm-dd",
+							prevText: '이전 달',
+							nextText: '다음 달',
+							monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+							monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+							dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+							dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+							dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+							showMonthAfterYear: true,
+							yearSuffix: '',
+							changeMonth: true,
+							changeYear: true,
+							buttonImageOnly : false,
+							yearRange: (datepicker_year.getFullYear()-10) + ':' + (datepicker_year.getFullYear()),
+							onSelect: function(dateText, inst) {
+								location.href="edu_days.html";
+							}
+						});
+						$(".datepicker").datepicker();
+					}
+					/*
+					$('html').click(function(e){
+						 if(!$(e.target).hasClass("datepicker")){
+							 $(".ui-datepicker").fadeOut(400);
+						 }
+					});
+					*/
+
+				</script>
+
+				<div class="maxScrollBox">
+					<div class="maxScrollBoxIn">
+
+						<ul class="eod_layout03 layout">
+							<li>
+								<!-- eod_layoutIn -->
+								<article class="eod_layoutIn layout_box">
+									<p class="tit"><span class="txt_strong">오늘 방문 예정 </span><span class="txt_gray02">[</span><strong class="txt_red">13</strong><span class="txt_gray02">]</span></p>
+									<!-- visit_info -->
+									<div class="visit_info">
+										<ul>
+											<li>
+												<!-- info -->
+												<div class="info">
+														<div class="infoL"><span class="icon_user"></span></div>
+														<div class="infoC new"><span class="txt ellipsis">김대교김대교김대교김대교김대교김대교김대교김대교김대교</span><span class="icon_new"></span></div>
+												</div>
+												<!-- EOD : info -->
+											</li>
+
+											<li>
+												<!-- info -->
+												<div class="info">
+														<div class="infoL"><span class="icon_user"></span></div>
+														<div class="infoC new"><span class="txt ellipsis">김대교</span><span class="icon_new"></span></div>
+												</div>
+												<!-- EOD : info -->
+											</li>
+
+											<li>
+												<!-- info -->
+												<div class="info">
+														<div class="infoL"><span class="icon_user"></span></div>
+														<div class="infoC new"><span class="txt ellipsis">김대교김대교김대교김대교김대교김대교김대교김대교</span><span class="icon_new"></span></div>
+														<div class="infoR"><button class="btn_green_M" onclick="popupS('#popup03','show','600','auto');">슬럼프</button></div>
+												</div>
+												<!-- EOD : info -->
+											</li>
+
+											<li>
+												<!-- info -->
+												<div class="info">
+														<div class="infoL"><span class="icon_user"></span></div>
+														<div class="infoC new"><span class="txt ellipsis">김대교</span></div>
+														<div class="infoR"><button class="btn_blue_M" onclick="popupS('#popup04','show','600','auto');">성취도</button></div>
+												</div>
+												<!-- EOD : info -->
+											</li>
+
+										</ul>
+									</div>
+									<!-- EOD : visit_info -->
+								</article>
+								<!-- EOD : eod_layoutIn -->
+							</li>
+
+							<li>
+								<!-- layout_box -->
+								<article class="eod_layoutIn layout_box">
+									<p class="tit"><span class="txt_strong">어제 미방문 회원 </span><span class="txt_gray02">[</span><strong class="txt_red">0</strong><span class="txt_gray02">]</span></p>
+									<!-- visit_info -->
+									<div class="visit_info">
+										<div class="noData">
+											<div><span class="ico"></span>결석 (미방문) 학생이 없습니다.</div>
+										</div>
+									</div>
+									<!-- EOD : visit_info -->
+								</article>
+								<!-- EOD : layout_box -->
+							</li>
+
+							<li>
+								<!-- eod_layoutIn -->
+								<article class="eod_layoutIn layout_box">
+									<p class="tit"><span class="txt_strong">체험 회원 </span><span class="txt_gray02">[</span><strong class="txt_red">13</strong><span class="txt_gray02">]</span></p>
+									<!-- visit_info -->
+									<div class="visit_info">
+										<ul>
+											<li>
+												<!-- info -->
+												<div class="info">
+														<div class="infoL"><span class="icon_user"></span></div>
+														<div class="infoC new"><span class="txt ellipsis">김대교</span><span class="icon_new"></span></div>
+														<!-- 2020.06.23 수정요청사항 반영 -->
+														<div class="infoR"><button class="btn_red_M pd0" onclick="popupS('#popup01','show','600','auto');">정회원 등록</button></div>
+														<!-- EOD : 2020.06.23 수정요청사항 반영 -->
+												</div>
+												<!-- EOD : info -->
+											</li>
+										</ul>
+									</div>
+									<!-- EOD : visit_info -->
+								</article>
+								<!-- EOD : eod_layoutIn -->
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- EOD : visit_board -->
+
+			<!-- layout_box -->
+				<section class="layout_box mt20">
+					<!-- maxScrollBox -->
+					<div class="maxScrollBox">
+						<!-- maxScrollBoxIn -->
+						<div class="maxScrollBoxIn">
+
+							<table class="table_brdN">
+								<caption>이름, 회원번호, 학년, 방문요일, 최근학습, 학습완료일, 학습시간, 점수, 학습결과서, 리셋, 리셋이력, 상세이력으로 구성된 전체회원 리스트 상세</caption>
+								<colgroup>
+									<col width="8%"/>
+									<col width="*"/>
+									<col width="5%"/>
+									<col width="8%"/>
+									<col width="10%"/>
+									<col width="9%"/>
+									<col width="8%"/>
+									<col width="5%"/>
+									<col width="11%"/>
+									<col width="4%"/>
+									<col width="7.5%"/>
+									<col width="10.5%"/>
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="sorting">이름</th>
+										<th class="sorting active">회원번호</th>
+										<th class="sorting">학년</th>
+										<th>방문요일</th>
+										<th class="sorting">최근학습</th>
+										<th>학습완료일</th>
+										<th>학습시간</th>
+										<th>점수</th>
+										<th>학습결과서</th>
+										<th>리셋</th>
+										<th>리셋이력</th>
+										<th>상세이력</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="ac brdN">김대교</td>
+										<td class="ac">1000000879</td>
+										<td class="ac">P4</td>
+										<td class="ac">월2/수</td>
+										<td class="ac">4레벨-1레슨</td>
+										<td class="ac">20-02-10</td>
+										<td class="ac">51분</td>
+										<td class="ac"><span class="txt_red txt_strong">88점</span></td>
+										<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+										<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+										<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
+										<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+									</tr>
+									<tr>
+										<td class="ac brdN">김대교</td>
+										<td class="ac">1000000879</td>
+										<td class="ac">P4</td>
+										<td class="ac">월2/수</td>
+										<td class="ac">4레벨-1레슨</td>
+										<td class="ac">20-02-10</td>
+										<td class="ac">51분</td>
+										<td class="ac"><span class="txt_red txt_strong">88점</span></td>
+										<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+										<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+										<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
+										<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+									</tr>
+									<tr>
+										<td class="ac brdN">김대교</td>
+										<td class="ac">1000000879</td>
+										<td class="ac">P4</td>
+										<td class="ac">월2/수</td>
+										<td class="ac">4레벨-1레슨</td>
+										<td class="ac">20-02-10</td>
+										<td class="ac">51분</td>
+										<td class="ac"><span class="txt_red txt_strong">88점</span></td>
+										<td class="ac"><button class="btn_green02_M" onclick="location.href='coaching.html'">1:1코칭</button></td>
+										<td class="ac"><button class="btn_reset" onclick="" title="리셋"></button></td>
+										<td class="ac"><button class="btn_black_XS" onclick="popupS('#popup02','show','600','auto');">1회</button></td>
+										<td class="ac"><button class="btn_black_M" onclick="location.href='edu_info.html'">상세이력</button></td>
+									</tr>
+									<!-- noData
+										<tr>
+											<td colspan="12">
+												<div class="noData">
+													<span class="ico"></span>오늘 방문 회원이 없습니다.
+												</div>
+											</td>
+										</tr>
+									-->
+								</tbody>
+							</table>
+
+						</div>
+						<!-- EOD : maxScrollBoxIn -->
+					</div>
+					<!-- EOD : maxScrollBox -->
+					<p class="txt_symbol01 txt_gray01"><span>※</span>해당 화면에서 제공되는 학습 이력은 레슨학습 기준입니다.</p>
+					<div class="btn_center mt10"><button class="btn_more" onclick="">더보기</button></div>
+				</section>
+				<!-- EOD : layout_box -->
+
+			<!-- popup_layer -->
+			<section class="popup_wrap type02" id="popup01">
+				<!-- popup_Box -->
+				<div class="popup_Box">
+					<!-- popup_BoxIn -->
+					<div class="popup_BoxIn">
+						<div class="popupH">정회원 등록<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup01','close');"><img src="images/icon_windowPop_close.png" alt="닫기"></a></div>
+						<!-- popupCBox -->
+						<div class="popupCBox">
+							<!-- popupCBoxIn -->
+							<div class="popupCBoxIn">
+
+								<table class="table_brdN">
+									<caption>회원번호, 이름, 제품(코드)/학년, 학습과정, 출발점 등록, 교사선택, 방문횟수, 방문일시로 구성된 정회원등록 상세</caption>
+									<colgroup>
+										<col width="25%"/>
+										<col width="*"/>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th class="ac brdN">회원번호</th>
+											<td>
+												<div class="wide_input">
+													<input class="maxW readOnly" type="number" value="1000000879" readonly/>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th class="ac brdN">이름</th>
+											<td>
+												<div class="wide_input">
+													<input class="maxW readOnly" type="text" value="김대교" readonly/>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th class="ac brdN">제품(코드)/학년</th>
+											<td class="ac">
+												<!-- eod_layout03 form -->
+												<ul class="eod_layout03 form">
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>제품 선택</span></label>
+																<select id="select_box01">
+																	<option value="">제품 선택</option>
+																	<option value="">제품 선택1</option>
+																	<option value="">제품 선택2</option>
+																	<option value="">제품 선택3</option>
+																</select>
+															</div>
+														</div>
+													</li>
+
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>학년 선택</span></label>
+																<select id="select_box01">
+																	<option value="">학년 선택</option>
+																	<option value="">학년 선택1</option>
+																	<option value="">학년 선택2</option>
+																	<option value="">학년 선택3</option>
+																</select>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<!-- eod_layout03 form -->
+											</td>
+										</tr>
+
+										<tr>
+											<th class="ac brdN">학습과정</th>
+											<td>
+												<div class="wide_input">
+													<input class="maxW readOnly" type="text" value="(코드에 따라 자동입력)" readonly/>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th class="ac brdN">출발점 등록</th>
+											<td>
+												<ul class="eod_layout03 form">
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>레벨 선택</span></label>
+																<select id="select_box01">
+																	<option value="">레벨 선택</option>
+																	<option value="">레벨 선택1</option>
+																	<option value="">레벨 선택2</option>
+																	<option value="">레벨 선택3</option>
+																</select>
+															</div>
+														</div>
+													</li>
+
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>레슨 선택</span></label>
+																<select id="select_box01">
+																	<option value="">레슨 선택</option>
+																	<option value="">레슨 선택1</option>
+																	<option value="">레슨 선택2</option>
+																	<option value="">레슨 선택3</option>
+																</select>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<th class="ac brdN">교사선택</th>
+											<td>
+												<ul class="eod_layout03 form">
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>김교사</span></label>
+																<select id="select_box01">
+																	<option value="">김교사</option>
+																	<option value="">이교사</option>
+																	<option value="">최교사</option>
+																	<option value="">박교사</option>
+																</select>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<th class="ac brdN">방문횟수</th>
+											<td>
+												<ul class="eod_layout03 form">
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>1</span></label>
+																<select id="select_box01">
+																	<option value="">1</option>
+																	<option value="">2</option>
+																	<option value="">3</option>
+																	<option value="">4</option>
+																</select>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<th class="ac brdN">방문일시</th>
+											<td>
+												<ul class="eod_layout03 form">
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>월요일</span></label>
+																<select id="select_box01">
+																	<option value="">월요일</option>
+																	<option value="">화요일</option>
+																	<option value="">수요일</option>
+																	<option value="">목요일</option>
+																	<option value="">금요일</option>
+																</select>
+															</div>
+														</div>
+													</li>
+
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>10시</span></label>
+																<select id="select_box01">
+																	<option value="">10시</option>
+																	<option value="">11시</option>
+																	<option value="">12시</option>
+																	<option value="">13시</option>
+																	<option value="">14시</option>
+																	<option value="">15시</option>
+																	<option value="">16시</option>
+																	<option value="">17시</option>
+																	<option value="">18시</option>
+																	<option value="">19시</option>
+																	<option value="">20시</option>
+																	<option value="">21시</option>
+																	<option value="">22시</option>
+																</select>
+															</div>
+														</div>
+													</li>
+
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>0분</span></label>
+																<select id="select_box01">
+																	<option value="">0분</option>
+																	<option value="">10분</option>
+																	<option value="">20분</option>
+																	<option value="">30분</option>
+																	<option value="">40분</option>
+																	<option value="">50분</option>
+																	<option value="">60분</option>
+																</select>
+															</div>
+														</div>
+													</li>
+
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>월요일</span></label>
+																<select id="select_box01">
+																	<option value="">월요일</option>
+																	<option value="">화요일</option>
+																	<option value="">수요일</option>
+																	<option value="">목요일</option>
+																	<option value="">금요일</option>
+																</select>
+															</div>
+														</div>
+													</li>
+
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>10시</span></label>
+																<select id="select_box01">
+																	<option value="">10시</option>
+																	<option value="">11시</option>
+																	<option value="">12시</option>
+																	<option value="">13시</option>
+																	<option value="">14시</option>
+																	<option value="">15시</option>
+																	<option value="">16시</option>
+																	<option value="">17시</option>
+																	<option value="">18시</option>
+																	<option value="">19시</option>
+																	<option value="">20시</option>
+																	<option value="">21시</option>
+																	<option value="">22시</option>
+																</select>
+															</div>
+														</div>
+													</li>
+
+													<li>
+														<div class="eod_layoutIn">
+															<div class="select_box wide_input">
+																<label for="select_box01"><span>0분</span></label>
+																<select id="select_box01">
+																	<option value="">0분</option>
+																	<option value="">10분</option>
+																	<option value="">20분</option>
+																	<option value="">30분</option>
+																	<option value="">40분</option>
+																	<option value="">50분</option>
+																	<option value="">60분</option>
+																</select>
+															</div>
+														</div>
+													</li>
+												</ul>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p class="txt_info">선택하신 방문일시가 중복됩니다. 다른 요일/시간을 선택해 주세요.</p>
+							</div>
+							<!-- EOD : popupCBoxIn -->
+						</div>
+						<!-- EOD : popupCBox -->
+						<div class="popupF">
+								<button type="button" class="btn_black_L" onclick="popupS('#popup01','close');">닫기</button>
+						</div>
+					</div>
+					<!-- EOD : popup_BoxIn -->
+				</div>
+				<!-- EOD : popup_Box -->
+				<div class="popup_bg" onclick="popupS('#popup01','close');"></div>
+			</section>
+			<!-- EOD : popup_layer -->
+
+			<!-- popup_layer -->
+			<section class="popup_wrap type02" id="popup02">
+				<!-- popup_Box -->
+				<div class="popup_Box">
+					<!-- popup_BoxIn -->
+					<div class="popup_BoxIn">
+						<div class="popupH">리셋이력<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup02','close');"><img src="images/icon_windowPop_close.png" alt="닫기"></a></div>
+						<!-- popupCBox -->
+						<div class="popupCBox">
+							<!-- popupCBoxIn -->
+							<div class="popupCBoxIn">
+								<table class="table_normal">
+									<caption>횟수, 리셋일시, 이전점수로 구성된 리셋이력 상세</caption>
+									<colgroup>
+										<col width="25%">
+										<col width="*">
+										<col width="25%">
+									</colgroup>
+									<thead>
+									  <tr>
+											<th>횟수</th>
+											<th>리셋일시</th>
+											<th>이전점수</th>
+									  </tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="ac brdN"><p class="txt_strong txt_black mt0">1회</p></td>
+											<td class="ac">2020.05.06 13:50</td>
+											<td class="ac"><p class="txt_strong txt_red mt0">30점</p></td>
+										</tr>
+										<tr>
+											<td class="ac brdN"><p class="txt_strong txt_black mt0">2회</p></td>
+											<td class="ac">2020.05.06 13:50</td>
+											<td class="ac"><p class="txt_strong txt_red mt0">50점</p></td>
+										</tr>
+										<tr>
+											<td class="ac brdN"><p class="txt_strong txt_black mt0">3회</p></td>
+											<td class="ac">2020.05.06 13:50</td>
+											<td class="ac"><p class="txt_strong txt_red mt0">60점</p></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- EOD : popupCBoxIn -->
+						</div>
+						<!-- EOD : popupCBox -->
+						<div class="popupF">
+								<button type="button" class="btn_black_L" onclick="popupS('#popup02','close');">닫기</button>
+						</div>
+					</div>
+					<!-- EOD : popup_BoxIn -->
+				</div>
+				<!-- EOD : popup_Box -->
+				<div class="popup_bg" onclick="popupS('#popup01','close');"></div>
+			</section>
+			<!-- EOD : popup_layer -->
+
+			<!-- popup_layer -->
+			<!-- 2020.06.19 수정요청사항 반영 -->
+			<section class="popup_wrap type02 slamp" id="popup03">
+			<!-- EOD : 2020.06.19 수정요청사항 반영 -->
+				<!-- popup_Box -->
+				<div class="popup_Box">
+					<!-- popup_BoxIn -->
+					<div class="popup_BoxIn">
+						<!-- <div class="popupH">슬럼프 관리<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup03','close');"><img src="images/icon_windowPop_close.png" alt="닫기"></a></div> -->
+						<!-- popupCBox -->
+						<div class="popupCBox">
+							<!-- popupCBoxIn -->
+							<div class="popupCBoxIn">
+								<div class="pop_heading">
+									<!-- 2020.06.23 수정요청사항 반영 -->
+									<h3 class="mt0 pop_slampTit">김대교 (P3)<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup03','close');"><img src="images/icon_slampPop_close.png" alt="닫기"></a></h3>
+									<!-- EOD : 2020.06.23 수정요청사항 반영 -->
+									<p class="txt_default mt0"><span class="txt_strong txt_red">슬럼프가 예측되는 회원</span>입니다. 선생님의 도움이 필요합니다.</p>
+								</div>
+
+								<ul class="slump_list">
+									<li>
+										<p class="txt_reple">레슨학습 정리에서 '싫었어요'라는 답변을, 3번 이상 연속으로 선택했어요.</p>
+										<button class="btn_red_S">해결완료</button>
+									</li>
+									<li>
+										<p class="txt_reple">레슨학습 점수가 30점 미만인 경우가, 3번 이상 연속 되었어요.</p>
+										<button class="btn_red_S">해결완료</button>
+									</li>
+									<li>
+										<p class="txt_reple">레슨학습 정리에서 '문제가 어렵다'는 답변을, 3번 이상 연속으로 선택했어요.</p>
+										<button class="btn_red_S">해결완료</button>
+									</li>
+									<li>
+										<p class="txt_reple">학습시간에 출석하지 않은 횟수가, 연속 2주를 넘었어요.</p>
+										<button class="btn_red_S">해결완료</button>
+									</li>
+								</ul>
+								<div class="noData" style="display:none;"><span class="ico"></span>슬럼프 내역이 없습니다.</div>
+								<script>
+									$(".slump_list button").off("click").click(function(){
+											slumpN = $(this).closest("ul").find("li").length-1;
+
+											if(slumpN == 0){
+												$(this).closest("ul").siblings(".noData").show();
+												$(this).closest("ul").remove();
+											}
+											$(this).closest("li").remove();
+									});
+								</script>
+							</div>
+							<!-- EOD : popupCBoxIn -->
+						</div>
+						<!-- EOD : popupCBox -->
+						<div class="popupF">
+							<button type="button" class="btn_black_L" onclick="popupS('#popup03','close');">확인</button>
+						</div>
+					</div>
+					<!-- EOD : popup_BoxIn -->
+				</div>
+				<!-- EOD : popup_Box -->
+				<div class="popup_bg" onclick="popupS('#popup03','close');"></div>
+			</section>
+			<!-- EOD : popup_layer -->
+
+			<!-- popup_layer -->
+			<!-- 2020.06.19 수정요청사항 반영 -->
+			<section class="popup_wrap type02 slamp" id="popup04">
+			<!-- EOD : 2020.06.19 수정요청사항 반영 -->
+				<!-- popup_Box -->
+				<div class="popup_Box">
+					<!-- popup_BoxIn -->
+					<div class="popup_BoxIn">
+						<!-- <div class="popupH">성취도 관리<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup04','close');"><img src="images/icon_windowPop_close.png" alt="닫기"></a></div> -->
+						<!-- popupCBox -->
+						<div class="popupCBox">
+							<!-- popupCBoxIn -->
+							<div class="popupCBoxIn">
+								<div class="pop_heading">
+									<!-- 2020.06.23 수정요청사항 반영 -->
+									<h3 class="mt0 pop_slampTit">김대교 (P3)<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup04','close');"><img src="images/icon_slampPop_close.png" alt="닫기"></a></h3>
+									<!-- EOD : 2020.06.23 수정요청사항 반영 -->
+									<p class="txt_default mt0"><span class="txt_strong txt_red">학습 성취도가 낮은 회원</span>입니다. 선생님의 도움이 필요합니다.</p>
+								</div>
+
+								<ul class="slump_list">
+									<li>
+										<p class="txt_reple">레슨학습 정리에서 '싫었어요'라는 답변을, 3번 이상 연속으로 선택했어요.</p>
+										<button class="btn_red_S">해결완료</button>
+									</li>
+									<li>
+										<p class="txt_reple">레슨학습 점수가 30점 미만인 경우가, 3번 이상 연속 되었어요.</p>
+										<button class="btn_red_S">해결완료</button>
+									</li>
+								</ul>
+								<div class="noData" style="display:none;"><span class="ico"></span>성취도 내역이 없습니다.</div>
+								<script>
+									$(".slump_list button").off("click").click(function(){
+											slumpN = $(this).closest("ul").find("li").length-1;
+
+											if(slumpN == 0){
+												$(this).closest("ul").siblings(".noData").show();
+												$(this).closest("ul").remove();
+											}
+											$(this).closest("li").remove();
+									});
+								</script>
+							</div>
+							<!-- EOD : popupCBoxIn -->
+						</div>
+						<!-- EOD : popupCBox -->
+						<div class="popupF">
+							<button type="button" class="btn_black_L" onclick="popupS('#popup04','close');">확인</button>
+						</div>
+					</div>
+					<!-- EOD : popup_BoxIn -->
+				</div>
+				<!-- EOD : popup_Box -->
+				<div class="popup_bg" onclick="popupS('#popup03','close');"></div>
+			</section>
+			<!-- EOD : popup_layer -->
+
+		</div>
+		<!-- EOD : mainContentIn -->
+	</section>
+	<!-- EOD : mainContent -->
+
+	<!-- footerInclude -->
+	<section class="footerInclude"></section>
+	<!-- EOD : footerInclude -->
+</body>
+</html>

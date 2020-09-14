@@ -1,0 +1,285 @@
+<div class="ajax_loader"><img src="../images/ajax_loader.gif"/></div>
+
+<div class="printWrap">
+	<section class="pl_header">
+		<div class="pl_headerBox">
+			<img class="logo" src="../images/icon_print_logo01.png">
+			<img class="logo2" src="../images/icon_print_logo02.png">
+		</div>
+
+		<p class="print_tit"><span>선택학습 성취도 분석</span><button class="btn_black_S print" onclick="windowPrint()"><img src="../images/icon_p_bg_gray03.png">인쇄</button></p>
+		<script>
+			function windowPrint(){
+				window.print();
+			}
+		</script>
+		<div class="pl_user">
+			<div class="pl_userL">
+				<img src="../images/icon_pl_user.png">
+				<p>김대교<span>3레벨</span></p>
+			</div>
+			<div class="pl_userC">
+				<p>3학년 2학기</p>
+			</div>
+			<div class="pl_userR">
+				<img src="../images/icon_pl_user_bg.png">
+				<div class="pl_userR_txt">
+					<p><strong>학습일</strong>2020.05.18</p>
+					<p><strong>담당교사</strong>이대교</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pl_content type02">
+		<p class="print_tit02 mt0">단원평가 결과<img src="../images/icon_pl_title02_bg.png"></p>
+
+		<p class="p_txt_stars02"><img src="../images/icon_p_stars.png">단원평가 분석</p>
+		<table class="table_normal pd">
+			<caption>학습 내용, 1회,2회,3회로 구성된 단원평가 분석 상세</caption>
+			<colgroup>
+				<col width="*">
+				<col width="7%">
+				<col width="13%">
+				<col width="7%">
+				<col width="13%">
+				<col width="7%">
+				<col width="13%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>학습 내용</th>
+					<th colspan="2">1회</th>
+					<th colspan="2">2회</th>
+					<th colspan="2">3회</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="pd_tit">1. 작품을 보고 느낌을 나누어요</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+				</tr>
+				<tr>
+					<td class="pd_tit">2. 작품을 보고 느낌을 나누어요</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+				</tr>
+				<tr>
+					<td class="pd_tit">3. 작품을 보고 느낌을 나누어요</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+				</tr>
+				<tr>
+					<td class="pd_tit">4. 작품을 보고 느낌을 나누어요</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+				</tr>
+				<tr>
+					<td class="pd_tit">5. 작품을 보고 느낌을 나누어요</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+				</tr>
+				<tr>
+					<td class="pd_tit">6. 작품을 보고 느낌을 나누어요</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+					<td class="ac"><strong class="p_txt_red">80점</strong></td>
+					<td class="ac">학습일 : 09.15</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p class="p_txt_stars02"><img src="../images/icon_p_stars.png">단원별 성취도 분석</p>
+		<div class="pl_contentSub" id="p_barChart03">
+			<script>
+				$(function(){
+					$.ajax({
+						url : "bar_chart03.html",
+						dataType : "html",
+						success : function(result){
+							$("#p_barChart03").html(result);
+						}
+					});
+				});
+			</script>
+		</div>
+	</section>
+
+	<div class="pl_contentSub type02">
+		<p class="print_tit02 mt0">성취도평가_중간<img src="../images/icon_pl_title02_bg.png"></p>
+
+		<div class="pd_chartBox">
+			<div class="pd_chartBoxL">
+				<div class="p_txt_box type04">
+					<p class="p_learning_info03">
+							<img src="../images/icon_p_bg_gray01.png"/>
+							점수 <strong>80점</strong>
+					</p>
+					<span class="txt_gray01"><strong class="p_txt_red">9문제 맞힘</strong> /15문제</span>
+					<div class="p_txt">
+						<p class="txt_gray01"><strong class="txt_black01">학습 시간</strong> 16분</p>
+						<p class="txt_gray01"><strong class="txt_black01">학습일</strong> 2020.05.20</p>
+					</div>
+				</div>
+
+				<div class="pd_table p_layoutBox">
+					<div class="pd_tableL">
+						<table class="table_normal tabs">
+						<caption>단원,번호,결과로 구성된 단원평가 분석 상세</caption>
+						<colgroup>
+							<col width="*">
+							<col width="15%">
+							<col width="15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>단원</th>
+								<th>번호</th>
+								<th>결과</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="ac" rowspan="3">1. 작품을 보고 느낌을 나누어요</td>
+								<td class="ac"><span class="tabs_num">1</span></td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"></td>
+							</tr>
+							<tr>
+								<td class="bl ac"><span class="tabs_num">2</span></td>
+								<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"></td>
+							</tr>
+							<tr>
+								<td class="bl ac"><span class="tabs_num">3</span></td>
+								<td class="ac"><img class="table_answer03" src="../images/icon_p_answer03.png"></td>
+							</tr>
+
+							<tr>
+								<td class="ac" rowspan="3">2. 작품을 보고 느낌을 나누어요</td>
+								<td class="ac"><span class="tabs_num">4</span></td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"></td>
+							</tr>
+							<tr>
+								<td class="bl ac"><span class="tabs_num">5</span></td>
+								<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"></td>
+							</tr>
+							<tr>
+								<td class="bl ac"><span class="tabs_num">6</span></td>
+								<td class="ac"><img class="table_answer03" src="../images/icon_p_answer03.png"></td>
+							</tr>
+
+							<tr>
+								<td class="ac" rowspan="2">3. 작품을 보고 느낌을 나누어요</td>
+								<td class="ac"><span class="tabs_num">7</span></td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"></td>
+							</tr>
+							<tr>
+								<td class="bl ac"><span class="tabs_num">8</span></td>
+								<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"></td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					<!-- 3단원 이상 -->
+					<div class="pd_tableR">
+						<table class="table_normal tabs">
+						<caption>단원,번호,결과로 구성된 단원평가 분석 상세</caption>
+						<colgroup>
+							<col width="*">
+							<col width="15%">
+							<col width="15%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>단원</th>
+								<th>번호</th>
+								<th>결과</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="ac" rowspan="2">4. 작품을 보고 느낌을 나누어요</td>
+								<td class="ac"><span class="tabs_num">9</span></td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"></td>
+							</tr>
+							<tr>
+								<td class="bl ac"><span class="tabs_num">10</span></td>
+								<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"></td>
+							</tr>
+							<tr>
+								<td class="ac" rowspan="3">5. 작품을 보고 느낌을 나누어요</td>
+								<td class="bl ac"><span class="tabs_num">11</span></td>
+								<td class="ac"><img class="table_answer03" src="../images/icon_p_answer03.png"></td>
+							</tr>
+							<tr>
+								<td class="ac"><span class="tabs_num">12</span></td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"></td>
+							</tr>
+							<tr>
+								<td class="bl ac"><span class="tabs_num">13</span></td>
+								<td class="ac"><img class="table_answer02" src="../images/icon_p_answer02.png"></td>
+							</tr>
+							<tr>
+								<td class="ac" rowspan="2">6. 작품을 보고 느낌을 나누어요</td>
+								<td class="ac"><span class="tabs_num">14</span></td>
+								<td class="ac"><img class="table_answer03" src="../images/icon_p_answer03.png"></td>
+							</tr>
+							<tr>
+								<td class="ac"><span class="tabs_num">15</span></td>
+								<td class="ac"><img class="table_answer01" src="../images/icon_p_answer01.png"></td>
+							</tr>
+							<tr>
+								<td class="ac"></td>
+								<td class="blN ac"></td>
+								<td class="blN ac"></td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					<!-- EOD : 3단원 이상 -->
+				</div>
+			</div>
+			<div class="pd_chartBoxR">
+				<div class="p_layoutBox type02" id="p_bar_chart04">
+					<script>
+						$(function(){
+							$.ajax({
+								url : "bar_chart04.html",
+								dataType : "html",
+								success : function(result){
+									$("#p_bar_chart04").html(result);
+								}
+							});
+						});
+					</script>
+			</div>
+			<!-- EOD : p_layoutBox -->
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
