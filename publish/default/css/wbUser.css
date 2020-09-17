@@ -1,0 +1,29 @@
+/* topLayout */
+.topLayout { }
+/* EOD : topLayout */
+
+/* contentLayout */
+.contentLayout { max-width:1200px; min-height:600px; margin:0 auto; padding:0 16px 60px 16px; }
+/* EOD : contentLayout */
+
+/* faqList */
+.faqList { border-top:2px solid #000; border-bottom:2px solid #000; }
+	.faqList a { position:relative; display:block; padding:20px 60px 20px 65px; font-weight:400; border-bottom:1px solid #dadada; }
+	.faqList a:before { content:''; position:absolute; top:50%; left:15px; margin:-20px 0 0 0; width:40px; height:40px; background:url(../../../images/template7/resp/default/icon/icon_qna_Icon_q.png) no-repeat; }
+		.faqList a i { position:absolute; right:20px; top:50%; margin:-15px 0 0 0; font-size:30px; color:#333; }
+	.faqList .faq_content { display:none; position:relative; padding:20px 10px 20px 65px; font-size:15px; background:#f7f7f7; border-bottom:1px solid #dadada; }
+	.faqList .faq_content:before { content:''; position:absolute; top:50%; left:15px; margin:-20px 0 0 0; width:40px; height:40px; background:url(../../../images/template7/resp/default/icon/icon_qna_Icon_a.png) no-repeat; }
+/* EOD : faqList */
+
+/* footer */
+.footerLayout {  }
+/* EOD : footer */
+
+@media only all and (max-width: 1199px){
+	
+}
+
+
+@media only all and (max-width: 640px){
+	
+}

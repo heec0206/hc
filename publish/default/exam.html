@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="scr.css" rel="stylesheet"/>
+	<link href="common.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!--
+	<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+	<script src="scr.js"></script>
+	-->
+<style>
+	.zzz { position:absolute; top:0; left:50px; }
+	.ggg { margin:20px 0 0 0; }
+	.zzz:focus { color:red; }
+</style>
+</head>
+<body>
+
+<script>
+  $(function(){
+   var thorUrl = location.href;
+   var $gnb = $(".n_category li");
+   if(thorUrl.indexOf('ex') > 0){
+    $gnb.addClass("off");
+    $gnb.eq(0).addClass("on");
+		console.log("zz");
+  });
+
+
+</script>
+
+
+</body>
+</html>

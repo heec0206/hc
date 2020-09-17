@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>	
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- headerInclude -->
+<header class="headerInclude"></header>
+<!-- EOD : headerInclude -->
+
+<!-- contentLayout -->
+<section class="contentLayout">
+	<!-- contentLayoutIn -->	
+	<div class="contentLayoutIn">
+	
+		<h2>컴포넌트</h2>
+		<nav class="tabBox">
+			<ul>
+				<li><a href="guide.html"><span>개요</span></a></li>
+				<li><a href="layout.html"><span>레이아웃</span></a></li>
+				<li class="active"><a href="commponent.html"><span>컴포넌트</span></a></li>
+				<li><a href="font.html"><span>폰트</span></a></li>
+				<li><a href="table.html"><span>테이블</span></a></li>
+				<li><a href="etc.html"><span>기타</span></a></li>
+			</ul>
+		</nav>
+	
+		<article>
+			<ul class="inputList">
+				<li>
+					<input type="checkbox" id="chkBoxAni01"/>
+					<label for="chkBoxAni01">기본</label>
+				</li>
+				<li>
+					<input class="chk_ani01" type="checkbox" id="chkBoxAni02"/>
+					<label for="chkBoxAni02"><span></span>chkbox Ani01</label>
+				</li>
+				<li>
+					<input class="chk_ani02" type="checkbox" id="chkBoxAni03"/>
+					<label for="chkBoxAni03"><span></span>chkbox Ani02</label>
+				</li>
+			</ul>
+			<ul class="inputList">
+				<li>
+					<input type="radio" id="radioGroup01_01" name="radioGroup01"/>
+					<label for="radioGroup01_01">기본</label>
+				</li>
+				<li>
+					<input class="rad_ani01" type="radio" id="radioGroup01_02" name="radioGroup01"/>
+					<label for="radioGroup01_02"><span></span>radio Ani01</label>
+				</li>
+				<li>
+					<input class="rad_ani02" type="radio" id="radioGroup01_03" name="radioGroup01"/>
+					<label for="radioGroup01_03"><span></span>radio Ani02</label>
+				</li>
+				<li>
+					<input class="rad_ani03" type="radio" id="radioGroup01_04" name="radioGroup01"/>
+					<label for="radioGroup01_04"><span></span>radio Ani03</label>
+				</li>
+			</ul>
+			
+			<ul class="inputList02">
+				<li>
+					<input type="radio" id="radio02_01" name="radioGroup02"/>
+					<label for="radio02_01">한줄 라디오01</label>
+				</li>
+				<li>
+					<input type="radio" id="radio02_02" name="radioGroup02"/>
+					<label for="radio02_02">한줄 라디오02</label>
+				</li>
+				<li>
+					<input type="radio" id="radio02_03" name="radioGroup02"/>
+					<label for="radio02_03">한줄 라디오03</label>
+				</li>
+			</ul>
+			
+			<input type="text"/>
+			<br/><br/>
+			<div class="wide_input"><input type="text" placeholder="입력해주세요."/></div>
+			
+			<br/>
+			<input class="cal_input" type="text"/>
+			<script>
+				$(function() {
+					$(".cal_input").datepicker({
+					    dateFormat: 'yy-mm-dd',
+						prevText: '이전 달',
+						nextText: '다음 달',
+						monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+						monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+						dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+						dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+						dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+						showMonthAfterYear: true,
+						yearSuffix: '년'
+					});
+				});
+			</script>
+			
+			<br/><br/>
+			<div class="select_box">
+				<label for="select_box01"><span>선택</span></label>
+				<select id="select_box01">
+					<option value="">선택</option>
+					<option value="">선택1</option>
+					<option value="">선택2</option>
+				</select>
+			</div>
+			<br/><br/>
+			
+			<div class="wide_select">
+				<div class="select_box">
+					<label for="select_box02"><span>선택</span></label>
+					<select id="select_box02">
+						<option value="">선택</option>
+						<option value="">선택1</option>
+						<option value="">선택2</option>
+					</select>
+				</div>
+			</div>
+			<br/><br/>
+			
+			<div class="phoneList">
+				<div class="conBox">
+					<div class="wide_select">
+						<div class="select_box">
+							<label for="find_id_phone"><span>010</span></label>
+							<select id="find_id_phone">
+								<option>010</option>
+								<option>011</option>
+								<option>017</option>
+								<option>019</option>
+							</select>
+						</div>	
+					</div> 
+				</div>
+				<div class="spaceBox">-</div>
+				<div class="conBox">
+					<div class="wide_input">
+						<input type="number" maxlength="4" title="연락처 앞자리">
+					</div>
+				</div>
+				<div class="spaceBox">-</div>
+				<div class="conBox">
+					<div class="wide_input">
+						<input type="number" maxlength="4" title="연락처 뒷자리">
+					</div>
+				</div>
+			</div>
+			<br/>
+			
+			<div class="phoneList email">
+				<div class="conBox">
+					<div class="wide_input">
+						<input type="email" title="이메일 아이디">
+					</div>
+				</div>
+				<div class="spaceBox">@</div>
+				<div class="conBox">
+					<div class="wide_input">
+						<input type="email" title="이메일 뒷자리">
+					</div>
+				</div>
+				<div class="spaceBox"></div>
+				<div class="conBox">
+					<div class="wide_select">
+						<div class="select_box">
+							<label for="find_id_phone"><span>직접입력</span></label>
+							<select id="find_id_phone">
+								<option>직접입력</option>
+								<option>naver.com</option>
+							</select>
+						</div>	
+					</div> 
+				</div>
+			</div>
+		</article>
+		
+		<article style="margin:50px 0 0 0;">
+			<button class="btn_black" onclick="">버튼01</button>
+			<button class="btn_gray01" onclick="">버튼02</button>
+			<button class="btn_gray02" onclick="">버튼03</button>
+			<button class="btn_orange" onclick="">버튼04</button>
+			<button class="btn_blue" onclick="">버튼05</button>
+		</article>
+		
+	</div>
+	<!-- EOD : contentLayoutIn -->
+</section>	
+<!-- EOD : contentLayout -->
+
+<!-- headerInclude -->
+<footer class="footerInclude"></footer>
+<!-- EOD : headerInclude -->

@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta property="og:title" content="test"/>
+	<meta property="og:description" content="test description"/>
+	<meta property="og:image" content="images/test.png"/>
+	<meta property="og:url" content="http://test.test"/>
+	<meta property="og:type" content="website"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>
+	<!-- 파비콘 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- headerInclude -->
+<header class="headerInclude"></header>
+<!-- EOD : headerInclude -->
+
+<!-- contentLayout -->
+<section class="contentLayout">
+	<!-- contentLayoutIn -->
+	<div class="contentLayoutIn">
+
+		<h2>기타</h2>
+		<nav class="tabBox">
+			<ul>
+				<li><a href="guide.html"><span>개요</span></a></li>
+				<li><a href="layout.html"><span>레이아웃</span></a></li>
+				<li><a href="commponent.html"><span>컴포넌트</span></a></li>
+				<li><a href="font.html"><span>폰트</span></a></li>
+				<li><a href="table.html"><span>테이블</span></a></li>
+				<li class="active"><a href="etc.html"><span>기타</span></a></li>
+			</ul>
+		</nav>
+
+		<div class="scrWrap">
+			<div class="scrBox">
+				<div class="scrContainer">
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 1</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 2</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 3</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 4</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 5</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 6</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 7</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 8</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 9</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 10</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 11</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 12</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 13</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 14</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 15</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 16</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 17</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 18</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 19</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 20</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 21</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 22</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 23</p>
+					<p style="margin:0; line-height:1.6; color:#bbb">scroll box > 24</p>
+				</div>
+				<div class="scrDragWrap">
+					<div class="scrDragBox">
+						<div class="scrDragbar"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(function(){
+				$(".scrWrap .scrBox").each(function(index){
+					tN = $(this);
+					deltaH = 0;
+					$(this).find(".scrDragbar").css("height", $(this).find(".scrDragBox").outerHeight()/3 + "px");
+					depth = ($(this).outerHeight() - $(this).find(".scrDragbar").outerHeight())/4;
+					depthH = ($(this).find(".scrContainer").outerHeight() - $(this).outerHeight())/4;
+					tN.find(".scrDragbar").draggable({ axis : "y" });
+
+					tN.on("scroll touchmove mousewheel DOMMouseScroll",function(e){
+						e.preventDefault();
+						var delta = 0;
+						if (e.originalEvent.detail) {
+							delta = e.originalEvent.detail * -40;
+						}else{
+							delta = e.originalEvent.wheelDelta/120;
+						}
+
+						if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta > 0) {
+							//scroll Up
+							if(deltaH > 0){
+								deltaH--;
+								tN.find(".scrContainer").css("top", "-" + deltaH*depthH + "px");
+								tN.find(".scrDragbar").css("top", deltaH*depth + "px");
+							}
+						}else{
+							//scroll Down
+							if(deltaH < 4){
+								deltaH++;
+								tN.find(".scrContainer").css("top", "-" + deltaH*depthH + "px");
+								tN.find(".scrDragbar").css("top", deltaH*depth + "px");
+							}
+						}
+					});
+
+					tN.find(".scrDragbar").on({
+						'dragstart' : function(e){
+							/*
+							e.originalEvent.dataTransfer.setData('text',e.target.id);
+
+							posiH = tN.find(".scrDragbar").position().top;
+							tN.find(".scrDragbar").css("top", posiH+1 +"px");
+							*/
+						},
+
+						'drag' : function(e){
+							posiH = $(this).position().top;
+							posiH = parseInt(posiH);
+							console.log(posiH);
+
+							tN.find(".scrContainer").css("top", "-" + posiH + "px");
+							tN.find(".scrContainer").css("transition", "inherit");
+							tN.find(".scrDragbar").css("transition","inherit");
+						},
+
+						'dragend' : function(e){
+
+
+
+						}
+					});
+
+
+
+
+				});
+			});
+
+		</script>
+
+		<br/><br/>
+
+		<div class="chart" id="lineChartGrid01">
+			<!-- chartIn -->
+			<div class="chartIn">
+				<!-- progress -->
+				<ul class="progress">
+					<li>
+						<div class="progressWrap">
+							<div class="progressBox">
+								<div class="bar"><span class="txt"></span></div>
+								<div class="data">70</div>
+								<div class="gubun">6월1주</div>
+							</div>
+						</div>
+						<div class="progressWrap">
+							<div class="progressBox">
+								<div class="bar"><span class="txt"></span></div>
+								<div class="data">58</div>
+								<div class="gubun">6월2주</div>
+							</div>
+						</div>
+						<div class="progressWrap">
+							<div class="progressBox">
+								<div class="bar"><span class="txt"></span></div>
+								<div class="data">88</div>
+								<div class="gubun">6월3주</div>
+							</div>
+						</div>
+						<div class="progressWrap">
+							<div class="progressBox">
+								<div class="bar"><span class="txt"></span></div>
+								<div class="data">79</div>
+								<div class="gubun">6월4주</div>
+							</div>
+						</div>
+						<div class="progressWrap">
+							<div class="progressBox">
+								<div class="bar"><span class="txt"></span></div>
+								<div class="data">65</div>
+								<div class="gubun">7월1주</div>
+							</div>
+						</div>
+						<div class="progressWrap">
+							<div class="progressBox">
+								<div class="bar"><span class="txt"></span></div>
+								<div class="data">100</div>
+								<div class="gubun">7월2주</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!-- EOD : progress -->
+			</div>
+			<!-- EOD : chartIn -->
+		</div>
+		<!-- EOD : line chart -->
+
+	<script>
+		$("#lineChartGrid01").chart({
+			type : 'line',
+			height : 200,
+			circleHeight : 10,
+			barWidth : 2,
+			background : ["#2fa270"],
+			transition : "0.99s",
+			markStart : 0,
+			markEnd : 100,
+			markInterval : 5,
+			markTooltip : "true",
+			markUnit : "점",
+		});
+	</script>
+
+	<br/><br/>
+	<div class="chart" id="lineChartGrid02">
+		<!-- chartIn -->
+		<div class="chartIn">
+			<!-- progress -->
+			<ul class="progress">
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">70</div>
+							<div class="gubun">6월1주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">58</div>
+							<div class="gubun">6월2주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">88</div>
+							<div class="gubun">6월3주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">79</div>
+							<div class="gubun">6월4주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">65</div>
+							<div class="gubun">7월1주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">100</div>
+							<div class="gubun">7월2주</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- EOD : progress -->
+		</div>
+		<!-- EOD : chartIn -->
+	</div>
+	<!-- EOD : line chart -->
+
+<script>
+	$("#lineChartGrid02").chart({
+		type : 'line',
+		height : 200,
+		circleHeight : 10,
+		barWidth : 2,
+		background : ["#2fa270"],
+		transition : "1.88s",
+		markStart : 0,
+		markEnd : 100,
+		markInterval : 5,
+		markTooltip : "true",
+		markUnit : "%",
+		markGubun : "true",
+		markDrawing : "percentage",
+	});
+</script>
+
+
+	<br/><br/>
+	<div class="chart" id="lineChartGrid03">
+		<!-- chartIn -->
+		<div class="chartIn">
+			<!-- progress -->
+			<ul class="progress">
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">0</div>
+							<div class="gubun">6월1주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">88</div>
+							<div class="gubun">6월2주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">14</div>
+							<div class="gubun">6월3주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">100</div>
+							<div class="gubun">6월4주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">30</div>
+							<div class="gubun">7월1주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">77</div>
+							<div class="gubun">7월2주</div>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">80</div>
+							<div class="gubun">6월1주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">55</div>
+							<div class="gubun">6월2주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">79</div>
+							<div class="gubun">6월3주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">94</div>
+							<div class="gubun">6월4주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">14</div>
+							<div class="gubun">7월1주</div>
+						</div>
+					</div>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="bar"><span class="txt"></span></div>
+							<div class="data">52</div>
+							<div class="gubun">7월2주</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- EOD : progress -->
+		</div>
+		<!-- EOD : chartIn -->
+	</div>
+	<!-- EOD : line chart -->
+
+<script>
+	$("#lineChartGrid03").chart({
+		type : 'line',
+		height : 200,
+		circleHeight : 10,
+		transition : "1.33s",
+		barWidth : 2,
+		background : ["#2fa270","#dd3900"],
+		markStart : 0,
+		markEnd : 150,
+		markInterval : 5,
+		markOption : "true",
+		markGubun : "true",
+		markLine : "false",
+	});
+</script>
+
+<br/><br/>
+<!-- verticalChartGrid -->
+<div class="chart" id="verticalChartGrid01">
+<!-- chartIn -->
+<div class="chartIn">
+  <!-- progress -->
+  <ul class="progress">
+
+    <li>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">100</div>
+          <div class="bar"><span class="txt">접근성 텍스트01</span></div>
+        </div>
+      </div>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">187</div>
+          <div class="bar"><span class="txt">접근성 텍스트02</span></div>
+        </div>
+      </div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">55</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 1주</div>
+    </li>
+
+		<li>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">227</div>
+          <div class="bar"><span class="txt">접근성 텍스트01</span></div>
+        </div>
+      </div>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">0</div>
+          <div class="bar"><span class="txt">접근성 텍스트02</span></div>
+        </div>
+      </div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">300</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 2주</div>
+    </li>
+
+		<li>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">13</div>
+					<div class="bar"><span class="txt">접근성 텍스트01</span></div>
+				</div>
+			</div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">174</div>
+					<div class="bar"><span class="txt">접근성 텍스트02</span></div>
+				</div>
+			</div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">106</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 3주</div>
+		</li>
+
+		<li>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">247</div>
+					<div class="bar"><span class="txt">접근성 텍스트01</span></div>
+				</div>
+			</div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">84</div>
+					<div class="bar"><span class="txt">접근성 텍스트02</span></div>
+				</div>
+			</div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">272</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 4주</div>
+		</li>
+  </ul>
+  <!-- EOD : progress -->
+</div>
+<!-- EOD : chartIn -->
+</div>
+<!-- EOD : verticalChartGrid -->
+
+<script>
+$(function(){
+   $("#verticalChartGrid01").chart({
+    type : 'vertical',
+    margin : 0,
+    speed :    2000,
+    speedTurm : 500,
+    height :    250,
+		markStart : 0,
+		markEnd : 300,
+    barWidth : 36,
+    markInterval : 5,
+		markOption : "true",
+		markGubun : "true",
+		markUnit : "개",
+  });
+ });
+</script>
+
+<br/><br/>
+<!-- verticalChartGrid -->
+<div class="chart" id="verticalChartGrid02">
+<!-- chartIn -->
+<div class="chartIn">
+  <!-- progress -->
+  <ul class="progress">
+
+    <li>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">100</div>
+          <div class="bar"><span class="txt">접근성 텍스트01</span></div>
+        </div>
+      </div>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">187</div>
+          <div class="bar"><span class="txt">접근성 텍스트02</span></div>
+        </div>
+      </div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">55</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 1주</div>
+    </li>
+
+		<li>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">227</div>
+          <div class="bar"><span class="txt">접근성 텍스트01</span></div>
+        </div>
+      </div>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">0</div>
+          <div class="bar"><span class="txt">접근성 텍스트02</span></div>
+        </div>
+      </div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">300</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 2주</div>
+    </li>
+
+		<li>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">13</div>
+					<div class="bar"><span class="txt">접근성 텍스트01</span></div>
+				</div>
+			</div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">174</div>
+					<div class="bar"><span class="txt">접근성 텍스트02</span></div>
+				</div>
+			</div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">106</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 3주</div>
+		</li>
+
+		<li>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">247</div>
+					<div class="bar"><span class="txt">접근성 텍스트01</span></div>
+				</div>
+			</div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">84</div>
+					<div class="bar"><span class="txt">접근성 텍스트02</span></div>
+				</div>
+			</div>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">272</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 4주</div>
+		</li>
+  </ul>
+  <!-- EOD : progress -->
+</div>
+<!-- EOD : chartIn -->
+</div>
+<!-- EOD : verticalChartGrid -->
+
+<script>
+$(function(){
+   $("#verticalChartGrid02").chart({
+    type : 'vertical',
+    margin : 0,
+    speed :    2000,
+    speedTurm : 500,
+    height :    250,
+		markStart : 0,
+		markEnd : 300,
+    barWidth : 36,
+    markInterval : 5,
+		markLine : "false",
+  });
+ });
+</script>
+
+<br/><br/>
+<!-- verticalChartGrid -->
+<div class="chart" id="verticalChartGrid03">
+<!-- chartIn -->
+<div class="chartIn">
+  <!-- progress -->
+  <ul class="progress">
+
+    <li>
+      <div class="progressWrap">
+        <div class="progressBox">
+          <div class="data">100</div>
+          <div class="bar"><span class="txt">접근성 텍스트01</span></div>
+        </div>
+      </div>
+			<div class="gubun">6월 1주</div>
+    </li>
+
+		<li>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">80</div>
+					<div class="bar"><span class="txt">접근성 텍스트02</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 2주</div>
+		</li>
+
+		<li>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">60</div>
+					<div class="bar"><span class="txt">접근성 텍스트03</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 3주</div>
+		</li>
+
+		<li>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">15</div>
+					<div class="bar"><span class="txt">접근성 텍스트04</span></div>
+				</div>
+			</div>
+			<div class="gubun">6월 4주</div>
+		</li>
+
+		<li>
+			<div class="progressWrap">
+				<div class="progressBox">
+					<div class="data">15</div>
+					<div class="bar"><span class="txt">접근성 텍스트04</span></div>
+				</div>
+			</div>
+			<div class="gubun">7월 1주</div>
+		</li>
+  </ul>
+  <!-- EOD : progress -->
+</div>
+<!-- EOD : chartIn -->
+</div>
+<!-- EOD : verticalChartGrid -->
+
+<script>
+$(function(){
+   $("#verticalChartGrid03").chart({
+    type : 'vertical',
+    margin : 0,
+    speed :    2000,
+    speedTurm : 500,
+    height :    250,
+		markStart : 0,
+		markEnd : 100,
+    barWidth : 36,
+    markInterval : 5,
+		markOption : "true",
+		markLine : "true",
+		markUnit : "%",
+  });
+ });
+</script>
+
+<br/><br/>
+<div class="chart" id="horiChartGrid01">
+	<div class="chartIn">
+		<ul class="progress">
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">6월1주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">0</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">6월2주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">121</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">6월3주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">1000</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">6월4주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">990</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">7월1주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">441</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">7월2주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">20</span>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		$("#horiChartGrid01").chart({
+			type : 'horizontal',
+			speed :    2000,
+			speedTurm : 500,
+			height :    400,
+			barHeight : 30,
+			markStart : 0,
+			markEnd : 1000,
+			markInterval : 5,
+			markUnit : "개",
+		});
+	});
+</script>
+
+<br/><br/>
+<div class="chart" id="horiChartGrid02">
+	<div class="chartIn">
+		<ul class="progress">
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">6월1주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">0</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">6월2주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">30</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">6월3주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">15</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">6월4주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">84</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">7월1주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">100</span>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="progressWrap">
+					<div class="gubunN">7월2주</div>
+					<div class="bar">
+						<span class="graph"></span>
+						<span class="data">65</span>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		$("#horiChartGrid02").chart({
+			type : 'horizontal',
+			speed :    2000,
+			speedTurm : 500,
+			height :    400,
+			barHeight : 30,
+			markStart : 0,
+			markEnd : 100,
+			markInterval : 5,
+			markUnit : "%",
+		});
+	});
+</script>
+
+<br/><br/>
+<!-- circle chart -->
+<div class="chart" id="circleChartGrid01">
+		<!-- chartIn -->
+		<div class="chartIn">
+
+			<!-- progress -->
+			<ul class="progress">
+				<!-- 오답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>5</span></div>
+							<div class="bar"><span class="txt">오답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 오답 -->
+
+				<!-- 정답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>15</span></div>
+							<div class="bar"><span class="txt">정답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 정답 -->
+
+				<!-- 정답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>25</span></div>
+							<div class="bar"><span class="txt">정답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 정답 -->
+
+				<!-- 정답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>35</span></div>
+							<div class="bar"><span class="txt">정답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 정답 -->
+
+				<!-- 정답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>20</span></div>
+							<div class="bar"><span class="txt">정답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 정답 -->
+
+			</ul>
+			<!-- EOD : progress -->
+		</div>
+		<!-- EOD : chartIn -->
+</div>
+<!-- EOD : circle chart -->
+<script>
+	$(function(){
+		$("#circleChartGrid01").chart({
+			type : 'pie',
+			width : 115,
+			height : 270,
+			background : ['#ffdd7c','#42afea', 'hotpink','brown','purple'],
+			markUnit : "%",
+			//donut_width : 115,
+			//height: '270',
+			//colorset: ['#ffdd7c', '#42afea'],
+		});
+	});
+</script>
+
+<br/><br/>
+<!-- circle chart -->
+<div class="chart" id="circleChartGrid02">
+		<!-- chartIn -->
+		<div class="chartIn">
+
+			<!-- progress -->
+			<ul class="progress">
+				<!-- 오답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>3</span></div>
+							<div class="bar"><span class="txt">오답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 오답 -->
+
+				<!-- 정답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>11</span></div>
+							<div class="bar"><span class="txt">정답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 정답 -->
+
+				<!-- 정답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>86</span></div>
+							<div class="bar"><span class="txt">정답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 정답 -->
+
+			</ul>
+			<!-- EOD : progress -->
+		</div>
+		<!-- EOD : chartIn -->
+</div>
+<!-- EOD : circle chart -->
+<script>
+	$(function(){
+		$("#circleChartGrid02").chart({
+			type : 'pie',
+			width : 150,
+			height : 350,
+			background : ['#ffdd7c','#42afea', 'hotpink'],
+			markUnit : "%",
+			//donut_width : 115,
+			//height: '270',
+			//colorset: ['#ffdd7c', '#42afea'],
+		});
+	});
+</script>
+
+
+<br/><br/>
+<!-- circle chart -->
+<div class="chart" id="circleChartGrid03">
+		<!-- chartIn -->
+		<div class="chartIn">
+
+			<!-- progress -->
+			<ul class="progress">
+				<!-- 오답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>100</span></div>
+							<div class="bar"><span class="txt">오답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 오답 -->
+
+				<!-- 오답 -->
+				<li>
+					<div class="progressWrap">
+						<div class="progressBox">
+							<div class="data"><span>0</span></div>
+							<div class="bar"><span class="txt">오답</span></div>
+						</div>
+					</div>
+				</li>
+				<!-- EOD : 오답 -->
+
+			</ul>
+			<!-- EOD : progress -->
+		</div>
+		<!-- EOD : chartIn -->
+</div>
+<!-- EOD : circle chart -->
+<script>
+	$(function(){
+		$("#circleChartGrid03").chart({
+			type : 'pie',
+			width : 150,
+			height : 350,
+			background : ['#ffdd7c','#42afea', 'hotpink'],
+			markUnit : "%",
+			markDrawing : "percent",
+			//donut_width : 115,
+			//height: '270',
+			//colorset: ['#ffdd7c', '#42afea'],
+		});
+	});
+</script>
+
+
+	</div>
+	<!-- EOD : contentLayoutIn -->
+</section>
+<!-- EOD : contentLayout -->
+
+<!-- headerInclude -->
+<footer class="footerInclude"></footer>
+<!-- EOD : headerInclude -->

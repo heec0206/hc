@@ -1,0 +1,1392 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url(/font/notosansKr/NotoSansKR-Thin.woff2) format('woff2'),
+		 	 url(/font/notosansKr/NotoSansKR-Thin.woff) format('woff'),
+		 	 url(/font/notosansKr/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url(/font/notosansKr/NotoSansKR-Light.woff2) format('woff2'),
+		 	 url(/font/notosansKr/NotoSansKR-Light.woff) format('woff'),
+		 	 url(/font/notosansKr/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;font-weight: 400;
+	src: url(/font/notosansKr/NotoSansKR-Regular.woff2) format('woff2'),
+			 url(/font/notosansKr/NotoSansKR-Regular.woff) format('woff'),
+			 url(/font/notosansKr/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;font-weight: 500;
+	src: url(/font/notosansKr/NotoSansKR-Medium.woff2) format('woff2'),
+		 	 url(/font/notosansKr/NotoSansKR-Medium.woff) format('woff'),
+		 	 url(/font/notosansKr/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;font-weight: 700;
+	src: url(/font/notosansKr/NotoSansKR-Bold.woff2) format('woff2'),
+		 	 url(/font/notosansKr/NotoSansKR-Bold.woff) format('woff'),
+		 	 url(/font/notosansKr/NotoSansKR-Bold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;font-weight: 900;
+	src: url(/font/notosansKr/NotoSansKR-Black.woff2) format('woff2'),
+		 	 url(/font/notosansKr/NotoSansKR-Black.woff) format('woff'),
+		 	 url(/font/notosansKr/NotoSansKR-Black.otf) format('opentype');
+}
+
+* {
+	font-family:'Noto Sans KR', sans-serif, 'arial';
+	outline: none;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	color: #222;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: -0.5px;
+    word-break: break-all;
+}
+a, a:hover,  a:active, a:visited {
+	display: inline-block;
+	color: #222;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	font-weight: 500;
+}
+h3{
+	font-size: 24px;
+	letter-spacing: -1px;
+}
+h4 {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+	margin: 35px 0 11px;
+	line-height: 25px;
+	font-size: 18px;
+}
+h4 > .num {
+	color: #767676;
+	font-size: 14px;
+}
+h5 {
+	margin: 35px 0 11px;
+	line-height: 23px;
+	font-size: 16px;
+}
+h5.bult {
+	position: relative;
+	padding-left: 17px;
+}
+h5.bult:before {
+	content:" ";
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 9px;
+	height: 9px;
+	background: #c4cdd7;
+}
+h6 {
+	line-height: 22px;
+	font-size: 15px;
+}
+h1:first-child, 
+h2:first-child, 
+h3:first-child, 
+h6:first-child {
+	margin-top: 0;
+}
+h4.first,
+h5.first,
+h4:first-child,
+h5:first-child {
+	line-height: 1;
+	margin: 0 0 15px 0;
+}
+h5.bult:first-child {
+	line-height: 23px;
+}
+
+h4 > button,
+h5 > button {
+	float: right;
+}
+h4 > .selectBox {
+	float: right;
+	margin-top: -4px;
+}
+.asterBox { margin:-8px 0 0 0;  }
+.asterBox .selectBox { margin:8px 0 0 0; }
+.verM { vertical-align:middle !important;  }
+.year_total_btn { overflow:hidden; margin:0 0 8px 0; }
+.year_total_btn button { float:right; }
+/* form */
+input[type="text"],
+input[type="password"], 
+input[type="search"], 
+input[type="file"], 
+input[type="number"] {
+	min-width: 170px;
+	height: 29px;
+	padding: 0 10px;
+	border: 1px solid #bbb;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+	background: #fff;
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled, 
+input[type="search"]:disabled, 
+input[type="file"]:disabled, 
+input[type="number"]:disabled {
+	background: #eee;
+}
+
+input.datePicker {
+	position: relative;
+	min-width: 110px;
+	width: 110px;
+	background: #fff url(/images/template6/resp/blue/icon/icon_datepicker.png) right center no-repeat;
+}
+textarea {
+	line-height: 21px;
+	padding: 10px 12px;
+	border: 1px solid #bbb;
+	background: #fff;
+	resize:none;
+}
+.selectBox {
+	min-width: 100px;
+	height: 29px;
+	border: 1px solid #bbb;
+	background: #fff url('/images/template6/resp/default/bg/bg_select.png') right center no-repeat;
+ }
+
+
+ .selectBox.disabled {
+	background-color: #eee;
+ }
+.selectBox select {
+	min-width: 100px;
+	line-height: 27px;
+  	padding: 0 20px 0 10px;
+ 	color: #666;
+ 	font-size: 14px;
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+.selectBox select::-ms-expand { 
+  display: none;
+}
+
+/* radio */
+input[type="checkbox"],
+input[type="radio"] {
+	position: relative;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance:none;
+	appearance:none;
+	background: transparent;
+	cursor:pointer;
+}
+input[type="checkbox"]:before ,
+input[type="radio"]:before {
+	content: " ";
+	position:absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 14px;
+	height: 14px;
+}
+
+label > input[type="checkbox"],
+label > input[type="radio"] {
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+.checkBox > label,
+.radioBox > label {
+	display: inline-block;
+	line-height: 21px;
+    padding-right: 20px;
+    cursor:pointer;
+}
+.radioBox > label:last-child {
+	padding-right: 0;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+}
+
+/* text */
+.infoTxtEm {
+	line-height: 20px;
+	font-size: 13px;
+}
+.txtP {
+	line-height: 21px;
+}
+.careTxt {
+	position: relative;
+	padding-left: 17px;
+	color: #666;
+	line-height: 21px;
+    word-break: keep-all;
+}
+.udLine {
+	text-decoration: underline;
+}
+.boardWrite+.careTxt {
+	margin-top: 10px;
+}
+.careTxt:before {
+	content:"※";
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 21px;
+}
+.paraBox,
+.paraBox p {
+	line-height: 21px;
+}
+.paraBox p+ul,
+.paraBox p+ol,
+.paraBox p+p {
+	margin-top: 6px;
+}
+.paraBox ol li {
+	position: relative;
+	line-height: 21px;
+	padding-left: 20px; 
+} 
+.paraBox ol li > span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 21px;
+}
+.paraBox ul li {
+	position: relative;
+	line-height: 21px;
+	padding-left: 10px;
+}
+
+.paraBox ul li:before {
+	content: "-";
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 21px;
+}
+.paraBox ol li+li,
+.paraBox ul li+li {
+	margin-top: 4px;
+}
+.paraBox li ol,
+.paraBox li ul {
+	margin-bottom: 6px;
+}
+.paraBox li .table {
+	margin: 6px 0 10px;
+}
+
+
+/* box */
+.boxGray {
+	margin-bottom: 15px;
+	padding: 20px;
+	line-height: 20px;
+	background: #f5f5f5;
+}
+.boxGray .infoTxt {
+	margin: 0;
+	padding: 0;
+}
+#sub .search {
+	margin-bottom: 15px;
+	text-align: right;
+}
+.searchBox+.search {
+	margin-top: -20px;
+}
+.search input[type="text"] {
+	width: 290px;
+	max-width: 80%;
+	max-width: calc(100% - 100px);
+}
+
+.searchBox {
+	position: relative;
+	margin-bottom: 30px;
+	background: #eeeeee;
+}
+.thumbList+.searchBox {
+	margin-top: 80px;
+}
+
+.searchBox .box {
+	padding: 20px;
+	text-align: center;
+}
+.searchBox .box .inTit {
+    display: inline-block;
+    padding-right: 10px;
+    width: 50px;
+    text-align: right;
+}
+.searchBox .box input[type="text"] {
+	width: 400px;
+	max-width: 100%;
+}
+.searchBox .box .inTit+input[type="text"] {
+	max-width: calc(100% - 150px);
+}
+.searchBox .box .selectBox+input[type="text"] {
+	max-width: calc(100% - 200px);
+}
+.searchBox input[type="text"] {
+	ime-mode: active;
+}
+.searchBox .box .btnSearch {
+	vertical-align: top;
+}
+.searchBox ul {
+	overflow: hidden;
+	padding: 16px 0;
+}
+.searchBox ul li {
+	float: left;
+	position: relative;
+	min-width: 33%;
+	margin: 4px 0;
+	min-height: 29px;
+	padding-left: 120px;
+}
+.searchBox ul li > label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120px;
+	padding-right: 22px;
+	line-height: 29px;
+	text-align: right;
+	font-weight: 500;
+}
+.searchBox ul li > label:before {
+	content:" ";
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 10px;
+	border-left: 1px solid #bbb;
+}
+.searchBox ul li .selectBox {
+	width: 107px;
+}
+
+.searchBox ul li .selectBox.auto {width:auto; display:inline-block}
+
+.searchBox ul li .checkBox {
+	padding-top: 4px;
+}
+.searchBox ul li .courseTit input {
+	width: 479px;
+}
+.searchBox ul li.openCheck {
+	width: 100%;
+}
+.searchBox .btnArea {
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+	margin: 0;
+}
+.searchBox .btnArea button+button {
+	margin-left: 5px;
+}
+.searchBox .btnArea > label {
+	padding-right: 15px;
+	line-height: 29px;
+	font-size: 14px;
+}
+.searchBox ul li > span {
+	line-height: 29px;
+	padding-right: 10px;
+}
+.searchBox ul li > button {
+	vertical-align: middle;
+}
+
+.searchBox.type02 ul {padding-bottom: 55px;}
+
+.openCheckList {
+	display: none;
+	margin-top: -36px;
+	margin-bottom: 40px;
+	padding: 11px 20px 11px 120px;
+	border: 1px solid #bbb;
+}
+.openCheckList ul li {
+	position: relative;
+	padding-left: 70px;
+}
+.openCheckList ul li > label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 21px;
+	font-weight: 500;
+}
+.openCheckList ul li+li {
+	margin-top: 6px;
+}
+
+.unordered > li {
+    position: relative;
+    line-height: 22px;
+    padding-left: 10px;
+}
+.unordered > li > span:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 22px;
+}
+
+/* icon */
+.iconBox {
+	display: inline-block;
+}
+.icon {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+}
+.icon.inclub {
+	min-width: 52px;
+	height: 19px;
+	padding: 0 5px;
+	line-height: 15px;
+	border: 2px solid #3f4346;
+	border-radius: 9px;
+	background: #fff;
+}
+.icon.notice {
+	width: 13px;
+	height: 13px;
+	font-size: 0;
+}
+.icon.lock {
+	width: 12px;
+	height: 16px;
+	font-size: 0;
+	background: url(/images/template6/resp/default/icon/icon_lock.png) 0 0 no-repeat;;
+}
+.icon.hot,
+.icon.new {
+	width: 31px;
+	height:13px;
+	line-height: 12px;
+	border-radius: 2px;
+	font-weight: 700;
+}
+
+.icon.best {
+	line-height: 14px;
+	padding: 0 3px;
+}
+
+.icon.level01, /*씨앗*/
+.icon.level02,/*나무*/
+.icon.level03 { /*숲*/
+	height: 17px;
+	line-height: 15px;
+	padding: 0 3px;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+.icon.level01:before,
+.icon.level02:before,
+.icon.level03:before {
+	content: " ";
+	display: inline-block;
+	width: 9px;
+	height: 11px;
+	margin-right: 3px;
+	vertical-align: -1px;
+	background: url(/images/template6/resp/default/icon/icon_level01.png) center center no-repeat;
+}
+.icon.level02:before{
+	width: 8px;
+	background: url(/images/template6/resp/default/icon/icon_level02.png) center center no-repeat;
+}
+.icon.level03:before {
+	width: 16px;
+	background: url(/images/template6/resp/default/icon/icon_level03.png) center center no-repeat;
+}
+.icon.cer, /*자격증*/
+.icon.cyber, /*사이버*/
+.icon.bl, /*BL과정*/
+.icon.comu,/*통신과정*/
+.icon.off { /*집합*/
+	width: 17px;
+	height: 17px;
+	border-radius: 2px;
+	font-size: 0;  
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.icon.cer {
+	background-image: url(/images/template6/resp/default/icon/icon_certifiate.png);
+}
+.icon.cyber {
+	background-image: url(/images/template6/resp/default/icon/icon_cyber.png);
+}
+.icon.bl {
+	background-image: url(/images/template6/resp/default/icon/icon_bl.png);
+}
+.icon.comu {
+	background-image: url(/images/template6/resp/default/icon/icon_comu.png);
+}
+.icon.off {
+	background-image: url(/images/template6/resp/default/icon/icon_off.png);
+}
+
+
+
+.iconAll, /*All知영상*/
+.iconCyber, /*사이버*/
+.iconBl, /*BL과정*/
+.iconComu,/*통신과정*/
+.iconOff { /*집합*/
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	color: #fff;
+	padding: 0 9px;
+	line-height: 16px;
+	text-align: center;
+	font-size: 13px;  
+	font-weight: 400;
+}
+.iconAll {
+	padding: 6px 5px;
+}
+.iconCyber {
+	padding: 13px 0 0 0;
+}
+.iconBl {
+	padding-top: 6px;
+}
+.iconComu {
+	padding-top: 6px;
+}
+.iconOff {
+	padding-top: 13px;
+}
+
+.icon.wait,/*대기*/
+.icon.ing,/*진행*/
+.icon.finish {/*종료*/
+	border-radius: 2px;
+	border: 1px solid;
+	height :17px;
+	line-height: 15px;
+	padding: 0 3px;
+	background: #fff;
+}
+
+.icon.teacher02,
+.icon.sitIn, /*청강*/
+.icon.major { /*전공*/
+	height: 17px;
+	padding: 0 3px;
+	line-height: 15px;
+	border-radius: 2px;
+}
+.icon.major { /*전공*/
+	height: auto;
+	text-align: left;
+	display: inline;
+}
+.icon.teacher02 {
+	font-size: 13px;
+}
+.icon.teacher {
+	width: 50px;
+	height: 19px;
+	line-height: 19px;
+	margin-right: 7px;
+	border-radius: 2px;
+}
+.icon.video, /*동영상*/
+.icon.manual, /*매뉴얼*/
+.icon.image { /*이미지*/
+	height: 19px;
+	padding: 0 3px;
+	line-height: 17px;
+	border-radius: 2px;
+}
+.icon.video:before,
+.icon.manual:before, 
+.icon.image:before { 
+	content:" ";
+	display: inline-block;
+	width: 7px;
+	height: 9px;
+	margin-right: 4px;
+}
+.icon.image:before {
+	width: 10px;
+}
+.icon.choose { /*채택*/
+	height: 19px;
+	padding: 0 4px;
+	line-height: 19px;
+	border-radius: 2px;
+}
+
+.iconArrow {
+	display: inline-block;
+    width: 25px;
+    height: 14px;
+    font-size: 0;
+    vertical-align: middle;
+    background: url(/images/template6/resp/default/usr/arrow_guide_des02.png) center center no-repeat;
+    background-size: 26px;
+}
+
+/* button */
+.btnArea {
+	margin-top: 30px;
+	text-align: right; 
+	font-size: 0;
+}
+.paging+.btnArea {
+	margin-top: 20px;
+}
+.btnArea button+button {
+	margin-left: 7px;
+}
+.popup .btnArea {
+	text-align: center;
+}
+.btnTopArea {
+	text-align: right; 
+	margin-bottom: 15px;
+	font-size: 0;
+}
+.btnMiddleArea {
+	text-align: right; 
+	margin-top: 30px;
+	font-size: 0;
+}
+.btnMiddleArea .selectBox+button,
+.btnMiddleArea button+button,
+.btnTopArea button+button {
+	margin-left: 5px;
+}
+
+button { /*large*/
+	min-width: 76px;
+	height: 37px;
+	line-height: 35px;
+	padding: 0 12px;
+	text-align: center;
+	vertical-align: top;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.btn_gray {background-color:#3f4346; border:1px solid #222; color:white; margin:0 0 15px}
+.btn_gray:hover {background-color:#5b5b5b}
+
+.myCdp button, .reviewPop .write button,
+.btnMiddleArea button,
+.inclubView .btnArea button, .btnView,
+.fileAttach .btnFind, .notOpenInclub .btnInfo,
+.btnMedium, .btnSearch, .btnReset, td button { /*medium*/
+	min-width: 72px;
+	height: 29px;
+	line-height: 27px;
+	padding: 0 10px;
+}
+
+.btnVideo, .certifiList .button button,
+.levelBox > .conBox .cosList button,
+.radioBox > label > button,
+.searchBox ul li > button,
+.totalList button,
+h5 > button, .checkMyMenu .btnSave,
+.btnTopArea > button,
+.btnAddMember, .btnFileDown,
+.horztList li > div button { /*small*/
+	min-width: 64px;
+	height: 23px;
+	line-height: 21px;
+	padding: 0 6px;
+}
+.quizBox .list li button,
+.clsrmList li > .title button,
+.mySurveyList li button,
+.feedBox .btnArea button, .commentBox > .comment ul li button,
+.btnMini, .btnReply { /*mini*/
+	min-width: 38px;
+	height: 18px;
+	line-height: 16px;
+	padding: 0 6px;
+	font-size: 13px;
+}
+
+.btnView:before,
+.btnReset:before {
+	content:" ";
+	display: inline-block;
+	margin-right: 4px;
+}
+.btnReset:before {
+	width: 13px;
+	height: 13px;
+	vertical-align: -1px;
+	background: url(/images/template6/resp/blue/button/btn_reset.png) 0 0  no-repeat;
+}
+.btnView:before {
+	width: 10px;
+	height: 12px;
+	vertical-align: 0px;
+	background: url(/images/template6/resp/default/button/btn_view.png) 0 0  no-repeat;
+}
+.btnVideo:after,
+.btnClsrm:after,
+.btnReply:after {
+	content:" ";
+	display: inline-block;
+	margin-left: 4px;
+}
+.btnReply:after {
+	width: 7px;
+	height: 5px;
+	vertical-align: 2px;
+	background: url(/images/template6/resp/default/button/btn_reply.png) 0 0  no-repeat;
+}
+.btnReply.active:after {
+	transform: rotate(180deg);
+}
+.btnClsrm:after {
+	width: 11px;
+	height: 11px;
+	vertical-align: 0px;
+	background: url(/images/template6/resp/blue/button/btn_clasrm.png) 0 0  no-repeat;
+}
+.btnVideo:after {
+	width: 15px;
+	height: 15px;
+	vertical-align: -2px;
+	background: url(/images/template6/resp/default/button/btn_video.png) 0 0  no-repeat; 
+}
+
+
+.btnOpenCheck {
+	min-width: 23px !important;
+	height: 23px !important;
+	padding: 0 !important;
+	margin-top: 3px;
+	background-image: url(/images/template6/resp/default/button/btn_open_check.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.btnOpenCheck.active {
+	background-image: url(/images/template6/resp/default/button/btn_open_check_active.png);
+}
+
+
+/* paging */
+.paging {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 0;
+}
+.paging a {
+  display: inline-block;
+  min-width: 22px;
+  padding: 0 3px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 3px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+}
+.paging a.btnFirst,
+.paging a.btnPrev,
+.paging a.btnNext,
+.paging a.btnLast {
+	width: 17px;
+	font-size: 0;			
+	margin-left: 0;	
+}
+.paging a.btnFirst,
+.paging a.btnFirst:hover {
+ 	background: url('/images/template6/resp/default/button/btn_paging.png') 0 0 no-repeat;
+}
+.paging a.btnPrev,
+.paging a.btnPrev:hover {
+	margin-right: 7px;
+ 	background: url('/images/template6/resp/default/button/btn_paging.png') -17px 0 no-repeat;
+}
+.paging a.btnNext,
+.paging a.btnNext:hover {
+	margin-left: 10px;
+	background: url('/images/template6/resp/default/button/btn_paging.png') -34px 0 no-repeat;
+}
+.paging a.btnLast,
+.paging a.btnLast:hover {
+ 	background: url('/images/template6/resp/default/button/btn_paging.png') -51px 0 no-repeat;
+}
+.paging a.mobile {
+ 	display: none;
+}
+
+/* fileAttach */
+.fileAttach {
+	position: relative;
+	width: auto;
+	display: inline-block;
+	width: 100%;
+	max-width: 380px;
+	padding-right: 77px;
+}
+.fileAttach .textInput {
+	width: 100%;
+	min-width: 0px;
+}
+.fileAttach input[type="file"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
+}
+.fileAttach .btnFind {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+}
+.fileAttach+.listAttach {
+	margin-top: 8px;
+}
+.listAttach li {
+	line-height: 21px;
+	padding-left: 20px;
+}
+.listAttach li+li {
+	margin-top: 4px;
+}
+.listAttach li > span,
+.listAttach li > a {
+	display: inline;
+	line-height: 22px;
+	margin-right: 5px;
+    vertical-align: middle;
+}
+.listAttach li > span > span.vol,
+.listAttach li > a > span.vol {
+	color: #767676;
+}
+.listAttach li > span.em {
+	display: inline-block;
+}
+.listAttach .btnDel, 
+.listAttach .btnDel:hover {
+	display: inline-block;
+	min-width: 0;
+	width: 18px;
+	height: 17px;
+	padding: 0;
+	margin-right: 5px;
+	font-size: 0;
+	border: none;
+	vertical-align: bottom;
+	background: url('/images/template6/resp/default/button/btn_del.png') center center no-repeat;
+}
+
+.boardView .fileList ul li {
+	position: relative;
+	float: left; 
+	width: 30%;
+	margin-top: 2%;
+	margin-right: 3%;
+	padding-right: 30px;
+	border: 1px solid #ddd;
+	background: #fff url(/images/template6/resp/default/icon/icon_file_down.png) right center no-repeat;
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+	cursor: pointer;
+}
+.boardView .fileList ul li:hover {
+	background: #f5f5f5 url(/images/template6/resp/default/icon/icon_file_down_hover.png) right center no-repeat;
+}
+.boardView .fileList ul li:nth-child(3n) {
+	margin-right: 0;
+}
+.boardView .fileList ul li a {
+	position: relative;
+	display: inline-block;
+	max-width: calc(100% - 35px);
+	line-height: 33px;
+	padding-left: 30px;
+	padding-right: 47px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.boardView .fileList ul li a .vol {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 33px;
+	color: #767676;
+}
+.boardView .fileList ul li.disabled,
+.boardView .fileList ul li.disabled:hover {
+	cursor: default;
+	background: #fff url(/images/template6/resp/default/icon/icon_file_down.png) right center no-repeat;
+
+}
+.boardView .fileList ul li.disabled .box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	color: #fff;
+	line-height: 33px;
+	padding: 0 10px;
+	text-align: center;
+}
+.boardView .fileList ul li.disabled .box:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: #000;
+	opacity: 0.5;
+}
+
+.fileInfo {
+	margin-top: 10px;
+}
+
+
+.tab {
+	position: relative;
+	margin-bottom: 30px;
+    border-bottom: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+}
+.tab ul {
+  display: block;
+  width: 100%;
+  overflow:hidden;
+}
+.tab ul li {
+    position: relative;
+	display: block;
+    float: left;
+	min-width: 110px;
+	height: 47px;
+	border: solid  #d5d5d5;
+	border-width: 1px 0 0;
+}
+.tab ul li:first-child {
+	border-width: 1px 1px 1px 1px;
+}
+.tab.skill ul li {
+	width: 50%;
+	box-sizing:border-box;
+}
+.tab ul li a { 
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 15px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 16px; 
+	font-weight: 400;
+	background: #f5f5f5;
+}
+.tab ul li.active:before,
+.tab ul li:hover:before {
+	content:" ";
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width:100%;
+	z-index: 9;
+}
+.tab ul li.active a,
+.tab ul li:hover a {
+	background: #ffffff;
+ 	z-index: 8;
+}
+
+.tab.type2 {
+	overflow: hidden;
+	border-bottom: none;
+}
+.tab.type2 ul {
+	height: 47px;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.subTab { margin:-20px 0 0 0; clear:both; }
+.subTab ul { height:37px; border-bottom:1px solid #ddd; }
+.subTab ul li { position:relative; float:left; }
+.subTab ul li:before { content:''; position:absolute; top:12px; left:0; width:1px; height:12px; background:#ddd; }
+.subTab ul li:first-child:before { display:none; }
+.subTab ul li.active:after { content:''; position:absolute; bottom:-1px; left:0; width:100%; height:3px; background:#e63073; }
+.subTab ul li a { font-size:15px; font-weight:400; display:block; padding:0 15px; min-width:110px; height:36px; text-align:center; line-height:34px; }
+
+/* LYW 20-02-24 */
+
+.tabBox {margin:0 0 20px}
+.tabBox ul {display:table; table-layout:fixed; width:100%; text-align:center; border-left: 1px solid #dedede;}
+.tabBox ul li {display:table-cell; vertical-align:middle}
+.tabBox ul li a {display:table; width:100%; height:45px; font-size: 16px; font-weight: 400;  background: #f5f5f5; border: 1px solid #d5d5d5;  border-left: 0;}
+.tabBox ul li a span {position:relative; width:100%; height:100%; padding:0 10px; line-height:1.2; display:table-cell; vertical-align:middle;}
+.tabBox ul li.active a {background:white; border-top:0}
+.tabBox ul li.active a span:before {content:""; position:absolute; top:0; left:0; width:100%; border-top:3px solid #e63073}
+
+/* EOD : LYW 20-02-24 */
+
+.tabLayout {position:relative; background-color:#fafafa; margin:0 0 10px; border:1px solid #d5d5d5}
+.tabLayout .tabBox {margin:0}
+.tabLayout .tabBox ul {border:0}
+.tabLayout .tabBox ul li {float:left; width:140px}
+.tabLayout .tabBox ul li a {border:0; border-right:1px solid #d5d5d5}
+.tabLayout .tabBox ul li.active a span:before {top:-1px}
+
+
+/* date picker */
+.ui-datepicker {
+	display: none;
+	border: 1px solid #bbb;
+	background: #fff;
+	-webkit-box-shadow: 2px 2px 17px -6px rgba(0,0,0,0.66);
+    -moz-box-shadow: 2px 2px 17px -6px rgba(0,0,0,0.66);
+    box-shadow: 2px 2px 17px -6px rgba(0,0,0,0.66);
+    z-index: 11 !important;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+}
+.ui-datepicker .ui-datepicker-title {
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	height: 34px;
+	color: #fff;
+}
+.ui-datepicker .ui-datepicker-title select option {
+	color: #222;
+}
+.ui-datepicker .ui-datepicker-header > a {
+	position: absolute;
+	top: 7px;
+	width: 20px;
+	height: 19px;
+	line-height: 12px;
+	text-align: center;
+	color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-header > a > span {
+	display: none;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+	left: 6px;
+}
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+	right: 6px;
+}
+.ui-datepicker .ui-datepicker-header > a:before {
+	content: " ";
+	display: inline-block;
+}
+.ui-datepicker .ui-datepicker-header > a.ui-datepicker-prev:before {
+	border-right: 6px solid #fff;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+}
+.ui-datepicker .ui-datepicker-header > a.ui-datepicker-next:before {
+	border-left: 6px solid #fff;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+}
+.ui-datepicker table th {
+	height: 20px;
+	/* color: #3950b2; */
+	color:#01b1ad;
+	border-bottom: 1px solid #eee;
+	background: #fff;
+}
+.ui-datepicker table td {
+	height: 26px;
+    line-height: 23px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    color: #222;
+    font-size: 12px;
+    font-weight: 400;
+}
+.ui-datepicker table td a {
+	display: block;
+	height: 26px;
+	padding-top: 2px;
+    line-height: 23px;
+}
+.ui-datepicker table td a:hover {
+	line-height: 19px;
+}
+
+.ui-datepicker table td.ui-datepicker-week-end:first-child a {
+	color: #d11919;
+}
+.ui-datepicker table td.ui-datepicker-week-end:last-child a {
+	color: #767676;
+}
+
+
+.ui-datepicker .ui-datepicker-buttonpane {
+	margin-top: 10px;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	width: 33.33%;
+	width: calc(100% / 3);
+    height: 26px;
+    line-height: 25px;
+	border: none;
+	border-top: 1px solid #d5d5d5;
+	border-left: 1px solid #d5d5d5;
+	background: #f5f5f5;
+}
+.ui-datepicker .ui-datepicker-buttonpane button:first-child {
+	border-left: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane button:hover {
+	background: #e5e5e5;
+}
+
+@media screen and (max-width: 1100px) { 
+	html, body {
+		height: auto;
+	}
+	.searchBox {
+		margin-top: -20px;
+	}
+	.popup .searchBox,
+	.btnTopArea+.searchBox {
+		margin-top: 0;
+	}
+	
+	.careTxt {
+		margin: 10px 15px 0;
+	}
+	.boardWrite .careTxt {
+		margin: 10px 0 0 0;
+	}
+	#sub .search,
+	.paraBox,
+	h4,h5,h6,
+	.btnArea {
+		padding: 0 15px;
+	}
+	.popup .btnArea {
+		padding: 0;
+	}
+
+	
+	.tabLayout .tabBox ul li {width:120px}
+	.tabLayout .tabBox ul li a {font-size:14px}
+
+}
+@media screen and (max-width: 900px) { 
+	.searchBox ul {
+		padding-right: 30px;
+		padding-bottom:55px;
+	}
+
+	.searchBox.none ul {padding-bottom:16px}
+}
+@media screen and (max-width: 720px) { 
+	
+	.searchBox ul {
+		padding-right: 15px;
+	}
+	.searchBox ul li .courseTit input {
+		width: 100% !important;	
+	}
+	.searchBox .btnArea {
+		right: 15px;
+	}
+	.searchBox .box {
+		padding: 20px 15px;
+	}
+	.searchBox .box .selectBox {
+		width: 100px;
+	}
+	.searchBox .box .selectBox+input[type="text"] {
+		min-width: 0;
+	    width: calc(100% - 180px);
+	    max-width: calc(100% - 180px);
+	}
+	.searchBox .box input[type="text"] {
+		min-width: 0;
+	    width: calc(100% - 85px);
+	    max-width: calc(100% - 85px);
+	}
+	.popup .searchBox.popup input { width : calc(100% - 167px); }
+	.searchBox .reSearch {
+		display: block;
+	    margin-left: 0;
+	    margin-top: 10px;
+	    text-align: right;
+	}
+	.openCheckList {
+		padding: 11px 20px;
+	}
+	.boardView .fileList ul li {
+		width: 48%;
+		width: 40vw;
+	}
+	.boardView .fileList ul li:nth-child(3n) {
+		margin-right: 4%;
+	}
+	.boardView .fileList ul li:nth-child(2n) {
+		margin-right: 0;
+	}
+	
+	/* .fileList02 ul li { width:40vw; } */
+}
+@media screen and (max-width: 620px) { 
+	.searchBox ul li .selectBox {
+		margin: 2px 0;
+	}
+		
+		
+	/* LYW 02-02-24 */
+	
+	.tabBox {margin:-20px 0 20px}	
+	.tabBox ul {border-top: 1px solid #dedede}
+	.tabBox ul li {float:left; width:50%}
+	.tabBox ul li a {border: 0; border-bottom: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5; font-size:14px; height:40px}
+	.tabBox ul li.active a span:before {top:-1px}
+	.tabBox.type02 {margin:20px 0}
+
+	.tabLayout {background-color:white; border:0; border-top:1px solid #d5d5d5; border-left:1px solid #d5d5d5}
+	.tabLayout .tabBox ul li {width:50%}
+	.tabLayout .tabBox ul li a {border-bottom:1px solid #d5d5d5}
+
+
+	/* EOD : LYW 02-02-24 */
+		
+	/* LYW 20-03-09 */
+	
+	.table_normal tbody tr td {font-size:13px}
+
+	/* EOD : LYW 02-03-09 */
+
+}
+@media screen and (max-width: 500px) { 
+	.searchBox {
+		margin-bottom: 20px;
+	}
+	.searchBox ul li {
+		width: 100%;
+		padding-left: 105px;
+	}
+	.searchBox ul li > label {
+		width: 105px;
+	}
+	.openCheckList {
+		margin-top: -16px;
+	}
+	.boardView .fileList ul li,
+	.boardView .fileList ul li:nth-child(3n) {
+		width: 100%;
+		width: calc(100vw - 30px);
+		margin-right: 0;
+	}
+	/* .fileList02 ul li { width:calc(100vw - 30px); margin-right:0; } */
+}
+
+.fileList04 { overflow:hidden; margin:20px 0 0 0; }
+.fileList04 ul { overflow:hidden; }
+.fileList04 ul li { clear:both; }
+
+.fileList04 ul li .fileListBox { float:left; position:relative; cursor:pointer; }
+.fileList04 ul li .fileListBox a { position:relative; background:url(/images/template6/resp/blue/icon/icon_file.png) 10px 12px no-repeat; display:inline-block; padding:7px 12px 7px 30px; line-height:1.4; }
+.fileList04 ul li .fileInfo { float:left; min-height:33px; margin:0 !important; }
+.fileList04 ul li .fileInfo .careTxt  { margin:0 0 0 5px !important; line-height:33px !important;  }
+.fileList04 ul li .fileInfo .careTxt:before { line-height:33px !important; top:0px; }
+.fileList04 ul li:last-child .careTxt:before { top:0px !important; }
+.fileList04 ul li.disabled .fileListBox:before { cursor:default; content:''; position:absolute; top:0; left:0; width:100%; height:100%; z-index:11; background:#000; opacity:0.5; }
+.fileList04 ul li.disabled .fileListBox:hover { }
+
+.fileList04 ul li .fileListBox a:hover { background:url(/images/template6/resp/blue/icon/icon_file.png) 10px 12px no-repeat #f5f5f5; }
+.fileList04 ul li.disabled .fileListBox { position:relative; cursor:default; display:inline-block; }
+
+.fileList04 ul li .fileListBox a .vol { padding:0 0 0 4px;color:#767676; }

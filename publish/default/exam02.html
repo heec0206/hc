@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>인물검색 Test</title>
+<meta name="theme-color" content="#273c44">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#myInput").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+		$("#myTable tbody tr").filter(function() {
+		$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		});
+	});
+
+	$(".btn.btn-default").click(function(){
+		txt = $(this).text();
+		$("#myTable tbody tr").filter(function(){
+			$(this).toggle($(this).text().toLowerCase().indexOf(txt) > -1)
+		});
+	});
+	
+	//$(".search_select").each(function(){
+		$(".search_select").on("change", function(){
+			$(".search_select").each(function(){
+				thisV = $(this).val().toLowerCase();
+				$("#myTable tbody tr").filter(function(){
+					$(this).toggle($(this).text().toLowerCase().indexOf(thisV) > -1)
+				});			
+				console.log(thisV);
+			});
+			
+
+		});
+	//});
+});
+</script>
+
+<style>
+body { font-size:1.8em;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  width:33%;
+
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>  
+</head>
+
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div style="width:100%; padding:2px 0 5px 20px; background:#077ed4"><h3><font color="white">인물검색 Test</font></h3></div>
+<div style="padding:20px 0 0 0; text-align:center">
+<p>드롭다운 혹은 버튼을 클릭하면 검색</p>  
+</div>
+<br>
+<center>
+
+<div style="width:90%">
+  <button type="button" value="" class="btn btn-default" style="width:25%; margin-bottom:5px">배우</button>
+  <button type="button" value="" class="btn btn-default" style="width:25%; margin-bottom:5px">가수</button>
+  <button type="button" value="" class="btn btn-default" style="width:25%; margin-bottom:5px">모델</button>
+  <button type="button" value="" class="btn btn-default" style="width:25%; margin-bottom:5px">스포츠/야구</button>
+  <button type="button" value="" class="btn btn-default" style="width:25%; margin-bottom:5px">스포츠/골프</button>
+  <button type="button" value="" class="btn btn-default" style="width:25%; margin-bottom:5px">의적</button>
+
+</div>
+<br>
+<div style="width:90%">
+	<select class="search_select">
+		<option type="button" class="" value="" selected>연도로 검색</option>
+		<option>2020</option>
+		<option>2019</option>
+		<option>2018</option>
+		<option>2017</option>
+		<option>2016</option>        
+	</select>
+
+	<select class="search_select">
+		<option type="button" class="" value="" selected>이름 검색</option>
+		<option>마동석</option>
+		<option>설운도</option>
+		<option>박찬호</option>
+		<option>박세리</option>
+		<option>이문세</option>
+		<option>홍진경</option>
+		<option>홍길동</option>
+	</select>
+	
+	<select class="search_select">
+		<option type="button" class="" value="" selected>직업 검색</option>
+		<option>배우</option>
+		<option>가수</option>
+		<option>모델</option>
+		<option>스포츠/야구</option>
+		<option>스포츠/골프</option>
+		<option>의적</option>
+	</select>
+</div>
+<br>
+
+<div style="width:80%">
+<table id="myTable">
+    <thead>
+      <tr>
+          <th>연도</th>
+          <th>이름</th>
+          <th>직업</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-year="2020">
+	    <td>2020</td>
+	    <td>마동석</td>
+	    <td>배우</td>
+      </tr>
+      <tr data-year="2019">
+	    <td>2019</td>
+	    <td>설운도</td>
+	    <td>가수</td>
+      </tr>
+      <tr data-year="2018">
+	    <td>2018</td>
+	    <td>박찬호</td>
+	    <td>스포츠/야구</td>
+      </tr>
+      <tr data-year="2018">
+	    <td>2018</td>
+	    <td>박세리</td>
+	    <td>스포츠/골프</td>
+      </tr>
+      <tr data-year="2020">
+	    <td>2020</td>
+	    <td>이문세</td>
+	    <td>가수</td>
+	  </tr>  
+      <tr data-year="2018">
+	    <td>2018</td>
+	    <td>홍진경</td>
+	    <td>모델</td>
+	  </tr>
+      <tr data-year="2020">
+	    <td>2018</td>
+	    <td>홍길동</td>
+	    <td>의적</td>
+	  </tr>    
+	</tbody>
+</table>
+</div>
+    
+    
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+</script>
+
+</body>
+</html>
