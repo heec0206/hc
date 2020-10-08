@@ -211,7 +211,7 @@ caption, .skip { width:0; height:0; margin:0; padding:0; font-size:0; text-inden
 	.popup_wrap .popupF { margin:-1px 0 0 0; background:#fff; padding:0 20px 20px 20px; text-align:center; border-radius:0 0 20px 20px; }
 	.popup_wrap .popupCBox { padding:20px; background:#fff; }
 	.popup_wrap .popupCBox .popupCBoxIn { background:#fff; }
-	.popup_wrap .popupCBox .popupCBoxIn .popupCBoxInS { padding:0 20px 0 0; overflow-x:hidden; overflow-y:auto; min-height:125px; }
+	.popup_wrap .popupCBox .popupCBoxIn .popupCBoxInS { overflow-x:hidden; overflow-y:auto; min-height:125px; }
 	.pop_slampTit { position:relative; padding:0 32px 0 0; }
 	.pop_slampTit a.popup_close { position:absolute; top:0; right:0; }
 
