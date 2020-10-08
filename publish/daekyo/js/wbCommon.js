@@ -200,8 +200,9 @@ function popupS(n,m,w,h){
 			popupH = $(n).find(".popup_BoxIn").outerHeight();
 			winH = $(window).outerHeight();
 			winW = $(window).outerWidth();
-			$(n).find(".popupCBoxIn").wrapInner("<div class='popupCBoxInS'></div>");
-
+			if($(n).find(".popupCBoxInS").length == 0){
+				$(n).find(".popupCBoxIn").wrapInner("<div class='popupCBoxInS'></div>");
+			}
 			if(w == undefined || w == "full"){
 				//$(n).find(".popup_BoxIn").css({"width":"95%","margin-left":"0%","left":"2.5%"});
 			}else{
