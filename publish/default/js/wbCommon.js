@@ -250,6 +250,7 @@ function popupS(n,m,w,h){
 			}
 			//$(n).find(".popup_BoxIn").css({"margin-left" : -(popupW/2)});
 			$(n).find(".popupCBoxInS").css({"max-height" : popH });
+			console.log(popH);
 		}
 		if(w < winW-100){
 			$(n).find(".popup_Box").css({"width":w});
