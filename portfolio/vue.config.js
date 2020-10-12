@@ -5,5 +5,7 @@ module.exports = {
   },
   //css : { sourceMap : true },
 
-  publicPath : '/hc/portfolio'
+  publicPath: process.env.NODE_ENV === 'production'
+      ? '/hc/portfolio/'
+      : '/'
 }
