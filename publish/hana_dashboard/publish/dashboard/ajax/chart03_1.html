@@ -1,0 +1,99 @@
+<!-- table_countBoxIn -->
+<div class="table_countBoxIn type02">
+	<ul>	
+		<li>
+			<div class="countBoxIn">
+				<div class="th"></div>
+				<div class="td">
+					<div class="tdBox">
+						<strong>STEP 1</strong>
+					</div>	
+				</div>
+				<div class="td">
+					<div class="tdBox">
+						<strong>STEP 2</strong>
+					</div>	
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="countBoxIn">
+				<div class="th">리테일금융</div>
+				<div class="td">
+					<div class="tdBox">
+						<span class="count">20</span><span class="max">100</span>
+					</div>
+				</div>
+				<div class="td">
+					<div class="tdBox">
+						<span class="count">50</span><span class="max">100</span>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="countBoxIn">
+				<div class="th">기업금융</div>
+				<div class="td">
+					<div class="tdBox">
+						<span class="count">150</span><span class="max">200</span>
+					</div>
+				</div>
+				<div class="td">
+					<div class="tdBox">
+						<span class="count">50</span><span class="max">200</span>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="countBoxIn">
+				<div class="th">전체<small>(중복제외)</small></div>
+				<div class="td">
+					<div class="tdBox">
+						<span class="count">60</span><span class="max">300</span>						
+						<div>
+							<span class="label_percent"></span>
+						</div>
+					</div>
+				</div>
+				<div class="td">
+					<div class="tdBox">
+						<span class="count">20</span><span class="max">100</span>						
+						<div>
+							<span class="label_percent"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- EOD : table_countBoxIn -->
+
+<script>
+	/* 사람수에 따른 숫자 카운트 */
+	
+	$('.table_countBoxIn .tdBox').each(function(index) {
+
+		delay = 1000 + (index*500);
+		num = $(this).find(".count").text();
+		max = $(this).find(".max").text();
+
+		percent = (num / max) * 100;
+
+		$(this).find(".label_percent").append(percent + "%");
+
+		$(this).find(".count").prop('Counter',0).animate({
+			Counter: $(this).find(".count").text()
+		}, {
+			duration: delay,
+			easing: 'swing',
+			step: function (now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+
+	});
+
+</script>

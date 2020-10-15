@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>연수참여현황</title>
+    
+    <link href="../../css/initialize.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/template6/resp/import.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/template6/resp/blue.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/chart.css" rel="stylesheet" type="text/css" media="all">
+    
+    <!-- ## IE9이하 버전에서 html5 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="../../js/html5.js"></script>
+    <![endif]-->
+    
+    <!-- ## IE9이하 버전에서 css3 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="../../js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <script src="../../js/jquery-1.8.3.min.js"></script>
+	<script src="../../js/chart.js"></script>
+	<script src="../../js/template6/style.js"></script>    
+</head>
+<body>
+	
+<div class="popup">
+	<h3>연수참여현황 : 직원별 조회</h3>
+	<button type="button" class="btnClosed" onclick="popupClose();">닫기</button>
+	
+	<!-- contentsWrap start -->
+	<div class="contentsWrap">
+		<!-- contentsBox start -->
+		<div class="contentsBox">	
+			<!-- searchBox -->
+			<div class="searchBox type02">
+				<ul>					
+					<li>
+						<label>부서</label>
+						<div class="selectBox">
+							<select>
+								<option value="" checked="checked">부서</option>
+								<option value="">부실점장</option>
+								<option value="">본부장</option>
+								<option value="">그룹장</option>
+								<option value="">은행 전체</option>
+							</select>
+						</div>	
+					</li>					
+					<li>
+						<label>교육기간</label>
+						<input type="text" class="datePicker dateSet hasDatepicker" readonly="readonly">
+						~
+						<input type="text" class="datePicker dateSet hasDatepicker" readonly="readonly">
+					</li>
+					<li style="width:100%">
+						<label>직급</label>
+						<div class="checkBox">
+							<label for="chk_1_all"><input type="radio" id="chk_1_all" name="chk_rank" checked="checked">전체</label>
+							<label for="chk_1_1"><input type="radio" id="chk_1_1" name="chk_rank">관리자</label>
+							<label for="chk_1_2"><input type="radio" id="chk_1_2" name="chk_rank">책임자</label>
+							<label for="chk_1_3"><input type="radio" id="chk_1_3" name="chk_rank">행원A</label>
+							<label for="chk_1_4"><input type="radio" id="chk_1_4" name="chk_rank">행원B</label>
+							<label for="chk_1_5"><input type="radio" id="chk_1_5" name="chk_rank">기타</label>
+						</div>
+					</li>
+					<li>
+						<label>행번/이름</label>
+						<div class="courseTit">
+							<input type="text" />
+						</div>
+					</li>
+					<li>
+						<label>교육분야</label>
+						<div class="checkBox">
+							<label for="chk_2_all"><input type="radio" id="chk_2_all" name="chk_edu" checked="checked">전체</label>
+							<label for="chk_2_1"><input type="radio" id="chk_2_1" name="chk_edu">경영관리</label>
+							<label for="chk_2_2"><input type="radio" id="chk_2_2" name="chk_edu">직무공통</label>
+							<label for="chk_2_3"><input type="radio" id="chk_2_3" name="chk_edu">전문직무</label>
+						</div>
+					</li>
+					<li style="width:100%">
+						<label>상태</label>
+						<div class="checkBox">
+							<label for="chk_3_all"><input type="radio" id="chk_3_all" name="chk_status" checked="checked">전체</label>
+							<label for="chk_3_1"><input type="radio" id="chk_3_1" name="chk_status">신청(대기)</label>
+							<label for="chk_3_2"><input type="radio" id="chk_3_2" name="chk_status">신청(확정)</label>
+							<label for="chk_3_3"><input type="radio" id="chk_3_3" name="chk_status">연수증</label>
+							<label for="chk_3_4"><input type="radio" id="chk_3_4" name="chk_status">수료처리증</label>
+							<label for="chk_3_5"><input type="radio" id="chk_3_5" name="chk_status">수료</label>
+							<label for="chk_3_6"><input type="radio" id="chk_3_6" name="chk_status">미수료</label>
+						</div>
+					</li>
+					<li style="width:100%">
+						<label>CF</label>
+						<div class="checkBox">
+							<label for="chk_4_all"><input type="radio" id="chk_4_all" name="chk_status" checked="checked">전체</label>
+							<label for="chk_4_1"><input type="radio" id="chk_4_1" name="chk_status">RM</label>
+							<label for="chk_4_2"><input type="radio" id="chk_4_2" name="chk_status">PM</label>
+							<label for="chk_4_3"><input type="radio" id="chk_4_3" name="chk_status">RB</label>
+							<label for="chk_4_4"><input type="radio" id="chk_4_4" name="chk_status">수출입</label>
+							<label for="chk_4_5"><input type="radio" id="chk_4_5" name="chk_status">외환</label>
+							<label for="chk_4_6"><input type="radio" id="chk_4_6" name="chk_status">IB</label>
+							<label for="chk_4_7"><input type="radio" id="chk_4_7" name="chk_status">자금운용</label>
+							<label for="chk_4_8"><input type="radio" id="chk_4_8" name="chk_status">여신심사</label>
+							<label for="chk_4_9"><input type="radio" id="chk_4_9" name="chk_status">리스크관리</label>
+							<label for="chk_4_10"><input type="radio" id="chk_4_10" name="chk_status">디지털금융</label>
+							<label for="chk_4_11"><input type="radio" id="chk_4_11" name="chk_status">글로벌</label>
+							<label for="chk_4_12"><input type="radio" id="chk_4_12" name="chk_status">신탁</label>
+							<label for="chk_4_13"><input type="radio" id="chk_4_13" name="chk_status">은퇴설계</label>
+						</div>
+					</li>
+				</ul>
+				<div class="btnArea">
+					<button type="button" class="btnSearch" onclick="jsSearch();">검색</button>
+					<button type="button" class="btnReset" onclick="jsInit();">초기화</button>
+				</div>
+			</div>
+			<!-- EOD : searchBox -->
+			
+			<div class="btnMiddleArea">
+				<button type="button" class="btn_gray">엑셀다운</button>
+			</div>
+			
+			<!-- tableScroll -->
+			<div class="tableScroll">
+				<table class="table_normal">
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>일자</th>
+							<th>기간</th>
+							<th>과정코드</th>
+							<th>과정명</th>
+							<th>교육분야</th>
+							<th>교육방식</th>
+							<th>교육시간</th>
+							<th>CF</th>
+							<th>상태</th>
+							<th>참석인원</th>
+						</tr>
+					</thead>	
+					<tbody>
+						<tr>
+							<td>4</td>
+							<td>2019-12-09</td>
+							<td>2019.12.08~2019.12.10</td>
+							<td>A1000</td>
+							<td><a href="javascript:void(0)">PB스쿨</a></td>
+							<td>전문직무</td>
+							<td>집합</td>
+							<td>24</td>
+							<td>PB</td>
+							<td>운영</td>
+							<td><a href="javascript:void(0)">10</a></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>2019-12-09</td>
+							<td>2019.12.08~2019.12.10</td>
+							<td>A1000</td>
+							<td><a href="javascript:void(0)">기업여신실무기초</a></td>
+							<td>직무공통</td>
+							<td>집합</td>
+							<td>24</td>
+							<td>PB</td>
+							<td>운영</td>
+							<td><a href="javascript:void(0)">20</a></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>2019-12-09</td>
+							<td>2019.12.08~2019.12.10</td>
+							<td>A1000</td>
+							<td><a href="javascript:void(0)">PB스쿨</a></td>
+							<td>전문직무</td>
+							<td>집합</td>
+							<td>24</td>
+							<td>PB</td>
+							<td>운영</td>
+							<td><a href="javascript:void(0)">15</a></td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2019-12-09</td>
+							<td>2019.12.08~2019.12.10</td>
+							<td>A1000</td>
+							<td><a href="javascript:void(0)">기업여신실무기초</a></td>
+							<td>직무공통</td>
+							<td>집합</td>
+							<td>24</td>
+							<td>PB</td>
+							<td>운영</td>
+							<td><a href="javascript:void(0)">10</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- EOD : tableScroll -->
+		</div>
+		<!-- //contentsBox end -->
+	</div>
+	<!-- //contentsWrap end -->
+</div>
+
+
+</body>
+</html>

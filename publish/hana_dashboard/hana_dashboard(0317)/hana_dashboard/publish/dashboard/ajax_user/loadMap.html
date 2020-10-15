@@ -1,0 +1,144 @@
+<ul>
+	<li>									
+		<!-- dash_loadMapBoxIn -->
+		<div class="dash_loadMapBoxIn">
+			 <div class="loadMapName"><span>수신</span></div>
+			 <div class="loadMapArea">
+				 <div class="dash_ProgressBox">
+					 <div class="dash_Progress">
+						<div class="dash_ProgressIn">
+							<!-- 경력 데이터 / 데이터 비례해서 데이터 증감 -->
+							<span class="dash_data"></span>
+							<!-- EOD : 경력 데이터 -->
+							<!-- 과정 완료 상태 / basic : 기초 과정 완료 / all : 기초과정 , 심과화정 모두 완료 -->
+							<span class="dash_complete"></span>
+							<!-- EOD : 과정 완료 상태 -->
+						</div>
+					 </div>									
+				 </div>
+				 <span class="dash_ProgressTxt"><span class="num">0.5</span></span>
+			 </div>
+		</div>
+		<!-- EOD : dash_loadMapBoxIn -->
+	</li>
+	<li>									
+		<!-- dash_loadMapBoxIn -->
+		<div class="dash_loadMapBoxIn">
+			 <div class="loadMapName"><span>외환</span></div>
+			 <div class="loadMapArea">
+				 <div class="dash_ProgressBox">
+					 <div class="dash_Progress">
+						<div class="dash_ProgressIn">
+							<!-- 경력 데이터 / 데이터 비례해서 데이터 증감 -->
+							<span class="dash_data"></span>
+							<!-- EOD : 경력 데이터 -->
+							<!-- 과정 완료 상태 / basic : 기초 과정 완료 / all : 기초과정 , 심과화정 모두 완료 -->
+							<span class="dash_complete basic"></span>
+							<!-- EOD : 과정 완료 상태 -->
+						</div>
+					 </div>									
+				 </div>
+				 <span class="dash_ProgressTxt"><span class="num">1.5</span></span>
+			 </div>
+		</div>
+		<!-- EOD : dash_loadMapBoxIn -->
+	</li>
+	<li>									
+		<!-- dash_loadMapBoxIn -->
+		<div class="dash_loadMapBoxIn">
+			 <div class="loadMapName"><span>가계여신</span></div>
+			 <div class="loadMapArea">
+				 <div class="dash_ProgressBox">
+					 <div class="dash_Progress">
+						<div class="dash_ProgressIn">
+							<!-- 경력 데이터 / 데이터 비례해서 데이터 증감 -->
+							<span class="dash_data"></span>
+							<!-- EOD : 경력 데이터 -->
+							<!-- 과정 완료 상태 / basic : 기초 과정 완료 / all : 기초과정 , 심과화정 모두 완료 -->
+							<span class="dash_complete"></span>
+							<!-- EOD : 과정 완료 상태 -->
+						</div>
+					 </div>									
+				 </div>
+				 <span class="dash_ProgressTxt"><span class="num">1.8</span></span>
+			 </div>
+		</div>
+		<!-- EOD : dash_loadMapBoxIn -->
+	</li>
+	<li>									
+		<!-- dash_loadMapBoxIn -->
+		<div class="dash_loadMapBoxIn">
+			 <div class="loadMapName"><span>수출입</span></div>
+			 <div class="loadMapArea">
+				 <div class="dash_ProgressBox">
+					 <div class="dash_Progress">
+						<div class="dash_ProgressIn">
+							<!-- 경력 데이터 / 데이터 비례해서 데이터 증감 -->
+							<span class="dash_data"></span>
+							<!-- EOD : 경력 데이터 -->
+							<!-- 과정 완료 상태 / basic : 기초 과정 완료 / all : 기초과정 , 심과화정 모두 완료 -->
+							<span class="dash_complete all"></span>
+							<!-- EOD : 과정 완료 상태 -->
+						</div>
+					 </div>									
+				 </div>
+				 <span class="dash_ProgressTxt"><span class="num">3</span></span>
+			 </div>
+		</div>
+		<!-- EOD : dash_loadMapBoxIn -->
+	</li>
+	<li>									
+		<!-- dash_loadMapBoxIn -->
+		<div class="dash_loadMapBoxIn">
+			 <div class="loadMapName"><span>기업여신</span></div>
+			 <div class="loadMapArea">
+				 <div class="dash_ProgressBox">
+					 <div class="dash_Progress">
+						<div class="dash_ProgressIn">
+							<!-- 경력 데이터 / 데이터 비례해서 데이터 증감 -->
+							<span class="dash_data"></span>
+							<!-- EOD : 경력 데이터 -->
+							<!-- 과정 완료 상태 / basic : 기초 과정 완료 / all : 기초과정 , 심과화정 모두 완료 -->
+							<span class="dash_complete all"></span>
+							<!-- EOD : 과정 완료 상태 -->
+						</div>
+					 </div>									
+				 </div>
+				 <span class="dash_ProgressTxt"><span class="num">4</span></span>
+			 </div>
+		</div>
+		<!-- EOD : dash_loadMapBoxIn -->
+	</li>
+</ul>
+
+<script>
+	// 로드맵 수치에 따른 animation
+	$(".loadMapArea").each(function(index){
+		
+		speedTurm = (1000+(1000 * index)) / 1000;
+
+		var progress = $(this).find(".dash_ProgressTxt").find(".num").text();
+
+		if(2 >= progress){
+
+			var data = progress * 25;
+
+		}else{
+
+			var data = 50 + ((progress - 2) * 16.66);
+		}
+
+		$(this).find(".dash_data").css("width", data + "%"); 
+		$(this).find(".dash_data").css("transition","width " + speedTurm +"s ease");
+
+		$(this).find(".num").prop('Counter',0).animate({
+			Counter: $(this).find(".num").text()
+		}, {
+			duration: 1500,
+			easing: 'swing',
+			step: function (now) {
+				$(this).text(now.toFixed(1));
+			}
+		});
+	});
+</script>

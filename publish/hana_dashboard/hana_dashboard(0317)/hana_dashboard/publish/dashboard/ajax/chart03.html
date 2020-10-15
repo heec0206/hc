@@ -1,0 +1,92 @@
+<div class="chart" id="chart03">
+	<div class="chartIn">
+		<!-- 막대 -->
+		<ul class="progress">
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph03"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">10</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+					<div class="progressBox graph02"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">78</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">자산관리</div>
+			</li>	
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph03"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">34</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+					<div class="progressBox graph02"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">100</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">외환</div>
+			</li>
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph03"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">0</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+					<div class="progressBox graph02"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">17</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+
+				</div>
+				<div class="gubun">가계여신</div>
+			</li>
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph03"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">15</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+					<div class="progressBox graph02"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">44</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">외환</div>
+			</li>
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph03"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">9</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+					<div class="progressBox graph02"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">35</span><span class="unit">%</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">기업여신</div>
+			</li>
+		</ul>
+		<!-- EOD : 막대 -->
+	</div>
+</div>
+
+<script>
+
+	 $(function(){ 
+		 $("#chart03").chart({
+			type : 'vertical', // horizontal, vertical, multiBar 	
+			margin : 0, 
+			speed :    2000, //bar animation speed
+			speedTurm : 500, // bar animation turm speed
+			height :    120, // chart height 
+			barHeight : [20,10],  // bar height, 짝수만 
+			markStart : 0, //기준점 시작
+			markEnd : 100, //기준점 마지막
+			markInterval : 1, //기준점 간격
+		});	
+	 });
+
+</script>

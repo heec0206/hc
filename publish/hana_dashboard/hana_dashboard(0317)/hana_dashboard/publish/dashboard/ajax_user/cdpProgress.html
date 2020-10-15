@@ -1,0 +1,108 @@
+<ul>
+	<li>	
+		<!-- cdpProgressBoxIn -->
+		<div class="cdpProgressBoxIn">
+			<!-- cdpCProgress -->
+			<div class="cdpCProgress">
+			   <span class="lv">3</span>
+			   <strong class="numBox"><span class="num">50</span><sub>%</sub></strong>
+			   <p class="tit">RM</p>
+			</div>
+			<!-- EOD : cdpCProgress -->
+			<!-- cdpVProgress -->
+			<div class="cdpVProgress">
+				<div class="lineBox"></div>
+				<div class="cdpVProgressIn"><span class="txt"><span class="num">75</span><sub>%</sub></span></div>
+			</div>	
+			<!-- EOD : cdpVProgress -->
+		</div>
+		<!-- EOD : cdpProgressBoxIn -->
+	</li>
+	<li>
+		<!-- cdpProgressBoxIn -->
+		<div class="cdpProgressBoxIn">
+			<!-- cdpCProgress -->
+			<div class="cdpCProgress">
+			   <span class="lv">1</span>
+			   <strong class="numBox"><span class="num">70</span><sub>%</sub></strong>
+			   <p class="tit">여신심사</p>
+			</div>
+			<!-- EOD : cdpCProgress -->
+			<!-- cdpVProgress -->
+			<div class="cdpVProgress">
+				<div class="lineBox"></div>
+				<div class="cdpVProgressIn"><span class="txt"><span class="num">56</span><sub>%</sub></span></div>
+			</div>	
+			<!-- EOD : cdpVProgress -->
+		</div>
+		<!-- EOD : cdpProgressBoxIn -->
+	</li>
+	<li class="last">
+		<!-- cdpProgressBoxIn -->
+		<div class="cdpProgressBoxIn">
+			<!-- cdpCProgress -->
+			<div class="cdpCProgress">
+			   <span class="lv">2</span>
+			   <strong class="numBox"><span class="num">25</span><sub>%</sub></strong>
+			   <p class="tit">자금운용</p>
+			</div>
+			<!-- EOD : cdpCProgress -->
+			<!-- cdpVProgress -->
+			<div class="cdpVProgress">
+				<div class="lineBox"></div>
+				<div class="cdpVProgressIn"><span class="txt"><span class="num">34</span><sub>%</sub></span></div>
+			</div>	
+			<!-- EOD : cdpVProgress -->
+		</div>
+		<!-- EOD : cdpProgressBoxIn -->
+	</li>
+</ul>
+
+
+
+<script>
+
+	/* 원형 프로그래스 스크립트 */
+	$(".cdpCProgress").each(function(index){
+
+		var number = $(this).find('.num').text();
+		var value = number / 100;
+		var delay = 1500 + (index * 500);
+
+		$(this).circleProgress({
+			value: value,
+			thickness:15,
+			startAngle:-Math.PI/2,
+			fill: {color: '#e63073'},
+			animation: {duration: delay },
+			size:110,
+			}).on('circle-animation-progress', function(event, progress, stepValue) {
+			  $(this).find('.numBox').find('.num').text((stepValue * 100).toFixed(0).substr(0));
+		});
+
+	});
+	/* EOD : 원형 프로그래스 스크립트 */	
+
+	/* 수직 프로그래스 스크립트 */
+	$('.cdpVProgress').each(function(index){
+		
+		speedTurm = 1 + (1 * index);
+
+		progress = $(this).find(".cdpVProgressIn").find('.num').text();
+		
+		$(this).find(".cdpVProgressIn").css({
+			"height" : progress + "%",
+			"transition" : "height " + speedTurm +"s ease"
+		});	
+		
+		var tN = $(this);
+
+		tN.find(".lineBox").append("<ul class='line'>");
+		for(var i = 0; i < 10; i++) {
+			tN.find(".line").prepend("<li></li>");
+		}
+		tN.find(".cdpVProgressIn").append("</ul>");
+
+	});
+
+</script>

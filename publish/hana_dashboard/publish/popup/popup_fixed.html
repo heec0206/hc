@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>자격증 보유 현황</title>
+    
+    <link href="../../css/initialize.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/template6/resp/import.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/template6/resp/blue.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/chart.css" rel="stylesheet" type="text/css" media="all">
+    
+    <!-- ## IE9이하 버전에서 html5 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="../../js/html5.js"></script>
+    <![endif]-->
+    
+    <!-- ## IE9이하 버전에서 css3 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="../../js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <script src="../../js/jquery-1.8.3.min.js"></script>
+	<script src="../../js/chart.js"></script>
+	<script src="../../js/template6/style.js"></script>    
+</head>
+<body>
+	
+<div class="popup">
+	<h3>자격증 보유 현황</h3>
+	<button type="button" class="btnClosed" onclick="popupClose();">닫기</button>
+	
+	<!-- contentsWrap start -->
+	<div class="contentsWrap">
+		<!-- contentsBox start -->
+		<div class="contentsBox">	
+			<!-- searchBox -->
+			<div class="searchBox">
+				<ul>					
+					<li>
+						<label>부서</label>
+						<div class="selectBox">
+							<select>
+								<option value="" checked="checked">부서</option>
+								<option value="">부실점장</option>
+								<option value="">본부장</option>
+								<option value="">그룹장</option>
+								<option value="">은행 전체</option>
+							</select>
+						</div>	
+					</li>				
+					<li>
+						<label>행번/이름</label>
+						<div class="courseTit">
+							<input type="text" />
+						</div>
+					</li>
+				</ul>
+				<div class="btnArea">
+					<button type="button" class="btnSearch" onclick="jsSearch();">검색</button>
+					<button type="button" class="btnReset" onclick="jsInit();">초기화</button>
+				</div>
+			</div>
+			<!-- EOD : searchBox -->
+			
+			<div class="btnMiddleArea">
+				<button type="button" class="btn_gray">엑셀다운</button>
+			</div>
+			
+			<!-- tableFixed -->
+			<div class="tableFixed">
+				<!-- fixed -->
+				<div class="fixed">
+					<table class="table_normal">
+						<thead>
+							<tr>
+								<th class="row2">No</th>
+								<th class="row2">소속</th>
+								<th class="row2">직급</th>
+								<th class="row2">직위</th>
+								<th class="row2">행번</th>
+								<th class="row2">성명</th>
+							</tr>
+						</thead>	
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>SK센터</td>
+								<td>책임자</td>
+								<td>차장</td>
+								<td>6744564545</td>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>무역센터</td>
+								<td>책임자</td>
+								<td>차장</td>
+								<td>4563264563</td>
+								<td>홍길동2</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>SK센터</td>
+								<td>책임자</td>
+								<td>차장</td>
+								<td>9566355643</td>
+								<td>김민수</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- EOD : fixed -->
+				<!-- tableScroll -->
+				<div class="tableScroll">
+					<table class="table_normal">
+						<thead>
+							<tr>
+								<th colspan="6" class="bb">기본</th>
+								<th colspan="8" class="bb">심화</th>
+								<th colspan="11" class="bb">전문</th>
+							</tr>
+							<tr>
+								<th>펀드</th>
+								<th>파생</th>
+								<th>생보</th>
+								<th>손보</th>
+								<th>제3보험</th>
+								<th>변액</th>
+								<th>FP</th>
+								<th>투자자산운용사</th>
+								<th>AFPK</th>
+								<th>은퇴설계전문가</th>
+								<th>외환전문역1종</th>
+								<th>외환전문역2종</th>
+								<th>신용분석사</th>
+								<th>국제무역사</th>
+								<th>CFP</th>
+								<th>외환관리사</th>
+								<th>CDCS</th>
+								<th>CFA(Lv1)</th>
+								<th>CFA(Lv2)</th>
+								<th>CFA(Lv3)</th>
+								<th>FRM</th>
+								<th>여신심사역</th>
+								<th>CRA</th>
+								<th>AICPA</th>
+								<th>공인회계사</th>
+							</tr>
+						</thead>	
+						<tbody>
+							<tr>
+								<td>3</td>
+								<td>1</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>3</td>
+								<td>2</td>
+								<td>1</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>1</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>3</td>
+								<td>2</td>
+								<td>1</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>1</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>3</td>
+								<td>2</td>
+								<td>1</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- EOD : tableScroll -->
+			</div>
+			<!-- EOD : tableFixed -->
+		</div>
+		<!-- //contentsBox end -->
+	</div>
+	<!-- //contentsWrap end -->
+</div>
+
+
+</body>
+</html>

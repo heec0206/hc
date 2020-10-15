@@ -1,0 +1,37 @@
+<ul>
+	<li>
+		<div class="pie pink">
+		   <p class="num"><strong class="num_count">52</strong>명</p>
+		   <p class="num_max">/<span>100</span></p>
+		</div>
+		<p class="tit">책임자이상</p>
+	</li>
+	<li>
+		<div class="pie green">
+			<p class="num"><strong class="num_count">35</strong>명</p>
+			<p class="num_max">/<span>50</span></p>	
+		</div>
+		<p class="tit">행원급이하</p>
+	</li>
+</ul>
+
+<script>
+	/* 사람수에 따른 숫자 카운트 */
+	
+	$('.pie .num_count').each(function(index) {
+
+		delay = 2000 + (index*1000);
+		$(this).prop('Counter',0).animate({
+			Counter: $(this).text()
+		}, {
+			duration: delay,
+			easing: 'swing',
+			step: function (now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+		
+	});
+	console.log("END");
+
+</script>

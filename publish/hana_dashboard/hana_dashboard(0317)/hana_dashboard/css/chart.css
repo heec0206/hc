@@ -1,0 +1,471 @@
+/* @charset "utf-8"; */
+
+
+/* 관리자 대쉬보드 */
+
+.dashLayout {display:table; width:100%; height:100%; padding:40px 20px; background:#edf0f3; overflow:hidden}
+.contentLayout {display: table-cell; vertical-align: middle;}
+
+.mob_display {display:none}
+
+.dashBoard {max-width:1230px; margin:0 auto}
+.dashBoard > ul {overflow:hidden; margin:-20px 0 0 -30px}
+.dashBoard > ul > li {float:left; width:50%}
+.dashBoard > ul > li.row {width:100%}
+.dashBoard > ul > li.row .contentBox {height:auto !important}
+.dashBoard > ul > li .contentBox {height:300px; border-radius:20px; margin:20px 0 0 30px; padding:26px 30px; background-color:white;  box-shadow: 0 1px 5px rgba(0,0,0,0.05);}
+.dashBoard > ul > li .contentBox.type02 {height:390px}
+
+.dashBoard .titBox {position:relative; margin:0 0 25px; display: inline-block;width: 100%;}
+.dashBoard .titBox .tit {line-height:24px;font-size:18px;color:#333;font-weight:500;float: left;}
+.dashBoard .subBox {float: right;}
+.dashBoard .subBox .date {float:left; font-size:14px;color:#666;font-weight:400;margin:0 20px 0 0;line-height:24px;}
+.dashBoard .tab_dash {float:left}
+.dashBoard .tab_dash li {float:left; margin:0 0 0 1px; line-height:24px;}
+.dashBoard .tab_dash li:first-child {margin:0}
+.dashBoard .tab_dash li a {min-width:55px; height:24px; line-height:24px; padding:0 10px;  text-align:center; border-radius:24px; vertical-align:top; background-color:#3f4346; font-size:14px; color:white}
+.dashBoard .tab_dash li.active a {background-color:#4bb9b6}
+.dashBoard .tab_dash .date {margin:0 10px 0 0}
+.dashBoard .viewBox {position:absolute; top:30px; right:0;}
+.dashBoard .titBox.type02 .viewBox {top:3px}
+.dashBoard .viewBox a {position:relative; font-size:13px; font-weight:400; color:#666; margin:0 10px 0 0;}
+.dashBoard .viewBox a:before {content: "";  position: absolute;  right: 0;  bottom:-2px;  width: 0;  height: 1px;  transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;  background:#666;}
+.dashBoard .viewBox a:hover:before {width:100%; left:0}
+.dashBoard .viewBox a:after {content:""; position:absolute; top:3px; right:-8px; width:5px; height:8px; background:url('../images/template6/resp/default/icon/icon_dashboard_arrow.png'); transition:0.5s all ease}
+.dashBoard .viewBox li {float:left; margin:0 0 0 10px}
+
+.pieLayout {position:relative;}
+.pieBox {margin:25px 140px 0 0}
+.pieBox ul {overflow:hidden}
+.pieBox ul li {float:left; width:50%; text-align:center}
+.pieBox ul li .tit {font-size:14px; font-weight:400; margin:10px 0 0}
+.pieBox .pie {display:inline-block; padding:20px 0 0; width:110px; height:110px; border-radius:50%}
+.pieBox .pie.pink {background-color:#e63073;}
+.pieBox .pie.green {background-color:#01b1ad;}
+.pieBox .pie .num {color:white; font-size:20px; margin:0 0 5px}
+.pieBox .pie .num strong {font-size:40px; font-weight:400}
+.pieBox .pie .num_max {color:#e5e5e5; font-size:20px}
+
+.chart_label.pie {position:absolute; top:80px; right:0}
+.dashBoard .chart_label.pie > ul > li {float:none}
+
+.dashBoard .chart_label.type02 {position:relative; overflow:hidden}
+.dashBoard .chart_label.type02 .txt_circle {margin:0 0 3px}
+.dashBoard .chart_label.type02 > ul {margin:5px 0 0}
+.dashBoard .chart_label .tit {font-size:14px; color:#222; font-weight:500; margin:0 0 10px;}
+.dashBoard .chart_label .txt_default {display:inline-block; font-size:14px; color:#666; font-weight:400;}
+.dashBoard .chart_label .txt_black {color:#222}
+.dashBoard .chart_label .txt_circle {position:relative; font-size:14px; color:#666; font-weight:400; margin:0 0 8px; padding:0 0 0 18px}
+.dashBoard .chart_label .txt_circle span {margin:0 0 0 3px}
+.dashBoard .chart_label .txt_circle.color01:before {content:""; position:absolute; top:2px; left:0; display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#e63073}
+.dashBoard .chart_label .txt_circle.color02:before {content:""; position:absolute; top:2px; left:0; display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#01b1ad}
+.dashBoard .chart_label .txt_circle.color03:before {content:""; position:absolute; top:2px; left:0; display:inline-block; width:12px; height:12px; border-radius:50%; background-color:#3950b2}
+.dashBoard .chart_label .txt_square {position:relative; font-size:14px; color:#666; font-weight:400; padding:0 0 0 16px}
+.dashBoard .chart_label .txt_square span {margin:0 0 0 3px}
+.dashBoard .chart_label .txt_square.color01:before {content:""; position:absolute; top:2px; left:0; display:inline-block; width:10px; height:10px; background-color:#01b1ad}
+.dashBoard .chart_label .txt_square.color02:before {content:""; position:absolute; top:2px; left:0; display:inline-block; width:10px; height:10px; background-color:#3950b2}
+.dashBoard .chart_label .txt_square.color03:before {content:""; position:absolute; top:2px; left:0; display:inline-block; width:10px; height:10px; background-color:#e63073}
+.dashBoard .chart_label .txt_reco {position:relative; font-size:13px; color:#666; font-weight:400; padding:0 0 0 18px}
+.dashBoard .chart_label .txt_reco.type01:before {content:""; position:absolute; top:0; left:0; display:inline-block; width:13px; height:13px; background:url('../images/template6/resp/default/icon/icon_dash_mini_process01.png')}
+.dashBoard .chart_label .txt_reco.type02:before {content:""; position:absolute; top:0; left:0; display:inline-block; width:13px; height:13px; background:url('../images/template6/resp/default/icon/icon_dash_mini_process02.png')}
+.dashBoard .chart_label .txt_reco.type03:before {content:""; position:absolute; top:0; left:0; display:inline-block; width:13px; height:13px; background:url('../images/template6/resp/default/icon/icon_dash_mini_process03.png')}
+.dashBoard .chart_label .txt_reco.type04:before {content:""; position:absolute; top:0; left:0; display:inline-block; width:13px; height:13px; background:url('../images/template6/resp/default/icon/icon_dash_mini_process04.png')}
+.dashBoard .chart_label .txt_reco.type05:before {content:""; position:absolute; top:0; left:0; display:inline-block; width:13px; height:13px; background:url('../images/template6/resp/default/icon/icon_dash_mini_process05.png')}
+.dashBoard .chart_label .txt_level {position:relative; display:inline-block; font-size:13px; color:#666; font-weight:400; padding:0 0 0 23px}
+.dashBoard .chart_label .txt_level:before {content:""; position:absolute; top:-3px; left:0; display:inline-block; width:19px; height:20px; background:url('../images/template6/resp/default/icon/icon_dash_mini_medal.png')}
+
+.dashBoard .chart_label > ul.total {float:right;}
+.dashBoard .chart_label > ul {margin:-10px 0 0; display:inline-block;}
+.dashBoard .chart_label > ul > li {float:left; margin:10px 20px 0 0}
+.dashBoard .chart_label.type02 > ul > li {margin:0 10px 0 0}
+.dashBoard .chart_label.right {text-align:right; margin: 0 -10px 0 0;}
+
+.chartLayout {margin:20px 0 0;}
+.chartLayout.mt0 {margin:0}
+.chartLayout.mt0 .chartBox {padding:0 0 10px}
+.chartLayout > ul {overflow:hidden; margin:-20px 0 0 -20px}
+.chartLayout > ul > li {width:50%; float:left;}
+.chartLayout > ul > li > div {margin:20px 0 0 40px}
+
+.chartBox { position:relative; min-height:140px; background:#fff; padding:1px 0 15px 0; letter-spacing:-1px; }
+.chartBox .chart_tit {position:absolute; top:0; height:100%; left:-17px; width:17px; word-break:break-word; font-size:13px; color:#222; border-right:1px solid #e5e5e5}
+.chart { position:relative; height:100%; display:none; }
+
+.chart.horizontal { display:block; }
+.chart.horizontal .chartIn { height:100%; position:relative; }
+.chart.horizontal .mark { position:absolute; left:0; display:table; width:60px; table-layout:fixed; height:100%; box-sizing:border-box; }
+.chart.horizontal .mark li { position:relative; display:table-row; }
+.chart.horizontal .mark li:first-child { width:0; border-right:none; }
+.chart.horizontal .mark li.last { border-right:none; }
+.chart.horizontal .mark li span { position:absolute; bottom:-25px; right:0; margin:0 -4px 0 0; font-size:16px; color:#767676; }
+
+.chart.horizontal .markN { position:absolute; left:0; display:table; width:60px; table-layout:fixed; height:100%; box-sizing:border-box; }
+.chart.horizontal .markN li { position:relative; display:table-row; }
+.chart.horizontal .markN li .gubunBox { position:relative; z-index:5; display:table; table-layout:fixed; width:100%; height:100%; font-size:14px; line-height:1.4; text-align:center; }
+.chart.horizontal .markN li .gubunBox .gubunBoxIn { display:table-cell; vertical-align:middle; height:40px; padding:0 10px 2px 0; line-height:1.4; font-weight:500; color:#222; }
+
+.chart.horizontal .progress { display:table; width:100%; height:100%; table-layout:fixed; border-left:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; }
+.chart.horizontal .progress li { display:table-row; }
+.chart.horizontal .progress li .progressWrap { display:table; height:100%; width:100%; }
+.chart.horizontal .progress li .progressBox { position:relative; left:-1px; display:table-cell; vertical-align:middle; width:0; margin:0; overflow:hidden; }
+.chart.horizontal .progress li .progressBox .gubun { display:none; }
+.chart.horizontal .progress li .progressBox .bar { position:relative; display:table-cell; vertical-align:top; background:#228805; width:0px;}
+.chart.horizontal .progress li .progressBox .txt { display:inline-block; text-indent:-1000px; position:absolute; }
+.chart.horizontal .progress li .progressBox .bar:before { content:''; position:absolute; bottom:0; left:0; width:100%; height:3px; /* background:url(/images/template10/resp/default/usr/trans_15.png); */ }
+.chart.horizontal .progress li .progressBox .bar .triangle { position:absolute; top:0; right:0; border:5px solid red; border-left:5px solid transparent; border-right:none; }
+.chart.horizontal .progress li .progressBox .data { position:relative; display:table-cell; vertical-align:top; font-size:16px; }
+.chart.horizontal .progress li .progressBox .data .dataIn { position:absolute; width:30px; margin:0 0 0 5px; font-size:14px; }
+
+.chart .progress .graph01 .bar , .chart .progress .graph01_2 .bar { background:#01b1ad !important; }
+.chart .progress .graph01 .data { color:#01b1ad !important; }
+.chart .progress .graph01_2 .data {color:#999999 !important; }
+.chart .progress .graph02 .bar { background:#3950b2 !important; }
+.chart .progress .graph02 .data { color:#999999 !important; }
+.chart .progress .graph03 .bar { background:#e63073 !important; }
+.chart .progress .graph03 .data { color:#e63073 !important; }
+.chart .progress .graph04 .bar { background:#3fa522 !important; }
+.chart .progress .graph04 .data { color:#3fa522 !important; }
+.chart .progress .graph05 .bar { background:#2176f5 !important; }
+.chart .progress .graph05 .data { color:#2176f5 !important; }
+.chart .progress .graph06 .bar { background:#7640e4 !important; }
+.chart .progress .graph06 .data { color:#7640e4 !important; }
+
+.chart.vertical { display:block; margin-top:10px !important; margin-bottom:30px !important; }
+.chart.vertical { height:100%; }
+.chart.vertical .chartIn { position:relative; display:table; width:100%; height:100%; }
+.chart.vertical .mark {display:none; padding:0 10px 0 0; text-align:center; vertical-align:top; height:100%; }
+.chart.vertical .mark li.last, .chart.vertical .line li.last { height:0 !important; }
+.chart.vertical .mark li span { position:relative; display:inline-block; font-size:16px; color:#767676; line-height:1; } 
+.chart.vertical .lineBox { position:relative; display:table-cell; width:100%; height:100%; }
+.chart.vertical .line {height:100%; }
+.chart.vertical .line li {}
+.chart.vertical .line li:first-child { border-top:none; }
+.chart.vertical .line li.last { border-top:none; }
+
+.chart.vertical .progress { position:absolute; top:0; bottom:0; left:0; display:table; table-layout:fixed; width:100%; height:100%;  background-color:white; border-bottom:1px solid #e5e5e5}
+.chart.vertical .progress li { position:relative; display:table-cell; vertical-align:bottom; text-align:center; }
+.chart.vertical .progress li .progressWrap { display:inline-block; overflow:hidden}
+.chart.vertical .progress li .progressBox {padding:0px 2px; margin:0; position:absolute; bottom:0; overflow:hidden}
+.chart.vertical .progress li .progressBox .data {white-space:nowrap; margin:0 0 3px}
+.chart.vertical .progress li .progressBox .data span { display:inline-block; font-size:13px; font-weight:500; }
+.chart.vertical .progress li .progressBox .data span.unit {margin:0 0 0 1px; font-size:12px}
+.chart.vertical .progress li .progressBox .bar { display:inline-block; position:relative; height:0; bottom:-10px}
+.chart.vertical .progress li .progressBox .txt { display:inline-block; text-indent:-1000px; position:absolute; overflow:hidden; }
+.chart.vertical .progress li .gubun { font-size:14px; color:#222; position:relative; top:28px; font-weight:500;}
+.chart.vertical .progress li .progressBox.graph01 .radius , .chart.vertical .progress li .progressBox.graph01_2 .radius {position:absolute; left:0; top:-9px; width:100%; border-top-style:solid; border-top-color:#01b1ad;}
+.chart.vertical .progress li .progressBox.graph02 .radius {position:absolute; left:0; top:-9px; width:100%; border-top-style:solid; border-top-color:#3950b2;}
+.chart.vertical .progress li .progressBox.graph03 .radius {position:absolute; left:0; top:-9px; width:100%; border-top-style:solid; border-top-color:#e63073;}
+
+.cdp_multiBar {position:relative;}
+.cdp_multiBar .gubun {width:110px;font-size:14px;font-weight:400;text-align:right;color:#666;padding:6px 10px 6px 0; line-height:1.2; border-right: 1px solid #e5e5e5;box-sizing:content-box;}
+.cdp_multiBar .gubun .name {color:#222; margin:0 2px 0 0}
+.cdp_multiBar .progressWrap {position:absolute;top:0px; height:100%; min-height:28px; left:120px;width:0;overflow:hidden;transition:width 1.5s ease 0.15s;}
+.cdp_multiBar .progressBox {position:absolute;top:50%;left:0;height:15px;margin:-7px 0 0;}
+.cdp_multiBar .progressBox .bar {position:absolute; top:0; width:100%; height:100%; background-color:#01b1ad;}
+.cdp_multiBar .progressBox.graph02 .bar {background-color:#e63073}
+.cdp_multiBar .progressBox.graph03 .bar {background-color:#3950b2}
+
+.cdp_multiBar .progressBox .dataBox {position:relative;}
+.cdp_multiBar .progressBox.graph01 .dataBox:after {content: ""; top: 0; right: -12px;  position: absolute; display: inline-block; width: 15px;  height: 15px; border-radius: 0 15px 15px 0;  z-index: 3; background-color:#01b1ad;}
+.cdp_multiBar .progressBox.graph02 .dataBox:after {content: ""; top: 0; right: -12px;  position: absolute; display: inline-block; width: 15px;  height: 15px; border-radius: 0 15px 15px 0; z-index: 2; background-color:#e63073}
+.cdp_multiBar .progressBox.graph03 .dataBox:after {content: ""; top: 0; right: -12px;  position: absolute; display: inline-block; width: 15px;  height: 15px; border-radius: 0 15px 15px 0;  z-index: 1; background-color:#3950b2}
+.cdp_multiBar .progressBox .data {position:absolute; top:1px; right:0; font-size:12px; color:white; z-index:10}
+.cdp_multiBar .medal {position:absolute;top:50%;z-index:3;margin:-14px 0 0 3px;}
+.cdp_multiBar .medal .icon {display:inline-block;width: 27px;height: 28px;background:url('../images/template6/resp/default/icon/icon_dash_medal.png');}
+.cdp_multiBar .medal .data {color:#666; white-space:nowrap; position: absolute;  top: 50%;  margin:-8px 0 0 3px;}
+
+.chart.pie {display:block}
+.chart.pie .progress {font-size:1px; width:1px; height:1px; overflow: hidden;}
+.chart.pie .progress .graph01 .bar {background:none !important}
+.chart.pie .title {text-align:center; font-size:16px; color:#767676; margin:20px 0 0}
+
+	/* chart - line */
+	.chart.line { display:block;}
+	.chart.line { height:100%; }
+	.chart.line .chartIn { position:relative; display:table; width:100%; height:100%; transition:1s ease; }
+	.chart.line .mark { display:table-cell;  display:none; padding:0 10px 0 0; text-align:center; vertical-align:top; height:100%; }
+	.chart.line .mark li.last, .chart.vertical .line li.last { height:0 !important; }
+	.chart.line .mark li span { position:relative; display:inline-block; font-size:16px; color:#767676; line-height:1; } 
+	
+	.chart.line .progress { }
+	.chart.line .progress li { display:table; width:100%; table-layout:fixed; }
+	.chart.line .progress li .progressWrap { position:relative; text-align:center; display:table-cell;  }
+	.chart.line .progress li .progressBox { margin:0; display:table; width:100%; }
+	.chart.line .progress li .progressBox .data { display:none; }
+	.chart.line .progress li .progressBox .data span { }
+	.chart.line .progress li .progressBox .bar { display:none; }
+	.chart.line .progress li .progressBox .lineGraph { position:absolute; width:140px; height:4px; background:#01b1ad; }
+	.chart.line .progress li .progressWrap.last .bar:before { display:none; }
+	.chart.line .progress li .progressBox .txt { display:inline-block; text-indent:-1000px; position:absolute; overflow:hidden; }
+	.chart.line .progress li .gubun { position:absolute; text-indent:-9999px; width:0; height:0; overflow:hidden; }
+	.chart.line .gubunBox { display:table; table-layout:fixed; width:100%; height:50px; text-align:center; border-top:1px solid #e5e5e5; }
+	.chart.line .gubunBox li { display:table-cell; vertical-align:middle; font-size:14px; font-weight:500; line-height:1.3; }
+
+	.chart.line .svgBox { transition:width 1.33s ease; }
+	.chart.line .svgBox.active { width:100%; }
+	.chart.line svg { width:0; height:100%; transition:width 1.55s ease; overflow:hidden; }  
+	.chart.line svg.active { width:100%; }  
+	.chart.line svg circle { position:relative; z-index:8; cursor:pointer; }
+	.chart.line svg line { position:relative; z-index:2; }
+	
+	.chart.line .info { display:none; position:absolute; min-width:150px; top:0; left:0; z-index:10; padding:10px; border-radius:2px; background:url(../images/template6/resp/default/bg/bg_chart_line_hover.png); box-shadow:1px -8px 15px -8px #999; }
+	.chart.line .info:after { content:''; position:absolute; bottom:-10px; left:50%; width:20px; height:10px; margin:0 0 0 -10px; background:url(../images/template6/resp/default/bg/bg_chart_line_hover02.png); }
+	.chart.line .info.active:after { top:-10px; background:url(../images/template6/resp/default/bg/bg_chart_line_hover03.png); }
+	.chart.line .info ul { color:#fff; }
+	.chart.line .info ul li { margin:6px 0 0 0; }
+	.chart.line .info ul li:first-child { margin:0; }
+	.chart.line .info ul li strong { display:block; font-size:13px; margin:0 0 2px 0; }
+	.chart.line .info ul li p { margin:0; font-size:12px; }
+	/* EOD : chart - line */
+
+/* .chart.vertical * { transition:inherit !important; } */
+
+.dashlinkBox {margin:30px 0 0}
+.dashlinkBox > ul {display:table; table-layout:fixed; width:100%; margin:-30px 0 0}
+.dashlinkBox > ul > li {display:table-cell;}
+.dashlinkBox > ul > li > a {display:block; height:80px; border-radius:20px; margin:30px 0 0 25px; background-color:white;  box-shadow: 0 1px 5px rgba(0,0,0,0.05); text-align:center; font-weight:500}
+.dashlinkBox .txtBox {display:table; width:100%; height:100%;}
+.dashlinkBox .txtBoxIn {display:table-cell; width:100%; vertical-align:middle; }
+.dashlinkBox .txt {position:relative; font-size:18px; color:#333; font-weight:400; display:inline-block; vertical-align:middle}
+.dashlinkBox .txt:after {content: "";  position: absolute;  right: 0;  bottom: -3px;  width: 0;  height: 1px;  transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;  background: #666;}
+.dashlinkBox > ul > li > a:hover .txt:after {width:100%; left: 0;}
+.dashlinkBox .arrow {display:inline-block; width:20px; height:20px; vertical-align:middle; margin:0 0 0 6px; background:url('../images/template6/resp/default/icon/icon_dashlink_arrow.png')}
+
+
+/* EOD : 관리자 대쉬보드 */
+
+/* 사용자 대시보드 */
+
+.cdpProgressBox {min-height:135px; margin:0 0 30px;}
+.cdpProgressBox > ul {display:inline-block; width:100%}
+.cdpProgressBox > ul > li {width:33.33%; float: left;  text-align: center;}
+.cdpProgressBox .tit {margin:10px 0 0; font-size:14px; color:#222; font-weight:500}
+.cdpCProgress {display:inline-block}
+.cdpCProgress {margin:0; display: inline-block; position: relative;  text-align: center; line-height: 1.2;}
+.cdpCProgress .lv {display: block; position: absolute; top:30px; width:100%; font-size: 14px; color: #666;}
+.cdpCProgress .lv:before {content:"lv"}
+.cdpCProgress canvas {vertical-align: top;}
+.cdpCProgress strong {position: absolute; top:48px; left: 0; width: 100%; text-align: center; line-height: 1; }
+.cdpCProgress strong span {vertical-align:middle; font-size:28px;}
+.cdpCProgress strong sub {vertical-align:middle; font-size:16px; color:#666; margin:0 0 0 1px}
+
+.cdpVProgress {position:relative; display:inline-block; width:5px; height:110px; margin:0 0 0 4px; vertical-align:top; }
+.cdpVProgress .lineBox {width:100%; height:100%}
+.cdpVProgress .lineBox > ul {height:100%}
+.cdpVProgress .lineBox > ul > li {position:relative; height:10%; background-color:#e5e5e5;}
+.cdpVProgress .lineBox > ul > li:before {content:""; position:absolute; top:0; left:0; width:100%; border-top:1px solid white; z-index:1;}
+.cdpVProgressIn {position:absolute; left:0; bottom:0; width:100%; height:0; background-color:#01b1ad;}
+.cdpVProgressIn .txt {position: relative; right: -8px;  top: -10px;  font-size: 12px;  color: #222;  white-space: nowrap;  font-weight: 500;}
+
+.loadMapBox {min-height:165px; padding:0 0 15px;}
+.loadMapBox > ul {margin:-15px 0 0}
+.loadMapBox > ul > li {margin:25px 0 0}
+
+.dash_loadMapBoxIn {position: relative;}
+.loadMapName {vertical-align:middle; position: absolute; top:-2px; left: 0;}
+.loadMapName span {font-size: 14px;font-weight: 500;}
+.loadMapArea {vertical-align:middle; margin: 0 0 0 80px;}
+.loadMapArea .load_ProgressBox {display:block}
+  .dash_Progress {position:relative; height:10px; background-color:#e5e5e5;}
+  .dash_Progress:before {content:"0"; position:absolute; top:12px; left:0; color:#999; font-size:12px;}
+  .dash_Progress:after {content:"5"; position:absolute; top:12px; right:0; color:#999; font-size:12px;}
+   .dash_ProgressIn {position:relative; width:100%; height:100%;}
+   .dash_ProgressIn:before {content:"2"; position:absolute; top:12px; left:50%; margin:0 0 0 -3px; color:#999; font-size:12px;}
+   .dash_ProgressIn:after {content:""; position:absolute; top:-2px; left:50%; display:inline-block; width:1px; height:13px; border-left:1px dashed #666; z-index:1;}
+   .dash_ProgressIn .dash_data {position:absolute; top:0; bottom:0; left:0; width:0%; background-color:#e63073; z-index:2; transition:1.5s all ease }
+   .dash_ProgressIn .dash_complete {position:absolute; top:0; bottom:0; left:0; width:0%; background-color:#01b1ad; z-index:1;}
+   .dash_ProgressIn .dash_complete.basic {width:50%}
+   .dash_ProgressIn .dash_complete.all {width:100%}
+
+  .dash_ProgressTxt {font-size:24px;color:#3f4346;vertical-align:middle;font-weight:bold;margin:0 0 0 10px;display: none;}
+  .dash_ProgressTxt sub {font-size:14px; margin:0 0 0 3px}
+
+.reco_board {border-bottom:1px solid #e5e5e5; margin: -5px 0 10px;}
+.reco_board > ul {width:100%}
+.reco_board > ul > li {display:table; table-layout:fixed;  position:relative; width:100%;  border-top:1px solid #e5e5e5}
+.reco_board > ul > li > a {display:inline-block; width:100%; padding:15px 0; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap;  word-wrap: normal; background-color:white; transition:0.3s all ease}
+.reco_board > ul > li > a:hover {background-color:#f3f5f7}
+.reco_board > ul > li > a:hover:after {display:block;}
+.reco_board > ul > li > a:after {content:""; display:none; position:absolute; top: 50%; right: 30px; width: 20px; height: 20px;  margin: -10px 0 0; width:20px; height:20px; background:url('../images/template6/resp/default/icon/icon_reco_arrow.png')}
+.reco_board > ul > li .type {float:left; width:90px; text-align:center}
+.reco_board > ul > li .type .icon {width:22px; height:22px;}
+.reco_board > ul > li .icon.type01 {background:url('../images/template6/resp/default/icon/icon_dash_process01.png')}
+.reco_board > ul > li .icon.type02 {background:url('../images/template6/resp/default/icon/icon_dash_process02.png')}
+.reco_board > ul > li .icon.type03 {background:url('../images/template6/resp/default/icon/icon_dash_process03.png')}
+.reco_board > ul > li .icon.type04 {background:url('../images/template6/resp/default/icon/icon_dash_process04.png')}
+.reco_board > ul > li .icon.type05 {background:url('../images/template6/resp/default/icon/icon_dash_process05.png')}
+.reco_board > ul > li .type .txt {margin:3px 0 0; font-size:14px; color:#666; font-weight: 400;}
+.reco_board > ul > li .txtBox {margin: 0 70px 0 90px;}
+.reco_board > ul > li .txtBox p {white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:400}
+.reco_board > ul > li .txtBox .sector {margin:0; font-size:14px; color:#666}
+.reco_board > ul > li .txtBox .name {margin:10px 0 0; }
+.reco_board > ul > li .txtBox .name strong {font-size:15px; color:#222;}
+.reco_board > ul > li .txtBox .name span {font-size:12px; color:#666; margin:0 0 0 10px}
+
+.reco_board .no_data {padding:130px 0; text-align:center}
+
+/* EOD : 사용자 대시보드 */
+
+@media only all and (max-width: 1099px) and (min-width: 641px){ /* tablet */
+	
+	html, body {height: 100%;}
+
+	.mob_display {display:none}
+
+	.dashLayout {padding:15px}
+
+	.chartLayout > ul {margin:-20px 0 0}
+	.chartLayout > ul > li > div {margin:20px 0 0 20px}
+	
+	/* 관리자 대시보드 */
+
+	.dashBoard .titBox {margin:0 0 15px;}
+	.dashBoard .chart_label {text-align:center}
+	.dashBoard .chart_label > ul {display:inline-block}
+	.dashBoard .chart_label.type02 > ul > li {margin:0px 5px 0 0}
+	.dashBoard .chart_label .tit {display:inline-block;}
+	.dashBoard .chart_label .txt_circle {display:inline-block; margin:0; padding: 0 0 0 15px; font-size:13px}
+	.dashBoard .chart_label.type02 .txt_circle {margin:0}
+	.dashBoard .chart_label .txt_default {font-size:13px;}
+	.dashBoard .chart_label .txt_circle.color01:before , .dashBoard .chart_label .txt_circle.color02:before , .dashBoard .chart_label .txt_circle.color03:before {width:10px; height:10px}
+	
+	.dashBoard > ul {margin:-15px 0 0 -15px}
+	.dashBoard > ul > li .contentBox {border-radius:10px; height:300px; padding:15px 10px; margin:15px 0 0 15px}
+	.dashBoard .subBox {float:none}
+	.dashBoard .subBox .date {float:none; margin:0; display:block; text-align:right}
+	.dashBoard .tab_dash {float:right; margin:10px 0 0}
+	.dashBoard .viewBox {display:none}
+
+	.chart.vertical .progress li .gubun {font-size:12px;}
+		
+	.pieBox {margin:0; text-align:center}
+	.chart_label.pie {position:static; display:block; margin:20px auto 0}		
+	.dashBoard .chart_label.pie > ul {text-align:center}
+	.dashBoard .chart_label.pie > ul > li {float:left; width:50%; margin:0}
+	.dashBoard .chart_label.pie > ul > li:first-child {width:100%; margin:10px 0 0}
+	.chart_label.pie > ul > li {width:auto}
+
+	.dashBoard .chart_label > ul.total {position:static; float:none; margin:7px 0 0}
+
+	.cdp_multiBar .gubun {width:80px; font-size:13px}
+	.cdp_multiBar .progressWrap {left:90px;}
+
+	/* EOD : 관리자 대시보드 */
+	
+	/* 사용자 대시보드 */ 
+
+	.cdpProgressBox {margin:0 0 10px}
+	.cdpProgressBox > ul > li {width:50%}
+	.cdpProgressBox > ul > li.last {width:100%}
+
+	.cdpCProgress canvas {width:70px !important; height:70px !important}
+	.cdpVProgress {height:70px}
+	.cdpCProgress .lv {top:16px; font-size:13px}
+	.cdpCProgress strong {top:33px;}
+	.cdpCProgress strong span {font-size:18px}
+	.cdpCProgress strong sub {font-size:14px}
+
+	.loadMapBox > ul {margin:-25px 0 0}
+	.loadMapBox > ul > li {margin:35px 0 0}
+
+
+	.dashlinkBox > ul > li > a {margin:15px 0 0 15px; height: 60px;}
+	.dashlinkBox .txt {font-size:16px}
+	.loadMapArea .load_ProgressBox {margin:0}
+
+	.reco_board > ul > li .txtBox {margin: 0 10px 0 90px;}
+	.reco_board > ul > li > a:hover:after {display:none}
+
+	/* EOD : 사용자 대시보드 */
+}
+
+@media only all and (max-width: 640px) { /* mobile */
+	
+	html, body {height: 100%;}
+	
+	.pc_display {display:none}
+	.mob_display {display:block}
+
+	.dashLayout {padding:20px 12px}
+	
+	/* 관리자 대시보드 */
+	
+	.chartLayout > ul {margin:-20px 0 0}
+	.chartLayout > ul > li > div {margin:20px 0 0 20px}
+
+	.dashBoard .titBox .tit {font-size:16px}
+
+	.dashBoard .chart_label > ul > li {margin:10px 5px 0 5px}
+	.dashBoard .chart_label.type02 > ul {vertical-align:top}
+	.dashBoard .chart_label.type02 > ul > li {margin:0px 5px 0 0}
+	
+    .dashBoard .titBox , .dashBoard .titBox.type02 {margin:0 0 15px; padding:0}
+	.dashBoard .chart_label {text-align:center; position:static; margin:10px auto 0}
+	.dashBoard .chart_label.type02 {margin:10px auto 0}
+	.dashBoard .chart_label .tit {display:inline-block; margin:0}
+	.dashBoard .chart_label .txt_circle {display:inline-block; margin:0; padding: 0 0 0 15px; font-size:13px}
+	.dashBoard .chart_label .txt_level {padding:0 0 0 20px}
+	.dashBoard .chart_label .txt_level:before {width:15px; height:16px; top:0; background-size:15px auto}
+	.dashBoard .chart_label .txt_default {font-size:13px}
+	.dashBoard .chart_label .txt_circle.color01:before , .dashBoard .chart_label .txt_circle.color02:before , .dashBoard .chart_label .txt_circle.color03:before {width:10px; height:10px}
+	.dashBoard .chart_label.pie > ul > li {width:100%; margin:10px 0 0}
+
+	.dashBoard > ul {margin:-20px 0 0; overflow:inherit;}
+	.dashBoard > ul > li {width:100%;}
+	.dashBoard > ul > li .contentBox , .dashBoard > ul > li .contentBox.type02 {height:auto; padding:15px 10px; margin:15px 0 0; border-radius: 5px;}
+	.dashBoard .subBox {float:none}
+	.dashBoard .subBox .date {float:none; margin:0; display:block; text-align:right}
+	.dashBoard .tab_dash {float:right; margin:10px auto 0}
+	.dashBoard .viewBox {display:none}
+
+	.pieBox {margin:0 0 20px; text-align:center}
+	.pieBox .label {position:static; display:inline-block; margin:20px auto 0}
+	.chartLayout {margin:0}
+		
+	.cdp_multiBar .gubun {width:70px; font-size:12px; font-weight:500}
+	.cdp_multiBar .progressWrap {left:80px;}
+	
+	.chart.vertical .progress li .gubun {font-size:12px;}
+	.chart.vertical .progress li .progressBox .data span {font-size:12px}
+	.chart.vertical .progress li .progressBox .data span.unit {font-size:10px}
+	.chart.horizontal .markN li .gubunBox {font-size:13px}
+	.dashBoard .chart_label > ul.total {position:static; margin:5px 0 0; float:none; vertical-align:top}
+
+	/* EOD : 관리자 대시보드 */
+
+	/* 사용자 대시보드 */ 
+	
+	.cdpCProgress canvas {width:90px !important; height:90px !important}
+
+	.cdpProgressBox {margin:0}
+	.cdpProgressBox > ul > li {width:50%; margin:0 0 15px;}
+	.cdpProgressBox > ul > li.last {width:100%}
+
+	.cdpVProgress {height:90px}
+	.cdpCProgress .lv {top:22px}
+	.cdpCProgress strong {top:40px}
+	.cdpCProgress strong span {font-size:22px}
+
+	.loadMapBox {}
+	.loadMapArea .load_ProgressBox {margin:0}
+	
+	.dash_loadMapBoxIn .loadMapName span {font-size:13px}
+	.loadMapArea {margin:0 0 0 60px}
+
+	.dashlinkBox > ul > li {display:block}
+	.dashlinkBox > ul > li > a {margin:15px 0 0; height:45px}
+	.dashlinkBox .txt {font-size:16px}
+
+	.reco_board > ul > li .txtBox {margin: 0 10px 0 75px;}
+	.reco_board > ul > li .txtBox .sector {font-size:13px}
+	.reco_board > ul > li .txtBox .name strong {font-size:14px}
+	.reco_board > ul > li > a:hover:after {display:none}
+	.reco_board > ul > li .type {width:70px}
+
+	.chart.line .info { min-width:inherit; min-width:110px; }
+	.chart.line .info:after { width:16px; height:8px; bottom:-8px; background-size:16px auto; margin:0 0 0 -8px; }
+	.chart.line .info.active:after { top:-8px;  background-size:16px auto; }
+	.chart.line .info .mob_display { line-height:0; height:2px; }
+	/* EOD : 사용자 대시보드 */
+
+}

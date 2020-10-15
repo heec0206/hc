@@ -1,0 +1,671 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>관리자 대시보드</title>
+    
+    <link href="../../css/initialize.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/template6/resp/import.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/template6/resp/blue.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/chart.css" rel="stylesheet" type="text/css" media="all">
+    
+    <!-- ## IE9이하 버전에서 html5 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="../../js/html5.js"></script>
+    <![endif]-->
+    
+    <!-- ## IE9이하 버전에서 css3 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="../../js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <script src="../../js/jquery-1.8.3.min.js"></script>
+	<script src="../../js/chart.js"></script>
+	<script src="../../js/template6/style.js"></script>    
+</head>
+<body>
+	
+	<script>
+	
+		$(document).ready(function(){
+			$(".tab_dash li").click(function(){
+				
+				$(this).siblings("li").removeClass("active");
+				$(this).addClass("active");
+
+			});
+		});
+
+
+	</script>
+	
+	<!-- dashLayout -->
+	<div class="dashLayout">
+	    <!-- contentLayout -->	
+		<div class="contentLayout">
+			<!-- dashBoard -->
+			<div class="dashBoard">
+				<ul>
+					<li>
+						<!-- contentBox -->
+						<div class="contentBox">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">연수 참여현황</p>
+								<div class="subBox">
+									<span class="date">2020년 1월 10일</span>
+									<ul class="tab_dash">
+										<li class="active" onclick="Piechart()"><a href="javascript:void(0)">직급별</a></li>
+										<li><a onclick="Piechart()" href="javascript:void(0)">교육형태별</a></li>
+									</ul>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">직원별 조회</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->
+
+							<!-- pieLayout -->
+							<div class="pieLayout">
+								<!-- pieBox -->							
+								<div class="pieBox" id="Piechart"></div>
+								<!-- EOD : pieBox -->
+								
+								<!-- chart_label -->
+								<div class="chart_label pie"> 
+								  <ul>
+									 <li><p class="tit">연수 참여인원(전행)</p></li>
+									 <li><p class="txt_circle color01">책임자 이상 :<span>2</span></p></li>
+									 <li><p class="txt_circle color03">행원급 이하 :<span>35</span></p></li>
+								  </ul>
+								</div>
+								<!-- EOD : chart_label -->
+							</div>
+							<!-- EOD : pieLayout -->
+
+							<script>										
+								function Piechart(){
+									$.ajax({
+										url : "ajax/Piechart.html",
+										dataType : "html",
+										success : function(result){
+											$("#Piechart").html(result);
+										}
+									});								
+								};
+									
+								$(function(){
+									$.ajax({
+										url : "ajax/Piechart.html",
+										dataType : "html",
+										success : function(result){
+											$("#Piechart").html(result);
+										}
+									});
+								});
+							</script>
+
+						</div>
+						<!-- EOD : contentBox -->
+					</li>
+					<li>
+						<!-- contentBox -->
+						<div class="contentBox">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">1인당 교육시간</p>
+								<div class="subBox">
+									<span class="date">2020년 1월 10일</span>
+									<ul class="tab_dash">
+										<li class="active"><a href="javascript:void(0)" onclick="ajaxChart01()">직급별</a></li>
+										<li><a href="javascript:void(0)" onclick="ajaxChart01()">교육형태별</a></li>
+									</ul>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">직원별 자세히 보기</a></li>
+										<li><a href="javascript:void(0)">부서별 자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->
+							
+							<!-- chartLayout -->
+							<div class="chartLayout">
+								<ul>
+									<li>
+										<div>
+											<!-- chartBox -->
+											<div class="chartBox" id="chartBox01"></div>
+											<!-- EOD : chartBox -->
+											<script>
+										
+												function ajaxChart01(){
+													$.ajax({
+														url : "ajax/chart01.html",
+														dataType : "html",
+														success : function(result){
+															$("#chartBox01").html(result);
+														}
+													});
+
+													$.ajax({
+														url : "ajax/chart02.html",
+														dataType : "html",
+														success : function(result){
+															$("#chartBox02").html(result);
+														}
+													});
+												};
+													
+												$(function(){
+													$.ajax({
+														url : "ajax/chart01.html",
+														dataType : "html",
+														success : function(result){
+															$("#chartBox01").html(result);
+														}
+													});
+
+													$.ajax({
+														url : "ajax/chart02.html",
+														dataType : "html",
+														success : function(result){
+															$("#chartBox02").html(result);
+														}
+													});
+												});
+
+
+											</script>
+										</div>
+									</li>
+									<li>
+										<div>
+											<!-- chartBox -->
+											<div class="chartBox" id="chartBox02"></div>
+											<!-- EOD : chartBox -->											
+										</div>
+									</li>
+								</ul>
+								<!-- chart_label -->
+								<div class="chart_label">
+									<ul>
+										<li><p class="txt_square color01">조직내</p></li>
+										<li><p class="txt_square color02">권장학습기준</p></li>
+									</ul>
+								</div>
+								<!-- EOD : chart_label -->
+							</div>
+							<!-- EOD : chartLayout -->	
+						</div>
+						<!-- EOD : contentBox -->
+					</li>
+					<li>
+						<!-- contentBox -->
+						<div class="contentBox">
+							<!-- titBox -->
+							<div class="titBox type02">
+								<p class="tit">OSB COMPLETE 달성현황</p>
+								<div class="subBox">
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->
+
+							<!-- chartLayout -->
+							<div class="chartLayout mt0">									
+								<!-- chartBox -->
+								<div class="chartBox" id="chartBox03"></div>
+								<!-- EOD : chartBox -->			
+								<script>
+												
+									$(function(){
+										$.ajax({
+											url : "ajax/chart03.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox03").html(result);
+											}
+										});
+									});
+
+
+								</script>
+								<!-- chart_label -->
+								<div class="chart_label">
+									<ul>
+										<li><p class="txt_square color03">나의본부</p></li>
+										<li><p class="txt_square color02">권장달성률</p></li>
+									</ul>
+								</div>
+								<!-- EOD : chart_label -->
+							</div>
+							<!-- EOD : chartLayout -->	
+						
+						</div>
+						<!-- EOD : contentBox -->
+					</li>
+					<li>
+						<!-- contentBox -->
+						<div class="contentBox">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">CDP 현황</p>
+								<div class="subBox">
+									<span class="date">2020년 1월 10일</span>
+									<ul class="tab_dash">
+										<li class="active"><a onclick="ajaxChart04()" href="javascript:void(0)">영업직무</a></li>
+										<li><a onclick="ajaxChart04()" href="javascript:void(0)">미래역량</a></li>
+										<li><a onclick="ajaxChart04()" href="javascript:void(0)">전문직무</a></li>
+									</ul>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->
+
+							<!-- chartLayout -->
+							<div class="chartLayout mt0">									
+								<!-- chartBox -->
+								<div class="chartBox" id="chartBox04"></div>
+								<!-- EOD : chartBox -->
+								<script>
+										
+									function ajaxChart04(){
+										$.ajax({
+											url : "ajax/chart04.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox04").html(result);
+											}
+										});
+									};
+										
+									$.ajax({
+										url : "ajax/chart04.html",
+										dataType : "html",
+										success : function(result){
+											$("#chartBox04").html(result);
+										}
+									});
+								
+								</script>
+							</div>
+							<!-- EOD : chartLayout -->	
+							<!-- chart_label -->
+							<div class="chart_label type02">
+								<ul>
+									<li><p class="txt_default">CF(전공선택자수)</p></li>
+									<li><p class="txt_circle color02">LV1</p></li>
+									<li><p class="txt_circle color01">LV2</p></li>
+									<li><p class="txt_circle color03">LV3</p></li>
+									<li><p class="txt_level">LV인증</p></li>
+								</ul>
+								<ul class="total">
+									<span class="txt_default">(총인원 <span class="txt_black">542</span>명 / 미선택 <span class="txt_black">89</span>명)</span>
+								</ul>
+							</div>
+							<!-- EOD : chart_label -->						
+						</div>
+						<!-- EOD : contentBox -->
+					</li>
+					<li class="row">
+						<!-- contentBox / PC 세로버전 -->
+						<div class="contentBox pc_display">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">자격증 현황</p>
+								<div class="subBox">
+									<ul class="tab_dash">
+										<li class="active"><a onclick="ajaxChart05()" href="javascript:void(0)">기본</a></li>
+										<li><a onclick="ajaxChart05()" href="javascript:void(0)">심화</a></li>
+										<li><a onclick="ajaxChart05()" href="javascript:void(0)">전문</a></li>
+									</ul>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->			
+							
+							<!-- chartLayout -->
+							<div class="chartLayout">		
+								<!-- chartBox -->
+								<div class="chartBox" id="chartBox05"></div>
+								<!-- EOD : chartBox -->			
+								<script>									
+									function ajaxChart05(){
+										$.ajax({
+											url : "ajax/chart05.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox05").html(result);
+											}
+										});
+									};
+												
+									$(function(){
+										$.ajax({
+											url : "ajax/chart05.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox05").html(result);
+											}
+										});
+									});
+
+								</script>
+								<!-- EOD : chartBox -->
+							</div>
+							<!-- EOD : chartLayout -->	
+						</div>
+						<!-- EOD : contentBox -->
+					</li>					
+					<li class="row">
+						<!-- contentBox / 모바일 가로버전 -->
+						<div class="contentBox mob_display">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">자격증 현황</p>
+								<div class="subBox">
+									<ul class="tab_dash">
+										<li class="active"><a onclick="ajaxChart05m()" href="javascript:void(0);" >기본</a></li>
+										<li><a onclick="ajaxChart05m()" href="javascript:void(0);">심화</a></li>
+										<li><a onclick="ajaxChart05m()" href="javascript:void(0);">전문</a></li>
+									</ul>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->			
+							
+							<!-- chartLayout -->
+							<div class="chartLayout">									
+								<!-- chartBox -->
+								<div class="chartBox" id="chartBox05_m">
+								</div>
+								<!-- EOD : chartBox -->			
+								<script>
+									
+									function ajaxChart05m(){
+										$.ajax({
+											url : "ajax/chart05_m.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox05_m").html(result);
+											}
+										});
+									};
+												
+									$(function(){
+										$.ajax({
+											url : "ajax/chart05_m.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox05_m").html(result);
+											}
+										});
+									});
+
+								</script>
+
+							</div>
+							<!-- EOD : chartLayout -->	
+						</div>
+						<!-- EOD : contentBox -->
+					</li>
+					<li class="row">
+						<!-- contentBox / PC 세로버전 -->
+						<div class="contentBox pc_display">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">자격증 현황</p>
+								<div class="subBox">
+									<ul class="tab_dash">
+										<li class="active"><a onclick="ajaxChart06()" href="javascript:void(0)">기본</a></li>
+										<li><a onclick="ajaxChart06()" href="javascript:void(0)">심화</a></li>
+										<li><a onclick="ajaxChart06()" href="javascript:void(0)">전문</a></li>
+									</ul>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->			
+							
+							<!-- chartLayout -->
+							<div class="chartLayout">									
+								<!-- chartBox -->
+								<div class="chartBox" id="chartBox06"></div>
+								<!-- EOD : chartBox -->
+								<script>									
+									function ajaxChart06(){
+										$.ajax({
+											url : "ajax/chart06.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox06").html(result);
+											}
+										});
+									};
+												
+									$(function(){
+										$.ajax({
+											url : "ajax/chart06.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox06").html(result);
+											}
+										});
+									});
+
+								</script>
+							</div>
+							<!-- EOD : chartLayout -->	
+						</div>
+						<!-- EOD : contentBox -->
+					</li>					
+					<li class="row">
+						<!-- contentBox / 모바일 가로버전 -->
+						<div class="contentBox mob_display">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">자격증 현황</p>
+								<div class="subBox">
+									<ul class="tab_dash">
+										<li class="active"><a onclick="ajaxChart06m()" href="javascript:void(0);">기본</a></li>
+										<li><a onclick="ajaxChart06m()" href="javascript:void(0);">심화</a></li>
+										<li><a onclick="ajaxChart06m()" href="javascript:void(0);">전문</a></li>
+									</ul>
+									<script>
+										function ajaxChart06m(){
+											$.ajax({
+												url : "ajax/chart06_m.html",
+												dataType : "html",
+												success : function(result){
+													$("#chartBox06m").html(result);
+												}
+											});
+										}
+										
+										$(function(){
+											$.ajax({
+												url : "ajax/chart06_m.html",
+												dataType : "html",
+												success : function(result){
+													$("#chartBox06m").html(result);
+												}
+											});
+										});
+									</script>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->			
+							
+							<!-- chartLayout -->
+							<div class="chartLayout">									
+								<!-- chartBox -->
+								<div class="chartBox" id="chartBox06m"></div>
+								<!-- EOD : chartBox -->			
+							</div>
+							<!-- EOD : chartLayout -->	
+						</div>
+						<!-- EOD : contentBox -->
+					</li>
+					<li class="row">
+						<!-- contentBox / PC 세로버전 -->
+						<div class="contentBox pc_display">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">자격증 현황</p>
+								<div class="subBox">
+									<ul class="tab_dash">
+										<li class="active"><a onclick="ajaxChart07()" href="javascript:void(0)">기본</a></li>
+										<li><a onclick="ajaxChart07()" href="javascript:void(0)">심화</a></li>
+										<li><a onclick="ajaxChart07()" href="javascript:void(0)">전문</a></li>
+									</ul>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->			
+							
+							<!-- chartLayout -->
+							<div class="chartLayout">									
+								<!-- chartBox -->
+								<div class="chartBox" id="chartBox07"></div>
+								<!-- EOD : chartBox -->
+								<script>
+									
+									function ajaxChart07(){
+										$.ajax({
+											url : "ajax/chart07.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox07").html(result);
+											}
+										});
+									};
+												
+									$(function(){
+										$.ajax({
+											url : "ajax/chart07.html",
+											dataType : "html",
+											success : function(result){
+												$("#chartBox07").html(result);
+											}
+										});
+									});
+
+								</script>
+							</div>
+							<!-- EOD : chartLayout -->	
+						</div>
+						<!-- EOD : contentBox -->
+					</li>					
+					<li class="row">
+						<!-- contentBox / 모바일 가로버전 -->
+						<div class="contentBox mob_display">
+							<!-- titBox -->
+							<div class="titBox">
+								<p class="tit">자격증 현황</p>
+								<div class="subBox">
+									<ul class="tab_dash">
+										<li class="active"><a onclick="ajaxChart07m()" href="javascript:void(0);">기본</a></li>
+										<li><a onclick="ajaxChart07m()" href="javascript:void(0);">심화</a></li>
+										<li><a onclick="ajaxChart07m()" href="javascript:void(0);">전문</a></li>
+									</ul>
+									<script>
+										function ajaxChart07m(){
+											$.ajax({
+												url : "ajax/chart07_m.html",
+												dataType : "html",
+												success : function(result){
+													$("#chartBox07m").html(result);
+												}
+											});
+										}
+										
+										$(function(){
+											$.ajax({
+												url : "ajax/chart07_m.html",
+												dataType : "html",
+												success : function(result){
+													$("#chartBox07m").html(result);
+												}
+											});
+										});
+									</script>
+									<ul class="viewBox">
+										<li><a href="javascript:void(0)">자세히 보기</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- EOD : titBox -->			
+							
+							<!-- chartLayout -->
+							<div class="chartLayout">								
+								<!-- chartBox -->
+								<div class="chartBox" id="chartBox07m"></div>
+								<!-- EOD : chartBox -->									
+							</div>
+							<!-- EOD : chartLayout -->	
+						</div>
+						<!-- EOD : contentBox -->
+					</li>
+					
+					<li class="row">			
+						<!-- dashlinkBox -->
+						<div class="dashlinkBox">
+							<ul>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="txtBox">
+											<div class="txtBoxIn">
+												<span class="txt">책임자 승진자격 이수현황</span><span class="arrow"></span>
+											</div>
+										</div>
+									</a>								
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="txtBox">
+											<div class="txtBoxIn">
+												<span class="txt">행원A 승진자격 이수현황</span><span class="arrow"></span>
+											</div>
+										</div>
+									</a>								
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="txtBox">
+											<div class="txtBoxIn">
+												<span class="txt">연수 제재 대상 조회</span><span class="arrow"></span>
+											</div>
+										</div>
+									</a>								
+								</li>
+							</ul>
+						</div>		
+						<!-- EOD : dashlinkBox -->
+					</li>
+				</ul>
+			</div>
+			<!-- EOD : dashBoard -->
+		</div>
+		<!-- EOD : contentLayout -->	
+	</div>
+	<!-- EOD : dashLayout -->
+
+
+</body>
+</html>

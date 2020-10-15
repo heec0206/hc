@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.layout #header.main, .layout #header.sub {
+	min-height: 98px;
+}
+
+.layout #header.main .textBox, .layout #header.sub .textBox {
+	height: 98px;
+}
+
+.layout #main #cntnr1 .textBox,
+.layout #main #cntnr2 .textBox,
+.layout #main #cntnr3 .textBox {
+	height: 150px;
+}

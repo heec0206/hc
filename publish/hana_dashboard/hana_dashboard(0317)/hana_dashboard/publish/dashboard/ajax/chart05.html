@@ -1,0 +1,79 @@
+<div class="chart" id="chart05">
+	<div class="chartIn">
+		<!-- 막대 -->
+		<ul class="progress">
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph01"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">10</span><span class="unit">명</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">펀드</div>
+			</li>	
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph01"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">34</span><span class="unit">명</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">파생</div>
+			</li>
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph01"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">0</span><span class="unit">명</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">생보</div>
+			</li>
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph01"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">15</span><span class="unit">명</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">손보</div>
+			</li>
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph01"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">9</span><span class="unit">명</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">제3보험</div>
+			</li>
+			<li>
+				<div class="progressWrap">
+					<div class="progressBox graph01"> <!-- graph 클래스는 컬러값 구분 -->
+						<div class="data"><span class="num">9</span><span class="unit">명</span></div>
+						<div class="bar"><span class="txt"></span></div>
+					</div>
+				</div>
+				<div class="gubun">변액</div>
+			</li>
+		</ul>
+		<!-- EOD : 막대 -->
+	</div>
+</div>
+<script>
+
+	 $(function(){ 
+		 $("#chart05").chart({
+			type : 'vertical', // horizontal, vertical, multiBar 	
+			margin : 0, 
+			speed :    2000, //bar animation speed
+			speedTurm : 500, // bar animation turm speed
+			height :    100, // chart height 
+			barHeight : [15],  // bar height, 짝수만 
+			markStart : 0, //기준점 시작
+			markEnd : 50, //기준점 마지막
+			markInterval : 1, //기준점 간격
+		});	
+	 });
+
+</script>

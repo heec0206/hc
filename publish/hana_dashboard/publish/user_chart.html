@@ -1,0 +1,710 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <title>서브 레이아웃</title>
+    
+    <link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/initialize.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/template6/resp/import.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/template6/resp/blue.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/chart.css" rel="stylesheet" type="text/css" media="all">
+   
+    
+    <!-- ## IE9이하 버전에서 html5 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="/js/html5.js"></script>
+    <![endif]-->
+    
+    <!-- ## IE9이하 버전에서 css3 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+     
+    <script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/chart.js"></script>
+	<script src="../js/circleprogress.js"></script>
+	<script src="../js/template6/style.js"></script>    
+    
+    <script type="text/javascript">
+   		 jQuery(document).ready( function() {
+
+			    
+	    });
+		    
+    </script>
+</head>
+<body>
+    <!-- #wrap start -->
+    <div id="wrap">
+	    <!-- skip start -->
+        <div class="skip">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#container">컨텐츠 바로가기</a>
+        </div>
+        <!-- //skip end -->
+		
+		<!-- #header start -->
+		<div id="header" class="sub">
+
+			<div class="headerWrap">
+				<div class="fixMenu">
+					<ul>
+						<li class="logo">
+							<a href="">
+								<img src="../images/template6/resp/default/usr/logo_hanaone.png" alt="hanaone" />
+							</a>
+						</li>
+						<!-- 2020-02-12 LYW 수정 -->
+						<li class="menu">
+							<a href="javascript:void(0);" class="btnMenu" onclick="allMenu();"><span class="hamburger"></span><span class="count">2</span>메뉴</a>
+						</li>
+						<!-- EOD : 2020-02-12 LYW 수정 -->
+						<li class="search">
+							<a href="javascript:void(0);" class="btnSearch" onclick="openSearch();">검색</a>
+							<div class="searchBox">
+								<input type="text" id="" name="" placeholder="검색어를 입력하세요!" />
+								<button type="button" class="btnSearch">검색</button>
+								<button type="button" class="btnClosed"  onclick="closedSearch();">닫기</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="gnbWrap">
+					<div class="linkBox">
+						<div class="zoom">
+							<span>화면크기설정</span>
+							<a href="javascript:void(0);" class="zoomIn">화면크기확대</a>
+							<a href="javascript:void(0);" class="zoomOut">화면크기축소</a>
+						</div>
+						<div class="link">
+							<a href="javascript:void(0);" class="logout">로그아웃</a>
+							<span class="userName">홍길동님</span><!--모바일 에서만 보입니다.-->
+							<a href="javascript:void(0);" class="menuLink01">HanaOne안내</a>
+							<a href="javascript:void(0);" class="menuLink02">마이페이지</a>
+							<!-- 2020-02-12 LYW 수정 -->
+							<a href="javascript:void(0);" class="menuLink03"><img src="../images/template6/resp/default/icon/icon_header_bell.png"><span class="count">2</span></a>
+							<!-- EOD : 2020-02-12 LYW 수정 -->
+							<a href="javascript:void(0);" class="adminLink">관리자</a>
+						</div>
+					</div>
+					<ul class="gnb">
+						<li>
+							<a href="javascript:void(0);">수강신청</a>
+							<ul class="twoDepth">
+								<li>
+									<a href="javascript:void(0);">분야별과정</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">추천콘텐츠</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">나의강의실</a>
+							<ul class="twoDepth">
+								<li>
+									<a href="javascript:void(0);">나의 수강과정</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">나의 관심과정</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">나의 설문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">나의 게시글</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">나의 교육이력</a>
+									<ul class="threeDepth">
+										<li>
+											<a href="javascript:void(0);">교육이력</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">외국어 및 자격증</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);">결재관리</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">학원비 신청</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">나의CDP</a>
+							<ul class="twoDepth">
+								<li>
+									<a href="javascript:void(0);">전공/부전공 선택</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">나의 획득 현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">CF별 상세 현황</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">상세 과정 안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">CDP 자주하는 질문</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">CDP 1:1상담창구</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">Cop/소學행</a>
+							<ul class="twoDepth">
+								<li>
+									<a href="javascript:void(0);">Cop</a>
+									<ul class="threeDepth">
+										<li>
+											<a href="javascript:void(0);">DT, 4차 산업혁명</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">경영/경제/금융</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">교육</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">글로벌/어학</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">기타</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">정치/사회/문화/예술</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">직무</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);">소學행</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">나의 Cop/소學행</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);">지식OneHana</a>
+							<ul class="twoDepth">
+								<li>
+									<a href="javascript:void(0);">지식토크</a>
+									<ul class="threeDepth">
+										<li>
+											<a href="javascript:void(0);">분류</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);">매뉴얼</a>
+									<ul class="threeDepth">
+										<li>
+											<a href="javascript:void(0);">Click! 외환</a>
+											<ul class="fourDepth">
+												<li>
+													<a href="javascript:void(0);">알아두면 편리해요</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">당발송금</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">타발송금</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">환전(매도)</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">환전(매입)</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">대외계정 입금</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">대외계정 출금</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">외환상품서비스</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">신고수리</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">수신</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);">행외/해외 연수리포트</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Digital FIT</a>
+									<ul class="threeDepth">
+										<li>
+											<a href="javascript:void(0);">리스트</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">나의 스크랩</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);">이벤트 제안</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">지식 QnA</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">지식토크 사용자 게시판</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">e-Book</a>
+								</li>
+							</ul>
+						</li>
+						<li class="hiddenMenu">
+							<a href="javascript:void(0);">HanaOne 안내</a>
+							<ul class="twoDepth">
+								<li>
+									<a href="javascript:void(0);">주요제도안내</a>
+									<ul class="threeDepth">
+										<li>
+											<a href="javascript:void(0);">연수제도규정</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">하나벗바리제도</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학원수강비지원제도</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">자비유학제도</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">연수관련여비지급기준</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);">교육체계안내</a>
+									<ul class="threeDepth">
+										<li>
+											<a href="javascript:void(0);">CDP 제도 안내</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);">자격증 안내</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">공지사항</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">FAQ</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">1:1문의</a>
+								</li>
+							</ul>
+						</li>
+						<li class="hiddenMenu">
+							<a href="javascript:void(0);">마이페이지</a>
+							<ul class="twoDepth">
+								<li>
+									<a href="javascript:void(0);">개인정보수정</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">개인정보취급방침</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>		
+			</div>
+		</div>
+		<!-- //#header end -->
+	     
+	     	
+		<!-- #sub start -->
+		<div id="sub" class="" > 
+
+			<div class="subTitle subBg00"> <!--대메뉴별로 class명을 0~N 으로 변경 --> 
+				<h2>대메뉴명</h2>
+			</div>
+			
+			<!-- container start -->
+			<div class="container">
+
+				<!-- navBox start -->
+				<div class="navBox">
+					<h3>페이지 타이틀</h3>
+					<div class="nav">
+						<span>홈</span>
+						<span>oneDepth</span>
+						<span>twoDepth</span>
+					</div>
+				</div>
+				<!-- //navBox end -->
+					
+				<!-- contentsWrap start -->
+				<div class="contentsWrap">
+					<!-- lnb start -->
+					<div class="lnb">
+						<ul>
+							<li>
+								<a href="javascript:void(0);">Courses</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Basic EconomicBasic </a>
+								<ul class="twoDepth">
+									<li>
+										<a href="javascript:void(0);">Basic Economic1</a>
+										<ul class="threeDepth">
+											<li>
+												<a href="javascript:void(0);">Basic Economic1</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">Basic Economic2</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">Basic Economic3</a>
+											</li>
+										</ul>
+									</li>
+									<li class="active">
+										<a href="javascript:void(0);">Basic Economic2</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Basic Economic3</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Basic Economic</a>
+								<ul class="twoDepth">
+									<li>
+										<a href="javascript:void(0);" >Basic Economic1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" >Basic Economic2</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" >Basic Economic3</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- //lnb end -->
+				
+					<!-- #contents start -->
+					<div id="contents" >
+					
+						<!-- dashLayout -->
+						<div class="dashLayout">
+						    <!-- contentLayout -->	
+							<div class="contentLayout">
+								<!-- dashBoard -->
+								<div class="dashBoard">
+									<ul>
+										<li>
+											<!-- contentBox -->
+											<div class="contentBox">
+												<!-- titBox -->
+												<div class="titBox type02">
+													<p class="tit">나의 CDP</p>
+													<div class="subBox">
+														<ul class="viewBox">
+															<li><a href="javascript:void(0)">자세히 보기</a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- EOD : titBox -->
+					
+												<!-- cdpProgressBox-->
+												<div class="cdpProgressBox" id="cdpProgress">
+													
+												</div>
+												<!-- EOD : cdpProgressBox -->
+					
+												<script>
+					
+													$(function(){
+														$.ajax({
+															url : "dashboard/ajax_user/cdpProgress.html",
+															dataType : "html",
+															success : function(result){
+																$("#cdpProgress").html(result);
+															}
+														});
+													});
+					
+												</script>
+												
+												<!-- chart_label -->
+												<div class="chart_label">
+													<ul>
+														<li><p class="txt_circle color01">나의 달성률</p></li>
+														<li><p class="txt_circle color02">동일 직급/레벨 상위10%의 평균 달성률</p></li>
+													</ul>
+												</div>
+												<!-- EOD : chart_label -->							
+											</div>
+											<!-- EOD : contentBox -->
+										</li>
+										<li>
+											<!-- contentBox -->
+											<div class="contentBox">
+												<!-- titBox -->
+												<div class="titBox type02">
+													<p class="tit">나의 직무역량강화로드맵</p>
+													<div class="subBox">
+														<ul class="viewBox">
+															<li><a href="javascript:void(0)">자세히 보기</a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- EOD : titBox -->
+					
+												<!-- loadMapBox -->		
+												<div class="loadMapBox" id="loadMap">
+													
+												</div>
+												<!-- EOD : loadMapBox -->
+					
+												<script>
+					
+													$(function(){
+														$.ajax({
+															url : "dashboard/ajax_user/loadMap.html",
+															dataType : "html",
+															success : function(result){
+																$("#loadMap").html(result);
+															}
+														});
+													});
+					
+												</script>
+											</div>
+											<!-- EOD : contentBox -->
+										</li>
+										<li>
+											<!-- contentBox -->
+											<div class="contentBox type02">
+												<!-- titBox -->
+												<div class="titBox type02">
+													<p class="tit">나의 교육참여 현황</p>
+													<div class="subBox">
+														<ul class="viewBox">
+															<li><a href="javascript:void(0)">자세히 보기</a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- EOD : titBox -->
+					
+										
+																					
+												<!-- chartBox -->
+												<div class="chartBox" id="lineChart">		
+													<script>
+													$(function(){
+														$.ajax({
+															url : "dashboard/ajax_user/line_chart.html",
+															dataType : "html",
+															success : function(result){
+																$("#lineChart").html(result);
+															}
+														});
+													});
+													</script>
+												</div>
+												<!-- EOD : chartBox -->
+					
+												<!-- chart_label -->
+												<div class="chart_label">
+													<ul>
+														<li><p class="txt_circle color01">나의 교육이력현황</p></li>
+														<li><p class="txt_circle color02">동일직급 상위 10% 평균</p></li>
+													</ul>
+												</div>
+												<!-- EOD : chart_label -->
+											
+											</div>
+											<!-- EOD : contentBox -->
+										</li>
+										<li>
+											<!-- contentBox -->
+											<div class="contentBox type02">
+												<!-- titBox -->
+												<div class="titBox type02">
+													<p class="tit"><span>박정호</span>님에게 어울리는 과정</p>
+													<div class="subBox">
+														<ul class="viewBox">
+															<li><a href="javascript:void(0)">자세히 보기</a></li>
+														</ul>
+													</div>
+												</div>
+												<!-- EOD : titBox -->
+												
+												<!-- reco_board -->
+												<div class="reco_board">
+													<ul>
+														<li>
+															<a href="javascript:void(0)">
+																<div class="type">
+																	<!-- icon type01 ~ 05 / 01 : 사이버 / 02 : 집합 / 03 : 통신과정 / 04 : BL 과정 / 05 : All知 영상  -->
+																	<span class="icon type01"></span><p class="txt">사이버</p>
+																</div>
+																<div class="txtBox">
+																	<p class="sector">전문직무 > 디지털 금융</p>
+																	<p class="name"><strong>코딩 Basic(COS) 과정</strong><span>디지털 금융</span></p>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="javascript:void(0)">
+																<div class="type">
+																	<span class="icon type02"></span><p class="txt">집합</p>
+																</div>
+																<div class="txtBox">
+																	<p class="sector">전문직무 > 디지털 금융</p>
+																	<p class="name"><strong>코딩 Basic(COS) 과정</strong><span>청강</span></p>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="javascript:void(0)">
+																<div class="type">
+																	<span class="icon type03"></span><p class="txt">통신과정</p>
+																</div>
+																<div class="txtBox">
+																	<p class="sector">전문직무 > 디지털 금융</p>
+																	<p class="name"><strong>(기업여신) NEW 직무콘텐츠</strong><span>디지털 금융</span></p>
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="javascript:void(0)">
+																<div class="type">
+																	<span class="icon type04"></span><p class="txt">BL 과정</p>
+																</div>
+																<div class="txtBox">
+																	<p class="sector">길이 테스트 길이 테스트 길이 테스트 길이 테스트 길이 테스트 길이 테스트 길이 테스트</p>
+																	<p class="name"><strong>길이 테스트 길이 테스트 길이 테스트</strong><span>길이 테스트 길이 테스트 길이 테스트</span></p>
+																</div>
+															</a>
+														</li>
+														<!-- All知 영상 
+														<li>
+															<a href="javascript:void(0)">
+																<div class="type">
+																	<span class="icon type05"></span><p class="txt">All知 영상</p>
+																</div>
+																<div class="txtBox">
+																	<p class="sector">외환</p>
+																	<p class="name"><strong>외국환 신고(수리) 시스템</strong><span>[제3자 지급 등]</span></p>
+																</div>
+															</a>
+														</li>
+														-->
+														<!-- 데이터가 없을때 -->
+														<li style="display:none">
+															<div class="no_data">
+																데이터가 없습니다.
+															</div>
+														</li>
+														<!-- EOD : 데이터가 없을때 -->
+													</ul>
+												</div>
+												<!-- EOD : reco_board -->
+					
+												<!-- chart_label -->
+												<div class="chart_label right">
+													<ul>
+														<li><p class="txt_reco type01">사이버</p></li>
+														<li><p class="txt_reco type02">집합</p></li>
+														<li><p class="txt_reco type03">통신과정</p></li>
+														<li><p class="txt_reco type04">BL과정</p></li>
+														<li><p class="txt_reco type05">All知 영상</p></li>
+													</ul>
+												</div>
+												<!-- EOD : chart_label -->																
+											</div>
+											<!-- EOD : contentBox -->
+										</li>
+									</ul>
+								</div>
+								<!-- EOD : dashBoard -->
+							</div>
+							<!-- EOD : contentLayout -->	
+						</div>
+						<!-- EOD : dashLayout -->
+	
+						
+					</div>		
+					<!-- //#contents end -->
+					
+				</div>
+				<!-- //contentsWrap end -->
+
+				<!-- quickMenu start -->
+				<div class="quickMenu">
+					<strong>Quick</strong>
+					<a href="javascript:void(0);" class="quick01">Digital Fit</a>
+					<a href="javascript:void(0);" class="quick02">업무매뉴얼</a>
+					<a href="javascript:void(0);" class="quick03">e-Book</a>
+					<a href="javascript:void(0);" class="quick04">교육시스템</a>
+				</div>
+				<!-- //quickMenu end -->
+
+				<!-- top btn -->
+				<div class="topBox">
+					<button type="button" class="btnTop">TOP</button>
+				</div>
+				<!-- //top btn end -->
+				
+			</div>
+			<!-- //container end -->
+			
+			
+		</div>
+		<!-- //#sub end -->
+		
+		<!-- #footer start -->
+		<div id="footer" class="sub">
+			<div class="footerWrap">
+				<div class="logo">KEB 하나 Family</div>
+				<div class="contents">
+					<p class="copyright">Copyright (C) 2019 KEB HANA BANK, ALL RIGHTS RESERVED.</p>
+					<div class="familySite">
+						<select>
+							<option>패밀리사이트</option>
+							<option>패밀리사이트1</option>
+							<option>패밀리사이트2</option>
+							<option>패밀리사이트3</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //#footer end -->
+	        
+    </div>
+    <!-- //#wrap end -->
+</body>
+</html>

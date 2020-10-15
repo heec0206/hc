@@ -1,0 +1,2605 @@
+@charset "utf-8";
+
+.totalList {
+    position: relative;
+    overflow: hidden;
+    min-height: 15px;
+    margin-bottom: 15px;
+}
+.totalList > span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    font-size: 14px;
+}
+.totalList > span > strong {
+    vertical-align: -1px;
+    font-size: 14px;
+}
+.totalList .listTab {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: top;
+}
+.totalList .listTab > a {
+    display: block;
+    float: left;
+    width: 29px;
+    height: 29px;
+    font-size: 0;
+    background-color: #ccc;
+    background-image: url('../../../images/template6/resp/default/button/btn_list_tab.png');
+    background-repeat: no-repeat;
+}
+.totalList .listTab > a.list {
+    background-position: 0 0;
+}
+.totalList .listTab > a.thumb {
+    background-position: -29px 0;
+}
+
+
+.totalList .sort {
+    float: right;
+}
+.totalList .sort li {
+    float: left;
+    margin-left: 15px;
+}
+.totalList .sort li a {
+    position: relative;
+    display: block;
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+}
+.totalList .sort li.active a {
+    padding-left: 16px;
+}
+.totalList .btnArea {
+    margin-top: 0;
+}
+.legendList {
+    display: inline-block;
+    font-size: 0;
+}
+.legendList > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin: 3px 10px 3px 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+.legendList > span .icon {
+    margin-right: 6px;
+    vertical-align: -3px;
+}
+
+th, td {
+    height: 41px;
+    line-height: 21px;
+    padding: 10px;
+}
+
+th {
+    font-weight: 500;
+    background: #eaeaea;
+}
+td p {
+	line-height: 21px;
+}
+table th.asterisk:after {
+	content: "*";
+    display: inline-block;
+    line-height: 0;
+    padding-left: 3px;
+    vertical-align: -6px;
+    font-size: 17px;
+}
+td textarea {
+    height: 60px;
+}
+td.noData {
+    text-align: center;
+}
+
+.boardList th,
+.boardList td {
+    vertical-align: middle;
+    text-align: center;
+}
+.boardList thead th {
+    position: relative;
+    height: 41px;
+}
+.boardList thead th+th:before {
+    content:" ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    height: 11px;
+    margin-top: -6px;
+}
+.boardList tbody td {
+    height: 51px;
+    border-top: 1px solid #e5e5e5;
+    color: #555;
+}
+.boardList tbody tr:first-child td {
+    border-top: none;
+}
+
+.boardList tbody td.title {
+    text-align: left;
+}
+.boardList tbody td.title > a {
+    display: inline;
+    padding-right: 5px;
+    color: #222;
+    font-weight: 500;
+}
+.boardList tbody td.title > a:hover {
+    text-decoration: underline;
+}
+.boardView, .boardWrite {
+    border-bottom: 1px solid #ccc;
+}
+.boardView img {
+	cursor:pointer;
+}
+.boardView.viewImg > table { table-layout:fixed; } 
+.boardView.viewImg > table .conBox img { max-width: 100%; }
+.boardView.viewImg02 > table { table-layout:fixed; } 
+.boardView.viewImg02 > table .conBox img { max-width: 100%; } 
+/* .boardView table,
+.boardWrite table {
+	table-layout: fixed;
+}
+@media screen and (max-width: 1200px) {
+	.boardView table,
+	.boardWrite table {
+		table-layout: auto;
+	}
+} */
+
+.boardView th,
+.boardView td,
+.boardWrite th,
+.boardWrite td{
+    height: 41px;
+    padding: 10px 15px;
+    border-left: 1px solid #d5d5d5;
+    border-top: 1px solid #e5e5e5;   
+    vertical-align: top; 
+}
+.boardView th:first-child,
+.boardView td:first-child,
+.boardWrite th:first-child,
+.boardWrite td:first-child{
+    border-left: none;
+}
+ 
+.boardView th,
+.boardWrite th {
+    border-top: 1px solid #d5d5d5;
+    background: #eaeaea;
+}
+
+.boardView tbody th,
+.boardWrite tbody th {
+    text-align: left;   
+}
+
+.boardView tbody tr:first-child td {
+    border-top-color: #d5d5d5;  
+}
+
+
+.boardWrite th,
+.boardWrite td{
+    height: 51px;
+}
+.boardWrite th {
+    padding: 14px 15px;
+}
+.boardWrite td {
+    vertical-align: middle;
+}
+.boardView td.conBox {
+    height: 200px;
+}
+.boardWrite td p.infoTxtEm {
+    margin-top: 5px;
+}
+.boardWrite td input + p {
+    margin-top: 8px;
+}
+.addMember {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+}
+.addMember > ul {
+    overflow: hidden;
+}
+.addMember > ul li {
+    margin: 4px 12px 4px 0;
+    float: left;
+}
+.addMember > ul li > span {
+    display: inline-block;
+    padding-right: 5px;
+    line-height: 21px;
+    vertical-align: middle;
+}
+.addMember > ul li .btnDel,
+.addMember > ul li .btnDel:hover {
+    display: inline-block;
+	min-width: 0;
+	width: 18px;
+	height: 17px;
+	padding: 0;
+	font-size: 0;
+	border: none;
+	vertical-align: middle;
+	background: url('../../../images/template6/resp/default/button/btn_del.png') center center no-repeat;
+}
+.boardView td .addMember,
+.boardWrite td .addMember {
+    border: none;
+    padding: 0;
+}
+.boardView td .addMember > span,
+.boardWrite td .addMember > span {
+    line-height: 23px;
+    padding-right: 5px;
+}
+.boardView td .addMember > ul,
+.boardWrite td .addMember > ul {
+    overflow: hidden;
+}
+
+
+.boardWrite td input.large {
+    width: 80%;
+    width: calc(100% - 88px);
+}
+.boardWrite td  input+button {
+    margin-left: 5px;
+}
+.boardWrite td .inclubImage {
+    float: left;
+    width: 160px;
+    height: 120px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.boardWrite td .inclubImage img {
+    width: 100%;
+    height: 100%;
+}
+.boardWrite td .inclubImage + .floatLeft {
+	width: calc(100% - 172px);
+}
+.boardWrite td .inclubImage + .floatLeft .infoTxtEm {
+    margin-top: 8px;
+}
+
+.boardWrite td.tel .selectBox,
+.boardWrite td.tel input[type="text"] {
+    min-width: 80px;
+    width: 80px;
+}
+.boardWrite td.intrsList li > div {
+	position: relative;
+	display: inline-block;
+	padding-right: 76px;
+}
+.boardWrite td.intrsList li > div button {
+	position: absolute;
+	top: 4px;
+	right: 0;
+}
+.boardWrite td.intrsList li .selectBox {
+	min-width: 100px;
+    width: 100px;
+    margin: 4px 0;
+}
+.boardWrite td.intrsList li span {
+	padding: 0 5px;
+}
+.boardWrite td.intrsList .btnAdd {
+    position: relative;
+    margin-top: 8px;
+    min-width: 24px;
+    height: 24px;
+    padding: 0;
+    font-size: 0;
+}
+.boardWrite td.intrsList .btnAdd:before,
+.boardWrite td.intrsList .btnAdd:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: " ";
+    display: inline-block;
+    background: #fff;
+}
+.boardWrite td.intrsList .btnAdd:before {
+    width: 12px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -6px;
+}
+.boardWrite td.intrsList .btnAdd:after {
+    width: 2px;
+    height: 12px;
+    margin-top: -6px;
+    margin-left: -1px;
+}
+
+.boardView td.borLeft,
+.boardWrite td.borLeft {
+    border-left: 1px solid #d5d5d5;
+}
+.boardView.majorChoice th {
+    vertical-align: middle;
+    text-align: center;
+}
+.boardView.majorChoice th > span {
+    display: block;
+}
+.boardView.majorChoice td:first-child {
+    border-left: 1px solid #d5d5d5;
+}
+.boardView.majorChoice tr.first th,
+.boardView.majorChoice tr.first td {
+    border-top: 1px solid #ccc;
+}
+
+.boardView.majorChoice td {
+    position: relative;;
+    padding: 0;
+}
+.boardView.majorChoice td label {
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    padding: 10px 15px;
+    z-index: 10;
+}
+.boardView.majorChoice td label input[type="checkbox"] {
+    z-index: 5;
+}
+.boardView.majorChoice td label > div {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    cursor: pointer;
+}
+.boardView.majorChoice td label > div .tootip {
+    display: none;
+    position: absolute;
+    top: -78px;
+    right: -520px;
+    width: 500px;
+    padding: 20px 20px 25px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 13px;
+    -webkit-box-shadow: 2px 2px 17px -6px rgba(0,0,0,0.66);
+    -moz-box-shadow: 2px 2px 17px -6px rgba(0,0,0,0.66);
+    box-shadow: 2px 2px 17px -6px rgba(0,0,0,0.66);
+}
+.boardView.majorChoice td label > div:hover .tootip {
+    display: block;
+}
+.boardView.majorChoice td label > div .tootip > p {
+    position: relative;
+    line-height: 20px;
+    word-break: keep-all;
+}
+.boardView.majorChoice td label > div .tootip > p.rvTxt01 {
+    padding-left: 98px;
+}
+.boardView.majorChoice td label > div .tootip > p.rvTxt02 {
+    padding-left: 87px;
+}
+.boardView.majorChoice td label > div .tootip > p.rvTxt01 > span:first-child,
+.boardView.majorChoice td label > div .tootip > p.rvTxt02 > span:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+}
+.boardView.majorChoice td label > div .tootip > strong {
+    display: block;
+    padding-bottom: 13px;
+    margin-bottom: 15px;
+    line-height: 18px;
+    border-bottom: 1px solid #616567;
+    text-align: center;
+    color: #c4cdd7;
+    font-size: 16px;
+}
+.boardView.majorChoice td label > div .tootip:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: #2f3437;
+    opacity: 0.95;
+    z-index: -1;
+}
+.boardView.majorChoice td label > div .tootip:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: -16px;
+    width: 16px;
+    height: 30px;
+    background: url(../../../images/template6/resp/default/bg/bg_tootip_arrow.png) 0 0 no-repeat;
+}
+.boardView.majorChoice td input:checked~span.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #eef2fc; */
+    background:#eefcf7;
+    z-index: 0;
+}
+
+.boardView.majorChoice td .gbChoice {
+    position: relative;
+    padding: 0 15px 10px 37px;
+    margin-top: -8px;
+}
+.boardView.majorChoice td .gbChoice li {
+    position: relative;
+    padding-left: 86px;
+}
+.boardView.majorChoice td .gbChoice li > strong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 32px;
+}
+.boardView.majorChoice td .gbChoice li .selectBox {
+    margin: 3px 3px 3px 0px;
+}
+.noAnswer {
+    line-height: 100px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #767676;
+}
+
+.boardView.type2 thead th {
+    position: relative;
+    padding: 15px 40px;
+    border-top: 4px solid #eee;
+    text-align: left;
+    background: #fff;
+}
+.boardView.type2 thead th > strong {
+    display: block;
+    padding: 7px 0;
+    line-height: 25px;
+    font-size: 18px;
+}
+.boardView.type2 thead th > strong > .icon {
+    margin-right: 4px;
+}
+.boardView.type2 thead th > strong > .icon.lock {
+    vertical-align: 14px;
+}
+.boardView.type2 thead th > strong > .icon.choose {
+    vertical-align: 2px;
+}
+.boardView.type2 thead th > .info {
+    padding-right: 80px;
+}
+.boardView.type2 thead th > .info > span,
+.boardView.type2 thead th > span.hit {
+    display: inline-block;
+    color: #666;
+    font-size: 13px;
+    font-weight: 300;
+}
+.boardView.type2 thead th > .info > span {
+    position: relative;
+    margin-right: 30px;
+}
+.boardView.type2 thead th > .info > span:before {
+    content:" ";
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    display: block;
+    height: 11px;
+    margin-top: -5px;
+    border-left: 1px solid #ddd;
+}
+.boardView.type2 thead th > .info > span:last-child:before {
+    display: none;
+}
+.boardView.type2 thead th > .info > span > strong,
+.boardView.type2 thead th > span.hit > strong {
+    padding-right: 10px;
+    color: #222;
+    font-weight: 400;
+}
+.boardView.type2 thead th > span.hit {
+    position: absolute;
+    right: 40px;
+    bottom: 15px;   
+}
+.boardView.type2 thead th > .info > span a {
+	vertical-align: 0px;
+}
+.boardView.type2 td.conBox {
+    position: relative;
+    padding: 30px 40px;
+    border-top-color: #ccc;
+}
+/* .boardView.type2 > table { table-layout:fixed; } */
+.boardView .conBoxIn { display:table; width:100%; table-layout:fixed;  }
+.boardView .conBoxIn .conBoxSub { display:table-cell;  }
+.boardView.type2 td.conBox th,
+.boardView.type2 td.conBox td{
+    height: auto;
+    padding: 0;
+    line-height: 100%
+}
+.boardView.type2 td.conBox img {
+	max-width: 100%;
+}
+.boardView.type2 td.conBox .likeBox {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.likeBox {
+    text-align: right;
+    font-size: 0;
+}
+.likeBox > a {
+    height: 26px;
+    line-height: 24px;
+    padding: 0 5px;
+    margin-left: 4px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    background: #fff;
+    text-decoration: none;
+}
+.likeBox > a:hover {
+    background: #f5f5f5;
+}
+.likeBox > a:before {
+    content:" ";
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    margin-right: 5px;
+    vertical-align: -1px;
+}
+
+.likeBox > a.like:before {
+    background: url(../../../images/template6/resp/default/icon/icon_like.png) 0 0 no-repeat;
+}
+.likeBox > a.hate:before {
+    background: url(../../../images/template6/resp/default/icon/icon_hate.png) 0 0 no-repeat;
+}
+
+.likeBox > a.scrap:before {display:none}
+.likeBox > a.scrap:after {content:""; display:inline-block; width:10px; height:14px; margin-left:5px; vertical-align:middle; background:url('../../../images/template6/resp/default/icon/icon_scrap.png') no-repeat;}
+.likeBox > a.scrap.active:after {background:url('../../../images/template6/resp/default/icon/icon_scrap_active.png') no-repeat;}
+
+.boardView.type2 td.conBox .fileList {
+	overflow: hidden;
+    margin-top: 20px;
+}
+
+.conBox .viewPop {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 4%;
+    right: 4%;
+    display: block;
+}
+.conBox .viewPop .box {
+    position: absolute;
+    top: 50%;
+    margin-top: -90px;
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+}
+.conBox .viewPop .box .textBox {
+    padding-top: 67px;
+}
+.conBox .viewPop .box p {
+    line-height: 21px;
+    font-weight: 500;
+}
+.conBox .viewPop .box .btnArea {
+    margin-top: 16px;
+    text-align: center;
+}
+.conBox .viewPop .btnClosed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 25px;
+    height: 25px;
+    border: none;
+    font-size: 0;
+    /* background: #00b5f0 url(../../../images/template6/resp/default/button/btn_laypop_closed.png) center center no-repeat; */
+    background: #01b1ad url(../../../images/template6/resp/default/button/btn_laypop_closed.png) center center no-repeat;
+
+}
+
+.boardView tfoot tr th {
+	vertical-align: middle;
+}
+.boardView tfoot tr:first-child th,
+.boardView tfoot tr:first-child td {
+    border-top-color: #ccc;
+}
+.boardView tfoot.noticeFoot td > span {
+    color: #767676;
+}
+.boardView tfoot.noticeFoot th.prev, .boardView tfoot.noticeFoot th.next { text-align:left; }
+
+.boardView tfoot.noticeFoot th.prev:before,
+.boardView tfoot.noticeFoot th.next:before {
+    content:" ";
+    display: inline-block;
+    width: 9px;
+    height: 7px;
+    margin-right: 10px;
+    vertical-align: 2px;
+}
+.boardView tfoot.noticeFoot th.prev:before {
+    background: url(../../../images/template6/resp/default/usr/arrow_notice_prev.png) 0 0 no-repeat;
+}
+.boardView tfoot.noticeFoot th.next:before {
+    background: url(../../../images/template6/resp/default/usr/arrow_notice_next.png) 0 0 no-repeat;
+}
+.boardView tfoot tr td a {
+	line-height: 18px;
+}
+
+.table {
+    border-bottom: 1px solid #ccc;
+}
+.table thead th {
+    padding: 10px 5px;
+    text-align: center;
+    vertical-align: middle;
+    border-left: 1px solid #bbb;
+    background: #d5d5d5;
+}
+.table tbody td {
+    text-align: center;
+    vertical-align: middle;
+    border-left: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    background: #fff;
+}
+.table thead th:first-child,
+.table tbody td:first-child {
+    border-left: none;
+}
+.table tbody tr:first-child td {
+    border-top: none;
+}
+.table thead th:first-child.borLeft,
+.table thead th.borLeft {
+    border-left: 1px solid #bbb;
+}
+.table thead tr+tr th {
+    border-top: 1px solid #bbb;
+}
+.table td.borLeft {
+    border-left: 1px solid #e5e5e5 !important;
+}
+.table tbody th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table tbody td.title {
+    text-align: left;
+}
+.table tbody td.course .textBox .title > a:hover {
+    text-decoration: underline;
+}
+.table tbody td.numInput input {
+    min-width: 50px;
+    width: 50px;
+    text-align: center;
+}
+.table tbody td.course {
+    padding: 10px 12px;
+    text-align: left;
+}
+.table tbody td.course .textBox > .icon {
+    margin-right: 7px;
+    vertical-align: top;
+}
+.table tbody td.course .textBox .category {
+    display: inline;
+    line-height: 17px;
+    color: #767676;
+    font-size: 13px;
+    font-weight: 400;
+}
+.table tbody td.course .textBox .title {
+    display: block;
+}
+.table tbody td.course .textBox .category + .title {
+    margin-top: 7px;
+}
+.table tbody td.course .textBox .title > a {
+    display: inline;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.table tbody td.month > a {
+    position: relative;
+}
+.table tbody td.month > a+a {
+    margin-top: 5px;
+}
+.table tbody td.month > a > span {
+    display: inline-block;
+    line-height: 17px;
+    border-bottom: 1px solid #595959;
+}
+.table tbody td.month > a > .period {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 150px;
+    margin-left: -73px;
+    line-height: 22px;
+    padding: 7px 0 9px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    background: #2f3437;
+    opacity: 0.95;
+    z-index: 10;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.table tbody td.month > a > .period:before {
+    content:" ";
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    margin-left: -7px;
+    display: block;
+    border-bottom: 6px solid #2f3437;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+.table tbody td.month > a:hover > .period {
+    display: block;
+}
+.table tbody td.month.mt11 > a > .period {
+    margin-left: -100px;
+}
+.table tbody td.month.mt11 > a > .period:before {
+    margin-left: 18px;
+}
+.table tbody td.month.mt12 > a > .period {
+    margin-left: -130px;
+}
+.table tbody td.month.mt12 > a > .period:before {
+    margin-left: 48px;
+}
+.table tbody td.point.month > a:hover > .period, .table tbody td.point.month > a:hover > .period {  right:-10px; left:inherit; margin-left:0;  }
+.table tbody td.point.month > a:hover > .period:before, .table tbody td.point.month > a:hover > .period:before { left:inherit; right:9px;  }
+
+.table tbody td.tdGraph {
+    padding: 0;
+}
+.table tbody td.tdGraph .graphBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.table tbody td.tdGraph .graphBox:before,
+.table tbody td.tdGraph .graphBox:after {
+    content:" ";
+    position: absolute;
+    top: 0;
+    border-left: 1px solid #e5e5e5;
+    height: 100%;
+}
+.table tbody td.tdGraph .graphBox:before {
+    left: 50%;
+}
+.table tbody td.tdGraph .graphBox > .innerBar {
+    position: absolute;
+    top: 50%;
+    display: block;
+    margin-top: -4px;
+    height: 7px;
+    z-index: 10;
+}
+.table .graphTit {
+    position: relative;
+}
+.table .graphTit > span {
+    position: absolute;
+    bottom: 7px;
+    color: #666;
+    font-size: 12px;
+}
+.table .graphTit > span.num01 {
+    left: 5px;
+}
+.table .graphTit > span.num02 {
+    right: 50%;
+}
+.table .graphTit > span.num03 {
+    right: 5px;
+}
+
+.table.list thead th {
+    position: relative;
+    height: 33px;
+    padding: 6px 10px;
+}
+
+.table.list thead th:first-child.borLeft:before,
+.table.list thead th+th:before {
+    content:" ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    height: 11px;
+    margin-top: -6px;
+}
+.table.list thead tr+tr th {
+}
+
+.table.list tbody td {
+    height: 37px;
+    padding: 8px 10px;
+} 
+
+.table.point,
+.table.type2 {
+	border-top: 1px solid #ccc;
+}
+.table.type2 tbody tr+tr th {
+	border-top: 1px solid #d5d5d5;
+}
+
+
+/* horztList */
+.horztList {
+	position: relative;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+.horztList li {
+	position: relative;
+    display: table;
+    width: 100%;
+}
+.horztList > ul > li:first-child {
+    background: #d5d5d5;
+}
+.horztList > ul > li+li+li {
+    border-top: 1px solid #e5e5e5;
+}
+
+.horztList li.noData, .schedulList li.noData, 
+.horztList li.noData > div {
+	display: block;
+	line-height: 41px;
+	width: 100% !important;
+	text-align: center !important;
+}
+.horztList li.noData > div {
+	line-height: 22px;
+}
+.horztList.boardType li.noData > div, .schedulList li.noData > div {
+	line-height: 32px;
+}
+.horztList li+li.noData:hover {
+    background: #fff;
+}
+.horztList li > div {
+    display: table-cell;
+    height: 41px;
+    padding: 9px 12px;
+    line-height: 21px;
+    vertical-align: middle;
+    text-align: center;
+    word-break: break-all;
+}
+.horztList li:first-child > div {
+    padding: 9px 5px;
+    font-weight: 500;
+}
+.horztList li+li > div+div {
+	border-left: 1px solid #e5e5e5;
+} 
+.horztList li:first-child > div+div {
+    border-left: 1px solid #bbb;
+}
+.horztList li > div p {
+    line-height: 21px;
+}
+.horztList li > div a:hover {
+    text-decoration: underline;
+}
+
+.horztList li > div.sort {/*구분/주제*/
+    width: 100px;
+}
+.horztList li > div.sort > p {
+    margin-top: 7px;
+    line-height: 18px;
+    color: #767676;
+    font-size: 13px;
+    font-weight: 400;
+    /* word-break: keep-all; */
+    word-break:break-all;
+}
+.horztList li > div.number {/*회원수/게시물*/
+    width: 110px;
+}
+.horztList li > div.number .box {
+    display: inline-block;
+}
+.horztList li > div.number p {
+    display: block;
+    width: auto;
+    padding-left: 22px;
+    text-align: left;
+}
+.horztList li > div.number p+p {
+    margin-top: 3px;
+}
+.horztList li > div.number p.member {
+    background: url(../../../images/template6/resp/default/icon/icon_member.png) 3px center no-repeat;
+}
+.horztList li > div.number p.feed {
+    background: url(../../../images/template6/resp/default/icon/icon_feed.png) 2px center no-repeat;
+}
+
+
+.horztList li > div.cpState, /*수료(상태)*/
+.horztList li > div.day, /*교육일*/
+.horztList li > div.button,
+.horztList li > div.score03,/*총점*/
+.horztList li > div.score02,/*취득점수*/
+.horztList li > div.score,/*활동점수*/
+.horztList li > div.state02, /*상태(모바일)*/
+.horztList li > div.state {/*상태*/
+    width: 95px;
+}
+.horztList li > div.clsrm p+button,
+.horztList li > div.clsrm button+button,
+.horztList li > div.state p+button,
+.horztList li > div.state button+button {
+    margin-top: 5px;
+}
+.horztList li > div.cpState p > span,
+.horztList li > div.state p > span {
+    display: block;
+}
+
+.horztList li > div.score p > span.up:before,
+.horztList li > div.score p > span.down:before {
+    content:"";
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    vertical-align: 1px;
+}   
+
+.horztList li+li > div.title,/*제목*/
+.horztList li+li > div.course, /*과정명*/
+.horztList li+li > div.inclub {/*CoP/소學행*/
+    text-align: left;
+    padding: 10px 12px;
+}
+.horztList li+li > div.title .icon {
+    margin-right: 4px;
+}
+.horztList li+li > div.title .icon.lock {
+    vertical-align: 15px;
+}
+.horztList li > div.inclub .imgBox,
+.horztList li > div.course .imgBox {
+    float: left;
+    margin: 5px 0;
+}
+.horztList li > div.inclub .imgBox,
+.horztList li > div.course .imgBox {
+    position: relative;
+    width: 160px;
+    padding-top: 120px;
+    margin-right: 12px;
+}
+.horztList li > div.inclub .imgBox img,
+.horztList li > div.course .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.horztList li > div.course .imgBox > span {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.horztList li > div.inclub .textBox,
+.horztList li > div.course .imgBox+.textBox {
+    position: relative;
+    height: 100%;
+    padding: 5px 0 25px 172px;
+    min-height:130px;
+}
+.horztList li > div.course .imgBox+.textBox  p.text {
+    line-height: 20px;
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;
+}
+.horztList li > div.course .imgBox+.textBox p.info {
+    position: absolute;
+    left: 172px;
+    bottom: 5px;
+    display: block;
+    line-height: 20px;
+}
+.horztList li > div.inclub .imgBox .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    background: #d11919 url(../../../images/template6/resp/default/icon/icon_manage.png) center center no-repeat;
+}
+
+.horztList li > div.course .imgBox+.textBox .title,
+.horztList li > div.inclub .title {
+    padding: 2px 0 5px;
+}
+.horztList li > div.course .imgBox+.textBox .title a,
+.horztList li > div.inclub .title a {
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.horztList li > div.inclub .textBox > p {
+    line-height: 20px;
+    font-size: 13px;
+}
+.horztList li > div.inclub .textBox > p+p{
+    margin-top: 3px;
+}
+.horztList li > div.inclub p.text {
+	display: block;
+    color: #555;
+    font-weight: 400;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.horztList li > div.inclub .textBox > p span a {
+	vertical-align: 0px;
+}
+.horztList li > div.course .imgBox+.textBox p.info,
+.horztList li > div.inclub p.info {
+    line-height: 1;
+    font-size: 0;
+}
+.horztList li > div.course .imgBox+.textBox p.info > span,
+.horztList li > div.inclub p.info > span {
+    position: relative;
+    display: inline-block;
+    padding-right: 18px;
+    line-height: 20px;
+    color: #767676;
+    font-size: 13px;
+}
+.horztList li > div.course .imgBox+.textBox p.info > span:before,
+.horztList li > div.inclub p.info > span:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    display: block;
+    height: 11px;
+    margin-top: -5px;
+    border-left: 1px solid #ddd;
+}
+.horztList li > div.course .imgBox+.textBox p.info > span:last-child:before,
+.horztList li > div.inclub p.info > span:last-child:before {
+    display: none;
+}
+.horztList li > div.course .imgBox+.textBox p.info > span > strong,
+.horztList li > div.inclub p.info > span > strong {
+    padding-right: 6px;
+    color: #222;
+    font-weight: 400;
+}
+.horztList li > div.course .imgBox+.textBox p.info > span.like > strong {
+    padding-left: 18px;
+    background: url(../../../images/template6/resp/default/icon/icon_like.png) 0 4px no-repeat;
+}
+.horztList li > div.course .imgBox+.textBox p.info > span.hate > strong {
+    padding-left: 18px;
+    background: url(../../../images/template6/resp/default/icon/icon_hate.png) 0 4px no-repeat;
+}
+
+.horztList li > div.inclub p.tag {
+    position: absolute;
+    left: 172px;
+    bottom: 5px;
+    display: block;
+    width: 64%;
+    width: calc(100% - 170px);
+    line-height: 20px;
+    color: #999;
+    font-weight: 400;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.horztList li > div.inclub p.tag > span {
+    display: inline-block;
+    padding-right: 5px;
+}
+.horztList li > div.course .textBox > .icon {
+    margin-right: 7px;
+    vertical-align: top;
+}
+.horztList li > div.course .textBox .category {
+    display: inline;
+    line-height: 17px;
+    color: #767676;
+    font-size: 13px;
+    font-weight: 400;
+}
+.horztList li > div.course .textBox .title {
+    display: block;
+}
+.horztList li > div.course .textBox .category + .title {
+    margin-top: 7px;
+}
+.horztList li > div.course .textBox .title > a {
+    display: inline;
+    line-height: 23px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.horztList li > div.check02, /*청강*/
+.horztList li > div.check { /*체크박스*/
+    width: 40px;
+    padding: 0 5px;
+}
+.horztList li > div.check label > input {
+    margin-right: 0;
+}
+.horztList li > div.score04, /*(어학)총점*/
+.horztList li > div.score06, /*(어학)청취*/
+.horztList li > div.score07, /*(어학)독해*/
+.horztList li > div.score08, /*(어학)문법*/
+.horztList li > div.score09, /*(어학)빈칸*/
+.horztList li > div.score10, /*(어학)직무*/
+.horztList li > div.score11, /*(어학)구슬*/
+.horztList li > div.score12 { /*(어학)종합*/
+    width: 50px;
+}
+.horztList li > div.no, /*번호*/
+.horztList li > div.rankNum,  /*순위*/
+.horztList li > div.payState,/*(인클럽경비지급)상태*/
+.horztList li > div.hit,/*조회수*/
+.horztList li > div.like,/*좋아요*/
+.horztList li > div.hate {/*싫어요*/
+    width: 62px;
+}
+.horztList li > div.file, /*첨부파일*/
+.horztList li > div.tnSort,/*연수구분*/
+.horztList li > div.paperFile,/*(인클럽경비)활동보고서*/
+.horztList li > div.aces {/*접속횟수*/
+    width: 78px;
+}
+.horztList li+li > div.paySort {
+    text-align: left;
+} 
+.horztList li > div.langSort {/*어학*/
+    width: 80px;
+}
+.horztList li > div.sort02 {/*신청구분*/
+    width: 165px;
+}
+.horztList li > div.teacher,/* 강사 */
+.horztList li > div.survey,/* 설문 */
+
+.horztList li > div.grade,/* (인클럽)등급 */
+.horztList li > div.rankMini,/* (인클럽)소속 */
+.horztList li > div.joinDate,/*가입일자*/
+.horztList li > div.write,/*작성자*/
+.horztList li > div.write02,/*신청자*/
+.horztList li > div.write03,/*결재자*/
+.horztList li > div.date06,/*취득일*/
+.horztList li > div.date05,/*종료일*/
+.horztList li > div.date04,/*시작일*/
+.horztList li > div.date03,/*지급일*/
+.horztList li > div.date02,/*신청일*/
+.horztList li > div.date {/*등록일*/
+    width: 90px;
+}
+
+.horztList li > div.pay01,/* (인클럽)신청금액 */
+.horztList li > div.pay02 { /* (인클럽)지급금액 */
+	width: 95px;
+}
+.horztList li > div.cf,/* CF */
+.horztList li > div.bankNum,/* 행번 */
+.horztList li > div.cosInfo,/* (과정)과정정보 */
+.horztList li > div.appState02,/* 결재상태 */
+.horztList li > div.appState,/* (과정)신청현황 */
+.horztList li > div.tnPeriod {/* 연수기간 */
+    width: 101px;
+}
+.horztList li > div.clsrm,/*강의실*/
+.horztList li > div.time {/*일수 (시간)*/
+    width: 120px;
+}
+.horztList li > div.clsrm .dDay {
+    color: #3950b2;
+}
+.horztList li > div.study,/* 학습하기 */
+.horztList li > div.category,/* (나의 게시글)분류 */
+.horztList li > div.paySort,/* (인클럽경비)신청구분 */
+.horztList li > div.reqDate,/* (인클럽)가입신청일 */
+.horztList li > div.appForm {/*(인클럽)가입신청서*/
+    width: 130px;
+}
+.horztList.searchAll li > div.teacher, /*강사 - 통합검색*/
+.horztList.searchAll li > div.date, /*등록일시 - 통합검색*/
+.horztList li > div.grade02,/* (어학)등급 */
+.horztList li > div.latelyAcc, /*최근접속시간*/
+.horztList li > div.companyNum, /*사번*/
+.horztList li > div.name, /*이름*/
+.horztList li > div.department, /*부서*/
+.horztList li > div.rank { /*직급*/
+    width: 150px;
+}
+.horztList.searchAll li > div.date > span {
+	display: block;
+}
+.horztList li > div.cosPeriod02,/* 과정기간 */
+.horztList li > div.appPeriod{ /* 신청기간 */
+	width: 175px;
+}
+
+.horztList li > div.sort03,/* (1:1문의)상담분류 */
+.horztList li > div.publisher,/* 출판사 */
+.horztList li > div.host,/* 주관처 */
+.horztList li > div.soDetail,/* 상세구분 */
+.horztList li > div.cosPeriod03,/* 수강일 */
+.horztList li > div.cosPeriod,/* 교육일정 */
+.horztList li > div.eduPlace, /* 교육기관 */
+.horztList li > div.joinState {/*(인클럽)가입상태*/
+
+    width: 180px;
+}
+.horztList.searchAll li > div.certifiName, /*자격증명 - 통합검색*/
+.horztList.searchAll li > div.time {/*일수 (시간) - 통합검색*/
+	width: 250px; 
+}
+.horztList li > div.score05 {/*(어학)점수*/
+    width: 350px;
+}
+.horztList li > div.cosPeriod > span {
+    display: block;
+}
+.horztList li > div.joinState button {
+    margin: 2px;
+}
+.horztList li+li > div.score05,
+.horztList li+li > div.soDetail,
+.horztList li+li > div.cf {
+    text-align: left;
+}
+.horztList li > div.score05 > strong {
+    display: block;
+    padding: 10px 0;
+}
+.horztList li > div.score05 > strong:first-child {
+    padding-top: 0;
+}
+.horztList li > div.score05 > ul {
+    overflow: hidden;
+}
+.horztList li > div.score05 > ul li {
+    float: left;
+    position: relative;
+    min-width: 50%;
+    width: auto;
+    margin: 2px 0;
+    padding-left: 12px;
+    padding-right: 15px;
+}
+.horztList li > div.score05 > ul li:before {
+    content:" ";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    width: 3px;
+    height: 3px;
+    background: #aaa;
+}
+.horztList li > div.aff { /*소속*/
+    
+}
+
+.horztList.boardType {
+    border-bottom: 1px solid #c4cdd7;
+}
+
+.horztList.boardType li:first-child > div {
+    position: relative;
+    color: #fff;
+}
+.horztList.boardType li:first-child > div+div:before {
+    content:" ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    height: 11px;
+    margin-top: -6px;
+}
+.horztList.boardType li+li > div {
+    height: 51px;
+    color: #555;
+}
+.horztList.boardType li+li > div+div,
+.horztList.boardType li:first-child > div+div {
+    border-left: none;
+}
+.horztList.boardType li+li > div.title a {
+    display: inline;
+    line-height: 21px;
+    padding-right: 5px;
+    color: #222;
+    font-weight: 500;
+}
+.horztList.boardType li+li > div.title a:hover {
+    text-decoration: underline;
+}
+.horztList.boardType li+li > div.title .lockTit {
+	padding-right: 7px;
+}
+
+.thumbList {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.thumbList li {
+    position: relative;
+    float: left;
+	width: 31%;
+    margin-left: 3.5%;
+}
+.thumbList li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #ddd;
+    transition: all 0.3s;
+}
+.thumbList li:hover:before {
+    transition: all 0.3s;
+}
+.thumbList li+li+li+li {
+    margin-top: 50px;
+}
+.thumbList li:nth-child(3n+1) {
+    margin-left: 0;
+}
+.thumbList li.noData {
+    width: 100% !important;
+    padding: 0;
+    line-height: 51px;
+    text-align: center;
+    color: #767676;
+    border: solid #e5e5e5;
+    border-width: 1px 0px;
+}
+.thumbList li > a {
+    display: block;
+}
+.thumbList li .imgBox {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+}
+.thumbList li .imgBox:before {
+    content:" ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.thumbList li:hover .imgBox:before {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.thumbList li .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height :100%;
+}
+.thumbList li .imgBox > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+} 
+.thumbList li .textBox {
+    position: relative;
+    height: 150px;
+    padding: 7px 13px;
+}
+.thumbList li .textBox > .category {
+    overflow: hidden;
+    margin-top: 8px;
+    line-height: 20px;
+    color: #767676;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.thumbList li .textBox .title  {
+    margin-top: 13px;
+    max-height: 46px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.thumbList li .textBox .title > strong {
+    display: inline;
+    line-height: 23px;
+}
+.thumbList li:hover .textBox .title > strong {
+    text-decoration: underline;
+}
+.thumbList li .textBox .title > .iconBox {
+    display: inline;
+    line-height: 23px;
+}
+.thumbList li .textBox .cosWait,
+.thumbList li .textBox .cosFinish,
+.thumbList li .textBox .cosIng {
+    position: absolute;
+    right: 12px;
+    bottom: 18px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.thumbList li .textBox .cosFinish {
+    color: #999;
+}
+
+.thumbList li .textBox p.info {
+    margin-top: 11px;
+    line-height: 1;
+    font-size: 0;
+}
+.thumbList li .textBox p.info > span {
+    position: relative;
+    display: inline-block;
+    padding-right: 18px;
+    line-height: 20px;
+    color: #767676;
+    font-size: 13px;
+}
+.thumbList li .textBox p.info > span:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    display: block;
+    height: 11px;
+    margin-top: -5px;
+    border-left: 1px solid #ddd;
+}
+.thumbList li .textBox p.info > span:last-child:before {
+    display: none;
+}
+.thumbList li .textBox p.info > span > strong {
+    padding-right: 6px;
+    color: #222;
+    font-weight: 400;
+}
+.thumbList li .textBox p.info > span.like > strong {
+    padding-left: 18px;
+    background: url(../../../images/template6/resp/default/icon/icon_like.png) 0 4px no-repeat;
+}
+.thumbList li .textBox p.info > span.hate > strong {
+    padding-left: 18px;
+    background: url(../../../images/template6/resp/default/icon/icon_hate.png) 0 4px no-repeat;
+}
+.thumbList li .textBox .btnArea {
+    position: absolute;
+    right: 12px;
+    bottom: 20px;
+    margin: 0;
+    padding: 0;
+}
+.thumbList.ebook li {
+    width: 22%;
+  	padding: 0 28px;	
+}
+.thumbList.ebook li.noData {
+	line-height: 41px;
+	text-align: center;
+}
+.thumbList.ebook li+li+li+li {
+    margin-top: 0px;
+}
+.thumbList.ebook li+li+li+li+li {
+    margin-top: 50px;
+}
+.thumbList.ebook li:nth-child(3n+1) {
+    margin-left: 4%;
+}
+.thumbList.ebook li:nth-child(4n+1) {
+    margin-left: 0px;
+}
+.thumbList.ebook li .imgBox {
+    padding-top: 140%;
+    border: 1px solid #ddd;
+}
+.thumbList.ebook li .textBox {
+    height: auto;
+    padding: 0 0 15px;
+    text-align: center;
+}
+.thumbList.ebook li .textBox .title > strong,
+.thumbList.ebook li .textBox > p {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.thumbList.ebook li .textBox > p {
+    line-height: 20px;
+    color: #767676;
+}
+.thumbList.ebook li .textBox > p.publisher {
+    margin-top: 5px;
+}
+.thumbList.ebook li .textBox > p.date {
+    margin-top: 11px;
+}
+#resultDetail_01 .thumbList.ebook li {
+	padding:0 2%;
+	width:23%;
+	margin-left:7%;
+}
+#resultDetail_01 .thumbList.ebook li:first-child {
+	margin-left:9%;
+}  
+#resultDetail_01 .thumbList.ebook li.noData {
+	margin-left:0 !important;
+}
+/* 설문 리스트 */
+.surveyList {
+    overflow: hidden;
+}
+.surveyList li {
+    position: relative;
+    float: left;
+    width: 31%;
+    height: 221px;
+    padding: 36px 15px;
+    margin-left: 2.3333%;
+    /* cursor: pointer; */
+}
+.surveyList li:nth-child(3n+1) {
+    margin-left: 0;
+}
+.surveyList li+li+li+li {
+    margin-top: 34px; 
+}
+.surveyList li .sort {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 64px;
+    height: 64px;
+    padding-top: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: -1px;
+    background: #657282;
+}
+.surveyList li .title {
+    padding-right: 50px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #e5e5e5;
+}
+.surveyList li .title > strong {
+    overflow: hidden;
+    display: block;
+    height: 40px;
+    padding-right: 5px;
+    line-height: 20px;
+    font-size: 15px; 
+    word-wrap: break-word; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.surveyList li .title > strong .icon {
+    margin-right: 5px;
+}
+.surveyList li .title .period {
+    margin-top: 11px;
+    line-height: 20px;
+    color: #767676;
+    font-size: 13px;
+}
+.surveyList li .title .period .periodDate { display:block; overflow:hidden; padding:5px 0 0 0; }
+.surveyList li .title .period .periodDate span { float:left; padding:3px 0 0 0; }
+.surveyList li .title .period strong {
+    color: #222;
+    padding-right: 5px;
+}
+.surveyList.type02 li .title .period strong {
+	display:block;
+}
+.surveyList li .state {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    padding: 0 15px;
+}
+.surveyList li .state > span {
+    display: inline-block;
+    line-height: 29px;
+    color: #767676;
+}
+.surveyList li .state button {
+    float: right;
+    height: 29px;
+    line-height: 27px;
+}
+.surveyList li .state button.btnDelete { margin:0 6px 0 0; }
+.surveyList li:hover {
+    padding: 34px 13px;
+}
+.surveyList li:hover .sort {
+    top: -3px;
+    right: -3px;
+}
+.surveyList li:hover .state {
+    bottom: 18px;
+    padding: 0 13px;
+}
+.surveyList li.noData,
+.surveyList li.noData:hover {
+	width: 100%;
+	height: auto;
+	padding: 0 20px;
+	line-height: 45px;
+	text-align: center;
+	color: #767676;
+}
+.table+.horztList {
+    margin-top: 30px;
+}
+
+/* 자격증 일정 */
+.scheduleTable {
+    border-bottom: 1px solid #ccc;
+}
+
+.scheduleTable table {
+    table-layout: fixed;
+}
+.scheduleTable table th,
+.scheduleTable table td {
+    padding: 0 9px;
+    vertical-align: top;
+    text-align: left;
+}
+.scheduleTable table th {
+    height: 52px;
+    padding-top: 14px;
+    /* color: #3950b2; */
+    font-size: 13px;
+    background: #fff;
+    color:#01b1ad;
+}
+.scheduleTable table td {
+    height: 70px;
+}
+.scheduleTable table td > div {
+    padding: 6px 0 16px;
+    border-top: 2px solid #e1e6eb;
+}
+.scheduleTable table td > div > strong {
+    display: inline-block;
+    margin-bottom: 6px;
+    line-height: 22px;
+    padding: 0 3px 0 2px;
+    border-radius: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    display:block;
+}
+.scheduleTable table td > div p {
+	position: relative;
+    overflow: hidden;
+    line-height: 20px;
+    padding: 0 4px 0 17px;
+    font-size: 12px;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.scheduleTable table td > div p.scheduleIcon {
+	min-height:16px;
+	float:left;
+}
+.scheduleTable table td > div p.scheduleIcon .hide { 
+	display:none;
+}
+
+.scheduleTit {
+    overflow: hidden;
+    padding: 5px 0;
+    border: solid #eee;
+    border-width: 1px 0px;
+}
+.scheduleTit .monthBox {
+    display: inline-block;
+}
+.scheduleTit .monthBox a {
+    width: 29px;
+    height: 29px;
+    font-size: 0;
+}
+.scheduleTit .monthBox .btnPrev {
+    background: url(../../../images/template6/resp/default/button/btn_schedule_prev.png) 4px center no-repeat;
+}
+.scheduleTit .monthBox .btnNext {
+    background: url(../../../images/template6/resp/default/button/btn_schedule_next.png) 10px center no-repeat;
+}
+.scheduleTit .legendList {
+    float: right;
+    padding: 8px 0;
+}
+
+.scheduleTit .legendList .icon,
+.scheduleTable table td > div p .icon {
+    width: 14px;
+    height: 12px;
+    border-radius: 2px;
+    line-height: 12px;
+    vertical-align: 1px;
+    font-size: 10px;
+    color: #fff;
+}
+.scheduleTable table td > div p .icon {
+	position: absolute;
+	top: 4px;
+	left: 0;
+}
+
+/* 연관교육일정 모바일 */
+.schedulList {
+	border: solid #ccc;
+	border-width: 1px 0px;
+}
+.schedulList li+li {
+	border-top: 1px solid #e5e5e5;
+}
+.schedulList li .course {
+	padding: 10px;
+}
+.schedulList li .course .textBox > .icon {
+	vertical-align: 13px;
+    margin-right: 5px;
+}  
+.schedulList li .course .textBox .category {
+    display: inline;
+    line-height: 17px;
+    color: #767676;
+    font-size: 13px;
+    font-weight: 400;
+}
+.schedulList li .course .textBox .title {
+	margin-top: 7px;
+}
+.schedulList li .course .textBox .title > a {
+    display: inline;
+    font-size: 15px;
+    font-weight: 500;
+}
+.schedulList li .lineBox .monthBox,
+.schedulList li .lineBox .dayBox {
+	display: table;
+	width: 100%;
+}
+.schedulList li .lineBox .monthBox > span,
+.schedulList li .lineBox .dayBox > span {
+	position: relative;
+	display: table-cell;
+	width: 16.6%;
+	height: 34px;
+	text-align: center;
+	vertical-align: middle;
+}
+.schedulList li .lineBox .monthBox > span+span:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    height: 11px;
+    margin-top: -6px;
+}
+.schedulList li .lineBox .dayBox > span {
+	text-decoration: underline;
+}
+
+.schedulList li .lineBox .dayBox > span+span {
+	border-left: 1px solid #e5e5e5;
+}
+
+
+/* 통합검색 */
+.allSearchNum {
+	margin-bottom: 15px;
+	line-height: 23px;
+	color: #767676;
+}
+.allSearchNum .ptColorB {
+	font-size: 16px;
+}
+.allSearchNum .num {
+	font-size: 16px;
+	font-weight: 500;
+}
+.searchBox .reSearch {
+	margin-left: 15px;
+}
+.shRtList {
+	position: relative;
+	border-top: 2px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.thumbList > .btnMore,
+.horztList > .btnMore,
+.shRtList > .btnMore {
+	position: absolute;
+	top: -37px;
+	right: 0;
+	width: 57px;
+	height: 18px;
+	line-height: 16px;
+	border: 1px solid #767676;
+	text-align: center;
+	font-size: 13px;
+}
+.thumbList > .btnMore:after,
+.horztList > .btnMore:after,
+.shRtList > .btnMore:after {
+	content:" ";
+	display: inline-block;
+	width: 5px;
+	height: 7px;
+    margin-left: 4px;
+    vertical-align: 2px;
+	background: url(../../../images/template6/resp/default/button/btn_clsrm_more.png) 0 0 no-repeat;
+}
+.shRtList > div > div {
+	
+}
+.shRtList > div > div {
+	border-top:1px solid #e5e5e5;
+	padding: 12px 20px;
+}
+.shRtList > div .noData, .shRtList div.noData > div, .schedulList div.noData {
+    display: block;
+    padding: 0;
+    line-height: 41px;
+    width: 100% !important;
+    text-align: center !important;
+}
+.shRtList > div .textBox .category {
+    display: inline;
+    line-height: 17px;
+    font-size: 13px;
+    font-weight: 400;
+	color:#e63073;	
+}
+
+.shRtList > div .textBox .title {
+    display: block;
+}
+.shRtList > div .textBox .category + .title {
+    margin-top: 5px;
+}
+.shRtList > div .noticeBox .title > a,
+.shRtList > div .faqBox .title > a,
+.shRtList > div .textBox .title > a {
+    display: inline;
+    line-height: 23px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.shRtList > div .faqBox .title > a {
+	position: relative;
+	padding-left: 30px;
+	white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.shRtList > div .faqBox .title > a:before {
+	content:"Q";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	line-height: 23px;
+	text-align: center;
+}
+.shRtList > div .noticeBox .dec,
+.shRtList > div .faqBox .dec,
+.shRtList > div .textBox .dec {
+	margin-top: 5px;
+	line-height: 18px;
+	max-height: 50px;
+	color: #555;
+	font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.shRtList > div .textBox .dec > div {
+	display: inline;
+	line-height: 18px !important;
+	color: #555 !important;
+	font-size: 13px !important;
+}
+.shRtList > div .textBox .dec > div.manualTmp {
+	display: block;
+}
+.shRtList > div .noticeBox {
+	position: relative;
+	padding-right: 100px;
+}
+.shRtList > div .noticeBox .date {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	color: #767676;
+	font-size: 13px;
+}
+.shRtList > div + div {
+	border-top: 1px solid #e5e5e5;
+}
+
+.horztList li+li .certifiName {
+	font-size: 15px;
+	font-weight: 500;
+}
+.horztList li+li .certifiDetail {
+	text-align: left;
+}
+.horztList li .certifiDetail .dec {
+	line-height: 18px;
+	max-height: 36px;
+	color: #555;
+	font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.horztList li .certifiDetail > p {
+	margin-top: 9px;
+	line-height: 18px;
+	color: #767676;
+	font-size: 13px;
+} 
+ 
+@media screen and (min-width: 1100px) {
+	.boardWrite table {
+		table-layout: fixed;
+	}
+}
+@media screen and (max-width: 1279px) {
+	.thumbList li {
+	    width: 32%;
+	    margin-left: 2%;
+	}
+	.thumbList.ebook li,
+	.thumbList.ebook li:nth-child(3n+1) {
+		width: 23.5%;
+		margin-left: 2%;
+	}
+	.thumbList.ebook li:nth-child(4n+1) {
+	    margin-left: 0px;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.totalList {
+		padding: 0 15px;
+	}
+	.totalList > span {
+		left: 15px;
+	}
+	.thumbList {
+		padding: 0 15px;
+	}
+	.surveyList {
+		margin: 0 15px;
+	}
+	.surveyList li {
+		width: 32%;
+		margin-left: 2%; 
+	}
+	.surveyList li+li+li+li {
+		margin-top: 2%;
+	}
+	.thumbList > .btnMore, .horztList > .btnMore, .shRtList > .btnMore {
+		right:15px;
+		top:-32px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.boardList thead,
+	.boardList tbody td,
+	.horztList li div.sort.mobileNo,
+	.horztList li div.tnSort.mobileNo,
+	.horztList li div.no,
+	.horztList li div.file,
+	.horztList li div.hit,
+	.horztList li div.like,
+	.horztList li div.hate,
+	.horztList li:first-child {
+		display: none;
+	}
+	.boardList,
+	.horztList {
+	    border-top: 1px solid #ccc;	
+	}
+	.boardList tbody tr {
+		display: block;
+		padding: 10px;
+		border-top: 1px solid #e5e5e5;
+	}
+	.boardList tbody td.name, /*이름*/
+	.boardList tbody td.department, /*부서*/
+	.boardList tbody td.rank, /*직급*/
+	.boardList tbody td.title,
+	.boardList tbody td.date {
+		display: block;
+		height: auto;
+		padding: 0;
+		line-height: 21px;
+		border: none;
+		text-align: left;
+	}
+	.boardList tbody td.name, /*이름*/
+	.boardList tbody td.department, /*부서*/
+	.boardList tbody td.rank{ /*직급*/
+		display: inline-block;
+	    padding-right: 15px;
+	}
+	.boardList tbody td:before {
+		font-weight: 500;
+	    vertical-align: middle;
+	}
+	.boardList tbody td.name:before {
+		content: "이름 : ";
+	}
+	.boardList tbody td.department:before {
+		content: "부서 : ";
+	}
+	.boardList tbody td.rank:before {
+		content: "직급 : ";
+	}
+	.boardList tbody td.date {
+		margin-top: 5px;
+	}
+	.horztList li {
+		overflow: hidden;
+		position: relative;
+		display: block;
+		padding: 10px 15px;
+	}
+	.horztList.listCheck li {
+		padding-left: 35px;
+	}
+	.horztList.listCheck li > div.check {
+		position: absolute;
+		top: 6px;
+		left: 5px;
+		bottom: 0;
+	}
+	.horztList li > div {
+		display: inline-block;
+		width: auto !important;
+		text-align: left !important;
+	}
+	.horztList.boardType li+li > div,
+	.horztList li+li > div {
+	    height: auto;
+	    padding: 0 10px 0 0;
+	}
+	.horztList li+li > div+div {
+		border-left: none;
+	}
+	.horztList li+li > div.course,
+	.horztList li+li > div.title,
+	.horztList li+li > div.title a {
+		display: block;
+		padding: 0;
+		line-height: 23px;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.horztList li > div.inclub .textBox,
+	.horztList li > div.course .imgBox + .textBox {
+		min-height:auto;
+	}
+	.horztList li+li > div.title,
+	.horztList li+li > div.course {
+		margin-bottom: 4px;
+	}
+	.horztList li > div.clsrm,
+	.horztList.inclub li > div.sort,
+	.horztList li > div.cosNum,
+	.horztList li > div.appPeriod,
+	.horztList li > div.cosPeriod02,
+	.horztList li+li > div.inclub,
+	.horztList li+li > div.course {
+		display: block;
+		padding: 0;
+	}
+	.horztList li > div.category {
+		padding-right: 70px;
+	}
+	.horztList li > div.study button {
+		margin-top: 4px;
+	}
+	.horztList li > div.clsrm p+button {
+		margin-top: 0;
+	}
+	.horztList li > div:after,
+	.horztList li > div:before {
+		font-weight: 500;	
+	}
+	.horztList li > div.score p,
+	.horztList li > div.clsrm p,
+	.horztList li > div.state p,
+	.horztList li > div.number p {
+		display: inline-block;
+		padding-right: 5px;
+	}
+	.horztList li > div.state p+button, 
+	.horztList li > div.state button+button {
+		margin-top: 0;
+	}
+	.horztList li > div.sort p {
+		display: inline;
+	}
+	.horztList li > div.write:before {content: "작성자 : ";}
+	.horztList li > div.write02:before {content: "신청자 : ";}
+	.horztList li > div.write03:before {content: "결재자 : ";}
+	.horztList li > div.date:before {content: "등록일 : ";}
+	.horztList li > div.date02:before {content: "신청일 : ";}
+	.horztList li > div.tnPeriod:before {content: "연수기간 : ";}
+	.horztList li > div.department:before {content: "부서 : ";}
+	.horztList li > div.publisher:before {content: "출판사 : ";}
+	.horztList li > div.teacher:before {content: "강사 : ";}
+	.horztList li > div.time:before {content: "일수(시간) : ";}
+	.horztList li > div.cosNum:before {content: "차수 : ";}
+	.horztList li > div.appPeriod:before {content: "신청기간 : ";}
+	.horztList li > div.cosPeriod02:before {content: "과정기간 : ";}
+	.horztList li > div.cosPeriod03:before {content: "교육기간 : ";}
+	.horztList li > div.cosInfo:before {content: "연수정보 : ";}
+	.horztList li > div.appState:before {content: "신청현황 : ";}
+	.horztList li > div.check02:before {content: "청강 : ";}
+	.horztList li > div.state02:before {content: "상태 : "; }
+	.horztList li > div.cosPeriod:before {content: "교육일정 : ";}
+	.horztList li > div.eduPlace:before {content: "교육기관 : ";}
+	.horztList li > div.day:before {content: "교육일 : ";}
+	.horztList li > div.score02:before {content: "취득성적 : ";}
+	.horztList li > div.score03:before {content: "총점 : ";}
+	.horztList li > div.survey:before {content: "설문 : ";}
+	
+	.horztList li > div.grade02:before {content: "등급 : ";} /* (어학)등급 */
+	
+	.horztList li > div.score04:before {content: "총점 : ";} /*(어학)총점*/
+	.horztList li > div.score06:before {content: "청취 : ";} /*(어학)청취*/
+	.horztList li > div.score07:before {content: "독해 : ";} /*(어학)독해*/
+	.horztList li > div.score08:before {content: "문법 : ";} /*(어학)문법*/
+	.horztList li > div.score09:before {content: "빈칸 : ";} /*(어학)빈칸*/
+	.horztList li > div.score10:before {content: "직무 : ";} /*(어학)직무*/
+	.horztList li > div.score11:before {content: "구슬 : ";} /*(어학)구슬*/
+	.horztList li > div.score12:before {content: "종합 : ";} /*(어학)종합*/
+	
+	.horztList li > div.date06:before {content: "취득일 : ";}
+	
+	.horztList li > div.langSort:before,
+	.horztList li > div.sort:before,
+	.horztList li > div.sort03:before,
+	.horztList li > div.tnSort:before,
+	.horztList li > div.category:before {
+		content: "[";
+		font-weight: 400;
+	}
+	
+	.horztList li > div.langSort:after,
+	.horztList li > div.sort:after,
+	.horztList li > div.sort03:after,
+	.horztList li > div.tnSort:after,
+	.horztList li > div.category:after {
+		content: "]";
+		font-weight: 400;
+	}
+	.horztList.inclub li > div.sort:before,
+	.horztList.inclub li > div.sort:after {
+		content: "";
+	}
+	
+	.thumbList li .textBox p.info > span.like > strong,
+	.thumbList li .textBox p.info > span.hate > strong {
+	    display: inline-block;
+	    height: 20px;
+	    vertical-align: top;
+	    font-size: 0;
+	}
+	.horztList.searchAll li > div.date > span,
+	.horztList li > div.cosPeriod > span {
+		display: inline-block;
+	}
+	.thumbList.ebook li,
+	.thumbList.ebook li:nth-child(3n+1),
+	.thumbList.ebook li:nth-child(4n+1) {
+		width: 32%;
+		margin-left: 2%;
+	}
+	.thumbList.ebook li+li+li+li {
+	    margin-top: 50px;
+	}
+	.thumbList.ebook li:nth-child(3n+1) {
+	    margin-left: 0px;
+	}
+		
+	#resultDetail_01 .ebook.thumbList li {
+		width:32%; 
+		margin-left:2%; 
+		padding:0 15px;
+	}
+	#resultDetail_01 .thumbList.ebook li:first-child {
+		margin-left:0;
+	} 
+	#resultDetail_01 .thumbList li + li + li, .thumbList li + li + li + li, .ebook.thumbList li + li + li + li {
+		margin-top:0;
+	}
+	.horztList li > div.clsrm p+button, 
+	.horztList li > div.clsrm button+button, 
+	.horztList li > div.state p+button, 
+	.horztList li > div.state button+button {
+		margin-top: 0;
+	}
+	.horztList.inSts li {
+		padding-left: 60px;
+	}
+	.horztList.inSts li:before {
+		content:" ";
+		position: absolute;
+		top: 0;
+		left: 50px;
+		height: 100%;
+		border-left: 1px solid #e5e5e5;
+	}
+	.horztList.inSts li > div.rankNum {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 50px !important;
+		padding: 0;
+		margin-top: -10px;
+		text-align: center !important;
+	}
+	.horztList.inSts li > div.sort:before,
+	.horztList.inSts li > div.sort:after {
+		display: none;
+	}
+	
+}
+@media screen and (max-width: 815px) {
+	.surveyList li,
+	.surveyList li:nth-child(3n+1) {
+		width: 49%;
+	    height: 190px;
+		margin-left: 2%;
+    	padding: 20px 20px; 
+	}
+	.surveyList li:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	.surveyList li+li+li {
+		margin-top: 2%;
+	}
+	.surveyList.mob li:hover { padding:18px; }
+	.surveyList.mob li .title { padding-bottom:10px; }
+}
+@media screen and (max-width: 680px) {
+	.totalList .floatRight {
+		text-align: right;
+	}
+	.totalList .legendList {
+		display: block;
+		margin-bottom: 8px;
+	}
+	.thumbList li,
+	.thumbList li:nth-child(3n+1),
+	.thumbList.ebook li,
+	.thumbList.ebook li:nth-child(3n+1),
+	.thumbList.ebook li:nth-child(4n+1) {
+	    width: 49%;
+	    margin-left: 2%;
+	}
+	.thumbList li:nth-child(2n+1),
+	.thumbList.ebook li:nth-child(2n+1) {
+	    margin-left: 0;
+	}
+	.thumbList li+li+li,
+	.thumbList li+li+li+li,
+	.thumbList.ebook li+li+li+li {
+	    margin-top: 30px;
+	}
+	.thumbList.ebook li {
+		padding: 0 15px;
+	}
+	.surveyList li,
+	.surveyList li:nth-child(3n+1) {
+		width: 49%;
+	    height: 190px;
+		margin-left: 2%;
+    	padding: 20px 20px; 
+	}
+	.surveyList li:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	.surveyList li+li+li {
+		margin-top: 2%;
+	}
+	.surveyList.mob li:hover { padding:18px; }
+	.surveyList.mob li .title { padding-bottom:10px; }
+}
+
+@media screen and (max-width: 560px) { 
+	.surveyList li, .surveyList li:nth-child(3n+1) { width:auto !important; margin:12px 0 0 0 !important; float:none !important; }
+}
+@media screen and (max-width: 500px) {
+	.boardView > table > thead > tr > th,
+    .boardView > table > thead > tr >  td,
+    .boardView > table > tbody > tr >  th,
+    .boardView > table > tbody > tr >  td,
+    .boardView > table > tfoot > tr >  th,
+	.boardView > table > tfoot > tr >  td,
+	.boardWrite th,
+	.boardWrite td  {
+		display: inline-block;
+		width: 100%;	
+	    min-height: 41px;
+	    height: auto;
+	    border-left: none;
+	} 
+	.boardWrite th {
+	    padding: 10px 15px;
+	}
+	.boardView > table > tbody > tr > td.conBox {
+		display: block;
+		width: 100% !important;
+		height: auto;
+		min-height: 200px;
+	}
+	.boardView.type2 tfoot tr {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding-left: 150px;
+	}
+	.boardView.type2 tfoot tr th {
+		width: 90px !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+	} 
+	.boardView.type2 thead th {
+		padding: 15px;
+	}
+	.boardView.type2 thead th > strong {
+		padding-top: 0px;
+	}
+	.boardView.type2 thead th > .info > span {
+		margin-right: 8px;
+		line-height: 20px;
+	}
+	.boardView.type2 thead th > .info > span:before {
+		display: none;
+    }
+	.boardView.type2 td.conBox {
+        padding: 20px 15px;
+        /* width: 100vw !important; */ 
+        overflow-x: auto;
+	}
+	.boardView.type2 tfoot tr {
+		padding-left: 90px;
+	}
+	.boardView.type2 thead th.inquiryTit > .icon {
+		top: 20px;
+    	right: 15px;
+	}
+	.boardView.viewImg02 > table { table-layout:inherit; } 
+	.boardView.viewImg02 > table .conBox img { max-width: 100%; }
+	.boardView.viewImg02 table,
+	.boardView.viewImg02 tr,
+	.boardView.viewImg02 th, .boardView.viewImg02 td, .boardView.viewImg02 tbody, .boardView.viewImg02 colgroup { display:block; }
+	
+	.boardView.majorChoice th > span {
+	    display: inline-block;
+	    margin-left: 5px;
+	}
+	.horztList li > div.inclub .imgBox, 
+	.horztList li > div.course .imgBox {
+		display: none;
+	}
+	.horztList li > div.inclub .textBox, 
+	.horztList li > div.course .imgBox+.textBox {
+	    padding: 0 0 20px 0;
+	    min-height:auto;
+	}
+	.horztList li > div.course .imgBox+.textBox p.info {
+		left: 0;
+		bottom: 0;
+	}
+	.horztList li > div.inclub p.tag {
+		left: 0;
+	    bottom: 1px;
+	    width: 100%;
+	}
+	.thumbList li, .thumbList li:nth-child(3n+1) {
+		width: 100%;
+		margin-left: 0;
+	}
+	.thumbList li+li {
+		margin-top: 30px;
+	}
+	.thumbList.ebook li+li {
+		margin-top: 0px;
+	}
+	.thumbList.ebook li+li+li {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.surveyList li,
+	.surveyList li:nth-child(3n+1),
+	.surveyList li:nth-child(2n+1) {
+		width: 100%;
+		margin-left: 0;
+	}
+	.surveyList li+li {
+		margin-top: 3%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.boardWrite td .inclubImage,
+	.boardWrite td .inclubImage + .floatLeft {
+		float: none;
+	    width: 100%;
+	}
+	.boardWrite td .inclubImage {
+		position: relative;
+		padding-top: 75%;
+		height: auto;
+		margin: 0 0 10px 0;
+	}
+	.boardWrite td .inclubImage img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 359px) {
+	.thumbList li,
+	.thumbList li:nth-child(3n+1) {
+	    width: 100%;
+	    margin-left: 0%;
+	}
+	.thumbList li:nth-child(2n+1) {
+	    margin-left: 0;
+	}
+	.thumbList li+li,
+	.thumbList.ebook li+li+li {
+	    margin-top: 30px;
+	}
+	.thumbList.ebook li+li  {
+		margin-top: 0;
+	}
+}

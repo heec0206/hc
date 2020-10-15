@@ -1,0 +1,1094 @@
+@charset "utf-8";
+#main {
+	height: 100%;
+}
+#main > section {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#section01 {
+    background: url(../../../images/template6/resp/default/bg/bg_main01.jpg) center center no-repeat;
+    background-size: cover;
+}
+#section02 {
+    background: url(../../../images/template6/resp/default/bg/bg_main02.jpg) center center no-repeat;
+    background-size: cover;
+}
+#section03 {
+    background: url(../../../images/template6/resp/default/bg/bg_main03.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#main > section:before {
+	content:" ";
+	position: absolute;
+	left: 50%;
+	bottom: 80px;
+	width: 68px;
+	height: 72px;
+	margin-left: -34px;
+	background: url(../../../images/template6/resp/default/icon/icon_scroll_down.png) 0 0 no-repeat;
+	
+}
+#main > #section03:before {
+	display: none;
+}
+#main .quickMenu {
+    position: fixed;
+    top: 40%;
+    right: 40px;
+    margin-top: -60px;
+}
+#main .quickMenu a {
+    display: block;
+    line-height: 30px;
+    padding-right: 28px;
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 1px 1px 9px #000;
+    background: url(../../../images/template6/resp/default/usr/main_quick.png) right 4px no-repeat;
+}
+#main .quickMenu a:hover {
+    /* color: #69d6f9; */
+    color:#4bb9b6;
+    background: url(../../../images/template6/resp/default/usr/main_quick_hover.png) right 4px no-repeat;
+}
+.onepage-pagination {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 90px;
+    margin-top: -57px;
+    z-index: 100;
+    background: transparent;
+    overflow: hidden;
+    z-index: 88;
+}
+.onepage-pagination li {
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    overflow: hidden;
+    font-size: 0;
+    cursor: pointer;
+    
+}
+.onepage-pagination li+li {
+    margin-top: 28px;
+}
+.onepage-pagination li a:before {
+    content: " ";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    vertical-align: middle;
+    background: #acb0b2;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.onepage-pagination li a.active:before {
+    width: 60px;
+    background: #fff;
+}
+.onepage-pagination li a:after {
+    content: "01";
+}
+.onepage-pagination li+li a:after {
+    content: "02";
+}
+.onepage-pagination li+li+li a:after {
+    content: "03";
+}
+.onepage-pagination li a:after {
+    display: inline-block;
+    margin-left: 10px;
+    color: #acb0b2;
+    vertical-align: middle;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+.onepage-pagination li a.active:after {
+    color: #fff;
+}
+
+.cosBox {
+    overflow: hidden;
+    position: relative;
+    top: 290px;
+    left: 10%;
+    margin: 0 auto; 
+}
+.cosBox > div {
+    overflow:hidden;
+    float: left;
+    width: 126px;
+    height: 330px;
+    padding: 0 20px 20px;
+    color: #919191;
+    background: #222;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.cosBox > div.item01+div.item02 {
+    background: #303539;
+}
+.cosBox > div.item01.active+div.item02 {
+    background: #222;
+}
+.cosBox > div.item03 {
+    background: #303539;
+}
+.cosBox > div .conBox h2 {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    margin-bottom: 33px;
+    line-height: 1;
+    font-size: 18px;
+}
+.cosBox > div .conBox h2:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    width: 20px;
+    border-top: 1px solid #5a5a5a;
+}
+.cosBox > div .conBox h2 strong {
+    display: inline-block;
+    width: 0px;
+    text-indent: -500px;
+    color: #222;
+    opacity: 0;
+}
+.cosBox > div .conBox h2 .btnMore {
+	position: absolute;
+    top: 18px;
+    right: -10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height:24px;
+    font-size: 0;
+    text-align:center;
+    z-index:2;
+}
+
+.cosBox > div .conBox h2 .btnMore .icon {position:relative; width:12px; height:12px}
+
+.cosBox > div .conBox h2 .btnMore .icon:before,
+.cosBox > div .conBox h2 .btnMore .icon:after {
+    content: " ";
+    position: absolute;
+    border-top: 2px solid; 
+}
+.cosBox > div .conBox h2 .btnMore .icon:before {
+    top: 50%;
+    margin-top: -1px;
+    left:0;
+    width: 12px;
+    border-top: 2px solid; 
+}
+.cosBox > div .conBox h2 .btnMore .icon:after {
+    left: 50%;
+    margin-left: -1px;
+    height: 10px;
+    border-left: 2px solid; 
+}
+
+
+.cosBox > div .conBox .txtList {
+    height: 240px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.cosBox > div .conBox .txtList p {
+    line-height: 20px;
+    font-size: 13px;
+    word-break: keep-all;
+}
+.cosBox > div .conBox .txtList li {
+    position: relative;
+    max-height: 60px;
+    margin-left: -8px;
+    padding-left: 8px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+    font-size: 13px;
+    word-break: keep-all;
+}
+.cosBox > div .conBox .txtList li:before{
+    content: " ";
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    width: 2px;
+    height:2px;
+    background: #919191;
+}
+.cosBox > div .conBox .txtList li+li {
+    margin-top: 15px;
+}
+.cosBox > div .conBox .txtList p+p {
+    margin-top: 8px;
+}
+.cosBox > div .conBox .list {
+    width: 314px;
+    opacity: 0;
+}
+.cosBox > div .conBox .list ul {
+    overflow: hidden;
+}
+.cosBox > div .conBox .list li {
+    float: left;
+    width: 140px;
+    margin-right: 34px;
+}
+.cosBox > div .conBox .list li:last-child {
+    margin-right: 0px;
+}
+.cosBox > div .conBox .list li .imgBox {
+    position: relative;
+    height: 140px;
+}
+.cosBox > div .conBox .list li .imgBox > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.cosBox > div .conBox .list li .textBox > a.title {
+    display: block;
+    margin-top: 10px;
+    line-height: 22px;
+    height: 44px;
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+.cosBox > div .conBox .list li .textBox .iconBox {
+	display:block;
+    margin-top: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cosBox > div .conBox .linkView {
+    margin-top: 9px;
+    padding: 0 6px;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+    color: #222;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    background: #f5f5f5;
+}
+.cosBox > div .conBox .linkView:after {
+    content: " ";
+    display: inline-block;
+    width: 5px;
+    height: 7px;
+    margin-left: 4px;
+    vertical-align: 1px;
+    background: url(../../../images/template6/resp/default/button/btn_link_view.png) 0 0 no-repeat;
+}
+.cosBox > div .conBox .linkView:hover {
+    border-color: #333;
+    color: #fff;
+    background: #333;
+}
+.cosBox > div .conBox .linkView:hover:after {
+    background: url(../../../images/template6/resp/default/button/btn_link_view_hover.png) 0 0 no-repeat;
+}
+
+.cosBox > div .conBox .list li .textBox .linkView {
+    float: right;
+}
+.cosBox > div .conBox .noData,
+.cosBox > div .conBox .msgBox {
+    display: table;
+    height: 240px;
+    width: 100%;
+    opacity: 0;
+}
+.cosBox > div .conBox .noData .inner,
+.cosBox > div .conBox .msgBox .inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.cosBox > div .conBox .msgBox .inner > strong {
+    display: block;
+    margin-bottom: 13px;
+    line-height: 21px;
+    color: #222;
+    font-size: 16px;
+}
+.cosBox > div .conBox .msgBox .inner > strong:before {
+    content: " ";
+    display: inline-block;
+    width: 25px;
+    height: 21px;
+    margin-right: 8px;
+    vertical-align: -4px;
+    background: url(../../../images/template6/resp/default/icon/icon_bell.png) 0 0 no-repeat;
+}
+.cosBox > div .conBox .msgBox .inner div {
+    line-height: 21px;
+    color: #222;
+    word-break: keep-all;
+}
+.cosBox > div .conBox .msgBox .inner .linkView {
+    margin-top: 30px;
+}
+
+.cosBox > div .conBox .noData {
+    display: table;
+    height: 240px;
+    width: 100%;
+    opacity: 0;
+}
+
+.cosBox > div .conBox .noData .inner {
+    line-height: 21px;
+    color: #5d6469;
+}
+.cosBox > div .conBox .noData .inner:before {
+    content: " ";
+    margin: 0 auto;
+    margin-bottom: 21px;
+    display: block;
+    width: 110px;
+    height: 110px;
+    background: url(../../../images/template6/resp/blue/icon/icon_cos_noimg01.png) 0 0 no-repeat;
+}
+.cosBox > div.item02 .conBox .noData .inner:before {
+    background: url(../../../images/template6/resp/blue/icon/icon_cos_noimg02.png) 0 0 no-repeat;
+}
+.cosBox > div.item03 .conBox .noData .inner:before {
+    background: url(../../../images/template6/resp/blue/icon/icon_msg_noimg.png) 0 0 no-repeat;
+}
+.cosBox > div.active {
+    width: 384px;
+    padding: 0 35px 20px;
+    background: #fff !important;
+    transition: all 0.5s;
+}
+.cosBox > div.active .conBox h2:before {
+    width: 100%;
+    border-color: #ddd;
+}
+.cosBox > div.active .conBox h2 strong {
+    width: auto;
+    padding-right: 5px;
+    text-indent: 0px;
+    opacity: 1;
+    transition: all 0.1s;
+}
+.cosBox > div.active .conBox .txtList {
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s;
+}
+.cosBox > div.active .conBox .noData,
+.cosBox > div.active .conBox .msgBox,
+.cosBox > div.active .conBox .list {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.mainLink {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+}
+.mainSearch {
+    position: relative;
+    margin: 0 auto;
+    max-width: 545px;
+}
+.mainSearch input[type="text"] {
+    width: 100%;
+    height: 46px;
+    padding: 0 52px 0 15px;
+    border: none;
+}
+.mainSearch .btnSearch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 0px;
+    width: 53px;
+    height: 46px;
+    border: none;
+    text-indent: -99999px;
+    background: url(../../../images/template6/resp/default/button/btn_main_search.png) center center no-repeat;
+}
+.mainSearch .btnSearch:hover {
+	background-color:none !important;
+}
+.mainQuick {
+    margin-top: 65px;
+}
+.mainQuick .btnMymenu {
+    float: right;
+    height: 29px;
+    margin-right: 20px;
+    padding-right: 27px;
+    line-height: 29px;
+    margin-bottom: 8px;
+    border: none;
+    color: #fff;
+    text-shadow: 0px 0px 6px #000;
+    background: url(../../../images/template6/resp/default/button/btn_my_menu.png) right bottom no-repeat;
+}
+.mainQuick > .box {
+    clear: both;
+    font-size: 0;
+    text-align: center;
+}
+.mainQuick > .box > a > .text {
+    display: table;
+    width: 100%;
+}
+.mainQuick > .box > a > .text > span {
+    display: table-cell;
+    height: 32px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 700;
+    word-break: keep-all;
+}
+.mainQuick > .box > a {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 104px;
+    height: 104px;
+    padding: 62px 5px 0;
+    margin: 0 13px 10px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    background-color: #fff !important;
+    transition: all 0.3s;
+    transition-timing-function: linear
+}
+.mainQuick > .box > a:hover {
+    top: -5px;
+    background-color: #e1e6eb !important;
+    box-shadow: 4px 14px 20px 0px rgba(0,0,0,0.3);
+}
+.mainQuick > .box > a.noMenu {
+	background: url(../../../images/template6/resp/default/icon/icon_add_menu.png) center center no-repeat;
+}
+.checkMyMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    z-index: 9;
+}
+.checkMyMenu strong.title {
+    display: block;
+    line-height: 36px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+}
+.checkMyMenu > ul > li,
+.checkMyMenu > form > ul > li {
+    float: left;
+    width: 20%;
+}
+.checkMyMenu ul > li > strong {
+    display: block;
+    padding: 0 10px;
+    line-height: 44px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.checkMyMenu ul > li > ul {
+    padding: 20px 10px;
+    height: 225px;
+    border-left: 1px solid #e1e6eb;
+}
+.checkMyMenu ul > li:first-child > ul {
+    border-left: none;
+}
+.checkMyMenu ul > li > ul li+li {
+    margin-top: 13px;
+}
+.checkMyMenu .btnArea {
+	clear: both;
+	margin: 0;
+	padding: 8px 10px;
+	border-top: 1px solid #e1e6eb;
+}
+.checkMyMenu .btnArea > span {
+	line-height: 22px;
+	font-size: 13px;
+}
+.checkMyMenu .btnClosed,
+.checkMyMenu .btnClosed:hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 44px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    background: url(../../../images/template6/resp/default/button/btn_check_closed.png) center center no-repeat;
+}
+
+#main .mainBoard {
+    overflow: hidden;
+    position: absolute;
+    bottom: 52px;
+    width: 100%;
+}
+#main .mainBoard > div {
+    float: left;
+    width: 33.33%;
+    width: calc(100% / 3);
+    height: 200px;
+    padding: 28px 3%;
+    background: url(../../../images/template6/resp/default/usr/dim_70.png) 0 0 repeat;
+}
+#main .mainBoard > div+div {
+    width: calc(100% / 3 - 1px);
+}
+#main .mainBoard > .mainFaq {
+	margin-left: 1px;
+}
+#main .mainBoard > .mainQna {
+	float: right;
+	vertical-align: top;
+}
+#main .mainBoard > div h2 {
+    margin: 0;
+    line-height: 21px;
+    font-size: 18px;
+}
+#main .mainBoard > div .list {
+    position: relative;
+    padding-top: 34px;
+}
+#main .mainBoard > div li.noData {
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
+#main .mainBoard > div li a {
+    overflow: hidden;
+    display: block;
+    line-height: 25px;
+    color: #fff;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#main .mainBoard > div.mainNotice li {
+    position: relative;
+    padding-right: 85px;
+}
+#main .mainBoard > div.mainNotice li a {
+    padding-right: 0;
+    background: transparent;
+}
+#main .mainBoard > div.mainNotice li .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 18px;
+    line-height: 25px;
+    color: #7c7c7c;
+    font-size: 12px;
+    background: url(../../../images/template6/resp/default/icon/icon_main_date.png) 0 center no-repeat;
+}
+
+#main .mainBoard > div.mainFaq li a {
+    padding-right: 15px;
+    background: url(../../../images/template6/resp/default/icon/icon_main_board_arrow.png) right center no-repeat;
+}
+#main .mainBoard > div.mainFaq li a {
+    padding-right: 15px;
+    background: url(../../../images/template6/resp/default/icon/icon_main_board_arrow.png) right center no-repeat;
+}
+#main .mainBoard > div.mainQna li {
+	position: relative;
+    padding-right: 60px;
+}
+#main .mainBoard > div.mainQna li > span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 25px;
+}
+
+#main .mainBoard > div .btnMore {
+    position: absolute;
+    top: -17px;
+    right: 0;
+    display: block;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+}
+#main .mainBoard > div .btnMore:before,
+#main .mainBoard > div .btnMore:after {
+    content: " ";
+    position: absolute; 
+}
+#main .mainBoard > div .btnMore:before {
+    top: 50%;
+    margin-top: -1px;
+    width: 12px;
+}
+#main .mainBoard > div .btnMore:after {
+    left: 50%;
+    margin-left: -1px;
+    height: 12px;
+}
+
+.quizBox {
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 790px;
+    background: #fff;
+}
+.quizBox .title {
+	overflow: hidden;
+    padding: 29px 50px 4px 40px;
+    border-bottom: 2px solid #ccc;
+}
+.quizBox .title h2 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 38px;
+}
+.quizBox .title .time {
+    float: right;
+}
+.quizBox .title .time > span {
+    display: inline-block;
+    padding-left: 21px;
+    padding-right: 8px;
+    font-size: 16px;
+    background: url(../../../images/template6/resp/default/icon/icon_main_time.png) 0 0 no-repeat;
+}
+.quizBox .title .time > strong {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.quizBox .questionBox,
+.quizBox .answerBox {
+    position: relative;
+    padding: 20px 50px 35px 82px;
+}
+.quizBox .questionBox:before,
+.quizBox .answerBox:before {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+.quizBox .questionBox:before {
+    content:"Q";
+    line-height: 28px;
+}
+.quizBox .answerBox:before {
+    content:"A";
+}
+.quizBox .questionBox > strong {
+    display: block;
+    padding-top: 4px;
+    line-height: 21px;
+}
+.quizBox .questionBox > .epBox {
+    overflow-y: auto;
+    margin-top: 11px; 
+    line-height: 20px;
+    max-height: 100px;
+    padding: 6px 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+.quizBox .questionBox > .epBox p {
+    line-height: 20px;
+}
+.quizBox .answerBox {
+    background: #e5e5e5;
+}
+.quizBox .answerBox .write {
+    position: relative;
+    padding-left: 60px;
+}
+.quizBox .answerBox .write > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 29px;
+    font-weight: 500;
+}
+.quizBox .answerBox .write input {
+    width: 100%;
+    padding:  0 80px 0 10px;
+}
+.quizBox .answerBox .write button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 72px;
+    height: 29px;
+    line-height: 27px;
+}
+.quizBox .list {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.quizBox .list ul {
+    height: 120px;
+    overflow: auto;
+}
+.quizBox .list ul li {
+    position: relative;
+    min-height: 40px;
+    padding: 9px 255px 9px 60px;
+}
+.quizBox .list ul li+li {
+    border-top: 1px solid #e5e5e5;
+}
+.quizBox .list ul li .no {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: block;
+    width: 60px;
+    line-height: 21px;
+    padding: 0 5px;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    font-weight: 500;
+}
+.quizBox .list ul li p {
+	display: block;
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.quizBox .list ul li p .icon {
+    margin-right: 5px;
+    vertical-align: 0px;
+}
+.quizBox .list ul li .info {
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+.quizBox .list ul li .info > span {
+    display: inline-block;
+    line-height: 21px;
+}
+.quizBox .list ul li .info .writer {
+    padding-right: 30px;
+    color: #767676;
+    font-size: 13px;
+    font-weight: 400;
+}
+.quizBox .list ul li .info .writer > span:first-child {
+    display: inline-block;
+    width: 44px;
+    margin-right: 6px;
+    line-height: 17px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    background: #767676;
+}
+.quizBox .list ul li .info > span.like,
+.quizBox .list ul li .info > span.hate {
+    width: 56px;
+    padding-left: 18px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.quizBox .list ul li .info > span.like {
+    background: url(../../../images/template6/resp/default/icon/icon_like.png) 0 center no-repeat;
+}
+.quizBox .list ul li .info > span.hate {
+    background: url(../../../images/template6/resp/default/icon/icon_hate.png) 0 center no-repeat;
+}
+.quizBox .list ul li .btnArea {
+	margin-top: 5px;
+	text-align: right;
+}
+.quizBox .list .btnMore {
+    display: block;
+    line-height: 17px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #767676;
+    font-size: 12px;
+    background: #fafafa;
+}
+.popup .quizBox {
+	top: auto;
+	width: 100%;
+    max-width: 100%;
+}
+.popup .quizBox .list ul {
+    height: auto;
+    overflow: hidden;
+}
+.popup .quizBox .list ul li {
+	overflow: hidden;
+    padding: 9px 10px 9px 60px;
+}
+.popup .quizBox .list ul li p {
+    display: inline-block;
+    padding-right: 10px;
+    overflow: auto;
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-all;
+}
+.popup .quizBox .list ul li > button {
+	margin-top: 2px;
+}
+.popup .quizBox .list ul li .info {
+    position: static;
+    top: auto;
+   	float: right;
+}
+
+.main_popupMsg h2 { position:relative; color:#ff775c; padding:0 0 18px 0; line-height:1; font-size:18px; border-bottom:1px solid #ddd; }
+.main_popupMsg h2 strong { color:#222; }
+.main_popupMsg .nameInfo { position:relative; color:#222; font-size:16px; line-height:21px; font-weight:500; padding:20px 15px; border-bottom:1px solid #ddd; }
+.main_popupMsg .nameInfo:before { content:''; display:inline-block; width:25px; height:21px; margin-right:8px; vertical-align:-4px; background:url(../../../images/template6/resp/default/icon/icon_bell.png) 0 0 no-repeat; } 
+.main_popupMsg ul li { padding:20px 15px; border-bottom:1px solid #ddd; }
+/* .main_popupMsg ul li:first-child { border-top:1px solid #ddd; } */
+.main_popupMsg ul li .msg { line-height:21px; color:#222; word-break:keep-all; margin:15px 0 0 0; }
+.main_popupMsg ul li .linkView { margin:30px 0 0 0; padding:0 6px; border:1px solid #d4d4d4; text-align:center; color:#222; font-weight:500; line-height:17px; background:#f5f5f5; }
+.main_popupMsg ul li .linkView:after { content:''; display:inline-block; width:5px; height:7px; margin:0 0 0 4px; vertical-align:1px; background:url(../../../images/template6/resp/default/button/btn_link_view.png) 0 0 no-repeat; }
+					
+.quizBox .mainToggleBtn { position:absolute; top:-5px; right:-100px; }
+.mainToggleBtn button { width:90px; height:30px; padding:0 0 0 27px; line-height:28px; font-size:14px; color:#fff; border:none; background:url(../../../images/template6/resp/default/usr/icon_new_close.png) 10px 50% no-repeat; }
+.mainToggleBtn button:hover { background:url(../../../images/template6/resp/default/usr/icon_new_close.png) 10px 50% no-repeat; }
+.mainToggleBtn.active button { background:url(../../../images/template6/resp/default/usr/icon_new_open.png) 10px 50% no-repeat; }
+.mainToggleBtn.active button:hover { background:url(../../../images/template6/resp/default/usr/icon_new_open.png) 10px 50% no-repeat;  }
+.cosBox > div.showHide { height:53px; }
+.mainQuick .mainToggleBtn { position:absolute; right:-69px; }
+@media screen and (max-width: 1100px) {
+	.mainToggleBtn { display:none; }
+	#main > section:before,
+	.onepage-pagination {
+		display: none;
+	}
+	#main {
+	    transform: inherit !important;
+	}
+    #main > section {
+        position: relative !important;
+        height: auto;
+        padding: 20% 0;
+    }
+    #main > #section03 {
+    	padding: 20%  0 230px 0;
+    }
+    #main .quickMenu {
+    	display: none;
+    }
+    .cosBox {
+    	position: relative;
+    	top: 0;
+    }
+    .cosBox > div { 
+		float: none;
+		width: 384px;
+	    height: 53px;
+	}
+    .cosBox > div.active {
+    	height: 330px;
+    }
+    .mainLink {
+		position: static;
+	    display: block;
+	    margin: 0 auto;
+	}
+    #main .mainBoard {
+    	bottom: 1px;
+    }
+    .quizBox {
+	    position: static;
+	    display: block
+	}
+    #main+#footer {
+    	position: static;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #main > #section03 {
+    	padding: 20%  0 540px 0;
+    }
+	.mainLink {
+		width: 100%;
+	    padding: 0 15px;
+	}
+	.mainSearch {
+		max-width: 100%;
+		margin: 0 10px;
+	}
+	.mainQuick > .box > a {
+		margin: 0 10px 10px;
+	}
+	.checkMyMenu > ul > li, 
+	.checkMyMenu > form > ul > li {
+		width: 33.33%;
+		width: calc(100%/3);
+	}
+	.checkMyMenu > ul > li+li+li+li, 
+	.checkMyMenu > form > ul > li+li+li+li {
+		width: 50%;
+	}
+	#main .mainBoard > div,
+	#main .mainBoard > div+div {
+		width: 100%;
+		height: auto;
+		margin-top: 1px;
+	}
+	#main .mainBoard > div .list {
+		padding-top: 20px;
+	}
+	#main .mainBoard > .mainFaq {
+		margin-left: 0px;
+	}
+	.quizBox .title {
+	    padding: 10px 20px 4px 20px;
+	}
+	.quizBox .questionBox > strong {
+		padding-left: 35px;
+	}
+	.quizBox .answerBox .write {
+		padding-left: 90px;
+	}
+	.quizBox .answerBox .write > label {
+		left: 35px;
+	}
+	.quizBox .questionBox, .quizBox .answerBox {
+	    padding: 15px 20px 20px;
+	}
+	.quizBox .questionBox:before, .quizBox .answerBox:before {
+		top: 14px;
+		left: 15px;
+	}
+	.quizBox .list ul li {
+	    padding: 9px 15px 9px 60px;
+	}
+	.quizBox .list ul li .info {
+	    position: static;
+	    display: block;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.quizBox .list ul li {
+	    padding: 9px 15px 9px 35px;
+	}
+	.quizBox .list ul li .no {
+		width: 35px;
+	}
+	.cosBox {
+		left: 5%;
+	}
+	.cosBox > div,
+	.cosBox > div.active {
+		width: 90%;
+	    padding: 0 20px 20px;
+	}
+	.cosBox > div .conBox .list {
+		width: 100%;
+	}
+	.cosBox > div .conBox .list li {
+	    width: 48%;
+	    margin-right: 4%; 
+	}	
+	.quizBox .list ul li .info .writer {
+		padding-right: 15px;
+	}
+	.mainQuick > .box > a {
+		margin:0 8px 10px;
+	}
+}
+
+@media screen and (max-width: 445px) { 
+	.checkMyMenu > ul > li, 
+	.checkMyMenu > form > ul > li {
+		width: 50%;
+	}
+	.checkMyMenu > ul > li+li+li+li+li, 
+	.checkMyMenu > form > ul > li+li+li+li+li {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 390px) { 
+	.mainQuick > .box > a {
+		margin:0 3px 8px;
+	}
+}
+
+.popMsgBox {  }
+.popMsgBox strong.tit { display:block; font-size:18px; padding:15px; text-align:center; }
+	.popMsgBox strong.tit span { color:#ff775c; }	
+.popMsgBox .popMsgList { text-align:center; }
+	.popMsgBox .popMsgList li { margin:15px 0 0 0; padding:20px; background:#f5f5f5; border:1px solid #e1e1e1; }
+	.popMsgBox .popMsgList li:first-child { margin:0; }
+	.popMsgBox .popMsgList li strong.subtit { position:relative; display:block; font-size:15px; margin:0 0 10px 0; }
+	.popMsgBox .popMsgList li strong.subtit:before { content:''; display:inline-block; width:25px; height:21px; margin-right:8px; vertical-align:middle; background:url(../../../images/template6/resp/default/icon/icon_bell.png) 0 0 no-repeat; position:relative; top:-1px; }
+	.popMsgBox .popMsgList li .info { font-size:14px; line-height:1.5; }
+	.popMsgBtn { margin:15px 0 0 0; padding:0 6px; border:1px solid #d4d4d4; text-align:center ;color:#222; font-size:12px; font-weight:500; line-height:17px; background:#fff; display:inline-block; }
+	.popMsgBtn:after { content:''; display:inline-block; width:5px; height:7px; margin-left:4px; vertical-align:1px; background:url(../../../images/template6/resp/default/button/btn_link_view.png) 0 0 no-repeat; }
+/* .popMsgBox strong:before { content:''; display:inline-block; width:25px; height:21px; margin-right:8px; vertical-align:middle; background:url(../../../images/template6/resp/default/icon/icon_bell.png) 0 0 no-repeat; } */
+
+

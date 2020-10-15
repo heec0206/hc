@@ -1,0 +1,1039 @@
+/* @charset "utf-8"; */
+
+/* common */
+input[type="radio"]:before {
+	background-image: url('../../../images/template6/resp/blue/bg/bg_radio.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+input[type="checkbox"]:before  {
+	background-image: url('../../../images/template6/resp/blue/bg/bg_checkbox.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+input[type="radio"]:checked:before,
+input[type="checkbox"]:checked:before  {
+	background-position: -14px 0;
+}
+
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled {
+	background-color: #666;
+}
+input[type="radio"]:disabled:before {
+	background-image: url('../../../images/template6/resp/blue/bg/bg_radio_disabled.png');
+}
+input[type="checkbox"]:disabled:before  {
+	background-image: url('../../../images/template6/resp/blue/bg/bg_checkbox_disabled.png');
+}
+
+
+.em {
+	color: #dd2468;
+}
+.infoTxtEm {
+	color: #dd2468;
+}
+.ptColorB {
+	/* color: #00b5f0; */
+	color:#01b1ad;
+}
+.ptColorP {
+	color: #ff70a5;
+}
+
+.icon.notice {
+	background: url(../../../images/template6/resp/blue/icon/icon_notice.png) 0 0 no-repeat;;
+}
+
+.icon.hot {
+	color: #d11919;
+}
+.icon.new {
+	color: #00b5f0;
+}
+.icon.best {
+	color: #4571dd;
+}
+
+.iconCer {
+	background-color: #51b7b9;
+}
+.iconAll {
+	background: #2fc2f2;
+}
+.iconCyber {background-color: #ff85b2;}
+.iconBl {background-color: #ff8971;}
+.iconComu {background-color: #a38eeb;}
+.iconOff {background-color: #7db1ff;}
+
+.icon.wait {
+	border-color: #a86300;
+	color: #a86300;
+}
+.icon.ing {
+	border-color: #dd2468;
+	color: #dd2468;
+}
+.icon.finish {
+	border-color: #999;
+	color: #999;
+}
+a.icon.finish {
+	color: #333;
+}
+
+.icon.sitIn {
+	color: #aaa;
+}
+.icon.teacher {
+	color: #5d6469;
+	background: #e1e6eb;
+}
+.icon.teacher02,
+.icon.major {
+	color: #767676;
+}
+
+.icon.pc {display:inline-block; width:15px; height:12px; background: url(../../../images/template6/resp/blue/icon/icon_pc.png) 0 0 no-repeat; margin:0 1px} /* pc */
+.icon.mob {display:inline-block; width:8px; height:13px; background: url(../../../images/template6/resp/blue/icon/icon_mob.png) 0 0 no-repeat; margin:0 1px} /* 모바일 */
+
+.icon.video, /*동영상*/
+.icon.manual, /*매뉴얼*/
+.icon.image { /*이미지*/
+	border: 1px solid #c4cdd7;
+	color: #6f7b8a;
+	background: #fff;
+}
+
+.icon.video:before {
+	background: url(../../../images/template6/resp/blue/icon/icon_video.png) 0 0 no-repeat;
+}
+.icon.manual:before {
+	background: url(../../../images/template6/resp/blue/icon/icon_manual.png) 0 0 no-repeat;
+}
+.icon.image:before {
+	background: url(../../../images/template6/resp/blue/icon/icon_image.png) 0 0 no-repeat;
+}
+
+.icon.choose { /*채택*/
+	color: #fff;
+	background: #d11919;
+}
+
+
+button { 
+	border: 1px solid #767676;
+	background-color: #fff;
+}
+button:hover {
+	background-color: #f5f5f5;
+}
+
+
+.notOpenInclub .btnInfo, .btnClsrm, .btnAdd, .btnLogin, .btnOk, .btnSave,
+.btnEmps, .btnSearch, .btnAddMember, .btnWrite { /* blue */
+/* 	border-color: #3950b2;
+	color: #fff;
+	background-color: #3950b2; */
+	border-color:#01b1ad;
+	background-color:#01b1ad;
+	color:#fff;
+}
+.notOpenInclub .btnInfo:hover, .btnClsrm:hover,.btnAdd:hover, .btnLogin:hover, .btnOk:hover, .btnSave:hover,
+.btnEmps:hover, .btnSearch:hover, .btnAddMember:hover, .btnWrite:hover { /* blue */
+/* 	border-color: #1e2f92;
+	background-color: #1e2f92; */
+	border-color:#4bb9b6;
+	background:#4bb9b6;
+}
+.btnPaper,
+.btnMiddleEm, .btnSchedule, .btnView { /* gray */
+	border-color: #3f4346;
+	color: #fff;
+	background-color: #3f4346;
+}
+.btnPaper:hover,
+.btnMiddleEm:hover, .btnSchedule:hover, .btnView:hover { /* gray */
+	border-color: #232528;
+	background-color: #232528;
+}
+.btnOverEm, .inclubView .btnArea button.btnJoin { /* red */
+	border-color: #e63073;
+	color: #fff;
+	background-color: #e63073;
+}
+.btnOverEm:hover, .inclubView .btnArea button.btnJoin:hover { /* red */
+	border-color: #ba1847;
+	color: #fff;
+	background-color: #ba1847;
+}
+
+.paging a:hover,
+.paging a.active {
+  color: #ffffff;
+  background: #3f4346;
+}
+.listAttach li {
+	background: url(../../../images/template6/resp/blue/icon/icon_file.png) 0 4px no-repeat;
+}
+
+.boardView .fileList ul li a {
+	position: relative;
+	background: url(../../../images/template6/resp/blue/icon/icon_file.png) 10px center no-repeat;
+}
+
+.tab ul li.active:before,
+.tab ul li:hover:before {
+	border-top: 3px solid #e63073;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	/* background: #3950b2; */
+	background:#01b1ad;
+}
+
+.ui-datepicker .ui-datepicker-header > a {
+	/* border: 1px solid #6b7cc5; */
+	border:1px solid #fff;
+}
+.ui-datepicker .ui-datepicker-header > a.ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-header > a.ui-datepicker-next-hover {
+	border-color: #fff;
+}
+
+.ui-datepicker table td a:hover {
+	/* border: 2px solid #4571dd; */
+	border:2px solid #4bb9b6;
+}
+.ui-datepicker table td.ui-datepicker-today a {
+	color: #fff;
+	/* background: #00b5f0; */
+	background:#4bb9b6;
+}
+
+
+/* board */
+.totalList > span > strong {
+    /* color: #3950b2; */
+    color:#01b1ad;
+}
+.totalList .listTab > a:hover,
+.totalList .listTab > a.active {
+    background-color: #3f4346;
+}
+
+.totalList .sort li.active a {
+    color: #222;
+    background: url('../../../images/template6/resp/blue/icon/icon_sort.png') 0 center no-repeat;
+}
+
+
+table th.asterisk:after {
+    color: #dd2468;
+}
+.boardList {
+    border-bottom: 1px solid #c4cdd7;
+}
+.boardList thead th {
+    color: #fff;
+    /* background: #343d66; */
+    background:#4bb9b6;
+}
+.boardList thead th+th:before {
+    /* border-left: 1px solid #676e8c; */
+    border-left: 1px solid #80c6c6;
+}
+.boardList tbody tr:hover {
+    background: #f3f5f7;
+}
+
+
+.likeBox > a.like.active:before {
+    background: url(../../../images/template6/resp/blue/icon/icon_like_active.png) 0 0 no-repeat;
+}
+.likeBox > a.hate.active:before {
+    background: url(../../../images/template6/resp/blue/icon/icon_hate_active.png) 0 0 no-repeat;
+}
+
+.conBox .viewPop {
+    background: url(../../../images/template6/resp/blue/bg/bg_laypop.png) 0 0 repeat;
+}
+.conBox .viewPop .box .textBox {
+    background: url(../../../images/template6/resp/blue/icon/icon_laypop.png) center top no-repeat;
+}
+
+.table tbody td.month > a > span.em {
+    border-bottom-color: #e2588b;
+    color: #dd2468;
+}
+
+.table tbody td.tdGraph .graphBox > .innerBar {
+    /* background: #00b5f0; */
+    background:#4bb9b6;
+}
+
+.table.list thead th {
+    color: #fff;
+    border-left: none;
+    /* background: #343d66; */
+    background:#4bb9b6;
+}
+.table.list thead th:first-child.borLeft, 
+.table.list thead th.borLeft {
+	border-left: none;
+}
+
+.table.list thead th:first-child.borLeft:before,
+.table.list thead th+th:before {
+    /* border-left: 1px solid #676e8c; */
+    border-left:1px solid #80c6c6;
+}
+.table.list thead tr+tr th {
+    border-top: 1px solid #676e8c;
+}
+
+.horztList li+li:hover {
+    background: #f3f5f7;
+}
+
+.horztList li > div.score p > span.up {
+    color:#d11919;
+}   
+.horztList li > div.score p > span.down {
+    color:#657282;
+}
+
+.horztList li > div.score p > span.up:before,
+.horztList li > div.score p > span.down:before {
+    background: url(../../../images/template6/resp/blue/icon/icon_score_up.png) 0 0 no-repeat;
+}   
+.horztList li > div.score p > span.down:before {
+    background: url(../../../images/template6/resp/blue/icon/icon_score_down.png) 0 0 no-repeat;
+}
+
+.horztList li > div.course .imgBox+.textBox p.info > span.like.active > strong {
+    padding-left: 18px;
+    background: url(../../../images/template6/resp/blue/icon/icon_like_active.png) 0 4px no-repeat;
+}
+.horztList li > div.course .imgBox+.textBox p.info > span.hate.active > strong {
+    padding-left: 18px;
+    background: url(../../../images/template6/resp/blue/icon/icon_hate_active.png) 0 4px no-repeat;
+}
+
+.horztList.boardType li:first-child {
+    /* background: #343d66; */
+    background:#4bb9b6;
+}
+.horztList.boardType li:first-child > div+div:before {
+    /* border-left: 1px solid #676e8c; */
+    border-left:1px solid #80c6c6;
+}
+/*
+.thumbList li:hover:before {
+    border-top:5px solid #4bb9b6;
+}
+*/
+.thumbList li .imgBox:before {
+    background-image: url(../../../images/template6/resp/blue/bg/bg_thumb_list_hover.png), url(../../../images/template6/resp/default/usr/dim_60.png);
+    background-position: center center, 0 0;
+    background-repeat: no-repeat, repeat;
+}
+.thumbList li .textBox .cosIng {
+    color: #dd2468;
+}
+.thumbList li .textBox p.info > span.like.active > strong {
+    padding-left: 18px;
+    background: url(../../../images/template6/resp/blue/icon/icon_like_active.png) 0 4px no-repeat;
+}
+.thumbList li .textBox p.info > span.hate.active > strong {
+    padding-left: 18px;
+    background: url(../../../images/template6/resp/blue/icon/icon_hate_active.png) 0 4px no-repeat;
+}
+.surveyList li {
+    border: 1px solid #d5d5d5;
+}
+.surveyList li:hover {
+    /* border: 3px solid #00b5f0; */
+    border:3px solid #4bb9b6;
+}
+.surveyList li.noData,
+.surveyList li.noData:hover {
+    border: solid #d5d5d5;
+    border-width: 1px 0px;
+}
+.surveyList li:hover .sort {
+    /* background: #00b5f0; */
+    background:#4bb9b6;
+}
+.scheduleTable table td > div.sun > strong {
+    color: #d11919;
+}
+.scheduleTable table td > div.sat > strong {
+    color: #999;
+}
+.scheduleTable table td > div.toDay > strong {
+    color: #fff;
+    /* background: #4571dd; */
+    background:#4bb9b6;
+}
+
+.icon.scd01 {background: #88929e;}
+.icon.scd02 {background: #51b7b9;}
+.icon.scd03 {background: #ff85b2;}
+.icon.scd04 {background: #a38eeb;}
+.icon.scd05 {background: #ff775c;}  
+
+.schedulList li .lineBox .monthBox {
+	color: #fff;
+	background: #343d66;
+}
+.schedulList li .lineBox .monthBox > span+span:before {
+    border-left: 1px solid #676e8c;
+}
+.schedulList li .lineBox .dayBox > span.em {
+	color: #dd2468;
+}
+
+.allSearchNum .num {
+	color: #e63073;
+}
+.shRtList li .textBox .category {
+    color: #e63073;
+}
+.shRtList > div .faqBox .title > a:before {
+	color: #fff;
+	/* background: #2fc2f2; */
+	background:#01b1ad;
+}
+
+/* contents */
+#gate .loginBox h1 {
+	color: #01b1ad;
+}
+#gate .loginWrap.pw .loginBox h1 {
+	/* color: #3950b2; */
+	color:#01b1ad;
+}
+#gate .loginBox ul li input:focus {
+	/* border: 2px solid #00b5f0; */
+	border:2px solid #4bb9b6;
+	background-color: #fff;
+}
+#gate .loginBox ul li input[type="text"]:focus {
+	background-image: url(../../../images/template6/resp/blue/bg/bg_input_id_focus.png);
+}
+#gate .loginBox ul li input[type="password"]:focus {
+	background-image: url(../../../images/template6/resp/blue/bg/bg_input_pw_focus.png);
+}
+#gate .loginBox p > span > span {
+	color: #dd2468;
+}
+#gate .mobileQR {
+	background: #eaedef;
+}
+
+
+/* #gate .mobileQR > div {
+	background: #e1e6eb;
+}
+#gate .mobileQR > div.ios {
+	border-top: 1px solid #aaa;
+}
+#gate .mobileQR > div > a.linkAndroid > span {
+	color: #e63073;
+}
+#gate .mobileQR > div > a.linkIos > span {
+	color: #3950b2;
+} */
+
+.courseTab ul li:hover a:before,
+.courseTab ul li.active a:before {
+	border-top: 3px solid #e63073;
+}
+.clsrmTab ul li > a {
+	/* background: #7484c9; */
+	background:#3f4346;
+}
+.clsrmTab ul li:hover > a,
+.clsrmTab ul li.active > a {
+	color: #fff;
+	/* background: #3950b2; */
+	background:#4bb9b6;
+}
+.clsrmList li > .date > span {
+	color: #c61c1c;
+}
+.myBoardList li .category {
+	color: #dd2468;
+}
+
+.mySurveyList li > .state.ing {
+	background: #ff70a5;
+}
+.mySurveyList li > .state.finish {
+	background: #c4cdd7;
+}
+.mySurveyList li > .state.wait {
+	background: #eeb667;
+}
+
+.myCourseList h4 > .num {
+	color: #3950b2;
+}
+
+.inclubRecom li .textBox .category {
+	color: #69d6f9;
+}
+.inclubRecom li .group {
+	color: #fff;
+	background: #dd2468;
+}
+
+.inclubLink > a.linkCop {
+	background: #657282;
+}
+.inclubLink > a.linkSo {
+	/* background: #4571dd; */
+	background:#01b1ad;
+}
+.inclubLink > a.linkCop:hover {
+	background: #525f6f;
+}
+.inclubLink > a.linkSo:hover {
+	/* background: #3950b2; */
+	background:#4bb9b6;
+}
+
+.myInclubList .inclubTap ul li.active > a:before,
+.myInclubList .inclubTap ul li:hover > a:before {
+	border-bottom: 3px solid #e63073;
+}
+.myInclubList .inclubTap ul li > a > span {
+	color: #dd2468;
+}
+
+.myInclubList .list ul li .imgBox .inclubName > span {
+	color: #69d6f9;
+}
+
+.inclubView {
+	background: #343d66;
+}
+
+.inclubView > .box .topBtnBox button {
+	color: #fff;
+	border-color: #ebecf0;
+	background: transparent;
+}
+.inclubView > .box .topBtnBox button:hover {
+	color: #343d66;
+	background: #fff;
+}
+.inclubView > .box .icon.inclub {
+	color: #fff;
+	border-color: #676e8d;
+	background: transparent;
+}
+.inclubView > .box .title {
+	border-bottom: 3px solid #575f81;
+}
+.inclubView > .box .title .info .item > strong {
+	color: #b1d5ff;
+}
+.inclubView > .box .title .info .item:before {
+	border-left: 1px solid #676d8a;
+}
+.inclubView > .box .textBox > .tag > span {
+	color: #b1d5ff;
+}
+.inclubView .btnArea button {
+	color: #fff;
+	border-color: #fff; 
+	background: transparent;
+}
+.inclubView .btnArea button:hover {
+	color: #343d66;
+	background: #fff;
+}
+.feedWrite .box .btnArea button {
+	border-color: #767676;
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.feedWrite .box .btnArea button.btnPhoto {
+	background-image: url(../../../images/template6/resp/blue/button/btn_photo.png);
+}
+.feedWrite .box .btnArea button.btnFile {
+	background-image: url(../../../images/template6/resp/blue/button/btn_file.png);
+}
+.feedWrite .box .fileList > div.photo ul {
+	background: url(../../../images/template6/resp/blue/icon/icon_photo.png) 0 7px no-repeat;
+}
+.feedWrite .box .fileList > div.file ul {
+	background: url(../../../images/template6/resp/blue/icon/icon_file.png) 0 7px no-repeat;
+}
+
+
+.notOpenInclub .iconNotOpen  {
+	background: url(../../../images/template6/resp/blue/icon/icon_not_open.png) 0 0 no-repeat;
+}
+
+.commentBox li .name {
+	background: url(../../../images/template6/resp/blue/icon/icon_user.png) 0 4px no-repeat;
+}
+
+.feedBox li .info > a.like.active,
+.commentBox li .info > a.like.active {
+	background-image: url(../../../images/template6/resp/blue/icon/icon_like_active.png);
+}
+.feedBox li .info > a.hate.active,
+.commentBox li .info > a.hate.active {
+	background-image: url(../../../images/template6/resp/blue/icon/icon_hate_active.png);
+}
+.faq ul li > a:hover:before {
+	background-image: url(../../../images/template6/resp/blue/usr/faq_hover.png);
+}
+.faq ul li.active > a:hover:before,
+.faq ul li.active > a:before {
+	background-image: url(../../../images/template6/resp/blue/usr/faq_active.png);
+}
+
+.myCdpList .innerBox > div.major  .item .progress > strong {
+	color: #dd2468;
+}
+.myCdpList .innerBox > div.minor  .item .progress > strong {
+	/* color: #4571dd; */
+	color:#4bb9b6;
+}
+
+.iconMajor {
+	color: #dd2468;
+}
+.iconMinor {
+	/* color: #4571dd; */
+	color:#4bb9b6;
+}
+.myPoint ul.pointList li a > div .progress > span {
+    background-color: #88929e;
+}
+.myPoint ul.pointList li.major a > div .progress > span {
+    background-color: #ff85b2;
+}
+.myPoint ul.pointList li.minor a > div .progress > span {
+    /* background-color: #7db1ff; */
+    background-color:#4bb9b6;
+}
+
+.myPoint ul.pointList li a > div .progress.complete > span:before {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.myPoint ul.pointList li div.lv01 .progress.complete > span:before,
+.myPoint ul.pointList li div.lv02 .progress.complete > span:before {background-image: url(../../../images/template6/resp/blue/icon/icon_normal.png);}
+
+.myPoint ul.pointList li.major div.lv01 .progress.complete > span:before,
+.myPoint ul.pointList li.major div.lv02 .progress.complete > span:before {background-image: url(../../../images/template6/resp/blue/icon/icon_major.png);}
+
+.myPoint ul.pointList li.minor div.lv01 .progress.complete > span:before,
+.myPoint ul.pointList li.minor div.lv02 .progress.complete > span:before {background-image: url(../../../images/template6/resp/blue/icon/icon_minor.png);}
+
+.myPoint ul.pointList li.minor div.lv03 .progress.complete > span:before,
+.myPoint ul.pointList li.major div.lv03 .progress.complete > span:before,
+.myPoint ul.pointList li div.lv03 .progress.complete > span:before {
+	background-image: url(../../../images/template6/resp/blue/icon/icon_complete.png);
+}
+
+.myPoint ul.pointList li a > div .guideLine .tooltip {
+    border: 1px solid #244e4f;
+    background: #fff;
+}
+
+.detailView .conBox a.point {
+	color: #dd2468;
+}
+.detailView .conBox .cosList.tit {
+	/* color: #3950b2; */
+	color:#4bb9b6;
+}
+.detailView .conBox.type2 .box .pointBox .num > span > span {
+	color: #3950b2;
+}
+.detailView .conBox.type2 .box .pointBox .num a {
+	color: #dd2468;
+}
+
+
+.videoView > .box .imgBox > a:before {
+	background-image: url(../../../images/template6/resp/blue/button/btn_play.png), url(../../../images/template6/resp/default/usr/dim_40.png); 
+	background-position: center center, 0 0; 
+	background-repeat: no-repeat, repeat;
+}
+
+.gradeNum {
+	color: #e63073;
+}
+
+.profileBox .imgBox .btnSave {
+	color: #fff;
+	/* background: #3950b2; */
+}
+
+.mjList li.mj01 {background: url(../../../images/template6/resp/blue/icon/icon_mj01.png) 0 0 no-repeat;}
+.mjList li.mj02 {background: url(../../../images/template6/resp/blue/icon/icon_mj02.png) 0 0 no-repeat;}
+.mjList li.mj03 {background: url(../../../images/template6/resp/blue/icon/icon_mj03.png) 0 0 no-repeat;}
+.mjList li.mj04 {background: url(../../../images/template6/resp/blue/icon/icon_mj04.png) 0 0 no-repeat;}
+.mjList li.mj05 {background: url(../../../images/template6/resp/blue/icon/icon_mj05.png) 0 0 no-repeat;}
+.mjList li.mj06 {background: url(../../../images/template6/resp/blue/icon/icon_mj06.png) 0 0 no-repeat;}
+.mjList li.mj07 {background: url(../../../images/template6/resp/blue/icon/icon_mj07.png) 0 0 no-repeat;}
+.mjList li.mj08 {background: url(../../../images/template6/resp/blue/icon/icon_mj08.png) 0 0 no-repeat;}
+.mjList li.mj09 {background: url(../../../images/template6/resp/blue/icon/icon_mj09.png) 0 0 no-repeat;}
+.mjList li.mj10 {background: url(../../../images/template6/resp/blue/icon/icon_mj10.png) 0 0 no-repeat;}
+.mjList li.mj11 {background: url(../../../images/template6/resp/blue/icon/icon_mj11.png) 0 0 no-repeat;}
+.mjList li.mj12 {background: url(../../../images/template6/resp/blue/icon/icon_mj12.png) 0 0 no-repeat;}
+.mjList li.mj13 {background: url(../../../images/template6/resp/blue/icon/icon_mj13.png) 0 0 no-repeat;}
+
+.certifiList li.active .period,
+.certifiList li.active .date,
+.certifiList li.active .pay {
+	color: #dd2468;
+}
+
+#cdpMap .descBox.major .title {
+	color: #ff85b2;
+}
+#cdpMap .descBox.minor01 .title {
+	color: #a38eeb;
+}
+#cdpMap .descBox.minor02 .title {
+	color: #51b7b9;
+}
+
+.cdpLink > a:hover {
+	/* color: #3950b2; */
+	color:#4bb9b6;
+}
+
+.cdpLink > a.link01:hover {
+	background: url(../../../images/template6/resp/blue/icon/icon_cdp_link01.png) center 6px no-repeat;
+}
+.cdpLink > a.link02:hover {
+	background: url(../../../images/template6/resp/blue/icon/icon_cdp_link02.png) center 11px no-repeat;
+}
+.cdpLink > a.link03:hover {
+	background: url(../../../images/template6/resp/blue/icon/icon_cdp_link03.png) center 7px no-repeat;
+}
+.cdpLink > a.link04:hover {
+	background: url(../../../images/template6/resp/blue/icon/icon_cdp_link04.png) center 8px no-repeat;
+}
+.cdpLink > a.link05:hover {
+	background: url(../../../images/template6/resp/blue/icon/icon_cdp_link05.png) center 8px no-repeat;
+}
+.cdpLink > a.link06:hover {
+	background: url(../../../images/template6/resp/blue/icon/icon_cdp_link06.png) center 9px no-repeat;
+}
+
+.cdpSix.item01:before {
+	border-bottom-color: #c7d4f5;
+}
+.cdpSix.item01:after {
+	border-top-color: #c7d4f5;
+}
+.cdpSix.item02:before {
+	border-bottom-color: #99b1ec;
+}
+.cdpSix.item02:after {
+	border-top-color: #99b1ec;
+}
+.cdpSix.item03:before {
+	border-bottom-color: #6a8de4;
+}
+.cdpSix.item03:after {
+	border-top-color: #6a8de4;
+}
+.cdpSix.item04:before {
+	border-bottom-color: #4571dd;
+}
+.cdpSix.item04:after {
+	border-top-color: #4571dd;
+}
+.cdpSix.item05:before {
+	border-bottom-color: #c8ccd2;
+}
+.cdpSix.item05:after {
+	border-top-color: #c8ccd2;
+}
+.cdpSix.item06:before {
+	border-bottom-color: #919aa5;
+}
+.cdpSix.item06:after {
+	border-top-color: #919aa5 ;
+}
+.cdpSix.item07:before {
+	border-bottom-color: #485769;
+}
+.cdpSix.item07:after {
+	border-top-color: #485769;
+}
+
+.guideDes03 .conBox > .box > div > strong {
+	color: #fff;
+	background: #ff85b2;
+}
+.guideDes03 .conBox > .box > div.item02 > strong {
+	background: #51b7b9;
+}
+.guideDes03 .conBox > .box > div.item03 > strong {
+	background: #a38eeb;
+}
+.guideDes03 .conBox > .box > div > ul li {
+	border: solid #ffdce9;
+	border-width: 0px 2px 2px 2px;
+}
+.guideDes03 .conBox > .box > div.item02 > ul li {
+	border-color: #bceced;
+}
+.guideDes03 .conBox > .box > div.item03 > ul li {
+	border-color: #e6e0ff;
+}
+
+.guideDes04 > .box > div.item02  > strong {
+	color: #ff775c;
+}
+.guideDes04 > .box .item02 ul {
+	border-left-color: #ffc9be;
+}
+.guideDes04 > .box .item02 ul li {
+	background: #ffe1cf;
+}
+
+/* layout */
+.headerWrap .fixMenu ul li a {
+	/* background-color: #00b5f0 !important; */
+	background-color:#01b1ad !important;
+}
+.headerWrap .fixMenu ul li+li a {
+	border-top: 1px solid #80c6c6;
+}
+.headerWrap .fixMenu ul li .searchBox .btnSearch {
+	color: #fff;
+	/* background: #00b5f0; */
+}
+.headerWrap .fixMenu ul li.search.active > a {
+	/* background-color: #00a5db !important; */
+}
+
+.lnb > ul li.active > a,
+.lnb > ul li > a:hover {
+	/* color: #3950b2; */
+	color:#01b1ad;
+}
+
+.popup > .btnClosed,
+.popup > .btnClosed:hover {
+    /* background-color: #4571dd !important; */
+    background-color:#01b1ad;
+}
+
+
+@media screen and (min-width: 1100px) { 
+	#header.active .gnb > li > a,
+	#header.active .gnb li .twoDepth > li > a:hover,
+	#header.active .gnb .threeDepth a:hover {
+		/* color: #3950b2; */
+		color:#01b1ad;
+	}
+}
+
+@media screen and (max-width: 1100px) {  
+	.headerWrap .fixMenu {
+		/* background-color: #00b5f0; */
+		background-color:#01b1ad;
+	}
+}
+
+
+/* main */
+.cosBox > div .conBox h2 {
+    color: #e63073;
+}
+.cosBox > div.item02 .conBox h2 {
+    color: #00b5f0;
+}
+.cosBox > div.item03 .conBox h2 {
+    color: #ff775c;
+}
+.cosBox > div.item01 .conBox h2 .btnMore .icon:before,
+.cosBox > div.item01 .conBox h2 .btnMore .icon:after {
+    border-color: #cc6a8e;
+}
+.cosBox > div.item02 .conBox h2 .btnMore .icon:before,
+.cosBox > div.item02 .conBox h2 .btnMore .icon:after {
+    border-color: #54abc7;
+}
+
+.cosBox > div.item03 .conBox h2 .btnMore .icon:before,
+.cosBox > div.item03 .conBox h2 .btnMore .icon:after {
+    border-color: #ff775c;
+}
+
+.mainSearch {
+    /* border: 5px solid #00a1db; */
+    border:5px solid #4bb9b6;
+}
+
+.mainQuick > .box > a.mq01 { /*분야별과정*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick01.png) center 24px no-repeat;
+}
+.mainQuick > .box > a.mq02 { /*추천콘텐츠*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick02.png) center 23px no-repeat;
+}
+.mainQuick > .box > a.mq03 { /*나의 수강과정*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick03.png) center 21px no-repeat;
+}
+.mainQuick > .box > a.mq04 { /*나의 관심과정*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick04.png) center 22px no-repeat;
+}
+.mainQuick > .box > a.mq05 { /*나의 설문*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick05.png) center 25px no-repeat;
+}
+.mainQuick > .box > a.mq06 { /*나의 게시글*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick06.png) center 26px no-repeat;
+}
+.mainQuick > .box > a.mq07 { /*나의 교육이력*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick07.png) center 23px no-repeat;
+}
+.mainQuick > .box > a.mq08 { /*결재관리*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick08.png) center 22px no-repeat;
+}
+.mainQuick > .box > a.mq09 { /*학원비 신청*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick09.png) center 24px no-repeat;
+}
+.mainQuick > .box > a.mq10 { /*전공/부전공 선택*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick10.png) center 18px no-repeat;
+}
+.mainQuick > .box > a.mq11 { /*나의 획득 현황*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick11.png) center 16px no-repeat;
+}
+.mainQuick > .box > a.mq12 { /*CF별 상세 현황*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick12.png) center 20px no-repeat;
+}
+.mainQuick > .box > a.mq13 { /*상세 과정 안내*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick13.png) center 22px no-repeat;
+}
+.mainQuick > .box > a.mq14 { /*CDP 자주하는 질문*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick14.png) center 20px no-repeat;
+}
+.mainQuick > .box > a.mq15 { /*CDP 1:1상담창구*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick15.png) center 18px no-repeat;
+}
+.mainQuick > .box > a.mq16 { /*CoP*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick16.png) center 26px no-repeat;
+}
+.mainQuick > .box > a.mq17 { /*소學행*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick17.png) center 20px no-repeat;
+}
+.mainQuick > .box > a.mq18 { /*나의 CoP/소學행*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick18.png) center 20px no-repeat;
+}
+.mainQuick > .box > a.mq19 { /*통계*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick19.png) center 21px no-repeat;
+}
+.mainQuick > .box > a.mq20 { /*All知*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick20.png) center 18px no-repeat;
+}
+.mainQuick > .box > a.mq21 { /*매뉴얼*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick21.png) center 23px no-repeat;
+}
+.mainQuick > .box > a.mq22 { /*행외/해외 연수리포트*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick22.png) center 16px no-repeat;
+}
+.mainQuick > .box > a.mq23 { /*All知 동영상*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick23.png) center 27px no-repeat;
+}
+.mainQuick > .box > a.mq24 { /*이벤트 제안*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick24.png) center 18px no-repeat;
+}
+.mainQuick > .box > a.mq25 { /*지식 QnA*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick25.png) center 24px no-repeat;
+}
+.mainQuick > .box > a.mq26 { /*e-Book*/
+    background: url(../../../images/template6/resp/blue/icon/icon_main_quick26.png) center 24px no-repeat;
+}
+
+.checkMyMenu strong.title {
+    /* border-bottom: 1px solid #648bec; */
+    color: #fff;
+    /* background: #4571dd; */
+    background:#01b1ad;
+    border-bottom:1px solid #80c6c6;
+}
+.checkMyMenu ul > li > strong {
+    /* border-left: 1px solid #648bec; */
+    color: #fff;
+    /* background: #4571dd; */
+    background:#4bb9b6;
+    border-left:1px solid #80c6c6;
+}
+.checkMyMenu ul > li:first-child > strong {
+    border-left: none;
+}
+
+#main .mainBoard > div h2 {
+    color: #54abc7;
+}
+#main .mainBoard > div+div h2 {
+    color: #cc6a8e;
+}
+#main .mainBoard > div+div+div h2 {
+    color: #cc6e5a;
+}
+
+#main .mainBoard > div.mainQna li > span.wait {
+	color: #ffe1cf;
+}
+#main .mainBoard > div.mainQna li > span.finish {
+	color: #ff8971;
+}
+
+#main .mainBoard > div .btnMore:before {
+    border-top: 2px solid #54abc7;
+}
+#main .mainBoard > div .btnMore:after {
+    border-left: 2px solid #54abc7;
+}
+#main .mainBoard > div+div .btnMore:before,
+#main .mainBoard > div+div .btnMore:after {
+    border-color: #cc6a8e;
+}
+#main .mainBoard > div+div+div .btnMore:before,
+#main .mainBoard > div+div+div .btnMore:after {
+    border-color: #cc6e5a;
+}
+
+.quizBox .title h2 > span {
+    color: #e63073;
+}
+.quizBox .title .time > strong {
+    color: #e63073;
+}
+.quizBox .questionBox:before {
+    background: #e63073;
+}
+.quizBox .answerBox:before {
+    background: #3f4346;
+}
+
+.quizBox .list ul li .info > span.like.active {
+    background: url(../../../images/template6/resp/blue/icon/icon_like_active.png) 0 center no-repeat;
+}
+.quizBox .list ul li .info > span.hate.active {
+    background: url(../../../images/template6/resp/blue/icon/icon_hate_active.png) 0 center no-repeat;
+}
+
+
+/* 2019.10.28 SMS layerPopup */
+
+/* EOD : 2019.10.28 SMS layerPopup */

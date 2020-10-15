@@ -1,0 +1,918 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>직무역량강화로드맵 획득현황</title>
+    
+    <link href="../../css/initialize.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/template6/resp/import.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/template6/resp/blue.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/chart.css" rel="stylesheet" type="text/css" media="all">
+    
+    <!-- ## IE9이하 버전에서 html5 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="../../js/html5.js"></script>
+    <![endif]-->
+    
+    <!-- ## IE9이하 버전에서 css3 적용 스크립트 ## -->
+    <!--[if lt IE 9]>
+        <script src="../../js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <script src="../../js/jquery-1.8.3.min.js"></script>
+	<script src="../../js/chart.js"></script>
+	<script src="../../js/template6/style.js"></script>    
+</head>
+<body>
+	
+<div class="popup">
+	<h3>직무역량강화로드맵 획득현황</h3>
+	<button type="button" class="btnClosed" onclick="popupClose();">닫기</button>
+	
+	<!-- contentsWrap start -->
+	<div class="contentsWrap">
+		<!-- contentsBox start -->
+		<div class="contentsBox">		
+			<!-- tabLayout -->
+			<div class="tabLayout">
+				<div class="tabBox">
+					<ul>
+						<li class="active"><a onclick="tabsClick('tab_area' , '#tab01', this);" href="javascript:void(0)"><span>조직별</span></a></li>
+						<li><a onclick="tabsClick('tab_area' , '#tab02', this);" href="javascript:void(0)"><span>분야별</span></a></li>
+						<li><a onclick="tabsClick('tab_area' , '#tab03', this);" href="javascript:void(0)"><span>과목별</span></a></li>
+					</ul>			
+				</div>
+			</div>
+			<!-- EOD : tabLayout -->
+
+			<script>								
+				/* tab */
+				function tabsClick(targetClass, targetId, obj , option){
+
+					$(obj).parent("li").siblings("li").removeClass("active");
+					$(obj).parent("li").addClass("active");
+					$("." + targetClass).hide();
+					$(targetId).show();
+					
+				}
+				/* EOD : tab */
+			</script>
+			
+			<!-- tab_area / 조직별 -->
+			<div class="tab_area active" id="tab01">
+				<!-- searchBox --> 
+				<div class="searchBox none">
+					<ul>	
+						<li>
+							<label>직급</label>
+							<div class="checkBox">
+								<label for="chk_1_1"><input type="radio" id="chk_1_1" name="chk_rank" checked="checked">전체</label>
+								<label for="chk_1_2"><input type="radio" id="chk_1_2" name="chk_rank">책임자+행원A</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- EOD : searchBox -->
+
+				<p class="txt_gray_alert">위 내용은 교육이력(및 인사정보)을 바탕으로 산출되어 해당직원의 실제 업무역량과 차이가 있을 수 있으니 단순 참고자료로 활용하시기 바랍니다.</p>
+
+				<!-- table_countBox -->
+				<div class="table_countBox">
+					<span class="tit">STEP 1</span>
+					<!-- tableScroll -->
+					<div class="tableScroll">
+						<!-- table_countBoxIn -->
+						<div class="table_countBoxIn">
+							<ul>
+								<li>
+									<div class="countBoxIn bg_blue">
+										<div class="th">리테일금융</div>
+										<div class="td">
+											<div class="tdBox">
+												<span class="count txt_blue">4</span>
+											</div>	
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="countBoxIn bg_blue">
+										<div class="th">기업금융</div>
+										<div class="td">
+											<div class="tdBox">
+												<span class="count txt_pink">3</span><span class="max">10</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="countBoxIn">
+										<div class="th">소속달성율</div>
+										<div class="td">
+											<div class="tdBox">
+												<div class="count">6</div>
+												<div class="max">10</div>
+												<span class="label_percent">60%</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- EOD : table_countBoxIn -->
+					</div>
+					<!-- EOD :  tableScroll -->
+				</div>
+				<!-- EOD : table_countBox -->
+				
+				<!-- table_countBox -->
+				<div class="table_countBox">
+					<span class="tit">STEP 2</span>
+					<!-- tableScroll -->
+					<div class="tableScroll">
+						<!-- table_countBoxIn -->
+						<div class="table_countBoxIn">
+							<ul>
+								<li>
+									<div class="countBoxIn bg_pink">
+										<div class="th">리테일</div>
+										<div class="td">
+											<div class="tdBox">
+												<div class="count txt_blue">2305</div>
+											</div>	
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="countBoxIn bg_pink">
+										<div class="th">기업</div>
+										<div class="td">
+											<div class="tdBox">
+												<div class="count txt_pink">2157</div><div class="max">3,266</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="countBoxIn">
+										<div class="th">소속달성율</div>
+										<div class="td">
+											<div class="tdBox">
+												<div class="count">193600</div>
+												<div class="max">322600</div>										
+												<span class="label_percent">60%</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="countBoxIn">
+										<div class="th">Hub</div>
+										<div class="td">
+											<div class="tdBox">
+												<div class="count">29</div>
+												<div class="max">40</div>										
+												<span class="label_percent">60%</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="countBoxIn">
+										<div class="th">본부</div>
+										<div class="td">
+											<div class="tdBox">
+												<div class="count">163</div>
+												<div class="max">325</div>										
+												<span class="label_percent">60%</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="countBoxIn">
+										<div class="th">그룹</div>
+										<div class="td">
+											<div class="tdBox">
+												<div class="count">1936</div>
+												<div class="max">3226</div>										
+												<span class="label_percent">60%</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- EOD : table_countBoxIn -->
+					</div>
+					<!-- EOD : tableScroll -->
+				</div>
+				<!-- EOD : table_countBox -->		
+				<script>
+					/* 숫자 카운트 */
+					
+					$('.tdBox .count').each(function() {
+						$(this).prop('Counter',0).animate({
+							Counter: $(this).text()
+						}, {
+							duration: 2000,
+							easing: 'swing',
+							step: function (now) {
+								$(this).text(Math.ceil(now));
+							}
+						});
+					});
+
+				</script>
+			</div>			
+			<!-- EOD : tab_area / 조직별  -->
+
+			<!-- tab_area / 분야별  -->
+			<div class="tab_area" id="tab02">	
+				<!-- searchBox --> 
+				<div class="searchBox none">
+					<ul>	
+						<li>
+							<label>직급</label>
+							<div class="checkBox">
+								<label for="chk_2_1"><input type="radio" id="chk_2_1" name="chk_rank2" checked="checked">전체</label>
+								<label for="chk_2_2"><input type="radio" id="chk_2_2" name="chk_rank2">책임자+행원A</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- EOD : searchBox -->
+
+				<p class="txt_gray_alert">위 내용은 교육이력(및 인사정보)을 바탕으로 산출되어 해당직원의 실제 업무역량과 차이가 있을 수 있으니 단순 참고자료로 활용하시기 바랍니다.</p>
+
+				<!-- tableScroll -->
+				<div class="tableScroll">
+					<table class="table_tree">
+						<colgroup>
+							<col width="*">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+							<col width="10%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2" class="auto">구분</th>
+								<th rowspan="2" class="auto">총인원</th>
+								<th colspan="2" class="bb">리테일금융</th>
+								<th colspan="2" class="bb">기업금융</th>
+								<th colspan="2" class="bb">합계(중복제외)</th>
+							</tr>
+							<tr>
+								<th class="bl">Ⅰ</th>
+								<th>Ⅱ</th>
+								<th>Ⅰ</th>
+								<th>Ⅱ</th>
+								<th>Ⅰ</th>
+								<th>Ⅱ</th>
+							</tr>	
+						</thead>	
+						<tbody>
+							<tr class="dep1">
+								<td><span class="depBox"><button type="button" class="btn_tree"></button></span><div class="txtBox">중앙1 그룹</div></td>
+								<td>100</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">강남영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">강남2 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">강남3 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">압구정영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">강남1 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">구로영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">강남1 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep4">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">강남금융센터지점</div></td>
+								<td>100</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">관리자</div></td>
+								<td>우승구</td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">관리자</div></td>
+								<td>장정훈</td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>								
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">책임자</div></td>
+								<td>진재구</td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>								
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">대리</div></td>
+								<td>김하나</td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+								<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">서초영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">송파영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep1">
+								<td><span class="depBox"><button type="button" class="btn_tree"></button></span><div class="txtBox">중앙2 그룹</div></td>
+								<td>120</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">송파영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">구로영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">구로1 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep4">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">구로금융센터지점</div></td>
+								<td>100</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">구로 관리자</div></td>
+								<td>우승구</td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- EOD : tableScroll -->
+			</div>
+			<!-- EOD : tab_area / 분야별 -->
+
+			<!-- tab_area / 과목별 -->
+			<div class="tab_area" id="tab03">
+				<!-- searchBox --> 
+				<div class="searchBox none">
+					<ul>	
+						<li>
+							<label>직급</label>
+							<div class="checkBox">
+								<label for="chk_3_1"><input type="radio" id="chk_3_1" name="chk_rank3" checked="checked">전체</label>
+								<label for="chk_3_2"><input type="radio" id="chk_3_2" name="chk_rank3">책임자+행원A</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- EOD : searchBox -->
+
+				<p class="txt_gray_alert">위 내용은 교육이력(및 인사정보)을 바탕으로 산출되어 해당직원의 실제 업무역량과 차이가 있을 수 있으니 단순 참고자료로 활용하시기 바랍니다.</p>
+
+				<!-- tableScroll -->
+				<div class="tableScroll">
+					<table class="table_tree">
+						<colgroup>
+							<col width="*">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+							<col width="7%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="3" class="auto">구분</th>
+								<th rowspan="3" class="auto">총인원</th>
+								<th colspan="6" class="bb">리테일금융</th>
+								<th colspan="4" class="bb">기업금융</th>
+							</tr>
+							<tr>
+								<th colspan="2" class="bb bl">자산관리</th>
+								<th colspan="2" class="bb">가계여신</th>
+								<th colspan="2" class="bb">외환</th>
+								<th colspan="2" class="bb">기업여신</th>
+								<th colspan="2" class="bb">수출입</th>
+							</tr>
+							<tr>
+								<th class="bl">Ⅰ</th>
+								<th>Ⅱ</th>
+								<th>Ⅰ</th>
+								<th>Ⅱ</th>
+								<th>Ⅰ</th>
+								<th>Ⅱ</th>								
+								<th>Ⅰ</th>
+								<th>Ⅱ</th>								
+								<th>Ⅰ</th>
+								<th>Ⅱ</th>
+							</tr>	
+						</thead>				
+						<tbody>
+							<tr class="dep1">
+								<td><span class="depBox"><button type="button" class="btn_tree"></button></span><div class="txtBox">중앙1 그룹</div></td>
+								<td>100</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">강남영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">강남2 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">강남3 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">압구정영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">강남1 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">구로영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">강남1 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep4">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">강남금융센터지점</div></td>
+								<td>100</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>		
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>		
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">관리자</div></td>
+								<td>우승구</td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>		
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>		
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">관리자</div></td>
+								<td>장정훈</td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>								
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">책임자</div></td>
+								<td>진재구</td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>	
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">대리</div></td>
+								<td>김하나</td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+								<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">서초영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">송파영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep1">
+								<td><span class="depBox"><button type="button" class="btn_tree"></button></span><div class="txtBox">중앙2 그룹</div></td>
+								<td>120</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>								
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span></span><div class="txtBox">송파영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>								
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep2">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">구로영업본부</div></td>
+								<td>30</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>											
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>			
+							</tr>
+							<tr class="dep3">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">구로1 Hub</div></td>
+								<td>20</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep4">
+								<td><span class="depBox"><span class="dep"></span><button type="button" class="btn_tree"></button></span><div class="txtBox">구로금융센터지점</div></td>
+								<td>100</td>
+								<td>8 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>								
+								<td>3 (0%)</td>
+								<td>3 (0%)</td>
+								<td>5 (0%)</td>
+								<td>4 (0%)</td>
+								<td>6 (0%)</td>
+								<td>3 (0%)</td>								
+							</tr>
+							<tr class="dep5">
+								<td><span class="depBox"></span><div class="txtBox">구로 관리자</div></td>
+								<td>우승구</td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>								
+								<td><span class="txt_red">X</span></td>
+								<td><span class="txt_blue">O</span></td>
+								<td><span class="txt_red">X</span></td>								
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- EOD : tableScroll -->
+			</div>
+			<!-- EOD : tab_area / 과목별 -->
+
+			<script>
+
+				/* table tree open & hide 스크립트 */
+				$(".table_tree .btn_tree").on("click",function(){
+					
+					classN = $(this).closest("tr").attr("class");
+					classStr = classN.replace(/[1-9]/g,"");
+					classNum = parseInt(classN.replace(/[a-z]/gi,""));
+					classNext = classStr + (classNum+1);
+					classPrev = classStr + (classNum-1);
+					
+					indexN = $(this).closest("tr").index();
+
+					$(this).closest("table").find("td").css("background","transparent");
+
+					if($(this).closest(".depBox").hasClass("on")){
+						listN = $(this).closest("table").find("tbody tr").length-1;
+						i=0;
+						while(i<listN){
+							i++;
+							taN = $(this).closest("table").find("tbody tr").eq(indexN+i).attr("class");
+							nextN = $(this).closest("table").find("tbody tr").eq(indexN+i).attr("class");
+							
+							if(typeof taN != "undefined"){
+								if(parseInt(taN.replace(/[a-z]/gi,"")) > classNum){
+
+									$(this).closest("table").find("tbody tr").eq(indexN+i).hide();
+									$(this).closest("table").find("tbody tr").eq(indexN+i).find(".depBox").removeClass("on");
+								
+								}else{
+									break;
+								}
+								
+							}else{
+								break;
+							}
+						}
+						$(this).closest("tr").find(".depBox").removeClass("on");
+					}else{
+						$(this).closest("tr").nextUntil("."+classN, "."+classNext).show().find("td").css("background","#f3f5f7");
+						$(this).closest("tr").find("td").css("background","#ffe9f1").find(".depBox").addClass("on");
+					}
+				});
+			
+			</script>
+
+
+		</div>
+		<!-- //contentsBox end -->
+	</div>
+	<!-- //contentsWrap end -->
+</div>
+
+
+</body>
+</html>
