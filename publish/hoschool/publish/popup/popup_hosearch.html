@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link href="../../css/template5/wbCommon.css" rel="stylesheet"/>
+	<link href="../../css/template5/wbUser.css" rel="stylesheet"/>
+	<link href="../../css/template5/slick.css" rel="stylesheet"/>
+	<script src="../../js/template5/jquery-1.7.2.js"></script>
+	<script src="../../js/template5/jquery-ui-1.8.2.js"></script>
+	<script src="../../js/template5/wbCommon.js"></script>
+	<script src="../../js/template5/slick.js"></script>
+	<script src="../../js/template5/Scrollbar.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/template5/html5.js"></script>
+		<script src="/js/template5/respond.min.js"></script>
+	<![endif]-->
+	
+	<title>전국병원학교</title>
+</head>
+<body>
+	
+
+<section class="windowPop">
+	<!-- windowPopIn -->
+	<div class="windowPopIn">
+		<div class="widnowPopH">
+			병원학교 검색
+			<a class="windowPop_close" onclick="window.close(); return false;" href="javascript:void(0);" title="닫기"><img src="/images/template5/icon_windowPop_close.png" alt=""></a>
+		</div>
+		
+		<!-- windowPopBox -->
+		<div class="windowPopBox">
+		
+			<p class="txt_default mt0">※ 소속 병원학교명을 입력하고 검색해주세요.</p>
+			
+			<!-- ho_searchBox -->
+			<div class="ho_searhBox">
+				<div class="ho_searhBoxT">
+					<span class="txt">병원학교명</span>
+					<div class="inBox">
+						<input type="text" />
+						<button type="button" onclick="search()" class="btn_m_orange02">검색</button>
+					</div>
+				</div>
+				<div class="ho_searhBoxB">
+					<span>예) 충북교육청, 청주교육지원청</span>
+				</div>
+			</div>
+			<!-- EOD : ho_searchBox -->
+			
+			<!-- ho_resultBox -->
+			<div class="ho_resultBox">
+				<p class="txt_default">※ 학교를 선택해주세요.</p>
+				
+				<div class="ho_radioBox">
+				  <ul>
+				  	 <li>
+				  	 	<div>
+					  	 	<input type="radio" id="radio01_01" name="searchResult" value="" > 
+							<label for="radio01_01">꿈사랑학교</label> 
+						</div>
+				  	 </li>
+				  	 <li>
+				  	 	<div>
+					  	 	<input type="radio" id="radio01_02" name="searchResult" value="" > 
+							<label for="radio01_02">꿈나무학교</label> 
+						</div>
+				  	 </li>
+				  	 <li>
+				  	 	<div>
+					  	 	<input type="radio" id="radio01_03" name="searchResult" value="" > 
+							<label for="radio01_03">꿈자랑학교</label> 
+						</div>
+				  	 </li>
+				  	 <li>
+				  	 	<div>
+					  	 	<input type="radio" id="radio01_04" name="searchResult" value="" > 
+							<label for="radio01_04">꿈쑥쑥학교</label> 
+						</div>
+				  	 </li>
+				  	 <li>
+				  	 	<div>
+					  	 	<input type="radio" id="radio01_05" name="searchResult" value="" > 
+							<label for="radio01_05">꿈자랑학교</label> 
+						</div>
+				  	 </li>
+				  	 <li>
+				  	 	<div>
+					  	 	<input type="radio" id="radio01_06" name="searchResult" value="" > 
+							<label for="radio01_06">꿈쑥쑥학교</label> 
+						</div>
+				  	 </li>
+				  </ul>
+				</div>
+				
+				<div class="btnBox">
+					<button type="button" class="btn_m_orange02" onclick="window.close(); return false;">확인</button>
+					<button type="button" class="btn_m_white" onclick="window.close(); return false;">취소</button>
+				</div> 
+			</div>
+			<!-- EOD : ho_resultBox -->
+	
+		</div>
+		<!-- EOD : windowPopBox -->
+	</div>
+	<!-- EOD : windowPopIn -->
+</section>
+
+<script>
+
+	function search(){
+		
+		$(".ho_resultBox").show();
+		
+	}
+
+</script>
+
+</body>

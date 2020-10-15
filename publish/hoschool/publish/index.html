@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link href="../css/template5/wbCommon.css" rel="stylesheet"/>
+	<link href="../css/template5/wbUser.css" rel="stylesheet"/>
+	<link href="../css/template5/slick.css" rel="stylesheet"/>
+	<script src="../js/template5/jquery-1.7.2.js"></script>
+	<script src="../js/template5/jquery-ui-1.8.2.js"></script>
+	<script src="../js/template5/wbCommon.js"></script>
+	<script src="../js/template5/slick.js"></script>
+	<script src="../js/template5/Scrollbar.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/template5/html5.js"></script>
+		<script src="/js/template5/respond.min.js"></script>
+	<![endif]-->
+	
+	<title>전국병원학교</title>
+</head>
+<body>
+
+
+<!-- header -->
+	<header class="header">
+	  <div id="skipnavigation" title="스킵내비게이션">
+		  <a href="#contentBox">본문내용 바로가기</a>
+		  <a href="#topNavi">메인메뉴 가기</a>
+	  </div>	
+	  <div class="topNav">
+		<div class="topNavIn">
+			<h1><a href="index.html"><img src="../images/template5/logo.png" alt="전국병원학교"></a></h1>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="ho_intro.html">병원학교 소개</a>
+						<ul class="dep2">
+							<li><a href="ho_intro.html">병원학교 소개</a></li>
+							<li><a href="ho_step.html">입퇴교 절차</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="health_infomation.html">자료실</a>
+						<ul class="dep2">
+							<li><a href="health_infomation.html">자료실</a></li>
+							<li><a href="health_activity.html">활동엿보기</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="e_office.html">e-교무실</a>
+						<ul class="dep2">
+							<li><a href="e_office.html">운영서식</a></li>
+							<li><a href="e_course.html">교과자료</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="support_questions.html">지원센터</a>
+						<ul class="dep2">
+							<li><a href="support_questions.html">질문하기</a></li>
+							<li><a href="support_faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="topMenu">
+				<ul>
+					<li><a href="etc_join_agree.html">회원가입</a></li>
+					<li><a href="membership_login.html">로그인</a></li>
+				</ul>
+			</div>
+		 </div>
+	  </div>
+	  <div class="topSubMenu"></div>
+	 </header>
+	<!-- EOD : header -->
+
+<!-- mainLayout -->
+<section class="mainLayout">
+	<!-- mainBanner -->
+	<div class="mainBanner">
+		<ul class="slick">
+			<li>
+				<a href="ho_intro.html"><img src="../images/template5/bg_main_banner01.png"></a>
+			</li>
+			<li>
+				<a href="ho_remote.html"><img src="../images/template5/bg_main_banner02.png"></a>
+			</li>
+		</ul>
+		<div class="customBtn">
+			<div class="customBtnIn">
+				<button class="prevBtn" title="이전"></button>
+				<button class="nextBtn" title="다음"></button>			
+			</div>
+		</div>
+	</div>
+	<script>
+		jQuery(function(){
+			$('.mainBanner .slick').slick({
+				dots : true,
+				customDots: true,
+				autoplay: true,
+				speed: 2000,
+				autoplaySpeed: 3000,
+				prevArrow: '.customBtn .prevBtn',
+				nextArrow: '.customBtn .nextBtn',
+				infinite: true,
+				fade: true,
+			});
+		});
+	</script>
+	<!-- EOD : mainBanner-->
+	
+	<script>
+		
+		$(function(){
+			
+			/* 지도 지역 선택 스크립트 */
+		
+			$("map area").click(function(){
+				
+				srcN = $(this).attr("title");
+				
+				/* 지역 선택에 대한 텍스트 변경 */
+				
+				$(".mainMapInfo .txtBox .main_txt > span").text(srcN);
+				
+				/* EOD : 지역 선택에 대한 텍스트 변경 */
+				
+				/* 지역 선택에 대한 이미지 변경 */
+				
+				var imgS = $("area").index(this) + 1;
+												
+				$(this).parent("map").siblings("img").attr("src","../images/template5/main_map" + imgS + ".png");	
+				$(".mainMapInfo").find("img").attr("src","../images/template5/icon_main_map_sub" + imgS + ".png");	
+				
+				/* EOD : 지역 선택에 대한 이미지 변경 */
+				
+				
+			});
+			
+		});
+		
+	</script>	
+	
+	<!-- mainMidContent -->
+	<div class="mainMidContent">
+	    <!-- main_container -->
+		<div class="main_container">
+			<!-- mapBox -->
+			<div class="mapBox">
+				<!-- mainMap -->
+				<div class="mainMap">
+					<p class="txt_aster">지도에서 지역을 선택해 검색해 주세요.</p>
+					<div class="imgBox">
+						<!-- main_map1.png ~ main_map10.png / 서울특별시 ~ 제주도 -->
+						<img src="../images/template5/main_map1.png" id="map" usemap="#map" alt="전국지도" />
+						<map name="map">
+						    <area title="서울특별시" href="javascript:void(0)" onclick="" coords="81,110,78,99,84,94,91,92,97,90,105,94,108,100,112,105,110,111,104,118,98,120,91,116" shape="poly">
+						    <area title="인천" href="javascript:void(0)" onclick="" coords="81,40,84,31,96,29,109,24,115,32,123,39,130,39,129,45,137,46,143,56,152,63,156,72,146,81,145,91,148,100,155,102,165,110,171,110,167,124,161,148,156,155,149,161,137,163,118,180,106,172,94,172,81,175,73,162,72,148,62,148,61,136,64,111,63,97,57,91,63,77,76,51,77,44" shape="poly">
+						    <area title="강원도" href="javascript:void(0)" onclick="" coords="117,23,133,18,144,19,151,24,165,21,185,23,204,24,228,9,238,8,269,84,288,112,307,153,307,159,300,170,308,165,293,178,278,171,267,171,253,171,245,173,226,164,207,156,200,150,192,153,187,145,180,147,176,156,160,153,172,107,152,100,147,84,156,70,149,58,139,46,129,37,110,22" shape="poly">
+						    <area title="충청남도/대전" href="javascript:void(0)" onclick=""  coords="11,185,29,167,50,157,76,169,103,173,118,183,127,195,118,200,115,213,121,230,130,233,133,243,130,252,139,259,141,279,132,280,120,282,115,265,95,269,81,261,69,267,54,275,39,257,44,240,41,219,33,227,26,226,29,207,23,193" shape="poly">
+						    <area title="충청북도" href="javascript:void(0)" onclick="" coords="117,179,148,164,163,153,174,155,179,146,186,143,188,151,201,149,213,153,208,162,223,165,238,174,223,183,221,191,221,197,212,198,207,189,199,196,190,195,183,199,183,205,175,204,171,210,176,215,165,215,163,222,167,243,163,249,172,256,181,256,179,264,171,266,171,277,165,281,152,277,142,277,138,257,130,251,134,243,130,231,120,228,119,203,129,193" shape="poly">
+						    <area title="경상북도/대구" href="javascript:void(0)" onclick="" coords="238,172,261,173,282,172,291,175,311,163,311,184,316,207,311,230,305,257,304,283,310,293,320,289,314,307,308,331,293,332,281,327,267,329,252,330,241,336,224,336,220,327,207,327,187,325,188,313,181,307,165,299,163,288,161,281,173,275,170,264,180,262,181,254,171,254,166,250,168,240,165,220,165,212,174,212,175,201,181,203,192,197,206,192,218,196,223,184" shape="poly">
+						    <area title="전라북도" href="javascript:void(0)" onclick="" coords="39,282,55,276,70,269,80,260,92,271,112,266,120,283,131,281,142,278,152,279,159,279,158,293,146,306,132,322,132,334,136,349,128,360,121,354,112,354,102,357,96,353,81,354,80,345,80,334,73,335,70,343,62,337,54,337,48,344,35,347,29,339,27,333,41,324,29,319,36,309,48,300,57,301,54,293,63,289,48,288" shape="poly">
+						    <area title="경상남도/부산/울산" href="javascript:void(0)" onclick="" coords="161,294,135,320,134,338,136,350,130,358,132,374,138,376,141,386,144,395,135,405,145,407,164,400,171,395,174,410,193,410,200,419,205,426,208,421,206,410,208,403,212,390,218,393,222,385,234,391,263,398,274,392,287,373,293,369,296,360,307,350,309,335,295,331,286,333,281,325,269,330,252,332,233,336,221,335,216,325,203,327,184,324,187,311" shape="poly">
+						    <area title="전라남도/광주" href="javascript:void(0)" onclick="" coords="11,355,26,337,31,349,42,351,54,338,65,339,69,344,77,336,80,345,79,354,99,355,106,357,117,355,126,360,134,377,137,398,139,409,126,409,134,415,141,415,139,427,131,427,125,433,124,422,108,415,108,425,113,437,107,443,102,451,96,453,87,447,80,446,86,438,91,435,97,427,91,423,82,427,67,432,67,443,53,450,50,435,43,447,22,457,17,439,10,432,2,420,15,424,22,422,12,411,19,400,12,387,24,378" shape="poly">
+						    <area title="제주도" href="javascript:void(0)" onclick="" coords="21,512,18,496,33,486,49,476,67,481,80,486,75,501,62,508,36,510,29,512" shape="poly">
+						</map>			
+					</div>
+				</div>
+				<!-- EOD : mainMap -->
+				<!-- mainMapInfo -->
+				<div class="mainMapInfo">
+					<div class="txtBox">
+						<p class="main_txt"><span>서울특별시</span> 병원학교</p>
+						<p class="sub_txt">병원학교명 클릭 시, 해당 병원학교 페이지로 이동합니다.</p>
+						<!-- icon_main_map_sub1.png ~ icon_main_map_sub10.png / 서울특별시 ~ 제주도 -->
+						<img src="../images/template5/icon_main_map_sub1.png" class="img">
+					</div>
+					<!-- infoList -->
+					<div class="infoList">				
+						<div class="infoListIn">
+							<ul>	
+								<li>
+									<a href="minihp_intro.html" class="info_name">연세암병원 병원학교</a>
+									<p class="info_address">(03722) 서울특별시 서대문구 연세로 50-1 암병원 12층</p>
+									<p class="info_num">02-2228-4733</p>
+								</li>
+								<li>
+									<a href="minihp_intro.html" class="info_name">서울시어린이병원학교</a>
+									<p class="info_address">(06801) 서울특별시 서초구 헌릉로 260(내곡동)</p>
+									<p class="info_num">02-570-8391</p>
+								</li>
+								<li>
+									<a href="minihp_intro.html" class="info_name">삼성서울병원학교</a>
+									<p class="info_address">(06351) 서울특별시 강남구 일원로 81</p>
+									<p class="info_num">02-3410-0847</p>
+								</li>
+								<li>
+									<a href="minihp_intro.html" class="info_name">한국원자력병원학교</a>
+									<p class="info_address">(01812) 서울특별시 노원구 노원길 75 한국원자력의학원 동8</p>
+									<p class="info_num">02-3410-0847</p>
+								</li>
+								<li>
+									<a href="minihp_intro.html" class="info_name">연세암병원 병원학교</a>
+									<p class="info_address">(03722) 서울특별시 서대문구 연세로 50-1 암병원 12층</p>
+									<p class="info_num">02-2228-4733</p>
+								</li>
+								<li>
+									<a href="minihp_intro.html" class="info_name">연세암병원 병원학교</a>
+									<p class="info_address">(03722) 서울특별시 서대문구 연세로 50-1 암병원 12층</p>
+									<p class="info_num">02-2228-4733</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- EOD : infoList -->
+					<script>
+					
+					(function($){
+						$(window).on("load",function(){
+							
+							$(".infoList").mCustomScrollbar();
+							
+						});
+					})(jQuery);
+						
+					</script>
+				</div>
+				<!-- EOD: mainMapInfo -->
+				<!-- main_aside -->
+				<aside class="main_aside">
+					<ul>
+						<!-- default : 원격수업 안내 / 방학특강 및 시스템 장애 공지는 필요할때 출력  -->
+						<li class="type01"><a href="ho_remote.html"><span class="txt">원격수업 안내</span></a></li>
+						<li class="type02" style="display:none"><a href="javascript:void(0)"><span class="txt">방학특강</span></a></li>
+						<li class="type03" style="display:none"><a href="javascript:void(0)"><span class="txt">시스템 장애<br> 공지</span></a></li>
+					</ul>
+				</aside>
+				<!-- EOD : main_aside -->
+			</div>
+			<!-- EOD : mapBox -->
+		</div>
+		<!-- EOD : main_container -->
+	</div>
+	<!-- EOD :  mainMidContent -->
+	
+	<!-- mainContent -->
+	<div class="mainContent">
+	   <div class="main_container">
+		  <div class="main_contentBox"> 
+			<!-- mainContentL -->
+			<div class="mainContentL">
+				<!-- mainContentT -->
+				<div class="mainContentT">
+					<img src="../images/template5/icon_main_board01.png" /><span class="txt"> 자료실</span> 
+					<a href="#none" class="link_btn">더보기</a>
+				</div>
+				<!-- EOD : mainContentT -->
+				<!-- mainCon_notice -->
+				<!-- mainCon_notice -->
+				<div class="mainCon_notice">
+					<ul>						
+						<li>
+							<a href="javascript:void(0);">
+								<span class="txtBox ico">
+									<span class="txt">인제대학교 부산백병원학교 캔들 만들기</span>
+								</span>
+								<span class="icon_new">new</span>
+								<span class="date">2019.12.03</span>
+							</a>							
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="txtBox ico">
+									<span class="txt">인제대학교 부산백병원학교 캔들 만들기 인제대학교 부산백병원학교 캔들 만들기</span>
+								</span>
+								<span class="icon_new">new</span>
+								<span class="date">2019.12.03</span>
+							</a>							
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="txtBox">
+									<span class="txt">인제대학교 부산백병원학교 캔들 만들기</span>
+								</span>
+								<span class="date">2019.12.03</span>
+							</a>							
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="txtBox">
+									<span class="txt">인제대학교 부산백병원학교 캔들 만들기 인제대학교 부산백병원학교 캔들 만들기</span>
+								</span>
+								<span class="date">2019.12.03</span>
+							</a>							
+						</li>
+						 <!-- noData 
+						 <li>
+						 	<div class="noData">등록된 공지사항이 없습니다.</div>
+						 </li>
+						  -->
+					</ul>
+				</div>
+				<!-- EOD : mainCon_notice -->
+			</div>
+			<!-- mainContentL -->
+			
+			<!-- mainContentC -->
+			<div class="mainContentC">
+				<!-- mainContentT -->
+				<div class="mainContentT">
+					<img src="../images/template5/icon_main_board02.png" /><span class="txt">활동<span class="txt_orange">엿보기</span></span> 
+					<a href="#none" class="link_btn">더보기</a>
+				</div>
+				<!-- EOD : mainContentT -->
+				<!-- mainCon_active -->
+				<div class="mainCon_active">
+					<div class="miniHome_slide">
+						<a href="javascript:void(0);">
+							<div class="miniHome_imgBox">
+								<img class="cropImg" src="../images/template5/img_activity_sample03.png" alt="" />
+							</div>								
+							<div class="miniHome_dataBox">
+								<div class="name">패브릭 펜을 이용하여 자신만의 곰돌이 거울을 만들기 패브릭 펜을 이용하여 자신만의 곰돌이 거울을 만들기</div>
+								<p class="date">2019.12.03</p>
+							</div>
+						</a>	
+					 </div>
+					 <!-- noData 
+					 <div class="noData">
+					 	등록된 활동엿보기가 없습니다.
+					 </div>
+					  -->
+				</div>
+				<!-- EOD : mainCon_active -->
+			</div>
+			<!-- mainContentC -->
+			
+			<!-- mainContentR -->
+			<div class="mainContentR">
+				<!-- mainContentT -->
+				<div class="mainContentT">
+					<img src="../images/template5/icon_main_board03.png" /><span class="txt"> 고객<span class="txt_orange">센터</span></span> 
+				</div>
+				<!-- EOD : mainContentT -->
+				<!-- mainCon_service -->
+				<div class="mainCon_service">
+					<ul>
+						<li>
+							<strong class="tit"><img src="../images/template5/mainCon_service_logo.png" alt="" />대표전화</strong>
+							<strong class="number">043.530.9195</strong>
+						</li>
+						<li>
+							<strong class="tit"><img src="../images/template5/mainCon_service_time.png" alt="" />상담시간</strong>
+							<strong class="time">평일 09:00~18:00</strong>
+							<p class="time">점심시간 12:00~13:00</p>
+						</li>
+					</ul>
+				</div>
+				<!-- EOD : mainCon_service -->
+			</div>
+			<!-- EOD : mainContentR -->
+		  </div>
+	   </div>
+	</div>
+	<!-- EOD : mainContent -->
+	
+</section>
+<!-- EOD : mainLayout -->
+
+
+<!-- footer -->
+<section class="footerInclude"> 
+  <footer class="footerLayout">
+	<!-- footer_etc -->
+	<div class="footer_etc">
+		<ul>
+			<li><a href="javascript:void(0)" onclick="window.open('popup/popup_terms.html','','width=600, height=500');">이용약관</a></li>
+			<li><a href="javascript:void(0)" onclick="window.open('popup/popup_privacy.html','','width=750, height=700');"><span class="txt_yellow">개인정보처리방침</span></a></li>
+			<li><a href="javascript:void(0)" onclick="window.open('popup/popup_address.html','','width=600, height=500');">주소무단수집거부</a></li>
+		</ul>
+	</div>
+	<!-- EOD : footer_etc -->
+
+	<!-- footerLayoutIn -->
+	<div class="footerLayoutIn">
+		<div class="footerBox">
+			<div class="footerBoxL">
+				<a href="javascript:void(0);"><img src="../images/template5/logo_footer.png" alt="한국교육개발원"></a>
+			</div>
+
+			<div class="footerBoxC">
+				<p class="mt0">27873 충청북도 진천군 덕산면 교학로 7 (한국교육개발원)</p>
+				<p>Copyright ⓒ 한국교육개발원 2020. All Rights Reserved.</p>
+			</div>
+
+			<div class="footerBoxR">
+				<a href="tel:043-530-9715" class="tit mt0"><img src="../images/template5/icon_footer_call.png">대표전화 : 043-530-9195</a>
+				<p>상담시간 : 평일 09:00 ~ 18:00<br> (점심시간 12:00~13:00)</p>
+			</div>
+		</div>
+	</div>
+	<!-- EOD : footerLayoutIn -->
+ </footer>
+
+
+</section>
+<!-- EOD : footer -->

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link href="../css/template5/wbCommon.css" rel="stylesheet"/>
+	<link href="../css/template5/wbUser.css" rel="stylesheet"/>
+	<link href="../css/template5/slick.css" rel="stylesheet"/>
+	<script src="../js/template5/jquery-1.7.2.js"></script>
+	<script src="../js/template5/jquery-ui-1.8.2.js"></script>
+	<script src="../js/template5/wbCommon.js"></script>
+	<script src="../js/template5/slick.js"></script>
+	<script src="../js/template5/Scrollbar.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/template5/html5.js"></script>
+		<script src="/js/template5/respond.min.js"></script>
+	<![endif]-->
+	
+	<title>전국병원학교</title>
+</head>
+<body>
+	
+	<!-- header -->
+	<header class="header">
+	  <div id="skipnavigation" title="스킵내비게이션">
+		  <a href="#contentBox">본문내용 바로가기</a>
+		  <a href="#topNavi">메인메뉴 가기</a>
+	  </div>	
+	  <div class="topNav">
+		<div class="topNavIn">
+			<h1><a href="index.html"><img src="../images/template5/logo.png" alt="전국병원학교"></a></h1>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="ho_intro.html">병원학교 소개</a>
+						<ul class="dep2">
+							<li><a href="ho_intro.html">병원학교 소개</a></li>
+							<li><a href="ho_step.html">입퇴교 절차</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="health_infomation.html">자료실</a>
+						<ul class="dep2">
+							<li><a href="health_infomation.html">자료실</a></li>
+							<li><a href="health_activity.html">활동엿보기</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="e_office.html">e-교무실</a>
+						<ul class="dep2">
+							<li><a href="e_office.html">운영서식</a></li>
+							<li><a href="e_course.html">교과자료</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="support_questions.html">지원센터</a>
+						<ul class="dep2">
+							<li><a href="support_questions.html">질문하기</a></li>
+							<li><a href="support_faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="topMenu">
+				<ul>
+					<li><a href="etc_join_agree.html">회원가입</a></li>
+					<li><a href="membership_login.html">로그인</a></li>
+				</ul>
+			</div>
+		 </div>
+	  </div>
+	  <div class="topSubMenu"></div>
+	 </header>
+	<!-- EOD : header -->
+	
+	<!-- sub_visualLayout -->		
+	<section class="sub_visualLayout sub_visual05">
+		<div class="sub_visualIn">
+			<div class="location">
+				<p class="location_dep1">지원센터</p>
+				<p class="location_dep2"><span>지원센터</span><span class="arrow"></span><span>질문하기</span></p>	
+			</div>	
+			<div class="img_area">
+				<img src="../images/template5/sub_visual_img05.png">
+			</div>	
+	    </div>
+	</section>
+	<!-- EOD : sub_visualLayout -->	
+
+	<!-- contentLayout -->
+	<section class="contentLayout" id="contentBox">	   
+	    <!-- sub_nav -->
+	    <div class="sub_nav">
+			<ul>
+				<li class="active"><a href="support_questions.html">질문하기</a></li>
+				<li><a href="support_faq.html">FAQ</a></li>
+			</ul>
+		</div>
+		<!-- EOD : sub_nav -->
+	
+	   <div class="contentLayoutIn">
+	  		
+		<table class="table_hori">
+			<caption>질문하기 작성 상세</caption>
+			<colgroup>
+				<col width="15%">
+				<col width="35%">
+				<col width="15%">
+				<col width="35%">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>작성자</th>
+					<td>
+						<div class="inputBox w200">
+							<input type="text">
+						</div>
+					</td>
+					<th>작성일</th>
+					<td>2019.12.31</td>
+				</tr>
+				
+				<tr>
+					<th>분류</th>
+					<td colspan="3">
+						<div class="selectBox w200">
+							<label for="select"><span>분류</span></label>
+							<select id="select">
+								<option>분류</option>
+								<option>건강장애상담</option>
+								<option>입퇴교상담</option>
+								<option>운영사항</option>
+								<option>기타</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<th>제목</th>
+					<td colspan="3">
+						<div class="inputBox Full">
+							<input type="text"/>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<th>내용</th>
+					<td colspan="3">
+						<div class="inputBox Full">
+							<textarea></textarea>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<th>비밀글</th>
+					<td colspan="3">
+						<ul class="checkList">
+							<li>
+								<input type="checkbox" id="SecretChkBox" value=""/> 
+								<label for="SecretChkBox">체크할 경우 관리자와 작성자 본인만 열람할 수 있습니다.</label> 
+							</li>
+						</ul>
+					</td>
+				</tr>
+				 
+				<tr>
+					<th>비밀번호</th>
+					<td colspan="3">
+						<div class="inputBox w200">
+							<input type="password" maxlength="4" />
+							<span class="add_txt alert input">비밀번호 4자리를 입력해주세요.<br/>비밀번호 매칭된 사용자와 관리자만 열람할 수 있습니다.</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>첨부파일</th>
+					<td colspan="3">
+						<ul class="file_filed">
+							<li>
+								<input type="text" class="" value="" readonly aria-hidden="true"/>
+								<input type="file" id="input_file1" tabindex="-1">
+								<label for="input_file1" class="btn_m_orange01" tabindex="0">찾아보기</label>
+								<ul>
+									<li><button class="btn_m_plus" title="행 추가" onclick="fileAdd();"></button></li>
+									<!-- <li><button class="btn_m_minus" title="현재 행 삭제" onclick="fileDel(this);"></button></li> -->
+								</ul>							
+							</li>
+						</ul>
+						<script>
+							//파일첨부
+							$(document).on('change',".file_filed input[type='file']",function(e){
+								var fileName = e.target.files[0].name;
+								$(this).siblings("input[type='text']").val(fileName);									
+							});							
+							
+							// 파일첨부 행 추가
+							function fileAdd(){
+								var counter = $(".file_filed > li").length+1;
+								
+								tag = "";
+								tag += "<li>";
+								tag += "<input type='text' class='' value='' readonly aria-hidden='true'/>";
+								tag += "<input type='file' id='input_file" + counter + "'" + "tabindex='-1'>";
+								tag += "<label for='input_file" + counter + "'" +  "class='btn_m_orange01' tabindex='0'>찾아보기</label>";
+								tag += "<ul>";
+								tag += "<li><button class='btn_m_plus' title='행 추가' onclick='fileAdd();'></button></li>";
+								tag += "<li><button class='btn_m_minus' title='행 삭제' onclick='fileDel(this);'></button></li>";
+								tag += "</ul>";
+								tag += "</li>";
+
+								$(".file_filed").append(tag);
+								$(".file_filed > li").eq(counter-2).find(".btn_m_plus").hide();								
+							}
+							
+							// 파일 첨부 행 삭제
+							function fileDel(event){
+								var $this = $(event);
+								var counter = $(".file_filed > li").length-1;
+								var indexN = $this.closest("ul").parent("li");
+
+								if(counter == indexN.index()){
+									indexN.prev().find(".btn_m_plus").show();
+								}
+								$this.closest("ul").parent().remove();
+							}
+						</script>
+					   </td>
+			    	</tr>
+			    	<!-- 첨부파일 수정 버전 -->
+			    	<tr>
+			    		<th>첨부파일</th>
+						<td colspan="3">
+							<span>
+								<div>
+									<!-- bbs_modify_file -->
+									<div class="bbs_modify_file">
+										<span><a href="javascript:void(0)">TEST_IMG.jpg</a><a href="javascript:void(0)" class=""><img src="../images/template5/icon_delete.png" alt="삭제"></a><br></span>
+										<span><a href="javascript:void(0)">이름이 긴 이미지 이름이 긴 이미지 이름이 긴 이미지 이름이 긴 이미지 이름이 긴 이미지 이름이 긴 이미지 이름이 긴 이미지 이름이 긴 이미지</a><a href="javascript:void(0)"><img src="../images/template5/icon_delete.png" alt="삭제"></a><br></span>
+									</div>	
+									<!-- EOD : bbs_modify_file -->
+									<div>
+										<ul class="file_filed">
+											<li>												
+												<input type="text" class="" value="" readonly aria-hidden="true"/>
+												<input type="file" id="input_file1" tabindex="-1">
+												<label for="input_file2" class="btn_m_orange01" tabindex="0">찾아보기</label>
+												<ul>
+													<li><button class="btn_m_plus" title="행 추가" onclick="fileAdd();"></button></li>
+													<!-- <li><button class="btn_m_minus" title="현재 행 삭제" onclick="fileDel(this);"></button></li> -->
+												</ul>	
+											</li>
+										</ul>
+									</div>
+								</div>
+							</span>
+							<div id="view_fileList"></div>						
+						</td>
+			    	</tr>			    	
+			    	<!-- EOD : 첨부파일 수정 버전 -->
+				</tbody>
+			</table>
+		
+			<div class="btnBox">
+				<button type="button" class="btn_l_orange02">등록</button>
+				<button type="button" class="btn_l_white" onclick="history.back(); return false;">취소</button>
+			</div>	
+			
+		</div>
+	</section>
+	<!-- EOD : contentLayout -->
+
+	<!-- footer -->
+	<section class="footerInclude"> 
+	  <footer class="footerLayout">
+		<!-- footer_etc -->
+		<div class="footer_etc">
+			<ul>
+				<li><a href="javascript:void(0)" onclick="window.open('popup/popup_terms.html','','width=600, height=500');">이용약관</a></li>
+				<li><a href="javascript:void(0)" onclick="window.open('popup/popup_privacy.html','','width=750, height=700');"><span class="txt_yellow">개인정보처리방침</span></a></li>
+				<li><a href="javascript:void(0)" onclick="window.open('popup/popup_address.html','','width=600, height=500');">주소무단수집거부</a></li>
+			</ul>
+		</div>
+		<!-- EOD : footer_etc -->
+
+		<!-- footerLayoutIn -->
+		<div class="footerLayoutIn">
+			<div class="footerBox">
+				<div class="footerBoxL">
+					<a href="javascript:void(0);"><img src="../images/template5/logo_footer.png" alt="한국교육개발원"></a>
+				</div>
+
+				<div class="footerBoxC">
+					<p class="mt0">27873 충청북도 진천군 덕산면 교학로 7 (한국교육개발원)</p>
+					<p>Copyright ⓒ 한국교육개발원 2020. All Rights Reserved.</p>
+				</div>
+
+				<div class="footerBoxR">
+					<a href="tel:043-530-9715" class="tit mt0"><img src="../images/template5/icon_footer_call.png">대표전화 : 043-530-9195</a>
+					<p>상담시간 : 평일 09:00 ~ 18:00<br> (점심시간 12:00~13:00)</p>
+				</div>
+			</div>
+		</div>
+		<!-- EOD : footerLayoutIn -->
+	 </footer>
+
+
+	</section>
+	<!-- EOD : footer -->

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link href="../../css/template5/wbCommon.css" rel="stylesheet"/>
+	<link href="../../css/template5/wbUser.css" rel="stylesheet"/>
+	<link href="../../css/template5/slick.css" rel="stylesheet"/>
+	<script src="../../js/template5/jquery-1.7.2.js"></script>
+	<script src="../../js/template5/jquery-ui-1.8.2.js"></script>
+	<script src="../../js/template5/wbCommon.js"></script>
+	<script src="../../js/template5/slick.js"></script>
+	<script src="../../js/template5/Scrollbar.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/template5/html5.js"></script>
+		<script src="/js/template5/respond.min.js"></script>
+	<![endif]-->
+	
+	<title>전국병원학교</title>
+</head>
+<body>
+	
+
+<section class="windowPop">
+	<!-- windowPopIn -->
+	<div class="windowPopIn">
+		<div class="widnowPopH">
+			아이디/비밀번호 찾기
+			<a class="windowPop_close" onclick="window.close(); return false;" href="javascript:void(0);" title="닫기"><img src="/images/template5/icon_windowPop_close.png" alt=""></a>
+		</div>
+		
+		<!-- windowPopBox -->
+		<div class="windowPopBox">
+			<!-- tab -->
+			<div class="tab mt0">
+				<ul>
+					<li class="active"><a href="javascript:void(0);" onclick="tabsClick('tabBox' , '#tab01', this);">아이디 찾기</a></li>
+					<li><a href="javascript:void(0);" onclick="tabsClick('tabBox' , '#tab02', this);">비밀번호 찾기</a></li>
+				</ul>
+			</div>
+			<!-- EOD : tab -->
+			
+			<!-- tabBox : 아이디 찾기 -->
+			<div class="tabBox" id="tab01" style="display:block">
+				<p class="txt_default mt0">입력하신 정보가 회원정보에 등록된 정보와 일치해야 아이디를 문자로 받으실 수 있습니다.</p>
+				<table class="table_hori">
+					<caption>성명,휴대폰 번호로 이루어진 아이디 찾기 폼</caption>
+					<colgroup>
+						<col width="25%">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>성명</th>
+							<td>
+								<div class="inputBox">
+									<input type="text">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>휴대폰 번호</th>
+							<td>
+								<div class="phoneBox">
+								     <div class="phoneBoxIn">
+										<div class="selectBox Full">
+											<label for="select_num"><span>010</span></label>
+											<select id="select_num">
+												<option>010</option>
+												<option>011</option>
+												<option>017</option>
+												<option>019</option>
+											</select>
+										</div>
+										<div class="hyphen">-</div>
+										<div class="inputBox Full">
+											<input type="text">
+										</div>
+										<div class="hyphen">-</div>
+										<div class="inputBox Full">
+											<input type="text">
+										</div>
+									</div>
+							    </div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btnBox">
+					<button type="button" class="btn_m_orange02" onclick="window.close(); return false;">아이디발송</button>
+				</div>  
+			</div>
+			<!-- EOD : tabBox : 아이디찾기 -->
+			
+			<!-- tabBox : 비밀번호 찾기 -->
+			<div class="tabBox" id="tab02">
+				<p class="txt_default mt0">입력하신 정보가 회원정보에 등록된 정보와 일치해야 임시비밀번호를 문자로 받으실 수 있습니다.</p>
+				<table class="table_hori">
+					<caption>아이디,성명,휴대폰 번호로 이루어진 아이디 찾기 폼</caption>
+					<colgroup>
+						<col width="25%">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>아이디</th>
+							<td>
+								<div class="inputBox">
+									<input type="text">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>성명</th>
+							<td>
+								<div class="inputBox">
+									<input type="text">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>휴대폰 번호</th>
+							<td>
+								<div class="phoneBox">
+								     <div class="phoneBoxIn">
+										<div class="selectBox Full">
+											<label for="select_num"><span>010</span></label>
+											<select id="select_num">
+												<option>010</option>
+												<option>011</option>
+												<option>017</option>
+												<option>019</option>
+											</select>
+										</div>
+										<div class="hyphen">-</div>
+										<div class="inputBox Full">
+											<input type="text">
+										</div>
+										<div class="hyphen">-</div>
+										<div class="inputBox Full">
+											<input type="text">
+										</div>
+									</div>
+							    </div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btnBox">
+					<button type="button" class="btn_m_orange02" onclick="window.close(); return false;">임시 비밀번호 발송</button>
+				</div>  
+			</div>
+			<!-- EOD : tabBox : 비밀번호 찾기 -->
+			
+	
+		</div>
+		<!-- EOD : windowPopBox -->
+	</div>
+	<!-- EOD : windowPopIn -->
+</section>
+
+</body>

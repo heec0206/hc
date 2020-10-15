@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link href="../css/template5/wbCommon.css" rel="stylesheet"/>
+	<link href="../css/template5/wbUser.css" rel="stylesheet"/>
+	<link href="../css/template5/slick.css" rel="stylesheet"/>
+	<script src="../js/template5/jquery-1.7.2.js"></script>
+	<script src="../js/template5/jquery-ui-1.8.2.js"></script>
+	<script src="../js/template5/wbCommon.js"></script>
+	<script src="../js/template5/slick.js"></script>
+	<script src="../js/template5/Scrollbar.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/template5/html5.js"></script>
+		<script src="/js/template5/respond.min.js"></script>
+	<![endif]-->
+	
+	<title>전국병원학교</title>
+</head>
+<body>
+	
+	<!-- header -->
+	<header class="header">
+	  <div id="skipnavigation" title="스킵내비게이션">
+		  <a href="#contentBox">본문내용 바로가기</a>
+		  <a href="#topNavi">메인메뉴 가기</a>
+	  </div>	
+	  <div class="topNav">
+		<div class="topNavIn">
+			<h1><a href="index.html"><img src="../images/template5/logo.png" alt="전국병원학교"></a></h1>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="ho_intro.html">병원학교 소개</a>
+						<ul class="dep2">
+							<li><a href="ho_intro.html">병원학교 소개</a></li>
+							<li><a href="ho_step.html">입퇴교 절차</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="health_infomation.html">자료실</a>
+						<ul class="dep2">
+							<li><a href="health_infomation.html">자료실</a></li>
+							<li><a href="health_activity.html">활동엿보기</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="e_office.html">e-교무실</a>
+						<ul class="dep2">
+							<li><a href="e_office.html">운영서식</a></li>
+							<li><a href="e_course.html">교과자료</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="support_questions.html">지원센터</a>
+						<ul class="dep2">
+							<li><a href="support_questions.html">질문하기</a></li>
+							<li><a href="support_faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="topMenu">
+				<ul>
+					<li><a href="etc_join_agree.html">회원가입</a></li>
+					<li><a href="membership_login.html">로그인</a></li>
+				</ul>
+			</div>
+		 </div>
+	  </div>
+	  <div class="topSubMenu"></div>
+	 </header>
+	<!-- EOD : header -->
+	
+	<!-- sub_visualLayout -->
+	<section class="sub_visualLayout sub_visual02">
+		<div class="sub_visualIn">
+			<div class="location">
+				<p class="location_dep1">병원학교 소개</p>
+				<p class="location_dep2"><span>병원학교 소개</span><span class="arrow"></span><span>병원학교 소개</span></p>	
+			</div>	
+			<div class="img_area">
+				<img src="../images/template5/sub_visual_img02.png">
+			</div>	
+	    </div>
+	</section>
+	<!-- EOD : sub_visualLayout -->
+	
+	<section class="contentLayout" id="contentBox">
+		<!-- sub_nav -->
+		<div class="sub_nav">
+			<ul>
+				<li class="active"><a href="ho_intro.html">병원학교 소개</a></li>
+				<li><a href="ho_step.html">입퇴교절차</a></li>
+			</ul>
+		</div>
+		<!-- EOD : sub_nav -->
+		
+	   <div class="contentLayoutIn">
+	  		
+	  		<div class="ho_infoBox">
+	  			<div class="ho_infoBoxIn">
+	  				<img src="../images/template5/icon_ho_intro_info.png" alt="" />
+	  				<strong>병원학교란?</strong>
+	  				<p>병원학교란 장기입원이나 통원치료로 인해<br/>학교 교육을 받을 수 없는 학생들을 위해<br/>병원 내에 설치된 파견학급 형태의 학교입니다.</p>
+	  			</div>
+	  		</div>
+	  		
+	  		<div class="intro_nav">	  		
+		  		<ul>
+		  			<li><a class="btn_m_orange01" href="javascript:void(0);"># 교육대상</a></li>
+		  			<li><a class="btn_m_orange01" href="javascript:void(0);"># 목적 및 운영방침</a></li>
+		  			<li><a class="btn_m_orange01" href="javascript:void(0);"># 교육과정 운영</a></li>
+		  			<li><a class="btn_m_orange01" href="javascript:void(0);"># 학사관리</a></li>
+		  		</ul>
+	  		</div>
+	  		<script>
+	  			$(function(){
+	  				$(".intro_nav a").click(function(){
+	  					thisN = $(this).parent().index();
+	  					moveN = $(this).closest(".contentLayout").find("h4").eq(thisN);
+	  					$('html,body').animate({scrollTop:moveN.offset().top - 55}, 500);	
+	  				});
+	  			});
+	  		</script>
+	  		
+	  		<p class="txt_default">건강장애로 장기치료를 받고 있는 학생들에게 학업의 연속성 및 또래관계를 유지시켜 학습결손 및 출석 부담감을 최소화시켜 심리적 정서적 안정을 통해 치료의 시너지 효과를 높이는 것을 목적으로 합니다.</p>
+			
+			<h4>교육대상</h4>
+	  		<p class="txt_bullet mt0">건강장애의 범주에 해당하는 초·중·고등학생 중 병원학교 또는 원격수업을 이용하고자 하는 자<br/>(건강장애 항목으로 특수교육대상자 선정 절차를 거쳐야 함)</p>
+	  		<p class="txt_bullet">'건강장애'선정의 기준 : 건강장애 학생으로 만성 질환으로 인하여 3개월 이상의 장기입원 또는 통원치료 등 계속적인 의료적 지원이 필요하여 학생생활 및 학업 수행에 어려움이 있는 사람</p>
+	  		<p class="txt_bullet">장애인 등에 대한 특수교육법 제15조(특수교육대상자의 선정 기준)</p>
+	  		<p class="txt_bullet">장애인 등에 대한 특수교육법 시행령 제10조(특수교육대상자의 선정 기준)	</p>
+	  		
+	  		<h4>병원학교의 목적 및 운영방침</h4>
+	  		<div class="contentBox03">
+				<ul>
+					<li><div><p class="txt_bullet mt0">효율적인 학사관리를 통한 출석 인정</p></div></li>
+					<li><div><p class="txt_bullet mt0">또래 학생 및 교사 방문 활성화</p></div></li>
+					<li><div><p class="txt_bullet mt0">통원치료 학생의 상담 지원</p></div></li>
+					<li><div><p class="txt_bullet">학업중심 교육과정과 심리·정서적 적응 지원</p></div></li>
+				</ul>
+			</div>
+			
+			<div class="contentBox03 intro">
+				<ul>
+					<li>
+						<div class="introBox">
+							<strong class="tit">학생</strong>
+							<p class="txt">교육기회 확보<br/>학습 결손 부담감 최소화<br/>또래들과의 관계유지</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="introBox second">
+							<strong class="tit">학교</strong>
+							<p class="txt">건강장애학생 지도의 연속성<br/>치료중 일반학교 출석으로 인한<br/>응급처치 부재의 미비점 해소</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="introBox third">
+							<strong class="tit">학부모</strong>
+							<p class="txt">출석인정으로 인한<br/>진급 문제점 해소<br/>무상교육 혜택 제공</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<h4>교육과정 운영</h4>
+			<h5 class="txt_bullet">학습활동</h5>
+			<h6 class="txt_bullet">
+				<span>교과활동</span>
+				<p class="txt_gray01">병원학교의 운영 특성과 학생의 건강 상태 및 학습능력을 고려하여 주요 교과를 중심으로 다양한 교육방법을 통하여 개별학생의 요구에 따른 교육을 제공합니다.</p>
+			</h6>
+			
+			<table class="table_veti">
+				<caption>대상, 초·중·고등학교로 구성된 학습활동 상세</caption>
+				<colgroup>
+					<col width="20%"/>
+					<col width="80%"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>대상</th>
+						<th>초·중·고등학교</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="ac">주요교과</th>
+						<td class="ac">국어, 수학, 사회, 과학, 영어 등</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h6 class="txt_bullet">
+				<span>창의적 체험활동</span>
+				<p class="txt_gray01">학생의 심리적 안정과 정서함양 도모, 사회성 증진을 위한 다양한 활동을 실시합니다.</p>
+			</h6>
+			
+			<h5 class="txt_bullet type02">특별활동 프로그램</h5>
+			<p class="txt_default04">종이접기, 마술, 영화상영, 동화구연, 미술 치료, 놀이 치료 등 전문 인력과 자원봉사자를 활용한 다양한 특별활동 프로그램을 운영합니다.</p>				
+
+			<h5 class="txt_bullet type02">다양한 행사 개최</h5>
+			<p class="txt_default04">어린이날 행사, 체험학습, 사생 대회, 독후감 대회 등 병원학교 주최의 다양한 행사를 개최 합니다.</p>
+			
+			<h4>학사관리</h4>
+			<h5 class="txt_bullet">학습활동</h5>
+			<h6 class="txt_bullet">
+				<span>학적</span>
+				<p class="txt_gray01">학적은 학생의 소속학교에 두고 병원학교의 수업은 위탁교육 형태로 진행됩니다.</p>				
+			</h6>
+			
+			<h6 class="txt_bullet">교육시수</h6>
+			<table class="table_veti">
+				<caption>대상,초등,중·고등으로 구성된 교육시수 상세</caption>
+				<colgroup>
+					<col width="20%"/>
+					<col width="40%"/>
+					<col width="40%"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>대상</th>
+						<th>초등</th>
+						<th>중·고등학교</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="ac">1일 적정 수업 시수</th>
+						<td class="ac">1시간 이상</td>
+						<td class="ac">2시간 이상</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h5 class="txt_bullet type02">출결 및 성적처리</h5>
+			<table class="table_veti">
+				<caption>구분,병원학교로 구성된 출결 및 성적처리 상세</caption>
+				<colgroup>
+					<col width="20%"/>
+					<col width="80%"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>구분</th>
+						<th>병원학교</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="ac">출결</th>
+						<td class="">
+							<p class="txt_bullet mt0">병원학교 수업참여는 출석으로 인정</p>
+							<p class="txt_bullet">학교장은 병원학교 출석확인서 확인을 통해<br/>출석으로 인정</p>
+						</td>
+					</tr>
+					<tr>
+						<th class="ac">성적</th>
+						<td class="" colspan="2">
+							<p class="txt_default mt0">병원학교 및 원격수업을 이용하여 수업을 받는 건강장애학생은</p>
+							<p class="txt_bullet">소속학교 학업성적관리규정에 따라 성적처리</p>
+							<p class="txt_bullet">평가 있는 날은 당일 소속학교로 출석하여 시험응시(원칙)</p>
+							<p class="txt_bullet">출석 응시가 어려운 부득이한 사유가 있는 경우 소속학교 학업성적관리위원회의 결정에 따름(소속학교로 문의 및 협의)</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h6 class="txt_bullet">
+				<span>인정근거 규정</span>
+				<p class="txt_gray01">학교생활기록 작성 및 관리지침(교육부 훈령719호) 별지 제8호 출결상황관리</p>				
+			</h6>
+		</div>
+	</section>
+	
+	<!-- footer -->
+	<section class="footerInclude"> 
+	  <footer class="footerLayout">
+		<!-- footer_etc -->
+		<div class="footer_etc">
+			<ul>
+				<li><a href="javascript:void(0)" onclick="window.open('popup/popup_terms.html','','width=600, height=500');">이용약관</a></li>
+				<li><a href="javascript:void(0)" onclick="window.open('popup/popup_privacy.html','','width=750, height=700');"><span class="txt_yellow">개인정보처리방침</span></a></li>
+				<li><a href="javascript:void(0)" onclick="window.open('popup/popup_address.html','','width=600, height=500');">주소무단수집거부</a></li>
+			</ul>
+		</div>
+		<!-- EOD : footer_etc -->
+
+		<!-- footerLayoutIn -->
+		<div class="footerLayoutIn">
+			<div class="footerBox">
+				<div class="footerBoxL">
+					<a href="javascript:void(0);"><img src="../images/template5/logo_footer.png" alt="한국교육개발원"></a>
+				</div>
+
+				<div class="footerBoxC">
+					<p class="mt0">27873 충청북도 진천군 덕산면 교학로 7 (한국교육개발원)</p>
+					<p>Copyright ⓒ 한국교육개발원 2020. All Rights Reserved.</p>
+				</div>
+
+				<div class="footerBoxR">
+					<a href="tel:043-530-9715" class="tit mt0"><img src="../images/template5/icon_footer_call.png">대표전화 : 043-530-9195</a>
+					<p>상담시간 : 평일 09:00 ~ 18:00<br> (점심시간 12:00~13:00)</p>
+				</div>
+			</div>
+		</div>
+		<!-- EOD : footerLayoutIn -->
+	 </footer>
+
+
+	</section>
+	<!-- EOD : footer -->
