@@ -1,0 +1,1287 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Step / publish List</title>
+	<style type="text/css">
+		body {
+			font-family: sans-serif, dotum, '돋움';
+		}
+		table {
+			width: 100%;
+			min-width: 1000px;
+			color: #333;
+			border-collapse: collapse;
+			border-top: 1px solid #ccc;
+			border-left: 1px solid #ccc;
+		}
+		th, td {
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			font-size: 12px;
+		}
+		th {
+			line-height: 30px;
+			background: #e8e8e8;
+		}
+		td {
+			padding: 5px 10px 5px 10px;
+			line-height: 20px;
+		}
+		.info {
+			margin-bottom: 40px;
+		}
+		.info th {
+			padding-left: 10px;
+			padding-right: 10px;
+			font-weight: normal;
+			text-align: left;
+			background: none;
+		}
+		.info td {
+			font-size: 15px;
+			text-align: left;
+			font-weight: bold;
+			padding: 10px 10px 10px 10px;
+		}
+		a {
+			color: red;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		.img {
+			background:#e8eeff;
+		}
+		.hold {
+			background: #eee;
+		}
+		.comp {
+			background: #fff0f2;
+		}
+		.modify {
+			background: #c5cff5;
+		}
+		.del {
+			background: #e4ffe9;
+		}
+	</style>
+</head>
+<body>
+<table class="info">
+	<tr>
+		<th>프로젝트명</th>
+		<th colspan="4">진행현황</th>
+		<th>최근 업데이트</th>
+	</tr>
+	<tr>
+		<td width="400px">Step - 사용자</td>
+		<td width="130px" class="hold">보류</td>
+		<td width="130px" class="comp">완료</td>
+		<td width="130px" class="modify">수정완료</td>
+		<td width="130px" class="del">삭제</td>
+		<td>2020.09.01</td>
+	</tr>
+</table>
+
+<h2 style="text-align: center;">개정이력</h2>
+
+<table>
+	<colgroup>
+		<col width="50px">
+		<col width="150px">
+		<col width="150px">
+		<col width="200px">
+		<col width="150px">
+		<col width="150px">
+		<col width="200px">
+		<col width="100px">
+		<col width="">
+	</colgroup>
+	<tr>
+		<th>No</th>
+		<th>1depth</th>
+		<th>2depth</th>
+		<th>3depth / tab</th>
+		<th>4depth / tab</th>
+		<th>popup</th>
+		<th>file name</th>
+		<th>최근 완료일</th>
+		<th>참고</th>
+	</tr>
+	<tr class="comp">
+		<td align="center">1</td>
+		<td>마이페이지</td>
+		<td>나의 학습</td>
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>수강후기 작성 & 수정</td>
+		<td><a href="popup/popup_review_write.html">popup/popup_review_write.html</a></td>
+		<td>20-06-29</td>
+		<td>별점 스크립트 첨부</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">2</td>
+		<td>훈련과정</td>
+		<td>훈련일정</td>
+		<td>캘린더형</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="course_plan_calendar.html">course_plan_calendar.html</a></td>
+		<td>20-06-29</td>
+		<td>fullcalendar.css & fullcalendar.js & moment.min.js 필요</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">3</td>
+		<td>마이페이지</td>
+		<td>나의학습</td>
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>이용약관 및 개인정보정책 동의</td>
+		<td><a href="popup/popup_agree.html">popup/popup_agree.html</a></td>
+		<td>20-06-29</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">4</td>
+		<td rowspan="4">교육원소개</td>
+		<td>교육기관 소개</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="intro_edu.html">intro_edu.html</a></td>
+		<td>20-06-30</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">5</td>
+		<td>인사말</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="intro_greeting.html">intro_greeting.html</a></td>
+		<td>20-06-30</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">6</td>
+		<td>연혁</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="intro_history.html">intro_history.html</a></td>
+		<td>20-06-30</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">7</td>
+		<td>찾아오시는 길</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="intro_history.html">intro_directions.html</a></td>
+		<td>20-07-01</td>
+		<td>지도 API 같은 경우 관리자에서 연동 및 관리</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">8</td>
+		<td rowspan="5">훈련안내</td>
+		<td>고용보험 환급제도</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_refundsy.html">guide_refundsy.html</a></td>
+		<td>20-07-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">9</td>
+		<td>훈련비 환급방법</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_refundme.html">guide_refundme.html</a></td>
+		<td>20-07-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">10</td>
+		<td>훈련 진행절차</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_procedure.html">guide_procedure.html</a></td>
+		<td>20-07-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">11</td>
+		<td>수강 유의사항</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_notice.html">guide_notice.html</a></td>
+		<td>20-07-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">12</td>
+		<td>모사답안 처리기준</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_answer.html">guide_answer.html</a></td>
+		<td>20-07-02</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">13</td>
+		<td>메일 템플릿</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="mail/mail_form.html">mail/mail_form.html</a></td>
+		<td>20-07-06</td>
+		<td>로고 삽입 및 하단 영역 추가</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">14</td>
+		<td>강의실</td>
+		<td>진도/출석</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="classroom/lecture_attend.html">classroom/lecture_attend.html</a></td>
+		<td>20-07-07</td>
+		<td>모바일에서 출석방법 선택 팝업 추가</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">15</td>
+		<td>마이페이지</td>
+		<td>나의 학습</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="mypage_learning.html">mypage_learning.html</a></td>
+		<td>20-07-07</td>
+		<td>수료증출력 부분 모바일 부분 수정</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">16</td>
+		<td>고객지원센터</td>
+		<td>원격지원서비스</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="customer_remote.html">customer_remote.html</a></td>
+		<td>20-07-07</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">17</td>
+		<td>메인</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="index.html">index.html</a></td>
+		<td>20-07-07</td>
+		<td>상단 배너 추가</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">18</td>
+		<td>메인</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="index.html">index.html</a></td>
+		<td>20-07-08</td>
+		<td>메인 팝업 탬플릿 추가</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">19</td>
+		<td>통합검색</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="search_result.html">search_result.html</a></td>
+		<td>20-07-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">20</td>
+		<td>강의실</td>
+		<td>팝업</td>
+		<td></td>
+		<td></td>
+		<td>학습창</td>
+		<td><a href="classroom/popup/popup_learning_window.html">classroom/popup/popup_learning_window.html</a></td>
+		<td>20-07-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td align="center">21</td>
+		<td>메인</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="index.html">index.html</a></td>
+		<td>20-07-15</td>
+		<td>메인 패밀리 사이트 슬라이더 수정</td>
+	</tr>
+	<tr class="hold">
+		<td align="center" rowspan="8">22</td>
+		<td rowspan="8">팀 프로젝트</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team.html">classroom/lecture_team.html</a></td>
+		<td></td>
+		<td rowspan="8">컨펌 대기중</td>
+	</tr>
+	<tr class="hold">
+		<td>팀 목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_detail.html">classroom/lecture_team_detail.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td rowspan="2">게시판</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_list.html">classroom/lecture_team_list.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td>작성</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_list_write.html">classroom/lecture_team_list_write.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td>과제물</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_assign.html">classroom/lecture_team_assign.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td>팀원평가</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_eval.html">classroom/lecture_team_eval.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td rowspan="2">팀 구성원</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_info.html">classroom/lecture_team_info.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>팀원추가</td>
+		<td><a href="classroom/popup/popup_lecture_add.html">classroom/popup/popup_lecture_add.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="modify">
+		<td align="center">23</td>
+		<td>훈련안내</td>
+		<td>고용보험 환급제도</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_refundsy.html">guide_refundsy.html</a></td>
+		<td>20-07-23</td>
+		<td>컨텐츠 통합 및 추가</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">24</td>
+		<td>훈련안내</td>
+		<td>국민내일배움카드</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_card.html">guide_card.html</a></td>
+		<td>20-07-23</td>
+		<td>컨텐츠 통합 및 추가</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="4" align="center">25</td>
+		<td rowspan="4">강의실</td>
+		<td rowspan="4">토론</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td><a href="classroom/lecture_debate.html">classroom/lecture_debate.html</a></td>
+		<td>20-08-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>의견 목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_debate_detail_list.html">classroom/lecture_debate_detail_list.html</a></td>
+		<td>20-08-13</td>
+		<td>(대기,진행,종료)</td>
+	</tr>
+	<tr class="comp">
+		<td>의견 등록/수정</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_debate_detail_write.html">classroom/lecture_debate_detail_write.html</a></td>
+		<td>20-08-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>의견 상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_debate_detail_view.html">classroom/lecture_debate_detail_view.html</a></td>
+		<td>20-08-13</td>
+		<td></td>
+	</tr>
+	<tr class="modify">
+		<td align="center">26</td>
+		<td rowspan="2">훈련과정</td>
+		<td rowspan="2">원격훈련과정</td>
+		<td>팝업</td>
+		<td></td>
+		<td>신청서 작성</td>
+		<td><a href="popup/popup_course_process.html">popup/popup_course_process.html</a></td>
+		<td>20-08-24</td>
+		<td>교육비 부분 변경 및 결제 방법 부분 추가</td>
+	</tr>
+	<tr class="modify">
+		<td align="center">27</td>
+		<td>팝업</td>
+		<td></td>
+		<td>신청 완료</td>
+		<td><a href="popup/popup_course_process02.html">popup/popup_course_process02.html</a></td>
+		<td>20-08-24</td>
+		<td>교육비 부분 변경 및 결제 방법 부분 추가</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="2" align="center">28</td>
+		<td rowspan="2">라이브세미나</td>
+		<td>목록</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><a href="classroom/lecture_seminar.html">classroom/lecture_seminar.html</a></td>
+		<td>20-08-28</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td></td>
+		<td></td>
+		<td>불참사유</td>
+		<td><a href="classroom/popup/popup_serminar_notattend.html">classroom/popup/popup_serminar_notattend.html</a></td>
+		<td>20-08-28</td>
+		<td></td>
+	</tr>
+	<tr class="modify">
+		<td rowspan="2" align="center">29</td>
+		<td rowspan="2">훈련비 결제내역</td>
+		<td>목록</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><a href="mypage_payment.html">mypage_payment.html</a></td>
+		<td>20-09-01</td>
+		<td>항목수정</td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><a href="mypage_payment_view.html">mypage_payment_view.html</a></td>
+		<td>20-09-01</td>
+		<td>무통장입금 / 신용카드 결제 케이스 구분해서 작성</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">30</td>
+		<td>강의실</td>
+		<td>홈</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><a href="classroom/index.html">classroom/index.html</a></td>
+		<td>20-09-10</td>
+		<td>설문 영역 복구</td>
+	</tr>
+	<tr class="comp">
+		<td align="center">31</td>
+		<td>강의실</td>
+		<td>토론</td>
+		<td>상세</td>
+		<td></td>
+		<td></td>
+		<td><a href="classroom/lecture_debate_detail_view.html">classroom/lecture_debate_detail_view.html</a></td>
+		<td>20-09-10</td>
+		<td>덧글창 뎁스 구분 클래스 추가</td>
+	</tr>
+</table>
+
+<table style="margin:40px 0 0">
+	<colgroup>
+		<col width="150px">
+		<col width="150px">
+		<col width="200px">
+		<col width="150px">
+		<col width="150px">
+		<col width="200px">
+		<col width="100px">
+		<col width="">
+	</colgroup>
+	<tr>
+		<th>1depth</th>
+		<th>2depth</th>
+		<th>3depth / tab</th>
+		<th>4depth / tab</th>
+		<th>popup</th>
+		<th>file name</th>
+		<th>최근 완료일</th>
+		<th>참고</th>
+	</tr>
+	<tr class="comp">
+		<td>메인 페이지</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="index.html">index.html</a></td>
+		<td>20-06-16</td>
+		<td><span style="color:red"></span></td>
+	</tr>
+	<tr>
+		<td>가이드 페이지</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide.html">guide.html</a></td>
+		<td>20-05-15</td>
+		<td>게시판 more 및 팝업 샘플 추가</td>
+	</tr>
+	<tr class="comp">
+		<td  rowspan="4">교육원소개</td>
+		<td class="comp">교육기관 소개</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp"><a href="intro_edu.html">intro_edu.html</a></td>
+		<td class="comp">20-06-30</td>
+		<td class="comp"></td>
+	</tr>
+	<tr class="comp">
+		<td>인사말</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="intro_greeting.html">intro_greeting.html</a></td>
+		<td class="comp">20-06-30</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>연혁</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="intro_history.html">intro_history.html</a></td>
+		<td class="comp">20-06-30</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>찾아오시는길</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="intro_directions.html">intro_directions.html</a></td>
+		<td>20-07-01</td>
+		<td>지도 API 같은 경우 관리자에서 연동 및 관리</td>
+	</tr>
+	<tr class="del">
+		<td rowspan="6">훈련안내</td>
+		<td class="modify">고용보험 환급제도</td>
+		<td class="modify">&nbsp;</td>
+		<td class="modify">&nbsp;</td>
+		<td class="modify">&nbsp;</td>
+		<td class="modify"><a href="guide_refundsy.html">guide_refundsy.html</a></td>
+		<td class="modify">20-07-23</td>
+		<td class="modify">컨텐츠 통합 및 추가</td>
+	</tr>
+	<tr class="del">
+		<td>훈련비 환급방법</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_refundme.html">guide_refundme.html</a></td>
+		<td>20-07-01</td>
+		<td></td>
+	</tr>
+	<tr class="del">
+		<td>훈련 진행절차</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_procedure.html">guide_procedure.html</a></td>
+		<td>20-07-01</td>
+		<td></td>
+	</tr>
+	<tr class="del">
+		<td>수강 유의사항</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_notice.html">guide_notice.html</a></td>
+		<td>20-07-01</td>
+		<td></td>
+	</tr>
+	<tr class="del">
+		<td>모사답안 처리기준</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_answer.html">guide_answer.html</a></td>
+		<td>20-07-02</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>국민내일배움카드</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="guide_card.html">guide_card.html</a></td>
+		<td>20-07-23</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="10">훈련과정</td>
+		<td rowspan="2">훈련일정</td>
+		<td>캘린더형</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="course_plan_calendar.html">course_plan_calendar.html</a></td>
+		<td>20-06-29</td>
+		<td>fullcalendar.css &amp; fullcalendar.js &amp; moment.min.js 필요</td>
+	</tr>
+	<tr class="comp">
+		<td>목록형</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="course_plan_list.html">course_plan_list.html</a></td>
+		<td>20-06-02</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="comp" rowspan="4">원격훈련과정</td>
+		<td class="comp">목록</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp"><a href="course_process.html">course_process.html</a></td>
+		<td class="comp">20-05-21</td>
+		<td class="comp">&nbsp;</td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="course_process_view.html">course_process_view.html</a></td>
+		<td>20-05-25</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="modify">
+		<td>팝업</td>
+		<td></td>
+		<td>신청서 작성</td>
+		<td><a href="popup/popup_course_process.html">popup/popup_course_process.html</a></td>
+		<td>20-08-24</td>
+		<td>교육비 부분 변경 및 결제 방법 부분 추가</td>
+	</tr>
+	<tr class="modify">
+		<td>팝업</td>
+		<td></td>
+		<td>신청 완료</td>
+		<td><a href="popup/popup_course_process02.html">popup/popup_course_process02.html</a></td>
+		<td>20-08-24</td>
+		<td>교육비 부분 변경 및 결제 방법 부분 추가</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="2">집체훈련과정</td>
+		<td class="comp">목록</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp"><a href="course_process.html">course_process.html</a></td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp">원격훈련과정 리스트와 동일</td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="course_process_view.html">course_process_view.html</a></td>
+		<td>&nbsp;</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="2">혼합훈련과정</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="course_process.html">course_process.html</a></td>
+		<td>&nbsp;</td>
+		<td>원격훈련과정 리스트와 동일</td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="course_mix_view.html">course_mix_view.html</a></td>
+		<td>20-05-26</td>
+		<td>원격훈련과정 상세와 유사하나 과목소개탭 차이있음</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="12">고객지원센터</td>
+		<td class="comp" rowspan="2">공지사항</td>
+		<td class="comp">목록</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp"><a href="customer_notice.html">customer_notice.html</a></td>
+		<td class="comp">20-05-15</td>
+		<td class="comp">게시판 목록 샘플 / no_data 케이스 추가</td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_notice_view.html">customer_notice_view.html</a></td>
+		<td>20-05-13</td>
+		<td>게시판 상세 샘플</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="2">자료실</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>20-05-13</td>
+		<td>공지사항 목록과 동일</td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>20-05-13</td>
+		<td>공지사항 상세와 동일</td>
+	</tr>
+	<tr class="comp">
+		<td>FAQ</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_faq.html">customer_faq.html</a></td>
+		<td>20-05-21</td>
+		<td>FAQ no_data 케이스 추가</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="3">1:1문의</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_question.html">customer_question.html</a></td>
+		<td>20-05-13</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_question_view.html">customer_question_view.html</a></td>
+		<td>20-05-13</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="comp">
+		<td>작성 및 수정</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_question_write.html">customer_question_write.html</a></td>
+		<td>20-05-13</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="3">취업상담 신청</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_consult.html"><span>customer_consult.html</span></a></td>
+		<td>20-05-13</td>
+		<td>1:1문의와 유사하나. 검색 영역이 다름</td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_consult_view.html"><span>customer_consult_view.html</span></a></td>
+		<td>20-05-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>작성 및 수정</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_consult_view.html"><span>customer_consult_write.html</span></a></td>
+		<td>20-05-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>원격지원 서비스</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="customer_remote.html"><span>customer_remote.html</span></a></td>
+		<td>20-07-07</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="13" class="comp">마이페이지</td>
+		<td class="comp">나의 홈</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp">&nbsp;</td>
+		<td class="comp"><a href="mypage_home.html">mypage_home.html</a></td>
+		<td class="comp">20-05-27</td>
+		<td class="comp"></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="4">나의 학습</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="mypage_learning.html">mypage_learning.html</a></td>
+		<td>20-06-04</td>
+		<td>학습 중 / 수강신청 / 학습종료 탭으로 구성</td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>수강후기 작성 & 수정</td>
+		<td><a href="popup/popup_review_write.html">popup/popup_review_write.html</a></td>
+		<td>20-06-26</td>
+		<td>별점 스크립트 포함</td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>이용약관 및 개인정보정책 동의</td>
+		<td><a href="popup/popup_agree.html">popup/popup_agree.html</a></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>차수정보</td>
+		<td><a href="popup/popup_order_info.html">popup_order_info.html</a></td>
+		<td>20-06-04</td>
+		<td>학습 중 과정명 클릭시 뜨는 팝업</td>
+	</tr>
+	<tr class="comp">
+		<td>학습메모/북마크</td>
+		<td>&nbsp;</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td><a href="mypage_bookmark.html">mypage_bookmark.html</a></td>
+		<td>20-06-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>관심과정</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="mypage_interest.html">mypage_interest.html</a></td>
+		<td>20-05-29</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>교재 배송현황</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="mypage_delivery.html">mypage_delivery.html</a></td>
+		<td>20-06-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="3">나의 설문</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="mypage_survey.html">mypage_survey.html</a></td>
+		<td>20-06-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>설문 참여 </td>
+		<td><a href="popup/popup_survey.html">popup/popup_survey.html</a></td>
+		<td>20-06-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>설문 결과</td>
+		<td><a href="popup/popup_survey_result.html">popup/popup_survey_result.html</a></td>
+		<td>20-06-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>나의 문의내역</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="mypage_question.html">mypage_question.html</a></td>
+		<td>20-05-29</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>훈련비 결제내역</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="mypage_payment.html">mypage_payment.html</a></td>
+		<td>20-06-02</td>
+		<td>공통 데이터피커</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="27">강의실</td>
+		<td>강의실 홈</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/index.html">classroom/index.html</a></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>강의계획서</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_plan.html">lecture_plan.html</a></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>진도/출석</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_attend.html">classroom/lecture_attend.html</a></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="4">시험</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_exam.html">classroom/lecture_exam.html</a></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>응시하기</td>
+		<td><a href="classroom/popup/popup_exam_info.html">classroom/popup/popup_exam_info.html</a></td>
+		<td>20-06-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>테스트 시험지 & 시험</td>
+		<td><a href="classroom/popup/popup_exam_test.html">classroom/popup/popup_exam_test.html</a></td>
+		<td>20-06-01</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td>&nbsp;</td>
+		<td>결과</td>
+		<td><a href="classroom/popup/popup_exam_result.html">classroom/popup/popup_exam_result.html</a></td>
+		<td>20-06-17</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>과제</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_assign.html">classroom/lecture_assign.html</a></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td rowspan="8">팀 프로젝트</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team.html">classroom/lecture_team.html</a></td>
+		<td></td>
+		<td rowspan="8">컨펌 대기중</td>
+	</tr>
+	<tr class="hold">
+		<td>팀 목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_detail.html">classroom/lecture_team_detail.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td rowspan="2">게시판</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_list.html">classroom/lecture_team_list.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td>작성</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_list_write.html">classroom/lecture_team_list_write.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td>과제물</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_assign.html">classroom/lecture_team_assign.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td>팀원평가</td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_eval.html">classroom/lecture_team_eval.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td rowspan="2">팀 구성원</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_team_info.html">classroom/lecture_team_info.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="hold">
+		<td>팝업</td>
+		<td>팀원추가</td>
+		<td><a href="classroom/popup/popup_lecture_add.html">classroom/popup/popup_lecture_add.html</a></td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="2">라이브세미나</td>
+		<td>목록</td>
+		<td></td>
+		<td></td>
+		<td><a href="classroom/lecture_seminar.html">classroom/lecture_seminar.html</a></td>
+		<td>20-08-28</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td></td>
+		<td>불참사유</td>
+		<td><a href="classroom/popup/popup_serminar_notattend.html">classroom/popup/popup_serminar_notattend.html</a></td>
+		<td>20-08-28</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="4">토론</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_debate.html">classroom/lecture_debate.html</a></td>
+		<td>20-08-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>의견 목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_debate_detail_list.html">classroom/lecture_debate_detail_list.html</a></td>
+		<td>20-08-13</td>
+		<td>(대기,진행,종료)</td>
+	</tr>
+	<tr class="comp">
+		<td>의견 등록/수정</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_debate_detail_write.html">classroom/lecture_debate_detail_write.html</a></td>
+		<td>20-08-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>의견 상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_debate_detail_view.html">classroom/lecture_debate_detail_view.html</a></td>
+		<td>20-08-13</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="2">공지사항/자료실</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_notice.html">classroom/lecture_notice.html</a></td>
+		<td>20-06-05</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_notice_view.html">classroom/lecture_notice_view.html</a></td>
+		<td>20-06-05</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="2">학습문의</td>
+		<td>목록</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_question.html">classroom/lecture_question.html</a></td>
+		<td>20-06-05</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>상세</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/lecture_question_view.html">classroom/lecture_question_view.html</a></td>
+		<td>20-06-05</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>학습창</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="classroom/popup/popup_learning_window.html">classroom/popup/popup_learning_window.html</a></td>
+		<td>20-07-13</td>
+		<td>PC 버전 기준</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="9">Membership</td>
+		<td class="hold">회원가입/로그인</td>
+		<td class="hold">&nbsp;</td>
+		<td class="hold">&nbsp;</td>
+		<td class="hold">&nbsp;</td>
+		<td class="hold"><a href="javascript:void(0)"></a></td>
+		<td class="hold"></td>
+		<td class="hold">SSO연동</td>
+	</tr>
+	<tr class="hold">
+		<td>내 정보수정</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="javascript:void(0)"></a></td>
+		<td></td>
+		<td>SSO연동</td>
+	</tr>
+	<tr class="comp">
+		<td rowspan="4">강사신청</td>
+		<td>작성</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="membership_join.html">membership_join.html</a></td>
+		<td>20-05-29</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>심사중 & 심사완료</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="membership_join_comp.html">membership_join_comp.html</a></td>
+		<td>20-05-29</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td></td>
+		<td>NCS 분류</td>
+		<td><a href="popup/popup_ncs_type.html">popup/popup_ncs_type.html</a></td>
+		<td>20-06-04</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>팝업</td>
+		<td></td>
+		<td>본인인증</td>
+		<td><a href="popup/popup_otp.html">popup/popup_otp.html</a></td>
+		<td>20-06-04</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>이용약관</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="membership_terms.html">membership_terms.html</a></td>
+		<td>20-06-23</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>개인정보취급방침</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="membership_privacy.html">membership_privacy.html</a></td>
+		<td>20-06-23</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>이메일무단수집거부</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="membership_mail.html">membership_mail.html</a></td>
+		<td>20-06-23</td>
+		<td></td>
+	</tr>
+	<tr class="comp">
+		<td>기타</td>
+		<td>메일 템플릿</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><a href="mail/mail_form.html">mail/mail_form.html</a></td>
+		<td>20-06-23</td>
+		<td></td>
+	</tr>
+</table>
+</body>
+</html>

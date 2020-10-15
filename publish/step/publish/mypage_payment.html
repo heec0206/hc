@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>STEP</title>
+	<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../css/jquery.scrolling-tabs.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../css/slick.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../css/wbCommon.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/wbUser.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/fullcalendar.css" rel="stylesheet" type="text/css" media="all">
+  <script src="../js/jquery-1.8.3.js"></script>
+  <script src="../js/jquery-ui-1.8.2.js"></script>
+	<script src="../js/wbCommon.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.scrolling-tabs.js"></script>
+	<script src="../js/slick.js"></script>
+  <script src="../js/moment.min.js"></script>
+  <script src="../js/fullcalendar.js"></script>
+	<!-- ie9 이하 적용 -->
+	<!--[if lt IE 9]>
+		<script src="../js/html5.js"></script>
+		<script src="../js/respond.min.js"></script>
+	<![endif]-->
+    <!-- EOD : ie9 이하 적용 -->
+</head>
+<body>
+
+<!-- header -->
+<section class="headerInclude"></section>
+<!-- EOD : header -->
+
+<!-- sub_visual -->
+<section class="sub_visual sub_visual05">
+    <!-- sub_visualIn -->
+    <div class="sub_visualIn">
+        <p class="location">마이페이지</p>
+
+        <!-- customer_area -->
+        <div class="customer_area">
+            <!-- customer_areaIn -->
+            <div class="customer_areaIn">
+                <!-- customer_areaBox -->
+                <div class="customer_areaBox">
+                    <!-- infoBox -->
+                    <div class="infoBox">
+                        <p class="tit">고객센터</p>
+                        <a href="javascript:void(0)" class="btn_link"><span class="txt">원격지원서비스</span><i class="icon_arrow"></i></a>
+                        <p class="num">041.580.4500</p>
+                        <p class="num">041.580.4506</p>
+                        <p class="mail">e-koreatech@koreatech.ac.kr</p>
+                    </div>
+                    <!-- EOD : infoBox -->
+                    <!-- timeBox -->
+                    <div class="timeBox">
+                        <ul>
+                            <li>평일 09:00 ~ 18:00</li>
+                            <li>점심시간 12:00 ~ 13:00</li>
+                        </ul>
+                    </div>
+                    <!-- EOD : timeBox -->
+                </div>
+                <!-- EOD : customer_areaBox -->
+            </div>
+            <!-- customer_areaIn -->
+        </div>
+        <!-- EOD : customer_area -->
+    </div>
+    <!-- EOD : sub_visualIn -->
+</section>
+<!-- EOD : sub_visual -->
+
+<!-- sub_navBox -->
+<nav class="sub_navBox">
+    <!-- sub_navBoxIn  -->
+    <div class="sub_navBoxIn">
+        <div class="content_wrap">
+            <!-- sub_nav -->
+            <ul class="sub_nav">
+                <li><a href="mypage_home.html"><span>나의 홈</span></a></li>
+                <li><a href="mypage_learning.html"><span>나의 학습</span></a></li>
+                <li><a href="mypage_bookmark.html"><span>학습메모/북마크</span></a></li>
+                <li><a href="mypage_interest.html"><span>관심과정</span></a></li>
+                <li><a href="mypage_delivery.html"><span>교재 배송현황</span></a></li>
+                <li><a href="mypage_survey.html"><span>나의 설문</span></a></li>
+                <li><a href="mypage_question.html"><span>나의 문의내역</span></a></li>
+                <li class="active"><a href="mypage_payment.html"><span>훈련비 결제내역</span></a></li>
+            </ul>
+            <!-- EOD : sub_nav -->
+        </div>
+    </div>
+    <!-- EOD: sub_navBoxIn -->
+</nav>
+<!-- EOD : sub_navBox -->
+
+
+
+<!-- contentLayout -->
+<div class="sub_contentLayout" id="content">
+    <div class="content_wrap">
+
+        <h3><span>훈련비 결제내역</span><a href="javascript:void(0)" class="icon_q"><span class="blind">훈련비 결제내역 메뉴 사용방법 안내 팝업 호출</span></a></h3>
+
+        <!-- date_searchBox -->
+        <div class="date_searchBox">
+            <!-- date_searchBoxIn -->
+            <div class="date_searchBoxIn">
+                <!-- content_Listed -->
+                <ul class="content_Listed">
+                    <li>
+                        <span class="label">기간별 조회</span>
+                        <!-- radioList -->
+                        <ul class="radioList">
+                            <li>
+                                <input type="radio" id="radio01_01" name="radioGroup" >
+                                <label for="radio01_01">1주일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="radio01_02" name="radioGroup" >
+                                <label for="radio01_02">15일</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="radio01_03" name="radioGroup">
+                                <label for="radio01_03">1개월</label>
+                            </li>
+                        </ul>
+                        <!-- EOD : radioList -->
+                    </li>
+                    <li>
+                        <!-- dateBox -->
+                        <div class="dateBox">
+                            <div class="dateBoxIn">
+                                <div class="inputBox Full">
+                                    <input type="text" class="datepicker">
+                                </div>
+                                <div class="wave">~</div>
+                                <div class="inputBox Full">
+                                    <input type="text" class="datepicker">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EOD : dateBox -->
+                    </li>
+                    <li>
+                        <!-- search_area -->
+                        <div class="search_area">
+                            <div class="selectBox">
+                                <label for="select_status"><span>결제상태</span></label>
+                                <select id="select_status">
+                                    <option>결제상태</option>
+                                    <option>결제대기</option>
+                                    <option>결제완료</option>
+                                    <option>환불요청</option>
+                                    <option>환불완료</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn_s_blue">검색</button>
+                        </div>
+                        <!-- EDO : search_area -->
+                    </li>
+                </ul>
+                <!-- EOD : content_Listed -->
+            </div>
+            <!-- EOD : date_searchBoxIn -->
+        </div>
+        <!-- EOD : date_searchBox -->
+
+        <!-- tableScroll -->
+        <div class="tableScroll">
+            <table class="table_normal type02">
+                <caption>결제일 , 과정명 ,  결제금액 , 결제상태 , 상세정보로 이루어진 게시판</caption>
+                <colgroup>
+                    <col class="mobH" width="120px">
+                    <col width="*">
+                    <col class="mobH" width="15%">
+                    <col class="mobH" width="10%">
+                    <col class="mobH" width="10%">
+                </colgroup>
+                <thead>
+                    <tr class="mobH">
+                        <th>결제일</th>
+                        <th>과정명</th>
+                        <th>결제금액</th>
+                        <th>결제상태</th>
+                        <th>상세정보</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mobH">2020.01.02</td>
+                        <td>
+                            <div class="ThumBox">
+                                <div class="imgBox">
+                                    <img src="../images/default/usr/tum_sample01.png" class="cropImg">
+                                </div>
+                                <div class="infoBox vertical">
+                                    <div class="txtBox">
+                                        <p class="tit">위기에 강한 기업의 비결!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 모바일에서만 보이는 영역 -->
+                            <div class="mobBox">
+                                <!-- blockTable -->
+                                <div class="blockTable">
+                                    <div class="tr">
+                                        <span class="th">결제일</span><span class="td">10,000원</span>
+                                    </div>
+                                    <div class="tr">
+                                        <span class="th">결제 상태</span><span class="td"><span class="label_s_white">결제대기</span></span>
+                                    </div>
+                                    <div class="tr">
+                                        <span class="th">결제 일시</span><span class="td">2020.01.02</span>
+                                    </div>
+                                </div>
+                                <!-- EOD : blockTable -->
+                                <!-- mobbtnBox -->
+                                <div class="mobbtnBox">
+                                    <button type="button" class="btn_m_blue" onclick="location.href='mypage_payment_view.html'">상세정보</button>
+                                </div>
+                                <!-- EOD : mobbtnBox -->
+                            </div>
+                            <!-- EOD : 모바일에서만 보이는 영역 -->
+                        </td>
+                        <td class="mobH">10,000원</td>
+                        <td class="mobH"><span class="label_s_white">결제대기</span></td>
+                        <td class="mobH"><button type="button" class="btn_s_blue"  onclick="location.href='mypage_payment_view.html'">상세정보</button></td>
+                    </tr>
+                    <tr>
+                        <td class="mobH">2020.01.02</td>
+                        <td>
+                            <div class="ThumBox">
+                                <div class="imgBox">
+                                    <img src="../images/default/usr/tum_sample02.png" class="cropImg">
+                                </div>
+                                <div class="infoBox vertical">
+                                    <div class="txtBox">
+                                        <p class="tit">파이썬 프로그래밍(2019년)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 모바일에서만 보이는 영역 -->
+                            <div class="mobBox">
+                                <!-- blockTable -->
+                                <div class="blockTable">
+                                    <div class="tr">
+                                        <span class="th">결제일</span><span class="td">50,000원</span>
+                                    </div>
+                                    <div class="tr">
+                                        <span class="th">결제 상태</span><span class="td"><span class="label_s_blue">결제완료</span></span>
+                                    </div>
+                                    <div class="tr">
+                                        <span class="th">결제 일시</span><span class="td">2020.01.02</span>
+                                    </div>
+                                </div>
+                                <!-- EOD : blockTable -->
+                                <!-- mobbtnBox -->
+                                <div class="mobbtnBox">
+                                    <button type="button" class="btn_m_blue" onclick="location.href='mypage_payment_view.html'">상세정보</button>
+                                </div>
+                                <!-- EOD : mobbtnBox -->
+                            </div>
+                            <!-- EOD : 모바일에서만 보이는 영역 -->
+                        </td>
+                        <td class="mobH">50,000원</td>
+                        <td class="mobH"><span class="label_s_blue">결제완료</span></td>
+                        <td class="mobH"><button type="button" class="btn_s_blue" onclick="location.href='mypage_payment_view.html'">상세정보</button></td>
+                    </tr>
+                    <tr>
+                        <td class="mobH">2020.01.02</td>
+                        <td>
+                            <div class="ThumBox">
+                                <div class="imgBox">
+                                    <img src="../images/default/usr/no_img_thumBox.png" class="cropImg">
+                                </div>
+                                <div class="infoBox vertical">
+                                    <div class="txtBox">
+                                        <p class="tit">노데이터 테스트</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 모바일에서만 보이는 영역 -->
+                            <div class="mobBox">
+                                <!-- blockTable -->
+                                <div class="blockTable">
+                                    <div class="tr">
+                                        <span class="th">결제일</span><span class="td">120,000원</span>
+                                    </div>
+                                    <div class="tr">
+                                        <span class="th">결제 상태</span><span class="td"><span class="label_s_white">환불요청</span></span>
+                                    </div>
+                                    <div class="tr">
+                                        <span class="th">결제 일시</span><span class="td">2020.01.02</span>
+                                    </div>
+                                </div>
+                                <!-- EOD : blockTable -->
+                                <!-- mobbtnBox -->
+                                <div class="mobbtnBox">
+                                    <button type="button" class="btn_m_blue" onclick="location.href='mypage_payment_view.html'">상세정보</button>
+                                </div>
+                                <!-- EOD : mobbtnBox -->
+                            </div>
+                            <!-- EOD : 모바일에서만 보이는 영역 -->
+                        </td>
+                        <td class="mobH">120,000원</td>
+                        <td class="mobH"><span class="label_s_white">환불요청</span></td>
+                        <td class="mobH"><button type="button" class="btn_s_blue" onclick="location.href='mypage_payment_view.html'">상세정보</button></td>
+                    </tr>
+                    <tr>
+                        <td class="mobH">2020.01.02</td>
+                        <td>
+                            <div class="ThumBox">
+                                <div class="imgBox">
+                                    <img src="../images/default/usr/tum_sample02.png" class="cropImg">
+                                </div>
+                                <div class="infoBox vertical">
+                                    <div class="txtBox">
+                                        <p class="tit">파이썬 프로그래밍(2019년)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 모바일에서만 보이는 영역 -->
+                            <div class="mobBox">
+                                <!-- blockTable -->
+                                <div class="blockTable">
+                                    <div class="tr">
+                                        <span class="th">결제일</span><span class="td">30,000원</span>
+                                    </div>
+                                    <div class="tr">
+                                        <span class="th">결제 상태</span><span class="td"><span class="label_s_gray">환불완료</span></span>
+                                    </div>
+                                    <div class="tr">
+                                        <span class="th">결제 일시</span><span class="td">2020.01.02</span>
+                                    </div>
+                                </div>
+                                <!-- EOD : blockTable -->
+                                <!-- mobbtnBox -->
+                                <div class="mobbtnBox">
+                                    <button type="button" class="btn_m_blue" onclick="location.href='mypage_payment_view.html'">상세정보</button>
+                                </div>
+                                <!-- EOD : mobbtnBox -->
+                            </div>
+                            <!-- EOD : 모바일에서만 보이는 영역 -->
+                        </td>
+                        <td class="mobH">30,000원</td>
+                        <td class="mobH"><span class="label_s_gray">환불완료</span></td>
+                        <td class="mobH"><button type="button" class="btn_s_blue" onclick="location.href='mypage_payment_view.html'">상세정보</button></td>
+                    </tr>
+                    <!-- no_data -->
+                    <tr>
+                        <td colspan="5" class="no_dataBox">
+                            <img src="../images/default/icon/icon_no_data_myhome08.png" alt="">
+                            <p class="txt">결제 내역이 없습니다.</p>
+                        </td>
+                    </tr>
+                    <!-- EOD : no_data -->
+                </tbody>
+            </table>
+        </div>
+        <!-- EOD : tableScroll -->
+
+        <!-- pagination -->
+        <div class="pagination">
+            <a class="d_prev" href="javascript:void(0);" title="제일 처음으로"></a>
+            <a class="prev" href="javascript:void(0);" title="이전 페이지로"></a>
+            <a class="active" href="javascript:void(0);">1</a>
+            <a href="javascript:void(0);">2</a>
+            <a href="javascript:void(0);">3</a>
+            <a href="javascript:void(0);">4</a>
+            <a href="javascript:void(0);">5</a>
+            <a class="next" href="javascript:void(0);" title="다음 페이지로"></a>
+            <a class="d_next" href="javascript:void(0);" title="제일 마지막으로"></a>
+        </div>
+        <!-- EOD : pagination -->
+
+    </div>
+</div>
+<!-- EOD : contentLayout -->
+
+<!-- footer -->
+<section class="footerInclude"></section>
+<!-- EOD : footer -->
+
+
+</body>
+</html>

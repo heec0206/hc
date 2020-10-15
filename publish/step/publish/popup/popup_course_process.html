@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>STEP</title>
+	<link href="../../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/jquery.scrolling-tabs.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/slick.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../css/wbCommon.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../../css/wbUser.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../../css/fullcalendar.css" rel="stylesheet" type="text/css" media="all">
+  <script src="../../js/jquery-1.8.3.js"></script>
+  <script src="../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../js/wbCommon.js"></script>
+	<script src="../../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../../js/jquery.scrolling-tabs.js"></script>
+	<script src="../../js/slick.js"></script>
+  <script src="../../js/moment.min.js"></script>
+  <script src="../../js/fullcalendar.js"></script>
+	<!-- ie9 이하 적용 -->
+	<!--[if lt IE 9]>
+		<script src="../../js/html5.js"></script>
+		<script src="../../js/respond.min.js"></script>
+	<![endif]-->
+    <!-- EOD : ie9 이하 적용 -->
+</head>
+<body>
+
+
+<section class="windowPop">
+    <div class="windowPopH">
+        수강신청
+        <a class="windowPop_close" onclick="window.close(); return false;" href="javascript:void(0);" title="닫기"><img src="../../images/default/icon/icon_popup_close.png"></a>
+    </div>
+
+    <!-- windowPopBox -->
+    <div class="windowPopBox">
+        <div class="windowPopBoxIn">
+            <!-- join_write_process -->
+            <div class="join_write_process">
+                <ul>
+                    <li class="active">
+                        <div class="step">
+                            <div class="stepIn">
+                                 Step 1. <br>신청서 작성
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step">
+                            <div class="stepIn">
+                                Step 2. <br>신청완료
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- EOD : join_write_process -->
+
+            <h4>과정 정보</h4>
+
+            <!-- table_hori -->
+            <table class="table_hori">
+                <caption>과정명 , 교육기간 , 교육비로 이루어진 테이블</caption>
+                <colgroup>
+                    <col width="14%">
+                    <col width="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>과정명</th>
+                        <td>빅데이터 수집 part2</td>
+                    </tr>
+                    <tr>
+                        <th>교육기간</th>
+                        <td>2020.04.13 ~ 2020.05.13</td>
+                     </tr>
+                    <tr>
+                        <th>교육비</th>
+                        <td>400,000원 - 150,000원 (정부지원금) = <span class="txt_point">250,000</span>원 (자기부담금)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- EOD : table_hori -->
+
+            <!-- tit_area -->
+            <div class="tit_area">
+                <div class="left_area">
+                    <span class="tit asterisk">개인정보의 수집ㆍ이용 및 제공에 관한 동의서</span>
+                </div>
+            </div>
+            <!-- EOD : tit_area -->
+
+            <!-- step_agreeBox -->
+            <div class="step_agreeBox">
+                <div class="contentBox">
+                    <p>1. 고용노동부에서는 근로자 직업능력개발훈련 지원제도 운영에 있어 개인을 고유하게 구별하기 위해 부여된 식별정보(주민등록번호 등)를 포함한 개인정보를 다음과 같이 직업능력개발정보망(HRD-Net)에 수집ㆍ이용하고 있습니다.
+                    </p>
+                </div>
+                <div class="btnBox">
+                    <div class="checkBox">
+                        <input type="checkbox" id="chk_agree">
+                        <label for="chk_agree">동의</label>
+                    </div>
+                </div>
+            </div>
+            <!-- EOD : step_agreeBox -->
+
+            <h4>신청자 정보</h4>
+
+            <!-- table_hori -->
+            <table class="table_hori mob_block">
+                <caption>아이디 , 성명 , 국적구분 , 주민등록번호 , 외국인 등록번호 , 휴대전화 , 이메일 , 결제방법으로 이루어진 테이블</caption>
+                <colgroup>
+                    <col width="14%">
+                    <col width="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>아이디</th>
+                        <td>kskim@step.co.kr</td>
+                    </tr>
+                    <tr>
+                        <th>성명</th>
+                        <td>김학생</td>
+                    </tr>
+                    <tr>
+                        <th><span class="asterisk">국적구분</span></th>
+                        <td>
+                            <div class="selectBox">
+                                <label for="select_nation"><span>내국인</span></label>
+                                <select id="select_nation">
+                                    <option>내국인</option>
+                                    <option>외국인</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span class="asterisk">주민등록번호</span></th>
+                        <td>
+                            <div class="input_area">
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="txt_alert">고용보험 환급과정을 수강하기 위해서는 주민등록번호는 필수 입력 사항입니다.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span class="asterisk">외국인 등록번호</span></th>
+                        <td>
+                            <div class="input_area">
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="txt_alert">고용보험 환급과정을 수강하기 위해서는 외국인등록번호는 필수 입력 사항입니다.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span class="asterisk">휴대전화</span></th>
+                        <td>
+                            <div class="input_area num">
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <div class="selectBox">
+                                            <label for="select_num"><span>010</span></label>
+                                            <select id="select_num">
+                                                <option>010</option>
+                                                <option>011</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span class="asterisk">이메일</span></th>
+                        <td>
+                            <div class="input_area mail">
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="at">@</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <div class="selectBox">
+                                            <label for="select_mail"><span>직접입력</span></label>
+                                            <select id="select_mail">
+                                                <option>직접입력</option>
+                                                <option>naver.com</option>
+                                                <option>daum.net</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span class="asterisk">결제방법</span></th>
+                        <td>
+                            <ul class="radioList button">
+                                <li>
+                                    <input type="radio" id="rao_pay01" name="payment">
+                                    <label for="rao_pay01">신용카드</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="rao_pay02" name="payment">
+                                    <label for="rao_pay02">가상계좌</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="rao_pay03" name="payment">
+                                    <label for="rao_pay03">실시간계좌이체</label>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- EOD : table_hori -->
+
+            <h4 class="asterisk">재수강 사유</h4>
+
+            <div class="inputBox Full">
+                <textarea></textarea>
+            </div>
+
+            <h4 class="asterisk">배송지 정보</h4>
+
+            <!-- table_hori -->
+            <table class="table_hori mob_block">
+                <caption>주소,전화번호,휴대전화,배송메세지로 이루어진 테이블</caption>
+                <colgroup>
+                    <col width="14%">
+                    <col width="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th><span class="asterisk">주소</span></th>
+                        <td>
+                            <div class="input_area address">
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="buttonBox">
+                                    <button type="button" class="btn_s_blue">우편번호</button>
+                                </div>
+                            </div>
+                            <div class="input_area Full">
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span>전화번호</span></th>
+                        <td>
+                            <div class="input_area num">
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <div class="selectBox">
+                                            <label for="select_num02"><span>010</span></label>
+                                            <select id="select_num02">
+                                                <option>010</option>
+                                                <option>011</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span class="asterisk">휴대전화</span></th>
+                        <td>
+                            <div class="input_area num">
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <div class="selectBox">
+                                            <label for="select_num03"><span>010</span></label>
+                                            <select id="select_num03">
+                                                <option>010</option>
+                                                <option>011</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="hyphen">-</div>
+                                <div class="inputBox">
+                                    <div class="inputBoxIn">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>배송메세지</th>
+                        <td>
+                            <div class="inputBox Full">
+                                <input type="text">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- EOD : table_hori -->
+
+        </div>
+    </div>
+
+    <div class="windowPopBtn">
+        <button type="button" class="btn_m_blue" onclick="location.href='popup_course_process02.html'">계속 진행</button>
+    </div>
+    <!-- EOD : windowPopBox -->
+</section>
+
+
+</body>
+</html>

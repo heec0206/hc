@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+<link href="/css/classroom/common.css" rel="stylesheet" type="text/css" media="all">
+<link href="/css/classroom/contents.css" rel="stylesheet" type="text/css" media="all">
+<script src="/js/common/wbsoftjs/LMSFunctions.js"></script>
+<script src="/js/common/wbsoftjs/SCOFunction.js"></script>
+
+</head>
+<body>
+	<div class="learning"  id="contentsLearning">
+		<div class="learningHeader">
+
+		</div>
+		<div class="contents">
+
+		</div>
+		<div class="index active">
+			<div class="btnIndex"></div>
+		</div>
+	</div>
+
+	<div class="videoBtnBox" id="contentsMoving">
+
+		<button type="button" onclick="jQuery('#rightFrame').get(0).contentWindow.prePage();" class="btnVideoPrev"><i class="icon_arrow"></i><span>이전</span></button>
+
+		<span class="videoPaging">
+			01 / 25
+		</span>
+
+		<button type="button" onclick="jQuery('#rightFrame').get(0).contentWindow.nextPage();" class="btnVideoNext"><span>다음</span><i class="icon_arrow"></i></button>
+
+	</div>
+</body>
+</html>

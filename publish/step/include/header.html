@@ -1,0 +1,295 @@
+<script>
+
+	/* 언어선택을 위한 스크립트 */
+
+	$(window).load(function(){
+		customSelect();
+	});
+
+
+</script>
+
+<!-- skipnavigation -->
+<div id="skipnavigation" title="스킵내비게이션">
+	<a href="#content">본문내용 바로가기</a>
+	<a href="#nav">메인메뉴 가기</a>
+</div>
+<!-- EOD : skipnavigation -->
+
+<!-- top_banner -->
+<div class="top_banner">
+	<!-- top_bannerIn -->
+	<div class="top_bannerIn">
+
+		<!-- top_banner_slider -->
+		<div class="top_banner_slider">
+			<div>
+				<a href="javascript:void(0)"><img src="/images/template9/resp/default/usr/top_banner01.png" alt="몸값을 UP! 시켜주는 자기계발 강의"></a>
+			</div>
+			<div>
+				<a href="javascript:void(0)"><img src="/images/template9/resp/default/usr/top_banner02.png" alt="sns 입소문 이벤트 자신의 sns에 입소문내고 공유URL과 멘토에게 질문/응원 쓰면 블루투스 이어폰이 와르르르"></a>
+			</div>
+			<div>
+				<a href="javascript:void(0)"><img src="/images/template9/resp/default/usr/top_banner01.png" alt="몸값을 UP! 시켜주는 자기계발 강의"></a>
+			</div>
+			<div>
+				<a href="javascript:void(0)"><img src="/images/template9/resp/default/usr/top_banner02.png" alt="sns 입소문 이벤트 자신의 sns에 입소문내고 공유URL과 멘토에게 질문/응원 쓰면 블루투스 이어폰이 와르르르"></a>
+			</div>
+		</div>
+		<!-- EOD : top_banner_slider -->
+
+		<!-- pagination -->
+		<div class="pagination" id="top_banner_paging">
+			<div class="paginationIn">
+				<button class="prevBtn" title="이전"></button>
+				<button class="nextBtn" title="다음"></button>
+			</div>
+		</div>
+		<!-- EOD : pagination -->
+
+		<!-- tob_banner_btnBox -->
+		<div class="tob_banner_btnBox">
+			<div>
+				<a href="javascript:void(0)" class="btn_today"><i class="icon_chk"></i>오늘 하루 보지 않기</a>
+			</div>
+			<div>
+				<a href="javascript:void(0)" class="btn_close" title="상단 배너 닫기"><i class="icon_close"></i></a>
+			</div>
+		</div>
+		<!-- EOD : tob_banner_btnBox -->
+	</div>
+	<!-- EOD : top_bannerIn -->
+</div>
+<!-- EOD : top_banner -->
+
+<!-- headerLayout -->
+<header class="headerLayout">
+   <!-- 모바일에서만 보여지는 영역 / mob_topLayout -->
+   <div class="mob_topLayout">
+  	
+	  	<a href="index.html" class="logo" title="메인으로"><img src="/images/template9/resp/default/usr/logo_step.png" alt="step"></a>
+		
+		<!-- membershipBox -->
+		<div class="membershipBox">
+			<!-- service_membership -->
+			<ul class="service_membership">
+				
+				<!-- 로그인 상태 -->
+				
+				<li><a href="javascript:void(0)">홍길동</a></li>
+				<li><a href="javascript:void(0)">로그아웃</a></li>
+				<li><a href="javascript:void(0)">내 정보 수정</a></li>
+				<li><a href="javascript:void(0)" onclick="topBn()" class="banner_cnt">팝업<span class="txt_point">2</span>건 <i class="icon_arrow"></i></a></li>
+
+				<!-- EOD : 로그인 상태 -->
+				
+				<!-- 로그아웃 상태 
+				
+				<li><a href="javascript:void(0)">로그인</a></li>
+				<li><a href="javascript:void(0)">회원가입</a></li>
+				<li><a href="javascript:void(0)" onclick="topBn()" class="banner_cnt">팝업<span class="txt_point">2</span>건 <i class="icon_arrow"></i></a></li>
+
+				
+				EOD : 로그아웃 상태  -->
+				
+			</ul>
+			<!-- EOD : service_membership -->
+		</div>
+		<!-- EOD : 모바일에서만 보여지는 영역 / membershipBox -->
+		
+		<!-- mob_menu -->
+		<a href="javascript:void(0)" class="mob_menu" title="모바일 메뉴">
+			<img src="/images/template9/resp/default/button/icon_hamburger.png">
+		</a>
+		<!-- EOD : mob_menu -->
+  </div>
+  <!-- EOD : mob_topLayout -->
+	
+  <!-- header -->
+  <div class="header">  	
+	<!-- topLayout -->
+	<div class="topLayout">
+	
+		<!-- 모바일에서만 보여지는 버튼 -->
+	 	<a href="javascript:void(0)" class="mob_menu_close" title="모바일 메뉴 닫기">
+			<i class="icon_close"></i>
+		</a>
+		<!-- EOD : 모바일에서만 보여지는 버튼 -->
+		
+		<!-- topLayoutWrap -->
+		<div class="topLayoutWrap">
+			<!-- topLayoutIn -->
+			<div class="topLayoutIn">
+				
+				<a href="index.html" class="logo"><img src="/images/template9/resp/default/usr/logo_step.png" alt="step"></a>
+				
+				<!-- 모바일에서만 보여지는 영역 / mob_select_lang -->
+				<div class="mob_select_lang" style="display: none">
+					<div class="selectBox">
+						<label for="select_lang_mob"><span>한국어/KR</span></label>
+						<select id="select_lang_mob">
+							<option>한국어/KR</option>
+							<option>영어/EN</option>
+						</select>
+					</div>
+				</div>
+				<!-- 모바일에서만 보여지는 영역 / EOD : mob_select_lang -->
+
+				<!-- 앱에서 보여지는 영역 -->
+				<div class="app_linkBox"  style="display: none">
+					<a href="javascript:void(0)" class="bell_link">
+						<i class="icon_bell"></i>
+					</a>
+
+					<a href="javascript:void(0)" class="cart_link">
+						<i class="icon_cart"></i>
+						<span class="cnt">75</span>
+					</a>
+				</div>
+				<!-- EOD :  앱에서 보여지는 영역 -->
+				
+				<!-- total_search -->
+				<div class="total_search">
+					<div class="total_searchIn">
+						<input type="text" placeholder="통합검색">
+					</div>
+					<button type="button" title="검색">
+						<span class="blind">검색</span>						
+						<span class="ico"></span>
+					</button>
+				</div>
+				<!-- EOD : total_search -->
+				
+				<!-- membershipBox -->
+				<div class="membershipBox">
+					<!-- service_membership -->
+					<ul class="service_membership">
+						<li><a href="javascript:void(0)">홍길동</a></li>
+						<li><a href="javascript:void(0)">로그아웃</a></li>
+						<li><a href="javascript:void(0)">내 정보 수정</a></li>
+						<li><a href="javascript:void(0)" onclick="topBn()" class="banner_cnt">팝업<span class="txt_point">2</span>건 <i class="icon_arrow"></i></a></li>
+					</ul>
+					<!-- EOD : service_membership -->
+	
+					<!-- select_lang -->
+					<div class="select_lang">
+						<div class="selectBox">
+							<label for="select_lang"><span>한국어/KR</span></label>
+							<select id="select_lang">
+								<option>한국어/KR</option>
+								<option>영어/EN</option>
+							</select>
+						</div>
+					</div>
+					<!-- EOD : select_lang -->
+				</div>
+				<!-- EOD : membershipBox -->				
+			</div>
+			<!-- EOD : topLayoutIn -->
+		</div>		
+		<!-- EOD : topLayoutWrap -->
+	</div>
+	<!-- EOD : topLayout -->
+
+	<!-- nav -->
+	<nav class="nav" id="nav">		
+		<!-- navInner -->
+		<div class="navInner">
+			<!-- gnb -->	
+			<ul class="gnb">
+				<li>
+					<a href="#none"><span>교육원 소개</span><i class="icon_arrow"></i></a>
+					<ul class="twoDepth">
+						<li><a href="intro_edu.html"><span>교육기관 소개</span></a></li>
+						<li><a href="intro_greeting.html"><span>인사말</span></a></li>
+						<li><a href="intro_history.html"><span>연혁</span></a></li>
+						<li><a href="intro_directions.html"><span>찾아오시는 길</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none"><span>훈련 안내</span><i class="icon_arrow"></i></a>
+					<ul class="twoDepth">
+						<li><a href="guide_refundsy.html"><span>고용보험 환급제도</span></a></li>
+						<li><a href="guide_card.html"><span>국민내일 배움카드</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none"><span>훈련과정</span><i class="icon_arrow"></i></a>
+					<ul class="twoDepth">
+						<li><a href="course_plan_calendar.html"><span>훈련일정</span></a></li>
+						<li><a href="course_process.html"><span>원격훈련과정</span></a></li>
+						<li><a href="course_process.html"><span>집체훈련과정</span></a></li>
+						<li><a href="course_process.html"><span>혼합훈련과정</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none"><span>고객지원센터</span><i class="icon_arrow"></i></a>
+					<ul class="twoDepth">
+						<li><a href="customer_notice.html"><span>공지사항</span></a></li>
+						<li><a href="customer_file.html"><span>자료실</span></a></li>
+						<li><a href="customer_faq.html"><span>FAQ</span></a></li>
+						<li><a href="customer_question.html"><span>1:1 문의</span></a></li>
+						<li><a href="customer_consult.html"><span>취업상담 신청</span></a></li>
+						<li><a href="customer_remote.html"><span>원격지원서비스</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none"><span>마이페이지</span><i class="icon_arrow"></i></a>
+					<ul class="twoDepth">
+						<li><a href="mypage_home.html"><span>나의 홈</span></a></li>
+						<li><a href="mypage_learning.html"><span>나의 학습</span></a></li>
+						<li><a href="mypage_bookmark.html"><span>학습메모/북마크</span></a></li>
+						<li><a href="mypage_interest.html"><span>관심과정</span></a></li>
+						<li><a href="mypage_delivery.html"><span>교재 배송현황</span></a></li>
+						<li><a href="mypage_survey.html"><span>나의 설문</span></a></li>
+						<li><a href="mypage_question.html"><span>나의 문의내역</span></a></li>
+						<li><a href="mypage_payment.html"><span>훈련비 결제내역</span></a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- EOD : gnb -->
+		</div>
+		<!-- EOD : navInner -->
+	</nav>
+	<!-- EOD : nav -->
+	
+	<!-- 모바일에서만 보여지는 영역 / hd_infoBox -->
+	<div class="hd_infoBox">					
+		<!-- msBtnBox -->
+		<div class="msBtnBox">
+			<!-- 로그인 이전
+			<button type="button">로그인</button>
+			<button type="button">회원가입</button>
+			<button type="button">설정</button>
+			 로그인 이전  -->
+
+			<button type="button">로그아웃</button>
+			<button type="button">내 정보수정</button>
+			<button type="button">설정</button>
+		</div>
+		<!-- EOD : msBtnBox -->
+		
+		<!-- customerInfo -->
+		<div class="customerInfo">
+			<p class="tit">고객센터</p>
+			<ul class="num">
+				<li>041.580.4506</li>
+				<li>041.580.4506</li>
+			</ul>
+			<p class="mail">e-koreatech@koreatech.ac.kr</p>
+			<ul class="time">
+				<li>평일 09:00 ~ 18:00</li>
+				<li>점심시간 12:00 ~ 13:00</li>
+			</ul>
+		</div>
+		<!-- EOD : customerInfo -->
+	</div>
+	<!-- EOD : 모바일에서만 보여지는 영역 / hd_infoBox -->	
+ </div>
+ <!-- EOD : header -->
+  
+  <!-- trans_bg -->
+  <div class="trans_bg"></div>
+  <!-- EOD : trans_bg -->
+</header>
+<!-- EOD : headerLayout -->
