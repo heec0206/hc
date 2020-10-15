@@ -245,7 +245,7 @@
 .mainContent {  }
 .mainContentIn { max-width:1100px; margin:0 auto; padding:0 16px; }
 	/* 메인 배너 */
-	.mainContent .mainBanner { background:url(../main_banner_ani.jpg) 50% 50% no-repeat; overflow:hidden; }
+	.mainContent .mainBanner { background:url(../images/main_banner_ani.jpg) 50% 50% no-repeat; overflow:hidden; }
 	.mainContent .mainBanner .mainContentIn { position:relative; height:480px; overflow:hidden; }
 	.mainContent .mainBanner .ico01 { position:absolute; bottom:130px; left:100px; width:79px; height:64px; background:url(../images/main_banner_ico01.png) no-repeat; animation:mainIco01 3.5s 2.5s infinite, pulsate02 2.5s; }
 	.mainContent .mainBanner .ico02 { position:absolute; bottom:175px; left:50%; margin:0 0 0 -50px; width:71px; height:48px; background:url(../images/main_banner_ico02.png) no-repeat; animation:mainIco02 3.5s 2.5s infinite, pulsate02 3s; }
@@ -302,7 +302,7 @@
 		.mainNoticeBox .mainNoticeBoxC ul li:first-child { border-top:1px solid #bdbdbd; }
 		.mainNoticeBox .mainNoticeBoxC ul li a { display:block; position:relative; font-weight:500; font-size:16px; color:#333; padding:20px; }
 		.mainNoticeBox .mainNoticeBoxC ul li a span { position:relative; padding:0 18px 0 0; line-height:1.4em; height:2.8em; overflow:hidden; text-overflow: ellipsis; display:block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-		.mainNoticeBox .mainNoticeBoxC ul li a span:after { content:''; position:absolute; top:3px; right:0; width:16px; height:16px; background:url(../icon_mainfaq_plus.png) no-repeat; transition:all 0.445s ease; }
+		.mainNoticeBox .mainNoticeBoxC ul li a span:after { content:''; position:absolute; top:3px; right:0; width:16px; height:16px; background:url(../images/icon_mainfaq_plus.png) no-repeat; transition:all 0.445s ease; }
 		.mainNoticeBox .mainNoticeBoxC ul li a span:hover:after { transform:rotate(360deg); }
 
 		.mainNoticeBox .mainNoticeBoxR { display:table-cell; width:25%; padding:0 0 0 25px; }
