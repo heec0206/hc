@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<style type="text/css">
+		* {margin:0; padding:0;}
+		body {font-family: sans-serif, dotum, '돋움';padding: 20px;}
+		table {width: 100%; min-width: 1000px; color: #333; border-collapse: collapse; border-top: 1px solid #bbb; border-left: 1px solid #bbb;}
+		th, td {border-right: 1px solid #bbb; border-bottom: 1px solid #bbb; font-size: 12px;}
+		th {line-height: 30px; background: #eee;}		
+		td {padding: 5px 10px 5px 10px; line-height: 20px; vertical-align: middle;}
+		.info {margin-bottom: 40px;}	
+		.info th {padding-left: 10px;padding-right: 10px;text-align: left;	background: none;}			
+		.info td {font-size: 15px;text-align: left;font-weight: bold; padding: 10px;}	
+		a {color: red;text-decoration: none;}
+		.txt_red { color:red; }
+		a:hover {text-decoration: underline;}
+		.comp {background: #ffe6e9;}
+		.modify {background: #dcffee;}
+		.ing {background: #fffdc2;}	
+		.add {background: #e1f4fe;}
+		.del {background: #f2f2f2;}
+		/* .fixedHead {padding:30px 0 0 0; position:relative; width:100%;border-bottom: 1px solid #ccc;}
+		.fixedHead > div {overflow-x:hidden; overflow-y:auto; height: 700px; height: calc(100vh - 200px);}
+		.fixedHead table {width:100%;}
+		.fixedHead table caption {height:0; overflow:hidden;}
+		.fixedHead table thead,
+		.fixedHead table tfoot {
+			position:absolute;
+			display:table;
+			width:100%;
+			border-bottom:1px solid #ccc;
+		}
+		.fixedHead table thead {top:0; left: 0;}
+		.fixedHead table th,
+		.fixedHead table td {
+			text-align:center;
+			border-right:1px solid #ccc;
+			border-top:1px solid #ccc;
+			height:30px;
+			vertical-align:middle;
+		}
+		.fixedHead table td  {height: 20px; line-height: 20px; text-align: left; vertical-align: top;}
+		.fixedHead table tr th:first-child,
+		.fixedHead table tr td:first-child {border-left:1px solid #ccc;}
+		.fixedHead table tbody tr:first-child td {border-top:0;} */
+		
+		.ac { text-align:center; }
+		h2 { font-size:20px; margin:0 0 10px 0; }
+		h3 { font-size:16px; margin:0 0 5px 0; font-weight:500; }
+	</style>
+</head>
+<body>
+	<table class="info">
+		<colgroup>
+			<col width="*"/>
+			<col width="8%"/>
+			<col width="8%"/>
+			<col width="8%"/>
+			<col width="8%"/>
+			<col width="8%"/>
+			<col width="20%"/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>프로젝트명</th>
+				<th colspan="5">진행현황</th>
+				<th>최근 업데이트</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>웅진씽크빅</td>
+				<td class="ing">작업중</td>
+				<td class="comp">완료</td>
+				<td class="modify">수정</td>
+				<td class="add">추가</td>
+				<td class="del">삭제</td>
+				<td >2019.10.11 10:30</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<h2>개정이력</h2>
+	<div class="fixedHead" style="margin:0 0 50px 0;">
+		<div class="box">
+			<table>
+				<colgroup>
+					<col width="10%"/>
+					<col width="10%"/>
+					<col width="*"/>
+					<col width="10%"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>NO</th>
+						<th>DATE</th>
+						<th>REMARKS</th>
+						<th>ISSUE</th>
+					</tr>	
+				</thead>
+				<tbody>
+					<!--
+					<tr class="comp">
+						<td class="ac">1</td>
+						<td class="ac">2019.10.23</td>
+						<td>
+							<strong>
+								테스트 결과서 업무분배<br/>
+								- index 메인 배너 이미지 관련 중앙 정렬<br/>
+								- 이벤트 SNS 공유하기 팝업 > <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/event_eventListView.html" target="_blank">event_eventListView.html</a><br/>
+								- 결제현황 캘린더 css 적용<br/>
+								- 파일업로드 관련 js 등 수정<br/>
+								개발서버 적용 완료
+							</strong>
+						</td>
+						<td>
+							<strong>이미지 리사이징 script에 대한 이슈 (진행중)</strong>
+						</td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">2</td>
+						<td class="ac">2019.10.24</td>
+						<td>
+							<strong>
+								- footer 수정요청사항 반영<br/>
+								- 이미지 crop 기능 전수조사 및 수정<br/>
+								- 내정보수정 이미지 변경 및 삭제 binding 처리<br/>
+								- 레이어팝업 공통 변경(bg 선택 경우)<br/>
+								- 결제현황 결제수단 추가
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">3</td>
+						<td class="ac">2019.10.25</td>
+						<td>
+							<strong>
+								- crop 기능 전수조사 및 재적용<br/>
+								- 로그인 script 재정의 및 문제점 파악<br/>
+								- index > 실시간후기 페이스북 아이콘 수정<br/>
+								- noList case 추가<br/>
+								<div style="padding:0 0 0 15px;">
+									1. index > 인기, 추천, 최신강좌 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/index.html" target="_blank">index.html</a><br/>
+									2. 금융경제 Column <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/coulmn_list.html" target="_blank">coulmn_list.html</a><br/>
+									3. 월간이벤트 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/event_eventList.html" target="_blank">event_eventList.html</a><br/>
+									4. My 30min > 나의 홈 추천강좌 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_myhome.html" target="_blank">myclip_myhome.html</a><br/>
+									5. My 30min > 찜한 강좌 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_steamed_list.html" target="_blank">myclip_steamed_list.html</a><br/>
+									6. My 30min > 이벤트참여내역 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_eventList.html" target="_blank">myclip_eventList.html</a><br/>
+								</div>
+								- 메일 폼 퍼블리싱<br/>
+								<div style="padding:0 0 0 15px;">
+									1. 회원가입완료 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/mail/mail_join.html" target="_blank">mail_join.html</a><br/>
+									2. 뉴스레터 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/mail/mail_newsletter.html" target="_blank">mail_newsletter.html</a><br/>
+									3. 쿠폰(관리자 팝업 및 뉴스레터) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/mail/mail_coupon.html" target="_blank">mail_coupon.html</a>
+								</div>
+							</strong>
+						</td>
+						<td>
+							<strong>
+								- css 현행화 완료<br/>
+								- video.js control bar 짤림현상, 가로모드 짤림현상 이슈 해결
+							</strong>
+						</td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">4</td>
+						<td class="ac">2019.10.28</td>
+						<td>
+							<strong>
+								- 테스트결과서2_20191024 진행
+								<div style="padding:0 0 0 15px;">
+									1. My30min > Home 추천강좌 데이터 정렬 확인 <a href="http://wjc.wbsoft.kr/usrs/mypage/myHome.do" target="_blank">myHome.do</a><br/>
+									2. My30min > 결제현황 calendar 중앙정렬 <a href="http://wjc.wbsoft.kr/usrs/mypage/myPayHist.do" target="_blank">myPayHist.do</a><br/>
+									3. My30min > 내정보수정 image Crop 기능 적용 확인 <a href="http://wjc.wbsoft.kr/usrs/mypage/userInfoMgntForm.do" target="_blank">userInfoMgntForm.do</a><br/>
+									4. [공통]PC 상단 전체메뉴 > membership hide<br/>
+									5. [공통]PC 상단 검색창 ie 확인<br/>
+									6. css 현행화 완료
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">5</td>
+						<td class="ac">2019.10.29</td>
+						<td>
+							<strong>
+								- video.js 소스분석 
+								<div style="padding:0 0 0 15px;">
+									1. video control-bar 커스터마이징(확대 등)<br/>
+									2. video 우측 INDEX(트리구조) 커스터마이징<br/>
+									3. css 현행화 완료
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">6</td>
+						<td class="ac">2019.10.30</td>
+						<td>
+							<strong>
+								- 강좌 상세페이지 > 강사소개 여백값 조정<br/>
+								- 간편회원가입
+								<div style="padding:0 0 0 15px;">
+									1. step01 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/simple_join_step01.html" target="_blank">simple_join_step01.html</a><br/>
+									2. step02 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/simple_join_step02.html" target="_blank">simple_join_step02.html</a><br/>
+									3. step03 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/simple_join_step03.html" target="_blank">simple_join_step03.html</a><br/>
+									4. step04 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/simple_join_step04.html" target="_blank">simple_join_step04.html</a><br/>
+								</div>
+								- 강좌상세 > 함께들으면 좋아요 롤링<br/>
+								- 강좌상세 > 강사소개 및 문의 noData 수정<br/>
+								- 전체강좌 > 검색 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/eco_list.html" target="_blank">eco_list.html</a>
+								- index crop 재정의<br/>
+								- 수강중인강좌 crop 재정의<br/>
+								- 강의실 crop 재정의<br/>
+								- 강의실 video control-bar em 변환<br/>
+								- 강좌상세 > video 썸네일 hover 추가<br/>
+								- 통합검색 crop 정의 및 문제점 분석<br/>
+								- 랜딩페이지 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/rending_page.html" target="_blank">rending_page.html</a>
+								- 강좌상세 수정요청사항 반영<br/>
+								- 강좌상세 강좌 맛보기 팝업 수정요청사항 반영<br/>
+								- subVisual 일원화<br/>
+								- 강의실 상세 러닝코치 수정요청사항 반영<br/>
+								- 일반, 강의실 플로팅 버튼 수정요청사항 반영 <br/>
+								- 30Minutes소개 > 서비스 퍼블리싱 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/intro_service02.html" target="_blank">intro_service02.html</a><br/>
+								- 30Minutes소개 > 강사 퍼블리싱 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/intro_teacher.html" target="_blank">intro_teacher.html</a><br/>
+							</strong>
+						</td>
+						<td>
+							<strong>
+							[FRONT]<br/>
+							css 퍼블리싱 / 개발 이원화<br/>
+							css 및 img, js 관련 수정 금지<br/>
+							- 강의실 video ie scale 0.8 현상
+							</strong>
+						</td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">6</td>
+						<td class="ac">2019.11.01</td>
+						<td>
+							<strong>
+								<div style="padding:0 0 0 15px;">
+									1. 회원가입 > 약관동의 수정요청사항 반영 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/simple_join_step01.html" target="_blank">simple_join_step01.html</a><br/>
+									2. 디자인 수정요청사항 반영<br/>
+									<div style="padding:0 0 0 15px;">
+										1.금융경제강좌 리스트 font 변경<br/>
+										2.통합검색 결과 폰트 및 영역 사이즈 변경<br/>
+										3.navi > active 상단라인 컬러 및 하단 그림자 적용, dropdown 그림자 수정<br/>
+										4.수강신청강좌 noData 배경컬러 적용 불가<br/>
+										5.사각 라디오 및 체크박스 active 수정<br/>
+										6.금융경제 column > 상세 본문 문단간격 및 색상 변경<br/>
+										7.index > mainBanner indigator 오버랩 적용<br/>
+									</div>
+									3. 디자인가이드 페이지 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/support_guide.html" target="_blank">support_guide.html</a><br/>
+									4. 내정보수정 뉴스레터 추가 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_myinfo_step02.html" target="_blank">myclip_myinfo_step02.html</a><br/>
+									5. 이메일수신거부 페이지 추가 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/mail/mail_reject.html" target="_blank">mail_reject.html</a><br/>
+									6. 이용약관 최종본 반영 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/etc_terms.html" target="_blank">etc_terms.html</a><br/>
+									7. 개인정보처리방침 최종본 반영 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/etc_privacy.html" target="_blank">etc_privacy.html</a><br/>
+								</div>
+							</strong>
+						</td>
+						<td>
+							<strong>
+							</strong>
+						</td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">7</td>
+						<td class="ac">2019.11.04</td>
+						<td>
+							<strong>
+								- index > 고객센터 관련 수정요청사항 반영<br/>
+								- 강의실 > video 배속 적용<br/>
+								- 강의실 > header 틀어짐 수정<br/>
+							</strong>
+						</td>
+						<td>
+							<strong>
+							</strong>
+						</td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">8</td>
+						<td class="ac">2019.11.05</td>
+						<td>
+							<strong>
+								- 포인트정책관련 추가 및 수정요청사항 반영<br/>
+								<div style="padding:0 0 0 15px;">
+									1. 포인트 내역 신규 메뉴 추가(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_point.html" target="_blank">myclip_point.html</a><br/>
+									2. 강좌리스트 포인트 적립 노출(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/eco_list.html" target="_blank">eco_list.html</a><br/>
+									3. 강좌상세 적립금액,포인트 사용 강좌여부(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/eco_listView_new.html" target="_blank">eco_listView_new.html</a> <br/>
+									4. 나의홈 포인트금액 노출(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_myhome.html" target="_blank">myclip_myhome.html</a><br/>
+									5. 결제 step02 주문자정보 등 상세 변경 (완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_cart.html" target="_blank">myclip_cart.html</a><br/>
+									6. 결제 step03 최종결제정보 쿠폰 추가 (완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_cart.html" target="_blank">myclip_cart.html</a><br/>
+								</div>
+								- 다중결제 포인트 수정요청사항 반영<br/>
+								<div style="padding:0 0 0 15px;">
+									1. 결제상세 주문강좌 리스트 변경 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_payment.html" target="_blank">myclip_payment.html</a><br/>
+									2. 결제상세 주문강좌 체크박스형식 추가 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_payment.html" target="_blank">myclip_payment.html</a><br/>
+								</div>
+								- 이용약관 최종본(11/05) 전체 수정요청사항 개발 반영<br/>
+							</strong>
+						</td>
+						<td>
+							<strong>
+							</strong>
+						</td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">9</td>
+						<td class="ac">2019.11.06</td>
+						<td>
+							<strong>
+								- my30min > home 수강중강좌,결제현황 노출 영역 수정요청사항 반영(완료)<br/>
+								- 사이트 수정기획(20191105) 반영<br/>
+								<div style="padding:0 0 0 15px;">
+									1. 강좌상세 맛보기 버튼 추가(완료)<br/>
+									2. 강좌상세 공유하기 디자인 변경(완료)<br/>
+									3. 강의실 video 트리구조 위치 변경 및 수정(완료)<br/>
+									4. 이메일무단수집거부 추가(개발서버 반영완료)<br/>
+									5. 유튜브 콘텐츠 화면 추가 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/support_youtube.html" target="_blank">support_youtube.html</a><br/> 
+									6. 간편회원가입 카카오톡 케이스 수정<br/> 
+								</div>
+								
+								<div style="padding:0 0 0 15px;">
+								
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">10</td>
+						<td class="ac">2019.11.07</td>
+						<td>
+							<strong>
+								- 결제완료 바닥페이지 추가(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_payComplate.html" target="_blank">myclip_payComplate.html</a> <br/>
+								- 디자인 및 퍼블리싱 수정사항
+								<div style="padding:0 0 0 15px;">
+									1. 메인 배경색교체(완료)<br/>
+									2. 메인 전체메뉴 좌측으로 교체(완료)<br/>
+									3. 현 전체메뉴 자리에 러닝코치 추가(완료)<br/>
+									4. 금융경제 홈 dashboard(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/column_home.html" target="_blank">column_home.html</a><br/>
+									5. 클라썸 연동 팝업창 추가(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/popup_connect.html" target="_blank">popup_connect.html</a> <br/>
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">11</td>
+						<td class="ac">2019.11.08</td>
+						<td>
+							<strong>
+								- navi scroll 유무의 판단에 따른 분기 index 오류 해결<br/>
+								- subpage 공통 height 조절<br/>
+								- index 베스트강좌후기 noData 수정<br/>
+								- 이메일 무단수집 거부 수정<br/>
+								- 다중 결제현황 수정<br/>
+								- contact us 추가(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/include/footer.html" target="_blank">footer.html</a><br/>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">12</td>
+						<td class="ac">2019.11.13</td>
+						<td>
+							<strong>
+								- 이메일무단수집거부 수정요청사항 반영(개발서버 반영 완료)<br/>
+								- index 하단 공지사항,FAQ 수정요청사항 반영(개발서버 반영 완료)<br/>
+								- 로그인 facebook 등 버튼 수정요청사항 반영(개발서버 반영 완료)<br/>
+								- 고객센터 home 퍼블리싱 완료<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_home.html" target="_blank">myclip_home.html</a><br/>
+								- 서비스소개 완료 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/intro_service02.html" target="_blank">intro_service02.html</a><br/>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">13</td>
+						<td class="ac">2019.11.14</td>
+						<td>
+							<strong>
+								- 아이디/비밀번호찾기 수정요청사항 완료 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/login_pw.html" target="_blank">login_pw.html</a><br/>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+
+					<tr class="comp">
+						<td class="ac">14</td>
+						<td class="ac">2019.11.15</td>
+						<td>
+							<strong>
+								- 결제현황 수정요청사항 완료 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_payment.html" target="_blank">myclip_payment.html</a><br/>
+								- 아이디/비밀번호찾기 수정요청사항 완료 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/login_pw.html" target="_blank">login_pw.html</a><br/>
+								- 트렌디뉴스 콘텐츠,유튜브보기 버튼 추가 완료 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/support_trendnews.html" target="_blank">support_trendnews.html</a><br/>
+								- 아이디/비밀번호찾기 2차 수정요청사항 완료 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/login_pw.html" target="_blank">login_pw.html</a><br/>
+								- 강의실 video 버튼 수정 완료<br/>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					-->
+					
+					<tr class="comp">
+						<td class="ac">15</td>
+						<td class="ac">2019.11.18</td>
+						<td>
+							<strong>
+								- 결제하기 삼성페이 케이스 추가(완료)<br/>
+								- 강좌 상세 수강기간 수정(완료)<br/>
+								- 서비스소개 페이지 수정(완료)<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/intro_service02.html" target="_blank">intro_service02.html</a><br/>
+								- 강의실 video index btn 교체(완료)<br/>
+								- 강좌 상세 video 재생 chorme 처리(완료)<br/>
+								- 간편로그인 상세 수정(완료)<br/>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">16</td>
+						<td class="ac">2019.11.19</td>
+						<td>
+							<strong>
+								- 비활성화버튼
+								<div style="padding:0 0 0 15px;">
+									1. 메인 썸네일 2개(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/index.html" target="_blank">index.html</a><br/>
+									2. 전체강좌 리스트1개(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/eco_list.html" target="_blank">eco_list.html</a><br/>
+								</div>
+								- 강좌 상세 css 수정(완료)<br/>
+								- 강의실 학습창 이미지 변경(완료)<br/>
+								- 간편로그인 버튼 수정(완료)<br/>
+								- 랜딩 페이지 수정요청사항 반영(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/rending_page.html" target="_blank">rending_page.html</a><br/>
+								- 칼럼 4개의 카테고리 수정(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/coulmn_list.html" target="_blank">coulmn_list.html</a><br/>
+								- 강의실 수정요청사항 반영(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/index.html" target="_blank">index.html</a><br/>
+								<div style="padding:0 0 0 15px;">		
+									1. 퀴즈평가 관련<br/>
+									2. 수료기준 안내<br/>
+									3. 총점 관련 아이콘 추가<br/>
+								</div>
+								- 회원가입 이메일 인증 수정(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/join_step02.html" target="_blank">join_step02.html</a><br/>
+								- 랜딩 페이지 재수정(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/rending_page.html" target="_blank">rending_page.html</a><br/>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+
+					<tr class="comp">
+						<td class="ac">17</td>
+						<td class="ac">2019.11.20</td>
+						<td>
+							<strong>
+								- 과정상세 차시 및 등록일 변경(완료)<br/>
+								- subVisual 수정요청사항 반영(완료)<br/>
+								- 칼럼4개 서브타이틀 추가(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/coulmn_list.html" target="_blank">coulmn_list.html</a><br/>
+								- 경제금융OPINON 수정요청사항 반영(디자인 대기)<br/>
+								- 강의실 퀴즈평가관련 수정 <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/index.html" target="_blank">index.html</a><br/>
+								<div style="padding:0 0 0 15px;">
+									
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">18</td>
+						<td class="ac">2019.11.21</td>
+						<td>
+							<strong>
+								- 금융경제오피니언 수정(완료)<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/column_home.html" target="_blank">column_home.html</a><br/>
+								- 수료증(완료)<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/certi_print.html" target="_blank">certi_print.html</a><br/>
+								<div style="padding:0 0 0 15px;">
+									
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">19</td>
+						<td class="ac">2019.11.23</td>
+						<td>
+							<strong>
+								1. 회원가입(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/mail/mail_join.html" target="_blank">mail_join.html</a><br/>
+								2. 금융경제칼럼(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/coulmn_list02.html" target="_blank">coulmn_list02.html</a><br/>
+								3. 고객센터 HOEM(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_home.html" target="_blank">myclip_home.html</a><br/>
+								<div style="padding:0 0 0 15px;">
+									
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">20</td>
+						<td class="ac">2019.11.25</td>
+						<td>
+							<strong>	
+								1. 카드뉴스(완료) <a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/popup_imgViewer.html" target="_blank">popup_imgViewer.html</a><br/>
+								2. 학습환경사전 테스트(1차 완료)<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_test.html" target="_blank">myclip_test.html</a><br/>
+								3. 고객센터 HOME 수정<br/>
+								4. font 재적용<br/>
+								5. 수료증 퍼블리싱<br/>
+								<div style="padding:0 0 0 15px;">
+									
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="comp">
+						<td class="ac">21</td>
+						<td class="ac">2019.11.26</td>
+						<td>
+							<strong>	
+								1. 학습환경사전 테스트 (완료)<br/>
+								<div style="padding:0 0 0 15px;">
+									<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/popup_test01.html" target="_blank">popup_test01.html</a><br/>
+									<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/popup_test02.html" target="_blank">popup_test02.html</a><br/>
+									<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/popup_test03.html" target="_blank">popup_test03.html</a><br/>
+									<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/popup_test04.html" target="_blank">popup_test04.html</a><br/>
+								</div>
+								2. 고객센터 수정요청사항 반영(완료)<br/>
+								3. 이용가이드 전면 수정<br/>
+								4. 카드뉴스 ui 정립 및 수정요청사항 반영<br/>
+								5. 게시판 상세 font 수정<br/>
+								6. 강좌 상세 수정요청사항 반영<br/>
+								<div style="padding:0 0 0 15px;">
+									
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+					
+					<tr class="ing">
+						<td class="ac">22</td>
+						<td class="ac">2019.11.27</td>
+						<td>
+							<strong>	
+								1. 회원가입 step 관련 추가<br/>
+								2. button font 재정립(완료)<br/>
+								3. 랜딩페이지 아이콘 수정(완료)<br/>
+								4. 강좌 상세 nodata 및 아이콘 수정<br/>
+								5. disabled 케이스 수정<br/>
+								
+								<div style="padding:0 0 0 15px;">
+									
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+				
+					<tr class="">
+						<td class="ac">-</td>
+						<td class="ac">-</td>
+						<td>
+							<strong>
+								- 추후 예정
+								<div style="padding:0 0 0 15px;">
+									
+								</div>
+							</strong>
+						</td>
+						<td></td>
+					</tr>
+			
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="fixedHead">
+		<div class="box">
+			<table>
+				<colgroup>
+					<col width="10%"/>
+					<col width="10%"/>
+					<col width="10%"/>
+					<col width="15%"/>
+					<col width="10%"/>
+					<col width="*"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>1DEPTH</th>
+						<th>2DEPTH</th>
+						<th>3DEPTH</th> 
+						<th>URL</th>
+						<th>DATE</th>
+						<th>REMARKS</th>
+					</tr>	
+				</thead>
+				<tbody>
+					<tr class="modify">
+						<td>index</td>
+						<td></td>
+						<td></td>
+						<td><a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/eco_list.html" target="_blank">index.html</a></td>
+						<td><strong></strong></td>
+						<td><strong>- 2019.10.16 로그인 전 케이스(모바일) 추가</strong></td>
+					</tr>
+					<tr class="comp">
+						<td rowspan="3">30MNIUTES 소개</td>
+						<td>서비스 소개</td>
+						<td></td>
+						<td></td>
+						<td><strong></strong></td>
+						<td>CMS</td>					
+					</tr>
+					<tr class="comp">
+						<td>커리큘럼</td>
+						<td></td>
+						<td></td>
+						<td><strong></strong></td>
+						<td>CMS</td>					
+					</tr>
+					<tr class="comp">
+						<td>강사소개</td>
+						<td></td>
+						<td></td>
+						<td><strong></strong></td>
+						<td>CMS</td>					
+					</tr>
+					
+					<tr class="comp">
+						<td rowspan="4">금융경제강좌</td>
+						<td>전체강좌</td>
+						<td></td>
+						<td rowspan="4">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/eco_list.html" target="_blank">eco_list.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/eco_listView_new.html" target="_blank">eco_listView_new.html</a>
+						</td>
+						<td><strong></strong></td>
+						<td rowspan="4">공통 list & view</td>					
+					</tr>
+					<tr class="comp">
+						<td>Everyday Finance</td>
+						<td></td>
+						<td><strong></strong></td>			
+					</tr>
+					<tr class="comp">
+						<td>Reading 글로벌 이코노미</td>
+						<td></td>
+						<td><strong></strong></td>
+					</tr>
+					<tr class="comp">
+						<td>Essential Finance</td>
+						<td></td>
+						<td><strong></strong></td>
+					</tr>
+					
+					<tr class="comp">
+						<td rowspan="4">금융경제 Column</td>
+						<td>영주닐슨교수의 글로벌 경제</td>
+						<td></td>
+						<td rowspan="4">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/coulmn_list.html" target="_blank">coulmn_list.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/coulmn_listView.html" target="_blank">coulmn_listView.html</a>
+						</td>
+						<td><strong></strong></td>
+						<td rowspan="4">공통 list & view</td>					
+					</tr>
+					<tr class="comp">
+						<td>홍박사 부동산</td>
+						<td></td>
+						<td><strong></strong></td>
+					</tr>
+					<tr class="comp">
+						<td>신기자의 한국경제</td>
+						<td></td>
+						<td><strong></strong></td>
+					</tr>
+					<tr class="comp">
+						<td>김작가의 은퇴금융</td>
+						<td></td>
+						<td><strong></strong></td>
+					</tr>
+					
+					<tr class="comp">
+						<td>이벤트</td>
+						<td>월간이벤트</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/event_eventList.html" target="_blank">event_eventList.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/event_eventListView.html" target="_blank">event_eventListView.html</a>
+						</td>
+						<td><strong></strong></td>
+						<td>list & view</td>					
+					</tr>
+					
+					<tr class="comp">
+						<td rowspan="4">SUPPORT</td>
+						<td>Trend NEWS</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/support_trendnews.html" target="_blank">support_trendnews.html</a><br/>
+						</td>
+						<td><strong>2019.10.14</strong></td>
+						<td></td>					
+					</tr>
+					<tr class="comp">
+						<td>공지사항</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/support_notice.html" target="_blank">support_notice.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/support_noticeView.html" target="_blank">support_noticeView.html</a>
+						</td>
+						<td><strong>2019.10.11</strong></td>
+						<td>list & view</td>					
+					</tr>
+					<tr class="comp">
+						<td>FAQ</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/support_faq.html" target="_blank">support_faq.html</a><br/>
+						</td>
+						<td><strong>2019.10.14</strong></td>
+						<td></td>					
+					</tr>
+					<tr class="">
+						<td>이용가이드</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/event_eventList.html" target="_blank"></a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/event_eventListView.html" target="_blank"></a>
+						</td>
+						<td><strong></strong></td>
+						<td>데이터 수급 후 작업 예정</td>					
+					</tr>
+
+					<tr class="comp">
+						<td rowspan="11">MYCLIP</td>
+						<td>나의 홈</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_myhome.html" target="_blank">myclip_myhome.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td></td>					
+					</tr>
+					<tr class="comp">
+						<td rowspan="3">나의 강좌</td>
+						<td>수강신청강좌</td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_lecture_apply.html" target="_blank">myclip_lecture_apply.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td></td>					
+					</tr>
+					<tr class="comp">
+						<td>수강중인강좌</td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_lecture_taking.html" target="_blank">myclip_lecture_taking.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td></td>					
+					</tr>
+					<tr class="comp">
+						<td>수강완료강좌</td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_lecture_compleat.html" target="_blank">myclip_lecture_compleat.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td></td>					
+					</tr>
+					<tr class="comp">
+						<td>강좌후기</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_review.html" target="_blank">myclip_review.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td>후기등록 레이어팝업 포함</td>					
+					</tr>
+					<tr class="modify">
+						<td>결제현황</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_payment.html" target="_blank">myclip_payment.html</a><br/>
+						</td>
+						<td><strong>2019.10.11</strong></td>
+						<td>
+							결제상세 및 취소/환불상세 레이어팝업 포함<br/>
+							<strong>- 2019.10.15 환불 케이스 추가</strong>
+						</td>				
+					</tr>
+					<tr class="comp">
+						<td>장바구니</td>
+						<td class="comp"></td>
+						<td class="comp">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_care.html" target="_blank">myclip_cart.html</a><br/>
+						</td>
+						<td class="comp"><strong>2019.10.11</strong></td>
+						<td class="comp"></td>					
+					</tr>
+					<tr class="comp">
+						<td>찜한강좌</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_steamed_list.html" target="_blank">myclip_steamed_list.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td>결제상세 및 취소/환불상세 레이어팝업 포함</td>					
+					</tr>
+					<tr class="comp">
+						<td>내정보수정</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_myinfo.html" target="_blank">myclip_myinfo.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_myinfo_step02.html" target="_blank">myclip_myinfo_step02.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td>내정보수정 1step, 2step</td>					
+					</tr>
+					<tr class="comp">
+						<td>이벤트참여내역</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_eventList.html" target="_blank">myclip_eventList.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/event_eventListView.html" target="_blank">event_eventListView.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td>list & view</td>					
+					</tr>
+					<tr class="comp">
+						<td>1:1문의</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_question.html" target="_blank">myclip_question.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_question_view.html" target="_blank">myclip_question_view.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_question_write.html" target="_blank">myclip_question_write.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td>list & view & write</td>					
+					</tr>
+
+					<tr class="">
+						<td rowspan="6">FOOTER</td>
+						<td class="comp">서비스소개</td>
+						<td class="comp"></td>
+						<td class="comp">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_question.html" target="_blank"></a><br/>
+						</td>
+						<td class="comp"><strong></strong></td>
+						<td class="comp">CMS</td>					
+					</tr>
+					<tr class="modify">
+						<td>이용약관</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/etc_terms.html" target="_blank">etc_terms.html</a><br/>
+						</td>
+						<td><strong>2019.10.18</strong></td>
+						<td><strong>1차 데이터 수급 후 작업 완료. <br/>추후 2차 수급 후 수정 예정</strong></td>
+					</tr>
+					<tr class="modify">
+						<td>개인정보처리방침</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/etc_privacy.html" target="_blank">etc_privacy.html</a><br/>
+						</td>
+						<td><strong>2019.10.18</strong></td>
+						<td><strong>1차 데이터 수급 후 작업 완료. <br/>추후 2차 수급 후 수정 예정</strong></td>
+					</tr>
+					<tr class="modify">
+						<td>이메일 무단수집거부</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/etc_email.html" target="_blank">etc_email.html</a><br/>
+						</td>
+						<td><strong>2019.10.18</strong></td>
+						<td><strong>1차 데이터 수급 후 작업 완료. <br/>추후 2차 수급 후 수정 예정</strong></td>
+					</tr>
+					<tr class="">
+						<td>CONTACT US</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_question.html" target="_blank"></a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td></td>					
+					</tr>
+					<tr class="add">
+						<td>FOOTER</td>
+						<td></td>
+						<td></td>
+						<td><strong>2019.10.21</strong></td>
+						<td><strong>- 2019.10.21 패밀리사이트 삭제</strong></td>					
+					</tr>
+					
+					<tr class="">
+						<td rowspan="5">ETC</td>
+						<td class="comp">로그인/로그아웃</td>
+						<td class="comp"></td>
+						<td class="comp">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/login.html" target="_blank">login.html</a><br/>
+						</td>
+						<td class="comp"><strong></strong></td>
+						<td class="comp"></td>					
+					</tr>
+					<tr class="comp">
+						<td>회원가입</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/join.html" target="_blank">join.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/join_step02.html" target="_blank">join_step02.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/join_complete.html" target="_blank">join_complete.html</a><br/>
+						</td>
+						<td><strong></strong></td>
+						<td>1step, 2step, complete page</td>					
+					</tr>
+					<tr class="comp">
+						<td>검색결과</td>
+						<td></td>
+						<td>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/search.html" target="_blank">search.html</a><br/>
+						</td>
+						<td><strong>2019.10.17</strong></td>
+						<td></td>					
+					</tr>
+					<tr class="comp">
+						<td class="">결제하기</td>
+						<td class=""></td>
+						<td class="">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/myclip_cart.html" target="_blank">myclip_cart.html</a><br/>
+						</td>
+						<td class=""><strong>2019.10.14</strong></td>
+						<td class="">결제하기 step02, step03 레이어팝업</td>					
+					</tr>
+					<tr class="add">
+						<td class="">새 창 팝업</td>
+						<td class=""></td>
+						<td class="">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/woongin/type02/popup_sample.html" target="_blank">popup_sample.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/survey_popup.html" target="_blank">survey_popup.html</a><br/>
+						</td>
+						<td class=""><strong>2019.10.18</strong></td>
+						<td class="">
+							<strong>- 일반 새 창 팝업</strong><br/>
+							<strong>- 강의실 새 창 팝업</strong>
+						</td>					
+					</tr>
+
+					<tr class="">
+						<td rowspan="5">강의실</td>
+						<td class="modify">강의실홈</td>
+						<td class="modify"></td>
+						<td class="modify">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/index.html" target="_blank">index.html</a><br/>
+						</td>
+						<td class="modify"><strong></strong></td>
+						<td class="modify">
+							<strong>- 2019.10.18 진행상태평가 상태, 시험응시 레이어팝업 추가</strong>
+						</td>					
+					</tr>
+					<tr class="modify">
+						<td class="">공지사항</td>
+						<td class=""></td>
+						<td class="">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/notice.html" target="_blank">notice.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/noticeView.html" target="_blank">noticeView.html</a><br/>
+						</td>
+						<td class=""><strong>2019.10.15</strong></td>
+						<td class="">
+							list & view<br/>
+							<strong>- 2019.10.16 공지사항 고정게시물 추가</strong>
+						</td>					
+					</tr>
+					<tr class="comp">
+						<td class="">설문참여</td>
+						<td class=""></td>
+						<td class="">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/survey.html" target="_blank">survey.html</a><br/>
+						</td>
+						<td class=""><strong>2019.10.16</strong></td>
+						<td class="">list & 설문참여하기 레이어팝업</td>					
+					</tr>
+					<tr class="comp">
+						<td class="">자료실</td>
+						<td class=""></td>
+						<td class="">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/reference.html" target="_blank">reference.html</a><br/>
+						</td>
+						<td class=""><strong>2019.10.15</strong></td>
+						<td class="">list & view</td>					
+					</tr>
+					<tr class="comp">
+						<td class="">학습문의</td>
+						<td class=""></td>
+						<td class="">
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/question.html" target="_blank">question.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/question_view.html" target="_blank">question_view.html</a><br/>
+							<a href="http://58.233.207.97:8001/woongjin/woongjin_new02/publish/classroom/question_write.html" target="_blank">question_write.html</a><br/>
+						</td>
+						<td class=""><strong>2019.10.16</strong></td>
+						<td class="">list & view & write</td>					
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>

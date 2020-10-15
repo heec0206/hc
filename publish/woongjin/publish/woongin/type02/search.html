@@ -1,0 +1,285 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+
+		<!-- containerIn -->
+		<div class="containerIn">
+
+			<!-- searchResult --> 
+			<div class="searchResult">
+			
+				<div class="searchArea">
+					<div class="searchAreaBox">
+						<div class="searchAreaIn">
+							<input id="searchInput" type="text" value="글로벌"/>
+							<button class="searchIco"></button>						
+							<div class="search_keyup" style="display:none;">
+								<ul>
+									<li><a href="javascript:void(0);">금융</a><button class="search_del"></button></li>
+									<li><a href="javascript:void(0);">경제</a><button class="search_del"></button></li>
+									<li><a href="javascript:void(0);">어떤 <strong class="txt_red">글로벌</strong> 강좌가 좋을까</a><button class="search_del"></button></li>
+									<li><a href="javascript:void(0);">어떤 <strong class="txt_red">글로벌</strong> 강좌가 좋을까 어떤 <strong class="txt_red">글로벌</strong> 강좌가 좋을까 어떤 <strong class="txt_red">글로벌</strong> 강좌가 좋을까</a><button class="search_del"></button></li>
+								</ul>
+								<div class="search_keyup_del">
+									<a href="javascript:void(0);">전체 검색기록 삭제</a>
+								</div>	
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$("#searchInput").focus(function(){
+									$(".search_keyup").show();
+								});
+							});
+						</script>
+
+						<div class="searchKeyword">
+							<p>인기</p>
+							<ul>
+								<li><a href="javascript:void(0);">#금융</a></li>
+								<li><a href="javascript:void(0);">#경제</a></li>
+								<li><a href="javascript:void(0);">#Global</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<h3 class="search_tit">검색 결과 <span>(<strong>0</strong>건)</span></h3>			
+				<div class="search_noData">
+					"<span class="search_strong">잼ㅜ</span>"에 대한 검색 결과가 없습니다.
+				</div>
+				<div class="myclip_comple">
+					<strong class="tit"><img src="../../../images/template7/resp/default/icon/icon_myclip_comple.png" alt=""></strong>
+					<p>검색어의 철자가 정확한지 확인해 주세요.<br/>단어의 수를 줄여보세요. 비슷한 다른 검색어를 입력해 보세요.</p>
+				</div>
+				
+				<h3 class="search_tit">강좌 검색 결과 <span>(<strong>2</strong>건)</span></h3>
+				<div class="eco_list search">
+					<ul>
+						<li>
+							<div class="eco_listBox">
+								<div class="eco_listBoxL">
+									<a href="eco_listView_new.html">
+										<div class="division">6차</div>
+										<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample01.jpg" alt="" />
+									</a>
+								</div>
+								<div class="eco_listBoxR">
+									<span class="sticker">금융경제강좌</span>
+									<strong class="tit ellipsis">Everyday Finance</strong>
+									<div class="searchInfo">
+										강좌를 학습 하시는 분들을 만나게 되어 반갑습니다. 본 강좌는 경제에 대한 기본 이해를 돕습니다.<br/>
+									</div>
+									<div class="searchInfoLInk">
+										<a href="eco_listView_new.html" class="searchLink">자세히보기<span>＞</span></a>
+									</div>
+								</div>	
+							</div>
+						</li>
+						<li>
+							<div class="eco_listBox">
+								<div class="eco_listBoxL">
+									<a href="eco_listView_new.html">
+										<div class="division">3차</div>
+										<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample02.jpg" alt="" />
+									</a>
+								</div>
+								<div class="eco_listBoxR">
+									<span class="sticker">금융경제강좌</span>
+									<strong class="tit ellipsis">Reading 글로벌 이코노미</strong>
+									<div class="searchInfo">
+										강좌를 학습 하시는 분들을 만나게 되어 반갑습니다. 본 강좌는 경제에 대한 기본 이해를 돕습니다.<br/>
+										총 4개의 장 으로 구성 되어 있습니다. 경제에 대한 기본 이해를 돕습니다. 총 4개의 장 으로 구성 되어있습니다. 강좌를 학습 하시는 분들을 만나게 되어 반갑습니다. 본 강좌는 경제에 대한 기본 이해를 돕습니다.
+									</div>
+									<div class="searchInfoLInk">
+										<a href="eco_listView_new.html">자세히보기<span>＞</span></a>
+									</div>
+								</div>	
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<h3 class="search_tit">칼럼 검색 결과 <span>(<strong>3</strong>건)</span></h3>
+				<div class="myclip_best column search">
+					<ul>
+						<li>
+							<a class="infoBox" href="coulmn_listView.html">
+								<span class="thumb">
+									<div class="division">6차</div>
+									<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_column_sample01.jpg" alt="" />
+								</span>
+								<span class="info">
+									<span class="tit">일본 압도 ..19년 째 세계 1위<br/>한국소재 기업</span>
+									<span class="mini">환율</span>
+									<span class="mini">한국경제</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="infoBox" href="coulmn_listView.html">
+								<span class="thumb">
+									<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_noData_img.jpg" alt="" />
+								</span>
+								<span class="info">
+									<span class="tit">나노메딕스, 스탠다드 그래핀 CB 50억원에 취득 결정</span>
+									<span class="mini">전환사채</span>
+									<span class="mini">한국경제</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="infoBox" href="coulmn_listView.html">
+								<span class="thumb">
+									<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_column_sample03.jpg" alt="" />
+								</span>
+								<span class="info">
+									<span class="tit">경제활동의 세계화</span>
+									<span class="mini">경제활동</span>
+									<span class="mini">세계화</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a class="infoBox" href="coulmn_listView.html">
+								<span class="thumb">
+									<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_column_sample03.jpg" alt="" />
+								</span>
+								<span class="info">
+									<span class="tit">경제활동의 세계화</span>
+									<span class="mini">경제활동</span>
+									<span class="mini">세계화</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+			<div class="myclip_best search02">
+				<p class="search_tit02">추천강좌</p>
+				<ul class="slickSlider">
+					<li>
+						<a class="infoBox" href="javascript:void(0);">
+							<span class="thumb">
+								<div class="division">6차</div>
+								<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample01.jpg" alt="" />
+							</span>
+							<span class="info">
+								<span class="sticker">금융경제강좌</span>
+								<span class="tit ellipsis">Everyday Finance</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="infoBox" href="javascript:void(0);">
+							<span class="thumb">
+								<div class="division">3차</div>
+								<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample02.jpg" alt="" />
+							</span>
+							<span class="info">
+								<span class="sticker">금융경제강좌</span>
+								<span class="tit ellipsis">Essential Finance</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="infoBox" href="javascript:void(0);">
+							<span class="thumb">
+								<div class="division">11차</div>
+								<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample03.jpg" alt="" />
+							</span>
+							<span class="info">
+								<span class="sticker">금융경제강좌</span>
+								<span class="tit ellipsis">Reading 글로벌 이코노미</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="infoBox" href="javascript:void(0);">
+							<span class="thumb">
+								<div class="division">6차</div>
+								<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample01.jpg" alt="" />
+							</span>
+							<span class="info">
+								<span class="sticker">금융경제강좌</span>
+								<span class="tit ellipsis">Essential Finance</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<script>
+			$(function(){
+				$('.myclip_best .slickSlider').slick({
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					speed:1000,
+					arrows : true,
+					dots : false,
+					pauseOnHover:false,
+					pauseOnFocus: false,
+					//centerMode: true,
+					//variableWidth: true,
+					responsive: [
+						{
+							breakpoint: 920, 
+							settings: {
+								slidesToShow:2,
+								slidesToScroll:1
+							}
+						},
+						{
+							breakpoint: 640,
+							settings: {
+								slidesToShow:1,
+								slidesToScroll:1
+							}
+						}
+					]
+				});
+			});
+			</script>
+				
+			</div>
+			<!-- EOD : searchResult -->
+			
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

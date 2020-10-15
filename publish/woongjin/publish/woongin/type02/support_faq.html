@@ -1,0 +1,130 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub05">Trend NEWS</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">SUPPORT</a></li>
+				<li><a href="javascript:void(0);">Trend NEWS</a></li>
+			</ul>
+			
+			<ul class="tabBox">
+				<li class="active"><a href="javascript:void(0);"><span>전체</span></a></li>
+				<li><a href="javascript:void(0);"><span>수강문의</span></a></li>
+				<li><a href="javascript:void(0);"><span>결제문의</span></a></li>
+				<li><a href="javascript:void(0);"><span>동영상문의</span></a></li>
+			</ul>
+			
+			<ul class="faq_list">
+				<li>
+					<a href="javascript:void(0);">동영상이 안나와요.</a>
+					<div class="faq_contents">
+						<p class="txt_gray01 mt0"><strong>1. 인터넷 브라우저 초기화</strong></p>
+						<div class="etc_box">
+							<p class="txt_default">1) 현재 열려 있는 모든 Internet Explorer 창을 닫습니다.</p>
+							<p class="txt_default">2) 작업 표시줄에서 Internet Explorer 아이콘을 클릭하여 Internet Explorer를 엽니다.</p>
+							<p class="txt_default">3) 도구를 클릭한 다음 인터넷 옵션을 클릭합니다.</p>
+							<p class="txt_default">4) 고급 탭을 클릭한 다음 원래대로를 클릭합니다.</p>
+							<p class="txt_default">5) Internet Explorer 기본 설정 복원 대화 상자에서 원래 대로를 클릭합니다.</p>
+							<p class="txt_default">6) Internet Explorer에서 기본 설정 적용이 끝나면 닫기를 탭 하거나 클릭한 다음 확인을 클릭합니다. 이러한 변경 사항을 적용하려면 PC를 다시 시작해야 합니다.</p>
+						</div>
+
+						<p class="txt_gray01 mt20"><strong>2. 그래픽카드 또는 사운드카드 업데이트</strong></p>
+						<div class="etc_box">
+							<p class="txt_default">동영상 오류 : 그래픽카드 업데이트</p>
+							<p class="txt_default">소리 오류 : 사운드카드 업데이트</p>
+							<p class="txt_default">1) 인터넷 포털 사이트에서 컴퓨터 사양 체크 프로그램 3DP chip을 다운받습니다.</p>
+							<p class="txt_default">2) 3DP chip 프로그램을 설치합니다.</p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<a href="javascript:void(0);">강좌 수강 및 학습 중 궁금한 점은 어디에 질문할 수 있나요?</a>
+					<div class="faq_contents">
+						<div class="txt_gray01"><strong>강좌 수강 및 학습 중 궁금한 점은 어디에 질문할 수 있나요?</strong></div>
+					</div>
+				</li>
+				
+				<li>
+					<a href="javascript:void(0);">연장/재수강이 무엇인가요?</a>
+					<div class="faq_contents">
+						<div class="txt_gray01"><strong>연장/재수강이 무엇인가요?</strong></div>
+					</div>
+				</li>
+				
+				<li>
+					<a href="javascript:void(0);">수강목록이 보이지 않아요.</a>
+					<div class="faq_contents">
+						<div class="txt_gray01"><strong>수강목록이 보이지 않아요.</strong></div>
+					</div>
+				</li>
+				
+				<li>
+					<a href="javascript:void(0);">결제 후 나중에 수강해도 되나요?</a>
+					<div class="faq_contents">
+						<div class="txt_gray01"><strong>결제 후 나중에 수강해도 되나요?</strong></div>
+					</div>
+				</li>
+				
+				<li>
+					<a href="javascript:void(0);">제 아이디에 등록된 기기정보는 어디에서 확인 가능한가요?</a>
+					<div class="faq_contents">
+						<div class="txt_gray01"><strong>제 아이디에 등록된 기기정보는 어디에서 확인 가능한가요?</strong></div>
+					</div>
+				</li>
+			</ul>
+			<script>
+				jQuery(document).on('click',".faq_list > li > a",function(){
+					if(jQuery(this).parent().hasClass("active")){
+						jQuery(this).parent().removeClass("active");
+						jQuery(this).siblings(".faq_contents").slideUp(400);
+					}else{
+						jQuery(this).parent().addClass("active");
+						jQuery(this).siblings(".faq_contents").slideDown(400);
+					}
+				});
+			</script>
+			
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

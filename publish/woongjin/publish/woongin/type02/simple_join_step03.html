@@ -1,0 +1,166 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub06">회원가입</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">회원가입</a></li>
+			</ul>
+			
+			<!-- etc_payStep -->
+			<ul class="etc_payStep join">
+				<li>
+					<div class="etc_payStepBox">
+						<span class="tit">STEP 1</span>
+						<strong class="txt">약관동의</strong>
+					</div>
+				</li>
+				<li>
+					<div class="etc_payStepBox">
+						<span class="tit">STEP 2</span>
+						<strong class="txt">본인인증</strong>
+					</div>
+				</li>
+				<li class="active">
+					<div class="etc_payStepBox">
+						<span class="tit">STEP 3</span>
+						<strong class="txt">회원정보입력</strong>
+					</div>
+				</li>
+				<li>
+					<div class="etc_payStepBox">
+						<span class="tit">STEP 4</span>
+						<strong class="txt">가입완료</strong>
+					</div>
+				</li>
+			</ul>
+			<!-- EOD : etc_payStep -->
+					
+			<div class="myInfo step02">
+				<!-- myInfoBox -->
+				<div class="myInfoBox">
+					<div class="inputBox">
+						<p class="tit">이메일 주소<span class="txt_red">*</span></p>
+						<div class="wide_inputBox join">
+							<input class="gray" type="email" placeholder="이메일주소 형식에 맞게 기입해주세요.">
+							<div class="join_chkPoint01"><i class="fa fa-times"></i></div>
+						</div>
+						<div class="chk_txt">이메일 주소 형식과 맞지 않습니다.</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">비밀번호<span class="txt_red">*</span></p>
+						<div class="wide_inputBox join">
+							<input class="gray" type="password" placeholder="영문,숫자,특수문자 조합 8자 이상">
+							<div class="join_chkPoint02"><i class="fa fa-check" aria-hidden="true"></i></div>
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">비밀번호 확인<span class="txt_red">*</span></p>
+						<div class="wide_inputBox">
+							<input class="gray" type="password" placeholder="위의 비밀번호를 다시 한번 기입해주세요.">
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">성명<span class="txt_red">*</span></p>
+						<div class="myInfoName">
+							<input class="firstName" type="text" value="홍" disabled="">
+							<input class="lastName" type="text" value="길동" disabled="">
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">생년월일<span class="txt_red">*</span></p>
+						<div class="myInfoBirth">
+							<ul>
+								<li><input type="text" value="1990년" disabled=""></li>
+								<li><input type="text" value="01월" disabled=""></li>
+								<li><input type="text" value="01일" disabled=""></li>
+							</ul>
+							<div class="inputSymbol">
+								<div class="input_list">
+									<input class="radioRadi" type="radio" name="symbol" id="symbol01" checked="">
+									<label for="symbol01">남</label>								
+								</div>
+								<div class="input_list">
+									<input class="radioRadi" type="radio" name="symbol" id="symbol02" disabled="">
+									<label for="symbol02">여</label>
+								</div>
+							</div> 
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">휴대폰 번호<span class="txt_red">*</span></p>
+						<div class="inputPhone join">
+							<ul>
+								<li>
+									<div class="wide_inputBox">
+										<input class="" type="text" value="010" disabled="">
+									</div>
+								</li>
+								<li>
+									<div class="wide_inputBox">
+										<input class="" type="text" value="1234" disabled="">
+									</div>
+								</li>
+								<li>
+									<div class="wide_inputBox">
+										<input class="" type="text" value="5678" disabled="">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="btn_my_step">
+						<button class="btn_black_radi mt0" onclick="location.href='simple_join_step04.html'">회원가입 완료</button>
+					</div>
+				</div>
+				<!-- EOD : myInfoBox -->
+			</div>
+			
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

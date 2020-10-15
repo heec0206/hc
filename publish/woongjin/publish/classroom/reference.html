@@ -1,0 +1,172 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅 | 나의 강좌</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="../../css/classroom/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../css/classroom/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../css/classroom/template7/resp/wbUser.css?ver=1.5" rel="stylesheet"/>
+	<script src="../../js/classroom/jquery-1.7.2.js"></script>
+	<script src="../../js/classroom/jquery-ui-1.8.2.js"></script>
+	<script src="../../js/classroom/slick.js"></script>	
+	<script src="../../js/classroom/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../js/classroom/html5.js"></script>
+		<script src="../../js/classroom/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+			$(".lnbInclude").load("include/lnb.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<!-- cr_info -->
+		<div class="cr_info">
+			<div class="cr_infoBox">
+				<div class="thumb"><img class="cropImg" src="../../images/classroom/template7/resp/default/usr/usr_ecoList_sample02.jpg" alt=""/></div>
+				<div class="info">
+					<strong>내 자산관리 첫 번째 필수코스</strong>
+					<span class="edu">교육기간 : <span class="date">2019.09.01~2019.09.30</span> (잔여학습 <span class="date">14일</span> 남았습니다)</span>
+				</div>
+				<button class="learningBtn"><span></span>러닝코치</button>
+			</div>
+		</div>	
+		<!-- EOD : cr_info -->
+		
+		<!-- containerIn -->
+		<div class="containerIn">
+			<!-- lnb -->
+			<div class="lnbInclude"></div>
+			<!-- EOD : lnb -->
+			
+			<!-- contentBox -->
+			<div class="contentBox">
+				<h2>자료실</h2>
+				
+				<div class="searchBox">
+					<div class="searchBoxIn">
+						<div class="select_box">
+							<label for="phoneFirst">전체</label>
+							<select id="phoneFirst">
+								<option>전체</option>
+								<option>제목</option>
+								<option>제목+내용</option>
+							</select>
+						</div>
+						<input type="text" />
+						<button class="btn_black_S mg0">검색</button>
+					</div>
+				</div>
+				
+				<table class="table_class">
+					<colgroup>
+						<col class="mobH" width="60px"/>
+						<col width="*"/>
+						<col class="tabH" width="80px"/>
+						<col class="mobH" width="80px"/>
+						<col width="100px"/>
+						<col class="mobH" width="80px"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th class="mobH">No</th>
+							<th class="mobLine">제목</th>
+							<th class="mobH">첨부파일</th>
+							<th class="tabH">작성자</th>
+							<th>등록일</th>
+							<th class="mobH">조회수</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ac mobH">4</td>
+							<td>
+								<a class="tit" href="noticeView.html">자료실 게시물</a>
+							</td>
+							<td class="ac mobH">
+								<a href="javascript:void(0);" class="fileName">
+									<img src="../../images/classroom/template7/resp/default/icon/icon_fileName.png">
+								</a>
+							</td>
+							<td class="ac tabH">관리자</td>
+							<td class="ac">2019.10.02</td>
+							<td class="ac mobH">152</td>
+						</tr>
+						<tr>
+							<td class="ac mobH">3</td>
+							<td>
+								<a class="tit" href="noticeView.html">자산관리에 필요한 교재 파일</a>
+							</td>
+							<td class="ac mobH">
+								<a href="javascript:void(0);" class="fileName">
+									<img src="../../images/classroom/template7/resp/default/icon/icon_fileName.png">
+								</a>
+							</td>
+							<td class="ac tabH">관리자</td>
+							<td class="ac">2019.09.26</td>
+							<td class="ac mobH">352</td>
+						</tr>
+						<tr>
+							<td class="ac mobH">2</td>
+							<td>
+								<a class="tit" href="noticeView.html">부동산 기초 핵심 정리</a>
+							</td>
+							<td class="ac mobH">
+								<a href="javascript:void(0);" class="fileName">
+									<img src="../../images/classroom/template7/resp/default/icon/icon_fileName.png">
+								</a>
+							</td>
+							<td class="ac tabH">관리자</td>
+							<td class="ac">2019.09.22</td>
+							<td class="ac mobH">411</td>
+						</tr>
+						<tr>
+							<td class="ac mobH">2</td>
+							<td>
+								<a class="tit" href="noticeView.html">자료실 안내</a>
+							</td>
+							<td class="ac mobH"></td>
+							<td class="ac tabH">관리자</td>
+							<td class="ac">2019.09.01</td>
+							<td class="ac mobH">81</td>
+						</tr>
+						
+						<!-- noData 
+						<tr>
+							<td colspan="6">
+								<div class="noData">등록된 자료가 없습니다.</div>
+							</td>
+						</tr>
+						-->
+					</tbody>
+				</table>
+				
+				<div class="newMoreBtnBox">
+					<button class="newMoreBtn">VIEW MORE</button>
+				</div>
+				
+	
+			</div>
+			<!-- EOD : contentBox -->
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

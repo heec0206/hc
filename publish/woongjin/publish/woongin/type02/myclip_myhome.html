@@ -1,0 +1,307 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub06">나의 홈</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">My 30min.</a></li>
+				<li><a href="javascript:void(0);">나의 홈</a></li>
+			</ul>
+			
+			<!-- myclipBox -->
+			<div class="myclipBox">
+				<div class="myclipBoxL">
+					<div class="thumb"><img src="../../../images/template7/resp/default/usr/usr_myclip_profile.jpg" alt=""/></div>
+					<div class="info">
+						<span class="name"><strong>홍길동</strong>님</span>
+						<span class="date">가입일 : 2019.09.26</span>
+						<!-- 2019.11.05 포인트 추가 -->
+						<span class="point">포인트 : 2000<span class="sticker">P</span></span>
+						<!-- EOD : 2019.11.05 포인트 추가 -->
+						<button class="btn_black_S" onclick="location.href='javascript:void(0);'">내 정보 수정</button>
+					</div>
+				</div>
+				<div class="myclipBoxR">
+					<ul>
+						<li>
+							<a class="myclipNum" href="myclip_lecture_taking.html">
+								<span class="tit"><strong>2</strong>건</span>
+								<span class="txt">수강중인 강좌</span>
+							</a>
+						</li>
+						<li>
+							<a class="myclipNum type02" href="myclip_lecture_apply.html">
+								<span class="tit"><strong>5</strong>건</span>
+								<span class="txt">수강신청 강좌</span>
+							</a>
+						</li>
+						<li>
+							<a class="myclipNum type03" href="myclip_lecture_compleat.html">
+								<span class="tit"><strong>1</strong>건</span>
+								<span class="txt">수강완료 강좌</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- EOD : myclipBox -->
+
+			<!-- myclipInfo -->
+			<div class="myclipInfo">
+				<ul>
+					<li>
+						<h3>수강중인 강좌</h3>
+						<div class="myclipInfoL">	
+							<ul>
+								<li>
+									<strong class="tit">Everyday Finance</strong>
+									<span class="date">(2019.08.01~2019.08.31)</span>
+									<span class="percent">진도율 <strong class="txt_red">75</strong>%</span>
+									<span class="progress"><span class="progressBar"></span></span>
+								</li>
+								<li>
+									<strong class="tit">Reading 글로벌 이코노미</strong>
+									<span class="date">(2019.08.01~2019.08.31)</span>
+									<span class="percent">진도율 <strong class="txt_red">32</strong>%</span>
+									<span class="progress"><span class="progressBar"></span></span>
+								</li>
+								<li>
+									<strong class="tit">Reading 글로벌 이코노미</strong>
+									<span class="date">(2019.08.01~2019.08.31)</span>
+									<span class="percent">진도율 <strong class="txt_red">32</strong>%</span>
+									<span class="progress"><span class="progressBar"></span></span>
+								</li>
+							</ul>
+							<div class="myclipLinkBox">
+								<a class="myclipLink" href="javascript:void(0);">수강중인 강좌 이동<span></span></a>
+							</div>
+						</div>
+						<script>
+							// 진도율 %에 따른 animation
+							$(".myclipInfoL .progress").each(function(){
+								var progress = $(this).prev(".percent").find("strong").text();
+								$(this).find(".progressBar").css("width", progress + "%");
+								$(this).prev().find("strong").prop('Counter',0).animate({
+									Counter: $(this).prev().find("strong").text()
+								}, {
+									duration: 2100,
+									easing: 'swing',
+									step: function (now) {
+										$(this).text(now.toFixed(0));
+									}
+								});
+							});
+						</script>
+					</li>
+					<li>
+						<h3>결제 현황</h3>
+						<div class="myclipInfoR">
+							<ul>
+								<li>
+									<p class="date">2019.07.23</p>
+									<div class="info">
+										<span class="tit">Everyday Finance</span>
+										<div class="priceBox">
+											<span class="price">100,000원</span>
+											<span class="result"><span class="txt_red">결제완료</span></span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<p class="date">2019.07.23</p>
+									<div class="info">
+										<span class="tit">Reading 글로벌 이코노미</span>
+										<div class="priceBox">
+											<span class="price">100,000원</span>
+											<span class="result"><span>환불완료</span></span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="myclipLinkBox">
+								<a class="myclipLink" href="javascript:void(0);">결제 현황 이동<span></span></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- EOD : myclipInfo -->
+
+			<h3>추천강좌</h3>
+			<div class="myclip_best">
+				<ul class="slickSlider">
+					<li>
+						<a class="infoBox" href="javascript:void(0);">
+							<span class="thumb">
+								<div class="division">6차</div>
+								<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample01.jpg" alt="" />
+							</span>
+							<span class="info">
+								<span class="sticker">금융경제강좌</span>
+								<span class="tit ellipsis">Everyday Finance</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="infoBox" href="javascript:void(0);">
+							<span class="thumb">
+								<div class="division">3차</div>
+								<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_noData_img.jpg" alt="" />
+							</span>
+							<span class="info">
+								<span class="sticker">금융경제강좌</span>
+								<span class="tit ellipsis">Essential Finance</span>
+							</span>
+						</a>
+					</li>
+					
+					<li class="caseList">
+						<!-- 2019.10.24 noList Data -->
+						<div class="noList">
+							<div class="noListIco"></div>
+							<div class="noListInfo">No Data</div>
+						</div>
+						<!-- EOD : 2019.10.24 noList Data -->
+					</li>
+				</ul>
+			</div>
+			<div class="btn_center">
+				<a href="javascript:void(0);" class="btn_black_L" onclick="location.href='myclip_question.html'">문의내역 <strong>0</strong><span> 건</span></button></a>
+				<a href="javascript:void(0);" class="btn_red_L" onclick="location.href='myclip_eventList.html'">이벤트참여 <strong>5</strong><span> 건</span></button></a>
+				<!-- <a href="javascript:void(0);" class="btn_black_L" onclick="popupS('#popup01','show','600','500');">보유쿠폰 <strong>1</strong><span> 건</span></button></a> -->
+			</div>
+			<!-- popup -->
+			<div class="popup_Box" id="popup01">
+				<div class="popup_BoxIn">
+					<div class="popupH">
+						보유쿠폰
+						<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup01','close');"></a>
+					</div>
+					
+					<div class="popupCBox">
+						<div class="popupCBoxIn">
+						
+							<table class="table_apply mt10">
+								<caption>쿠폰명,할인율,유효기간,사용여부로 구성된 보유쿠폰 상세</caption>
+								<colgroup>
+									<col class="" width="*"/>
+									<col width="50px"/>
+									<col class="" width="20%"/>
+									<col width="50px"/>
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="" scope="col">쿠폰명</th>
+										<th class="" scope="col">할인율</th>
+										<th class="" scope="col">유효기간</th>
+										<th scope="col">사용여부</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="ac">가입축하쿠폰</td>
+										<td class="ac">10%</td>
+										<td class="ac">~2019.10.01</td>
+										<td class="ac">미사용</td>
+									</tr>
+									<tr>
+										<td class="ac">가입축하쿠폰</td>
+										<td class="ac">10%</td>
+										<td class="ac">~2019.10.01</td>
+										<td class="ac">미사용</td>
+									</tr>
+								</tbody>
+							</table>
+						
+							<div class="myclip_comple mt20">
+								<strong class="tit"><img src="../../../images/template7/resp/default/icon/icon_myclip_comple.png" alt="">꼭!! 확인해주세요!</strong>
+								<p>사용하지 않은 쿠폰이라도 유효기간이 지나면 사용하실 수 없습니다.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="popupF ac">
+						<div class="popupFIn">
+							<button type="button" class="btn_black w120 mg0" onclick="popupS('#popup01','close');">확인</button>
+						</div>
+					</div>
+				</div>
+				<div class="popup_bg"></div>
+			</div>
+			<!-- EOD : popup -->
+			
+			<script>
+			$(function(){
+				$('.myclip_best .slickSlider').slick({
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					speed:1000,
+					arrows : true,
+					dots : false,
+					pauseOnHover:false,
+					pauseOnFocus: false,
+					//centerMode: true,
+					//variableWidth: true,
+					responsive: [
+						{
+							breakpoint: 920, 
+							settings: {
+								slidesToShow:2,
+								slidesToScroll:1
+							}
+						},
+						{
+							breakpoint: 640,
+							settings: {
+								slidesToShow:1,
+								slidesToScroll:1
+							}
+						}
+					]
+				});
+			});
+			</script>
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

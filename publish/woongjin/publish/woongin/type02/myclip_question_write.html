@@ -1,0 +1,116 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub06">1:1 문의</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">My 30min.</a></li>
+				<li><a href="javascript:void(0);">1:1 문의</a></li>
+			</ul>
+			
+			<div class="subtitBox">
+				<h3 class="mg0">문의작성</h3>
+			</div>
+			
+			<table class="table_wirte">
+				<caption>구분,강좌,제목,내용으로 구성된 1:1문의 작성 상세</caption>
+				<colgroup>
+					<col class="" width="15%"/>
+					<col width="*"/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th class="line0" scope="col">구분</th>
+						<td>
+							<div class="select_box w180">
+								<label for="que_write01">문의구분</label>
+								<select id="que_write01">
+									<option>강좌</option>
+									<option>사이트</option>
+									<option>학습</option>
+									<option>기타</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="line0" scope="col">강좌</th>
+						<td>
+							<div class="select_box w100">
+								<label for="que_write02">수강중인 강좌 목록</label>
+								<select id="que_write02">
+									<option>수강중인 강좌 목록1</option>
+									<option>수강중인 강좌 목록2</option>
+									<option>수강중인 강좌 목록3</option>
+									<option>수강중인 강좌 목록4</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="line0" scope="col">제목</th>
+						<td>
+							<div class="wide_inputBox">
+								<input class="" type="text" placeholder="제목을 입력해주세요.">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="line0" scope="col">내용</th>
+						<td>
+							<div class="table_wirteArea">
+								<textarea placeholder="불쾌감을 주는 욕설이나 특정인 비하하는 단어, 표현 등은 입력이 제한되거나 삭제될 수 있습니다. 50자 이상 입력해주세요."></textarea>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="btn_center column">
+				<button class="btn_red">등록</button>
+				<button class="btn_gray" onclick="history.back(); return false;">취소</button>
+			</div>
+			
+			
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

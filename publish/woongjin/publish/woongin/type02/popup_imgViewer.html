@@ -1,0 +1,76 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- EOD : include html -->
+
+	<div class="windowPopH">
+		카드뉴스
+		<a href="javascript:void(0);" class="popup_close" onclick="javascript:self.close();"></a>
+	</div>
+	
+	<!-- windowPopBox -->
+	<div class="windowPopBox">	
+		
+		<div class="cardNewsList">
+			<div class="cardNewsListIn">
+				<ul>
+					<li><a href="javascript:void(0);"><span><img src="../../../images/template7/resp/default/usr/cardNews_sample01.png" alt=""/></span></a></li>
+					<li><a href="javascript:void(0);"><span><img src="../../../images/template7/resp/default/usr/cardNews_sample01.png" alt=""/></span></a></li>
+					<li><a href="javascript:void(0);"><span><img src="../../../images/template7/resp/default/usr/cardNews_sample01.png" alt=""/></span></a></li>
+					<li><a href="javascript:void(0);"><span><img src="../../../images/template7/resp/default/usr/cardNews_sample01.png" alt=""/></span></a></li>
+					<li><a href="javascript:void(0);"><span><img src="../../../images/template7/resp/default/usr/cardNews_sample01.png" alt=""/></span></a></li>
+					<li><a href="javascript:void(0);"><span><img src="../../../images/template7/resp/default/usr/cardNews_sample01.png" alt=""/></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="cardNewsInfo">
+			<h3>경제금융 용어&상식 - Deflation</h3>
+			<p class="txt_gray01">경제 용어 중에, ‘Deflation’ 이 있습니다. 무슨 뜻일까요? 자, 지금 동영상을 확인해 보세요.</p>
+			<p class="txt_gray01">경제 용어 중에, ‘Deflation’ 이 있습니다. 무슨 뜻일까요? 자, 지금 동영상을 확인해 보세요.</p>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('.cardNewsList ul').slick({
+					//autoplay: true,
+					//autoplaySpeed: 3000,
+					//adaptiveHeight: true,
+					speed:2000,
+					arrows : true,
+					dots : false,
+					pauseOnHover:false,
+					pauseOnFocus: false,
+					touchThreshold : 1000,
+					infinite : false
+				});
+			});
+		</script>
+		<style>
+		.cardNewsList .slick-prev.slick-disabled { display:none !important; }
+		.cardNewsList .slick-next.slick-disabled { display:none !important; }
+		</style>
+		
+		<div class="windowPop_btnBox">
+			<button type="button" class="btn_black w90" onclick="">이전</button>
+			<button type="button" class="btn_black w90 mg0" onclick="">다음</button>
+		</div>
+	</div>
+	<!-- EOD : windowPopBox -->

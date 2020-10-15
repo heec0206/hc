@@ -1,0 +1,88 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub06">로그인</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">로그인</a></li>
+			</ul>
+			
+			<div class="subtitBox">
+				<h2>로그인</h3>
+				<p class="txt_gray01">30MINUTES 로그인 화면입니다.</p>
+			</div>
+			
+			<div class="myInfo login">
+				<div class="wide_inputBox">
+					<input class="ac" type="email" placeholder="이메일 주소를 입력해주세요.">
+				</div>
+				
+				<div class="wide_inputBox mt10">
+					<input class="ac" type="password" placeholder="비밀번호를 입력해주세요.">
+				</div>
+				<div class="btn_myinfo">
+					<button class="btn_wide_red" onclick="">로그인</button>
+				</div>
+				
+				<div class="checkSolo">
+					<input type="checkbox" id="rememberId"/>
+					<label class="txt_gray01" for="rememberId">아이디 저장</label>
+					<div class="checkSoloR"><a href="javascript:void(0);">ID/PW 찾기</a></div>
+				</div>
+				
+				<ul class="loginKinds">
+					<li><a class="facebook" href="javascript:void(0);"><span>로그인</span></a></li>
+					<li><a class="google" href="javascript:void(0);"><span>로그인</span></a></li>
+					<li><a class="kakao" href="javascript:void(0);"><span>로그인</span></a></li>
+					<li><a class="naver" href="javascript:void(0);"><span>로그인</span></a></li>
+				</ul>
+				
+				<div class="loginBtn">
+					<p><strong class="txt_red">30MINUTES가 처음이신가요?</strong></p>
+					<button class="btn_wide_black" onclick="location.href='join.html'">회원가입 하기</button>
+				</div>
+			</div>
+			
+			
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

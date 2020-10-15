@@ -1,0 +1,181 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub06">결제하기</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">결제하기</a></li>
+			</ul>
+			
+			<!-- 2019.11.07 결제완료 바닥페이지 -->
+			<ul class="etc_payStep">
+				<li>
+					<div class="etc_payStepBox">
+						<span class="tit">STEP 1</span>
+						<strong class="txt">장바구니</strong>
+					</div>
+				</li>
+				<li>
+					<div class="etc_payStepBox">
+						<span class="tit">STEP 2</span>
+						<strong class="txt">결제하기</strong>
+					</div>
+				</li>
+				<li class="active">
+					<div class="etc_payStepBox">
+						<span class="tit">STEP 3</span>
+						<strong class="txt">결제완료</strong>
+					</div>
+				</li>
+			</ul>
+
+			<div class="myclip_intro">
+				<strong>홍길동</strong> 님의 주문이 정상적으로 완료되었습니다.
+			</div>
+			
+			<div class="etc_pay_box">
+				<div class="etc_pay_boxIn">
+					<p class="bullet_txt mt0">입금은행 : 신한 123-123-123-123</p>
+					<p class="bullet_txt">예금주 : (주)웅진 30MINUTES</p>
+					<p class="bullet_txt">입금기한 : 2019-09-09</p>
+					<p class="bullet_txt">주문상품 번호 : 20190901-01-123</p>
+				</div>
+			</div>
+			
+			<p class="etc_pop_tit">주문강좌정보</p>
+			<div class="eco_list payment">
+				<ul>
+					<li>
+						<div class="eco_listBox">
+							<div class="eco_listBoxL">
+								<a href="eco_listView_new.html">
+									<div class="division">6차</div>
+									<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample02.jpg" alt="" />
+								</a>
+							</div>
+							<div class="eco_listBoxR">
+								<strong class="tit ellipsis">Everyday Finance</strong>
+								<ul class="lectureIntro">
+									<li>
+										<p class="tit">6chapter</p>
+									</li>
+									<li>
+										<p class="tit">2019.09.01~2019.09.30</p>
+									</li>
+									<li>
+										<p class="tit">강사 : <span>홍길동</span></p>
+									</li>
+									<li>
+										<p class="tit">금액 : <span>100,000 원</span></p>
+									</li>
+								</ul>
+							</div>	
+						</div>
+					</li>
+					
+					<li>
+						<div class="eco_listBox">
+							<div class="eco_listBoxL">
+								<a href="eco_listView_new.html">
+									<div class="division">1차</div>
+									<img class="cropImg" src="../../../images/template7/resp/default/usr/usr_ecoList_sample03.jpg" alt="" />
+								</a>
+							</div>
+							<div class="eco_listBoxR">
+								<strong class="tit ellipsis">Everyday Finance</strong>
+								<ul class="lectureIntro">
+									<li>
+										<p class="tit">6chapter</p>
+									</li>
+									<li>
+										<p class="tit">2019.09.01~2019.09.30</p>
+									</li>
+									<li>
+										<p class="tit">강사 : <span>홍길동</span></p>
+									</li>
+									<li>
+										<p class="tit">금액 : <span>100,000 원</span></p>
+									</li>
+								</ul>
+							</div>	
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<p class="etc_pop_tit">최종결제정보</p>
+			<ul class="etc_pop_pay type02">
+				<li>
+					<div class="etc_pop_payL">
+						<strong class="txt_black">총 주문금액</strong>
+					</div>
+					<div class="etc_pop_payR">
+						<strong class="txt_black">100,000 원</strong>
+					</div>								
+				</li>
+				<li>
+					<div class="etc_pop_payL">
+						할인금액
+					</div>
+					<div class="etc_pop_payR">
+						-3,000 원
+					</div>								
+				</li>
+				<li class="last">
+					<div class="etc_pop_payL">
+						<strong class="txt_black">최종결제 금액</strong>
+					</div>
+					<div class="etc_pop_payR">
+						<strong class="price">97,000</strong> 원
+					</div>								
+				</li>
+			</ul>
+			
+			<div class="btn_center">
+				<button type="button" class="btn_black mt5" onclick="popupS('#popup01','close');">결제현황으로 이동</button>
+				<button type="button" class="btn_gray mg0 mt5" onclick="popupS('#popup01','close');">메인으로 이동</button>
+			</div>
+			<!-- 2019.11.07 결제완료 바닥페이지 -->
+			
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

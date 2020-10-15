@@ -1,0 +1,143 @@
+<!-- 임시 스크립트 -->
+<script>
+	$(document).ready(function(){
+		quickTopBtn();
+		customSelect()
+	});
+</script>
+
+
+	<!-- toQuickBtn -->
+	<div class="toQuickBtn">
+		<button class="toChatBtn" onclick=""><img src="../../../images/template7/resp/default/icon/icon_toChatBtn.png" alt=""/></button>
+		<button class="toTopBtn"><img src="../../../images/template7/resp/default/icon/icon_toTopBtn.png" alt=""/></button>
+	</div>
+	<!-- EOD : toQuickBtn -->
+	
+	<!-- sub_footer -->
+	<div class="sub_footer">
+		<ul>
+			<li>
+				<div class="ico01">
+					동영상 오류 해결문의<br/>
+					<a href="tel:1577-1500"><strong>1577-1500</strong></a>
+				</div>
+			</li>
+			<li>
+				<div class="ico02">
+					강좌 구입 문의<br/>
+					<a href="tel:1577-1500"><strong>1577-1500</strong></a>
+				</div>
+			</li>
+			<li>
+				<div class="ico03">
+					결제 및 환불 문의<br/>
+					<a href="tel:1577-1500"><strong>1577-1500</strong></a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- EOD : sub_footer -->
+		
+	<!-- footer -->
+	<footer id="footer" class="main">
+		<!-- footerLayoutIn -->
+		<div class="footerLayoutIn">
+			<div class="footerTop">
+				<ul>
+					<li><a href="javascript:void(0);">서비스소개</a></li>
+					<li><a href="etc_terms.html">이용약관</a></li>
+					<li><a href="etc_privacy.html">개인정보처리방침</a></li>
+					<li><a href="etc_email.html">이메일무단수집거부</a></li>
+					<!--<li><a href="javascript:void(0);" onclick="popupS('#contactUs','show','600','500');">CONTACT US</a></li>-->
+					<!--
+					<li class="last">
+						<select>
+							<option value="">FAMILY SITE</option>
+							<option value="">FAMILY SITE01</option>
+							<option value="">FAMILY SITE02</option>
+							<option value="">FAMILY SITE03</option>
+							<option value="">FAMILY SITE04</option>
+							<option value="">FAMILY SITE05</option>
+						</select>					
+					</li>
+					-->
+				</ul>
+			</div>
+			
+			<div class="footerBot">
+				<div class="footerSns">
+					<a href="sub.html"><img src="../../../images/template7/resp/default/icon/icon_footer_facebook.png" alt="페이스북"/></a>
+					<a href="sub.html"><img src="../../../images/template7/resp/default/icon/icon_footer_twiter.png" alt="트위터"/></a>
+					<a href="sub.html"><img src="../../../images/template7/resp/default/icon/icon_footer_instar.png" alt="인스타그램"/></a>
+				</div>
+				<ul>
+					<li>경기도 파주시 회동길 20 (우 10881)</li>
+					<li>대표이사 : 이재진</li>
+					<li>사업자등록번호 : 141-81-09131</li>
+					<li>전화 : <a href="tel:1577-1500">1577-1500</a> (월~금 09:00~18:00)</li>
+					<li>COPYRIGHT WOONGJIN THINKBIG.</li>
+					<li>ALL RIGHTS RESERVED</li>
+				</ul>
+				<a href="index.html"><img src="../../../images/template7/resp/default/usr/footer_logo.png" alt="웅진씽크빅"/></a>
+			</div>
+		</div>
+		<!-- EOD : footerLayoutIn -->
+	</footer>
+	<!-- EOD : footer -->	
+	
+	<!-- 2019.11.08 contact us 추가 -->
+	<div class="popup_Box" id="contactUs">
+		<div class="popup_BoxIn">
+			<div class="popupH">
+				문의하기
+				<a href="javascript:void(0);" class="popup_close" onclick="popupS('#contactUs','close');"></a>
+			</div>
+			
+			<div class="popupCBox">
+				<div class="popupCBoxIn">
+				
+			
+					<div class="inputBox">
+						<p class="tit">강좌</p>
+						<div class="select_box w100">
+							<label for="contactOption">문의구분</label>
+							<select id="contactOption">
+								<option>회원가입문의</option>
+								<option>강좌문의</option>
+								<option>시스템오류문의</option>
+								<option>홈페이지사용문의</option>
+								<option>기타</option>
+							</select>
+						</div>
+					</div>
+							
+					<div class="inputBox">
+						<p class="tit">제목</p>
+						<div class="wide_inputBox">
+							<input type="text" placeholder="제목을 입력해주세요."/>
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">내용</p>
+						<div class="textarea_wide">
+							<textarea placeholder="불쾌감을 주는 욕설이나 특정인 비하하는 단어, 표현등은 제한되거나 삭제될 수 있습니다."></textarea>								
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="popupF ac">
+				<div class="popupFIn">
+					<button type="button" class="btn_red w120" onclick="popupS('#contactUs','close');">작성완료</button>
+					<button type="button" class="btn_black w120 mg0" onclick="popupS('#contactUs','close');">다시쓰기</button>							
+				</div>
+			</div>
+		</div>
+		<div class="popup_bg"></div>
+	</div>
+	<!-- EOD : 2019.11.08 contact us 추가 -->
+</body>
+</html>

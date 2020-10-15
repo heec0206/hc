@@ -1,0 +1,380 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub06">내정보수정</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">My 30min.</a></li>
+				<li><a href="javascript:void(0);">내정보수정</a></li>
+			</ul>
+	
+			<!-- myInfo step02 -->
+			<div class="myInfo step02">
+				<!-- myInfoBox -->
+				<div class="myInfoBox">
+					<!-- thumb -->
+					<div class="thumb">
+						<img src="../../../images/template7/resp/default/usr/usr_myinfo_profile.png" alt=""/>
+						<div class="myInfoImgBtn">
+							<div class="myInfoPro">
+								<label class="btn_black_radi" for="myInfoImgChk">이미지 변경</label>
+								<input id="myInfoImgChk" type="file" class=""/>
+							</div>
+							<button class="btn_white_radi">이미지 삭제</button>
+						</div>
+					</div>
+					<!-- EOD : thumb -->
+					
+					<div class="inputBox">
+						<p class="tit">이메일주소</p>
+						<p class="txt_gray01">30MINUTES@woongjin.com</p>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">비밀번호<span class="txt_red">*</span></p>
+						<div class="wide_inputBox">
+							<input class="gray" type="password" placeholder="8~20자 영문 숫자 조합"/>
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">비밀번호 확인<span class="txt_red">*</span></p>
+						<div class="wide_inputBox">
+							<input class="gray" type="password" placeholder="위의 비밀번호를 다시 한번 기입해주세요."/>
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">성명<span class="txt_red">*</span></p>
+						<div class="myInfoName">
+							<input class="firstName" type="text" value="홍" disabled />
+							<input class="lastName" type="text" value="길동" disabled />
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">생년월일<span class="txt_red">*</span></p>
+						<div class="myInfoBirth">
+							<ul>
+								<li><input type="text" value="1990년" disabled /></li>
+								<li><input type="text" value="01월" disabled /></li>
+								<li><input type="text" value="01일" disabled /></li>
+							</ul>
+							<div class="inputSymbol">
+								<div class="input_list">
+									<input class="radioRadi" type="radio" name="symbol" id="symbol01" checked />
+									<label for="symbol01">남</label>								
+								</div>
+								<div class="input_list">
+									<input class="radioRadi" type="radio" name="symbol" id="symbol02" disabled />
+									<label for="symbol02">여</label>
+								</div>
+							</div> 
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">휴대폰 번호<span class="txt_red">*</span></p>
+						<div class="inputPhone">
+							<ul>
+								<li>
+									<div class="select_box gray">
+										<label for="phoneFirst">010</label>
+										<select id="phoneFirst">
+											<option>010</option>
+											<option>011</option>
+											<option>017</option>
+											<option>018</option>
+											<option>019</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="wide_inputBox">
+										<input class="gray" type="text" maxlength="4" />
+									</div>
+								</li>
+								<li>
+									<div class="wide_inputBox">
+										<input class="gray" type="text" maxlength="4" />
+									</div>
+								</li>
+							</ul>
+							<button class="btn_black">인증하기</button>
+						</div>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">주소입력</p>
+						<div class="myInfoAdd">
+							<div class="wide_inputBox">
+								<input type="text" disabled />
+							</div>							
+							<button class="btn_black">우편번호</button>
+						</div>
+						<div class="wide_inputBox mt10">
+							<input type="text" disabled />
+						</div>							
+						<div class="wide_inputBox mt10">
+							<input type="text" disabled />
+						</div>							
+					</div>
+					
+					<!-- 2019.11.01 뉴스레터 추가 -->
+					<div class="inputBox">
+						<p class="tit">뉴스레터신청</p>
+						<span class="checkSolo">
+							<input type="radio" id="newsGroup01" name="newsGroup">
+							<label class="txt_gray01" for="newsGroup01">신청</label>
+						</span>
+						<span class="checkSolo type02">
+							<input type="radio" id="newsGroup02" name="newsGroup">
+							<label class="txt_gray01"  for="newsGroup02">수신거부</label>
+						</span>		
+					</div>
+					<!-- EOD : 2019.11.01 뉴스레터 추가 -->
+					
+					<div class="inputBox">
+						<p class="tit">관심분야 1개 이상 선택해주세요.</p>
+						<ul class="myInfoRadi">
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="attention01" checked=""/>
+										<label for="attention01">금융 및 경제</label>
+									</div>
+								</div>	
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="attention02">
+										<label for="attention02">비즈니스</label>
+									</div>
+								</div>	
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="attention03">
+										<label for="attention03">마케팅</label>
+									</div>
+								</div>	
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="attention04">
+										<label for="attention04">IT 및 소프트웨어</label>
+									</div>
+								</div>	
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="attention05">
+										<label for="attention05">디자인</label>
+									</div>
+								</div>	
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="attention06">
+										<label for="attention06">음악 및 예술</label>
+									</div>
+								</div>	
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="attention07">
+										<label for="attention07">자기계발 및 코칭</label>
+									</div>
+								</div>	
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="attention08">
+										<label for="attention08">기타</label>
+									</div>
+								</div>	
+							</li>
+						</ul>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">근무여부</p>
+						<ul class="myInfoRadi type02">
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="radioRadi" type="radio" name="workGroup" id="work01" checked />
+										<label for="work01">YES</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="radioRadi" type="radio" name="workGroup" id="work02"/>
+										<label for="work02">NO</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="inputBox">
+						<p class="tit">근무기업 유형</p>
+						<ul class="myInfoRadi">
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job01" checked>
+										<label for="job01">서비스업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job02">
+										<label for="job02">금융/은행업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job03">
+										<label for="job03">IT/정보통신업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job04">
+										<label for="job04">판매/유통업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job05">
+										<label for="job05">제조/생산/화학업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job06">
+										<label for="job06">교육업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job07">
+										<label for="job07">건설업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job08">
+										<label for="job08">의료/제약업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job09">
+										<label for="job09">미디어/광고업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job10">
+										<label for="job10">문화/예술/디자인업</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job11">
+										<label for="job11">기관/협회</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="input_list">
+									<div class="input_listBox">
+										<input class="chkRadi" type="checkbox" id="job12">
+										<label for="job12">기타</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="btn_my_step">
+						<button class="btn_black_radi">수정완료</button>
+						<button class="btn_white_radi" onclick="location.href='join_secession.html'">회원탈퇴</button>
+					</div>
+				</div>
+				<!-- EOD : myInfoBox -->
+			</div>
+			<!-- myInfo step02 -->
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

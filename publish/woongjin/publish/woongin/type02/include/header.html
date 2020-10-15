@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!--
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>
+	<script src="../../../js/common.js"></script>
+	-->
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(document).ready(function(){
+			menuClone(); //임시
+			titleS(); //임시
+
+			setPopupData();
+			if($("body").find(".topBanner").css("display") == "block"){
+				$("body").addClass("banner");
+			}
+		});
+
+		//쿠키에 등록
+		function setCookie( name, value, expiredays ){
+			var todayDate = new Date();
+				todayDate.setDate(todayDate.getDate() + expiredays );
+				document.cookie = name + '=' + escape( value ) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+		}
+		// 팝업창 닫기
+		function closeWin(layer){
+			$("body").removeClass("banner");
+			if ($("#"+layer).find(".bannerCheckBox input").prop("checked")){
+				setCookie( layer, 'done' , 1 );
+			}
+			$("#"+layer).hide(0,function(){
+
+			});
+		}
+
+		// 팝업 셋팅
+		function setPopupData() {
+			cookiedata = document.cookie;
+			var cookieName;
+			$(".topBanner").each(function(){
+				cookieName = $(this).attr("id");
+				if( cookiedata.indexOf(cookieName+'=done')>=0 ){
+					$(this).hide();
+				}else{
+					$(this).show();
+				}
+			});
+		};
+	</script>
+</head>
+<body>
+
+	<!-- skipNavigation -->
+	<ul id="skipnavigation">
+	  <li><a href="#container">본문 바로가기</a></li>
+	  <li><a href="#header">주메뉴 바로가기</a></li>
+	</ul>
+	<!-- EOD : skipNavigation -->
+
+	<!-- header -->
+	<header id="header" class="main">
+
+		<!-- topBanner
+		<form name="topBanner_form" method="post">
+			<div class="topBanner" id="topBanner1" style="background:url(../../../images/template7/resp/default/usr/usr_main_topBanner.jpg) 50% 50% #9a1b2e no-repeat;">
+				<div class="topBannerIn">
+					<a href="javascript:void(0);">
+						<span class="txt">30MINUTES 사이트 오픈 기념 프로모션</span>
+						<!--<button><img src="../../../images/template7/resp/default/icon/icon_close01.png" alt="닫기"/></button>
+					</a>
+					<span class="bannerCheckBox">
+						<input type="checkbox" id="bannerCheckBox" />
+						<label for="bannerCheckBox">오늘 하루 열지 않기</label>
+						<a href="javascript:void(0);" onclick="closeWin('topBanner1');">[닫기]</a>
+					</span>
+				</div>
+			</div>
+		</form>
+		<!-- EOD : topBanner -->
+
+		<!-- topLatout -->
+		<div class="topLayout">
+			<!-- topLatoutIn -->
+			<div class="topLayoutIn">
+				<button class="hamburger"><span></span></button>
+				<div class="search">
+					<span class="searchIn">
+						<input type="text" placeholder="Search"/>
+					</span>
+					<button onclick="location.href='search.html'"><img src="../../../images/template7/resp/default/icon/icon_search01.png" alt="검색"/></button>
+				</div>
+				<h1><a href="index.html"><img src="https://www.cl-oom.com/images/template3/resp/default/usr/logo_cloom_blue_basic.png" alt="CLOOM"/></a></h1>
+				<ul>
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<!-- 2019.11.07 러닝코치 추가 -->
+					<li>
+						<a class="topRunning" href="javascript:void(0);">
+							<img src="../../../images/template7/resp/default/icon/icon_header_running.png" alt=""/>
+							<span class="txt_red">러닝코치</span>
+						</a>
+					</li>
+					<!-- EOD : 2019.11.07 러닝코치 추가 -->
+				</ul>
+
+			</div>
+			<!-- EOD : topLatoutIn -->
+		</div>
+		<!-- EOD : topLatout -->
+
+		<!-- topNav -->
+		<nav class="topNav">
+			<!-- topNavIn -->
+			<div class="topNavIn">
+				<h2 class="skip">Navigation</h2>
+				<!-- mobInfo -->
+				<div class="mobInfo">
+					<!--
+					<p><strong>홍길동</strong>님</p>
+					<button class="mobLogin">로그아웃</button>
+					<ul>
+						<li><a href="myclip_steamed_list.html" class="mobBtn">찜강좌<span>3</span></a></li>
+						<li><a href="myclip_cart.html" class="mobBtn">장바구니<span>1</span></a></li>
+					</ul>
+					-->
+					<!-- 2019.10.16 로그아웃 케이스 추가 -->
+					<div class="mobLogout"><a href="login.html" class="mobLogin02">로그인</a></div>
+					<div class="mobLogout"><a href="join.html" class="mobLogin03">회원가입</a></div>
+					<!-- EOD : 2019.10.16 로그아웃 케이스 추가 -->
+				</div>
+				<!-- EOD : mobInfo -->
+
+				<!-- 2019.11.07 topMenuBtn 영역 이동 및 수정 -->
+				<div class="topAllMenuIn">
+					<button class="topAllMenu"><span></span></button>
+				</div>
+				<div class="topAllMenuBox">
+					<div class="topAllMenuCloseIn">
+						<button class="topAllMenuClose"></button>
+					</div>
+					<ul>
+						<li>
+							<a href="intro_service.html">30Minutes 소개</a>
+							<ul>
+								<li><a href="intro_service.html">서비스 소개</a></li>
+								<li><a href="javascript:void(0);">커리큘럼</a></li>
+								<li><a href="intro_teacher.html">강사소개</a></li>
+								<li><a href="intro_brand.html">Brand Stroy</a></li>
+								<li><a href="intro_careerMap.html">Career Map</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="eco_list.html">금융경제강좌</a>
+							<ul>
+								<li><a href="eco_list.html">전체강좌</a></li>
+								<li><a href="javascript:void(0);">Everyday Finance</a></li>
+								<li><a href="javascript:void(0);">Reading 글로벌 이코노미</a></li>
+								<li><a href="javascript:void(0);">Essential Finance</a></li>
+							</ul>
+						</li>
+
+						<!-- 2020-02-28 전체메뉴 이벤트 추가 -->
+						<li>
+							<a href="event_eventList.html">Event</a>
+							<ul>
+								<li><a href="event_eventList.html">전체</a></li>
+								<li><a href="event_eventSample01.html">R강좌 무료신청</a></li>
+								<li><a href="event_eventSample02.html">R강좌 무료신청2</a></li>
+							</ul>
+						</li>
+						<!-- EOD : 2020-02-28 전체메뉴 이벤트 추가 -->
+
+						<li>
+							<a href="column_home.html">금융경제 Column</a>
+							<ul>
+								<li><a href="column_home.html">HOME</a></li>
+								<li><a href="coulmn_list.html">영주닐슨교수의 글로벌경제</a></li>
+								<li><a href="javascript:void(0);">홍박사 부동산</a></li>
+								<li><a href="javascript:void(0);">신기자의 한국경제</a></li>
+								<li><a href="javascript:void(0);">김작가의 은퇴금융</a></li>
+							</ul>
+						</li>
+
+						<!--
+						<li>
+							<a href="myclip_eventList.html">이벤트</a>
+							<ul>
+								<li><a href="myclip_eventList.html">월간 이벤트</a></li>
+							</ul>
+						</li>
+						-->
+						<li>
+							<a href="support_trendnews.html">SUPPORT</a>
+							<ul>
+								<li><a href="support_trendnews.html">Trend NEWS</a></li>
+								<li><a href="support_youtube.html">유튜브 콘텐츠</a></li>
+								<li><a href="support_notice.html">공지사항</a></li>
+								<li><a href="support_faq.html">FAQ</a></li>
+								<li><a href="support_guide.html">이용가이드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="myclip_myhome.html">My 30min.</a>
+							<ul>
+								<li><a href="myclip_home.html">고객센터 HOME</a></li>
+								<li><a href="myclip_myhome.html">HOME</a></li>
+								<li><a href="myclip_lecture_apply.html">나의 강좌</a></li>
+								<li><a href="myclip_review.html">강좌 후기</a></li>
+								<li><a href="myclip_payment.html">결제현황</a></li>
+								<li><a href="myclip_payment.html">장바구니</a></li>
+								<li><a href="myclip_steamed_list.html">찜한 강좌</a></li>
+								<li><a href="myclip_myinfo.html">내정보수정</a></li>
+								<li><a href="myclip_eventList.html">이벤트참여내역</a></li>
+								<li><a href="myclip_question.html">1:1 문의</a></li>
+								<li><a href="myclip_point.html">포인트 내역</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- EOD : 2019.11.07 topMenuBtn 영역 이동 및 수정 -->
+
+				<!-- topNav Menu -->
+				<ul>
+					<li>
+						<a href="intro_service02.html">30Minutes 소개</a>
+						<ul>
+							<li><a href="intro_service02.html">서비스 소개</a></li>
+							<li><a href="javascript:void(0);">커리큘럼</a></li>
+							<li><a href="intro_teacher.html">강사소개</a></li>
+							<li><a href="intro_brand.html">Brand Stroy</a></li>
+							<li><a href="intro_careerMap.html">Career Map</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="eco_list.html">금융경제강좌</a>
+						<ul>
+							<li><a href="eco_list.html">전체강좌</a></li>
+							<li><a href="javascript:void(0);">Everyday Finance</a></li>
+							<li><a href="javascript:void(0);">Reading 글로벌 이코노미</a></li>
+							<li><a href="javascript:void(0);">Essential Finance</a></li>
+						</ul>
+					</li>
+
+					<!-- 2020.02.28 event 추가 -->
+					<li class="eventMenu">
+						<a href="event_eventList.html">Event<span class="ico"></span></a>
+						<ul>
+							<li><a href="event_eventList.html">전체</a></li>
+							<li><a href="event_eventSample01.html">R강좌 무료신청</a></li>
+							<li><a href="event_eventSample02.html">R강좌 무료신청2</a></li>
+						</ul>
+					</li>
+					<!-- EOD : 2020.02.28 event 추가 -->
+
+					<li>
+						<a href="column_home.html">금융경제 Column</a>
+						<ul>
+							<li><a href="column_home.html">HOME</a></li>
+							<li><a href="coulmn_list.html">영주닐슨교수의 글로벌경제</a></li>
+							<li><a href="coulmn_list.html">홍박사 부동산</a></li>
+							<li><a href="coulmn_list.html">신기자의 한국경제</a></li>
+							<li><a href="coulmn_list.html">김작가의 은퇴금융</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="support_trendnews.html">SUPPORT</a>
+						<ul>
+							<li><a href="support_trendnews.html">Trend NEWS</a></li>
+							<li><a href="support_youtube.html">유튜브 콘텐츠</a></li>
+							<li><a href="support_notice.html">공지사항</a></li>
+							<li><a href="support_faq.html">FAQ</a></li>
+							<li><a href="support_guide.html">이용가이드</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="myclip_myhome.html">My 30min.</a>
+						<ul>
+							<li><a href="myclip_home.html">고객센터 HOME</a></li>
+							<li><a href="myclip_myhome.html">HOME</a></li>
+							<li class="topNavDepth">
+								<a href="javascript:void(0);">나의 강좌</a>
+								<ul>
+									<li><a href="myclip_lecture_apply.html">수강신청 강좌</a></li>
+									<li><a href="myclip_lecture_taking.html">수강중인 강좌</a></li>
+									<li><a href="myclip_lecture_compleat.html">수강완료 강좌</a></li>
+								</ul>
+							</li>
+							<li><a href="myclip_review.html">강좌 후기</a></li>
+							<li><a href="myclip_payment.html">결제현황</a></li>
+							<li><a href="myclip_cart.html">장바구니</a></li>
+							<li><a href="myclip_steamed_list.html">찜한 강좌</a></li>
+							<li><a href="myclip_myinfo.html">내정보수정</a></li>
+							<li><a href="myclip_eventList.html">이벤트참여내역</a></li>
+							<li><a href="myclip_question.html">1:1 문의</a></li>
+							<li><a href="myclip_point.html">포인트 내역</a></li>
+						</ul>
+					</li>
+					<li class="last">
+						<a href="etc_terms.html">MemberShip</a>
+						<ul>
+							<li><a href="javascript:void(0);">서비스소개</a></li>
+							<li><a href="etc_terms.html">이용약관</a></li>
+							<li><a href="etc_privacy.html;">개인정보처리방침</a></li>
+							<li><a href="etc_email.html">이메일무단수집거부</a></li>
+							<li><a href="javascript:void(0);">CONTACT US</a></li>
+							<li><a href="javascript:void(0);">CONTACT US</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- EOD : topNav Menu -->
+			</div>
+			<!-- EOD : topNavIn -->
+			<div class="bg_trans"><button><img src="../../../images/template7/resp/default/icon/icon_mob_close.png" alt="닫기"></button></div>
+		</nav>
+		<!-- EOD : topNav -->
+	</header>
+	<!-- EOD : header -->

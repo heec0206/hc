@@ -1,0 +1,207 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub04">월간 이벤트</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">이벤트</a></li>
+				<li><a href="javascript:void(0);">월간 이벤트</a></li>
+			</ul>
+
+			<!-- eventView -->
+			<div class="eventView">
+				<strong class="tit">R강좌 무료 수강 신청</strong>
+				<div class="info">
+					<div class="date">2020.03.31~2020.04.30</div>
+					<div class="eventBox">
+
+						<!-- 2020.04.01 이벤트 상세 -->
+						<div class="event_detail">
+							<div class="event_detailBox">
+								<img src="../../../images/template7/resp/default/usr/event_detail_sample04.png" alt="" />
+								<ul class="event_map01">
+									<li class="link01"><a href="javascript:void(0);" style="border:1px solid red"></a></li><!-- 무료 수강 신청-->
+									<li class="link02"><a href="javascript:void(0);" style="border:1px solid red"></a></li><!-- 샘플 보기-->
+									<li class="link03"><a href="javascript:void(0);" style="border:1px solid red"></a></li><!-- 상세 커리큘럼보기-->
+									<li class="link04"><a href="javascript:void(0);" style="border:1px solid red"></a></li><!-- 코로나 공포 상세보기 -->
+									<li class="link05"><a href="javascript:void(0);" style="border:1px solid red"></a></li><!-- 아카데미와 CJ 동영상 보기-->
+									<li class="link06"><a href="javascript:void(0);" style="border:1px solid red"></a></li><!-- 뉴스와 투자 동영상 보기-->
+									<li class="link07"><a href="javascript:void(0);" style="border:1px solid red"></a></li><!-- R 프로그래밍 입문 강좌 무료 수강 신청 -->
+								</ul>
+								<div class="event_fixed">
+									<a href="javascript:void(0);">
+										<span class="event_fixedL">R 프로그래밍 입문 강좌</span>
+										<span class="event_fixedR">지금 신청하기 <span>></span></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<script>
+							function eventScroll(){
+								tN = $(".event_fixed");
+								tNBox = $(".event_detailBox");
+								tNScroll = tNBox.offset().top + tNBox.outerHeight() - tN.outerHeight();
+								winS = ($(window).scrollTop()-tN.outerHeight()) + $(window).outerHeight();
+
+								if(tNScroll <= winS){
+									tN.css("position","absolute");
+								}else{
+									tN.css("position","fixed");
+								}
+								tN.css({
+									"width"			:	tNBox.outerWidth() + "px",
+									"margin-left"	:	"-" + tNBox.outerWidth()/2 + "px",
+								});
+							}
+
+							$(function(){
+								eventScroll();
+							});
+
+							$(window).on("scroll resize",function(){
+								eventScroll();
+							});
+						</script>
+						<!-- EOD : 2020.04.01 이벤트 상세 -->
+
+						<div class="eventInfo type01">
+							<div class="eventInfoR ar">
+								<div class="btn_shareBox">
+									<ul class="sns_share">
+										<li><a href="javascript:void(0);" onclick=""><img src="https://www.cl-oom.com/images/template3/resp/default/icon/icon_sns_facebook.png" alt="페이스북"></a></li>
+										<li><a href="javascript:void(0);" onclick=""><img src="https://www.cl-oom.com/images/template3/resp/default/icon/icon_sns_kakao.png" alt="카카오톡"></a></li>
+										<li><a href="javascript:void(0);" onclick=""><img src="https://www.cl-oom.com/images/template3/resp/default/icon/icon_sns_tw.png" alt="트위터"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- eventInfoBox -->
+				<div class="eventInfoBox">
+					<div class="eventInfo type02">
+						<div class="eventInfoL"><strong>댓글쓰기</strong></div>
+						<div class="eventInfoC">
+							<div class="eventReple"><input type="text" /></div>
+						</div>
+						<div class="eventInfoR">
+							<button class="eventBtn">등록</button>
+						</div>
+					</div>
+				</div>
+				<!-- EOD : eventInfoBox -->
+
+				<!-- eventRepleList -->
+				<div class="eventRepleList">
+					<ul>
+						<li>
+							<div class="eventInfo type03">
+								<div class="eventInfoL">
+									<span class="name">이*신</span>
+								</div>
+								<div class="eventInfoC">
+									<span class="txt">꿀강좌사이트입니다.</span>
+								</div>
+								<div class="eventInfoR ac">
+									<span class="date">2019.09.01</span>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="eventInfo type03">
+								<div class="eventInfoL">
+									<span class="name">김*정</span>
+								</div>
+								<div class="eventInfoC">
+									<span class="txt">30분이면 끝~~~!</span>
+								</div>
+								<div class="eventInfoR ac">
+									<span class="date">2019.09.01</span>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="eventInfo type03">
+								<div class="eventInfoL">
+									<span class="name">이*신</span>
+								</div>
+								<div class="eventInfoC">
+									<span class="txt">꿀강좌사이트입니다.</span>
+								</div>
+								<div class="eventInfoR ac">
+									<span class="date">2019.09.01</span>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="eventInfo type03">
+								<div class="eventInfoL">
+									<span class="name">김*정</span>
+								</div>
+								<div class="eventInfoC">
+									<span class="txt">30분이면30분이면30분이면30분이면30분이면30분이면30분이면 끝~~~!</span>
+								</div>
+								<div class="eventInfoR ac">
+									<span class="date">2019.09.01</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="eventViewBtn">
+						<button>댓글 더보기</button>
+					</div>
+				</div>
+				<!-- EOD : eventRepleList -->
+				<div class="btn_center">
+					<button class="btn_black event" onclick="history.back(); return flase();">목록</button>
+				</div>
+
+			</div>
+			<!-- EOD : eventView -->
+
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->
+
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

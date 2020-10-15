@@ -1,0 +1,268 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅 | 나의 강좌</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="../../css/classroom/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../css/classroom/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../css/classroom/template7/resp/wbUser.css?ver=1.5" rel="stylesheet"/>
+	<script src="../../js/classroom/jquery-1.7.2.js"></script>
+	<script src="../../js/classroom/jquery-ui-1.8.2.js"></script>
+	<script src="../../js/classroom/slick.js"></script>	
+	<script src="../../js/classroom/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../js/classroom/html5.js"></script>
+		<script src="../../js/classroom/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+			$(".lnbInclude").load("include/lnb.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<!-- cr_info -->
+		<div class="cr_info">
+			<div class="cr_infoBox">
+				<div class="thumb"><img class="cropImg" src="../../images/classroom/template7/resp/default/usr/usr_ecoList_sample02.jpg" alt=""/></div>
+				<div class="info">
+					<strong>내 자산관리 첫 번째 필수코스</strong>
+					<span class="edu">교육기간 : <span class="date">2019.09.01~2019.09.30</span> (잔여학습 <span class="date">14일</span> 남았습니다)</span>
+				</div>
+				<button class="learningBtn"><span></span>러닝코치</button>
+			</div>
+		</div>	
+		<!-- EOD : cr_info -->
+		
+		<!-- containerIn -->
+		<div class="containerIn">
+			<!-- lnb -->
+			<div class="lnbInclude"></div>
+			<!-- EOD : lnb -->
+			
+			<!-- contentBox -->
+			<div class="contentBox">
+				<h2>강의실 홈</h2>
+				<!-- class_info -->
+				<div class="class_info">
+					<div class="class_infoL">
+						<div class="progressBox">
+							<div class="txt">목표 진도율
+								<div class="percent"><strong>75</strong><span>%</span></div>
+							</div>
+							<div class="progressBar"><span></span></div>
+						</div>
+						<div class="progressBox red">
+							<div class="txt">나의 진도율
+								<div class="percent"><strong>43</strong><span>%</span></div>
+							</div>
+							<div class="progressBar"><span></span></div>
+						</div>						
+					</div>
+					<script>
+						// 진도율 %에 따른 animation
+						$(".progressBar").each(function(){
+							progress = $(this).siblings().find("strong").text();
+							$(this).find("span").css("width",progress + "%");
+							$(this).siblings().find("strong").prop('Counter',0).animate({
+								Counter: $(this).siblings().find("strong").text()
+								},{
+									duration: 2100,
+									easing: 'swing',
+									step: function (now) {
+									$(this).text(now.toFixed(0));
+								}
+							});
+						});
+					</script>
+					
+					<div class="class_infoR">
+						<ul class="averInfo">
+							<li>
+								<div class="averInfoBox">
+									<div class="info">
+										<span class="ico01"></span>
+										<span class="percent">43</span>
+									</div>
+									<p class="txt">진도<span>(%)</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="averInfoBox">
+									<div class="info">
+										<span class="ico02"></span>
+										<span class="percent">50</span>
+									</div>
+									<p class="txt">응시평가<span>(점)</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="averInfoBox">
+									<div class="info">
+										<span class="ico04"></span>
+										<span class="percent">100</span>
+									</div>
+									<p class="txt">총점</p>
+								</div>
+							</li>
+							<li>
+								<div class="averInfoBox">
+									<div class="info">
+										<span class="ico03"></span>
+										<span class="percent">47</span>
+									</div>
+									<p class="txt">전체평균</p>
+								</div>
+							</li>
+						</ul>
+						<script>
+							// 진도율 %에 따른 animation
+							$(".averInfoBox .percent").each(function(){
+								$(this).prop('Counter',0).animate({
+									Counter: $(this).text()
+									},{
+										duration: 2100,
+										easing: 'swing',
+										step: function (now) {
+										$(this).text(now.toFixed(0));
+									}
+								});
+							});
+							//툴팁
+							$(".tooltip").on("click",function(){
+								$(this).siblings(".tooltipBox").toggle();
+							});
+						</script>
+					</div>
+				</div>
+				<!-- EOD : class_info -->
+				
+				<div class="myclip_comple type02 mt0">
+					<strong class="tit"><img src="../../images/classroom/template7/resp/default/icon/icon_myclip_comple.png" alt="">수료기준 안내</strong>
+					<p class="bullet_txt">진도율 <strong class="txt_black">50%</strong>의 합산점수가 총점으로 표시됩니다.</p>
+					<p class="bullet_txt">전체평균 <strong class="txt_black">60점 이상</strong>을 달성해야 수료증이 발급됩니다.</p>
+				</div>
+				
+				<!-- learning_list -->
+				<div class="learning_list">
+					<div class="learningHead">
+						<div class="tit">학습목차</div>
+						<div class="time">학습시간</div>
+						<div class="percent">진도율(%)</div>
+						<div class="num">학습횟수</div>
+						<div class="date">최근학습일</div>
+						<div class="edu">학습하기</div>
+					</div>
+					
+					<ul class="learningInfo">
+						<li>
+							<a href="javascript:void(0);" class="title">경제의 상태를 나타내는 기본 지수 이해 <span>(18:31)</span></a>
+							<ul class="learningBody" style="display:none;">
+								<li>
+									<div class="tit">Introduction</div>
+									<div class="time">15:24</div>
+									<div class="percent">100</div>
+									<div class="num">1</div>
+									<div class="date">2019.08.16 14:00</div>
+									<div class="edu"><button class="btn_red_S">학습하기</button></div>						
+								</li>
+								<li>
+									<div class="tit">경제상태 바로알기</div>
+									<div class="time">09:39</div>
+									<div class="percent">75</div>
+									<div class="num">1</div>
+									<div class="date">2019.08.16 14:00</div>
+									<div class="edu"><button class="btn_red_S">학습하기</button></div>						
+								</li>
+								<li>
+									<div class="tit">1 Chpater 평가</div>
+									<div class="time">-</div>
+									<div class="percent">-</div>
+									<div class="num">-</div>
+									<div class="date">-</div>
+									<div class="edu"><button class="btn_black_S" onclick="window.open('index_popup.html', '', 'width=641,height=500')">응시하기</button></div>						
+								</li>
+								<li class="evaluation">
+									<div class="tit">
+										<span class="txt">퀴즈평가</span>
+										<span class="pcH"></span> 
+										<span>(퀴즈 응시는 최대5회까지 가능하며, 잔여 횟수를 확인하실 수 있습니다.)</span>
+									</div>
+									<div class="edu">응시완료 <button class="btn_black_S">학습하기</button></div>						
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="javascript:void(0);" class="title">주식투자와 함께 필수적으로 해야 하는 채권투자와 연결하여 이해 <span>(01:29:35)</span></a>
+							<ul class="learningBody" style="display:none;">
+								<li>
+									<div class="tit">기본지수의 이해</div>
+									<div class="time">05:24</div>
+									<div class="percent">30</div>
+									<div class="num">1</div>
+									<div class="date">2019.08.16 14:00</div>
+									<div class="edu"><button class="btn_red_S">학습하기</button></div>						
+								</li>
+								<li>
+									<div class="tit">사업가로서의 자기성향 TEST</div>
+									<div class="time">09:39</div>
+									<div class="percent">75</div>
+									<div class="num">1</div>
+									<div class="date">2019.08.16 14:00</div>
+									<div class="edu"><button class="btn_black_S">참여하기</button></div>						
+								</li>
+								<li>
+									<div class="tit">2 Chpater 평가</div>
+									<div class="time">-</div>
+									<div class="percent">-</div>
+									<div class="num">-</div>
+									<div class="date">-</div>
+									<div class="edu"><button class="btn_black_S" onclick="window.open('index_popup.html', '', 'width=641,height=500')">응시하기</button></div>						
+								</li>
+								<li class="evaluation">
+									<div class="tit">진행단계평가</div>
+									<div class="time"></div>
+									<div class="date"></div>
+									<div class="edu">응시완료<span class="mobH"><br/></span>(2019-10-03)</div>						
+								</li>
+							</ul>
+						</li>
+					</ul>
+					
+					<script>
+						jQuery(".learningInfo a").on("click",function(){
+							if(jQuery(this).hasClass("active")){
+								jQuery(this).removeClass("active").siblings("ul").slideUp(250);
+							}else{
+								jQuery(this).addClass("active").siblings("ul").slideDown(250);
+							}
+						});
+					</script>
+					
+				</div>
+				<!-- EOD : learning_list -->
+			</div>
+			<!-- EOD : contentBox -->
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

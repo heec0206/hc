@@ -1,0 +1,116 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub06">로그인</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">로그인</a></li>
+			</ul>
+			
+			<!-- 2019.11.15 인증번호 추가 등 수정 -->
+			<div class="myInfo loginPw">
+				<div class="subtitBox">
+					<h2>아이디/비밀번호 찾기</h2>
+					<ul class="loginPw_tab">
+						<li class="active"><a href="javascript:void(0);">아이디 찾기</a></li>
+						<li><a href="javascript:void(0);">비밀번호 찾기</a></li>
+					</ul>
+				</div>
+				
+				<div class="inputBox">
+					<p class="tit loginPw">휴대폰</p>
+					<div class="wide_inputBox">
+						<input class="" type="text" placeholder="아이디">
+					</div>
+					<div class="wide_inputBox mt10">
+						<input class="" type="text" placeholder="이름">
+					</div>
+					<div class="inputPhone loginPw">
+						<ul>
+							<li>
+								<div class="select_box gray">
+									<label for="phoneFirst">010</label>
+									<select id="phoneFirst">
+										<option>010</option>
+										<option>011</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="wide_inputBox">
+									<input class="gray" type="text" maxlength="4">
+								</div>
+							</li>
+							<li>
+								<div class="wide_inputBox">
+									<input class="gray" type="text" maxlength="4">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<a href="javascript:void(0);" class="btn_wide_gray02 mt20">인증번호 받기</a>
+					<div class="wide_inputBox mt20">
+						<input class="" type="text" placeholder="인증번호 6자리" maxlength="6">
+					</div>
+				</div>
+				
+				<div class="loginPwBox">
+					<div class="loginPwInfo">회원님의 정보와 일치하는<br/>아이디는 <span>“홍길동”</span>입니다.</div>
+					<div class="btn_center">
+						<a href="javascript:void(0);" class="btn_red_M">로그인하기</a>
+						<a href="javascript:void(0);" class="btn_black_M">비밀번호찾기</a>
+					</div>
+				</div>
+				
+				<div class="loginPw_btn">
+					<a href="javascript:void(0);" class="btn_black" onclick="">확인</a>
+					<a href="javascript:void(0);" class="btn_gray" onclick="">취소</a>
+				</div>
+			</div>
+			<!-- EOD : 2019.11.15 인증번호 추가 등 수정 -->
+			
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<style type="text/css" media="print">
+	
+	
+</style>
+
+<style>
+	html { margin:0; padding:0; background:#666; }
+	@pageWrap { size: a4 landscape; }
+	@media print { .pageWrap { margin: 0; border: initial; border-radius: initial; width: initial; min-height: initial; box-shadow: initial; background: initial; page-break-after: always; }}
+	.pageWrap { width:29.7cm; height:21cm; background:#fff; position:relative; z-index:0; overflow:hidden; border:1px solid #ccc; }
+	.pageWrap .pageBox { height:19cm; width:27.7cm; margin:1cm; border:1px solid #ccc; overflow:hidden; position:relative; }
+	.pageWrap .square01 { font-size:0; position:absolute; top:0.45cm; left:0.45cm; line-height:1; }
+	.pageWrap .square02 { font-size:0; position:absolute; top:0.45cm; right:0.45cm; line-height:1; }
+	.pageWrap .square03 { font-size:0; position:absolute; bottom:0.45cm; left:0.45cm; line-height:1; }
+	.pageWrap .square04 { font-size:0; position:absolute; bottom:0.45cm; right:0.45cm; line-height:1; }
+	.pageWrap .bg { position:absolute; z-index:-1; width:1050px; top:25px; left:30px; }
+	.pageWrap .certiBoxIn { padding:30px 75px; }
+	.pageWrap .certiBoxCon .num { margin:0; font-size:16px; color:#333; }
+	.pageWrap .certiBoxCon img { margin:80px 0 50px 0; width:400px; }
+	.pageWrap .certiBoxCon .date { margin:0; font-size:16px; color:#333; }
+	.pageWrap .certiBoxCon .presnt { margin:30px 0 10px 0; font-size:16px; color:#333; }
+	.pageWrap .certiBoxCon .name { margin:0; font-size:30px; font-weight:500;  }
+	.pageWrap .certiBoxCon .course { margin:30px 0 0 0; font-size:18px; font-weight:500; }
+	.pageWrap .certiBoxCon .term { margin:5px 0 0 0; font-size:18px; font-weight:500; }
+	.pageWrap .certiBoxCon .info { margin:40px 0 0 0; font-size:16px; font-weight:500; color:#333; }
+	.pageWrap .certiBoxCon .eng { letter-spacing:-0.5px; }
+	.pageWrap .certiBoxCon .verify { position:absolute; bottom:20px; right:138px; text-align:center; font-size:12px; }
+	.pageWrap .certiBanner img { position:absolute; top:-120px; right:90px; width:220px; }
+</style>
+
+</head>
+	<!--
+	<style>
+	.pageWrap { width:816px; height:575px; padding:10px 13px; line-height:1; overflow:hidden; background:#fff; }
+	.pageWrap > img { position:absolute; top:12px; left:48px; }
+	.pageWrap .certiBoxIn { position:relative; padding:0 65px; height:100%; border:1px solid #ccc; }
+	.pageWrap .certiBoxIn .square01 { position:absolute; top:4px; left:4px; width:4px; height:4px; border:1px solid #ccc; }
+	.pageWrap .certiBoxIn .square02 { position:absolute; top:4px; right:4px; width:4px; height:4px; border:1px solid #ccc; }
+	.pageWrap .certiBoxIn .square03 { position:absolute; bottom:4px;left:4px; width:4px; height:4px; border:1px solid #ccc; }
+	.pageWrap .certiBoxIn .square04 { position:absolute; bottom:4px; right:4px; width:4px; height:4px; border:1px solid #ccc; }
+	.pageWrap .certiBoxIn .certiBoxCon { }
+	.pageWrap .certiBoxIn .certiBoxCon .num { margin:23px 0 0 0; font-size:12px; color:#333; }
+	.pageWrap .certiBoxIn .certiBoxCon img { margin:75px 0 0 0; }
+	.pageWrap .certiBoxIn .certiBoxCon .date { margin:45px 0 0 0; font-size:14px; color:#333; }
+	.pageWrap .certiBoxIn .certiBoxCon .presnt { margin:25px 0 0 0; font-size:14px; color:#333; font-weight:500; letter-spacing:-0.5px; }
+	.pageWrap .certiBoxIn .certiBoxCon .name { margin:12px 0 0 0; font-size:32px; color:#333; font-weight:500; }
+	.pageWrap .certiBoxIn .certiBoxCon .course { margin:35px 0 0 0; font-size:18px; color:#333; }
+	.pageWrap .certiBoxIn .certiBoxCon .term { margin:8px 0 0 0; font-size:18px; color:#333; }
+	.pageWrap .certiBoxIn .certiBoxCon .info { margin:28px 0 0 0; font-size:14px; color:#000; font-weight:500; }
+	.pageWrap .certiBoxIn .certiBoxCon .eng { margin:22px 0 0 0; font-size:14px; color:#333; line-height:1.4; letter-spacing:-0.5px; }
+	.pageWrap .certiBoxIn .certiBoxCon .verify { position:absolute; margin:0; bottom:20px; right:90px; font-size:12px; color:#333; font-weight:500; text-align:center; line-height:1.4; letter-spacing:-0.5px; font-weight:500; }
+	.pageWrap .certiBoxIn .certiBanner { position:absolute; top:-100px; right:65px; height:554px; width:181px; }
+	</style>
+	-->
+<body>
+
+	<div class="pageWrap">
+		<div class="pageBox">
+			<img class="bg" src="../../../images/template7/resp/default/usr/certi_bg.png" alt=""/>
+			<div class="certiBoxIn">
+				<span class="square01"><img src="../../../images/template7/resp/default/usr/certi_square.png" alt=""/></span>
+				<span class="square02"><img src="../../../images/template7/resp/default/usr/certi_square.png" alt=""/></span>
+				<span class="square03"><img src="../../../images/template7/resp/default/usr/certi_square.png" alt=""/></span>
+				<span class="square04"><img src="../../../images/template7/resp/default/usr/certi_square.png" alt=""/></span>
+				
+				<div class="certiBoxCon">
+					<p class="num">No. 2020-01009</p>
+					<img src="../../../images/template7/resp/default/usr/certi_logo.png" alt=""/>
+					<p class="date">JULY 25, 2020</p>
+					<p class="presnt">Presented to</p>
+					<p class="name">홍 길 동</p>
+					<p class="course">강좌명 : Reading Global Economy</p>
+					<p class="term">수강기간 : 2019.12.01~12.30</p>
+					<p class="info">위 회원은 상기 교육과정을 이수하였기에 본 수료증을 수여합니다.</p>
+					<p class="eng">You have successfully completed this course.<br/>This certificate is awarded.</p>
+					<p class="verify">Verify at 30MINUTES<br/>www.the30minutes.com</p>
+				</div>
+				<div class="certiBanner">
+					<img src="../../../images/template7/resp/default/usr/certi_banner.png" alt=""/>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+	
+	

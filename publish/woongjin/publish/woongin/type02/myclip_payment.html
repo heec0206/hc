@@ -1,0 +1,388 @@
+<!-- include html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>웅진씽크빅</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../../../css/template7/resp/slick.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbCommon.css" rel="stylesheet"/>
+	<link href="../../../css/template7/resp/wbUser.css?ver=1.6" rel="stylesheet"/>
+	<script src="../../../js/jquery-1.7.2.js"></script>
+	<script src="../../../js/jquery-ui-1.8.2.js"></script>
+	<script src="../../../js/slick.js"></script>	
+	<script src="../../../js/common.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../../js/html5.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		$(function(){
+			$(".headerInclude").load("include/header.html");
+			$(".footerInclude").load("include/footer.html");
+		});
+	</script>
+</head>
+<body>
+<!-- EOD : include html -->
+	
+	<!-- header -->
+	<div class="headerInclude"></div>
+	<!-- EOD : header -->
+	
+	<!-- container -->
+	<section id="container" class="sub">
+		<section class="subVisual sub06">결제현황</section>
+		<!-- containerIn -->
+		<div class="containerIn">
+			<ul class="subNav">
+				<li><a href="javascript:void(0);">HOME</a></li>
+				<li><a href="javascript:void(0);">My 30min.</a></li>
+				<li><a href="javascript:void(0);">결제현황</a></li>
+			</ul>
+			
+			<!-- pay_search -->
+			<div class="pay_search">
+				<div class="pay_searchBox">
+					<ul>
+						<li>
+							<span class="txt">기간조회</span>
+							<div class="input_list">
+								<div class="input_listBox">
+									<input class="radioRadi" type="radio" name="searchDate" id="searchDate01" checked />
+									<label for="searchDate01">3개월</label>
+								</div>
+							</div>
+							
+							<div class="input_list">
+								<div class="input_listBox">
+									<input class="radioRadi" type="radio" name="searchDate" id="searchDate02" />
+									<label for="searchDate02">6개월</label>
+								</div>
+							</div>
+							
+							<div class="input_list">
+								<div class="input_listBox">
+									<input class="radioRadi" type="radio" name="searchDate" id="searchDate03" />
+									<label for="searchDate03">12개월</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="input_calendar">
+								<input type="text" value="2019-07-01" disabled />
+								<span>~</span>
+								<input type="text" value="2019-09-01" disabled />
+								<div class="input_cal_btn">
+									<button class="btn_black">조회</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- EOD : pay_search -->
+			
+			<!-- pay_list -->
+			<div class="pay_list">
+				<ul class="pay_body type02">
+					<li>
+						<div class="tit">강좌명</div>
+						<div class="price tabH">수강신청일</div>
+						<div class="price tabH">결제구분</div>
+						<div class="price mobH">수강료</div>
+						<div class="payment">결제상태</div>
+						<div class="date">취소/취소일</div>
+					</li>
+				</ul>
+				<ul class="pay_info">
+					<li>
+						<ul class="pay_body">
+							<li>
+								<a href="javascript:void(0);" class="tit" onclick="popupS('#popup01','show','600','500');">Reading 글로벌 이코노미</a>
+								<div class="price tabH">2019.12.02</div>
+								<div class="price tabH">가상계좌</div>
+								<div class="price mobH">100,000원</div>
+								<div class="payment"><div class="txt_gray01">취소신청</div></div>
+								<div class="date">
+									<div class="txt_gray01">2019.07.20</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="pay_body">
+							<li>
+								<a href="javascript:void(0);" class="tit" onclick="popupS('#popup01','show','600','500');">Reading 글로벌 이코노미</a>
+								<div class="price tabH">2019.12.02</div>
+								<div class="price tabH">무통장입금</div>
+								<div class="price mobH">100,000원</div>
+								<div class="payment"><div class="txt_gray01">취소신청</div></div>
+								<div class="date">
+									<div><button class="btn_black_XS mg0" onclick="popupS('#popup02','show','600','500');">결제취소</button></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					
+					<!-- noData 
+					<li>
+						<ul class="pay_body">
+							<li>
+								<div class="noData">
+									<span class="ico"></span>
+									<span class="txt">결제현황이 없습니다.</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					EOD : noData -->
+				</ul>
+			</div>
+			<!-- EOD : pay_list -->
+			
+			<div class="myclip_comple">
+				<strong class="tit"><img src="../../../images/template7/resp/default/icon/icon_myclip_comple.png" alt=""/>안내사항</strong>
+				<p><strong class="txt_black">계약체결일 또는 수강 시작일로부터 7일 이내</strong>에 해지를 요구하는 경우에는, <strong class="txt_black">위약금 없이 이용일수에 해당하는 수강료(금액)만 공제하고 환불이 가능</strong>합니다.<br/></p>
+				<p>
+					<strong class="txt_black">계약체결일 또는 수강 시작일로부터 7일 이상</strong>이 지나 해지를 요구하는 경우에는,<br/>
+					지급한 총 금액에서 해지일까지의 이용일수에 해당하는 수강료(금액)와 잔여기간 이용요금의 100%를 <strong class="txt_black">공제 후 부분환불</strong>을 진행합니다.
+				</p>
+			</div>
+			
+			<!-- 결제상세 popup -->
+			<div class="popup_Box" id="popup01">
+				<div class="popup_BoxIn">
+					<div class="popupH">
+						결제상세
+						<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup01','close');"></a>
+					</div>
+					
+					<div class="popupCBox">
+						<div class="popupCBoxIn">
+						
+							<div class="inputBox">
+								<p class="tit">주문번호</p>
+								<div class="wide_inputBox">
+									<input type="text" value="20190901_03_12" disabled />
+								</div>
+							</div>
+							
+							<!-- 2019.11.05 주문강좌 리스트 변경 -->
+							<div class="inputBox">
+								<p class="tit">주문강좌</p>
+								<ul class="order_lecture">
+									<li>
+										<div class="wide_inputBox">
+											<input class="strong" type="text" value="Everyday Finance" disabled />
+										</div>
+									</li>
+									<li>
+										<div class="wide_inputBox">
+											<input class="strong" type="text" value="Everyday Finance002" disabled />
+										</div>
+									</li>
+									<li>
+										<div class="wide_inputBox">
+											<input class="strong" type="text" value="투자 포트폴리오 구축 및 관리" disabled />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- EOD : 2019.11.05 주문강좌 리스트 변경 -->
+							
+							<!-- 2019.11.05 취소신청 주문강좌 리스트 추가 -->
+							<div class="inputBox">
+								<p class="tit">주문강좌</p>
+								<ul class="order_lecture chk">
+									<li>
+										<span class="checkSolo">
+											<input type="checkbox" id="orderCancle01">
+											<label for="orderCancle01"></label>
+										</span>
+										<div class="wide_inputBox">
+											<input class="strong" type="text" value="Everyday Finance" disabled />
+										</div>
+									</li>
+									<li>
+										<span class="checkSolo">
+											<input type="checkbox" id="orderCancle02">
+											<label for="orderCancle02"></label>
+										</span>
+										<div class="wide_inputBox">
+											<input class="strong" type="text" value="투자 포트폴리오 구축 및 관리" disabled />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- EOD : 2019.11.05 취소신청 주문강좌 리스트 추가 -->
+							
+							<div class="inputBox">
+								<p class="tit">총 주문금액</p>
+								<div class="wide_inputBox">
+									<input type="text" value="100,000원" disabled />
+								</div>
+							</div>
+							
+							<div class="inputBox">
+								<p class="tit">쿠폰사용</p>
+								<div class="wide_inputBox">
+									<input type="text" value="-1,000원" disabled />
+								</div>
+							</div>
+							
+							<div class="inputBox">
+								<p class="tit">최종 결제금액</p>
+								<div class="wide_inputBox">
+									<input class="strong txt_red" type="text" value="99,000원" disabled />
+								</div>
+							</div>
+							
+							<div class="inputBox">
+								<p class="tit">결제수단</p>
+								<div class="wide_inputBox">
+									<input type="text" value="신용카드" disabled />
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="popupF ac">
+						<div class="popupFIn">
+							<button type="button" class="btn_black w120 mg0" onclick="popupS('#popup01','close');">확인</button>
+						</div>
+					</div>
+				</div>
+				<div class="popup_bg"></div>
+			</div>
+			<!-- EOD : 결제상세 popup -->
+			
+			<!-- 결제취소/환불 popup -->
+			<div class="popup_Box" id="popup02">
+				<div class="popup_BoxIn">
+					<div class="popupH">
+						취소/환불 상세
+						<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup02','close');"></a>
+					</div>
+					
+					<div class="popupCBox">
+						<div class="popupCBoxIn">
+						
+							<div class="inputBox">
+								<p class="tit">주문번호</p>
+								<div class="wide_inputBox">
+									<input type="text" value="20190901_03_12" disabled />
+								</div>
+							</div>
+							
+							<div class="inputBox">
+								<p class="tit">접수일자</p>
+								<div class="wide_inputBox">
+									<input class="strong" type="text" value="2019.19.01" disabled />
+								</div>
+							</div>
+							
+							<div class="inputBox">
+								<p class="tit">처리일시</p>
+								<div class="wide_inputBox">
+									<input type="text" value="2019.09.01 13:32" disabled />
+								</div>
+							</div>
+							
+							<div class="inputBox">
+								<p class="tit">취소/환불(예정) 금액</p>
+								<div class="wide_inputBox">
+									<input class="strong txt_red" type="text" value="99,000원" disabled />
+								</div>
+							</div>
+							
+							<div class="inputBox">
+								<p class="tit">환불내역</p>
+								<div class="wide_inputBox">
+									<p class="bullet_txt small">신용카드</p>
+									<input class="strong" type="text" value="89,000원" disabled />
+								</div>
+								<div class="wide_inputBox mt10">
+									<p class="bullet_txt small">쿠폰취소</p>
+									<input class="strong" type="text" value="10,000원" disabled />
+								</div>
+							</div>
+							
+							<!-- 2019.10.15 환불계좌 추가 -->
+							<div class="inputBox">
+								<p class="tit">환불계좌<span class="txt_info"> (무통장 입금자에 한해 선택가능)</span></p>
+								<div class="inputPhone payment">
+									<ul>
+										<li>
+											<div class="select_box gray">
+												<label for="phoneFirst">선택</label>
+												<select id="phoneFirst">
+													<option value="">선택</option>
+													<option value="">NH농협은행</option>
+													<option value="">KB국민은행</option>
+													<option value="">신한은행</option>
+													<option value="">우리은행</option>
+													<option value="">기업은행</option>
+													<option value="">KEB하나은행</option>
+													<option value="">대구은행</option>
+													<option value="">부산은행</option>
+													<option value="">우체국</option>
+													<option value="">광주은행</option>
+													<option value="">SC은행</option>
+													<option value="">경남은행</option>
+													<option value="">한국씨티은행</option>
+													<option value="">수협중앙회</option>
+												</select>
+											</div>
+										</li>
+										
+										<li>
+											<div class="wide_inputBox">
+												<input class="gray" type="text">
+											</div>
+										</li>
+									</ul>
+								</div>
+								
+								<div class="select_box gray wide">
+									<label for="phoneFirst">환불사유 선택</label>
+									<select id="phoneFirst">
+										<option value="">환불사유 선택</option>
+										<option value="">강좌 변경 및 불만족</option>
+										<option value="">강사 불만족</option>
+										<option value="">결제 오류 및 재결제</option>
+										<option value="">사이트 서비스 불만족</option>
+										<option value="">그 외 사유</option>
+									</select>
+								</div>
+							</div>
+							<!-- EOD : 2019.10.15 환불계좌 추가 -->
+					
+					
+						</div>
+					</div>
+
+					<div class="popupF ac">
+						<div class="popupFIn">
+							<button type="button" class="btn_black w120 mg0" onclick="popupS('#popup02','close');">확인</button>
+							<!-- 2019.10.15 환불계좌 추가 
+								<button type="button" class="btn_black w120" onclick="popupS('#popup02','close');">확인</button>
+								<button type="button" class="btn_gray w120 mg0" onclick="popupS('#popup02','close');">취소</button>							
+							-->
+						</div>
+					</div>
+				</div>
+				<div class="popup_bg"></div>
+			</div>
+			<!-- EOD : 결제취소/환불 popup -->
+			
+		</div>
+		<!-- EOD : containerIn -->
+	</section>
+	<!-- EOD : container -->	
+	
+	<!-- footer -->
+	<div class="footerInclude"></div>
+	<!-- EOD : footer -->
