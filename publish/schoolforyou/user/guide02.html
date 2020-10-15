@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>스쿨포유</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>	
+
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- headerInclude -->
+<section class="headerInclude"></section>
+<!-- EOD : headerInclude -->
+
+	<!-- subVisual -->
+	<section class="subVisual visual01">
+		<div class="subVisualIn">
+			<img class="img01" src="images/subVisaul_bg_01_img01.png" alt="">
+		</div>
+	</section>
+	<!-- EOD : subVisual -->
+	<!-- contentLayout -->
+	<section class="contentLayout">
+		<!-- contentLayoutIn -->
+		<div class="contentLayoutIn">
+		
+			<h2>컴포넌트</h2>
+			<span class="iconFile">첨부파일 있음</span>
+			<br/><br/>
+			
+			<div class="noticeViewList">
+				<div class="noticeViewListL">
+					첨부파일
+				</div>
+				<div class="noticeViewListR">
+					<ul>
+						<!-- noData 
+						<li>-</li>
+						-->
+						<li><a href="javascript:void(0);"><span class="iconFile"></span>[진로레시피 2019-04].pdf</a></li>
+						<li><a href="javascript:void(0);"><span class="iconFile"></span>[진로레시피 2019-05 진로레시피 2019-05 진로레시피 2019-05 진로레시피 2019-05 진로레시피 2019-05 진로레시피 2019-05 진로레시피 2019-05 진로레시피 2019-05].pdf</a></li>
+						<li><a href="javascript:void(0);"><span class="iconFile"></span>[진로레시피 2019-06].pdf</a></li>
+					</ul>
+				</div>
+			</div>
+			<br/><br/>
+			
+			<input type="text" placeholder="input default"/>
+			<br/><br/>
+			
+			<div class="wide_input">
+				<input type="text" placeholder="wide input"/>
+			</div>
+			<br/>
+			
+			<textarea>textarea 기본</textarea>
+			<br/><br/>
+			
+			<div class="wide_input">
+				<textarea>wide textarea</textarea>
+			</div>
+			<br/>
+			
+			<div class="select_box">
+				<label for="select_guide01"><span>선택</span></label>
+				<select id="select_guide01">
+					<option>선택</option>
+					<option>일반</option>
+					<option>자료</option>
+					<option>질문</option>
+				</select>
+			</div>	
+			<br/><br/>
+			
+			<div class="select_box">
+				<label for="select_guide01"><span>선택</span></label>
+				<select id="select_guide01">
+					<option>선택</option>
+					<option>옵션 길게 테스트01</option>
+					<option>옵션 길게 테스트02 옵션 길게 테스트02</option>
+					<option>옵션 길게 테스트03</option>
+				</select>
+			</div>
+			<br/><br/>
+			
+			<div class="wide_select">
+				<div class="select_box">
+					<label for="select_guide02"><span>선택</span></label>
+					<select id="select_guide02">
+						<option>선택</option>
+						<option>일반</option>
+						<option>자료</option>
+						<option>질문</option>
+					</select>
+				</div>	
+			</div>
+			<br/>
+								
+			<div class="file_attach">
+				<div class="wide_input">
+					<input type="text" class="" readonly="readonly">
+				</div>
+				<div class="file_btn">
+					<label for="fileSearch">찾아보기</label>
+					<input type="file" id="fileSearch">
+				</div>
+			</div>
+			
+			<h2>테이블</h2>
+			<table class="table_default">
+				<caption>구분,제목,내용,첨부파일로 구성된 학급게시판 작성 상세</caption>
+				<colgroup>
+					<col width="16%">
+					<col width="*">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>구분</th>
+						<td>
+							<div class="write_select">
+								<div class="select_box">
+									<label for="select_notice"><span>선택</span></label>
+									<select id="select_notice">
+										<option>선택</option>
+										<option>일반</option>
+										<option>자료</option>
+										<option>질문</option>
+									</select>
+								</div>	
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>제목</th>
+						<td>
+							<div class="wide_input">
+								<input type="text">
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		
+			<h2>default</h2>
+			<div class="compleBox">
+				회원님의 정보와 일치하는 아이디는 <strong class="txt_black">shkim88</strong>입니다.
+			</div>
+				
+			<h2>팝업</h2>
+			
+			<button class="btn_gray02_M" onclick="popupS('#popup01','show','600','500');">레이어팝업(사이즈지정)</button>
+			<button class="btn_gray02_M" onclick="popupS('#popup01','show');">레이어팝업(FULL)</button>
+			<button class="btn_orange_M" onclick="window.open('popup/popup_sample.html','','width=700, height=450');">새창 팝업</button>
+			
+			<!-- popup_Box -->
+			<div class="popup_Box" id="popup01">
+				<!-- popup_Box -->
+				<div class="popup_BoxIn">
+					<div class="popupH">레이어팝업 샘플<a href="javascript:void(0);" class="popup_close" onclick="popupS('#popup01','close');" title="닫기"><img src="images/icon_windowPop_close.png" alt=""></a></div>
+					
+					<!-- popupCBox -->
+					<div class="popupCBox">
+						<!-- popupCBoxIn -->
+						<div class="popupCBoxIn">
+						
+							<ul class="wintabBox">
+								<li class="active"><a href="javascript:void(0)" onclick="tabsClick('tabArea' , '#tabArea01', this);"><span>아이디 찾기</span></a></li>
+								<li><a href="javascript:void(0);" onclick="tabsClick('tabArea' , '#tabArea02', this);"><span>비밀번호 찾기</span></a></li>
+							</ul>
+							
+							<div class="compleBox">
+								회원님의 정보와 일치하는 아이디는 <strong class="txt_black">shkim88</strong>입니다.
+							</div>
+					
+						</div>
+						<!-- EOD : popupCBoxIn -->
+					</div>
+					<!-- EOD : popupCBox -->
+
+					<!-- popupF -->
+					<div class="popupF ac">
+						<div class="popupFIn">
+							<button type="button" class="btn_orange_M mg0" onclick="popupS('#popup01','close');">닫기</button>
+						</div>
+					</div>
+					<!-- EOD : popupF -->
+				</div>
+				<!-- EOD : popup_Box -->
+				<div class="popup_bg"></div>
+			</div>
+			<!-- EOD : popup_Box -->
+			
+		</div>
+		<!-- EOD : contentLayoutIn -->
+	</section>
+	<!-- EOD : contentLayoutIn -->
+	
+
+<!-- footerInclude -->
+<section class="footerInclude"></section>
+<!-- EOD : footerInclude -->

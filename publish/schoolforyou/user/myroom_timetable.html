@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>스쿨포유</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>	
+
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<script>
+
+$(document).ready(function() {
+	progressive();
+});
+
+</script>
+
+<!-- headerInclude -->
+<section class="headerInclude"></section>
+<!-- EOD : headerInclude -->
+
+	<!-- subVisual -->
+	<section class="subVisual visual02">
+		<div class="subVisualIn">
+			<img class="img01" src="images/subVisaul_bg_02_img01.png" alt="" />
+			<img class="img02" src="images/subVisaul_bg_02_img02.png" alt="" />
+			<img class="img03" src="images/subVisaul_bg_02_img03.png" alt="" />
+		</div>
+	</section>
+	<!-- EOD : subVisual -->
+
+	<!-- contentLayout -->
+	<section class="contentLayout">
+		<!-- contentLayoutIn -->
+		<div class="contentLayoutIn">
+
+			<!-- tabBox02 -->
+			<ul class="tabBox02">
+				<li><a href="myroom_myroom.html"><span>내 교실</span></a></li>
+				<li><a href="myroom_attendance.html"><span>나의 출석현황</span></a></li>
+				<li><a href="myroom_video.html"><span>동영상 수업</span></a></li>
+				<li><a href="myroom_activityclass.html"><span>활동중심 수업</span></a></li>
+				<li class="active"><a href="myroom_timetable.html"><span>화상 수업/상담 시간표</span></a></li>
+				<li><a href="myroom_plan.html"><span>강의계획서</span></a></li>
+				<li><a href="myroom_note.html"><span>나만의 노트</span></a></li>
+				<li><a href="myroom_message.html"><span>쪽지함</span></a></li>
+				<li><a href="myroom_history.html"><span>학습이력</span></a></li>
+				<li><a href="myroom_evaluation.html"><span>나의 별점</span></a></li>
+			</ul>
+			<!-- EOD : tabBox02 -->
+
+			<h2>화상 수업/상담 시간표</h2>
+			
+			<!-- row -->			
+			<div class="row">
+				<!-- yellowBox -->
+				<div class="yellowBox">
+					<div class="left_area">
+						<div class="dayBox">
+							<div class="year_data">
+								<a href="javascript:void(0)" class="arrow"><img src="images/icon_day_lt.png" alt="이전 학기로"></a>
+								<span class="data">
+									2019년도 2학기
+									<p class="sub_data">2019.11 ~ 2019.11.15</p>
+								</span>
+								<a href="javascript:void(0)" class="arrow"><img src="images/icon_day_gt.png" alt="다음 학기로"></a>				
+							</div>		
+						</div>
+					</div>
+					
+					<div class="right_area">
+						<div class="pepleBox">
+						   <div class="pepleBoxIn">
+								<ul>
+									<li>
+										<div class="p_left">
+											<p class="type">온라인 담임</p>
+											<p class="name">최담임</p>
+										</div>
+										<div class="p_right">
+											
+											<div class="circle">
+												<img src="images/icon_people01.png" alt="온라인 담임">
+											</div>
+											<div class="msgBox">
+												<ul>
+													<li>
+														<a href="javascript:void(0)">
+															<img src="images/icon_msg.png" alt="쪽지 보내기">
+														</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">
+															<img src="images/icon_mail.png" alt="sms 보내기">
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<!-- EOD : yellowBox -->
+			</div>
+			<!-- EOD : row -->
+			
+			<!-- row -->			
+			<div class="row">
+				<div class="year_data mb20">
+					<a href="javascript:void(0)" class="arrow"><img src="images/icon_day_lt.png" alt="이전달로"></a>
+					<span class="data">2019.09.09</span>
+					<a href="javascript:void(0)" class="arrow"><img src="images/icon_day_gt.png" alt="다음달로"></a>				
+				</div>
+				<!-- table_radius -->
+				<div class="table_radius">
+					<table class="table_normal timetable fixed">
+						<caption>화상 수업/상담 시간표</caption>
+						<colgroup>
+							<col width="16.66%">
+							<col width="16.66%">
+							<col width="16.66%">
+							<col width="16.66%">
+							<col width="16.66%">
+							<col width="16.66%">
+						</colgroup>
+						<thead>
+						  <tr>
+						  	<th>교시</th>
+							<th>월</th>
+							<th>화</th>
+							<th>수</th>
+							<th>목</th>
+							<th>금</th>
+						  </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="bg_gray01 ac">
+									<p class="class">1교시</p>
+									<p class="time">(오후 02:00)</p>
+								</th>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">수학</p>
+											<img src="images/timetable_math.png" alt="">
+										</div>
+									</div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">사회</p>
+											<img src="images/timetable_social.png" alt="">
+										</div>
+									</div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">과학</p>
+											<img src="images/timetable_science.png" alt="">
+										</div>
+									</div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">국어</p>
+											<img src="images/timetable_korean.png" alt="">
+										</div>
+									</div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>					
+							</tr>
+							<tr>
+								<th class="bg_gray01 ac">
+									<p class="class">2교시</p>
+									<p class="time">(오후 02:40)</p>
+								</th>
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">과학 <span class="on_air">On Air</span></p>
+											
+											<img src="images/timetable_science.png" alt="">
+										</div>
+										<a href="javascript:void(0)" class="gray_label">
+											<span class="txt">학습하기</span><span class="arrow">></span>										
+										</a>
+									</div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>					
+							</tr>
+							<tr>
+								<th class="bg_gray01 ac">
+									<p class="class">3교시</p>
+									<p class="time">(오후 03:20)</p>
+								</th>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">수학</p>
+											<img src="images/timetable_math.png" alt="">
+										</div>
+										<div class="atten">
+											<img src="images/icon_atten_blue.png" alt="출석">
+										</div>
+									</div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">사회</p>
+											<img src="images/timetable_social.png" alt="">
+										</div>
+										<div class="atten">
+											<img src="images/icon_atten_blue.png" alt="출석">
+										</div>
+									</div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>				
+							</tr>
+							<tr>
+								<th class="bg_gray01 ac">
+									<p class="class">4교시</p>
+									<p class="time">(오후 04:00)</p>
+								</th>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">상담
+												<span class="re01">예약가능</span>
+											</p>
+											<img src="images/timetable_tel.png" alt="">
+										</div>										
+										<a href="javascript:void(0)" class="red_label"><span class="txt">상담신청</span><span class="arrow">></span></a>
+									</div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">상담
+												<span class="re02">예약신청</span>
+											</p>
+											<img src="images/timetable_tel.png" alt="">
+										</div>
+									</div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">상담</p>
+											<img src="images/timetable_tel.png" alt="">
+										</div>
+									</div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>				
+							</tr>
+							<tr>
+								<th class="bg_gray01 ac">
+									<p class="class">5교시</p>
+									<p class="time">(오후 04:40)</p>
+								</th>
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>
+								<td class="ac">
+									<div class="tableBlock">
+										<div class="imgBox">
+											<p class="name">상담
+												<span class="re03">예약완료</span>
+											</p>
+											<img src="images/timetable_tel.png" alt="">
+										</div>
+										<a href="javascript:void(0)" class="red_label"><span class="txt">상담하기</span><span class="arrow">></span></a>
+									</div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>	
+								<td class="ac">
+									<div class="tableBlock"></div>
+								</td>				
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- EOD : table_radius -->
+			</div>
+			<!-- EOD : row -->
+			
+		</div>
+		<!-- EOD : contentLayoutIn -->
+	</section>
+	<!-- EOD : contentLayout -->
+	
+
+<!-- footerInclude -->
+<section class="footerInclude"></section>
+<!-- EOD : footerInclude -->

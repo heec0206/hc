@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>스쿨포유</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="css/wbCommon.css" rel="stylesheet"/>
+	<link href="css/wbUser.css" rel="stylesheet"/>
+	<link href="css/slick.css" rel="stylesheet"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/jquery-ui-1.8.2.js"></script>
+	<script src="js/wbCommon.js"></script>
+	<script src="js/slick.js"></script>	
+
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- headerInclude -->
+<section class="headerInclude"></section>
+<!-- EOD : headerInclude -->
+
+	<!-- subVisual -->
+	<section class="subVisual visual03">
+		<div class="subVisualIn">
+			<img class="img01" src="images/subVisaul_bg_03_img01.png" alt="" />
+			<img class="img02" src="images/subVisaul_bg_03_img02.png" alt="" />
+		</div>
+	</section>
+	<!-- EOD : subVisual -->
+
+	<!-- contentLayout -->
+	<section class="contentLayout">
+		<!-- contentLayoutIn -->
+		<div class="contentLayoutIn">
+
+			<!-- tabBox -->
+			<ul class="tabBox">
+				<li class="active"><a href="community_class.html"><span>학급게시판</span></a></li>
+				<li class="last"><a href="community_course.html"><span>교과게시판</span></a></li>
+			</ul>
+			<!-- EOD : tabBox -->
+
+			<h2>학급게시판</h2>
+			<table class="table_default">
+				<caption>구분,제목,내용,첨부파일로 구성된 학급게시판 작성 상세</caption>
+				<colgroup>
+					<col width="16%"/>
+					<col width="*"/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>구분</th>
+						<td>
+							<div class="write_select">
+								<div class="select_box">
+									<label for="select_notice"><span>선택</span></label>
+									<select id="select_notice">
+										<option>선택</option>
+										<option>일반</option>
+										<option>자료</option>
+										<option>질문</option>
+									</select>
+								</div>	
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>제목</th>
+						<td>
+							<div class="wide_input">
+								<input type="text" />
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>내용</th>
+						<td>
+							<div class="wide_input">
+								<textarea class="writeArea"></textarea>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>첨부파일</th>
+						<td>
+							<div class="file_attach">
+								<div class="wide_input">
+									<input type="text" class="" readonly="readonly" />
+								</div>
+								<div class="file_btn">
+									<label for="fileSearch">찾아보기</label>
+									<input type="file" id="fileSearch"/>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="buttonBox ac">
+				<button type="button" class="btn_orange_M">저장</button>	
+				<button type="button" class="btn_gray02_M">삭제</button>	
+				<button type="button" class="btn_gray02_M" onclick="history.back(); return flase;">취소</button>	
+			</div>
+			
+		</div>
+		<!-- EOD : contentLayoutIn -->
+	</section>
+	<!-- EOD : contentLayout -->
+	
+
+<!-- footerInclude -->
+<section class="footerInclude"></section>
+<!-- EOD : footerInclude -->
