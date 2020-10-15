@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>STEP</title>
+	<link href="./css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" media="all">
+	<link href="./css/jquery.scrolling-tabs.css" rel="stylesheet" type="text/css" media="all">
+	<link href="./css/slick.css" rel="stylesheet" type="text/css" media="all">
+	<link href="./css/wbCommon.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./css/wbUser.css" rel="stylesheet" type="text/css" media="all">
+  <script src="./js/jquery-1.8.3.js"></script>
+  <script src="./js/jquery-ui-1.8.2.js"></script>
+	<script src="./js/wbCommon.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/jquery.scrolling-tabs.js"></script>
+	<script src="./js/slick.js"></script>
+
+	<!-- ie9 이하 적용 -->
+	<!--[if lt IE 9]>
+		<script src="./js/html5.js"></script>
+		<script src="./js/respond.min.js"></script>
+	<![endif]-->
+    <!-- EOD : ie9 이하 적용 -->
+</head>
+<body>
+
+<!-- header -->
+<section class="headerInclude"></section>
+<!-- EOD : header -->
+
+<!-- sub_visual -->
+<section class="sub_visual sub_visual05">
+    <!-- sub_visualIn -->
+    <div class="sub_visualIn">
+        <p class="location">마이페이지</p>
+
+        <!-- customer_area -->
+        <div class="customer_area">
+            <!-- customer_areaIn -->
+            <div class="customer_areaIn">
+                <!-- customer_areaBox -->
+                <div class="customer_areaBox">
+                    <!-- infoBox -->
+                    <div class="infoBox">
+                        <p class="tit">고객센터</p>
+                        <a href="javascript:void(0)" class="btn_link"><span class="txt">원격지원서비스</span><i class="icon_arrow"></i></a>
+                        <p class="num">041.580.4500</p>
+                        <p class="num">041.580.4506</p>
+                        <p class="mail">e-koreatech@koreatech.ac.kr</p>
+                    </div>
+                    <!-- EOD : infoBox -->
+                    <!-- timeBox -->
+                    <div class="timeBox">
+                        <ul>
+                            <li>평일 09:00 ~ 18:00</li>
+                            <li>점심시간 12:00 ~ 13:00</li>
+                        </ul>
+                    </div>
+                    <!-- EOD : timeBox -->
+                </div>
+                <!-- EOD : customer_areaBox -->
+            </div>
+            <!-- customer_areaIn -->
+        </div>
+        <!-- EOD : customer_area -->
+    </div>
+    <!-- EOD : sub_visualIn -->
+</section>
+<!-- EOD : sub_visual -->
+
+<!-- sub_navBox -->
+<nav class="sub_navBox">
+    <!-- sub_navBoxIn  -->
+    <div class="sub_navBoxIn">
+        <div class="content_wrap">
+            <!-- sub_nav -->
+            <ul class="sub_nav">
+                <li><a href="mypage_home.html"><span>나의 홈</span></a></li>
+                <li><a href="mypage_learning.html"><span>나의 학습</span></a></li>
+                <li class="active"><a href="mypage_bookmark.html"><span>학습메모/북마크</span></a></li>
+                <li><a href="mypage_interest.html"><span>관심과정</span></a></li>
+                <li><a href="mypage_delivery.html"><span>교재 배송현황</span></a></li>
+                <li><a href="mypage_survey.html"><span>나의 설문</span></a></li>
+                <li><a href="mypage_question.html"><span>나의 문의내역</span></a></li>
+                <li><a href="mypage_payment.html"><span>훈련비 결제내역</span></a></li>
+            </ul>
+            <!-- EOD : sub_nav -->
+        </div>
+    </div>
+    <!-- EOD: sub_navBoxIn -->
+</nav>
+<!-- EOD : sub_navBox -->
+
+
+
+<!-- contentLayout -->
+<div class="sub_contentLayout" id="content">
+    <div class="content_wrap">
+
+        <h3><span>학습메모/북마크</span><a href="javascript:void(0)" class="icon_q"><span class="blind">학습메모/북마크 메뉴 사용방법 안내 팝업 호출</span></a></h3>
+
+        <!-- tableScroll -->
+        <div class="tableScroll">
+            <table class="table_normal type02">
+                <caption>과정명 회차 학습메모로 이루어진 학습메모/북마크 게시판</caption>
+                <colgroup>
+                    <col width="*">
+                    <col class="mobH" width="30%">
+                    <col class="mobH" width="20%">
+                </colgroup>
+                <thead>
+                    <tr class="mobH">
+                        <th>과정명</th>
+                        <th>회차</th>
+                        <th>학습메모</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="ThumBox">
+                                <div class="imgBox">
+                                    <img src="./images/default/usr/tum_sample01.png" class="cropImg">
+                                </div>
+                                <div class="infoBox vertical">
+                                    <div class="txtBox">
+                                        <p class="tit">위기에 강한 기업의 비결!</p>
+                                    </div>
+                                </div>
+                                <!-- 모바일에서만 출력되는 데이터 영역 -->
+                                <ul class="mobBox">
+                                    <li><strong>회차</strong> 1회차</li>
+                                    <li><strong>파이썬 언어의 기본 ></strong> 인트로</li>
+                                </ul>
+                                <!-- EOD : 모바일에서만 출력되는 데이터 영역 -->
+                            </div>
+                        </td>
+                        <td class="mobH">
+                            <ul class="Listinfo">
+                                <li><strong>회차</strong> 1회차</li>
+                                <li><strong>파이썬 언어의 기본 ></strong> 인트로</li>
+                            </ul>
+                        </td>
+                        <td class="mobH">
+                            <button type="button" class="btn_s_blue" onclick="window.open('popup/popup_learning_window.html','','width=1200, height=800');">학습창 바로가기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="ThumBox">
+                                <div class="imgBox">
+                                    <img src="./images/default/usr/no_img_thumBox.png" class="cropImg">
+                                </div>
+                                <div class="infoBox vertical">
+                                    <div class="txtBox">
+                                        <p class="tit">위기에 강한 기업의 비결!</p>
+                                    </div>
+                                </div>
+                                <!-- 모바일에서만 출력되는 데이터 영역 -->
+                                <ul class="mobBox">
+                                    <li><strong>회차</strong> 2회차</li>
+                                    <li><strong>파이썬 언어의 기본 ></strong> 인트로</li>
+                                </ul>
+                                <!-- EOD : 모바일에서만 출력되는 데이터 영역 -->
+                            </div>
+                        </td>
+                        <td class="mobH">
+                            <ul class="Listinfo">
+                                <li><strong>회차</strong> 2회차</li>
+                                <li><strong>파이썬 언어의 기본 ></strong> 인트로</li>
+                            </ul>
+                        </td>
+                        <td class="mobH">
+                            <button type="button" class="btn_s_blue" onclick="window.open('popup/popup_learning_window.html','','width=1200, height=800');">학습창 바로가기</button>
+                        </td>
+                    </tr>
+                    <!-- no_data -->
+                    <tr>
+                        <td colspan="3" class="no_dataBox">
+                            <img src="./images/default/icon/icon_no_data_myhome03.png" alt="">
+                            <p class="txt">학습메모/북마크가 없습니다.</p>
+                        </td>
+                    </tr>
+                    <!-- EOD : no_data -->
+                </tbody>
+            </table>
+        </div>
+        <!-- EOD : tableScroll -->
+
+        <!-- pagination -->
+        <div class="pagination">
+            <a class="d_prev" href="javascript:void(0);" title="제일 처음으로"></a>
+            <a class="prev" href="javascript:void(0);" title="이전 페이지로"></a>
+            <a class="active" href="javascript:void(0);">1</a>
+            <a href="javascript:void(0);">2</a>
+            <a href="javascript:void(0);">3</a>
+            <a href="javascript:void(0);">4</a>
+            <a href="javascript:void(0);">5</a>
+            <a class="next" href="javascript:void(0);" title="다음 페이지로"></a>
+            <a class="d_next" href="javascript:void(0);" title="제일 마지막으로"></a>
+        </div>
+        <!-- EOD : pagination -->
+    </div>
+</div>
+<!-- EOD : contentLayout -->
+
+<!-- footer -->
+<section class="footerInclude"></section>
+<!-- EOD : footer -->
+
+
+</body>
+</html>

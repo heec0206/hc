@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>STEP</title>
+	<link href="./css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" media="all">
+	<link href="./css/jquery.scrolling-tabs.css" rel="stylesheet" type="text/css" media="all">
+	<link href="./css/slick.css" rel="stylesheet" type="text/css" media="all">
+	<link href="./css/wbCommon.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./css/wbUser.css" rel="stylesheet" type="text/css" media="all">
+  <script src="./js/jquery-1.8.3.js"></script>
+  <script src="./js/jquery-ui-1.8.2.js"></script>
+	<script src="./js/wbCommon.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/jquery.scrolling-tabs.js"></script>
+	<script src="./js/slick.js"></script>
+
+	<!-- ie9 이하 적용 -->
+	<!--[if lt IE 9]>
+		<script src="./js/html5.js"></script>
+		<script src="./js/respond.min.js"></script>
+	<![endif]-->
+    <!-- EOD : ie9 이하 적용 -->
+</head>
+<body>
+
+<!-- header -->
+<section class="headerInclude"></section>
+<!-- EOD : header -->
+
+<!-- sub_visual -->
+<section class="sub_visual sub_visual05">
+    <!-- sub_visualIn -->
+    <div class="sub_visualIn">
+        <p class="location">마이페이지</p>
+
+        <!-- customer_area -->
+        <div class="customer_area">
+            <!-- customer_areaIn -->
+            <div class="customer_areaIn">
+                <!-- customer_areaBox -->
+                <div class="customer_areaBox">
+                    <!-- infoBox -->
+                    <div class="infoBox">
+                        <p class="tit">고객센터</p>
+                        <a href="javascript:void(0)" class="btn_link"><span class="txt">원격지원서비스</span><i class="icon_arrow"></i></a>
+                        <p class="num">041.580.4500</p>
+                        <p class="num">041.580.4506</p>
+                        <p class="mail">e-koreatech@koreatech.ac.kr</p>
+                    </div>
+                    <!-- EOD : infoBox -->
+                    <!-- timeBox -->
+                    <div class="timeBox">
+                        <ul>
+                            <li>평일 09:00 ~ 18:00</li>
+                            <li>점심시간 12:00 ~ 13:00</li>
+                        </ul>
+                    </div>
+                    <!-- EOD : timeBox -->
+                </div>
+                <!-- EOD : customer_areaBox -->
+            </div>
+            <!-- customer_areaIn -->
+        </div>
+        <!-- EOD : customer_area -->
+    </div>
+    <!-- EOD : sub_visualIn -->
+</section>
+<!-- EOD : sub_visual -->
+
+<!-- sub_navBox -->
+<nav class="sub_navBox">
+    <!-- sub_navBoxIn  -->
+    <div class="sub_navBoxIn">
+        <div class="content_wrap">
+            <!-- sub_nav -->
+            <ul class="sub_nav">
+                <li><a href="mypage_home.html"><span>나의 홈</span></a></li>
+                <li><a href="mypage_learning.html"><span>나의 학습</span></a></li>
+                <li><a href="mypage_bookmark.html"><span>학습메모/북마크</span></a></li>
+                <li><a href="mypage_interest.html"><span>관심과정</span></a></li>
+                <li><a href="mypage_delivery.html"><span>교재 배송현황</span></a></li>
+                <li><a href="mypage_survey.html"><span>나의 설문</span></a></li>
+                <li><a href="mypage_question.html"><span>나의 문의내역</span></a></li>
+                <li class="active"><a href="mypage_payment.html"><span>훈련비 결제내역</span></a></li>
+            </ul>
+            <!-- EOD : sub_nav -->
+        </div>
+    </div>
+    <!-- EOD: sub_navBoxIn -->
+</nav>
+<!-- EOD : sub_navBox -->
+
+<!-- contentLayout -->
+<div class="sub_contentLayout" id="content">
+    <div class="content_wrap">
+
+        <h3><span>훈련비 결제내역</span><a href="javascript:void(0)" class="icon_q"><span class="blind">훈련비 결제내역 메뉴 사용방법 안내 팝업 호출</span></a></h3>
+
+        <h4>결제정보</h4>
+
+        <!-- tableScroll -->
+        <div class="tableScroll">
+            <table class="table_hori mt0">
+                <caption>과정명,결제방법,입금정보,결제금액,결제일,환불계좌,환불신청금액,환불신청일,환불완료일로 이루어진 결제정보 상세</caption>
+                <colgroup>
+                    <col width="15%">
+                    <col width="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>과제명</th>
+                        <td>빅데이터 수집 Part2</td>
+                    </tr>
+                    <tr>
+                        <th>결제방법</th>
+                        <td>무통장</td>
+                    </tr>
+                    <tr>
+                        <th>입금정보</th>
+                        <td>
+                             <p class="txt_default mt0">국민은행 410910673405237</p>
+                             <p class="txt_default">예금주 : 한국기술교육대학교 온라인평생교육원 </p>
+                             <p class="txt_default">송금만료일자 : 2020-09-30 </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>결제금액</th>
+                        <td><span class="vertical mr5">10,000원</span><button type="button" class="btn_s_blue vertical">영수증</button> </td>
+                    </tr>
+                    <tr>
+                        <th>결제일</th>
+                        <td>2020.08.30</td>
+                    </tr>
+                    <tr>
+                        <th><span class="asterisk">환불계좌</span></th>
+                        <td>
+                            <!-- selectBox -->
+                            <div class="selectBox">
+                                <label for="select_bank"><span>은행</span></label>
+                                <select id="select_bank">
+                                    <option value=''>은행</option>
+                                    <option value='국민은행'>국민은행</option>
+                                    <option value='기업은행'>기업은행</option>
+                                    <option value='신한은행'>신한은행</option>
+                                    <option value='외환은행'>외환은행</option>
+                                    <option value='우리은행'>우리은행</option>
+                                    <option value='하나은행'>하나은행</option>
+                                </select>
+                            </div>
+                            <!-- EOD : selectBox -->
+                            <div class="inputBox">
+                                <input type="text" placeholder="예금주">
+                            </div>
+                            <div class="inputBox Full mt10">
+                                <input type="number" placeholder="환불 계좌번호 입력 (숫자만 입력해 주세요)">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>환불신청금액</th>
+                        <td>10,000원</td>
+                    </tr>
+                    <tr>
+                        <th>환불신청일</th>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th>환불완료일</th>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- EOD : tableScroll -->
+
+        <!-- tableScroll -->
+
+        <!-- 결제방법이 신용카드 일시에
+
+        <div class="tableScroll">
+            <table class="table_hori mt0">
+                <caption>과정명,카드번호,결제금액,결제일,환불신청일,환불완료일 결제정보 상세</caption>
+                <colgroup>
+                    <col width="15%">
+                    <col width="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>과제명</th>
+                        <td>빅데이터 수집 Part2</td>
+                    </tr>
+                    <tr>
+                        <th>결제방법</th>
+                        <td>신용카드</td>
+                    </tr>
+                    <tr>
+                        <th>카드번호</th>
+                        <td>
+                            <p class="txt_default mt0">379183*********</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>결제금액</th>
+                        <td><span class="vertical mr5">10,000원</span><button type="button" class="btn_s_blue vertical">영수증</button></td>
+                    </tr>
+                    <tr>
+                        <th>결제일</th>
+                        <td>2020.08.30</td>
+                    </tr>
+                    <tr>
+                        <th>환불신청일</th>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th>환불완료일</th>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+         -->
+
+        <!-- EOD : tableScroll -->
+
+        <!-- btnBox -->
+        <div class="btnBox">
+            <div class="rightBox">
+                <a href="javascript:void(0);" class="btn_m_black">환불신청</a>
+                <a href="mypage_payment.html" class="btn_m_blue">목록</a>
+            </div>
+        </div>
+        <!-- EOD : btnBox -->
+
+    </div>
+</div>
+<!-- EOD : contentLayout -->
+
+<!-- footer -->
+<section class="footerInclude"></section>
+<!-- EOD : footer -->
+
+
+</body>
+</html>

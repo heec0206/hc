@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>STEP</title>
+	<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../css/jquery.scrolling-tabs.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../css/slick.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../css/wbCommon.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/wbUser.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/fullcalendar.css" rel="stylesheet" type="text/css" media="all">
+  <script src="../js/jquery-1.8.3.js"></script>
+  <script src="../js/jquery-ui-1.8.2.js"></script>
+	<script src="../js/wbCommon.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.scrolling-tabs.js"></script>
+	<script src="../js/slick.js"></script>
+  <script src="../js/moment.min.js"></script>
+  <script src="../js/fullcalendar.js"></script>
+	<!-- ie9 이하 적용 -->
+	<!--[if lt IE 9]>
+		<script src="../js/html5.js"></script>
+		<script src="../js/respond.min.js"></script>
+	<![endif]-->
+    <!-- EOD : ie9 이하 적용 -->
+</head>
+<body>
+
+<section class="windowPop">
+    <div class="windowPopH">
+        NCS 분류
+        <a class="windowPop_close" onclick="window.close(); return false;" href="javascript:void(0);" title="닫기"><img src="../images/default/icon/icon_popup_close.png"></a>
+    </div>
+
+    <!-- windowPopBox -->
+    <div class="windowPopBox">
+        <div class="windowPopBoxIn">
+
+            <!-- ncsTypeBox -->
+            <div class="ncsTypeBox">
+                <!-- typeBox -->
+                <div class="typeBox">
+                    <div class="tit active">대분류</div>
+                    <div class="list_type main_class">
+                        <ul>
+                            <li><a href="javascript:void(0)" title="대분류 선택">01 사업관리</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">02 경영ㆍ회계ㆍ사무</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">03 금융ㆍ보험</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">04 교육ㆍ자연ㆍ사회과학</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">01 사업관리</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">02 경영ㆍ회계ㆍ사무</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">03 금융ㆍ보험</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">04 교육ㆍ자연ㆍ사회과학</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">01 사업관리</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">02 경영ㆍ회계ㆍ사무</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">03 금융ㆍ보험</a></li>
+                            <li><a href="javascript:void(0)" title="대분류 선택">04 교육ㆍ자연ㆍ사회과학</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- EOD : typeBox -->
+
+                <!-- typeBox -->
+                <div class="typeBox">
+                    <div class="tit">중분류</div>
+                    <div class="list_type mid_class"></div>
+                </div>
+                <!-- EOD : typeBox -->
+
+                <!-- typeBox -->
+                <div class="typeBox">
+                    <div class="tit">소분류</div>
+                    <div class="list_type sub_class"></div>
+                </div>
+                <!-- EOD : typeBox -->
+            </div>
+            <!-- EOD : ncsTypeBox -->
+
+            <!-- ncsTypeList -->
+            <ul class="ncsTypeList"></ul>
+            <!-- EOD : ncsTypeList -->
+
+            <script>
+
+                /* 분류 선택 및 데이터 추가 */
+                $(document).on('click',".list_type > ul > li",function(e){
+
+                    var type = $(this).closest(".list_type");
+                    var nextList = $(this).closest(".typeBox").next().find(".list_type");
+                    var typeList = $(".ncsTypeList");
+
+                    // 대분류 선택
+                    if(type.hasClass("main_class")){
+
+                        nextList.empty();
+                        $(".sub_class").empty();
+
+                        nextList.append("<ul>");
+                        nextList.find("ul").append("<li>" + "<a href='javascript:void(0)' title='중분류 선택'>01 중분류 샘플 데이터1</a>" + "</li>");
+                        nextList.find("ul").append("<li>" + "<a href='javascript:void(0)' title='중분류 선택'>02 중분류 샘플 데이터2</a>" + "</li>");
+                        nextList.find("ul").append("<li>" + "<a href='javascript:void(0)' title='중분류 선택'>03 중분류 샘플 데이터3</a>" + "</li>");
+                        nextList.append("</ul>");
+
+                        nextList.find("ul li:first-child a").focus();
+
+                    // 중분류 선택
+                    }else if(type.hasClass("mid_class")){
+
+                        nextList.empty();
+
+                        nextList.append("<ul>");
+                        nextList.find("ul").append("<li>" + "<a href='javascript:void(0)' title='소분류 선택'>01 소분류 샘플 데이터1</a>" + "</li>");
+                        nextList.find("ul").append("<li>" + "<a href='javascript:void(0)' title='소분류 선택'>02 소분류 샘플 데이터2</a>" + "</li>");
+                        nextList.find("ul").append("<li>" + "<a href='javascript:void(0)' title='소분류 선택'>03 소분류 샘플 데이터3</a>" + "</li>");
+                        nextList.append("</ul>");
+
+                        nextList.find("ul li:first-child a").focus();
+
+                    // 소분류 선택
+                    }else{
+
+                        var text = $(this).find("a").text();
+
+                        typeList.append("<li><div class='type'><span class='txt'>" + "(" + "010101" + ")" + text + "</span><a href='javascript:void(0)' class='type_del' title='소분류 제거'><i class='icon_close'></i><span class='blind'></span>");
+                        typeList.append("</a></div></li>");
+
+                    }
+
+                    if($(this).hasClass("active")) {
+
+                        $(this).removeClass("active");
+
+                    }else{
+
+                        $(this).siblings().removeClass("active");
+                        $(this).addClass("active");
+
+                    }
+
+                });
+
+                /* 소분류제거 */
+
+                $(document).on('click',".ncsTypeList .type_del",function(e){
+
+                    $(this).closest("li").remove();
+
+                });
+
+            </script>
+
+        </div>
+    </div>
+    <!-- EOD : windowPopBox -->
+
+    <div class="windowPopBtn">
+        <button type="button" class="btn_m_black" onclick="window.close(); return false;">닫기</button>
+    </div>
+    <!-- EOD : windowPopBox -->
+</section>
+
+
+</body>
+</html>
