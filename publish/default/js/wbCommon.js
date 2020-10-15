@@ -156,9 +156,10 @@ function winPop(){
 	});
 }
 
+/* 반응형 popup  */
 var popupB, popupH, popupC, popupF, popupSH;
 function popupS(n,m,w,h){
-	var filter = "win16|win32|win64|macintel|mac|";
+	var filter = "win16|win32|win64|macintel|mac|"; // PC�� 寃쎌슦 媛��ν븳 媛�
 	if(m == "close"){
 		$(n).hide();
 		$("body").removeClass("popup");
@@ -179,7 +180,9 @@ function popupS(n,m,w,h){
 			popupH = $(n).find(".popup_BoxIn").outerHeight();
 			winH = $(window).outerHeight();
 			winW = $(window).outerWidth();
-			$(n).find(".popupCBoxIn").wrapInner("<div class='popupCBoxInS'></div>");
+			if($(n).find(".popupCBoxInS").length == 0){
+				$(n).find(".popupCBoxIn").wrapInner("<div class='popupCBoxInS'></div>");
+			}
 
 			if(w == undefined || w == "full"){
 				//$(n).find(".popup_BoxIn").css({"width":"95%","margin-left":"0%","left":"2.5%"});
