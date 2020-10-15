@@ -3,11 +3,11 @@
 	.mobAllMenuBtn { display:none; }
 	.mobInfo { display:none; }
 	.mob_bg { display:none; }
-	.pc .topLayout { position:absolute; width:0; left:0; width:100%; z-index:11; } 
+	.pc .topLayout { position:absolute; width:0; left:0; width:100%; z-index:11; }
 		.pc .topLayout .topLayoutIn { position:relative; height:86px; max-width:1100px; margin:0 auto; }
 		.pc .topLayout .topLayoutIn h1 { margin:0; padding:0; position:absolute; top:15px; left:0; }
 		.pc .topLayout .topLayoutIn h1:hover { animation:pulsate 0.345s; }
-	
+
 	/* 1depth */
 	.pc .topLayout .topLayoutIn .topNav { padding:0 430px 0 230px; }
 	.pc .topLayout .topLayoutIn .topNav > .topNavIn > ul { padding:24px 0 0 0; }
@@ -21,7 +21,7 @@
 	.pc .topLayout .topLayoutIn .topNav > .topNavIn > ul > li.list03 > a:after { background:#bfcdfa; }
 	.pc .topLayout .topLayoutIn .topNav > .topNavIn > ul > li.list04 > a:after { background:#c2e583; }
 	/* EOD : 1depth */
-	
+
 	/* 2depth */
 	.pc .topLayout .topLayoutIn .topNav > .topNavIn > ul > li > ul { display:none; position:absolute; z-index:15; left:0; top:40px; width:156px; background:#fff; border:2px solid #666; border-radius:10px; padding:8px 20px 20px 20px; }
 	.pc .topLayout .topLayoutIn .topNav > .topNavIn > ul > li > ul > li { text-align:left; padding:12px 0; border-bottom:1px dashed #ccc; }
@@ -33,11 +33,11 @@
 	.pc .topLayout .topLayoutIn .topNav > .topNavIn > ul > li.list03 > ul > li > a:after { background:#bfcdfa; }
 	.pc .topLayout .topLayoutIn .topNav > .topNavIn > ul > li.list04 > ul > li > a:after { background:#c2e583; }
 	/* EOD : 2depth */
-	
+
 	/* 3depth */
-	
+
 	/* EOD : 3depth */
-	
+
 	/* 로그인 전 리스트 */
 	.pc .topInfoList { position:absolute; top:23px; right:0; }
 		.pc .topBeforeInfo { overflow:hidden; min-width:360px; padding:0 20px; height:37px; line-height:37px; background:#fff; border:1px solid #e6e6e6; border-radius:10px; text-align:center; }
@@ -58,18 +58,18 @@
 	.icoLev { position:relative; top:4px; display:inline-block; width:16px; height:16px; margin:0 3px 0 0; border-radius:50%; border:1px solid #e7e7e7; background-color:#666; background-size: 12px auto !important;}
 
 	/* ico 1 ~ 100 */
-	
+
 	.icoLev.ico1 {background: #fce968 url(../icon_Lev01.png) no-repeat 50%;}
 	.icoLev.ico2 {background: #b2cef4 url(../icon_Lev01.png) no-repeat 50%;}
-	.icoLev.ico3 {background: #b0e391 url(../icon_Lev01.png) no-repeat 50%;} 
-	.icoLev.ico4 {background: #dacafa url(../icon_Lev01.png) no-repeat 50%;} 
-	.icoLev.ico5 {background: #ffd08c url(../icon_Lev01.png) no-repeat 50%;} 
-	.icoLev.ico6 {background: #86cfb4 url(../icon_Lev01.png) no-repeat 50%;} 
-	.icoLev.ico7 {background: #f6c2e5 url(../icon_Lev01.png) no-repeat 50%;} 
-	.icoLev.ico8 {background: #d4bda3 url(../icon_Lev01.png) no-repeat 50%;} 
-	.icoLev.ico9 {background: #9ce3ef url(../icon_Lev01.png) no-repeat 50%;} 
-	.icoLev.ico10 {background: #ffc2c2 url(../icon_Lev01.png) no-repeat 50%;} 
-	
+	.icoLev.ico3 {background: #b0e391 url(../icon_Lev01.png) no-repeat 50%;}
+	.icoLev.ico4 {background: #dacafa url(../icon_Lev01.png) no-repeat 50%;}
+	.icoLev.ico5 {background: #ffd08c url(../icon_Lev01.png) no-repeat 50%;}
+	.icoLev.ico6 {background: #86cfb4 url(../icon_Lev01.png) no-repeat 50%;}
+	.icoLev.ico7 {background: #f6c2e5 url(../icon_Lev01.png) no-repeat 50%;}
+	.icoLev.ico8 {background: #d4bda3 url(../icon_Lev01.png) no-repeat 50%;}
+	.icoLev.ico9 {background: #9ce3ef url(../icon_Lev01.png) no-repeat 50%;}
+	.icoLev.ico10 {background: #ffc2c2 url(../icon_Lev01.png) no-repeat 50%;}
+
 	.icoLev.ico11 {background: #fce968 url(../icon_Lev02.png) no-repeat 50%;}
 	.icoLev.ico12 {background: #b2cef4 url(../icon_Lev02.png) no-repeat 50%;}
 	.icoLev.ico13 {background: #b0e391 url(../icon_Lev02.png) no-repeat 50%;}
@@ -80,7 +80,7 @@
 	.icoLev.ico18 {background: #d4bda3 url(../icon_Lev02.png) no-repeat 50%;}
 	.icoLev.ico19 {background: #9ce3ef url(../icon_Lev02.png) no-repeat 50%;}
 	.icoLev.ico10 {background: #ffc2c2 url(../icon_Lev02.png) no-repeat 50%;}
-	
+
 	.icoLev.ico21 {background: #fce968 url(../icon_Lev03.png) no-repeat 50%;}
 	.icoLev.ico22 {background: #b2cef4 url(../icon_Lev03.png) no-repeat 50%;}
 	.icoLev.ico23 {background: #b0e391 url(../icon_Lev03.png) no-repeat 50%;}
@@ -91,7 +91,7 @@
 	.icoLev.ico28 {background: #d4bda3 url(../icon_Lev03.png) no-repeat 50%;}
 	.icoLev.ico29 {background: #9ce3ef url(../icon_Lev03.png) no-repeat 50%;}
 	.icoLev.ico20 {background: #ffc2c2 url(../icon_Lev03.png) no-repeat 50%;}
-	
+
 	.icoLev.ico31 {background: #fce968 url(../icon_Lev04.png) no-repeat 50%;}
 	.icoLev.ico32 {background: #b2cef4 url(../icon_Lev04.png) no-repeat 50%;}
 	.icoLev.ico33 {background: #b0e391 url(../icon_Lev04.png) no-repeat 50%;}
@@ -102,7 +102,7 @@
 	.icoLev.ico38 {background: #d4bda3 url(../icon_Lev04.png) no-repeat 50%;}
 	.icoLev.ico39 {background: #9ce3ef url(../icon_Lev04.png) no-repeat 50%;}
 	.icoLev.ico30 {background: #ffc2c2 url(../icon_Lev04.png) no-repeat 50%;}
-	
+
 	.icoLev.ico41 {background: #fce968 url(../icon_Lev05.png) no-repeat 50%;}
 	.icoLev.ico42 {background: #b2cef4 url(../icon_Lev05.png) no-repeat 50%;}
 	.icoLev.ico43 {background: #b0e391 url(../icon_Lev05.png) no-repeat 50%;}
@@ -113,7 +113,7 @@
 	.icoLev.ico48 {background: #d4bda3 url(../icon_Lev05.png) no-repeat 50%;}
 	.icoLev.ico49 {background: #9ce3ef url(../icon_Lev05.png) no-repeat 50%;}
 	.icoLev.ico40 {background: #ffc2c2 url(../icon_Lev05.png) no-repeat 50%;}
-	
+
 	.icoLev.ico51 {background: #fce968 url(../icon_Lev06.png) no-repeat 50%;}
 	.icoLev.ico52 {background: #b2cef4 url(../icon_Lev06.png) no-repeat 50%;}
 	.icoLev.ico53 {background: #b0e391 url(../icon_Lev06.png) no-repeat 50%;}
@@ -124,7 +124,7 @@
 	.icoLev.ico58 {background: #d4bda3 url(../icon_Lev06.png) no-repeat 50%;}
 	.icoLev.ico59 {background: #9ce3ef url(../icon_Lev06.png) no-repeat 50%;}
 	.icoLev.ico50 {background: #ffc2c2 url(../icon_Lev06.png) no-repeat 50%;}
-	
+
 	.icoLev.ico61 {background: #fce968 url(../icon_Lev07.png) no-repeat 50%;}
 	.icoLev.ico62 {background: #b2cef4 url(../icon_Lev07.png) no-repeat 50%;}
 	.icoLev.ico63 {background: #b0e391 url(../icon_Lev07.png) no-repeat 50%;}
@@ -135,7 +135,7 @@
 	.icoLev.ico68 {background: #d4bda3 url(../icon_Lev07.png) no-repeat 50%;}
 	.icoLev.ico69 {background: #9ce3ef url(../icon_Lev07.png) no-repeat 50%;}
 	.icoLev.ico60 {background: #ffc2c2 url(../icon_Lev07.png) no-repeat 50%;}
-	
+
 	.icoLev.ico71 {background: #fce968 url(../icon_Lev08.png) no-repeat 50%;}
 	.icoLev.ico72 {background: #b2cef4 url(../icon_Lev08.png) no-repeat 50%;}
 	.icoLev.ico73 {background: #b0e391 url(../icon_Lev08.png) no-repeat 50%;}
@@ -146,7 +146,7 @@
 	.icoLev.ico78 {background: #d4bda3 url(../icon_Lev08.png) no-repeat 50%;}
 	.icoLev.ico79 {background: #9ce3ef url(../icon_Lev08.png) no-repeat 50%;}
 	.icoLev.ico70 {background: #ffc2c2 url(../icon_Lev08.png) no-repeat 50%;}
-	
+
 	.icoLev.ico81 {background: #fce968 url(../icon_Lev09.png) no-repeat 50%;}
 	.icoLev.ico82 {background: #b2cef4 url(../icon_Lev09.png) no-repeat 50%;}
 	.icoLev.ico83 {background: #b0e391 url(../icon_Lev09.png) no-repeat 50%;}
@@ -157,7 +157,7 @@
 	.icoLev.ico88 {background: #d4bda3 url(../icon_Lev09.png) no-repeat 50%;}
 	.icoLev.ico89 {background: #9ce3ef url(../icon_Lev09.png) no-repeat 50%;}
 	.icoLev.ico80 {background: #ffc2c2 url(../icon_Lev09.png) no-repeat 50%;}
-	
+
 	.icoLev.ico91 {background: #fce968 url(../icon_Lev10.png) no-repeat 50%;}
 	.icoLev.ico92 {background: #b2cef4 url(../icon_Lev10.png) no-repeat 50%;}
 	.icoLev.ico93 {background: #b0e391 url(../icon_Lev10.png) no-repeat 50%;}
@@ -169,7 +169,7 @@
 	.icoLev.ico99 {background: #9ce3ef url(../icon_Lev10.png) no-repeat 50%;}
 	.icoLev.ico100 {background: #ffc2c2 url(../icon_Lev10.png) no-repeat 50%;}
 	/* EOD : icon 1 ~ 100 */
-	
+
 	.pc .topAfterInfo > li .msg_btn { display:inline-block; }
 	.pc .topAfterInfo > li .msg_btn img { margin:0; }
 	.pc .topAfterInfo > li .msg_num { display:inline-block; margin:0 0 0 -5px; color:#fff; padding:4px 6px; background:#dd3900; text-align:center; border-radius:10px; font-weight:400; font-size:13px; line-height:1; }
@@ -178,7 +178,7 @@
 	.pc .topAfterInfo > li .logout { position:relative; margin:0 0 0 14px; }
 	.pc .topAfterInfo > li .logout:before { content:''; position:absolute; left:-8px; top:50%; margin:-6px 0 0 0; width:1px; height:12px; background:#e6e6e6; }
 	/* EOD : 로그인 후 리스트 */
-	
+
 	/* 쪽지함 */
 	.msg_contents { display:none; position:absolute; z-index:5; top:37px; left:70px; width:220px; border:1px solid #a09e95; border-radius:5px; background:#fff; text-align:left; }
 	.msg_contents:before { content:''; position:absolute; top:-8px; left:66px; width:18px; height:9px; background:url(../main_msg_ico.png) no-repeat; }
@@ -205,7 +205,7 @@
 	.pc .topAllMenuClose img { position:relative; top:1px; right:5px; }
 	.pc .topAllMenuClose:hover img { animation:pulsate 0.345s; }
 	.pc .topAllMenu.active { display:block; }
-	
+
 		/* 1depth */
 		.pc .topAllMenu > .topAllMenuIn > ul { margin:0 0 0 -40px; overflow:hidden; }
 		.pc .topAllMenu > .topAllMenuIn > ul > li { float:left; width:25%; }
@@ -216,7 +216,7 @@
 		.pc .topAllMenu > .topAllMenuIn > ul > li.list03 > a:after { background:#bfcdfa; }
 		.pc .topAllMenu > .topAllMenuIn > ul > li.list04 > a:after { background:#c2e583; }
 		/* EOD : 1depth */
-		
+
 		/* 2depth */
 		.pc .topAllMenu > .topAllMenuIn > ul > li > ul { margin:30px 0 0 0; }
 		.pc .topAllMenu > .topAllMenuIn > ul > li > ul > li { padding:12px 0; margin:0 0 0 40px; border-bottom:1px dashed #ccc; }
@@ -229,7 +229,7 @@
 		.pc .topAllMenu > .topAllMenuIn > ul > li.list04 > ul > li > a:after { background:#c2e583; }
 		/* EOD : 2depth */
 	/* EOD : 전체메뉴 */
-	
+
 	/* etc topLayout */
 	.pc .topLayout.etc { position:relative; height:84px; }
 	.pc .topLayout.etc .topLayoutIn { border-bottom:1px solid #ccc; }
@@ -247,26 +247,26 @@
 	/* 메인 배너 */
 	.mainContent .mainBanner { background:url(../main_banner_ani.jpg) 50% 50% no-repeat; overflow:hidden; }
 	.mainContent .mainBanner .mainContentIn { position:relative; height:480px; overflow:hidden; }
-	.mainContent .mainBanner .ico01 { position:absolute; bottom:130px; left:100px; width:79px; height:64px; background:url(../main_banner_ico01.png) no-repeat; animation:mainIco01 3.5s 2.5s infinite, pulsate02 2.5s; }
-	.mainContent .mainBanner .ico02 { position:absolute; bottom:175px; left:50%; margin:0 0 0 -50px; width:71px; height:48px; background:url(../main_banner_ico02.png) no-repeat; animation:mainIco02 3.5s 2.5s infinite, pulsate02 3s; }
-	.mainContent .mainBanner .ico03 { position:absolute; bottom:300px; right:25px; width:40px; height:32px; background:url(../main_banner_ico03.png) no-repeat; animation:mainIco01 3.5s 2.5s infinite, pulsate02 3.5s; }
+	.mainContent .mainBanner .ico01 { position:absolute; bottom:130px; left:100px; width:79px; height:64px; background:url(../images/main_banner_ico01.png) no-repeat; animation:mainIco01 3.5s 2.5s infinite, pulsate02 2.5s; }
+	.mainContent .mainBanner .ico02 { position:absolute; bottom:175px; left:50%; margin:0 0 0 -50px; width:71px; height:48px; background:url(../images/main_banner_ico02.png) no-repeat; animation:mainIco02 3.5s 2.5s infinite, pulsate02 3s; }
+	.mainContent .mainBanner .ico03 { position:absolute; bottom:300px; right:25px; width:40px; height:32px; background:url(../images/main_banner_ico03.png) no-repeat; animation:mainIco01 3.5s 2.5s infinite, pulsate02 3.5s; }
 	.mainContent .mainBanner h2 { margin:0; animation:mainTxt 3s; position:absolute; top:175px; left:160px; font-size:40px; color:#2f2a24; z-index:3; }
 		.mainContent .mainBanner h2 .tit { display:block; font-weight:500; }
 		.mainContent .mainBanner h2 .tit span { color:#783c02; }
 		.mainContent .mainBanner h2 .txt { display:block; margin:20px 0 0 0; font-size:16px; color:#4b3e2d; font-weight:500; line-height:1.3; }
 	.mainContent .mainBanner img { position:absolute; right:85px; bottom:0; animation:mainImg 2s; }
 	/* EOD : 메인 배너 */
-	
+
 	/* 내교실 등 링크박스 */
 	.mainLink { height:260px; margin:-110px 0 0 -30px; padding:0 0 70px 0; }
 	.mainLink > li { position:relative; float:left; width:25%; }
 	.mainLink > li .mainLinkBox { margin:0 0 0 30px;  }
 	.mainLink > li a { position:relative; top:0; display:block; padding:35px 30px; height:190px; border-radius:15px; box-shadow:0px 0px 5px 1px #aaa; transition:0.45s ease; }
 	.mainLink > li .mainLinkBox:hover a { top:-50px; box-shadow:0px 3px 8px 3px #787878; }
-	.mainLink > li.list01 a { background:url(../mainLink_bg01.png) no-repeat; }
-	.mainLink > li.list02 a { background:url(../mainLink_bg02.png) no-repeat; }
-	.mainLink > li.list03 a { background:url(../mainLink_bg03.png) no-repeat; }
-	.mainLink > li.list04 a { background:url(../mainLink_bg04.png) no-repeat; }
+	.mainLink > li.list01 a { background:url(../images/mainLink_bg01.png) no-repeat; }
+	.mainLink > li.list02 a { background:url(../images/mainLink_bg02.png) no-repeat; }
+	.mainLink > li.list03 a { background:url(../images/mainLink_bg03.png) no-repeat; }
+	.mainLink > li.list04 a { background:url(../images/mainLink_bg04.png) no-repeat; }
 	.mainLink > li a .tit { font-size:24px; color:#333; font-weight:600; line-height:1.2; }
 	.mainLink > li a .point { position:absolute; bottom:33px; right:12px; }
 	.mainLink > li a .arrow { overflow:hidden; position:absolute; width:43px; height:43px; border-radius:43px; background:#fff; bottom:22px; left:20px; text-align:center; line-height:46px; transition:0.345s ease; }
@@ -275,12 +275,12 @@
 	.mainLink > li a:hover .arrow img { animation:arrow 2s ease-out 0s infinite forwards; }
 	.mainLink > li a:hover .point { animation:pulsate 0.345s; }
 	/* EOD : 내교실 등 링크박스 */
-	
+
 	/* 메인 공지사항 */
 	.mainNotice { margin:0 0 0 0; background:#ecebe8; }
 		.mainNoticeBox { display:table; width:100%; padding:55px 0; table-layout:fixed; }
-		.mainNoticeBox .tit { display:block; margin:0 0 20px 0; font-size:30px; color:#333; font-weight:500; }  
-		.mainNoticeBox .tit a { position:relative; display:inline-block; float:right; font-size:14px; color:#666; margin:15px 0 0 0; transition:0.211s ease; overflow:hidden; line-height:1.4; }   
+		.mainNoticeBox .tit { display:block; margin:0 0 20px 0; font-size:30px; color:#333; font-weight:500; }
+		.mainNoticeBox .tit a { position:relative; display:inline-block; float:right; font-size:14px; color:#666; margin:15px 0 0 0; transition:0.211s ease; overflow:hidden; line-height:1.4; }
 		.mainNoticeBox .tit a:before { content:''; position:absolute; bottom:0; right:0; width:0; width:1px; transition:width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s; background:#666; }
 		.mainNoticeBox .tit a:after { content:''; position:absolute; right:0; bottom:0; width:0; height:1px; transition:width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83); background:#666; }
 		.mainNoticeBox .tit a:hover:before, .mainNoticeBox .tit a:hover:after { width:100%; left:0; }
@@ -295,7 +295,7 @@
 		.mainNoticeBox .mainNoticeBoxL ul li a .txt { position:relative; overflow:hidden; display:inline-block; max-width:100%; font-size:16px; color:#333; }
 		.mainNoticeBox .mainNoticeBoxL ul li a .txt .ico_new { position:relative; top:-2px; }
 		.mainNoticeBox .mainNoticeBoxL ul li a .date { position:absolute; top:4px; right:0; font-size:14px; color:#666; }
-		
+
 		.mainNoticeBox .mainNoticeBoxC { display:table-cell; width:25%; padding:0 20px 0 0; }
 		.mainNoticeBox .mainNoticeBoxC ul {  }
 		.mainNoticeBox .mainNoticeBoxC ul li { background:#fff; border:1px solid #bdbdbd; border-top:none; }
@@ -304,7 +304,7 @@
 		.mainNoticeBox .mainNoticeBoxC ul li a span { position:relative; padding:0 18px 0 0; line-height:1.4em; height:2.8em; overflow:hidden; text-overflow: ellipsis; display:block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 		.mainNoticeBox .mainNoticeBoxC ul li a span:after { content:''; position:absolute; top:3px; right:0; width:16px; height:16px; background:url(../icon_mainfaq_plus.png) no-repeat; transition:all 0.445s ease; }
 		.mainNoticeBox .mainNoticeBoxC ul li a span:hover:after { transform:rotate(360deg); }
-		
+
 		.mainNoticeBox .mainNoticeBoxR { display:table-cell; width:25%; padding:0 0 0 25px; }
 		.mainNoticeBox .mainNoticeBoxR .mainCustomM { display:none; }
 		.mainNoticeBox .mainNoticeBoxR .mainCustom { padding:18px 0 0 0; border-top:2px solid #666; text-align:center; }
@@ -349,45 +349,45 @@
 
 /* 이용안내 */
 	/* 스쿨포유 소개 */
-	
+
 	/* EOD : 스쿨포유 소개 */
-	
+
 	/* 입/퇴교 및 출결 */
-	
+
 	/* EOD : 입/퇴교 및 출결 */
-	
+
 	/* 학습방법 */
-	
+
 	/* EOD :  학습방법 */
 /* EOD : 이용안내 */
 
 /* 나의 강의실 */
 	/* 내교실 */
-	
+
 	/* 내교실 - 상단 영역 */
-	
+
 	.myroom_info {margin:0 0 20px}
 	.myroom_info > ul {overflow:hidden}
 	.myroom_info > ul > li {float:left}
 	.myroom_info > ul > li.first {width:40%}
 	.myroom_info > ul > li.first .inner {background-color:#e3f4c5;  margin-left:0; border-bottom:3px solid #c1d0a8}
 	.myroom_info > ul > li.second {width:30%}
-	.myroom_info > ul > li.second .inner {background-color:#ebeffd; border-bottom:3px solid #d6d2e1}	
+	.myroom_info > ul > li.second .inner {background-color:#ebeffd; border-bottom:3px solid #d6d2e1}
 	.myroom_info > ul > li.thrid {width:30%}
 	.myroom_info > ul > li.thrid .inner {background-color:#eeeafb;  margin-right:0; border-bottom:3px solid #d3d7e3}
 	.myroom_info > ul > li .inner {margin:0 12px; padding:30px; border-radius:12px; height:247px; }
 	.myroom_info > ul > li .txtBox {font-size:24px;color:#333;font-weight:700;text-align:center;margin:0;min-height: 30px;}
     .myroom_info > ul > li .txtBox .graylabel {background-color:#727272; border-radius:5px; margin:0 0 0 10px; width:96px; height:30px; line-height:30px; display:inline-block; color:white}
-	
+
 	.myroom_info .levelBox {position:relative;margin: 20px 0 0;}
 	.myroom_info .levelBox .progressBox {margin:0 90px 0 100px}
 	.myroom_info .levelBox .level_data {position:absolute; top:0; left:0; font-size:30px; color:#1e6b09; font-weight: 600;}
     .myroom_info .levelBox .level_exp {position: absolute; top: 50%; right: 0;  font-size: 16px;   color: #1e6b09;  font-weight: 500;  letter-spacing:0.1px;
     margin: -8px 0 0;}
-	
+
 	.myroom_info .levelBox .progress { position:relative; display:inline-block; width:100%; height:20px; margin:5px 0 0; background:white; border-radius: 20px; border-bottom: 3px solid #d9d9d9}
 	.myroom_info .levelBox .progressBar { position:absolute; z-index:1; top:0; left:0; height:100%; width:0; background:#228805; border-bottom: 3px solid #1d7404; border-radius: 20px; transition:2.1s ease-in-out; }
-	    
+
 	.myroom_info .learner {margin: 5px 0 0;}
 	.myroom_info .learner > ul > li {position:relative;border-bottom:2px dotted #c1d0a8;padding: 15px 0;overflow: hidden;}
 	.myroom_info .learner > ul > li:first-child {padding:8px 0}
@@ -397,13 +397,13 @@
 
 	.myroom_info .learner .txtArea {margin:0 80px 0 0; overflow: hidden;color: #666;font-size: 16px;}
 	.myroom_info .learner .label_txt {float:left;display:inline-block; min-width:70px; margin:0 10px 0 0}
-	.myroom_info .learner .data_txt {float:left;font-weight: 600;}	 
+	.myroom_info .learner .data_txt {float:left;font-weight: 600;}
  	.myroom_info .comuBox {position:absolute;top: 50%;right:0;margin: -15px 0 0;}
  	.myroom_info .comuBox > ul > li {display:inline-block;width:30px;height:30px;line-height:33px;border-radius:50%;background-color:white;text-align:center;margin-left: 8px;}
 	.myroom_info .comuBox > ul > li > a {display:block}
 	.myroom_info .comuBox > ul > li > a img {transition:0.3s all ease}
 	.myroom_info .comuBox > ul > li > a:hover img {transform:rotateY(180deg)}
-	
+
 	.myroom_info .planBox {margin: 20px 0 30px;text-align:center;}
 	.myroom_info .planBox span {color:#666;font-size:16px;}
 	.myroom_info .planBox .arrow {display:inline-block; vertical-align:middle; margin:0 10px}
@@ -414,76 +414,76 @@
 	.myroom_info .absent_count .num {color:#4d67e2;font-size:120px;margin:0;font-weight: 700;display:inline-block;position:relative;z-index:2;letter-spacing: -0.05em;}
 	.myroom_info .absent_count .num:after {width: 77px;  height: 7px;  background-color: #d3d7e3;  border-radius: 50%;  content: "";  display: inline-block;  position: absolute;
     bottom: 4px;  left: 50%;  margin: 0 0 0 -37px; z-index: -1;}
-    
+
     .myroom_info .absent_count .child_w {position:absolute; top:30px; left:0;}
     .myroom_info .absent_count .child_wIn {position:relative}
     .myroom_info .absent_count .child_wIn:before {content:"";  width:62px;  height:114px;  background:url(../absent_count_left.png) no-repeat;  display:inline-block;  position:absolute;  top: -10px;  left: 10px; animation:jump01 1.5s infinite; transition:0.3s all ease; z-index:2;}
     .myroom_info .absent_count .child_wIn:after {content:""; width:60px; height:7px; display:inline-block; background:url(../absent_count_shadow.png) no-repeat; position:absolute; top:100px;  z-index:1}
-    
+
     .myroom_info .absent_count .child_m {position:absolute; top:32px; right:0;}
     .myroom_info .absent_count .child_mIn {position:relative}
     .myroom_info .absent_count .child_mIn:before {content:"";width:75px;height:106px;background:url(../absent_count_right.png) no-repeat;
-    display:inline-block;position:absolute; top:-6px;right:-10px; animation:jump02 1.5s infinite; animation-delay: 0.5s; z-index:2;}  
+    display:inline-block;position:absolute; top:-6px;right:-10px; animation:jump02 1.5s infinite; animation-delay: 0.5s; z-index:2;}
     .myroom_info .absent_count .child_mIn:after {content:""; width:60px; height:7px; display:inline-block; background:url(../absent_count_shadow.png) no-repeat; position:absolute; top:96px; right:0; z-index:1}
-   
-    .myroom_info .absent_count .star01 {position:absolute; top:10px; left:50%; margin:0 0 0 -55px; background:url(../myroom_star01.png) no-repeat; display:inline-block; width:11px; height:11px; animation: flip 2s infinite;  } 
-    .myroom_info .absent_count .star02 {position:absolute; top:-9px; left:50%; margin:0 0 0 -30px; background:url(../myroom_star02.png) no-repeat; display:inline-block; width:14px; height:16px; animation: flip 2s infinite;  animation-delay: 0.1s;} 
-    .myroom_info .absent_count .star03 {position:absolute; top:10px; left:50%; margin:0 0 0 35px; background:url(../myroom_star02.png) no-repeat; display:inline-block; width:14px; height:16px; animation: flip 2s infinite;  animation-delay: 0.2s;} 
-    
+
+    .myroom_info .absent_count .star01 {position:absolute; top:10px; left:50%; margin:0 0 0 -55px; background:url(../myroom_star01.png) no-repeat; display:inline-block; width:11px; height:11px; animation: flip 2s infinite;  }
+    .myroom_info .absent_count .star02 {position:absolute; top:-9px; left:50%; margin:0 0 0 -30px; background:url(../myroom_star02.png) no-repeat; display:inline-block; width:14px; height:16px; animation: flip 2s infinite;  animation-delay: 0.1s;}
+    .myroom_info .absent_count .star03 {position:absolute; top:10px; left:50%; margin:0 0 0 35px; background:url(../myroom_star02.png) no-repeat; display:inline-block; width:14px; height:16px; animation: flip 2s infinite;  animation-delay: 0.2s;}
+
     .myroom_info .absent_count .footer {color:#333; font-size:18px; margin:25px 0 0}
-    
+
     .lean_subject_list > ul > li {float:left;width:50%;position:relative;border-top:1px solid #eee;}
     .lean_subject_list > ul > li .gray {background:#f8f8f8; min-height:185px; position:relative}
-    .lean_subject_list > ul > li .gray:after {content:""; background:url(../subject_none.png) no-repeat; width:109px; height:103px; position:absolute; bottom:20px; right:45px;}   
+    .lean_subject_list > ul > li .gray:after {content:""; background:url(../subject_none.png) no-repeat; width:109px; height:103px; position:absolute; bottom:20px; right:45px;}
     .lean_subject_list > ul > li:nth-child(1) , .lean_subject_list > ul > li:nth-child(2) {border-top:0}
-    .lean_subject_list > ul > li:nth-child(odd) > a {border-right:1px solid #eee;}    
+    .lean_subject_list > ul > li:nth-child(odd) > a {border-right:1px solid #eee;}
     .lean_subject_list > ul > li > a {display:block}
     .lean_subject_list > ul > li > a:hover .img img {animation:pulsate 0.345s; }
-    .lean_subject_list > ul > li .name {position:absolute; top:30px; left:30px; font-size:20px; color:#333;} 
+    .lean_subject_list > ul > li .name {position:absolute; top:30px; left:30px; font-size:20px; color:#333;}
     .lean_subject_list > ul > li .img {padding:30px 0 30px 90px; display:inline-block}
     .lean_subject_list > ul > li .arrow {position:absolute;  bottom:20px;  right:20px;  width:42px;  height:42px;  line-height:40px;  display:inline-block;  text-align:center;  background-color:rgba(255,210,0,0.8);  background-color:#ffdb33;
     border-radius:50%;}
     .lean_subject_list > ul > li .arrow img {vertical-align:middle}
     .lean_subject_list > ul > li > a:hover .arrow img {animation: arrow 2s ease-out 0s infinite forwards; animation-delay:1s; }
-		
+
 	.myroom_info .today_list {margin: 15px 0 0;}
 	.myroom_info .today_list > ul > li {position:relative; padding:10px 0; border-top:2px dotted #d6d2e1; min-height:22px}
 	.myroom_info .today_list > ul > li:first-child {border-top:0}
 	.myroom_info .today_list > ul > li .left_area {width:60px; text-align:center; position:absolute; top:10px; left:0;}
 	.myroom_info .today_list > ul > li .right_area {margin: 0 0 0 70px; line-height: 22px;}
 	.myroom_info .today_list > ul > li .right_area > span {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-	
+
 	/* EOD : 내교실 - 상단 영역 */
-	
-	
+
+
 	/* 내교실 - 출석현황 영역 */
-   	
+
    	.table_normal.attentable tbody tr td {padding:20px}
-	.table_normal.attentable .imgBox {min-height:125px; text-align:center}	
+	.table_normal.attentable .imgBox {min-height:125px; text-align:center}
 	.table_normal.attentable .imgBox .txt {font-size:20px; color:#333; text-align:left; margin:0 0 5px}
-	.table_normal.attentable .imgBox.type02 {min-height:auto} 
-	
+	.table_normal.attentable .imgBox.type02 {min-height:auto}
+
 	.table_normal.subjectImg tbody tr td {padding:20px}
 	.table_normal.subjectImg .imgBox {min-height:155px}
-	.table_normal.subjectImg .imgBox .txt {font-size:17px; color:#333; text-align:left; margin:0}	
-	
+	.table_normal.subjectImg .imgBox .txt {font-size:17px; color:#333; text-align:left; margin:0}
+
 	/* EOD : 내교실 - 출석현황 영역 */
-	
+
 	/* 내교실 - 형성평가 영역 */
-	
+
 	.table_normal.result .notice_title {margin:12px 22px; width:auto}
-	
-	
+
+
 	/* EOD : 내교실 - 형성평가 영역 */
-   		
-		
+
+
 	.Ivory_area {background-color:#f9f6ee; border-top:2px solid #ccc; padding:60px 0 105px}
-	
-	
+
+
 	/* EOD : 내교실 */
-	
+
 	/* 나의출결현황 */
-			
+
 	.yellowBox {background-color:#ffd700; border-radius:10px;  width:100%; height:100px; position:relative; border-bottom:3px solid #d9b700; margin: 0 0 -10px;
     z-index: 1;}
 	.yellowBox.type02 {margin:0 0 -10px}
@@ -492,12 +492,12 @@
 	.yellowBox .left_area .dayBox {display:table; width:100%; height:100%}
 	.yellowBox .left_area .dayBox .year_data {display:table-cell; vertical-align:middle; height:100%}
 	.yellowBox .left_area .dayBox .year_data .data {font-size:30px}
-	
+
 	.yellowBox .subBox {position:relative; display: table;width: 100%;height: 100%;text-align: left;}
 	.yellowBox .subBoxIn {position:relative;display: table-cell;vertical-align: middle;}
 	.yellowBox .subBoxIn .imgBox {position:absolute; top:0; left:40px;}
 	.yellowBox .subBoxIn .imgBox img {height: 90px;}
-	
+
 	.yellowBox .subBoxIn .txtBox {margin: 0 0 0 150px;}
 	.yellowBox .subBoxIn .txtBox .main_txt {font-size:30px;color:#333;margin: 10px 0;font-weight:500;}
 	.yellowBox .subBoxIn .txtBox .sub_txt {font-size:16px; color:#645128; margin:0; letter-spacing:0.01em}
@@ -510,13 +510,13 @@
 		.pepleBoxIn > ul > li {float:left;padding: 0 30px 0 20px;position:relative;}
 		.pepleBoxIn > ul > li:first-child:after {display:none}
 		.pepleBoxIn > ul > li:after {content:""; position:absolute; top:0; left:0; height:100%; border-right:2px dashed #d9c331}
-		
+
 		.pepleBoxIn {padding:13px 14px; min-height:74px}
-		
+
 		.pepleBox .p_left {float:left; margin: 15px 15px 0 0; text-align: left;}
 		.pepleBox .p_left .type {font-size:16px; color:#645128; margin:0 0 5px}
 		.pepleBox .p_left .name {font-size:24px; color:#333; margin:0}
-		
+
 		.pepleBox .p_right {float:right; position:relative}
 		.pepleBox .p_right .circle {width: 70px; height: 70px; line-height: 65px; background-color: #eab512; border-radius: 50%;
 		display: inline-block; text-align: center; margin:3px 0 0; box-shadow: 0px -3px 1px #c79a0f;}
@@ -525,57 +525,57 @@
 		.pepleBox .p_right .msgBox a {border-radius:50%; width:30px; height:30px; line-height:26px; background-color:#fff6d1; display:inline-block; text-align:center}
 		.pepleBox .p_right .msgBox a > img {transition:0.3s all ease}
 		.pepleBox .p_right .msgBox a:hover > img {transform:rotateY(180deg)}
-		
+
 		.pepleBox .p_right .msgBox img {vertical-align:middle}
 		.pepleBox .p_right .msgBox > ul > li {margin: 2px 0;}
-				
+
 		.pepleBox .playBox {width:100%; min-height:74px; display:table; margin:0 0 0 20px}
-		.pepleBox .playBoxIn {display:table-cell; width:100%; height:100%; vertical-align:middle}		
-		.pepleBox .playBoxIn .playCircle {width:36px; height:36px; line-height:30px; border-radius:50%; background-color:#dd3900; text-align:center; display:inline-block; vertical-align:middle}		
+		.pepleBox .playBoxIn {display:table-cell; width:100%; height:100%; vertical-align:middle}
+		.pepleBox .playBoxIn .playCircle {width:36px; height:36px; line-height:30px; border-radius:50%; background-color:#dd3900; text-align:center; display:inline-block; vertical-align:middle}
 		.pepleBox .playBoxIn .playCircle img {vertical-align:middle; margin:0 0 0 3px;}
-		.pepleBox .playBoxIn .txt {vertical-align:middle; font-size:24px; color:#333; margin:0 0 0 5px} 
-	
+		.pepleBox .playBoxIn .txt {vertical-align:middle; font-size:24px; color:#333; margin:0 0 0 5px}
+
 	/* EOD : 나의출결현황 */
-	
+
 	/* 동영상 수업 */
-	
+
 	.subjectBox {border-radius:10px; background-color:white; border:2px solid #ccc; border-bottom:4px solid #ccc; margin:0 0 25px}
 	  .subjectBoxIn {padding:20px 38px; position:relative; min-height:170px}
 	    .subjectL {position:absolute; top:43px; left:38px;}
 	    .subjectR {padding:0 0 0 170px}
-	    
+
 	    .subjectR_Top {padding:0 0 10px; border-bottom:2px solid #eee}
 	    .subjectR_Top .name {color:#333; font-size:30px; font-weight:bold; line-height:40px}
 	    .subjectR_Top  .link_btn {float:right; display:inline-block; width:100px; height:40px; line-height:40px; text-align:center; color:White; background-color:#4b4b4b; border-radius:4px}
-	    
+
 	    .subjectR_Bot ul li {position:relative; border-bottom:2px dotted #eee; padding:18px 0 20px; min-height:20px}
 	    .subjectR_Bot ul li:first-child {padding:25px 0 20px}
 	    .subjectR_Bot .txtBox {width:130px; position:absolute; left:0;  color:#333;}
 	    .subjectR_Bot .txtBox .txt_label {font-size:17px; display:inline-block; width:48px; margin:0 10px 0 0}
 	    .subjectR_Bot .txtBox .percent strong {font-size:24px; color:#dd3900}
-	    .subjectR_Bot .progressBox {margin:2px 0 0 130px} 
-	    
+	    .subjectR_Bot .progressBox {margin:2px 0 0 130px}
+
 	    .subjectR_Bot .progress { position:relative; display:block; height:20px; background:#e6e6e6; border-radius:8px; }
 	    .subjectR_Bot .progressBar { position:absolute; z-index:1; top:0; left:0; height:100%; width:0; background:#dd3900; border-radius:8px; transition:2.25s ease-in-out; }
-	    
+
 		/* 동영상 홈 */
-			    
+
 		.blackBoard {height:260px; border: 1px solid #ccc; border-top:0; position:relative; background: #f4ecd6 url(../blackBoard_Bg.png) no-repeat 0px -10px;  border-radius: 0 0 10px 10px;  }
 		.blackBoard:after {content:""; position:absolute; top:-1px; left:35px; right:35px; border-top:2px dashed #ccc;}
 		.blackBoard.type02 {border-radius:0; border-bottom:0}
-		
+
 		.blackBoardIn {height:100%;border-radius:0 0 10px 10px; display:table;width: 100%;}
 		.blackBoardIn.type02 {max-width:650px; margin:0 auto}
-		.blackBoardIn > ul {display: table-cell;vertical-align:middle;}    
+		.blackBoardIn > ul {display: table-cell;vertical-align:middle;}
 		.blackBoardIn > ul > li {float:left; width:33.33%}
 		.blackBoardIn.type02 > ul > li {width:50%}
-		
+
 		.blackBoardIn .table {display:table; width:100%; height:100%; text-align:center}
-		.blackBoardIn .tableCell {display:table-cell; vertical-align:middle;}	
-		
+		.blackBoardIn .tableCell {display:table-cell; vertical-align:middle;}
+
 		.blackBoardIn .greenBoard {background:url(../green_board.png) 50% 50% no-repeat; height:175px; margin:5px 0 0}
 		.blackBoardIn .greenBoard .tableCell {padding:0 0 20px}
-		
+
 		.blackBoardIn .greenBoard .boardBox {max-width: 200px;margin: 0 auto 0px; position:relative}
 		.blackBoardIn .greenBoard .imgBox {position:absolute; top:5px; left:0}
 		.blackBoardIn .greenBoard .imgBox img {height: 90px;}
@@ -583,27 +583,27 @@
 		.blackBoardIn .greenBoard .txtBox .main_txt {font-size:30px;color: white;margin: 0 0 10px;font-weight:500;}
 		.blackBoardIn .greenBoard .txtBox .sub_txt {font-size:16px;color: white;margin:0;letter-spacing:0.01em;}
 		.blackBoardIn .greenBoard .txtBox .sub_txt strong {margin:0 10px 0 0; font-weight:600}
-		
+
 		.blackBoardIn .greenBoard  .msgBox {margin: 10px 0 0;}
 		.blackBoardIn .greenBoard  .msgBox a {border-radius:50%; width:30px; height:30px; line-height:30px; background-color:white; display:inline-block; text-align:center}
 		.blackBoardIn .greenBoard  .msgBox a > img {transition:0.3s all ease}
 		.blackBoardIn .greenBoard  .msgBox a:hover > img {transform:rotateY(180deg)}
 		.blackBoardIn .greenBoard  .msgBox > ul > li {float:left; margin:0 3px;}
-		
+
 		.blackBoardIn .book {background:url(../pink_book.png) 50% 50% no-repeat; height:180px;}
 		.blackBoardIn .book .top {font-size:24px; color:#333; margin:0 0 10px; font-weight:bold}
 		.blackBoardIn .book .percent {font-size:40px; color:#dd3900; font-weight:bold; margin:0 0 10px}
 		.blackBoardIn .book .percent small {font-size:20px; font-weight:500}
 		.blackBoardIn .book .foot {font-size:16px; color:#666; margin:0 0 15px}
 		.blackBoardIn .book .foot strong {font-weight:600; color:#333}
-				
-		.blackBoardIn .servey {background:url(../survey_board.png) 50% 50% no-repeat; height:180px;}	
+
+		.blackBoardIn .servey {background:url(../survey_board.png) 50% 50% no-repeat; height:180px;}
 		.blackBoardIn .servey .top {font-size:24px; color:#333; margin:0 0 15px; font-weight:bold}
 		.blackBoardIn .servey .content {max-width:225px; margin:0 auto}
 		.blackBoardIn .servey .content > ul {overflow:hidden}
 		.blackBoardIn .servey .content > ul > li {float:left; width:50%; position:relative}
 		.blackBoardIn .servey .content > ul > li:after {content:""; position:absolute; top:0; left:0; bottom:0; border-left:2px dashed #eee}
-		.blackBoardIn .servey .content > ul > li:first-child:after {display:none}	
+		.blackBoardIn .servey .content > ul > li:first-child:after {display:none}
 		.blackBoardIn .servey .content > ul > li.left {margin:0 0 10px; color:#4d67e2;}
 		.blackBoardIn .servey .content > ul > li.left .number {font-size:40px; font-weight:bold; margin:0 0 10px}
 		.blackBoardIn .servey .content > ul > li.left .number small {font-size:20px; font-weight:400}
@@ -611,23 +611,23 @@
 		.blackBoardIn .servey .content > ul > li.right {margin:0 0 10px; color:#767676;}
 		.blackBoardIn .servey .content > ul > li.right .number {font-size:40px; margin:0 0 10px}
 		.blackBoardIn .servey .content > ul > li.right .txt {font-size:16px; font-weight:400; margin:0}
-	
+
 		.StepBox {margin:0 0 0 30px}
 	 	.StepBox > ul > li {position:relative; margin:30px 0 0}
 	 	.StepBox > ul > li:first-child {margin:0}
 	 	.StepBox > ul > li:last-child .StepBoxL {height: 100%; bottom: 0;}
-	  	
+
 	 	.StepBoxL {position:absolute; top:0; left:0; bottom:0;}
 	 	.StepBoxL .sunBox {position: absolute;  top:50%; left: -15px; z-index: 3; margin:-27px 0 0}
 	 	.StepBoxL .sun {position:relative; width: 55px; height: 55px;  line-height: 55px;  border-radius: 50%; text-align: center; font-size: 18px;  color: white;  font-weight: 500; display: inline-block; background-color: #dd3900;}
-	 	.StepBoxL .sun:after {content:""; width:77px; height:77px; display:inline-block; position:absolute; top:-11px; left:-11px; background:url(../sun_light.png) no-repeat; background-size:cover; animation:sun 5s infinite}	 	
-	 	
+	 	.StepBoxL .sun:after {content:""; width:77px; height:77px; display:inline-block; position:absolute; top:-11px; left:-11px; background:url(../sun_light.png) no-repeat; background-size:cover; animation:sun 5s infinite}
+
 	 	.StepBoxL:after {content: "";  position: absolute; top:-15px;  left: 10px; bottom:-15px; background-color: #eee;  width: 5px; z-index:1;}
 	 	.StepBoxL:before {content: "";  position: absolute; top:50%; left: 2px; width: 21px; height: 21px; margin:-10px 0 0; background-color: #ccc;  border-radius: 50%; z-index:2;}
 	 	.StepBoxR {margin:0 0 0 90px;}
 	 	.StepBoxRIn {padding:20px 0; border:2px solid #ccc; display:table; width:100%; border-radius:100px; position:relative}
 	 	.StepBoxRIn:before {content: "";  position: absolute; top: 50%; left: -8px;  width: 6px;  height: 14px;  margin: -9px 0 0; border-radius: 10px 0 0 10px; border: 2px solid #ccc;  border-right: 0; background-color: white;}
-	 	
+
 	 	.stepContentL {display:table-cell; padding:0 0 0 45px; vertical-align: middle;}
 	 	.stepContentL .main_txt {color:#333; font-size:20px; margin:0 0 10px; line-height:1.2}
 	 	.stepContentL .sub_txt {color:#666; font-size:14px; margin:0}
@@ -636,85 +636,85 @@
 	 	.stepContentC .percent small {font-size:16px; color:#666; margin:0 0 0 5px;}
 	 	.stepContentC .percent .txt {display:none}
 	 	.stepContentR {display:table-cell; vertical-align: middle; width:230px; position:relative; border-left:2px dashed #eee}
-		
+
 		.stepContentR .playBox {width:auto; min-height:62px; display:table; margin:0 0 0 50px}
-		.stepContentR .playBoxIn {display:table-cell; width:100%; height:100%; vertical-align:middle}		
-		.stepContentR .playBoxIn .playCircle {width:36px; height:36px; line-height:30px; border-radius:50%; background-color:#dd3900; text-align:center; display:inline-block; vertical-align:middle}		
+		.stepContentR .playBoxIn {display:table-cell; width:100%; height:100%; vertical-align:middle}
+		.stepContentR .playBoxIn .playCircle {width:36px; height:36px; line-height:30px; border-radius:50%; background-color:#dd3900; text-align:center; display:inline-block; vertical-align:middle}
 		.stepContentR .playBoxIn .playCircle img {vertical-align:middle; margin:0 0 0 3px}
 		.stepContentR .playBoxIn .playCircle.type02 img {margin:0}
-		.stepContentR .playBoxIn .txt {vertical-align:middle; font-size:24px; color:#333; margin:0 0 0 5px; font-weight:500} 
+		.stepContentR .playBoxIn .txt {vertical-align:middle; font-size:24px; color:#333; margin:0 0 0 5px; font-weight:500}
 		.stepContentR .playBoxIn .txt br {display:none}
-		
+
 		.StepBox > ul > li.complete .StepBoxRIn {background-color:#ffe539; border:2px solid #ffe539}
 	 	.StepBox > ul > li.complete .StepBoxRIn:before {border:2px solid #ffe539; background-color:#ffe539}
 		.StepBox > ul > li.complete .stepContentR {border-left:2px dashed #d9c331}
-			
+
 		.StepBox > ul > li.disable .StepBoxRIn {background-color:#eee; border:2px solid #eee}
 		.StepBox > ul > li.disable .StepBoxRIn:before {border:2px solid #eee; background-color:#eee}
 		.StepBox > ul > li.disable .stepContentR {border-left:2px dashed #ccc}
 		.StepBox > ul > li.disable .stepContentR .playBoxIn .playCircle {background-color: #ccc}
 		.StepBox > ul > li.disable .stepContentR .playBoxIn .txt {color:#767676}
-		
+
 		.StepBox > ul > li:first-child .StepBoxL:after {top:45px}
 		.StepBox > ul > li:last-child .StepBoxL:after {bottom:65px}
-		
+
 		.table_notice.survey .notice_title .notice_titleL {width:62px}
 		.table_notice.survey .txt_orange {width:50px; display:inline-block; color:#dd3900; margin:0 15px 0 0; vertical-align:middle; font-size:17px; font-weight:500}
-		
-		
+
+
 		/* 학습 창 */
-		
+
 		.videoTop {position:relative;}
 		.videoTop_Step {margin:0 350px 0 0}
-		
+
 		.Ballon_Step > ul {display: table; table-layout: fixed; width: 100%; margin:0 0 0 -20px}
 		.Ballon_Step > ul > li {display: table-cell; text-align:center}
 		.Ballon_Step > ul > li > .liBox {margin:0 0 0 20px}
 		.Ballon_Step .step {width:100%; height:100px; border-radius:50px; background-color:#ffe539; display:table; text-align:center; position:relative}
 		.Ballon_Step .stepIn {display:table-cell; height:100%; vertical-align:middle; position:relative}
-		.Ballon_Step .stepIn:after {content: ""; top: 50%;  right: -8px;  position: absolute; width: 10px; height: 20px; display: inline-block; 
+		.Ballon_Step .stepIn:after {content: ""; top: 50%;  right: -8px;  position: absolute; width: 10px; height: 20px; display: inline-block;
 		background: url(../ballon_step_arrow.png) no-repeat; margin: -10px 0 0;}
 		.Ballon_Step .step .name {font-size:18px; color:#333; margin:13px 0 0}
-		
+
 		.Ballon_Step  .sunBox {position: absolute; top:-20px; right:-20px; z-index: 3;}
 	 	.Ballon_Step  .sun {position:relative; width: 55px; height: 55px;  line-height: 55px;  border-radius: 50%; text-align: center; font-size: 18px;  color: white;  font-weight: 500; display: inline-block; background-color: #dd3900;}
-	 	.Ballon_Step  .sun:after {content:""; width:77px; height:77px; display:inline-block; position:absolute; top:-11px; left:-11px; background:url(../sun_light.png) no-repeat; background-size:cover; animation:sun 5s infinite}	 	
-	 			
+	 	.Ballon_Step  .sun:after {content:""; width:77px; height:77px; display:inline-block; position:absolute; top:-11px; left:-11px; background:url(../sun_light.png) no-repeat; background-size:cover; animation:sun 5s infinite}
+
 		.video_btn {position:absolute; top:0; right:0;}
 		.video_btn > ul > li {float:left; margin:0 0 0 8px}
 		.video_btn > ul > li:first-child {margin:0}
 		.video_btn .btn {width:95px; height:87px; border-radius:5px; border:1px solid #dd3900; background-color:#dd3900; display:table; text-align:center;}
 		.video_btn .btnIn {display:table-cell; height:100%; vertical-align:middle}
-		
+
 		.video_btn .btnIn button {line-height:1; width:100%; height:100%;}
 		.video_btn .btnIn button .books {display:inline-block; width:32px; height:32px; position:relative}
 		.video_btn .btnIn button .book01 {background:url(../icon_video_btn_book.png) no-repeat; display:inline-block; width:29px; height:10px; position:absolute; top:0; left:0; transition:0.3s all ease}
 		.video_btn .btnIn button .book02 {background:url(../icon_video_btn_book.png) no-repeat; display:inline-block; width:29px; height:10px; position:absolute; top:8px; left:3px;  transition:0.3s all ease}
 		.video_btn .btnIn button .book03 {background:url(../icon_video_btn_book.png) no-repeat; display:inline-block; width:29px; height:10px; position:absolute; top:16px; left:0;  transition:0.3s all ease}
 		.video_btn .btnIn button .mark {background:url(../icon_video_btn_mark.png) no-repeat; display:inline-block; width:8px; height:11px; position:absolute; top: 21px; left: 14px;  transition:0.3s all ease}
-				
+
 		.video_btn .btnIn .book_btn:hover .book01 {left:5px}
 		.video_btn .btnIn .book_btn:hover .book02 {left:0px}
 		.video_btn .btnIn .book_btn:hover .book03 {left:2px}
-		
+
 		.video_btn .btnIn button .note {display:inline-block; width:32px; height:32px; position:relative; background:url(../icon_video_note.png) no-repeat; }
 	    .video_btn .btnIn button .line01 {display:inline-block;width:15px;height:2px;background-color:white;position:absolute;top: 7px;left: 7px; transition:0.3s all ease;}
 		.video_btn .btnIn button .line02 {display:inline-block;width:15px;height:2px;background-color:white;position:absolute;top: 13px;left: 7px; transition:0.3s all ease;}
 		.video_btn .btnIn button .line03 {display:inline-block;width:9px;height:2px;background-color:white;position:absolute;top: 19px;left: 7px; transition:0.3s all ease;}
-		
+
 		.video_btn .btnIn .note_btn:hover .line01  {width:12px}
 		.video_btn .btnIn .note_btn:hover .line02  {width:17px}
-		.video_btn .btnIn .note_btn:hover .line03  {width:15px} 
-		 
+		.video_btn .btnIn .note_btn:hover .line03  {width:15px}
+
 		.video_btn .btn .name {font-size:18px; color:white; margin:10px 0 0}
-		
+
 		.video_btn_mob {width:100%; margin:20px 0 10px; display:none}
 		.video_btn_mob .video_btnL {float:left}
 		.video_btn_mob .video_btnR {float:right; position:relative}
 		.video_btn_mob img {vertical-align:middle}
 		.video_btn_mob button {margin:0; line-height: 1;}
 		.video_btn_mob button .txt {vertical-align:middle; margin:0 0 0 5px}
-		
+
 		.video_list_mob {position: absolute; top: 40px; right: 0; padding: 15px;  z-index: 10;  background-color: white;  border-radius: 5px;
     					 border: 1px solid #b2b2b2; display:none}
         .video_list_mob.on {display:block}
@@ -724,7 +724,7 @@
 		  .video_list_mobIn > ul > li {border-top:1px solid #ccc}
 		  .video_list_mobIn > ul > li:first-child {border-top:0}
 		  .video_list_mob .lec_dep_1 {display:block;  position: relative; padding:15px 10px; background-color:white; color:#333; font-size:14px; font-weight:500; transition:0.3s all ease}
-				  
+
 		  .video_list_mob .lec_dep_2 {border-top:1px solid #eee; display:block; padding:15px 20px; background-color:#f8f8f8;  color: #666; font-size: 14px; position:relative; }
 		  .video_list_mob .lec_dep_2 .lec_name:before {content: '';  position: absolute;  top: 50%;  margin: -4px 0 0 0;  left:10px;  width: 7px;  height: 7px;  background: url(../icon_reple.png) no-repeat;}
 		  .video_list_mob .lec_dep_2:hover .lec_name , .video_list_mob .lec_dep_1:hover .lec_name  {color:#dd3900}
@@ -732,14 +732,14 @@
 
 
 		.videoQ {padding:7px 0; text-align:right}
-		
+
 		.videoQ .questionBox {display:inline-block; vertical-align: middle; width:31px; height:28px; position:relative; background:url(../icon_question_ballon.png) no-repeat; }
 		.videoQ .question {display:inline-block;width:7px;height:12px; position:absolute; top:6px;left:13px; transition:0.3s all ease; background:url(../icon_question.png) no-repeat;}
 		.videoQ button {line-height: 1; transition:0.3s all ease}
 		.videoQ button:hover .question {animation: flip 0.5s;}
 		.videoQ .txt {vertical-align:middle; display:inline-block; margin:0 0 0 7px; font-size:18px; color:#333; font-weight:500}
-		
-		
+
+
 		.videoCon {min-height:500px; position:relative;}
 	    .videoCon .sub_txt {margin:0 0 20px 10px; color:#333; font-size:24px; font-weight:600}
 	    .videoCon .sub_txt > small {font-size:20px; color:#666; font-weight:400}
@@ -749,7 +749,7 @@
     	 font-size: 14px;  color: #fff;  background: #727272;  border: 1px solid #727272;  transition: 0.399s ease;  border-radius: 4px;}
    		 .videoCon .sub_txt .all_Btn > span {vertical-align:middle; display:inline-block; margin:0 10px 0 0}
 		 .videoCon .sub_txt .all_Btn > img {vertical-align:middle; transition:0.3s all ease}
-		 .videoCon .sub_txt .all_Btn.on > img {transform: rotate(180deg);} 
+		 .videoCon .sub_txt .all_Btn.on > img {transform: rotate(180deg);}
 
 
 	    .videoCon .sub_txt .mobS {display:none}
@@ -758,21 +758,21 @@
 		    .videoSub {margin:40px 0 0}
 			  .videoSubBox {padding:15px 30px; border:1px solid #e6e6e6; min-height:198px; overflow:auto}
 			  .videoSubBox p {font-size:16px; color:#333; margin:15px 0}
-			  
+
 		  .videoConR {position:absolute; top:0; right:0; width:200px;}
-		  
+
 		  .V_lecture > ul > li {border-top:1px solid #ccc}
 		  .V_lecture > ul > li:first-child {border-top:0}
 		  .V_lecture {border-top:1px solid #a5a4a4; border-bottom:1px solid #a5a4a4;}
 		  .V_lecture .lec_dep_1 {display:block;  position: relative; padding:18px 10px; background-color:white; color:#333; font-size:16px; font-weight:500; transition:0.3s all ease}
-				  
+
 		  .V_lecture .lec_dep_2 {border-top:1px solid #eee; display:block; padding: 18px 20px; background-color:#f8f8f8;  color: #666; font-size: 16px; position:relative; }
 		  .V_lecture .lec_dep_2 .lec_name:before {content: '';  position: absolute;  top: 50%;  margin: -4px 0 0 0;  left: -11px;  width: 7px;  height: 7px;  background: url(../icon_reple.png) no-repeat;}
 		  .V_lecture .lec_dep_2:hover .lec_name , .V_lecture a.lec_dep_1:hover .lec_name  {color:#dd3900}
-		  
+
 		  .V_lecture .ico_menu .lec_name {margin: 0 55px 0 0; display:inline-block;  word-break: break-all; position:relative; transition:0.3s all ease}
 		  .V_lecture .icoBox {position:absolute; top:50%; right:10px; margin:-11px 0 0}
-		  
+
 		  .V_video {margin:40px 0 0}
 		  .V_video_list {margin:0 20px}
 		  .V_video_list .videoBox:hover .video_thum {animation: flip 0.3s;}
@@ -780,69 +780,69 @@
 		  .V_video_list .slick-prev { position:absolute; z-index:5; top:50px; left:-20px; width:8px; height:18px; overflow:hidden; text-indent:-999px; background:url(../icon_day_lt.png) no-repeat; transition:0.2s all ease}
 		  .V_video_list .slick-next { position:absolute; z-index:5; top:50px; right:-20px; width:8px; height:18px; overflow:hidden; text-indent:-999px; background:url(../icon_day_gt.png) no-repeat; transition:0.2s all ease}
 		  .V_video_list .slick-prev:hover , .V_video_list .slick-next:hover {transform:scale(1.2)}
-		  
+
 		  .videoBox .video_thum {display:block; height:110px; background:#f8f8f8 url(../subject_none.png) no-repeat 50% 50%; background-size: 80px auto; border:1px solid #eee}
-		  .videoBox .video_name {color:#666; font-size:16px; padding:10px 0 0; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis} 
-		
+		  .videoBox .video_name {color:#666; font-size:16px; padding:10px 0 0; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+
 		  .V_video_mob {display:none}
-		 
+
 		/* EOD : 학습 창 */
-		
+
 	/* EOD : 동영상 수업 */
-	
+
 	/* 활동중심 수업 */
-	
+
 	.InfoBoard {border-left:1px solid #ccc; border-right:1px solid #ccc; border-top:0; margin:-10px 0 0; padding:35px 30px 30px}
 	.InfoBoard .InfoName {font-size:24px; color:#333; margin:0 0 20px; font-weight:600}
 	.InfoBoard .InfoContent {font-size:16px; color:#666; margin:0; font-weight: 300;  letter-spacing: -0.02em;}
-	
-	.StepBox.type02 .stepContentL {padding:0 40px; width:30px; border-right:2px dashed #eee} 
+
+	.StepBox.type02 .stepContentL {padding:0 40px; width:30px; border-right:2px dashed #eee}
 	.StepBox.type02 > ul > li.complete .stepContentL {border-right:2px dashed #d9c331}
 	.StepBox.type02 .stepContentL .txt {font-size:20px}
 	.StepBox.type02 .stepContentC {text-align:left; padding:0 45px 0 20px}
 	.StepBox.type02 .stepContentC .main_txt {font-size:20px; color:#333; margin:0 0 10px}
 	.StepBox.type02 .stepContentC .sub_txt {font-size:14px; color:#666; margin:0 0 5px; letter-spacing: -0.02em}
 	.StepBox.type02 .stepContentC .sub_txt .label {width:55px; display:inline-block}
-	
+
 	.chatTop {margin:0 30px; padding:20px 0; border-top:2px dashed #ccc; border-bottom:2px dashed #eee;}
 	.chatTop .tit {display:table-cell;}
 	.chatTop .tit span {display:inline-block; vertical-align:middle}
 	.chatTop .tit .txt {color:#666; font-size:16px; padding: 0 20px; border-right: 1px solid #eee;}
 	.chatTop .data {display:table-cell; vertical-align:middle; padding:0 0 0 20px; font-size:16px; color:#767676; letter-spacing: -0.02em;}
-	
+
 	.symBox {text-align:center; margin:30px 0}
 	.symBox .heart {background-color:#727272; border-radius:5px; width:125px; height:40px; line-height:40px; color:white; transition:0.4s all ease}
 	.symBox .heart  span {display:inline-block; vertical-align:middle; font-size:16px}
 	.symBox .heart .ico {display: inline-block; width: 18px; height: 15px; margin: 0 8px 0 10px; transition:0.4s all ease; background: url(../icon_heart_void.png) no-repeat;}
 	.symBox .heart.on {background-color:#dd3900;}
 	.symBox .heart.on .ico {background: url(../icon_heart.png) no-repeat; transform:rotateY(360deg)}
-	
+
 	/* EOD : 활동중심 수업 */
-	
+
 	/* 화상수업/상담시간표 */
-	
-	.year_data {text-align:center; margin:0}	
+
+	.year_data {text-align:center; margin:0}
 	.year_data .data {font-size:36px; color:#333; font-weight:500; margin:0 40px; display:inline-block; vertical-align:middle}
 	.year_data .arrow {display:inline-block; vertical-align:middle; margin:4px 0 0}
-   	.year_data .sub_data {font-size:16px; color:#645128; margin:15px 0 0}   	
-	
+   	.year_data .sub_data {font-size:16px; color:#645128; margin:15px 0 0}
+
 	.timetable tbody tr th {border-left:0}
 	.timetable tbody tr th .class {margin: 0 0 15px;  font-size: 17px; color: #333;  font-weight: 500;}
 	.timetable tbody tr th .time {margin: 0; font-size: 14px; color: #767676;  font-weight: 400;  letter-spacing: 0.03em;}
-	
+
 	.timetable tbody tr td {padding:0}
 	.timetable .tableBlock {position:relative; min-height:170px; display:table; width:100%}
 	.timetable .tableBlock .imgBox {display: table-cell; vertical-align: middle;  text-align: center;  width: 100%;  height: 100%;}
 	.timetable.mini .tableBlock {min-height:100px}
 	.timetable.mini .tableBlock .imgBox img {max-height:50px}
 	.timetable .tableBlock .name {margin: 0 0 10px;font-size:17px;color:#333;position:relative;}
-	
-	.timetable tbody tr td .atten {position: absolute; bottom: 20px;  left: 50%;  margin: 0 0 0 -45px;}	
+
+	.timetable tbody tr td .atten {position: absolute; bottom: 20px;  left: 50%;  margin: 0 0 0 -45px;}
 	.timetable  .on_air {position: absolute; left: 50%; bottom: -30px;  width: 48px; height: 21px;  background-color: #dd3900; color: white;  font-size: 12px; border-radius: 5px;  margin: 0 0 0 -24px; letter-spacing: 0.02em;}
 	.timetable  .re01 {position: absolute; left: 50%; bottom: -30px;  width: 55px; height: 21px;  background-color: #ffd200; color: #783c02;  font-weight:600; font-size: 12px; border-radius: 5px;  margin: 0 0 0 -26px; letter-spacing:-0.05em;}
 	.timetable  .re02 {position: absolute; left: 50%; bottom: -30px;  width: 55px; height: 21px;  background-color: #c2e583; color: #1e6b09;  font-weight:600; font-size: 12px; border-radius: 5px;  margin: 0 0 0 -26px; letter-spacing:-0.05em;}
 	.timetable  .re03 {position: absolute; left: 50%; bottom: -30px;  width: 55px; height: 21px;  background-color: #c8d4fa; color: #2844c9;  font-weight:600; font-size: 12px; border-radius: 5px;  margin: 0 0 0 -26px; letter-spacing:-0.05em;}
-		
+
 	.timetable .gray_label {position: absolute; left: 0; width: 100%; bottom: 0; height: 40px; line-height: 40px; font-size: 16px; transition:0.2s all ease; color:white;  background-color: #4b4b4b;}
 	.timetable .gray_label:hover {font-size: 18px; color:white}
 	.timetable .gray_label .arrow {width:6px; height:11px; display:inline-block; margin:0 0 0 10px; background:url(../timetable_arrow.png) no-repeat;}
@@ -852,17 +852,17 @@
 	.timetable .red_label .arrow {width:6px; height:11px; display:inline-block; margin:0 0 0 10px; background:url(../timetable_arrow.png) no-repeat;}
 	.timetable.mini .gray_label , .timetable.mini .red_label {height:30px; line-height:30px; font-size:14px}
 	.timetable.mini .gray_label:hover , .timetable.mini .red_label:hover {font-size:15px}
-	
-	
+
+
 	/* EOD : 화상수업/상담시간표 */
-	
+
 	/* 강의계획서 */
-	
+
 	.PlanBox {margin:20px 0 0 30px}
  	.PlanBox > ul > li {position:relative; margin:30px 0 0}
  	.PlanBox > ul > li:first-child {margin:0}
  	.PlanBox > ul > li:last-child .StepBoxL {height: 100%; bottom: 0;}
-  		
+
  	.PlanBoxL {position:absolute; top:0; left:0; bottom:0;}
  	.PlanBoxLIn {position: relative; height: 100%; text-align: center; width: 70px; margin: 0 0 0 -15px; display: inline-block;}
  	.PlanBoxLIn .circle {margin:20px 0 0; position: relative; width: 55px;  height: 55px;  line-height: 55px;  border-radius: 50%;  text-align: center;  font-size: 18px; z-index:2; color: white; font-weight: 500;  display: inline-block;  background-color: #dd3900;}
@@ -870,49 +870,49 @@
  	.PlanBoxL:after {content: ""; position: absolute; top:-15px;  left:20px;  bottom:-15px;  background-color: #eee;  width:4px; margin:0 0 0 -2px; z-index: 1;}
  	.PlanBox > ul > li:first-child .PlanBoxL:after {top:45px;}
  	.PlanBox > ul > li:last-child .PlanBoxL:after {bottom:220px;}
- 	
+
 	.PlanBoxR {margin:0 0 0 102px}
 	.PlanBoxRIn {border-radius:50px; border:2px solid #ccc; background-color:white; position:relative}
 	.PlanBoxRIn:before {content: ""; position: absolute; top: 35px; left: -10px;  width: 12px;  height: 21px; border-right: 0; background: url(../planBox_arrow.png) no-repeat;}
- 	
+
  	.PlanConT {display:table; width:100%; border-radius: 50px 50px 0 0;}
  	.PlanConTIn {display:table-cell; vertical-align:middle; padding:23px 50px; border-radius: 50px 50px 0 0; line-height: 24px; position:relative}
  	.PlanConTIn:after {content:""; position:absolute; left:50px; bottom:-1px; right:50px; border-bottom:2px dotted #eee}
  	  .PlanConT_L {float:left; font-size:24px; color:#dd3900; font-weight:500}
- 	  
- 	  
+
+
  	  .PlanConT_R {float:right; font-size:16px}
  	  .PlanConT_R > ul > li {float:left; padding-left:20px; color:#767676; position:relative}
  	  .PlanConT_R > ul > li:first-child {padding-right:20px; padding-left:0; color:#333;}
  	  .PlanConT_R > ul > li:first-child:after {content: ""; position: absolute;  top: 8px; right: 0;  background-color: #eee;  width: 1px;  height: 12px;}
- 	  
+
  	.PlanConB {background-color:#f8f8f8; border-radius: 0 0 50px 50px;}
  	.PlanConBIn {padding:30px 50px}
  	.PlanConBIn > ul {overflow:hidden}
 	.PlanConBIn > ul > li {float:left; width:50%}
-	
+
 	.PlanConBIn .main_txt {margin:0 0 20px; font-size:16px; color:#333; font-weight:500}
 	.PlanConBIn .default_txt {margin:10px 0 0; line-height:1; font-size:16px; color:#767676}
 	.PlanConBIn .bullet_txt {color:#767676; line-height:1; margin:10px 0 0; font-size:16px;}
-	
+
 	/* EOD : 강의계획서 */
-	
+
 	/* 나만의 노트 */
-	
+
 	.notice_title .notice_titleT {margin:0 0 5px}
 	.notice_title .notice_titleT span + span , .notice_title .notice_titleT span + span + span {margin:0 0 0 5px}
 	.notice_title .notice_titleB {word-break: break-all;}
-	
+
 	/* EOD : 나만의노트 */
-	
+
 	/* 쪽지함 */
-	
+
 	.chatBoxTop {background: #fff6d1;  border-bottom: 2px solid #f0dda3; border-radius:5px; padding:15px 30px; font-size: 17px; color: #645128; margin:0 0 -5px; position:relative; z-index:1;}
 
 	.chatBoxIn {border:1px solid #ccc; border-radius:0 0 10px 10px; min-height:300px; max-height:800px; overflow:auto; padding: 30px 0; margin:0 0 40px}
 	.chatBoxIn.type02 {border-top:0; min-height: auto;  padding: 0 0 30px;}
-	.chatBoxIn > ul > li {position:relative; min-height:120px}	  	 
-       	  
+	.chatBoxIn > ul > li {position:relative; min-height:120px}
+
 	   .chatBoxIn .ballonBoxIn {display:inline-block;}
 	   .chatBoxIn .ballon_main_txt {font-size:20px; color:#333; margin:0 0 20px}
 	   .chatBoxIn .ballon_txt {font-size:17px; line-height:1.5; text-align:left; word-break:break-all}
@@ -923,15 +923,15 @@
 	   .chatBoxIn .ballon_file .file_name .iconFile {vertical-align:middle}
 	   .chatBoxIn .ballon_file .file_name .txt {vertical-align:middle; color:#666; font-size:16px; margin: 0 0 0 10px; letter-spacing: 0.01em;}
 	   .chatBoxIn .ballon_file .file_name > a:hover .txt {color:#2844c9}
-	
-	  
+
+
 	.left_chat {float:left; text-align:left}
 	.left_chat .ballonBox {display:inline-block; max-width:700px; width:100%;}
 	.left_chat .imgBox {position:absolute; top:50%; left: 12px; margin:-74px 0 0}
-	
+
 	   .left_chatBox {position:relative; margin:20px 190px 0}
 	   .left_chatBox .ballon {background-color:white; border: 2px solid #ccc;  padding:20px 40px; border-radius:45px; position:relative;}
-	  
+
 	   .left_chatBox .ballon_day {margin:10px 10px 0 0; }
 	   .left_chatBox .ballon_day > ul {float: right;}
 	   .left_chatBox .ballon_day > ul > li {float:left; padding:0 10px; position:relative}
@@ -939,7 +939,7 @@
 	   .left_chatBox .ballon_day > ul > li:first-child:after {display:none}
 	   .left_chatBox .ballon_day > ul > li span {font-size:14px;color:#767676;vertical-align: top;}
 	   .left_chatBox .ballon:before {content: "";  position: absolute;  top: 50%; left: -8px; width: 6px;  height: 14px;  margin: -9px 0 0;  border-radius: 10px 0 0 10px;  border: 2px solid #ccc;  border-right: 0;  background-color: white;}
-	  	   
+
 	 .right_chat {float:right; text-align: right}
 	 .right_chat .ballonBox {display:inline-block; max-width:700px; width:100%; text-align:right}
 	 .right_chat .imgBox {position:absolute; top:50%; right: 12px; margin:-74px 0 0}
@@ -949,36 +949,36 @@
 	   .right_chatBox .ballon_day > ul > li {float:left; padding:0 10px; position:relative}
 	   .right_chatBox .ballon_day > ul > li:after {content:""; position:absolute; top:0; left:0; bottom:0; border-left:1px solid #eee}
 	   .right_chatBox .ballon_day > ul > li:first-child:after {display:none}
-	   .right_chatBox .ballon_day > ul > li span {font-size:14px;color:#767676;vertical-align: top;}	   
+	   .right_chatBox .ballon_day > ul > li span {font-size:14px;color:#767676;vertical-align: top;}
 	   .right_chatBox .ballon:before {content: "";  position: absolute;  top: 50%; right: -8px; width: 6px;  height: 14px;  margin: -9px 0 0;  border-radius:0 10px 10px 0;  border: 2px solid #ccc;  border-left: 0;  background-color: white;}
-	  
+
 	 .chatBoxIn > ul > li.disable .ballon {background-color:#eee; border:2px solid #eee;}
 	 .chatBoxIn > ul > li.disable .ballon:before {background-color:#eee; border:2px solid #eee;}
 	 .chatBoxIn > ul > li.disable .ballon_file {border-top:2px dotted #ccc}
-	
+
 	/* EOD : 쪽지함 */
-	
+
 	/* 학습이력 */
-	
-	.table_notice.avg {margin:0 0 20px} 
+
+	.table_notice.avg {margin:0 0 20px}
 	.table_notice.avg .avg_txt {color:#645128; display: inline-block;}
 	.table_notice.avg .avg_txt ul {overflow:hidden}
 	.table_notice.avg .avg_txt ul li {color:#645128; padding:0 20px; float: left; font-size:16px; position:relative;}
 	.table_notice.avg .avg_txt ul li:first-child {font-weight:500}
 	.table_notice.avg .avg_txt ul li:first-child:before {content: ""; position: absolute; top: 4px; right: 0; width: 1px; height: 12px; background-color: #f0dda3;}
     .table_notice.avg thead tr th {padding:18px 30px}
-	
+
 	/* EOD : 학습이력 */
-	
+
 	/* 나의 별점 */
-	
+
 	.starBox {margin:20px 0 65px; border-radius: 9px; position:relative; display:inline-block; width:100%; background:#473f65 url(../star_bg.png) no-repeat;}
 	.starBoxL {float:left}
 	.starBoxLIn {position:relative}
 	.starBoxLIn .star {background:url(../star_star.png) no-repeat; width:197px; height:187px; display:table; text-align: center; position:absolute; top: 20px; left: 205px; z-index:3}
 	.starBoxLIn .starIn {display:table-cell; vertical-align:middle; height:100%;}
 	.starBoxLIn .starIn .txt {color:#333; font-size:16px; margin:0 0 5px}
-	.starBoxLIn .starIn .num {color: #c80e00; font-size: 40px; margin: 0; font-weight: 600;}	
+	.starBoxLIn .starIn .num {color: #c80e00; font-size: 40px; margin: 0; font-weight: 600;}
 	.starBoxLIn .child_w { top:95px; left:90px; position:absolute;}
 	.starBoxLIn .child_wIn {position:relative}
 	.starBoxLIn .child_wIn:after {content:""; background:url(../star_child_w.png) no-repeat; width:166px; height:233px; display:inline-block; z-index: 2;position: relative; animation: jump03 1.3s infinite;}
@@ -987,7 +987,7 @@
 	.starBoxLIn .child_mIn {position:relative}
 	.starBoxLIn .child_mIn:after {content:""; background:url(../star_child_m.png) no-repeat;width:154px;height:221px;display: inline-block; z-index: 2;position: relative; animation: jump04 1.3s infinite; animation-delay: 0.5s}
 	.starBoxLIn .child_mIn:before {content:"";background:url(../star_child_shadow.png) no-repeat;width:90px;height:15px;position:absolute; bottom:-5px;left: 42px;z-index: 1;}
-	
+
 	.starBoxR {float:right}
 	.starBoxRIn {margin:20px 85px 20px 0; position:relative; z-index:2;}
 	.starBoxRIn > ul {overflow:hidden; max-width:420px}
@@ -997,13 +997,13 @@
 	.starBoxRIn .circleIn .num {font-size:36px; margin:0 0 8px;}
 	.starBoxRIn .circleIn .txt {font-size:15px; margin:0; display:table; width:100%; min-height:36px}
 	.starBoxRIn .circleIn .txtIn {display:table-cell; vertical-align:middle; line-height:1.2}
-	
+
 	.table_notice.star .data {display:inline-block; margin:4px}
     .table_notice .mobS {display:none}
-    
+
     .ssBox {overflow: hidden;  position: absolute; top: 0; bottom:0; left:-250px;  z-index: 0;  width: 100%; display: inline-block;}
     .ssBoxIn {position: relative; width: 100%; height: 100%; -webkit-transform: rotateZ(135deg); transform: rotateZ(135deg);}
-				
+
 		.shooting_star {position: absolute;  left: 50%; top: 50%; height: 2px;  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.3), rgba(24, 24, 32, 0));
 		  border-radius: 999px; filter: drop-shadow(0 0 6px #699bff); animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;}
 		.shooting_star::before, .shooting_star::after {content: '';  position: absolute; top: calc(50% - 1px);  right: 0; height: 2px;
@@ -1029,10 +1029,10 @@
 		.shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after, .shooting_star:nth-child(9)::after {animation-delay: 1863ms;}
 		.shooting_star:nth-child(10) {top: calc(50% - 175px); left: calc(50% - 277px); animation-delay: 8934ms;}
 		.shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after, .shooting_star:nth-child(10)::after {animation-delay: 8934ms;}
-		
-	
- 		
-	
+
+
+
+
 	/* EOD : 나의 별점 */
 
 /* EOD : 나의 강의실 */
@@ -1044,21 +1044,21 @@
 	.notice_title .notice_titleL .icoBox > ul > li {float:left; margin:0 2px}
 	.notice_title .notice_titleL .icoBox > ul > li:first-child {margin-left:0}
 	.notice_title .notice_titleR { display:table-cell; vertical-align:middle; }
-	.notice_title .notice_titleR a { position:relative; display:inline-block; max-width:100%; font-size:17px; font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; padding:3px 0; }	
+	.notice_title .notice_titleR a { position:relative; display:inline-block; max-width:100%; font-size:17px; font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; padding:3px 0; }
 	.notice_title .notice_titleR a .ico_new { position:relative; top:-2px; margin:0 0 0 6px; }
 	.notice_title .notice_titleR a:before { content:''; position:absolute; bottom:0; right:0; width:0; height:1px; transition:width .6s cubic-bezier(0.51, 0.18, 0, 0.88) .1s; background:#333; }
 	.notice_title .notice_titleR a:after { content:''; position:absolute; bottom:0; right:0; width:0; height:1px; transition:width .3s cubic-bezier(0.29, 0.18, 0.26, 0.83); background:#333; }
 	.notice_title .notice_titleR a:hover:before, .notice_title a:hover:after { width:100%; left:0; }
-	
-	.notice_info { display:none; } 
+
+	.notice_info { display:none; }
 	.notice_info li { position:relative; float:left; margin:0 0 0 15px; }
 	.notice_info li:first-child { margin:0; }
 	.notice_info li:before { content:''; position:absolute; top:3px; left:-8px; width:1px; height:10px; background:#ccc; font-size:14px; }
 	.notice_info li:first-child:before { display:none; }
-	
+
 	.notice_reple { position:relative; padding:0 0 0 15px; color:#dd3900; letter-spacing:-0.5px; font-family:sans-serif; font-weight:bold; }
 	.notice_reple:before { content:''; position:absolute; top:50%; margin:-5px 0 0 0; left:0; width:7px; height:7px; background:url(../icon_reple.png) no-repeat; }
-	
+
 	.noticeViewBox { overflow:hidden; line-height:1.5; }
 	.noticeViewBox .tit { float:left; font-size:17px; }
 	.noticeViewBox .tit span , .noticeViewBox .tit span + span  {margin:0 3px 0 0}
@@ -1066,7 +1066,7 @@
 	.noticeViewBox .noticeView_info { float:right; }
 	.noticeViewBox .noticeView_info li { position:relative; float:left; padding:0 20px; font-size:16px; font-weight:normal; }
 	.noticeViewBox .noticeView_info li:before { content:''; position:absolute; top:7px; left:0px; width:1px; height:12px; background:#f0dda3; }
-	
+
 	.noticeViewList { display:table; width:100%; line-height:1.4; }
 	.noticeViewList .noticeViewListL { position:relative; display:table-cell; width:75px; font-size:16px; color:#333; }
 	.noticeViewList .noticeViewListL:after { content:''; position:absolute; top:6px; right:0; width:1px; height:12px; background:#eee; }
@@ -1076,12 +1076,12 @@
 	.noticeViewList .noticeViewListR ul li:first-child { margin:0; }
 	.noticeViewList .noticeViewListR ul li a { font-size:16px;  }
 	.noticeViewList .noticeViewListR ul li a .iconFile { position:absolute; top:0; left:0px; width:24px; height:24px; background-size:24px auto; vertical-align:top; margin:0 8px 0 0;  }
-	
+
 	.noticeViewCon { display:table; width:100%; table-layout:fixed; min-height:300px; line-height:1.4; }
 	.noticeViewCon .noticeViewConIn { display:table-cell; }
-	
+
 	.table_notice.view tbody tr:last-child td { border-bottom:2px solid #f0dda3; }
-	
+
 	.noticeReple { margin:80px 0 0 0; border-top:1px solid #a5a4a4; }
 	.noticeReple.type02 {margin:0}
 	.noticeReple.type02 ul li:first-child { padding:20px }
@@ -1095,18 +1095,18 @@
 	.noticeReple ul li .tit { margin:0; font-size:16px; font-weight:500; }
 	.noticeReple ul li .txt { margin:15px 0 0 0; font-size:16px; color:#767676; line-height:1.3; }
 	.noticeReple ul li .date { margin:10px 0 0 0; font-size:13px; color:#a3a3a3; }
-	
+
 	.write_select .select_box { width:250px; }
 	.writeArea { height:400px; }
 	/* EOD : 학급게시판 */
 
 	/* 교과게시판 */
-	.table_notice.course .notice_titleL { width:80px; overflow:hidden; } 
+	.table_notice.course .notice_titleL { width:80px; overflow:hidden; }
 	.table_notice.course .notice_titleL span { float:left; }
-	.table_notice.course .notice_titleL span + span { margin:0 0 0 4px; } 
-	.table_notice.note .notice_titleL {width:150px; overflow:hidden; } 
+	.table_notice.course .notice_titleL span + span { margin:0 0 0 4px; }
+	.table_notice.note .notice_titleL {width:150px; overflow:hidden; }
 	.table_notice.note .notice_titleL span { float:left; }
-	.table_notice.note .notice_titleL span + span { margin:0 0 0 4px; } 
+	.table_notice.note .notice_titleL span + span { margin:0 0 0 4px; }
 	/* EOD : 교과게시판 */
 /* EOD : 커뮤니티 */
 
@@ -1114,7 +1114,7 @@
 	/* 공지사항 */
 
 	/* EOD : 공지사항 */
-	
+
 	/* FAQ */
 	.faq_list { }
 		.faq_list li { border-bottom:1px solid #eee; }
@@ -1145,7 +1145,7 @@
 	.support_survey li .support_surveyIn .info .date { position:relative; margin:25px 0 0 0; }
 	.support_survey li .support_surveyIn .info .date .txt { color:#333; font-size:14px; margin:8px 0 0 0; }
 	.support_survey li .support_surveyIn .info .date .txt .ico { display:inline-block; font-weight:500; padding:5px 12px; background:#ddd; border-radius:12px; margin:0 8px 0 0; }
-	
+
 	.support_survey li.active .support_surveyIn .thumb .thumbImg .person { animation:pulsate02 1.5s; }
 	.support_survey li.active .support_surveyIn { border:1px solid #eadfb7; border-bottom:4px solid #f0dda3; }
 	.support_survey li.active .support_surveyIn .thumb .tit { color:#dd3900; }
@@ -1153,7 +1153,7 @@
 	.support_survey li.active .support_surveyIn .info .date { padding:0 120px 0 0; }
 	.support_survey li.active .support_surveyIn .info .date .txt .ico { background:#ffda5a; }
 	.support_survey li.active .support_surveyIn .info .date button { position:absolute; bottom:0; right:0; margin:0; }
-	
+
 	.survey_list { counter-reset:number; border-bottom:1px solid #d9d9d9; }
 	.survey_list > li { padding:30px; border-top:2px dashed #eee; }
 	.survey_list > li:first-child { margin:0; border-top:none; }
@@ -1171,7 +1171,7 @@
 	.compleBox .thumb .thumbIn .star01 {  position:absolute; bottom:2px; left:50px; animation:mainIco01 2.8s 1s infinite, pulsate02 1s;}
 	.compleBox .thumb .thumbIn .star02 {  position:absolute; bottom:2px; left:60px; animation:mainIco01 2.8s 1.3s infinite, pulsate02 1.5s; }
 	.compleBox .thumb .thumbIn .star03 {  position:absolute; top:15px; right:-10px; animation:mainIco02 2.8s 1.3s infinite, pulsate02 1.5s; }
-	
+
 	.learning_list { overflow:hidden; margin:20px 0 0 -30px; }
 	.learning_list li { float:left; width:33.3334%; }
 	.learning_list li .learning_listIn { margin:30px 0 0 30px; padding:25px 10px 25px 25px; border:1px solid #e6e6e6; border-radius:10px; border-bottom:4px solid #e6e6e6; }
@@ -1189,9 +1189,9 @@
 	.learning_list li .learning_listIn .btnInfo { background:#f8f8f8; border-top:2px dashed #eee; text-align:right; padding:10px 15px; margin:20px -10px -25px -25px; border-radius:0 0 10px 10px; transition:0.399s ease; }
 	.learning_list li .learning_listIn:hover { border:1px solid #eadfb7; border-bottom:4px solid #f0dda3; }
 	.learning_list li .learning_listIn:hover .btnInfo { background:#fffbed; border-top:2px dashed #f0dda3;  }
-	.learning_list li .learning_listIn:hover .learning_box img { animation:pulsate 0.345s; } 
+	.learning_list li .learning_listIn:hover .learning_box img { animation:pulsate 0.345s; }
 	/* EOD : 스쿨포유 설문 */
-	
+
 	/* 학습지원프로그램 */
 
 
@@ -1221,7 +1221,7 @@
 		.login_btnBox .btn_join { width:49.5%; float:left; padding:0; }
 		.login_btnBox .btn_join + .btn_join{ margin:0 0 0 1%; }
 		/* EOD : 로그인 */
-		
+
 		/* 회원가입 */
 		.addressBox { position:relative; padding:0 0 0 112px;  }
 		.addressBox button { position:absolute; top:0; left:0; }
@@ -1238,7 +1238,7 @@
 		.Ballon_Step.type02 li.active .step .icon02 { background:url(../icon_join_step02_active.png) 50% 50% no-repeat; }
 		.Ballon_Step.type02 li.active .step .icon03 { background:url(../icon_join_step03_active.png) 50% 50% no-repeat; }
 		.Ballon_Step.type02 .step .name { font-weight:500; }
-		
+
 		.etc_joinList { overflow:hidden; margin:0 0 0 -20px; }
 		.etc_joinList li { float:left; width:33.3334%; }
 		.etc_joinList li .etc_joinListIn { margin:0 0 0 20px; padding:50px 30px; border:1px solid #e6e6e6; border-radius:10px; background:#fff; transition:0.399s ease; }
@@ -1248,13 +1248,13 @@
 		.etc_joinList li .etc_joinListIn .thumb span { display:table-cell; vertical-align:bottom; }
 		.etc_joinList li .etc_joinListIn .thumb span img { max-width:100%; }
 		.etc_joinList li .etc_joinListIn .tit { font-size:28px; display:block; font-weight:500; color:#333; margin:20px 0; }
-		
+
 		.join_chk_txt input { float:left; margin:0 12px 0 0; }
 		.join_chk_txt p { float:left; }
-		
+
 		.join_chkbox { position:relative; display:inline-block; }
 		.join_chkbox input[type="checkbox"] + label { font-weight:normal; font-size:18px; }
-		
+
 		.join_terms { margin:50px 0 0 0; padding:50px 0 0 0;  border-top:1px dashed #ddd; }
 		.join_terms li:first-child { margin:0; }
 		.join_terms li { margin:50px 0 0 0; }
@@ -1268,11 +1268,11 @@
 
 /* footer */
 .footerLayout { padding:0 0 30px 0; background:#606060; }
-	.footerLayoutIn { max-width:1050px; margin:0 auto; }  
-	.footer_etc { overflow:hidden; border-bottom:1px solid #777; margin:0 0 30px 0; } 
-	.footer_etc ul { max-width:1050px; margin:0 auto; } 
-	.footer_etc ul li { display:table; width:33.3334%; float:left; table-layout:fixed; height:45px; } 
-	.footer_etc ul li a { position:relative; display:table-cell; vertical-align:middle; text-align:center; color:#dbdbdb; font-size:14px; } 
+	.footerLayoutIn { max-width:1050px; margin:0 auto; }
+	.footer_etc { overflow:hidden; border-bottom:1px solid #777; margin:0 0 30px 0; }
+	.footer_etc ul { max-width:1050px; margin:0 auto; }
+	.footer_etc ul li { display:table; width:33.3334%; float:left; table-layout:fixed; height:45px; }
+	.footer_etc ul li a { position:relative; display:table-cell; vertical-align:middle; text-align:center; color:#dbdbdb; font-size:14px; }
 	.footer_etc ul li a:before { content:''; position:absolute; top:15px; left:0; width:1px; height:12px; background:#777; }
 	.footer_etc ul li:first-child a:before { display:none; }
 	.footer_etc ul li a .txt_yellow { color:#ffe539; }
@@ -1286,7 +1286,7 @@
 	.footerBox .footerBoxR .tit { font-size:16px; color:#ffd939; }
 	.footerBox .footerBoxR .tit img { position:relative; top:2px; right:3px; }
 	.footerBox .footerBoxR .tit:hover img { animation:pulsate 0.345s; }
-	
+
 /* EOD : footer */
 
 /* animation */
@@ -1316,45 +1316,45 @@
 	  0% {
 	    width: 0;
 	  }
-	  
+
 	  30% {
 	    width: 100px;
 	  }
-	  
+
 	  100% {
 	    width: 0;
 	  }
 	}
-	
+
 	@keyframes shining {
 	  0% {
 	    width: 0;
 	  }
-	  
+
 	  50% {
 	    width: 30px;
 	  }
-	  
+
 	  100% {
 	    width: 0;
 	  }
 	}
-	
+
 	@keyframes shooting {
 	  0% {
 	    transform: translateX(0);
 	  }
-	  
+
 	  100% {
 	    transform: translateX(300px);
 	  }
 	}
-	
+
 	@keyframes sky {
 	  0% {
 	    transform: rotate(45deg);
 	  }
-	  
+
 	  100% {
 	    transform: rotate(45 + 360deg);
 	  }
@@ -1376,14 +1376,14 @@
 		animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 		-webkit-transform: scale3d(1, 1, 1);
 		transform: scale3d(1, 1, 1);
-	}	
+	}
 }
 
 @keyframes pulsate02 {
 	0% { opacity:0; transform:scale(1);	}
 	50% { opacity:0; transform:scale(0.85); }
 	75% { transform:scale(1.15); }
-	100% { transform:scale(1); opacity:1; }	
+	100% { transform:scale(1); opacity:1; }
 }
 
 @keyframes flip {
@@ -1452,8 +1452,8 @@
 @keyframes jump01 {
     0%{ top:-10px }
     40%{top:-14px }
-    50%{top:-24px }    
-    60%{top:-27px }	
+    50%{top:-24px }
+    60%{top:-27px }
 	100%{ top:-10px }
 }
 
@@ -1468,8 +1468,8 @@
 @keyframes jump03 {
     0%{ top:0px }
     40%{top:-4px }
-    50%{top:-14px }    
-    60%{top:-17px }	
+    50%{top:-14px }
+    60%{top:-17px }
 	100%{ top:0px }
 }
 
@@ -1502,12 +1502,12 @@
 	.mainLink > li .mainLinkBox { margin:30px 0 0 30px; }
 	.mainLink > li { width:50%; }
 	.mainLink > li a { height:140px; }
-	.mainLink > li a .tit { font-size:22px; } 
+	.mainLink > li a .tit { font-size:22px; }
 	.mainLink > li a .point { width:100px; }
 	.mainContent .mainBanner .ico01 { bottom:inherit; top:30px; }
 	.mainContent .mainBanner .ico02 { bottom:147px; }
 	.mainContent .mainBanner .ico03 { right:50px; }
-	
+
 	.mainNoticeBox {  }
 	.mainNoticeBox .tit { font-size:26px; margin:0 0 15px 0; }
 	.mainNoticeBox .tit a { margin:11px 0 0 0; }
@@ -1532,29 +1532,29 @@
 	.mobInfo .tit { color:#dd3900; margin:0 3px 0 0; font-weight:500; font-size:16px; }
 	.mobInfo .name { color:#333; font-weight:500; font-size:16px; position:relative; }
 		.mobInfoBtn { margin:20px 0 0 0; }
-		.mobInfoBtn a { display:inline-block; padding:0 10px; height:32px; line-height:32px; transition:0.345s ease;  font-size:14px; font-weight:500; border-radius:5px; } 
-		.mobInfoBtn a.mob_logout { border:1px solid #333; background:#333; color:#fff; } 
+		.mobInfoBtn a { display:inline-block; padding:0 10px; height:32px; line-height:32px; transition:0.345s ease;  font-size:14px; font-weight:500; border-radius:5px; }
+		.mobInfoBtn a.mob_logout { border:1px solid #333; background:#333; color:#fff; }
 		.mobInfoBtn a.mob_logout:hover { background:#fff; color:#333; }
-		.mobInfoBtn a.mob_modi { border:1px solid #dd3900; background:#dd3900; color:#fff; margin:0 0 0 4px; } 
-		.mobInfoBtn a.mob_modi:hover { background:#fff; color:#dd3900; } 
+		.mobInfoBtn a.mob_modi { border:1px solid #dd3900; background:#dd3900; color:#fff; margin:0 0 0 4px; }
+		.mobInfoBtn a.mob_modi:hover { background:#fff; color:#dd3900; }
 		.mob .topAllMenuClose { position:absolute; top:26px; right:20px; font-size:14px; color:#333; font-weight:500; }
 		.mob .topAllMenuClose img { position:relative; top:1px; right:5px; }
 		.mob .topAllMenuClose:hover img { animation:pulsate 0.345s; }
 		/* .mobAllMenuBtn { display:block; position:absolute; top:20px; right:16px; font-weight:500; } */
-		.mobAllMenuBtn img { vertical-align:middle; margin:-3px 0 0 0; padding:0 5px 0 0; } 
-		.mobAllMenuBtn:hover img { animation:pulsate 0.345s; } 
-	
+		.mobAllMenuBtn img { vertical-align:middle; margin:-3px 0 0 0; padding:0 5px 0 0; }
+		.mobAllMenuBtn:hover img { animation:pulsate 0.345s; }
+
 	.mob .topLayout { position:relative; padding:0 16px; height:60px; box-shadow:0 -1px 6px 2px #787878; border-bottom:1px solid red; }
 	.mob .topLayout .topLayoutIn {  }
 	.mob .topLayout .topLayoutIn h1 { position:absolute; top:5px; left:16px; }
 	.mob .topLayout .topLayoutIn h1 img { width:180px; }
 	.mob .topLayout .topLayoutIn h1:hover img { animation:pulsate 0.345s ease; }
-	
+
 	.mob .topAfterInfo { position:absolute; top:10px; right:16px; height:37px; line-height:37px; font-weight:500; font-size:14px; }
 	.mob .topAfterInfo > li { display:none; margin:0 0 0 20px; }
 	.mob .topAfterInfo > li:first-child { display:block; float:left; margin:0; }
 	.mob .topAfterInfo > li.last { display:block; float:left; }
-	
+
 	/* 로그인 후 리스트 */
 	.mob .topAfterInfo > li .tit,
 	.mob .topAfterInfo > li > span { display:none; }
@@ -1564,7 +1564,7 @@
 	.mob .topAfterInfo > li a img { vertical-align:middle; margin:-3px 0 0 0; padding:0 5px 0 0; }
 	.mob .topAfterInfo > li a:hover img { animation:pulsate 0.345s; }
 	/* EOD : 로그인 후 리스트 */
-	
+
 		/* 1depth */
 		.mob .topLayout .topAllMenu { position:fixed; top:0; right:-250px; width:250px; height:100%; z-index:11; background:#ecebe8; transition:right 0.799s cubic-bezier(.42,0,0,.99); border-radius:10px; display:block !important; }
 		.active .mob .topLayout .topAllMenu { right:0; display:block !important; }
@@ -1585,10 +1585,10 @@
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > a span:after { content:''; position:absolute; left:50%; bottom:-3px; width:0; height:14px; border-radius:8px; z-index:-1; padding:0; transition:0.345s ease; }
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > a:hover span:after, .mob .topLayout .topNav > .topNavIn > ul > li.active > a span:after { width:100%; left:-5px; padding:0 5px; }
 		/* EOD : 1depth */
-		
+
 		/* 2depth */
-		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul { display:none; background:#fff; border:2px solid #999; border-radius:8px; margin:15px 0 0 0; }		
-		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li {  }		
+		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul { display:none; background:#fff; border:2px solid #999; border-radius:8px; margin:15px 0 0 0; }
+		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li {  }
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li > a { position:relative; display:block; padding:15px 20px; font-size:16px; font-weight:500; }
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li > a:after { content:''; position:absolute; top:0; left:20px; right:20px; height:1px; border-top:1px dashed #999; }
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li:first-child > a:after { display:none; }
@@ -1605,7 +1605,7 @@
 		.msg_contents { left:-80px; top:41px; }
 		.msg_contents:before { left:93px; }
 		/* EOD : 쪽지함 */
-		
+
 		/* etc topLayout */
 		.topLayout.etc .topInfoList > .topAllMenuBtn { display:none; }
 		/* EOD : etc topLayout */
@@ -1628,80 +1628,80 @@
 
 	/* 이용안내 */
 		/* 스쿨포유 소개 */
-		
+
 		/* EOD : 스쿨포유 소개 */
-		
+
 		/* 입/퇴교 및 출결 */
-		
+
 		/* EOD : 입/퇴교 및 출결 */
-		
+
 		/* 학습방법 */
-		
+
 		/* EOD :  학습방법 */
 	/* EOD : 이용안내 */
 
 	/* 나의 강의실 */
 		/* 내교실 */
-		
+
 		.Ivory_area {padding:40px 0}
-		
+
 		.myroom_info > ul > li.first {width:100%}
 		.myroom_info > ul > li.first .inner {margin:0}
 		.myroom_info > ul > li.second , .myroom_info > ul > li.thrid {width:50%; margin: 24px 0 0;}
 		.myroom_info > ul > li.second .inner {margin-left:0}
-		
+
 		.myroom_info .today_list > ul > li .left_area {margin:0}
-		
+
 		.table_normal.attentable tbody tr td {padding:10px}
-		.table_normal.attentable .imgBox {min-height:100px;}	
+		.table_normal.attentable .imgBox {min-height:100px;}
 		.table_normal.attentable .imgBox .txt {font-size:16px;}
 		.table_normal.attentable .imgBox img {max-width:60px}
-		
-		.table_normal.result .notice_title {margin:10px;} 
-		
+
+		.table_normal.result .notice_title {margin:10px;}
+
 		.lean_subject_list > ul > li .img {padding:20px 0; text-align:center; width:100%}
-		
+
 		/* EOD : 내교실 */
-		
+
 		/* 나의출결현황 */
 
-        
+
 		.yellowBox {height:auto}
 		.left_area {margin:10px 0}
 		  .year_data .data {font-size:30px}
 		  .year_data .sub_data {margin:10px 0 0}
-		
+
 		.yellowBox .right_area {position:static}
 		.pepleBox {border-radius:0 0 10px 10px}
 		.pepleBox .p_right .msgBox > ul > li {float:left; margin:2px}
-		.pepleBox .p_right .msgBox {bottom: 0;  margin: 0; right: -50px;}		
+		.pepleBox .p_right .msgBox {bottom: 0;  margin: 0; right: -50px;}
 		.pepleBoxIn {text-align:center;}
 		.pepleBoxIn > ul {display:inline-block; text-align:center}
 		.pepleBoxIn > ul > li {padding:0 70px 0 20px}
-		
-		.yellowBox .left_area , .yellowBox .left_area.type02 {margin:0; padding: 20px 0;}		
-	
-		
+
+		.yellowBox .left_area , .yellowBox .left_area.type02 {margin:0; padding: 20px 0;}
+
+
 		/* EOD : 나의출결현황 */
-		
+
 		/* 동영상 수업 */
-		
+
 		.subjectBox {margin:0 0 15px}
-		
+
 		.yellowBox .subBoxIn .imgBox {top:-20px}
 		.yellowBox .subBoxIn .txtBox .main_txt {margin:0 0 10px}
-		
-		.blackBoard {height:auto; padding:20px 0 10px} 
+
+		.blackBoard {height:auto; padding:20px 0 10px}
 		.blackBoardIn > ul > li {width:50%}
 		.blackBoardIn > ul > li:first-child {width:100%}
 		.blackBoardIn.type02 > ul > li , .blackBoardIn.type02 > ul > li:first-child  {width:50%}
-			
+
 		.table_notice.survey .notice_info {line-height:30px}
 		.table_notice.survey .notice_info li:before {top:10px}
 		.table_notice.survey .txt_orange {width:40px; font-size:15px; margin:-2px 5px 0 0}
-		
+
 		 /* 학습 목차 */
-		 
+
 		 .stepContentC {padding:0 20px}
 		 .StepBoxR {margin:0 0 0 60px}
 		 .StepBoxRIn {border-radius:50px}
@@ -1709,132 +1709,132 @@
 		 .stepContentR {width:100px}
 		 .stepContentR .playBox {min-height:37px; margin:0 0 0 10px}
 		 .stepContentR .playBoxIn .playCircle {width:26px; height:26px; line-height:22px;}
-		 .stepContentR .playBoxIn .playCircle img {width:10px; margin:0 0 0 2px}		 
+		 .stepContentR .playBoxIn .playCircle img {width:10px; margin:0 0 0 2px}
 		 .stepContentR .playBoxIn .playCircle.type02 img {width:15px; margin:0}
 		 .stepContentR .playBoxIn .txt {font-size:14px; display: inline-block;}
 		 .stepContentR .playBoxIn .txt br {display:block}
-		
+
 		 /* EOD : 학습 목차 */
-		 
-		 
+
+
 		  /* 학습창 */
-		 
+
 		 .videoTop {display:inline-block; width:100%; margin:15px 0 0}
 		 .videoTop_Step {margin:0}
-		
-		 .Ballon_Step > ul {margin:0 0 0 -15px} 
+
+		 .Ballon_Step > ul {margin:0 0 0 -15px}
 		 .Ballon_Step > ul > li > .liBox {margin:0 0 0 15px}
 		 .Ballon_Step .step {height:70px; border-radius:25px}
 		 .Ballon_Step .stepIn > img {height:25px}
 		 .Ballon_Step .step .name {font-size:15px; margin:7px 0 0}
 		 .Ballon_Step .stepIn:after {width:6px; height:10px; background-size:6px auto; margin:-5px 0 0; right: -6px;}
-		 
+
 		 .Ballon_Step .sun {width:44px; height:44px; line-height: 44px; font-size: 14px;}
 		 .Ballon_Step .sun:after { width: 57px;  height: 57px;  top: -7px;  left: -7px;}
 		 .Ballon_Step .sunBox {top:-10px; right:-15px}
-		 
-		 
+
+
 		 .video_btn {display:none}
-		 		 
+
 		 .video_btn_mob {display:inline-block}
-		 
+
 		 .videoQ {display:none}
 		 .videoCon .sub_txt > small {font-size:16px; margin: 0 0 0 2px;}
-		 
+
 		 .videoConL {margin:0}
 		 .videoConL .videoArea {min-height:240px}
 		 .videoConR {display:none}
-		 
+
 		 .videoCon .sub_txt {font-size:22px;}
 		 .videoCon .sub_txt .all_Btn {display:block}
-		 
+
 		 .videoSub {margin:12px 0 0}
 		 .videoSubBox {padding:15px 20px; max-height:158px}
 		 .videoSubBox.full {max-height:none}
 		 .videoSubBox p {font-size:14px; margin:12px 0}
-		 
+
 		 .V_video_list {margin:0}
 		 .slick-slide {margin:0 10px}
-		 
+
 		 .V_video_mob {display:block}
-		 
+
 		  .V_video_list .slick-prev { left:-10px; }
 		  .V_video_list .slick-next { right:-10px; }
 		  .videoBox .video_name {font-size:14px}
-		 
+
 		 /* EOD : 학습창 */
-		
+
 		/* EOD : 동영상 수업 */
-		
+
 		/* 활동중심 수업 */
-		
+
 		/* EOD : 활동중심 수업 */
-		
+
 		/* 화상수업/상담시간표 */
-		
+
 		/* EOD : 화상수업/상담시간표 */
-		
+
 		/* 강의계획서 */
-		
+
 		.PlanBox {margin:0}
 		.PlanBox > ul > li {margin:15px 0 0}
-		
+
 		.PlanBoxL:after {left:22px}
 		.PlanBoxLIn {width:44px; margin:0}
 		.PlanBoxLIn .circle {width:44px; height:44px; line-height:44px; font-size:14px}
-		
+
 		.PlanBoxR {margin:0 0 0 70px}
 		.PlanBoxRIn {border-radius:25px; border: 1px solid #ccc;}
 		.PlanBoxRIn:before {top:30px; background: url(../planBox_arrow_mob.png) no-repeat; left: -7px; width:7px; height:13px}
-		
+
 		.PlanConT {border-radius:25px 25px 0 0;}
 		.PlanConTIn {padding:10px 20px}
 		.PlanConTIn:after {left:20px; right:20px}
 		.PlanConT_L {font-size:20px; float:none}
 		.PlanConT_R {float:none; margin:5px 0 0}
 		.PlanConT_R > ul > li {font-size:14px; padding-left:10px}
-		.PlanConT_R > ul > li:first-child {padding-right:10px}		
-		
+		.PlanConT_R > ul > li:first-child {padding-right:10px}
+
 		.PlanConB {border-radius:0 0 25px 25px}
 		.PlanConBIn .main_txt {font-size:14px; margin:0 0 10px}
 		.PlanConBIn .bullet_txt:before {top:8px}
 		.PlanConBIn .default_txt , .PlanConBIn .bullet_txt {font-size:14px; line-height:1.2}
 		.PlanBoxLIn .year {line-height:1.2; margin:5px 0 0}
-		
+
 		.PlanConBIn {padding:20px}
-		
+
 		/* EOD : 강의계획서 */
-		
+
 		/* 나만의 노트 */
-		
+
 		/* EOD : 나만의노트 */
-		
+
 		/* 쪽지함 */
-		
+
 		.chatBoxIn {padding:20px 0}
 		.chatBoxIn .ballon {padding:20px 30px}
 		.left_chatBox {margin:15px 30px 0 190px}
 		.right_chatBox {margin:15px 190px 0 30px}
-		
+
 		.chatBoxIn .ballon_file .label {position:static; margin:0 0 12px; border-right:0}
 		.chatBoxIn .ballon_file .file_name {display:block; margin:0}
-		
+
 		/* EOD : 쪽지함 */
-		
+
 		/* 학습이력 */
-		
-		.table_notice.avg {margin:0 0 20px} 
+
+		.table_notice.avg {margin:0 0 20px}
 		.table_notice.avg .avg_txt {color:#645128; display: inline-block;}
 		.table_notice.avg .avg_txt ul {overflow:hidden}
 		.table_notice.avg .avg_txt ul li {padding:0 10px;}
 	    .table_notice.avg thead tr th {padding:18px 20px}
-		
+
 		/* EOD : 학습이력 */
-		
+
 		/* 나의 별점 */
-		
+
 		.table_notice.star .mob_al .mobS {display:none}
-		
+
 		.starBoxL {float:none;}
 		.starBoxIn {max-width:640px; margin:0 auto}
 		.starBoxLIn {max-width:300px}
@@ -1843,21 +1843,21 @@
 		.starBoxLIn .child_wIn:before {width:48px; height:8px; left: 12px;  bottom:-1px; background: url(../star_child_shadow_mob.png) no-repeat;}
 		.starBoxLIn .star {top:40px; width: 125px; height: 120px; background-size: 125px auto; left: 50%;  margin: 0 0 0 -63px;}
 		.starBoxLIn .starIn .txt {font-size:14px}
-		.starBoxLIn .starIn .num {font-size:26px}		
+		.starBoxLIn .starIn .num {font-size:26px}
 		.starBoxLIn .child_m {top:80px; left:auto; right:30px}
 		.starBoxLIn .child_mIn:after {width:82px; height:118px; background-size:82px auto}
 		.starBoxLIn .child_mIn:before {width: 48px; height: 8px;  left: 23px; bottom: -1px;  background: url(../star_child_shadow_mob.png) no-repeat;}
-		
+
 		.starBoxRIn {margin:10px 15px 10px 0}
 		.starBoxRIn > ul {max-width:318px}
 		.starBoxRIn > ul > li {margin:10px 8px}
 		.starBoxRIn .circle {width:90px; height:90px}
 		.starBoxRIn .circleIn .num {font-size:20px; margin:0 0 2px}
 		.starBoxRIn .circleIn .txt {font-size:13px}
-		
-		.ssBox {left:0}		
-		
-		
+
+		.ssBox {left:0}
+
+
 		/* EOD : 나의 별점 */
 
 	/* EOD : 나의 강의실 */
@@ -1871,7 +1871,7 @@
 		/* EOD : 학급게시판 */
 
 		/* 교과게시판 */
-		
+
 		/* EOD : 교과게시판 */
 	/* EOD : 커뮤니티 */
 
@@ -1879,16 +1879,16 @@
 		/* 공지사항 */
 
 		/* EOD : 공지사항 */
-		
+
 		/* FAQ */
-		
+
 		/* EOD : FAQ */
-		
+
 		/* 스쿨포유 설문 */
 		.support_survey { margin:-20px 0 0 0; }
 		.support_survey li { width:auto; float:none; }
 		.support_survey li .support_surveyIn { margin:20px 0 0 0; }
-		
+
 		.learning_list li { width:50%; }
 		.learning_list li .learning_listIn .learning_box .thumb { width:90px; height:90px; vertical-align:middle; }
 		.learning_list li .learning_listIn .learning_box .thumb .ico01 { line-height:90px; height:auto; }
@@ -1899,19 +1899,19 @@
 		.learning_list li .learning_listIn .learning_box .info .tit { font-size:18px; }
 		.learning_list li .learning_listIn .learning_box .info .txt { font-size:15px; }
 		/* EOD : 스쿨포유 설문 */
-	
+
 		/* 학습지원프로그램 */
 
 		/* EOD : 학습지원프로그램 */
 	/* EOD : 지원센터 */
-	
+
 	/* etc */
 		/* 로그인 */
 
 		/* EOD : 로그인 */
-		
+
 		/* 회원가입 */
-		.Ballon_Step.type02 { margin:30px 0 40px 0; } 
+		.Ballon_Step.type02 { margin:30px 0 40px 0; }
 		.etc_joinList li .etc_joinListIn { padding:30px 20px; }
 		.etc_joinList li .etc_joinListIn .tit { font-size:20px; }
 		.etc_joinComple .tit { font-size:30px; }
@@ -1936,7 +1936,7 @@
 @media only all and (max-width: 640px){
 	/* main */
 	.mainContentIn { padding:0 16px; }
-	.mainBanner + .mainContentIn { text-align:center; } 
+	.mainBanner + .mainContentIn { text-align:center; }
 	.mainContent .mainBanner h2 { top:50%; left:50%; max-width:300px; width:100%; margin:-100px 0 0 -170px; padding:20px; background:url(../trans_white80.png); border-radius:15px; font-size:26px; text-align:center; }
 	.mainContent .mainBanner h2 .txt { margin:15px 0 0 0; }
 	.mainContent .mainBanner .mainContentIn { height:340px; }
@@ -1945,14 +1945,14 @@
 	.mainLink > li .mainLinkBox { margin:20px 0 0 20px; }
 	.mainLink > li { width:50%; float:left; }
 	.mainLink > li a { height:120px; padding:15px; }
-	.mainLink > li a .tit { font-size:18px; } 
+	.mainLink > li a .tit { font-size:18px; }
 	.mainLink > li a .point { width:65px; bottom:15px; }
 	.mainLink > li a .arrow { width:30px; height:30px; line-height:32px; bottom:15px; }
 	.mainLink > li a img { width:18px; }
 	.mainContent .mainBanner .ico01 { bottom:inherit; top:30px; left:30px; background-size:75% auto; }
 	.mainContent .mainBanner .ico02 { bottom:89px; left:50px; margin:0; background-size:80% auto; }
 	.mainContent .mainBanner .ico03 { bottom:inherit; top:25px; right:15px; }
-	
+
 	.mainNoticeBox { padding:30px 0; }
 	.mainNoticeBox .tit { font-size:22px; margin:0 0 15px 0; }
 	.mainNoticeBox .tit a { margin:8px 0 0 0; }
@@ -1984,7 +1984,7 @@
 
 	.subVisual.visual04 .img01 { width:116px; left:50%; margin:0 0 0 -58px; }
 	.subVisual.visual04 .img02 { display:none; }
-	
+
 	.contentLayout .contentLayoutIn { min-height:auto; padding:0 0 20px 0; }
 	/* EOD : 서브 레이아웃 */
 
@@ -1998,29 +1998,29 @@
 	.mobInfo .tit { color:#dd3900; margin:0 3px 0 0; font-weight:500; font-size:16px; }
 	.mobInfo .name { color:#333; font-weight:500; font-size:16px; position:relative; }
 		.mobInfoBtn { margin:20px 0 0 0; }
-		.mobInfoBtn a { display:inline-block; padding:0 10px; height:32px; line-height:32px; transition:0.345s ease;  font-size:14px; font-weight:500; border-radius:5px; } 
-		.mobInfoBtn a.mob_logout { border:1px solid #333; background:#333; color:#fff; } 
+		.mobInfoBtn a { display:inline-block; padding:0 10px; height:32px; line-height:32px; transition:0.345s ease;  font-size:14px; font-weight:500; border-radius:5px; }
+		.mobInfoBtn a.mob_logout { border:1px solid #333; background:#333; color:#fff; }
 		.mobInfoBtn a.mob_logout:hover { background:#fff; color:#333; }
-		.mobInfoBtn a.mob_modi { border:1px solid #dd3900; background:#dd3900; color:#fff; margin:0 0 0 4px; } 
-		.mobInfoBtn a.mob_modi:hover { background:#fff; color:#dd3900; } 
+		.mobInfoBtn a.mob_modi { border:1px solid #dd3900; background:#dd3900; color:#fff; margin:0 0 0 4px; }
+		.mobInfoBtn a.mob_modi:hover { background:#fff; color:#dd3900; }
 		.mob .topAllMenuClose { position:absolute; top:26px; right:20px; font-size:14px; color:#333; font-weight:500; }
 		.mob .topAllMenuClose img { position:relative; top:1px; right:5px; }
 		.mob .topAllMenuClose:hover img { animation:pulsate 0.345s; }
 		/* .mobAllMenuBtn { display:block; position:absolute; top:20px; right:16px; font-weight:500; } */
-		.mobAllMenuBtn img { vertical-align:middle; margin:-3px 0 0 0; padding:0 5px 0 0; } 
-		.mobAllMenuBtn:hover img { animation:pulsate 0.345s; } 
-	
+		.mobAllMenuBtn img { vertical-align:middle; margin:-3px 0 0 0; padding:0 5px 0 0; }
+		.mobAllMenuBtn:hover img { animation:pulsate 0.345s; }
+
 	.mob .topLayout { position:relative; padding:0 16px; height:52px; box-shadow:0 -1px 6px 2px #787878; border-bottom:1px solid red; }
 	.mob .topLayout .topLayoutIn {  }
 	.mob .topLayout .topLayoutIn h1 { position:absolute; top:8px; left:16px; }
 	.mob .topLayout .topLayoutIn h1 img { width:140px; }
 	.mob .topLayout .topLayoutIn h1:hover img { animation:pulsate 0.345s ease; }
-	
+
 	.mob .topAfterInfo { position:absolute; top:6px; right:16px; height:37px; line-height:37px; font-weight:500; font-size:14px; }
 	.mob .topAfterInfo > li { display:none; margin:0 0 0 15px; }
 	.mob .topAfterInfo > li:first-child { display:block; float:left; margin:0; }
 	.mob .topAfterInfo > li.last { display:block; float:left; }
-	
+
 	/* 로그인 후 리스트 */
 	.mob .topAfterInfo > li .tit,
 	.mob .topAfterInfo > li > span { display:none; }
@@ -2030,7 +2030,7 @@
 	.mob .topAfterInfo > li a img { vertical-align:middle; margin:-3px 0 0 0; padding:0 5px 0 0; }
 	.mob .topAfterInfo > li a:hover img { animation:pulsate 0.345s; }
 	/* EOD : 로그인 후 리스트 */
-	
+
 		/* 1depth */
 		.mob .topLayout .topAllMenu { position:fixed; top:0; right:-230px; width:230px; height:100%; z-index:11; background:#ecebe8; transition:right 0.799s cubic-bezier(.42,0,0,.99); border-radius:10px; }
 		.active .mob .topLayout .topAllMenu { right:0; display:block !important; }
@@ -2051,10 +2051,10 @@
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > a span:after { content:''; position:absolute; left:50%; bottom:-3px; width:0; height:14px; border-radius:8px; z-index:-1; padding:0; transition:0.345s ease; }
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > a:hover span:after, .mob .topLayout .topNav > .topNavIn > ul > li.active > a span:after { width:100%; left:-5px; padding:0 5px; }
 		/* EOD : 1depth */
-		
+
 		/* 2depth */
-		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul { display:none; background:#fff; border:2px solid #999; border-radius:8px; margin:15px 0 0 0; }		
-		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li {  }		
+		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul { display:none; background:#fff; border:2px solid #999; border-radius:8px; margin:15px 0 0 0; }
+		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li {  }
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li > a { position:relative; display:block; padding:15px 20px; font-size:14px; font-weight:500; }
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li > a:after { content:''; position:absolute; top:0; left:20px; right:20px; height:1px; border-top:1px dashed #999; }
 		.mob .topLayout .topAllMenu > .topAllMenuIn > ul > li > ul > li:first-child > a:after { display:none; }
@@ -2070,10 +2070,10 @@
 		/* 쪽지함 */
 		.msg_contents { left:-113px; top:43px; }
 		.msg_contents:before { left:115px; }
-		
-		
+
+
 		/* EOD : 쪽지함 */
-		
+
 		/* etc topLayout */
 		.topLayout.etc .topInfoList > .topAllMenuBtn { display:none; }
 		/* EOD : etc topLayout */
@@ -2081,98 +2081,98 @@
 
 	/* 이용안내 */
 		/* 스쿨포유 소개 */
-		
+
 		/* EOD : 스쿨포유 소개 */
-		
+
 		/* 입/퇴교 및 출결 */
-		
+
 		/* EOD : 입/퇴교 및 출결 */
-		
+
 		/* 학습방법 */
-		
+
 		/* EOD :  학습방법 */
 	/* EOD : 이용안내 */
 
 	/* 나의 강의실 */
 		/* 내교실 */
-		
+
 		.myroom_info > ul > li .txtBox {font-size:18px; min-height: auto;}
-		
+
 		.myroom_info .levelBox .level_data {font-size:18px; top:3px}
 		.myroom_info .levelBox .progressBox {margin:0 90px 0 60px}
 		.myroom_info .levelBox .progress {height:12px;}
-		
+
 		.myroom_info .learner .name_txt {font-size:16px}
 		.myroom_info .learner .icoLev {width:38px; height:38px; background-size: 25px auto !important;}
 		.myroom_info .learner .txtArea {font-size:12px}
-		
+
 		.myroom_info > ul > li.first {width:100%}
 		.myroom_info > ul > li.first .inner {margin:0}
 		.myroom_info > ul > li.second , .myroom_info > ul > li.thrid {width:100%; margin:12px 0 0;}
 		.myroom_info > ul > li.second .inner {margin:0}
 		.myroom_info > ul > li.thrid .inner {margin:0}
-		
-		
+
+
 		.myroom_info .learner > ul > li:first-child {padding:4px 0}
 		.myroom_info .absent_count .num {font-size:80px}
 		.myroom_info .absent_count:before {width:82px; height:110px; background-size:cover; left:0}
 		.myroom_info .absent_count:after {width:68px; height:106px; background-size:cover; right:0;}
 		.myroom_info .absent_count .footer {font-size:15px}
-		
+
 		.myroom_info .absent_count .child_w {top:25px}
 		.myroom_info .absent_count .child_m {top:20px}
-		
+
 		.table_normal.attentable tbody tr td {padding:5px}
 		.table_normal.attentable .imgBox {margin:0; min-height:80px}
 		.table_normal.attentable .imgBox .txt {font-size:14px}
 		.table_normal.atten tbody tr td .imgBox {min-height:65px}
 		.table_normal.atten tbody tr td .imgBox img {width:35px}
-		
+
 		.table_normal.subjectImg tbody tr td {padding:5px}
 		.table_normal.subjectImg .imgBox {min-height:auto}
-		.table_normal.subjectImg .imgBox .txt {font-size:14px; margin:0 0 10px}		
-		.table_normal.subjectImg .imgBox img {max-width:60px} 
-		
+		.table_normal.subjectImg .imgBox .txt {font-size:14px; margin:0 0 10px}
+		.table_normal.subjectImg .imgBox img {max-width:60px}
+
 		.myroom_info > ul > li .inner {padding:20px 15px; height:auto;}
-		
+
 		.timetable .on_air {width:100%}
-		.timetable .on_air , .timetable .re01 , .timetable .re02 , .timetable .re03 {width: 40px; height: 18px; font-size: 10px;  line-height: 18px;  margin: 0 0 0 -20px; bottom:-20px}		
+		.timetable .on_air , .timetable .re01 , .timetable .re02 , .timetable .re03 {width: 40px; height: 18px; font-size: 10px;  line-height: 18px;  margin: 0 0 0 -20px; bottom:-20px}
 		.lean_subject_list > ul > li {width:33.33%}
 		.lean_subject_list > ul > li > a {padding: 10px 0px 10px;}
 		.lean_subject_list > ul > li .name {display:block;margin:0;position:static;text-align: left;margin: 0 0 0 8px;font-size: 12px;}
 		.lean_subject_list > ul > li .name br {display:none}
-		.lean_subject_list > ul > li .img {margin:0; padding:0; display:block; text-align:center}	
-		.lean_subject_list > ul > li .img img {max-width:60px}	
+		.lean_subject_list > ul > li .img {margin:0; padding:0; display:block; text-align:center}
+		.lean_subject_list > ul > li .img img {max-width:60px}
 		.lean_subject_list > ul > li .arrow {left: 50%; bottom: 10px; margin: 0 0 0 10px; width:30px; height:30px; line-height:28px}
 		.lean_subject_list > ul > li .arrow img {width:16px}
 	    .lean_subject_list > ul > li .gray {min-height:101px;}
 	    .lean_subject_list > ul > li .gray:after {width:60px; height:56px; right:50%; margin:0 -30px 0 0; background-size:cover}
-		
-		.lean_subject_list > ul > li > a {border-left:1px solid #eee}	
-		.lean_subject_list > ul > li:nth-child(odd) > a {border-right:0}		
+
+		.lean_subject_list > ul > li > a {border-left:1px solid #eee}
+		.lean_subject_list > ul > li:nth-child(odd) > a {border-right:0}
 		.lean_subject_list > ul > li:nth-child(3) {border-top:0}
-		.lean_subject_list > ul > li:nth-child(5) > a {border-right:1px solid #eee !important}	
-		
+		.lean_subject_list > ul > li:nth-child(5) > a {border-right:1px solid #eee !important}
+
 		.Ivory_area {padding:20px 0}
-		
+
 		/* EOD : 내교실 */
-		
+
 		/* 나의출결현황 */
-		
-			
+
+
 		.yellowBox {height:auto}
 		.yellowBox .left_area , .yellowBox .left_area.type02 {padding:10px 0; margin:10px 0}
 		  .year_data .data {font-size:18px;  margin: 0 30px}
 		  .year_data .sub_data {font-size:14px; margin:10px 0 0}
-		
+
 		.right_area {position:static}
-		
+
 		.yellowBox .right_area {position:static}
 		.pepleBox {border-radius:0 0 10px 10px}
 		.pepleBoxIn {text-align:center; padding:0 20px;}
 		.pepleBoxIn > ul {display:inline-block; text-align:center}
-		.pepleBoxIn > ul > li {width:100%; padding:5px 0}	
-		.pepleBox .p_left {min-width:100px; padding:0; margin:10px 0 0}		
+		.pepleBoxIn > ul > li {width:100%; padding:5px 0}
+		.pepleBox .p_left {min-width:100px; padding:0; margin:10px 0 0}
 		.pepleBox .p_left .type {font-size:12px}
 		.pepleBox .p_left .name {font-size:16px; font-weight:500;}
 		.pepleBox .p_right {margin:0 20px 0 0}
@@ -2186,31 +2186,31 @@
 		.pepleBox .p_right .circle img {width:30px}
 		.pepleBox .p_right .msgBox > ul > li {float:left; margin:2px}
 		.pepleBox .p_right .msgBox {bottom:0; margin:0; right:-50px;}
-		
+
 		.pepleBox .playBox {margin:0; display:block; min-height:auto; text-align:center}
 		.pepleBox .playBoxIn {display:block}
 		.pepleBox .playBoxIn > img {width:26px}
 		.pepleBox .playBoxIn .txt {font-size:16px; margin:0 0 0 5px; font-weight:500}
 		.pepleBox .playBoxIn .playCircle {width:26px; height:26px; line-height:22px}
 		.pepleBox .playBoxIn .playCircle img {width:10px; margin:0 0 0 2px}
-		
+
 		/* EOD : 나의출결현황 */
-		
+
 		/* 동영상 수업 */
-		
-		
+
+
 		.subjectBox {border-radius:10px; background-color:white; border:2px solid #ccc; border-bottom:4px solid #ccc}
 		  .subjectBoxIn {padding:20px; position:relative; min-height:170px}
 		    .subjectL {position:static; text-align: center;  margin: 0 0 20px;}
 		    .subjectR {padding:0}
-		    
+
 		    .subjectR_Bot ul li {position:relative; border-bottom:2px dotted #eee; padding:18px 0 20px; min-height:20px}
 		    .subjectR_Bot ul li:first-child {padding:25px 0 20px}
 		    .subjectR_Bot .txtBox {width:130px; position:absolute; left:0;  color:#333;}
 		    .subjectR_Bot .txtBox .txt_label {font-size:17px; display:inline-block; width:48px; margin:0 10px 0 0}
 		    .subjectR_Bot .txtBox .percent strong {font-size:24px; color:#dd3900}
-		    .subjectR_Bot .progressBox {margin:2px 0 0 130px} 
-		
+		    .subjectR_Bot .progressBox {margin:2px 0 0 130px}
+
 		 .blackBoard {height:auto; padding:30px 0 20px}
 		 .blackBoard:after {left:20px; right:20px}
 		 .blackBoardIn > ul {padding:0 10px}
@@ -2218,43 +2218,43 @@
 		 .blackBoardIn > ul > li:first-child {width:100%}
 		 .blackBoardIn.type02 > ul > li {width:50%}
 		 .blackBoardIn.type02 > ul > li:first-child {width:50%}
-		
+
 		 .yellowBox .subBoxIn .imgBox {left:20px}
 		 .yellowBox .subBoxIn .imgBox img {height:70px;}
 		 .yellowBox .subBoxIn .txtBox {margin:0 0 0 100px}
 		 .yellowBox .subBoxIn .txtBox .main_txt {font-size:18px}
 		 .yellowBox .subBoxIn .txtBox .sub_txt {font-size:12px}
 		 .yellowBox .subBoxIn .txtBox .sub_txt strong {margin:0 0 5px; display:block}
-		 
+
 		 .blackBoardIn .greenBoard {max-width: 138px;margin:0 auto;height: 84px;background-size:cover;}
 		 .blackBoardIn .book , .blackBoardIn .servey {max-width:132px; margin:0 auto; height:80px; background-size:cover}
-		 
+
 		 .blackBoardIn .greenBoard .imgBox {left: 15px;top: 0;}
 		 .blackBoardIn .greenBoard .imgBox img {height: 50px;}
 		 .blackBoardIn .greenBoard .msgBox {margin:5px 0 0}
 		 .blackBoardIn .greenBoard .msgBox a {width:20px; height:20px; line-height:20px}
 		 .blackBoardIn .greenBoard .msgBox a > img {width:12px}
-		 
+
 		 .blackBoardIn .greenBoard .txtBox {margin: 10px 0 0 60px;}
 		 .blackBoardIn .greenBoard .txtBox .main_txt {font-size:14px; margin: 0 0 3px;}
 		 .blackBoardIn .greenBoard .txtBox .sub_txt {font-size: 11px;}
-		 
-		 .blackBoardIn .book .top {font-size:14px; margin:0 0 5px;}		 
+
+		 .blackBoardIn .book .top {font-size:14px; margin:0 0 5px;}
 		 .blackBoardIn .book .percent  {font-size:16px; margin:0 0 5px}
-		 
+
 		 .blackBoardIn .servey .top {font-size:14px;margin: 10px 0 5px;}
 		 .blackBoardIn .servey .content {max-width:100px}
 		 .blackBoardIn .servey .content > ul > li.left {font-size:20px; margin:0 0 5px}
-		 .blackBoardIn .servey .content > ul > li.left .number {font-size:16px; margin:0 0 5px}		
+		 .blackBoardIn .servey .content > ul > li.left .number {font-size:16px; margin:0 0 5px}
 		 .blackBoardIn .servey .content > ul > li.left .number small {font-size:14px; margin:0 0 5px}
 		 .blackBoardIn .servey .content > ul > li.right .number {font-size:16px; margin: 0 0 5px;}
-		 
+
 		 .blackBoardIn .book .percent small {font-size:11px}
-		 
+
 		 .blackBoardIn .book .foot , .blackBoardIn .servey .content > ul > li.left .txt , .blackBoardIn .servey .content > ul > li.right .txt {font-size:11px; margin:0 0 5px}
-		
+
 		 /* 학습 목차 */
-		 
+
 		 .stepBox {margin:0 0 0 30px}
 		 .StepBox > ul > li {margin:15px 0 0}
 		 .StepBoxL:before {left: -15px;  width: 15px;  height: 15px; margin:-7px 0 0; border-radius: 50%; z-index: 2;}
@@ -2263,8 +2263,8 @@
 		 .StepBoxL .sun {width:33px; height:33px; line-height:33px; font-size:12px}
 		 .StepBoxL .sun:after {width:47px; height:47px; top:-8px; left:-7px}
 		 .StepBoxL .sunBox {margin:-16px 0 0; left:-24px;}
-		 		 
-		 .StepBoxR {margin:0 0 0 25px}		
+
+		 .StepBoxR {margin:0 0 0 25px}
 		 .StepBoxRIn {border-radius:25px; padding:10px 0}
 		 .StepBoxRIn:before {width:6px; height:12px; border-radius:8px 0 0 8px; left:-8px; margin:-6px 0 0}
 		 .stepContentL {display:block;  padding: 0 20px}
@@ -2283,131 +2283,131 @@
 		 .stepContentR .playBoxIn .txt br {display:block}
 		 .StepBox > ul > li.disable .stepContentR {border-left:1px dashed #ccc}
 		 .StepBox > ul > li.complete .stepContentR {border-left:1px dashed #d9c331}
-		
+
 		 /* EOD : 학습 목차 */
-		 
-		 
+
+
 		 /* 학습창 */
-		 
+
 		 .videoTop {display:inline-block; width:100%}
 		 .videoTop_Step {margin:0}
-		
-		 .Ballon_Step > ul {margin:0 0 0 -10px} 
+
+		 .Ballon_Step > ul {margin:0 0 0 -10px}
 		 .Ballon_Step > ul > li > .liBox {margin:0 0 0 10px}
 		 .Ballon_Step .step {height:60px; border-radius:25px}
 		 .Ballon_Step .stepIn > img {height:18px}
 		 .Ballon_Step .step .name {font-size:13px; margin:7px 0 0}
 		 .Ballon_Step .stepIn:after {width:6px; height:10px; background-size:6px auto; margin:-5px 0 0; right: -6px;}
-		 
+
 		 .Ballon_Step .sun {width:33px; height:33px; line-height: 33px; font-size: 12px;}
 		 .Ballon_Step .sun:after {width:47px; height:47px; top: -7px;  left: -7px;}
 		 .Ballon_Step .sunBox {top:-3px; right:-10px}
-		 
-		 
+
+
 		 .video_btn {display:none}
-		 		 
+
 		 .video_btn_mob {display:inline-block}
-		 
+
 		 .videoQ {display:none}
 		 .videoCon .sub_txt > small {font-size:14px; margin: 0 0 0 2px;}
-		 
+
 		 .videoConL {margin:0}
 		 .videoConL .videoArea {min-height:240px}
 		 .videoConR {display:none}
-		 
+
 		 .videoCon .sub_txt {font-size:18px;}
 		 .videoCon .sub_txt .all_Btn {display:block}
-		 
+
 		 .videoSub {margin:12px 0 0}
 		 .videoSubBox {padding:15px 20px; max-height:158px}
 		 .videoSubBox.full {max-height:none}
 		 .videoSubBox p {font-size:14px; margin:12px 0}
-		 
+
 		 .V_video_list {margin:0}
 		 .slick-slide {margin:0 10px}
-		 
+
 		 .V_video_mob {display:block}
-		 
+
 		  .V_video_list .slick-prev { left:-10px; }
 		  .V_video_list .slick-next { right:-10px; }
 		  .videoBox .video_name {font-size:14px}
-		 
+
 		 /* EOD : 학습창 */
-		 
-		
+
+
 		/* EOD : 동영상 수업 */
-		
+
 		/* 활동중심 수업 */
-	
+
 		.InfoBoard {padding:25px 20px 20px}
 		.InfoBoard .InfoName {font-size:18px; font-weight:500; margin:0 0 10px}
 		.InfoBoard .InfoContent {font-size:14px}
-		
+
 		.StepBox.type02 .stepContentL {width:100%; padding:0 20px; border-right:0; margin:0 0 10px}
 		.StepBox.type02 > ul > li.complete .stepContentL {border-right:0}
 		.StepBox.type02 .stepContentL .txt {font-size:16px; font-weight: 500;}
 		.StepBox.type02 .stepContentC .main_txt {font-size:14px}
 		.StepBox.type02 .stepContentC .sub_txt {font-size:12px}
-		
+
 		.symBox {margin:10px 0}
 		.symBox .heart {width:110px;}
 		.symBox .heart .ico , .symBox .heart.on .ico {width:14px; height:11px; background-size: 14px auto;}
 		.symBox .heart span {font-size:14px}
-		
+
 		.table_notice.survey .notice_title .notice_titleL {width:57px}
 		.table_notice.survey .notice_info {line-height:25px}
 		.table_notice.survey .notice_info li:before {top:8px}
 		.table_notice.survey .txt_orange {width:40px; font-size:14px; margin:-2px 5px 0 0}
 		.table_notice.survey .btn_orange_S {height:25px; font-size:12px;}
-		
-		
+
+
 		/* EOD : 활동중심 수업 */
-		
+
 		/* 화상수업/상담시간표 */
-		
+
 		.timetable tbody tr th .class {font-size:14px}
 		.timetable tbody tr th .time {font-size:12px}
 		.timetable .tableBlock {min-height:100px}
 		.timetable .tableBlock .name {font-size:12px}
 		.timetable .tableBlock .imgBox img {max-height:50px}
 		.timetable.mini .tableBlock .imgBox img {max-height:35px;}
-		
+
 		.timetable tbody tr td .atten {margin:0 0 0 -15px; bottom:30px}
 		.timetable tbody tr td .atten img {max-width:30px}
-		
+
 		.timetable .gray_label , .timetable tbody tr td .red_label {height:30px; line-height:30px; font-size:12px}
 		.timetable.mini  .gray_label {height:20px; line-height:20px; font-size:10px}
 		.timetable .gray_label .arrow , .timetable .red_label .arrow {display:none}
 		.timetable.mini .red_label , .timetable.mini .red_label {height:20px;line-height: 20px;font-size: 10px;font-size: 10px;}
-		
+
 		.timetable .gray_label:hover , .timetable .red_label:hover {font-size:12px}
 		.timetable.mini .gray_label:hover , .timetable.mini .red_label:hover {font-size:10px}
-		
+
 		/* EOD : 화상수업/상담시간표 */
-		
+
 		/* 강의계획서 */
-		
+
 		.PlanBox {margin:0}
 		.PlanBox > ul > li {margin:15px 0 0}
 		.PlanBox > ul > li:last-child .PlanBoxL:after {bottom:320px}
-		
+
 		.PlanBoxL:after {left:16px}
 		.PlanBoxLIn {width:33px; margin:0}
 		.PlanBoxLIn .circle {width:33px; height:33px; line-height:33px; font-size:12px}
-		
+
 		.PlanBoxR {margin:0 0 0 45px}
 		.PlanBoxRIn {border-radius:25px; border:1px solid #ccc}
 		.PlanBoxRIn:before {top: 28px; background: url(../planBox_arrow_mob.png) no-repeat; left: -7px; width:7px; height:13px}
-		
-		
+
+
 		.PlanConT {border-radius:25px 25px 0 0;}
 		.PlanConTIn {padding:20px 20px 10px}
 		.PlanConTIn:after {left:20px; right:20px}
 		.PlanConT_L {font-size:16px; float:none}
 		.PlanConT_R {float:none}
 		.PlanConT_R > ul > li {font-size:12px; padding-left:10px}
-		.PlanConT_R > ul > li:first-child {padding-right:10px}		
-		
+		.PlanConT_R > ul > li:first-child {padding-right:10px}
+
 		.PlanConB {border-radius:0 0 25px 25px}
 		.PlanConBIn > ul > li {width:100%; margin:20px 0 0}
 		.PlanConBIn > ul > li:first-child {margin:0}
@@ -2415,17 +2415,17 @@
 		.PlanConBIn .bullet_txt:before {top:8px}
 		.PlanConBIn .default_txt , .PlanConBIn .bullet_txt {font-size:12px; line-height:1.5}
 		.PlanBoxLIn .year {line-height:1.2; margin:5px 0 0}
-		
+
 		.PlanConBIn {padding:20px}
-		
+
 		/* EOD : 강의계획서 */
-		
+
 		/* 나만의 노트 */
-		
+
 		/* EOD : 나만의노트 */
-		
+
 		/* 쪽지함 */
-		
+
 		.chatBoxIn > ul > li {width:100%; margin:7px 0; min-height:auto}
 		.chatBoxIn {padding:20px 0; max-height: 578px;}
 		.chatBoxIn .ballon {padding:15px 12px; border-radius: 25px;}
@@ -2433,49 +2433,49 @@
 		.chatBoxIn .ballon_txt {font-size:13px}
 		.chatBoxIn .ballon_file {margin:10px 0 0; padding:7px 0 0}
 		.chatBoxIn .ballonBoxIn {display:block}
-				
+
 		.left_chat .imgBox {margin:-50px 0 0}
 		.left_chat .imgBox > img {width:80px}
-		.left_chatBox {margin:0 12px 0 100px}			
+		.left_chatBox {margin:0 12px 0 100px}
 		.left_chatBox .ballon_day > ul > li {padding:0 8px}
 		.left_chatBox .ballon_day > ul > li span {font-size:12px}
-		
+
 		.right_chat .imgBox {margin:-50px 0 0}
 		.right_chat .imgBox > img {width:80px}
-		.right_chatBox {margin:0 100px 0 12px}	
-		
+		.right_chatBox {margin:0 100px 0 12px}
+
 		.chatBoxIn .ballon_file .label {font-size:12px; position:static; padding:0; border:0}
 		.chatBoxIn .ballon_file .file_name {display:block; margin:5px 0 0}
 		.chatBoxIn .ballon_file .file_name .iconFile {width: 24px; height: 24px; background-size:cover}
 		.chatBoxIn .ballon_file .file_name .txt {font-size:12px;}
-		
+
 		/* EOD : 쪽지함 */
-		
+
 		/* 학습이력 */
-		
+
 		.table_notice.avg .avg_txt {font-size:15px}
 		.table_notice.avg .avg_txt ul li {padding:0 5px; font-size:12px}
 		.table_notice.avg .avg_txt ul li:first-child:before {top: 2px; right: -1px;}
- 
+
 		.table_notice.avg thead tr th {padding:12px 5px}
-		
+
 		/* EOD : 학습이력 */
-		
+
 		/* 나의 별점 */
-		
+
 		.starBox {margin: 20px 0 25px; height:auto; background: #473f65 url(../star_bg_mob.png) no-repeat; padding: 0 0 10px;}
 		.starBoxL {float:none}
 		.starBoxLIn {height:180px; max-width: 300px;  margin: 0 auto;}
 		.starBoxLIn .star {width: 125px;  height: 120px;  background-size: 125px auto;  left: 50%; margin: 0 0 0 -63px}
 		.starBoxLIn .starIn .txt {font-size:11px}
-		.starBoxLIn .starIn .num {font-size:28px}		
+		.starBoxLIn .starIn .num {font-size:28px}
 		.starBoxLIn .child_w {top:30px; left:20px;}
 		.starBoxLIn .child_wIn:after {width:88px; height:118px; background-size:88px auto}
 		.starBoxLIn .child_wIn:before {width:48px; height:8px; left: 12px;  bottom: -3px; background: url(../star_child_shadow_mob.png) no-repeat;}
 		.starBoxLIn .child_m {top:30px; left:auto; right:20px}
 		.starBoxLIn .child_mIn:after {width:82px; height:118px; background-size:82px auto}
 		.starBoxLIn .child_mIn:before {width:48px; height:8px; left: 23px; bottom: -1px; background: url(../star_child_shadow_mob.png) no-repeat;}
-		
+
 		.starBoxR {float:none; text-align:center}
 		.starBoxRIn {margin:0}
 		.starBoxRIn .circle {width:80px; height:80px}
@@ -2483,13 +2483,13 @@
 		.starBoxRIn > ul > li {margin:10px 8px}
 		.starBoxRIn .circleIn .num {font-size:25px; margin: 0;}
 		.starBoxRIn .circleIn .txt {font-size:12px}
-		
+
 		.table_notice.star tbody tr td {font-size: 12px;}
 		.table_notice.star .mob_al {text-align: left !important;}
 		.table_notice.star .txt_black {display:block; font-size:14px; margin:7px 0 0}
-		
+
 		.ssBox {height:auto; left:0}
-		
+
 		/* EOD : 나의 별점 */
 
 	/* EOD : 나의 강의실 */
@@ -2505,7 +2505,7 @@
 		.notice_info li { position:relative; float:left; margin:0 0 0 15px; }
 		.notice_info li:first-child { margin:0; }
 		.notice_info li:before { content:''; position:absolute; top:3px; left:-8px; width:1px; height:10px; background:#ccc; font-size:14px; }
-	
+
 		.noticeReple { margin:0; }
 		.noticeReple .noticeRepleBox { padding:15px 0; }
 		.noticeReple .noticeRepleBox .tit { font-size:16px; }
@@ -2515,26 +2515,26 @@
 		.noticeReple ul li:first-child { padding:0 0 15px 0; }
 		.noticeReple ul li .tit { font-size:15px; }
 		.noticeReple ul li .txt { margin:10px 0 0 0; font-size:15px; }
-		
-		.noticeViewBox .tit { float:none; font-size:16px; } 
+
+		.noticeViewBox .tit { float:none; font-size:16px; }
 		.noticeViewBox .tit .ico_txt {display: block; vertical-align: middle; margin: 5px 0 0;}
 		.noticeViewBox .noticeView_info { float:none; margin:5px 0 0 0; }
 		.noticeViewBox .noticeView_info li { padding:0 15px; font-size:14px; }
 		.noticeViewBox .noticeView_info li:first-child { padding:0 15px 0 0; }
 		.noticeViewBox .noticeView_info li:first-child:before { display:none; }
-		
+
 		.noticeViewList .noticeViewListL { display:block; width:auto; margin:0 0 10px 0; font-size:15px; }
 		.noticeViewList .noticeViewListL:after { display:none; }
 		.noticeViewList .noticeViewListR { display:block; width:auto; padding:0; }
 		.noticeViewList .noticeViewListR ul li a { font-size:14px; }
 		.noticeViewList .noticeViewListR ul li a .iconFile { margin:-3px 8px 0 0; }
-		
+
 		.write_select .select_box { width:100%; }
 		.writeArea { height:200px; }
 		/* EOD : 학급게시판 */
 
 		/* 교과게시판 */
-		
+
 		/* EOD : 교과게시판 */
 	/* EOD : 커뮤니티 */
 
@@ -2542,7 +2542,7 @@
 		/* 공지사항 */
 
 		/* EOD : 공지사항 */
-		
+
 		/* FAQ */
 		.faq_list li > a { padding:15px 57px 15px 57px; font-size:15px; }
 		.faq_list li > a:before { left:15px; width:30px; height:30px; margin:-15px 0 0 0; font-size:14px; line-height:26px; }
@@ -2552,7 +2552,7 @@
 		.faq_list li .faq_contents:before { left:25px; }
 		.faq_list li .faq_contents:after { left:42px; width:30px; height:30px; margin:-15px 0 0 0; font-size:14px; line-height:26px; }
 		/* EOD : FAQ */
-		
+
 		/* 스쿨포유 설문 */
 		.support_survey { margin:0; overflow:inherit; }
 		.support_survey li { width:auto; float:none; }
@@ -2570,7 +2570,7 @@
 		.support_survey li .support_surveyIn .info .date .txt { margin:10px 0 0 0; }
 		.support_survey li .support_surveyIn .info .date .txt .ico { font-size:12px; }
 		.support_survey li .support_surveyIn .info .state { display:block; margin:8px 0 0 0; }
-		
+
 		.learning_list { margin:20px 0 0 0; }
 		.learning_list li { width:auto; float:none; }
 		.learning_list li .learning_listIn { margin:10px 0 0 0; padding:20px; }
@@ -2589,9 +2589,9 @@
 		.learning_list li .learning_listIn .learning_box .info .tit { font-size:18px; }
 		.learning_list li .learning_listIn .learning_box .info .txt { font-size:15px; }
 		.learning_list li .learning_listIn .btnInfo { margin:20px -20px -20px -20px; }
-		
+
 		/* EOD : 스쿨포유 설문 */
-	
+
 		/* 학습지원프로그램 */
 
 		/* EOD : 학습지원프로그램 */
@@ -2600,12 +2600,12 @@
 	/* etc */
 		/* 로그인 */
 		.login_btnBox .btn_join { height:40px; line-height:40px; font-size:14px; width:100%;}
-		.login_btnBox .btn_join + .btn_join { margin:10px 0 0 0; }		
-		.btn_join img { width:22px; }		
+		.login_btnBox .btn_join + .btn_join { margin:10px 0 0 0; }
+		.btn_join img { width:22px; }
 		/* EOD : 로그인 */
-		
+
 		/* 회원가입 */
-		.Ballon_Step.type02 { margin:20px 0; } 
+		.Ballon_Step.type02 { margin:20px 0; }
 		.etc_joinList li { float:none; width:auto; margin:15px 0 0 0; }
 		.etc_joinList li .etc_joinListIn { padding:30px; }
 		.etc_joinList li .etc_joinListIn .tit { font-size:18px; }
@@ -2630,7 +2630,7 @@
 		.etc_joinComple .info { margin:20px auto; }
 		/* EOD : 회원가입 */
 	/* EOD : etc */
-	
+
 	/* footer */
 	.footerLayoutIn {  }
 	.footer_etc { margin:0 0 15px 0; }
